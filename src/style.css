@@ -482,6 +482,62 @@ main {
   margin-top: 0;
 }
 
+.resource-directory {
+  columns: 2;
+  column-gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.resource-group {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1.75rem;
+  vertical-align: top;
+  break-inside: avoid;
+}
+
+.resource-group-heading {
+  display: flex;
+  padding: 0.65rem 0;
+  border-top: 2px solid var(--lime);
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.resource-group-heading h2 {
+  margin: 0;
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  letter-spacing: -0.035em;
+}
+
+.resource-group-heading span {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.resource-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resource-group li {
+  max-width: none;
+  margin: 0 !important;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.resource-group li a {
+  font-weight: 700;
+}
+
 .contact-lead {
   display: grid;
   padding: 0.75rem 0 2.5rem;
@@ -1106,6 +1162,10 @@ th {
   .header-inner {
     width: min(calc(100% - 5rem), var(--max-width));
     min-height: 7rem;
+  }
+
+  .resource-directory {
+    columns: 1;
   }
 
   .identity img {
