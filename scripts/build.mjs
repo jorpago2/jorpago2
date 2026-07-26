@@ -242,7 +242,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=34">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=35">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -314,7 +314,7 @@ ${removeSpacers(gallery)}
         </aside>
       </section>
       <section class="home-updates" aria-labelledby="updates-title">
-        <div class="section-heading"><p class="eyebrow">Information</p><h2 id="updates-title">Opportunities and learning tools</h2></div>
+        <h2 class="visually-hidden" id="updates-title">Information</h2>
         <div class="information-grid">
           <section class="information-panel student-information" aria-labelledby="student-information-title">
             <h3 id="student-information-title">Students and early-career researchers</h3>
