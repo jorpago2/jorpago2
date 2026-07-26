@@ -45,7 +45,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="profile-card"/);
   assert.match(html, /assets\/media\/2025\/08\/Imagen1\.jpg/);
-  assert.match(html, /assets\/style\.css\?v=13/);
+  assert.match(html, /assets\/style\.css\?v=14/);
   assert.match(html, /class="hub-link" href="https:\/\/jorpago2\.github\.io\/"/);
   assert.match(html, /class="home-updates"/);
   assert.match(html, /class="home-explore"/);
@@ -74,6 +74,14 @@ test("carousels use their original proportions and compact mobile controls", asy
   assert.match(css, /aspect-ratio: var\(--carousel-aspect/);
   assert.match(css, /\.carousel-dots \{\s*display: none;/);
   assert.match(css, /\.carousel-status \{[\s\S]*position: static;/);
+});
+
+test("header and page content share the same horizontal alignment", async () => {
+  const css = await readFile(path.resolve("src", "style.css"), "utf8");
+
+  assert.match(css, /\.header-inner \{[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
+  assert.match(css, /\.home-layout,[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
+  assert.match(css, /\.home-intro \{[\s\S]*?padding: clamp\([^;]+\) 0;/);
 });
 
 test("local links and assets resolve", async () => {
