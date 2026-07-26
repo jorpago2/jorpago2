@@ -242,7 +242,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=27">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=28">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -277,8 +277,8 @@ ${preparePageContent(page.slug, content)}
         <a href="https://x.com/jorpargo_">X</a>
         <a href="https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=jorpago2">UV profile</a>
       </nav>
+      <p class="footer-copy">© ${new Date().getFullYear()} Jorge Parra</p>
     </div>
-    <p>© ${new Date().getFullYear()} Jorge Parra</p>
   </footer>
   <script src="${SITE_BASE_PATH}/assets/site.js?v=3" defer></script>
 </body>

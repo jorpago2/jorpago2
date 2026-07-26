@@ -46,7 +46,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=27/);
+  assert.match(html, /assets\/style\.css\?v=28/);
   assert.match(html, /<summary>Resources<\/summary>[\s\S]*?<a href="\/jorpago2\/resources\/">Links<\/a>[\s\S]*?<a href="https:\/\/jorpago2\.github\.io\/">Simulators ↗<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
