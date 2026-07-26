@@ -154,7 +154,7 @@ ${content}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=2">
   <meta name="theme-color" content="#0b1f33">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -192,7 +192,7 @@ ${content}
     </div>
     <p>© ${new Date().getFullYear()} Jorge Parra</p>
   </footer>
-  <script src="${SITE_BASE_PATH}/assets/site.js" defer></script>
+  <script src="${SITE_BASE_PATH}/assets/site.js?v=2" defer></script>
 </body>
 </html>
 `;

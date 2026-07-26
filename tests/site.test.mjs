@@ -35,7 +35,7 @@ test("all imported pages are built with metadata", async () => {
     assert.match(html, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\//);
     assert.doesNotMatch(html, /jorpago2\.blogs\.uv\.es/);
     assert.doesNotMatch(html, /<script[^>]+src="https?:/i);
-    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js" defer><\/script>/);
+    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=2" defer><\/script>/);
   }
 });
 
