@@ -46,7 +46,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=23/);
+  assert.match(html, /assets\/style\.css\?v=24/);
   assert.match(html, /<summary>Resources<\/summary>[\s\S]*?<a href="\/jorpago2\/resources\/">Links<\/a>[\s\S]*?<a href="https:\/\/jorpago2\.github\.io\/">Simulators ↗<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
@@ -55,6 +55,16 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 3);
+});
+
+test("contact page highlights email, student projects and office location", async () => {
+  const html = await readFile(path.join(OUTPUT_ROOT, "contact", "index.html"), "utf8");
+
+  assert.match(html, /class="contact-lead"/);
+  assert.match(html, /class="contact-email">jorge \[dot\] parra \[at\] uv \[dot\] es/);
+  assert.match(html, /class="contact-students"/);
+  assert.match(html, /class="contact-location"/);
+  assert.match(html, /class="contact-map" href="https:\/\/maps\.app\.goo\.gl\/LvbvRk8MteuCgczDA"/);
 });
 
 test("about page places the expanded carousel beside the biography", async () => {

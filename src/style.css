@@ -463,6 +463,83 @@ main {
   margin-top: 0;
 }
 
+.contact-lead {
+  display: grid;
+  padding: 0.75rem 0 2.5rem;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 1.35fr);
+  align-items: end;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.page-contact .contact-lead h2,
+.page-contact .contact-students h2,
+.page-contact .contact-location h2 {
+  margin: 0;
+}
+
+.contact-lead p {
+  margin-bottom: 0;
+}
+
+.contact-email {
+  padding: 0.8rem 0 0.8rem 1.25rem;
+  border-left: 0.35rem solid var(--lime);
+  color: var(--ink);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+  font-style: normal;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.contact-note {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.contact-students {
+  max-width: 52rem;
+  margin: 2.5rem 0;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgb(246 247 243 / 72%);
+}
+
+.contact-students p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-location {
+  display: grid;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+  grid-template-columns: minmax(16rem, 0.65fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.contact-location address {
+  margin: 1rem 0 1.4rem;
+  color: var(--muted);
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.contact-map {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.contact-map img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
 .page-content hr,
 .wp-block-separator {
   width: min(12rem, 40%);
@@ -1062,6 +1139,16 @@ th {
 
   .about-carousel {
     max-width: none;
+  }
+
+  .contact-lead,
+  .contact-location {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-students {
+    padding: 1.25rem;
   }
 
   .about-biography .wp-block-media-text {
