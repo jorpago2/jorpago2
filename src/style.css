@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  width: 100vw;
   margin: 0;
   background: var(--canvas);
   color: var(--ink);
@@ -178,12 +179,17 @@ li {
 }
 
 .identity-copy {
-  display: grid;
-  line-height: 1.2;
+  min-width: 0;
+  line-height: 1.5;
+}
+
+.identity-copy strong,
+.identity-copy small {
+  display: block;
 }
 
 .identity-copy strong {
-  margin-bottom: 0.3rem;
+  margin-bottom: 5px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -194,7 +200,6 @@ li {
   max-width: 32.5rem;
   color: var(--muted);
   font-size: 0.75rem;
-  font-weight: 500;
   line-height: 1.4;
 }
 
@@ -1065,18 +1070,18 @@ th {
 }
 
 @media (max-width: 820px) {
-  .header-inner {
-    width: min(calc(100% - 5rem), var(--max-width));
-    min-height: 5.25rem;
+  body {
+    width: auto;
   }
 
-  .identity {
-    font-size: 1.15rem;
+  .header-inner {
+    width: min(calc(100% - 5rem), var(--max-width));
+    min-height: 7rem;
   }
 
   .identity img {
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .home-intro {
@@ -1146,8 +1151,30 @@ th {
 }
 
 @media (max-width: 560px) {
+  body {
+    width: 100vw;
+  }
+
   .header-inner {
     width: min(calc(100% - 2rem), var(--max-width));
+    min-height: auto;
+    padding: 0.75rem 0;
+    gap: 0.75rem;
+  }
+
+  .identity {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 0.625rem;
+  }
+
+  .identity img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .identity-copy strong {
+    margin-bottom: 2px;
   }
 
   .home-layout,
@@ -1162,7 +1189,9 @@ th {
   }
 
   .identity-copy small {
-    display: none;
+    max-width: none;
+    font-size: 0.625rem;
+    line-height: 1.3;
   }
 
   .home-intro,
