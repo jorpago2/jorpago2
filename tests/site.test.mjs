@@ -141,9 +141,10 @@ test("research and teaching consolidate their former child pages", async () => {
 
   assert.match(research, /id="overview"[\s\S]*?id="publications"/);
   assert.equal((research.match(/class="research-area"/g) ?? []).length, 3);
-  assert.match(research, /Integrated photonics with advanced materials/);
-  assert.match(research, /Neuromorphic photonic and electronic hardware/);
-  assert.match(research, /Emerging optoelectronic devices and characterization/);
+  assert.match(research, /Functional materials for integrated photonics/);
+  assert.match(research, /Reconfigurable and non-volatile photonic devices/);
+  assert.match(research, /Neuromorphic photonic hardware/);
+  assert.doesNotMatch(research, /Emerging optoelectronic devices and characterization/);
   assert.match(research, /class="research-profile-links"[\s\S]*?Google Scholar[\s\S]*?ORCID/);
   assert.doesNotMatch(research, /Collaborations|Participation in projects|Research visuals|metaslider/);
   assert.equal((research.match(/<details class="publication-year wp-block-details" name="publication-years"/g) ?? []).length, 9);
