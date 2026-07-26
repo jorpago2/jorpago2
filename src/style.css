@@ -499,16 +499,22 @@ main {
 }
 
 .contact-students {
-  max-width: 52rem;
+  display: grid;
   margin: 2.5rem 0;
   padding: 1.5rem 1.75rem;
   border: 1px solid var(--line);
   border-radius: 1rem;
   background: rgb(246 247 243 / 72%);
+  grid-template-columns: minmax(16rem, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.contact-students-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .contact-topics-intro {
-  margin: 1.5rem 0 0.8rem;
+  margin: 0 0 0.55rem;
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 700;
@@ -519,32 +525,47 @@ main {
   margin: 0;
   padding: 0;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+  gap: 0 1rem;
   list-style: none;
+  counter-reset: project-topic;
 }
 
 .contact-topics li {
+  display: grid;
   max-width: none;
-  padding: 0.9rem 1rem;
-  border-top: 2px solid var(--lime);
-  background: rgb(255 255 255 / 38%);
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line);
+  grid-template-columns: 1.5rem minmax(0, 1fr);
+  gap: 0 0.45rem;
+  counter-increment: project-topic;
+}
+
+.contact-topics li::before {
+  grid-row: 1 / span 2;
+  color: var(--accent);
+  content: counter(project-topic, decimal-leading-zero);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
 }
 
 .contact-topics strong,
 .contact-topics span {
   display: block;
+  grid-column: 2;
 }
 
 .contact-topics strong {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.12rem;
   color: var(--ink);
-  line-height: 1.3;
+  font-size: 0.9rem;
+  line-height: 1.25;
 }
 
 .contact-topics span {
   color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.35;
 }
 
 .contact-location {
@@ -1070,6 +1091,11 @@ th {
 
   .wp-block-media-text {
     grid-template-columns: minmax(10rem, 0.4fr) 1fr;
+  }
+
+  .contact-students {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   .about-biography .wp-block-media-text {
