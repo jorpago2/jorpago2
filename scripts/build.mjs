@@ -96,6 +96,12 @@ function collapsePublicationYears(content) {
   );
 }
 
+function publicationListContent(sourceContent) {
+  const firstHeading = sourceContent.search(/<h2\b/i);
+  if (firstHeading < 0) return sourceContent;
+  return sourceContent.slice(firstHeading).replace(/<h2\b[^>]*>[\s\S]*?<\/h2>/i, "").trim();
+}
+
 function preparePageContent(slug, sourceContent) {
   let content = sourceContent;
 
@@ -148,10 +154,6 @@ ${remainder}`;
     }
   }
 
-  if (slug === "research") {
-    content = content.replace(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i, '<p class="research-statement">$1</p>');
-  }
-
   if (slug === "teaching") {
     content = content.replace(/<details\b(?![^>]*\sid=)/i, '<details id="previous-years"');
   }
@@ -186,17 +188,25 @@ function onlineToolsContent() {
 
 function prepareSitePageContent(slug, fragments) {
   if (slug === "research") {
-    const overview = shiftHeadings(preparePageContent("research", fragments.get("research")), { 2: 3 });
-    const publications = shiftHeadings(
-      collapsePublicationYears(preparePageContent("publications", fragments.get("publications"))),
-      { 2: 3 },
+    const overview = preparePageContent("research", fragments.get("research"));
+    const publications = addHeadingIds(
+      collapsePublicationYears(publicationListContent(fragments.get("publications"))),
     );
     return `<section class="merged-section merged-section-first" id="overview" aria-labelledby="research-overview-title">
 <h2 class="merged-section-title visually-hidden" id="research-overview-title">Research overview</h2>
 ${overview}
 </section>
 <section class="merged-section merged-section-publications" id="publications" aria-labelledby="publications-title">
-<h2 class="merged-section-title" id="publications-title">Publications</h2>
+<header class="research-publications-heading">
+  <div>
+    <p class="eyebrow">Research output</p>
+    <h2 class="merged-section-title" id="publications-title">Journal publications</h2>
+  </div>
+  <nav class="research-profile-links" aria-label="Publication profiles">
+    <a class="button" href="https://scholar.google.es/citations?user=5kYBpXIAAAAJ&amp;hl=en" target="_blank" rel="noreferrer noopener">Google Scholar ↗</a>
+    <a class="button" href="https://orcid.org/0000-0003-4610-3411" target="_blank" rel="noreferrer noopener">ORCID ↗</a>
+  </nav>
+</header>
 ${publications}
 </section>`;
   }
@@ -302,7 +312,7 @@ ${content}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=42">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=43">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">

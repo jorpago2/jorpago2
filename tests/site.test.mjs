@@ -56,7 +56,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=42/);
+  assert.match(html, /assets\/style\.css\?v=43/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
@@ -140,6 +140,12 @@ test("research and teaching consolidate their former child pages", async () => {
   const teaching = await readFile(path.join(OUTPUT_ROOT, "teaching", "index.html"), "utf8");
 
   assert.match(research, /id="overview"[\s\S]*?id="publications"/);
+  assert.equal((research.match(/class="research-area"/g) ?? []).length, 3);
+  assert.match(research, /Integrated photonics with advanced materials/);
+  assert.match(research, /Neuromorphic photonic and electronic hardware/);
+  assert.match(research, /Emerging optoelectronic devices and characterization/);
+  assert.match(research, /class="research-profile-links"[\s\S]*?Google Scholar[\s\S]*?ORCID/);
+  assert.doesNotMatch(research, /Collaborations|Participation in projects|Research visuals|metaslider/);
   assert.equal((research.match(/<details class="publication-year wp-block-details" name="publication-years"/g) ?? []).length, 9);
   assert.equal((research.match(/name="publication-years" open/g) ?? []).length, 1);
   assert.match(research, /10\.1088\/2515-7647\/ae6004/);

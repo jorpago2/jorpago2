@@ -1439,24 +1439,89 @@ th {
 }
 
 .research-statement {
-  max-width: 31ch;
-  margin: 0 0 3rem;
+  max-width: 25ch;
+  margin: 0;
   color: var(--navy);
-  font-size: clamp(1.7rem, 4vw, 3rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 760;
   letter-spacing: -0.035em;
-  line-height: 1.15;
+  line-height: 1.08;
 }
 
-.page-research .wp-block-columns {
-  padding: 1.25rem;
-  border: 1px solid var(--line);
-  background: var(--canvas);
-  border-radius: 1rem;
+.research-intro {
+  max-width: 55rem;
 }
 
-.page-research .wp-block-columns figure {
+.research-lead {
+  max-width: 48rem;
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.research-directions {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+}
+
+.research-directions > h2 {
+  margin: 0 0 1.5rem;
+}
+
+.research-area-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+}
+
+.research-area {
+  padding-top: 1rem;
+  border-top: 2px solid var(--lime);
+}
+
+.research-area-number {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.research-area h3 {
+  margin: 0.55rem 0 0.65rem;
+}
+
+.research-area p {
   margin: 0;
+  color: var(--muted);
+}
+
+.research-approach {
+  max-width: 52rem;
+  margin: 1.75rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.research-publications-heading {
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.research-publications-heading .eyebrow,
+.research-publications-heading .merged-section-title {
+  margin: 0;
+}
+
+.research-publications-heading .eyebrow {
+  margin-bottom: 0.4rem;
+}
+
+.research-profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
 }
 
 .merged-section-publications .publication-year > ol {
@@ -1607,6 +1672,10 @@ th {
     grid-template-columns: 1fr;
   }
 
+  .research-area-grid {
+    grid-template-columns: 1fr;
+  }
+
   .identity img {
     width: 3.5rem;
     height: 3.5rem;
@@ -1754,6 +1823,11 @@ th {
 
   .information-grid {
     grid-template-columns: 1fr;
+  }
+
+  .research-publications-heading {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .wp-block-media-text {
