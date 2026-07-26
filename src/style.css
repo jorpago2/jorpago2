@@ -6,7 +6,7 @@
   --accent: #a94f32;
   --accent-soft: #f1ddd3;
   --muted: #6d6a63;
-  --canvas: #f3efe6;
+  --canvas: #f6f7f3;
   --white: #fffdf8;
   --line: #d8d0c2;
   --max-width: 1120px;
@@ -104,7 +104,7 @@ li {
   left: 0.75rem;
   padding: 0.65rem 1rem;
   translate: 0 -180%;
-  background: var(--white);
+  background: var(--canvas);
   box-shadow: var(--shadow);
 }
 
@@ -116,7 +116,7 @@ li {
   position: relative;
   z-index: 20;
   border-bottom: 1px solid var(--line);
-  background: #f6f7f3;
+  background: var(--canvas);
 }
 
 .header-inner {
@@ -172,7 +172,7 @@ li {
   padding: 0.55rem 0.8rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--white);
+  background: transparent;
   color: var(--ink);
   font-size: 0.75rem;
   font-weight: 700;
@@ -229,7 +229,7 @@ li {
   padding: 0.4rem;
   border: 1px solid var(--line);
   border-radius: 0.25rem;
-  background: var(--white);
+  background: var(--canvas);
   box-shadow: var(--shadow);
 }
 
@@ -251,7 +251,7 @@ li {
   padding: 0.65rem 0.9rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--white);
+  background: transparent;
 }
 
 .primary-nav > .hub-link:hover {
@@ -280,7 +280,7 @@ main {
   padding: clamp(1.5rem, 3.5vw, 3rem);
   border-top: 4px solid var(--accent);
   border-bottom: 1px solid var(--line);
-  background: var(--white);
+  background: transparent;
   grid-template-columns: minmax(0, 1.45fr) minmax(15rem, 0.55fr);
   align-items: center;
   gap: clamp(2rem, 5vw, 4rem);
@@ -441,7 +441,7 @@ main {
 }
 
 .explore-grid a:hover {
-  background: rgb(255 253 248 / 60%);
+  background: var(--accent-soft);
 }
 
 .explore-grid span {
@@ -464,7 +464,7 @@ main {
   padding: clamp(1.75rem, 4vw, 3rem);
   border-top: 4px solid var(--accent);
   border-bottom: 1px solid var(--line);
-  background: var(--white);
+  background: transparent;
 }
 
 .page-heading h1 {
@@ -510,7 +510,7 @@ main {
 .page-content {
   padding: clamp(1.5rem, 4vw, 3rem);
   border: 0;
-  background: var(--white);
+  background: transparent;
 }
 
 .page-content > :first-child {
@@ -622,7 +622,7 @@ figcaption {
   justify-content: center;
   gap: 0.8rem;
   border-top: 1px solid var(--line);
-  background: var(--white);
+  background: var(--canvas);
 }
 
 .carousel-arrow,
@@ -679,7 +679,7 @@ table,
 .wp-block-table table {
   width: 100%;
   border-collapse: collapse;
-  background: var(--white);
+  background: transparent;
   font-size: 0.93rem;
 }
 
@@ -861,7 +861,7 @@ th {
 .site-footer {
   padding-block: 2.2rem;
   border-top: 1px solid var(--line);
-  background: var(--white);
+  background: transparent;
   color: var(--muted);
   font-size: 0.9rem;
 }
@@ -942,7 +942,7 @@ th {
     display: none;
     padding: 0.75rem;
     border: 1px solid var(--line);
-    background: var(--white);
+    background: var(--canvas);
     box-shadow: var(--shadow);
   }
 
