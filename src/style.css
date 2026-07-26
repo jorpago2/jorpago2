@@ -452,33 +452,33 @@ main {
 }
 
 .home-updates {
-  padding: clamp(2rem, 4vw, 3.25rem) 0;
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
   border-bottom: 1px solid var(--line);
   background: transparent;
 }
 
 .information-grid {
   display: grid;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
 }
 
 .information-panel {
-  padding: 1.2rem 1.4rem;
+  padding: clamp(1.4rem, 2.5vw, 1.75rem);
   border-top: 2px solid var(--lime);
   background: rgb(246 247 243 / 55%);
 }
 
 .information-panel h3 {
-  margin: 0 0 0.8rem;
+  margin: 0 0 1rem;
   font-size: clamp(1.2rem, 2vw, 1.45rem);
 }
 
 .information-list > p {
   max-width: none;
   margin: 0;
-  padding: 0.65rem 0;
+  padding: 0.8rem 0;
   border-bottom: 1px solid var(--line);
   line-height: 1.5;
 }
@@ -510,7 +510,7 @@ main {
 }
 
 .simulator-topics {
-  margin: 1rem 0;
+  margin: 1.25rem 0;
   line-height: 1.5;
 }
 
