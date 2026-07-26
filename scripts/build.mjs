@@ -7,7 +7,6 @@ const OUTPUT_ROOT = path.resolve("publish", "jorpago2");
 const CONTENT_ROOT = path.resolve("content");
 const LOGO_PATH = `${SITE_BASE_PATH}/assets/media/2025/07/cropped-ChatGPT-Image-13-jul-2025-19_12_48-1.png`;
 const PROFILE_IMAGE_PATH = `${SITE_BASE_PATH}/assets/github-profile.jpg`;
-const HOME_PORTRAIT_PATH = `${SITE_BASE_PATH}/assets/media/2025/08/Imagen1.jpg`;
 
 const navigation = [
   { label: "About me", slug: "about-me" },
@@ -309,7 +308,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=14">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=15">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -373,20 +372,15 @@ function homeContent(content) {
             <a class="button" href="${route("about-me")}">About me</a>
           </div>
         </div>
-        <figure class="profile-card">
-          <img src="${HOME_PORTRAIT_PATH}" alt="Jorge Parra working at an optical laboratory bench" width="890" height="1024">
-          <figcaption>Integrated photonics laboratory · Universitat de València</figcaption>
-        </figure>
+        <aside class="hero-carousel" aria-label="Research and teaching gallery">
+${removeSpacers(gallery)}
+        </aside>
       </section>
       <section class="home-updates" aria-labelledby="updates-title">
         <div class="section-heading"><p class="eyebrow">Information</p><h2 id="updates-title">For students and early-career researchers</h2></div>
         <div class="update-grid">
           ${notices.join("\n          ")}
         </div>
-      </section>
-      <section class="home-gallery" aria-labelledby="gallery-title">
-        <div class="section-heading"><p class="eyebrow">Gallery</p><h2 id="gallery-title">Research and teaching</h2></div>
-${removeSpacers(gallery)}
       </section>
       <section class="home-explore" aria-labelledby="explore-title">
         <div class="section-heading"><p class="eyebrow">Sections</p><h2 id="explore-title">Academic activity</h2></div>

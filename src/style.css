@@ -313,7 +313,7 @@ main {
   padding: clamp(1.5rem, 3.5vw, 3rem) 0;
   border-bottom: 1px solid var(--line);
   background: transparent;
-  grid-template-columns: minmax(0, 1.45fr) minmax(15rem, 0.55fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(22rem, 0.75fr);
   align-items: center;
   gap: clamp(2rem, 5vw, 4rem);
 }
@@ -348,31 +348,28 @@ main {
   font-size: 1.02rem;
 }
 
-.profile-card {
-  width: min(100%, 19rem);
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid var(--line);
-  background: transparent;
+.hero-carousel {
+  width: min(100%, 24rem);
+  min-width: 0;
   justify-self: end;
 }
 
-.profile-card img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: center 32%;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
+.hero-carousel .metaslider {
+  margin: 0;
 }
 
-.profile-card figcaption {
-  display: block;
-  margin: 0;
-  padding: 0.55rem 0;
+.hero-carousel > .wp-block-group {
+  display: flex;
+  margin-top: 0.55rem;
+  align-items: center;
+  gap: 0.4rem;
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.4;
+}
+
+.hero-carousel > .wp-block-group p {
+  margin: 0;
 }
 
 .page-actions {
@@ -416,7 +413,6 @@ main {
 }
 
 .home-updates,
-.home-gallery,
 .home-explore {
   padding: clamp(2rem, 4vw, 3.25rem) 0;
   border-bottom: 1px solid var(--line);
@@ -436,25 +432,6 @@ main {
   padding: 0.4rem 1.4rem;
   border-left: 5px solid var(--lime);
   background: transparent;
-}
-
-.home-gallery .metaslider {
-  max-width: 52rem;
-  margin-inline: auto;
-  margin-bottom: 0;
-}
-
-.home-gallery > .wp-block-group {
-  display: flex;
-  margin-top: 1rem;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--muted);
-  font-size: 0.82rem;
-}
-
-.home-gallery > .wp-block-group p {
-  margin: 0;
 }
 
 .explore-grid {
@@ -990,12 +967,12 @@ th {
   }
 
   .home-intro {
-    grid-template-columns: minmax(0, 1.35fr) minmax(13rem, 0.65fr);
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.75fr);
     gap: 2rem;
   }
 
-  .profile-card {
-    max-width: 18rem;
+  .hero-carousel {
+    max-width: 20rem;
     justify-self: center;
   }
 
@@ -1076,7 +1053,6 @@ th {
 
   .home-intro,
   .home-updates,
-  .home-gallery,
   .home-explore,
   .page-heading,
   .page-content {
@@ -1093,14 +1069,10 @@ th {
     grid-template-columns: 1fr;
   }
 
-  .profile-card {
-    width: min(100%, 18rem);
-    margin-inline: auto;
-  }
-
-  .profile-card img {
+  .hero-carousel {
     width: 100%;
-    height: auto;
+    max-width: 24rem;
+    margin-inline: auto;
   }
 
   .explore-grid a {

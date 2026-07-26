@@ -43,9 +43,9 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   const html = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
 
   assert.match(html, /<article class="home-layout">/);
-  assert.match(html, /class="profile-card"/);
-  assert.match(html, /assets\/media\/2025\/08\/Imagen1\.jpg/);
-  assert.match(html, /assets\/style\.css\?v=14/);
+  assert.match(html, /class="hero-carousel"/);
+  assert.doesNotMatch(html, /class="home-gallery"/);
+  assert.match(html, /assets\/style\.css\?v=15/);
   assert.match(html, /class="hub-link" href="https:\/\/jorpago2\.github\.io\/"/);
   assert.match(html, /class="home-updates"/);
   assert.match(html, /class="home-explore"/);
