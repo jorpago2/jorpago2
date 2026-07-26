@@ -451,8 +451,7 @@ main {
 }
 
 .home-updates {
-  padding: clamp(2.5rem, 5vw, 4rem) 0;
-  border-bottom: 1px solid var(--line);
+  padding: clamp(1.75rem, 3vw, 2.5rem) 0;
   background: transparent;
 }
 
