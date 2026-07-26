@@ -45,7 +45,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=19/);
+  assert.match(html, /assets\/style\.css\?v=20/);
   assert.match(html, /class="hub-link" href="https:\/\/jorpago2\.github\.io\/"/);
   assert.match(html, /class="home-updates"/);
   assert.doesNotMatch(html, /class="home-explore"/);
@@ -54,6 +54,16 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
+});
+
+test("about page places the expanded carousel beside the biography", async () => {
+  const html = await readFile(path.join(OUTPUT_ROOT, "about-me", "index.html"), "utf8");
+  const carousel = html.match(/<div class="wp-block-media-text__media about-carousel">[\s\S]*?<\/ul>/)?.[0] ?? "";
+
+  assert.match(carousel, /class="slide-profile ms-image"/);
+  assert.match(carousel, /src="\/jorpago2\/assets\/media\/2025\/08\/Imagen1\.jpg"[^>]*alt="Jorge Parra"/);
+  assert.equal((carousel.match(/aria-roledescription="slide"/g) ?? []).length, 13);
+  assert.doesNotMatch(html, /id="highlights"|Selected moments/);
 });
 
 test("interior pages begin directly with content and keep an accessible page title", async () => {

@@ -95,13 +95,28 @@ function preparePageContent(slug, sourceContent) {
       const carousel = content.slice(0, first.index).trim();
       const biography = content.slice(first.index + first[0].length, second.index).trim();
       const career = content.slice(second.index + second[0].length).trim();
+      const portrait = biography.match(/<figure class="wp-block-media-text__media"><img\b[^>]*><\/figure>/i)?.[0];
+      const portraitImage = portrait
+        ?.match(/<img\b[^>]*>/i)?.[0]
+        .replace(/alt="[^"]*"/i, 'alt="Jorge Parra"');
+      const carouselWithPortrait = portraitImage
+        ? carousel
+            .replace('style="display: block; width: 100%;"', 'style="display: none; width: 100%;"')
+            .replace(
+              /(<ul class='slides'>)/,
+              `$1
+                <li style="display: block; width: 100%;" class="slide-profile ms-image" aria-roledescription="slide" data-slide-type="image">${portraitImage}<div class="caption-wrap"><div class="caption"><div>Jorge Parra</div></div></div></li>`,
+            )
+        : carousel;
+      const biographyWithCarousel = portrait
+        ? biography.replace(
+            portrait,
+            `<div class="wp-block-media-text__media about-carousel">${carouselWithPortrait}</div>`,
+          )
+        : biography;
       content = `<section class="about-biography">
 <h2 id="biography">Biography</h2>
-${biography}
-</section>
-<section class="page-showcase">
-<div class="section-heading"><p class="eyebrow">Selected moments</p><h2 id="highlights">Highlights</h2></div>
-${carousel}
+${biographyWithCarousel}
 </section>
 ${career}`;
     }
@@ -230,7 +245,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=19">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=20">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">

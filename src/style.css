@@ -704,6 +704,14 @@ th {
   margin-inline: auto;
 }
 
+.about-carousel .metaslider {
+  margin: 0;
+}
+
+.about-carousel .metaslider .slides {
+  aspect-ratio: 4 / 3;
+}
+
 .page-showcase .section-heading {
   margin-bottom: 1rem;
 }
@@ -1029,6 +1037,10 @@ th {
 
   .wp-block-media-text__media {
     max-width: 18rem;
+  }
+
+  .about-carousel {
+    max-width: none;
   }
 
   .carousel-dots {
