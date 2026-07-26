@@ -29,6 +29,62 @@ const navigation = [
   { label: "Contact", slug: "contact" },
 ];
 
+const pagePresentation = {
+  "about-me": {
+    eyebrow: "Academic profile",
+    description: "Career, education, awards and the path behind my work in integrated photonics and emerging devices.",
+    sections: [
+      ["Biography", "biography"],
+      ["Highlights", "highlights"],
+      ["Career", "education-academic-positions"],
+    ],
+  },
+  research: {
+    eyebrow: "Research",
+    description: "Integrated photonics, functional materials and device concepts for communications, computing and neuromorphic systems.",
+    actions: [
+      ["Google Scholar", "https://scholar.google.es/citations?user=5kYBpXIAAAAJ&hl=en"],
+      ["ORCID", "https://orcid.org/0000-0003-4610-3411"],
+    ],
+    sections: [
+      ["Collaborations", "collaborations"],
+      ["Projects", "participation-in-projects"],
+    ],
+  },
+  publications: {
+    eyebrow: "Research output",
+    description: "Peer-reviewed work on photonic integrated devices, advanced optical materials and neuromorphic hardware.",
+    actions: [
+      ["Google Scholar", "https://scholar.google.es/citations?user=5kYBpXIAAAAJ&hl=en"],
+      ["ORCID", "https://orcid.org/0000-0003-4610-3411"],
+    ],
+    sections: [
+      ["Research visuals", "research-visuals"],
+      ["Journal papers", "journal-papers"],
+    ],
+  },
+  teaching: {
+    eyebrow: "Teaching",
+    description: "Courses and learning activities across electronics, photonics, circuits and communication systems.",
+    actions: [
+      ["Books", route("books")],
+      ["Resources", route("resources")],
+    ],
+    sections: [
+      ["Teaching in practice", "teaching-in-practice"],
+      ["Current year", "academic-year-2025-2026"],
+      ["Previous years", "previous-years"],
+    ],
+  },
+  books: { eyebrow: "Books", description: "Published teaching and technical books for electronics and engineering education." },
+  theses: { eyebrow: "Supervision", description: "Bachelor's, master's and doctoral research projects developed under my supervision." },
+  resources: { eyebrow: "Resources", description: "Selected tools, references and practical material for students and researchers." },
+  contact: { eyebrow: "Contact", description: "Ways to get in touch for research, teaching and academic collaboration." },
+  "new-students": { eyebrow: "Prospective researchers", description: "Practical information for students interested in research projects and doctoral work." },
+  faq: { eyebrow: "Frequently asked questions", description: "Answers for prospective students and researchers considering joining a project." },
+  "career-strategy": { eyebrow: "Academic career", description: "Personal principles and practical advice for building an academic research career in Spain." },
+};
+
 function escapeHtml(value) {
   return value
     .replaceAll("&", "&amp;")
@@ -53,6 +109,98 @@ function conciseDescription(value) {
 
   if (cleaned.length <= 160) return cleaned;
   return `${cleaned.slice(0, 157).replace(/\s+\S*$/, "")}…`;
+}
+
+function stripHtml(value) {
+  return value
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&(?:nbsp|#160);/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function headingId(value) {
+  return stripHtml(value)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function addHeadingIds(content) {
+  return content.replace(/<(h[23])([^>]*)>([\s\S]*?)<\/\1>/gi, (match, tag, attributes, inner) => {
+    if (/\sid=/i.test(attributes)) return match;
+    return `<${tag}${attributes} id="${headingId(inner)}">${inner}</${tag}>`;
+  });
+}
+
+function removeSpacers(content) {
+  return content.replace(/<div[^>]*class="[^"]*wp-block-spacer[^"]*"[^>]*><\/div>/gi, "");
+}
+
+function preparePageContent(slug, sourceContent) {
+  let content = sourceContent;
+
+  if (slug === "about-me") {
+    const separators = [...content.matchAll(/<hr class="wp-block-separator[^>]*\/>/g)];
+    if (separators.length >= 2) {
+      const first = separators[0];
+      const second = separators[1];
+      const carousel = content.slice(0, first.index).trim();
+      const biography = content.slice(first.index + first[0].length, second.index).trim();
+      const career = content.slice(second.index + second[0].length).trim();
+      content = `<section class="about-biography">
+<h2 id="biography">Biography</h2>
+${biography}
+</section>
+<section class="page-showcase">
+<div class="section-heading"><p class="eyebrow">Selected moments</p><h2 id="highlights">Highlights</h2></div>
+${carousel}
+</section>
+${career}`;
+    }
+  }
+
+  if (slug === "publications" || slug === "teaching") {
+    const firstHeading = content.search(/<h2\b/i);
+    if (firstHeading > 0) {
+      const carousel = content.slice(0, firstHeading).trim();
+      const remainder = content.slice(firstHeading).trim();
+      const isPublications = slug === "publications";
+      content = `<section class="page-showcase">
+<div class="section-heading"><p class="eyebrow">${isPublications ? "Selected devices" : "Learning and outreach"}</p><h2 id="${isPublications ? "research-visuals" : "teaching-in-practice"}">${isPublications ? "Research visuals" : "Teaching in practice"}</h2></div>
+${carousel}
+</section>
+${remainder}`;
+    }
+  }
+
+  if (slug === "research") {
+    content = content.replace(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i, '<p class="research-statement">$1</p>');
+  }
+
+  if (slug === "teaching") {
+    content = content.replace(/<details\b(?![^>]*\sid=)/i, '<details id="previous-years"');
+  }
+
+  return addHeadingIds(removeSpacers(content));
+}
+
+function pageActionsHtml(actions = []) {
+  if (actions.length === 0) return "";
+  return `<div class="page-actions">
+          ${actions.map(([label, href]) => `<a class="button" href="${href}">${label}</a>`).join("\n          ")}
+        </div>`;
+}
+
+function sectionIndexHtml(sections = []) {
+  if (sections.length === 0) return "";
+  return `<nav class="section-index" aria-label="On this page">
+          <span>On this page</span>
+          ${sections.map(([label, id]) => `<a href="#${id}">${label}</a>`).join("\n          ")}
+        </nav>`;
 }
 
 function formatDate(value) {
@@ -120,6 +268,7 @@ ${JSON.stringify(
 
 function pageShell({ page, content, hasSocialImage }) {
   const isHome = page.slug === "";
+  const presentation = pagePresentation[page.slug] ?? {};
   const pageTitle = isHome
     ? "Dr. Jorge Parra | Photonics and Electronics"
     : `${page.title} | Dr. Jorge Parra`;
@@ -136,12 +285,16 @@ function pageShell({ page, content, hasSocialImage }) {
     : "";
   const mainContent = isHome
     ? homeContent(content)
-    : `<article class="page-layout">
+    : `<article class="page-layout page-${page.slug}">
         <header class="page-heading">
+          <p class="eyebrow">${presentation.eyebrow ?? "Dr. Jorge Parra"}</p>
           <h1>${escapeHtml(page.title)}</h1>
+          <p class="page-description">${escapeHtml(presentation.description ?? conciseDescription(page.description))}</p>
+          ${pageActionsHtml(presentation.actions)}
         </header>
+        ${sectionIndexHtml(presentation.sections)}
         <div class="page-content">
-${content}
+${preparePageContent(page.slug, content)}
         </div>
         <p class="last-updated">Last updated <time datetime="${page.modified}">${formatDate(page.modified)}</time></p>
       </article>`;
@@ -155,7 +308,7 @@ ${content}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=4">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=5">
   <meta name="theme-color" content="#0b1f33">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -170,7 +323,7 @@ ${content}
     <div class="header-inner">
       <a class="identity" href="${route()}" aria-label="Dr. Jorge Parra — homepage">
         <img src="${PROFILE_IMAGE_PATH}" alt="" width="52" height="52">
-        <span>Dr. Jorge Parra</span>
+        <span class="identity-copy"><strong>Dr. Jorge Parra</strong><small>Photonics · Electronic Engineering</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
       <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
@@ -200,8 +353,55 @@ ${content}
 }
 
 function homeContent(content) {
-  return `<article class="home-content">
-${content}
+  const withoutHeading = content.replace(/<h1\b[^>]*>[\s\S]*?<\/h1>/i, "");
+  const notices = [...withoutHeading.matchAll(/<p class="[^"]*has-background[^"]*">[\s\S]*?<\/p>/g)].map(
+    (match) => match[0],
+  );
+  let gallery = withoutHeading;
+  for (const notice of notices) gallery = gallery.replace(notice, "");
+
+  return `<article class="home-layout">
+      <section class="home-intro" aria-labelledby="home-title">
+        <div class="home-intro-copy">
+          <p class="eyebrow">Assistant Professor · Universitat de València</p>
+          <h1 id="home-title">Integrated photonics for emerging devices.</h1>
+          <p class="home-lead">I research how advanced optical materials can enable new functions in photonic circuits, electronic devices and neuromorphic computing.</p>
+          <div class="page-actions">
+            <a class="button primary" href="${route("research")}">Explore research</a>
+            <a class="button" href="${route("publications")}">View publications</a>
+          </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile summary">
+          <img src="${PROFILE_IMAGE_PATH}" alt="Dr. Jorge Parra" width="460" height="460">
+          <div>
+            <strong>Dr. Jorge Parra</strong>
+            <span>Electronic Engineering</span>
+            <ul aria-label="Research areas">
+              <li>Integrated photonics</li>
+              <li>Functional materials</li>
+              <li>Neuromorphic hardware</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+      <section class="home-updates" aria-labelledby="updates-title">
+        <div class="section-heading"><p class="eyebrow">Start here</p><h2 id="updates-title">For students and researchers</h2></div>
+        <div class="update-grid">
+          ${notices.join("\n          ")}
+        </div>
+      </section>
+      <section class="home-gallery" aria-labelledby="gallery-title">
+        <div class="section-heading"><p class="eyebrow">Inside the work</p><h2 id="gallery-title">Research, teaching and laboratory life</h2></div>
+${removeSpacers(gallery)}
+      </section>
+      <section class="home-explore" aria-labelledby="explore-title">
+        <div class="section-heading"><p class="eyebrow">Explore</p><h2 id="explore-title">Academic profile</h2></div>
+        <div class="explore-grid">
+          <a href="${route("about-me")}"><span>01</span><strong>About me</strong><small>Career, education and awards</small></a>
+          <a href="${route("research")}"><span>02</span><strong>Research</strong><small>Collaborations and projects</small></a>
+          <a href="${route("teaching")}"><span>03</span><strong>Teaching</strong><small>Courses, books and resources</small></a>
+        </div>
+      </section>
     </article>`;
 }
 

@@ -39,14 +39,28 @@ test("all imported pages are built with metadata", async () => {
   }
 });
 
-test("homepage keeps the blog hierarchy and a five-image carousel", async () => {
+test("homepage has the academic layout and keeps the five-image carousel", async () => {
   const html = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
 
-  assert.match(html, /<article class="home-content">/);
-  assert.doesNotMatch(html, /class="hero"/);
+  assert.match(html, /<article class="home-layout">/);
+  assert.match(html, /class="profile-card"/);
+  assert.match(html, /class="home-updates"/);
+  assert.match(html, /class="home-explore"/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
+});
+
+test("editorial section links point to headings on the same page", async () => {
+  for (const slug of ["about-me", "research", "publications", "teaching"]) {
+    const html = await readFile(path.join(OUTPUT_ROOT, slug, "index.html"), "utf8");
+    const index = html.match(/<nav class="section-index"[\s\S]*?<\/nav>/)?.[0] ?? "";
+
+    assert.notEqual(index, "", `${slug} is missing its section index`);
+    for (const match of index.matchAll(/href="#([^"]+)"/g)) {
+      assert.match(html, new RegExp(`id="${match[1]}"`), `${slug} is missing #${match[1]}`);
+    }
+  }
 });
 
 test("carousels use their original proportions and compact mobile controls", async () => {
