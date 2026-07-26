@@ -146,8 +146,7 @@ li {
 .site-header {
   position: relative;
   z-index: 20;
-  border-bottom: 1px solid var(--line);
-  background: var(--canvas);
+  background: transparent;
 }
 
 .header-inner {
@@ -155,6 +154,7 @@ li {
   width: min(calc(100% - 5rem), 1240px);
   min-height: 5.25rem;
   margin-inline: auto;
+  border-bottom: 1px solid var(--line);
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
