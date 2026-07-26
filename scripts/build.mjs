@@ -324,7 +324,7 @@ ${removeSpacers(gallery)}
           </section>
           <section class="information-panel simulator-information" aria-labelledby="simulator-information-title">
             <p class="information-label">Interactive learning</p>
-            <h3 id="simulator-information-title">Scientific simulators</h3>
+            <h3 id="simulator-information-title">Online simulators and tools</h3>
             <p>Explore electromagnetic wave propagation and semiconductor devices through visual, browser-based numerical models.</p>
             <p class="simulator-topics">Electromagnetics · Photonics · Semiconductor devices</p>
             <a class="button primary" href="https://jorpago2.github.io/">Open simulators ↗</a>
