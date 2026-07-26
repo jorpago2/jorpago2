@@ -147,15 +147,6 @@ ${remainder}`;
   return addHeadingIds(removeSpacers(content));
 }
 
-function formatDate(value) {
-  return new Intl.DateTimeFormat("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    timeZone: "Europe/Madrid",
-  }).format(new Date(`${value}Z`));
-}
-
 function navigationHtml(activeSlug) {
   return navigation
     .map((item) => {
@@ -233,7 +224,6 @@ function pageShell({ page, content, hasSocialImage }) {
         <div class="page-content">
 ${preparePageContent(page.slug, content)}
         </div>
-        <p class="last-updated">Last updated <time datetime="${page.modified}">${formatDate(page.modified)}</time></p>
       </article>`;
 
   return `<!doctype html>
@@ -245,7 +235,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=21">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=22">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -282,7 +272,7 @@ ${preparePageContent(page.slug, content)}
         <a href="https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=jorpago2">UV profile</a>
       </nav>
     </div>
-    <p>© ${new Date().getFullYear()} Jorge Parra${isHome ? ` · Last update: <time datetime="${page.modified}">${formatDate(page.modified)}</time>` : ""}</p>
+    <p>© ${new Date().getFullYear()} Jorge Parra</p>
   </footer>
   <script src="${SITE_BASE_PATH}/assets/site.js?v=3" defer></script>
 </body>

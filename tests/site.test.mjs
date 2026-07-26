@@ -36,6 +36,7 @@ test("all imported pages are built with metadata", async () => {
     assert.doesNotMatch(html, /jorpago2\.blogs\.uv\.es/);
     assert.doesNotMatch(html, /<script[^>]+src="https?:/i);
     assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=3" defer><\/script>/);
+    assert.doesNotMatch(html, /Last update:|Last updated|class="last-updated"/);
   }
 });
 
@@ -45,12 +46,11 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=21/);
+  assert.match(html, /assets\/style\.css\?v=22/);
   assert.match(html, /class="hub-link" href="https:\/\/jorpago2\.github\.io\/"/);
   assert.match(html, /class="home-updates"/);
   assert.doesNotMatch(html, /class="home-explore"/);
-  assert.match(html, /© \d{4} Jorge Parra · Last update: <time/);
-  assert.doesNotMatch(html.match(/<aside class="hero-carousel"[\s\S]*?<\/aside>/)?.[0] ?? "", /Last update:/);
+  assert.match(html, /© \d{4} Jorge Parra<\/p>/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
