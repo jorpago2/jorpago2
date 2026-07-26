@@ -483,16 +483,38 @@ main {
 }
 
 .resource-directory {
-  columns: 2;
-  column-gap: clamp(1.5rem, 4vw, 3rem);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas:
+    "learning fabrication"
+    "design fabrication"
+    "collections communication";
+  align-items: start;
+  gap: 1.75rem clamp(1.5rem, 4vw, 3rem);
 }
 
 .resource-group {
-  display: inline-block;
-  width: 100%;
-  margin: 0 0 1.75rem;
-  vertical-align: top;
-  break-inside: avoid;
+  margin: 0;
+}
+
+.resource-learning {
+  grid-area: learning;
+}
+
+.resource-design {
+  grid-area: design;
+}
+
+.resource-collections {
+  grid-area: collections;
+}
+
+.resource-fabrication {
+  grid-area: fabrication;
+}
+
+.resource-communication {
+  grid-area: communication;
 }
 
 .resource-group-heading {
@@ -1165,7 +1187,13 @@ th {
   }
 
   .resource-directory {
-    columns: 1;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "learning"
+      "design"
+      "collections"
+      "fabrication"
+      "communication";
   }
 
   .identity img {

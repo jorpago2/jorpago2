@@ -46,7 +46,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=31/);
+  assert.match(html, /assets\/style\.css\?v=32/);
   assert.match(html, /<summary>Resources<\/summary>[\s\S]*?<a href="\/jorpago2\/resources\/">Links<\/a>[\s\S]*?<a href="https:\/\/jorpago2\.github\.io\/">Simulators ↗<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
@@ -73,7 +73,8 @@ test("resources page uses a compact five-group directory", async () => {
   const html = await readFile(path.join(OUTPUT_ROOT, "resources", "index.html"), "utf8");
 
   assert.match(html, /class="resource-directory"/);
-  assert.equal((html.match(/class="resource-group"/g) ?? []).length, 5);
+  assert.equal((html.match(/class="resource-group /g) ?? []).length, 5);
+  assert.ok(html.indexOf("resources-collections") < html.indexOf("resources-fabrication"));
   assert.doesNotMatch(html, />Others</);
   assert.doesNotMatch(html, />https?:\/\//);
 });
