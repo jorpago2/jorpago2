@@ -1,0 +1,10 @@
+# Generated deployment bundle and temporary tool output.
+publish/
+node_modules/
+.vinext/
+.next/
+.wrangler/
+
+# Local environment files.
+.env*
+*.log

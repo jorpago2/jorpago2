@@ -1,0 +1,110 @@
+[
+  {
+    "id": 25,
+    "slug": "about-me",
+    "originalSlug": "about-me",
+    "title": "About me",
+    "description": "Jorge Parra is an Assistant Professor (2025) in the Electronics Department at the University of Valencia (UV). He received his PhD (2022, extraordinary prize), Master’s (2020), and Bachelor’s (2016) in Telecommunication Engineering from the Polytechnical University of Valencia (UPV). Since 2016, he has been involved in the design, simulation, and characterization of integrated photonic devices … Read more",
+    "modified": "2025-08-15T14:41:32",
+    "source": "https://jorpago2.blogs.uv.es/about-me/"
+  },
+  {
+    "id": 26,
+    "slug": "research",
+    "originalSlug": "research",
+    "title": "Research",
+    "description": "Next-gen photonic and electronic devices with advanced materials Collaborations Participation in projects",
+    "modified": "2025-08-25T12:00:18",
+    "source": "https://jorpago2.blogs.uv.es/research/"
+  },
+  {
+    "id": 27,
+    "slug": "theses",
+    "originalSlug": "theases",
+    "title": "Theses",
+    "description": "Doctoral TBC Master Bachelor",
+    "modified": "2025-08-14T16:53:13",
+    "source": "https://jorpago2.blogs.uv.es/theases/"
+  },
+  {
+    "id": 28,
+    "slug": "contact",
+    "originalSlug": "contact",
+    "title": "Contact",
+    "description": "You can contact me at: jorge [dot] parra [at] uv [dot] es (Apologies for the odd format; it’s to help prevent spam) BSc and MSc students If you are a Bachelor’s or Master’s student looking for a thesis project (TFG/TFM), feel free to reach out. I am happy to discuss potential topics and ideas with … Read more",
+    "modified": "2025-08-17T20:07:43",
+    "source": "https://jorpago2.blogs.uv.es/contact/"
+  },
+  {
+    "id": 37,
+    "slug": "",
+    "originalSlug": "main",
+    "title": "Homepage",
+    "description": "Welcome to the homepage of Dr. Jorge Parra, Assistant Professor in the Department of Electronic Engineering at the University of Valencia. 🔬🎓 Are you interested in doing research and getting a PhD? Read this first and consult the FAQ for prospective PhD students. 🔑👨‍🏫 Practical advice I try to follow to start my research career … Read more",
+    "modified": "2026-06-13T12:45:47",
+    "source": "https://jorpago2.blogs.uv.es/"
+  },
+  {
+    "id": 51,
+    "slug": "publications",
+    "originalSlug": "publications",
+    "title": "Publications",
+    "description": "Journal papers 2026 2025 2024 2023 2022 2021 2020 2019 2018",
+    "modified": "2026-05-02T19:18:30",
+    "source": "https://jorpago2.blogs.uv.es/publications/"
+  },
+  {
+    "id": 115,
+    "slug": "new-students",
+    "originalSlug": "new-students",
+    "title": "New students",
+    "description": "How do I know if I’m suited for scientific research? This is a common question I’ve heard from students. Unfortunately, there is no universal answer. Nonetheless, I like this speech on “Creative Thinking” by Claude Shannon. On March 20, 1952, he delivered a thought-provoking lecture at the Bell Labs offices as part of an internal … Read more",
+    "modified": "2025-08-25T18:18:55",
+    "source": "https://jorpago2.blogs.uv.es/new-students/"
+  },
+  {
+    "id": 122,
+    "slug": "resources",
+    "originalSlug": "resources",
+    "title": "Resources",
+    "description": "General Design and simulation Fabrication Characterization Dissemination Others",
+    "modified": "2025-09-25T12:19:09",
+    "source": "https://jorpago2.blogs.uv.es/resources/"
+  },
+  {
+    "id": 213,
+    "slug": "faq",
+    "originalSlug": "faq",
+    "title": "FAQ for prospective PhD students",
+    "description": "Disclaimer: these Q&A are just personal opinions based on my experience. Is pursuing a PhD really worth it? Will it help me obtain better job positions? People keep telling me it’s only useful if you want to become a university professor, and that’s not what I want to do. Every professor at a university has … Read more",
+    "modified": "2025-08-15T20:00:43",
+    "source": "https://jorpago2.blogs.uv.es/faq/"
+  },
+  {
+    "id": 290,
+    "slug": "teaching",
+    "originalSlug": "teaching",
+    "title": "Teaching",
+    "description": "Academic year 2025-2026 Course Teaching type Hours (Lec/Lab) Degree program Electronics Technology Lab 20 BSc in Industrial Electronic Engineering Electronic Circuits Lab 9 BSc in Telecommunications Electronic Engineering High-Frequency Circuits and Subsystems Lecture 25 BSc in Telecommunications Electronic Engineering Electronic and Photonic Devices Lab 59 BSc in Telecommunications Electronic Engineering& BSc in Telematics Engineering Analog … Read more",
+    "modified": "2026-06-13T12:51:08",
+    "source": "https://jorpago2.blogs.uv.es/teaching/"
+  },
+  {
+    "id": 440,
+    "slug": "career-strategy",
+    "originalSlug": "career-strategy",
+    "title": "Career Strategy",
+    "description": "Shaping a research career in Spain: 5 principles I follow as a young professor As a young professor in Spain beginning my research career, I’ve been reflecting on the key principles that can help me feel both comfortable and successful. I’ve identified five essential ones: 1. Selecting problems that matter and that motivate you One … Read more",
+    "modified": "2025-08-25T18:26:47",
+    "source": "https://jorpago2.blogs.uv.es/career-strategy/"
+  },
+  {
+    "id": 483,
+    "slug": "books",
+    "originalSlug": "books",
+    "title": "Books",
+    "description": "Teoría de circuitos eléctricos. Problemas resueltos Authors: Sanchis Kilders, Pablo Díaz Rubio, Ana Parra Gómez, Jorge ISBN: 978-84-1396-370-9 Ref.: 636 Language: Spanish",
+    "modified": "2025-11-09T18:59:08",
+    "source": "https://jorpago2.blogs.uv.es/books/"
+  }
+]
