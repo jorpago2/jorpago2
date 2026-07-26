@@ -309,7 +309,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=8">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=9">
   <meta name="theme-color" content="#173134">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -324,11 +324,12 @@ ${preparePageContent(page.slug, content)}
     <div class="header-inner">
       <a class="identity" href="${route()}" aria-label="Dr. Jorge Parra — homepage">
         <img src="${PROFILE_IMAGE_PATH}" alt="" width="52" height="52">
-        <span class="identity-copy"><strong>Dr. Jorge Parra</strong><small>Photonics · Electronic Engineering</small></span>
+        <span class="identity-copy"><strong>Jorge Parra</strong><small>Assistant Professor at University of Valencia · Photonics · Electronics</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
       <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
           ${navigationHtml(page.slug)}
+          <a class="hub-link" href="https://jorpago2.github.io/">Simulators <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
