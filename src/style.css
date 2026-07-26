@@ -316,7 +316,6 @@ main {
 .home-intro {
   display: grid;
   padding: clamp(1.5rem, 3.5vw, 3rem) 0;
-  border-bottom: 1px solid var(--line);
   background: transparent;
   grid-template-columns: minmax(0, 0.95fr) minmax(28rem, 1.05fr);
   align-items: center;
