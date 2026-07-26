@@ -472,21 +472,42 @@ main {
   font-size: clamp(1.2rem, 2vw, 1.45rem);
 }
 
-.information-list > p {
+.information-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.information-list > .information-entry {
   max-width: none;
   margin: 0;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid var(--line);
   line-height: 1.5;
 }
 
-.information-list > p:first-child {
-  padding-top: 0;
+.information-entry-label,
+.information-entry-title,
+.information-entry-description {
+  display: block;
 }
 
-.information-list > p:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
+.information-entry-label {
+  margin-bottom: 0.25rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.information-entry-title {
+  width: fit-content;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.information-entry-description {
+  margin-top: 0.25rem;
+  color: var(--muted);
 }
 
 .simulator-information {
