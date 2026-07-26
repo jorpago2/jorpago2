@@ -308,7 +308,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=16">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=17">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -345,7 +345,7 @@ ${preparePageContent(page.slug, content)}
         <a href="https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=jorpago2">UV profile</a>
       </nav>
     </div>
-    <p>© ${new Date().getFullYear()} Jorge Parra</p>
+    <p>© ${new Date().getFullYear()} Jorge Parra${isHome ? ` · Last update: <time datetime="${page.modified}">${formatDate(page.modified)}</time>` : ""}</p>
   </footer>
   <script src="${SITE_BASE_PATH}/assets/site.js?v=3" defer></script>
 </body>
@@ -360,6 +360,10 @@ function homeContent(content) {
   );
   let gallery = withoutHeading;
   for (const notice of notices) gallery = gallery.replace(notice, "");
+  gallery = gallery.replace(
+    /<div class="wp-block-group[^"]*">[\s\S]*?<p[^>]*>Last update:<\/p>[\s\S]*?<\/time><\/div><\/div>/i,
+    "",
+  );
 
   return `<article class="home-layout">
       <section class="home-intro" aria-labelledby="home-title">

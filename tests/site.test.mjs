@@ -45,10 +45,12 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=16/);
+  assert.match(html, /assets\/style\.css\?v=17/);
   assert.match(html, /class="hub-link" href="https:\/\/jorpago2\.github\.io\/"/);
   assert.match(html, /class="home-updates"/);
   assert.doesNotMatch(html, /class="home-explore"/);
+  assert.match(html, /© \d{4} Jorge Parra · Last update: <time/);
+  assert.doesNotMatch(html.match(/<aside class="hero-carousel"[\s\S]*?<\/aside>/)?.[0] ?? "", /Last update:/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
@@ -72,6 +74,8 @@ test("carousels use their original proportions and compact mobile controls", asy
 
   assert.match(script, /--carousel-aspect/);
   assert.match(css, /aspect-ratio: var\(--carousel-aspect/);
+  assert.match(css, /\.metaslider\.carousel-ready \.slides li \{[\s\S]*?opacity: 0;[\s\S]*?transition: opacity 0\.8s ease/);
+  assert.match(css, /\.hero-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
   assert.match(css, /\.carousel-dots \{\s*display: none;/);
   assert.match(css, /\.carousel-status \{[\s\S]*position: static;/);
 });

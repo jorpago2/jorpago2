@@ -313,7 +313,7 @@ main {
   padding: clamp(1.5rem, 3.5vw, 3rem) 0;
   border-bottom: 1px solid var(--line);
   background: transparent;
-  grid-template-columns: minmax(0, 1.25fr) minmax(22rem, 0.75fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(28rem, 1.05fr);
   align-items: center;
   gap: clamp(2rem, 5vw, 4rem);
 }
@@ -349,13 +349,49 @@ main {
 }
 
 .hero-carousel {
-  width: min(100%, 24rem);
+  width: 100%;
   min-width: 0;
   justify-self: end;
 }
 
 .hero-carousel .metaslider {
   margin: 0;
+}
+
+.hero-carousel .carousel-controls {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  min-height: 0;
+  padding: 0.75rem;
+  border: 0;
+  background: transparent;
+  justify-content: space-between;
+}
+
+.hero-carousel .carousel-arrow,
+.hero-carousel .carousel-dots,
+.hero-carousel .carousel-status {
+  box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 22%);
+}
+
+.hero-carousel .carousel-arrow {
+  background: rgb(20 23 19 / 72%);
+  backdrop-filter: blur(0.35rem);
+}
+
+.hero-carousel .carousel-dots {
+  align-self: flex-end;
+  background: rgb(20 23 19 / 68%);
+  backdrop-filter: blur(0.35rem);
+}
+
+.hero-carousel .carousel-dots button {
+  border-color: var(--white);
+}
+
+.hero-carousel .carousel-dots button[aria-current="true"] {
+  background: var(--white);
 }
 
 .hero-carousel > .wp-block-group {
@@ -554,11 +590,19 @@ figcaption {
 }
 
 .metaslider.carousel-ready .slides li {
-  display: none !important;
+  position: absolute;
+  inset: 0;
+  display: block !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0s linear 0.8s;
 }
 
 .metaslider.carousel-ready .slides li.is-active {
   display: block !important;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .metaslider .slides img {
@@ -926,7 +970,7 @@ th {
   }
 
   .hero-carousel {
-    max-width: 20rem;
+    max-width: 23rem;
     justify-self: center;
   }
 
@@ -1020,7 +1064,7 @@ th {
 
   .hero-carousel {
     width: 100%;
-    max-width: 24rem;
+    max-width: none;
     margin-inline: auto;
   }
 
@@ -1061,6 +1105,16 @@ th {
     text-align: center;
     white-space: normal;
   }
+
+  .hero-carousel .carousel-status {
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    align-self: flex-end;
+    background: rgb(20 23 19 / 68%);
+    color: var(--white);
+    font-size: 0.78rem;
+    backdrop-filter: blur(0.35rem);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1071,6 +1125,10 @@ th {
   body::before,
   body::after {
     animation: none;
+  }
+
+  .metaslider.carousel-ready .slides li {
+    transition: none;
   }
 }
 
