@@ -46,7 +46,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=37/);
+  assert.match(html, /assets\/style\.css\?v=38/);
   assert.match(html, /<summary>Resources<\/summary>[\s\S]*?<a href="\/jorpago2\/resources\/">Links<\/a>[\s\S]*?<a href="https:\/\/jorpago2\.github\.io\/">Simulators ↗<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
@@ -72,6 +72,16 @@ test("contact page highlights email, student projects and office location", asyn
   assert.equal((html.match(/<li>\s*<strong>[^<]+<\/strong>\s*<span>[^<]+<\/span>\s*<\/li>/g) ?? []).length, 5);
   assert.match(html, /class="contact-location"/);
   assert.match(html, /class="contact-map" href="https:\/\/maps\.app\.goo\.gl\/LvbvRk8MteuCgczDA"/);
+});
+
+test("new students page presents compact research guidance", async () => {
+  const html = await readFile(path.join(OUTPUT_ROOT, "new-students", "index.html"), "utf8");
+
+  assert.match(html, /class="student-orientation"/);
+  assert.equal((html.match(/<li>\s*<strong>[^<]+<\/strong>/g) ?? []).length, 4);
+  assert.match(html, /Claude Shannon,[\s\S]*?“Creative Thinking” \(1952\)/);
+  assert.match(html, /href="\/jorpago2\/contact\/#student-projects-title"/);
+  assert.doesNotMatch(html, />this<\/a>/);
 });
 
 test("resources page uses a compact five-group directory", async () => {

@@ -749,6 +749,101 @@ main {
   color: #394957;
 }
 
+.page-new-students .page-content {
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.student-orientation-intro h2,
+.research-habits h3,
+.student-next-step h3 {
+  margin-top: 0;
+}
+
+.student-orientation-intro h2 {
+  max-width: 18ch;
+  margin-bottom: 1rem;
+}
+
+.student-lead {
+  color: var(--navy-soft);
+  font-size: 1.12rem;
+}
+
+.research-habits {
+  margin-top: 2.5rem;
+}
+
+.research-habits h3 {
+  margin-bottom: 0.35rem;
+}
+
+.research-habits-note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.research-habit-grid {
+  display: grid;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  list-style-position: inside;
+}
+
+.research-habit-grid li {
+  max-width: none;
+  margin: 0;
+  padding: 1rem 0 0;
+  border-top: 2px solid var(--lime);
+}
+
+.research-habit-grid strong {
+  margin-left: 0.2rem;
+}
+
+.research-habit-grid p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.student-quote {
+  margin: 2.5rem 0;
+}
+
+.student-quote blockquote {
+  margin: 0;
+}
+
+.student-quote figcaption {
+  margin-left: 1.25rem;
+}
+
+.student-next-step {
+  display: grid;
+  padding: 1.5rem;
+  border-top: 2px solid var(--lime);
+  background: rgb(246 247 243 / 58%);
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 1.5rem;
+}
+
+.student-next-step h3 {
+  margin-bottom: 0.5rem;
+}
+
+.student-next-step p {
+  margin: 0;
+}
+
+.student-next-step-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 .wp-block-columns {
   display: grid;
   margin-block: 1.5rem;
@@ -1257,6 +1352,11 @@ th {
   .contact-students {
     grid-template-columns: 1fr;
     gap: 1.25rem;
+  }
+
+  .research-habit-grid,
+  .student-next-step {
+    grid-template-columns: 1fr;
   }
 
   .about-biography .wp-block-media-text {
