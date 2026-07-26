@@ -308,7 +308,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=15">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=16">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -380,14 +380,6 @@ ${removeSpacers(gallery)}
         <div class="section-heading"><p class="eyebrow">Information</p><h2 id="updates-title">For students and early-career researchers</h2></div>
         <div class="update-grid">
           ${notices.join("\n          ")}
-        </div>
-      </section>
-      <section class="home-explore" aria-labelledby="explore-title">
-        <div class="section-heading"><p class="eyebrow">Sections</p><h2 id="explore-title">Academic activity</h2></div>
-        <div class="explore-grid">
-          <a href="${route("about-me")}"><span>Biography</span><strong>About me</strong><small>Career, education and awards</small></a>
-          <a href="${route("research")}"><span>Projects</span><strong>Research</strong><small>Research areas, collaborations and publications</small></a>
-          <a href="${route("teaching")}"><span>Courses</span><strong>Teaching</strong><small>Teaching, books and resources</small></a>
         </div>
       </section>
     </article>`;

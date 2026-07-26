@@ -412,8 +412,7 @@ main {
   margin: 0;
 }
 
-.home-updates,
-.home-explore {
+.home-updates {
   padding: clamp(2rem, 4vw, 3.25rem) 0;
   border-bottom: 1px solid var(--line);
   background: transparent;
@@ -432,51 +431,6 @@ main {
   padding: 0.4rem 1.4rem;
   border-left: 5px solid var(--lime);
   background: transparent;
-}
-
-.explore-grid {
-  display: grid;
-  margin-top: 1.5rem;
-  grid-template-columns: 1fr;
-  gap: 0;
-}
-
-.explore-grid a {
-  display: grid;
-  min-height: auto;
-  padding: 0.85rem 0;
-  border-top: 1px solid var(--line);
-  color: var(--navy);
-  grid-template-columns: 7rem minmax(10rem, 0.6fr) 1fr auto;
-  align-items: baseline;
-  gap: 1rem;
-  text-decoration: none;
-}
-
-.explore-grid a::after {
-  color: var(--accent);
-  content: "↗";
-  font-size: 1.2rem;
-}
-
-.explore-grid a:hover {
-  background: var(--accent-soft);
-}
-
-.explore-grid span {
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 800;
-}
-
-.explore-grid strong {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.explore-grid small {
-  color: var(--muted);
 }
 
 .page-heading {
@@ -976,10 +930,6 @@ th {
     justify-self: center;
   }
 
-  .explore-grid {
-    grid-template-columns: 1fr;
-  }
-
   .wp-block-media-text {
     grid-template-columns: minmax(10rem, 0.4fr) 1fr;
   }
@@ -1053,7 +1003,6 @@ th {
 
   .home-intro,
   .home-updates,
-  .home-explore,
   .page-heading,
   .page-content {
     border-right: 0;
@@ -1073,20 +1022,6 @@ th {
     width: 100%;
     max-width: 24rem;
     margin-inline: auto;
-  }
-
-  .explore-grid a {
-    grid-template-columns: 5rem 1fr auto;
-    gap: 0.7rem;
-  }
-
-  .explore-grid small {
-    grid-column: 2;
-  }
-
-  .explore-grid a::after {
-    grid-row: 1 / 3;
-    grid-column: 3;
   }
 
   .update-grid {
