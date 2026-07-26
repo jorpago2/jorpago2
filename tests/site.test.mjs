@@ -44,6 +44,7 @@ test("homepage keeps the blog hierarchy and a five-image carousel", async () => 
 
   assert.match(html, /<article class="home-content">/);
   assert.doesNotMatch(html, /class="hero"/);
+  assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
 });

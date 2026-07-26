@@ -6,6 +6,7 @@ const SITE_ORIGIN = "https://www.uv.es";
 const OUTPUT_ROOT = path.resolve("publish", "jorpago2");
 const CONTENT_ROOT = path.resolve("content");
 const LOGO_PATH = `${SITE_BASE_PATH}/assets/media/2025/07/cropped-ChatGPT-Image-13-jul-2025-19_12_48-1.png`;
+const PROFILE_IMAGE_PATH = `${SITE_BASE_PATH}/assets/github-profile.jpg`;
 
 const navigation = [
   { label: "About me", slug: "about-me" },
@@ -154,7 +155,7 @@ ${content}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=3">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=4">
   <meta name="theme-color" content="#0b1f33">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -168,7 +169,7 @@ ${content}
   <header class="site-header">
     <div class="header-inner">
       <a class="identity" href="${route()}" aria-label="Dr. Jorge Parra — homepage">
-        <img src="${LOGO_PATH}" alt="" width="52" height="52">
+        <img src="${PROFILE_IMAGE_PATH}" alt="" width="52" height="52">
         <span>Dr. Jorge Parra</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
@@ -237,6 +238,7 @@ async function main() {
   });
   await cp(path.resolve("src", "style.css"), path.join(OUTPUT_ROOT, "assets", "style.css"));
   await cp(path.resolve("src", "site.js"), path.join(OUTPUT_ROOT, "assets", "site.js"));
+  await cp(path.join(CONTENT_ROOT, "github-profile.jpg"), path.join(OUTPUT_ROOT, "assets", "github-profile.jpg"));
   if (hasSocialImage) await cp(socialImagePath, path.join(OUTPUT_ROOT, "assets", "og.png"));
 
   for (const page of pages) {

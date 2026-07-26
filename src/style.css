@@ -139,7 +139,9 @@ li {
 .identity img {
   width: 3.1rem;
   height: 3.1rem;
-  border-radius: 0.1rem;
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .menu-toggle {
