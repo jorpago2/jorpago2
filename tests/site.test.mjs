@@ -34,8 +34,18 @@ test("all imported pages are built with metadata", async () => {
     assert.match(html, /<meta name="description" content="[^"]+">/);
     assert.match(html, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\//);
     assert.doesNotMatch(html, /jorpago2\.blogs\.uv\.es/);
-    assert.doesNotMatch(html, /<script[^>]+src=/i);
+    assert.doesNotMatch(html, /<script[^>]+src="https?:/i);
+    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js" defer><\/script>/);
   }
+});
+
+test("homepage keeps the blog hierarchy and a five-image carousel", async () => {
+  const html = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
+
+  assert.match(html, /<article class="home-content">/);
+  assert.doesNotMatch(html, /class="hero"/);
+  assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
+  assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
 });
 
 test("local links and assets resolve", async () => {

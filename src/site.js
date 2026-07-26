@@ -1,0 +1,88 @@
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".primary-nav");
+
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!isOpen));
+    navigation.classList.toggle("is-open", !isOpen);
+  });
+}
+
+document.querySelectorAll(".metaslider").forEach((carousel) => {
+  const slides = [...carousel.querySelectorAll(".slides > li")];
+  if (slides.length < 2) return;
+
+  let currentSlide = 0;
+  let timer;
+  const controls = document.createElement("div");
+  const dots = document.createElement("div");
+  const status = document.createElement("p");
+  const previousButton = document.createElement("button");
+  const nextButton = document.createElement("button");
+
+  carousel.classList.add("carousel-ready");
+  carousel.setAttribute("aria-roledescription", "carousel");
+  controls.className = "carousel-controls";
+  dots.className = "carousel-dots";
+  status.className = "visually-hidden";
+  status.setAttribute("aria-live", "polite");
+  previousButton.type = "button";
+  previousButton.className = "carousel-arrow";
+  previousButton.setAttribute("aria-label", "Previous image");
+  previousButton.textContent = "‹";
+  nextButton.type = "button";
+  nextButton.className = "carousel-arrow";
+  nextButton.setAttribute("aria-label", "Next image");
+  nextButton.textContent = "›";
+
+  const dotButtons = slides.map((slide, index) => {
+    slide.removeAttribute("style");
+    slide.setAttribute("aria-label", `${index + 1} of ${slides.length}`);
+    const button = document.createElement("button");
+    button.type = "button";
+    button.setAttribute("aria-label", `Show image ${index + 1} of ${slides.length}`);
+    button.addEventListener("click", () => showSlide(index));
+    dots.append(button);
+    return button;
+  });
+
+  function showSlide(index) {
+    currentSlide = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      const isActive = slideIndex === currentSlide;
+      slide.classList.toggle("is-active", isActive);
+      slide.setAttribute("aria-hidden", String(!isActive));
+    });
+    dotButtons.forEach((button, buttonIndex) => {
+      button.setAttribute("aria-current", buttonIndex === currentSlide ? "true" : "false");
+    });
+    status.textContent = `Image ${currentSlide + 1} of ${slides.length}`;
+  }
+
+  function stopAutoplay() {
+    clearInterval(timer);
+  }
+
+  function startAutoplay() {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    stopAutoplay();
+    timer = setInterval(() => showSlide(currentSlide + 1), 6000);
+  }
+
+  previousButton.addEventListener("click", () => showSlide(currentSlide - 1));
+  nextButton.addEventListener("click", () => showSlide(currentSlide + 1));
+  carousel.addEventListener("mouseenter", stopAutoplay);
+  carousel.addEventListener("mouseleave", startAutoplay);
+  carousel.addEventListener("focusin", stopAutoplay);
+  carousel.addEventListener("focusout", startAutoplay);
+  carousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") showSlide(currentSlide - 1);
+    if (event.key === "ArrowRight") showSlide(currentSlide + 1);
+  });
+
+  controls.append(previousButton, dots, nextButton);
+  carousel.append(controls, status);
+  showSlide(0);
+  startAutoplay();
+});
