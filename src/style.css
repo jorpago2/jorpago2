@@ -316,13 +316,17 @@ figcaption {
 }
 
 .metaslider .slides {
+  position: relative;
+  aspect-ratio: var(--carousel-aspect, 7 / 4);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .metaslider .slides li {
+  position: relative;
   width: 100% !important;
+  height: 100%;
   max-width: none;
   margin: 0 !important;
 }
@@ -336,26 +340,45 @@ figcaption {
 }
 
 .metaslider .slides img {
-  width: 100%;
-  height: clamp(21rem, 52vw, 39rem);
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  object-fit: contain;
+}
+
+.metaslider-69 .slides img {
   object-fit: cover;
 }
 
-.carousel-controls {
+.caption-wrap {
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  left: 1rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem 1rem 0.7rem;
+  background: linear-gradient(transparent, rgb(11 31 51 / 82%));
+  color: var(--white);
+  font-size: 0.88rem;
+}
+
+.caption-wrap p {
+  margin: 0;
+}
+
+.carousel-controls {
   display: flex;
+  min-height: 3.5rem;
+  padding: 0.5rem;
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  border-top: 1px solid var(--line);
+  background: var(--white);
 }
 
 .carousel-arrow,
 .carousel-dots button {
   border: 0;
-  color: var(--white);
   cursor: pointer;
 }
 
@@ -366,7 +389,8 @@ figcaption {
   padding: 0;
   border-radius: 50%;
   place-items: center;
-  background: rgb(11 31 51 / 78%);
+  background: var(--navy);
+  color: var(--white);
   font-size: 1.8rem;
   line-height: 1;
 }
@@ -376,20 +400,30 @@ figcaption {
   padding: 0.55rem 0.7rem;
   border-radius: 999px;
   gap: 0.45rem;
-  background: rgb(11 31 51 / 70%);
+  background: #e8ecef;
 }
 
 .carousel-dots button {
   width: 0.7rem;
   height: 0.7rem;
   padding: 0;
-  border: 2px solid var(--white);
+  border: 2px solid var(--navy);
   border-radius: 50%;
   background: transparent;
 }
 
 .carousel-dots button[aria-current="true"] {
-  background: var(--white);
+  background: var(--navy);
+}
+
+.carousel-status {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 table,
@@ -558,14 +592,21 @@ th {
     padding: 1rem;
   }
 
-  .metaslider .slides img {
-    height: 21rem;
+  .carousel-dots {
+    display: none;
   }
 
-  .carousel-controls {
-    right: 0.5rem;
-    bottom: 0.5rem;
-    left: 0.5rem;
+  .carousel-status {
+    position: static;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    min-width: 5rem;
+    margin: 0;
+    clip: auto;
+    color: var(--muted);
+    text-align: center;
+    white-space: normal;
   }
 }
 

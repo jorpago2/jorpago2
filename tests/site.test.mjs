@@ -35,7 +35,7 @@ test("all imported pages are built with metadata", async () => {
     assert.match(html, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\//);
     assert.doesNotMatch(html, /jorpago2\.blogs\.uv\.es/);
     assert.doesNotMatch(html, /<script[^>]+src="https?:/i);
-    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=2" defer><\/script>/);
+    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=3" defer><\/script>/);
   }
 });
 
@@ -46,6 +46,16 @@ test("homepage keeps the blog hierarchy and a five-image carousel", async () => 
   assert.doesNotMatch(html, /class="hero"/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
+});
+
+test("carousels use their original proportions and compact mobile controls", async () => {
+  const script = await readFile(path.resolve("src", "site.js"), "utf8");
+  const css = await readFile(path.resolve("src", "style.css"), "utf8");
+
+  assert.match(script, /--carousel-aspect/);
+  assert.match(css, /aspect-ratio: var\(--carousel-aspect/);
+  assert.match(css, /\.carousel-dots \{\s*display: none;/);
+  assert.match(css, /\.carousel-status \{[\s\S]*position: static;/);
 });
 
 test("local links and assets resolve", async () => {

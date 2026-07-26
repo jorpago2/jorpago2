@@ -20,12 +20,17 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   const status = document.createElement("p");
   const previousButton = document.createElement("button");
   const nextButton = document.createElement("button");
+  const carouselWidth = Number(carousel.dataset.width);
+  const carouselHeight = Number(carousel.dataset.height);
 
   carousel.classList.add("carousel-ready");
   carousel.setAttribute("aria-roledescription", "carousel");
+  if (carouselWidth > 0 && carouselHeight > 0) {
+    carousel.style.setProperty("--carousel-aspect", `${carouselWidth} / ${carouselHeight}`);
+  }
   controls.className = "carousel-controls";
   dots.className = "carousel-dots";
-  status.className = "visually-hidden";
+  status.className = "carousel-status";
   status.setAttribute("aria-live", "polite");
   previousButton.type = "button";
   previousButton.className = "carousel-arrow";
@@ -81,8 +86,8 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
     if (event.key === "ArrowRight") showSlide(currentSlide + 1);
   });
 
-  controls.append(previousButton, dots, nextButton);
-  carousel.append(controls, status);
+  controls.append(previousButton, dots, status, nextButton);
+  carousel.append(controls);
   showSlide(0);
   startAutoplay();
 });
