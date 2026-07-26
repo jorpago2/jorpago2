@@ -10,30 +10,17 @@ const PROFILE_IMAGE_PATH = `${SITE_BASE_PATH}/assets/github-profile.jpg`;
 
 const navigation = [
   { label: "About me", slug: "about-me" },
-  {
-    label: "Research",
-    children: [
-      ["Overview", "research"],
-      ["Publications", "publications"],
-    ],
-  },
-  {
-    label: "Teaching",
-    children: [
-      ["Courses", "teaching"],
-      ["Books", "books"],
-      ["Theses", "theses"],
-    ],
-  },
-  {
-    label: "Resources",
-    children: [
-      ["Links", "resources"],
-      ["Simulators ↗", "https://jorpago2.github.io/"],
-    ],
-  },
+  { label: "Research", slug: "research" },
+  { label: "Teaching", slug: "teaching" },
+  { label: "Resources", slug: "resources" },
   { label: "Contact", slug: "contact" },
 ];
+
+const mergedRoutes = {
+  publications: { target: "research", anchor: "publications" },
+  books: { target: "teaching", anchor: "books" },
+  theses: { target: "teaching", anchor: "theses" },
+};
 
 function escapeHtml(value) {
   return value
@@ -88,6 +75,25 @@ function addHeadingIds(content) {
 
 function removeSpacers(content) {
   return content.replace(/<div[^>]*class="[^"]*wp-block-spacer[^"]*"[^>]*><\/div>/gi, "");
+}
+
+function shiftHeadings(content, levels) {
+  return content.replace(/<(\/?)h([234])(\b[^>]*)>/gi, (match, closing, level, attributes) => {
+    const shiftedLevel = levels[Number(level)];
+    return shiftedLevel ? `<${closing}h${shiftedLevel}${attributes}>` : match;
+  });
+}
+
+function collapsePublicationYears(content) {
+  let firstYear = true;
+  return content.replace(
+    /<h3\b[^>]*>(20\d{2})<\/h3>\s*(<ol\b[\s\S]*?<\/ol>)/gi,
+    (match, year, publications) => {
+      const open = firstYear ? " open" : "";
+      firstYear = false;
+      return `<details class="publication-year wp-block-details" name="publication-years"${open}><summary>${year}</summary>${publications}</details>`;
+    },
+  );
 }
 
 function preparePageContent(slug, sourceContent) {
@@ -153,29 +159,83 @@ ${remainder}`;
   return addHeadingIds(removeSpacers(content));
 }
 
+function onlineToolsContent() {
+  return `<section class="merged-section merged-section-tools" id="online-tools" aria-labelledby="online-tools-title">
+<header class="merged-section-heading">
+  <p class="eyebrow">Interactive learning</p>
+  <h2 id="online-tools-title">Online simulators and tools</h2>
+  <p>Browser-based numerical models for exploring physical behaviour, inspecting results and building intuition.</p>
+</header>
+<div class="online-tool-grid">
+  <a class="online-tool-card" href="https://jorpago2.github.io/fdtd-2d-simulator/">
+    <span class="online-tool-number">01</span>
+    <strong>Electromagnetic Wave Simulator</strong>
+    <span>Explore propagation, interference, resonators, waveguides and advanced optical materials through more than 100 interactive scenes.</span>
+    <span class="online-tool-action">Open simulator ↗</span>
+  </a>
+  <a class="online-tool-card" href="https://jorpago2.github.io/drift-difussion-simulator/">
+    <span class="online-tool-number">02</span>
+    <strong>Semiconductor Device Simulator</strong>
+    <span>Solve a silicon PN junction with Poisson and carrier-continuity equations, then inspect fields, bands, currents and convergence.</span>
+    <span class="online-tool-action">Open simulator ↗</span>
+  </a>
+</div>
+<p class="online-tools-hub"><a class="button" href="https://jorpago2.github.io/">Visit the simulator hub ↗</a></p>
+</section>`;
+}
+
+function prepareSitePageContent(slug, fragments) {
+  if (slug === "research") {
+    const overview = shiftHeadings(preparePageContent("research", fragments.get("research")), { 2: 3 });
+    const publications = shiftHeadings(
+      collapsePublicationYears(preparePageContent("publications", fragments.get("publications"))),
+      { 2: 3 },
+    );
+    return `<section class="merged-section merged-section-first" id="overview" aria-labelledby="research-overview-title">
+<h2 class="merged-section-title visually-hidden" id="research-overview-title">Research overview</h2>
+${overview}
+</section>
+<section class="merged-section merged-section-publications" id="publications" aria-labelledby="publications-title">
+<h2 class="merged-section-title" id="publications-title">Publications</h2>
+${publications}
+</section>`;
+  }
+
+  if (slug === "teaching") {
+    const courses = shiftHeadings(preparePageContent("teaching", fragments.get("teaching")), { 2: 3 });
+    const books = shiftHeadings(preparePageContent("books", fragments.get("books")), { 2: 3 });
+    const theses = preparePageContent("theses", fragments.get("theses"));
+    return `<section class="merged-section merged-section-first" id="courses" aria-labelledby="courses-title">
+<h2 class="merged-section-title" id="courses-title">Courses</h2>
+${courses}
+</section>
+<section class="merged-section merged-section-books" id="books" aria-labelledby="books-title">
+<h2 class="merged-section-title" id="books-title">Books and teaching materials</h2>
+${books}
+</section>
+<section class="merged-section merged-section-theses" id="theses" aria-labelledby="theses-title">
+<h2 class="merged-section-title" id="theses-title">Supervised theses</h2>
+${theses}
+</section>`;
+  }
+
+  if (slug === "resources") {
+    const links = shiftHeadings(preparePageContent("resources", fragments.get("resources")), { 2: 3 });
+    return `<section class="merged-section merged-section-first merged-section-links" id="links" aria-labelledby="resources-links-title">
+<h2 class="merged-section-title" id="resources-links-title">Links and references</h2>
+${links}
+</section>
+${onlineToolsContent()}`;
+  }
+
+  return preparePageContent(slug, fragments.get(slug));
+}
+
 function navigationHtml(activeSlug) {
   return navigation
     .map((item) => {
-      if (item.slug) {
-        const current = activeSlug === item.slug ? ' aria-current="page"' : "";
-        return `<a href="${route(item.slug)}"${current}>${item.label}</a>`;
-      }
-
-      const groupIsCurrent = item.children.some(([, slug]) => slug === activeSlug);
-      const links = item.children
-        .map(([label, slug]) => {
-          const current = activeSlug === slug ? ' aria-current="page"' : "";
-          const href = slug.startsWith("https://") ? slug : route(slug);
-          return `<a href="${href}"${current}>${label}</a>`;
-        })
-        .join("\n              ");
-
-      return `<details class="nav-group" name="primary-navigation"${groupIsCurrent ? ' data-current="true"' : ""}>
-            <summary>${item.label}</summary>
-            <div class="nav-submenu">
-              ${links}
-            </div>
-          </details>`;
+      const current = activeSlug === item.slug ? ' aria-current="page"' : "";
+      return `<a href="${route(item.slug)}"${current}>${item.label}</a>`;
     })
     .join("\n          ");
 }
@@ -229,7 +289,7 @@ function pageShell({ page, content, hasSocialImage }) {
     : `<article class="page-layout page-${page.slug}">
         <h1 class="visually-hidden">${escapeHtml(page.title)}</h1>
         <div class="page-content">
-${preparePageContent(page.slug, content)}
+${content}
         </div>
       </article>`;
 
@@ -242,7 +302,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=41">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=42">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -346,6 +406,22 @@ function notFoundPage(hasSocialImage) {
   return pageShell({ page, content, hasSocialImage });
 }
 
+function redirectPage(page, destination) {
+  const target = `${route(destination.target)}#${destination.anchor}`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${escapeHtml(page.title)} | Dr. Jorge Parra</title>
+  <meta name="description" content="${escapeHtml(conciseDescription(page.description))}">
+  <link rel="canonical" href="${canonicalUrl(destination.target)}">
+  <meta http-equiv="refresh" content="0; url=${target}">
+</head>
+<body><p>This content moved to <a href="${target}">${escapeHtml(page.title)}</a>.</p></body>
+</html>\n`;
+}
+
 async function fileExists(filePath) {
   try {
     await access(filePath);
@@ -357,6 +433,15 @@ async function fileExists(filePath) {
 
 async function main() {
   const pages = JSON.parse(await readFile(path.join(CONTENT_ROOT, "pages.json"), "utf8"));
+  const fragments = new Map(
+    await Promise.all(
+      pages.map(async (page) => {
+        const fragmentName = page.slug || "home";
+        const content = await readFile(path.join(CONTENT_ROOT, "pages", `${fragmentName}.html`), "utf8");
+        return [page.slug, content];
+      }),
+    ),
+  );
   const socialImagePath = path.join(CONTENT_ROOT, "og.png");
   const hasSocialImage = await fileExists(socialImagePath);
 
@@ -371,13 +456,13 @@ async function main() {
   if (hasSocialImage) await cp(socialImagePath, path.join(OUTPUT_ROOT, "assets", "og.png"));
 
   for (const page of pages) {
-    const fragmentName = page.slug || "home";
-    const content = await readFile(path.join(CONTENT_ROOT, "pages", `${fragmentName}.html`), "utf8");
     const outputDirectory = page.slug ? path.join(OUTPUT_ROOT, page.slug) : OUTPUT_ROOT;
     await mkdir(outputDirectory, { recursive: true });
+    const redirect = mergedRoutes[page.slug];
+    const content = page.slug ? prepareSitePageContent(page.slug, fragments) : fragments.get("");
     await writeFile(
       path.join(outputDirectory, "index.html"),
-      pageShell({ page, content, hasSocialImage }),
+      redirect ? redirectPage(page, redirect) : pageShell({ page, content, hasSocialImage }),
       "utf8",
     );
   }
@@ -386,11 +471,12 @@ async function main() {
   await mkdir(oldThesesRoute, { recursive: true });
   await writeFile(
     path.join(oldThesesRoute, "index.html"),
-    `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Theses | Dr. Jorge Parra</title><link rel="canonical" href="${canonicalUrl("theses")}"><meta http-equiv="refresh" content="0; url=${route("theses")}"></head><body><p>This page moved to <a href="${route("theses")}">Theses</a>.</p></body></html>\n`,
+    redirectPage({ title: "Theses", description: "Supervised theses." }, mergedRoutes.theses),
     "utf8",
   );
 
   const sitemap = pages
+    .filter((page) => !mergedRoutes[page.slug])
     .map(
       (page) =>
         `  <url><loc>${canonicalUrl(page.slug)}</loc><lastmod>${page.modified.slice(0, 10)}</lastmod></url>`,
@@ -409,11 +495,11 @@ async function main() {
   await writeFile(path.join(OUTPUT_ROOT, "404.html"), notFoundPage(hasSocialImage), "utf8");
   await writeFile(
     path.join(OUTPUT_ROOT, ".htaccess"),
-    `Options -Indexes\nDirectoryIndex index.html\nErrorDocument 404 ${SITE_BASE_PATH}/404.html\nRedirect 301 ${SITE_BASE_PATH}/theases/ ${SITE_BASE_PATH}/theses/\n`,
+    `Options -Indexes\nDirectoryIndex index.html\nErrorDocument 404 ${SITE_BASE_PATH}/404.html\nRedirect 301 ${SITE_BASE_PATH}/publications/ ${SITE_BASE_PATH}/research/#publications\nRedirect 301 ${SITE_BASE_PATH}/books/ ${SITE_BASE_PATH}/teaching/#books\nRedirect 301 ${SITE_BASE_PATH}/theses/ ${SITE_BASE_PATH}/teaching/#theses\nRedirect 301 ${SITE_BASE_PATH}/theases/ ${SITE_BASE_PATH}/teaching/#theses\n`,
     "utf8",
   );
 
-  console.log(`Built ${pages.length} pages in ${OUTPUT_ROOT}.`);
+  console.log(`Built ${pages.length - Object.keys(mergedRoutes).length} pages and ${Object.keys(mergedRoutes).length + 1} redirects in ${OUTPUT_ROOT}.`);
 }
 
 await main();

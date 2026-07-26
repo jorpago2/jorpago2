@@ -6,6 +6,11 @@ import test from "node:test";
 const SITE_BASE_PATH = "/jorpago2";
 const OUTPUT_ROOT = path.resolve("publish", "jorpago2");
 const pages = JSON.parse(await readFile(path.resolve("content", "pages.json"), "utf8"));
+const mergedRoutes = {
+  publications: "/jorpago2/research/#publications",
+  books: "/jorpago2/teaching/#books",
+  theses: "/jorpago2/teaching/#theses",
+};
 
 async function exists(filePath) {
   try {
@@ -35,6 +40,11 @@ test("all imported pages are built with metadata", async () => {
     assert.match(html, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\//);
     assert.doesNotMatch(html, /jorpago2\.blogs\.uv\.es/);
     assert.doesNotMatch(html, /<script[^>]+src="https?:/i);
+    if (mergedRoutes[page.slug]) {
+      assert.match(html, new RegExp(`http-equiv="refresh" content="0; url=${mergedRoutes[page.slug]}`));
+      assert.doesNotMatch(html, /assets\/site\.js/);
+      continue;
+    }
     assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=3" defer><\/script>/);
     assert.doesNotMatch(html, /Last update:|Last updated|class="last-updated"/);
   }
@@ -46,8 +56,10 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=41/);
-  assert.match(html, /<summary>Resources<\/summary>[\s\S]*?<a href="\/jorpago2\/resources\/">Links<\/a>[\s\S]*?<a href="https:\/\/jorpago2\.github\.io\/">Simulators ↗<\/a>/);
+  assert.match(html, /assets\/style\.css\?v=42/);
+  assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
+  assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
+  assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
   assert.match(html, /<h2 class="visually-hidden" id="updates-title">Information<\/h2>/);
@@ -63,7 +75,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
-  assert.equal((html.match(/<details class="nav-group" name="primary-navigation"/g) ?? []).length, 3);
+  assert.doesNotMatch(html, /class="nav-group"|class="nav-submenu"/);
 });
 
 test("contact page highlights email, student projects and office location", async () => {
@@ -118,6 +130,22 @@ test("resources page uses a compact five-group directory", async () => {
   assert.ok(html.indexOf("resources-collections") < html.indexOf("resources-fabrication"));
   assert.doesNotMatch(html, />Others</);
   assert.doesNotMatch(html, />https?:\/\//);
+  assert.equal((html.match(/class="online-tool-card"/g) ?? []).length, 2);
+  assert.match(html, /href="https:\/\/jorpago2\.github\.io\/fdtd-2d-simulator\/"/);
+  assert.match(html, /href="https:\/\/jorpago2\.github\.io\/drift-difussion-simulator\/"/);
+});
+
+test("research and teaching consolidate their former child pages", async () => {
+  const research = await readFile(path.join(OUTPUT_ROOT, "research", "index.html"), "utf8");
+  const teaching = await readFile(path.join(OUTPUT_ROOT, "teaching", "index.html"), "utf8");
+
+  assert.match(research, /id="overview"[\s\S]*?id="publications"/);
+  assert.equal((research.match(/<details class="publication-year wp-block-details" name="publication-years"/g) ?? []).length, 9);
+  assert.equal((research.match(/name="publication-years" open/g) ?? []).length, 1);
+  assert.match(research, /10\.1088\/2515-7647\/ae6004/);
+  assert.match(teaching, /id="courses"[\s\S]*?id="books"[\s\S]*?id="theses"/);
+  assert.match(teaching, /Teoría de circuitos eléctricos/);
+  assert.match(teaching, /Energy-efficient ITO microheaters/);
 });
 
 test("about page places the expanded carousel beside the biography", async () => {
@@ -134,7 +162,7 @@ test("about page places the expanded carousel beside the biography", async () =>
 });
 
 test("interior pages begin directly with content and keep an accessible page title", async () => {
-  for (const slug of pages.map((page) => page.slug).filter(Boolean)) {
+  for (const slug of pages.map((page) => page.slug).filter((slug) => slug && !mergedRoutes[slug])) {
     const html = await readFile(path.join(OUTPUT_ROOT, slug, "index.html"), "utf8");
     assert.match(html, /<h1 class="visually-hidden">[^<]+<\/h1>\s*<div class="page-content">/);
     assert.doesNotMatch(html, /class="page-heading"|class="section-index"|On this page|class="page-description"/);
@@ -186,13 +214,20 @@ test("migrated content images have alternative text", async () => {
 });
 
 test("legacy route redirects and sitemap lists every page", async () => {
-  const redirect = await readFile(path.join(OUTPUT_ROOT, "theases", "index.html"), "utf8");
+  const oldThesesRedirect = await readFile(path.join(OUTPUT_ROOT, "theases", "index.html"), "utf8");
+  const publicationsRedirect = await readFile(path.join(OUTPUT_ROOT, "publications", "index.html"), "utf8");
+  const booksRedirect = await readFile(path.join(OUTPUT_ROOT, "books", "index.html"), "utf8");
+  const thesesRedirect = await readFile(path.join(OUTPUT_ROOT, "theses", "index.html"), "utf8");
   const sitemap = await readFile(path.join(OUTPUT_ROOT, "sitemap.xml"), "utf8");
   const mediaFiles = await readdir(path.join(OUTPUT_ROOT, "assets", "media"), {
     recursive: true,
   });
 
-  assert.match(redirect, /url=\/jorpago2\/theses\//);
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, pages.length);
+  assert.match(publicationsRedirect, /url=\/jorpago2\/research\/#publications/);
+  assert.match(booksRedirect, /url=\/jorpago2\/teaching\/#books/);
+  assert.match(thesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
+  assert.match(oldThesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, pages.length - Object.keys(mergedRoutes).length);
+  assert.doesNotMatch(sitemap, /<loc>[^<]+\/(?:publications|books|theses)\/<\/loc>/);
   assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g)$/i.test(file)).length, 59);
 });
