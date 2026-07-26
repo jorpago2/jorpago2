@@ -277,20 +277,6 @@ li {
   color: var(--accent);
 }
 
-.primary-nav > .hub-link {
-  margin-left: 0.35rem;
-  padding: 0.65rem 0.9rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--surface);
-}
-
-.primary-nav > .hub-link:hover {
-  color: var(--ink);
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
-}
-
 main {
   position: relative;
   z-index: 1;
@@ -1001,11 +987,6 @@ th {
   .primary-nav > a,
   .nav-group > summary {
     padding: 0.7rem;
-  }
-
-  .primary-nav > .hub-link {
-    width: fit-content;
-    margin: 0.3rem 0 0;
   }
 
   .nav-submenu {

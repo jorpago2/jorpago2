@@ -46,14 +46,15 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=22/);
-  assert.match(html, /class="hub-link" href="https:\/\/jorpago2\.github\.io\/"/);
+  assert.match(html, /assets\/style\.css\?v=23/);
+  assert.match(html, /<summary>Resources<\/summary>[\s\S]*?<a href="\/jorpago2\/resources\/">Links<\/a>[\s\S]*?<a href="https:\/\/jorpago2\.github\.io\/">Simulators ↗<\/a>/);
+  assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
   assert.doesNotMatch(html, /class="home-explore"/);
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
-  assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
+  assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 3);
 });
 
 test("about page places the expanded carousel beside the biography", async () => {

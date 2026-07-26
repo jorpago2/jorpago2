@@ -25,7 +25,13 @@ const navigation = [
       ["Theses", "theses"],
     ],
   },
-  { label: "Resources", slug: "resources" },
+  {
+    label: "Resources",
+    children: [
+      ["Links", "resources"],
+      ["Simulators ↗", "https://jorpago2.github.io/"],
+    ],
+  },
   { label: "Contact", slug: "contact" },
 ];
 
@@ -159,7 +165,8 @@ function navigationHtml(activeSlug) {
       const links = item.children
         .map(([label, slug]) => {
           const current = activeSlug === slug ? ' aria-current="page"' : "";
-          return `<a href="${route(slug)}"${current}>${label}</a>`;
+          const href = slug.startsWith("https://") ? slug : route(slug);
+          return `<a href="${href}"${current}>${label}</a>`;
         })
         .join("\n              ");
 
@@ -235,7 +242,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=22">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=23">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -255,7 +262,6 @@ ${preparePageContent(page.slug, content)}
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
       <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
           ${navigationHtml(page.slug)}
-          <a class="hub-link" href="https://jorpago2.github.io/">Simulators <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
