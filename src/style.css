@@ -82,6 +82,20 @@ a:hover {
   color: var(--navy);
 }
 
+:where(.page-content p, .page-content li, .page-content figcaption, .page-content h2, .page-content h3, .home-updates) a:not(.button) {
+  background: linear-gradient(var(--accent-soft), var(--accent-soft)) 0 100% / 100% 0 no-repeat;
+  color: var(--ink);
+  text-decoration-color: rgb(92 126 0 / 55%);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  transition: background-size 160ms ease, text-decoration-color 160ms ease;
+}
+
+:where(.page-content p, .page-content li, .page-content figcaption, .page-content h2, .page-content h3, .home-updates) a:not(.button):hover {
+  background-size: 100% 55%;
+  text-decoration-color: var(--accent);
+}
+
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
