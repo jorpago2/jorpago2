@@ -45,7 +45,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=18/);
+  assert.match(html, /assets\/style\.css\?v=19/);
   assert.match(html, /class="hub-link" href="https:\/\/jorpago2\.github\.io\/"/);
   assert.match(html, /class="home-updates"/);
   assert.doesNotMatch(html, /class="home-explore"/);
@@ -56,11 +56,11 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
 });
 
-test("interior pages use a compact heading without an on-page index", async () => {
+test("interior pages begin directly with content and keep an accessible page title", async () => {
   for (const slug of pages.map((page) => page.slug).filter(Boolean)) {
     const html = await readFile(path.join(OUTPUT_ROOT, slug, "index.html"), "utf8");
-    assert.match(html, /<header class="page-heading">\s*<h1>[^<]+<\/h1>\s*<\/header>/);
-    assert.doesNotMatch(html, /class="section-index"|On this page|class="page-description"/);
+    assert.match(html, /<h1 class="visually-hidden">[^<]+<\/h1>\s*<div class="page-content">/);
+    assert.doesNotMatch(html, /class="page-heading"|class="section-index"|On this page|class="page-description"/);
   }
 });
 

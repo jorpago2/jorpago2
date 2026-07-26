@@ -467,19 +467,6 @@ main {
   background: transparent;
 }
 
-.page-heading {
-  padding: 1.15rem 0 0.9rem;
-  border-bottom: 1px solid var(--line);
-  background: transparent;
-}
-
-.page-heading h1 {
-  margin: 0;
-  color: var(--navy);
-  letter-spacing: -0.025em;
-  font-size: clamp(1.45rem, 2.5vw, 1.9rem);
-}
-
 .page-content {
   padding: clamp(1.25rem, 3vw, 2rem) 0;
   border: 0;
@@ -1012,7 +999,6 @@ th {
 
   .home-intro,
   .home-updates,
-  .page-heading,
   .page-content {
     border-right: 0;
     border-left: 0;

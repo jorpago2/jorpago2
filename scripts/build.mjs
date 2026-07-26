@@ -214,9 +214,7 @@ function pageShell({ page, content, hasSocialImage }) {
   const mainContent = isHome
     ? homeContent(content)
     : `<article class="page-layout page-${page.slug}">
-        <header class="page-heading">
-          <h1>${escapeHtml(page.title)}</h1>
-        </header>
+        <h1 class="visually-hidden">${escapeHtml(page.title)}</h1>
         <div class="page-content">
 ${preparePageContent(page.slug, content)}
         </div>
@@ -232,7 +230,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=18">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=19">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
