@@ -242,7 +242,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=32">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=33">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -314,9 +314,21 @@ ${removeSpacers(gallery)}
         </aside>
       </section>
       <section class="home-updates" aria-labelledby="updates-title">
-        <div class="section-heading"><p class="eyebrow">Information</p><h2 id="updates-title">For students and early-career researchers</h2></div>
-        <div class="update-grid">
-          ${notices.join("\n          ")}
+        <div class="section-heading"><p class="eyebrow">Information</p><h2 id="updates-title">Opportunities and learning tools</h2></div>
+        <div class="information-grid">
+          <section class="information-panel student-information" aria-labelledby="student-information-title">
+            <h3 id="student-information-title">Students and early-career researchers</h3>
+            <div class="information-list">
+              ${notices.join("\n              ")}
+            </div>
+          </section>
+          <section class="information-panel simulator-information" aria-labelledby="simulator-information-title">
+            <p class="information-label">Interactive learning</p>
+            <h3 id="simulator-information-title">Scientific simulators</h3>
+            <p>Explore electromagnetic wave propagation and semiconductor devices through visual, browser-based numerical models.</p>
+            <p class="simulator-topics">Electromagnetics · Photonics · Semiconductor devices</p>
+            <a class="button primary" href="https://jorpago2.github.io/">Open simulators ↗</a>
+          </section>
         </div>
       </section>
     </article>`;

@@ -457,19 +457,61 @@ main {
   background: transparent;
 }
 
-.update-grid {
+.information-grid {
   display: grid;
   margin-top: 1.5rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
-.update-grid > p {
+.information-panel {
+  padding: 1.2rem 1.4rem;
+  border-top: 2px solid var(--lime);
+  background: rgb(246 247 243 / 55%);
+}
+
+.information-panel h3 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+}
+
+.information-list > p {
   max-width: none;
   margin: 0;
-  padding: 0.4rem 1.4rem;
-  border-left: 5px solid var(--lime);
-  background: transparent;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line);
+  line-height: 1.5;
+}
+
+.information-list > p:first-child {
+  padding-top: 0;
+}
+
+.information-list > p:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.simulator-information {
+  border-top-color: var(--blue);
+}
+
+.information-label,
+.simulator-topics {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.information-label {
+  margin: 0 0 0.45rem;
+}
+
+.simulator-topics {
+  margin: 1rem 0;
+  line-height: 1.5;
 }
 
 .page-content {
@@ -1336,7 +1378,7 @@ th {
     margin-inline: auto;
   }
 
-  .update-grid {
+  .information-grid {
     grid-template-columns: 1fr;
   }
 
