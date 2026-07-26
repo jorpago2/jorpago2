@@ -45,7 +45,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=17/);
+  assert.match(html, /assets\/style\.css\?v=18/);
   assert.match(html, /class="hub-link" href="https:\/\/jorpago2\.github\.io\/"/);
   assert.match(html, /class="home-updates"/);
   assert.doesNotMatch(html, /class="home-explore"/);
@@ -56,15 +56,11 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 2);
 });
 
-test("editorial section links point to headings on the same page", async () => {
-  for (const slug of ["about-me", "research", "publications", "teaching"]) {
+test("interior pages use a compact heading without an on-page index", async () => {
+  for (const slug of pages.map((page) => page.slug).filter(Boolean)) {
     const html = await readFile(path.join(OUTPUT_ROOT, slug, "index.html"), "utf8");
-    const index = html.match(/<nav class="section-index"[\s\S]*?<\/nav>/)?.[0] ?? "";
-
-    assert.notEqual(index, "", `${slug} is missing its section index`);
-    for (const match of index.matchAll(/href="#([^"]+)"/g)) {
-      assert.match(html, new RegExp(`id="${match[1]}"`), `${slug} is missing #${match[1]}`);
-    }
+    assert.match(html, /<header class="page-heading">\s*<h1>[^<]+<\/h1>\s*<\/header>/);
+    assert.doesNotMatch(html, /class="section-index"|On this page|class="page-description"/);
   }
 });
 

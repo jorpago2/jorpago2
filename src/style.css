@@ -327,8 +327,7 @@ main {
   text-transform: uppercase;
 }
 
-.home-intro .eyebrow,
-.page-heading .eyebrow {
+.home-intro .eyebrow {
   color: var(--muted);
 }
 
@@ -430,8 +429,7 @@ main {
 }
 
 .button.primary,
-.home-intro .button:hover,
-.page-heading .button:hover {
+.home-intro .button:hover {
   border-color: var(--ink);
   background: var(--ink);
   color: var(--white);
@@ -470,7 +468,7 @@ main {
 }
 
 .page-heading {
-  padding: clamp(1.75rem, 4vw, 3rem) 0;
+  padding: 1.15rem 0 0.9rem;
   border-bottom: 1px solid var(--line);
   background: transparent;
 }
@@ -478,45 +476,12 @@ main {
 .page-heading h1 {
   margin: 0;
   color: var(--navy);
-  letter-spacing: -0.035em;
-  font-size: clamp(2rem, 4vw, 3.1rem);
-}
-
-.page-description {
-  max-width: 62ch;
-  margin: 0.65rem 0 0;
-  color: var(--muted);
-  font-size: 1rem;
-}
-
-.section-index {
-  display: flex;
-  overflow-x: auto;
-  padding: 0.65rem 0;
-  border-bottom: 1px solid var(--line);
-  align-items: center;
-  gap: 1.2rem;
-  background: transparent;
-  white-space: nowrap;
-}
-
-.section-index span {
-  color: var(--muted);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.section-index a {
-  color: var(--navy);
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
+  letter-spacing: -0.025em;
+  font-size: clamp(1.45rem, 2.5vw, 1.9rem);
 }
 
 .page-content {
-  padding: clamp(1.5rem, 4vw, 3rem) 0;
+  padding: clamp(1.25rem, 3vw, 2rem) 0;
   border: 0;
   background: transparent;
 }
@@ -1070,15 +1035,6 @@ th {
 
   .update-grid {
     grid-template-columns: 1fr;
-  }
-
-  .section-index {
-    overflow-x: visible;
-    border-right: 0;
-    border-left: 0;
-    flex-wrap: wrap;
-    gap: 0.65rem 1rem;
-    white-space: normal;
   }
 
   .wp-block-media-text {

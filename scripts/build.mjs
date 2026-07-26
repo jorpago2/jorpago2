@@ -29,62 +29,6 @@ const navigation = [
   { label: "Contact", slug: "contact" },
 ];
 
-const pagePresentation = {
-  "about-me": {
-    eyebrow: "Academic profile",
-    description: "Career, education and research experience in integrated photonics and emerging devices.",
-    sections: [
-      ["Biography", "biography"],
-      ["Highlights", "highlights"],
-      ["Career", "education-academic-positions"],
-    ],
-  },
-  research: {
-    eyebrow: "Research areas",
-    description: "Integrated photonics, functional materials and emerging devices for communications, computing and neuromorphic systems.",
-    actions: [
-      ["Google Scholar", "https://scholar.google.es/citations?user=5kYBpXIAAAAJ&hl=en"],
-      ["ORCID", "https://orcid.org/0000-0003-4610-3411"],
-    ],
-    sections: [
-      ["Collaborations", "collaborations"],
-      ["Projects", "participation-in-projects"],
-    ],
-  },
-  publications: {
-    eyebrow: "Publications",
-    description: "Papers on photonic integrated devices, functional optical materials and neuromorphic hardware.",
-    actions: [
-      ["Google Scholar", "https://scholar.google.es/citations?user=5kYBpXIAAAAJ&hl=en"],
-      ["ORCID", "https://orcid.org/0000-0003-4610-3411"],
-    ],
-    sections: [
-      ["Research visuals", "research-visuals"],
-      ["Journal papers", "journal-papers"],
-    ],
-  },
-  teaching: {
-    eyebrow: "Teaching",
-    description: "Courses and learning material in electronics, photonics and communication systems.",
-    actions: [
-      ["Books", route("books")],
-      ["Resources", route("resources")],
-    ],
-    sections: [
-      ["Teaching in practice", "teaching-in-practice"],
-      ["Current year", "academic-year-2025-2026"],
-      ["Previous years", "previous-years"],
-    ],
-  },
-  books: { eyebrow: "Books", description: "Teaching and technical books for electronics and engineering education." },
-  theses: { eyebrow: "Supervision", description: "Bachelor's, master's and doctoral projects developed under my supervision." },
-  resources: { eyebrow: "Resources", description: "Tools, references and practical material for teaching and research." },
-  contact: { eyebrow: "Contact", description: "Contact information for research, teaching and academic collaboration." },
-  "new-students": { eyebrow: "Prospective students", description: "Information for students interested in research projects and doctoral work." },
-  faq: { eyebrow: "Frequently asked questions", description: "Answers for prospective students and researchers considering joining a project." },
-  "career-strategy": { eyebrow: "Academic career", description: "Practical advice for starting an academic research career in Spain." },
-};
-
 function escapeHtml(value) {
   return value
     .replaceAll("&", "&amp;")
@@ -188,21 +132,6 @@ ${remainder}`;
   return addHeadingIds(removeSpacers(content));
 }
 
-function pageActionsHtml(actions = []) {
-  if (actions.length === 0) return "";
-  return `<div class="page-actions">
-          ${actions.map(([label, href]) => `<a class="button" href="${href}">${label}</a>`).join("\n          ")}
-        </div>`;
-}
-
-function sectionIndexHtml(sections = []) {
-  if (sections.length === 0) return "";
-  return `<nav class="section-index" aria-label="On this page">
-          <span>On this page</span>
-          ${sections.map(([label, id]) => `<a href="#${id}">${label}</a>`).join("\n          ")}
-        </nav>`;
-}
-
 function formatDate(value) {
   return new Intl.DateTimeFormat("en-GB", {
     day: "numeric",
@@ -268,7 +197,6 @@ ${JSON.stringify(
 
 function pageShell({ page, content, hasSocialImage }) {
   const isHome = page.slug === "";
-  const presentation = pagePresentation[page.slug] ?? {};
   const pageTitle = isHome
     ? "Dr. Jorge Parra | Photonics and Electronics"
     : `${page.title} | Dr. Jorge Parra`;
@@ -287,12 +215,8 @@ function pageShell({ page, content, hasSocialImage }) {
     ? homeContent(content)
     : `<article class="page-layout page-${page.slug}">
         <header class="page-heading">
-          <p class="eyebrow">${presentation.eyebrow ?? "Dr. Jorge Parra"}</p>
           <h1>${escapeHtml(page.title)}</h1>
-          <p class="page-description">${escapeHtml(presentation.description ?? conciseDescription(page.description))}</p>
-          ${pageActionsHtml(presentation.actions)}
         </header>
-        ${sectionIndexHtml(presentation.sections)}
         <div class="page-content">
 ${preparePageContent(page.slug, content)}
         </div>
@@ -308,7 +232,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=17">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=18">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
