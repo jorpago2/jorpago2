@@ -46,7 +46,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=39/);
+  assert.match(html, /assets\/style\.css\?v=40/);
   assert.match(html, /<summary>Resources<\/summary>[\s\S]*?<a href="\/jorpago2\/resources\/">Links<\/a>[\s\S]*?<a href="https:\/\/jorpago2\.github\.io\/">Simulators ↗<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
@@ -93,6 +93,17 @@ test("PhD FAQ uses concise exclusive disclosures and official sources", async ()
   assert.match(html, /oecd\.org\/en\/publications\/education-at-a-glance-2025/);
   assert.match(html, /href="\/jorpago2\/new-students\/"/);
   assert.doesNotMatch(html, /18-24 k|37–40 hours|wp-block-image/);
+});
+
+test("career strategy presents five concise principles and current sources", async () => {
+  const html = await readFile(path.join(OUTPUT_ROOT, "career-strategy", "index.html"), "utf8");
+
+  assert.match(html, /class="career-guide"/);
+  assert.equal((html.match(/<p class="career-question">/g) ?? []).length, 5);
+  assert.match(html, /aneca\.es\/web\/guest\/criterios-de-evaluaci/);
+  assert.match(html, /erc\.europa\.eu\/news-events\/events\/erc-grants-what-expect-2026-calls/);
+  assert.match(html, /href="\/jorpago2\/research\/"/);
+  assert.doesNotMatch(html, /young professor|JCR are still crucial|Without funding, there is no science/);
 });
 
 test("resources page uses a compact five-group directory", async () => {

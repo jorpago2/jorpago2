@@ -750,14 +750,19 @@ main {
 }
 
 .page-new-students .page-content,
-.page-faq .page-content {
+.page-faq .page-content,
+.page-career-strategy .page-content {
   max-width: 52rem;
   margin-inline: auto;
 }
 
 .student-orientation-intro h2,
 .research-habits h3,
-.student-next-step h3 {
+.student-next-step h3,
+.phd-faq-intro h2,
+.faq-next-step h3,
+.career-guide-intro h2,
+.career-next-step h3 {
   margin-top: 0;
 }
 
@@ -766,7 +771,9 @@ main {
   margin-bottom: 1rem;
 }
 
-.student-lead {
+.student-lead,
+.faq-lead,
+.career-lead {
   color: var(--navy-soft);
   font-size: 1.12rem;
 }
@@ -821,7 +828,9 @@ main {
   margin-left: 1.25rem;
 }
 
-.student-next-step {
+.student-next-step,
+.faq-next-step,
+.career-next-step {
   display: grid;
   padding: 1.5rem;
   border-top: 2px solid var(--lime);
@@ -831,35 +840,32 @@ main {
   gap: 1.5rem;
 }
 
-.student-next-step h3 {
+.student-next-step h3,
+.faq-next-step h3,
+.career-next-step h3 {
   margin-bottom: 0.5rem;
 }
 
-.student-next-step p {
+.student-next-step p,
+.faq-next-step p,
+.career-next-step p {
   margin: 0;
 }
 
-.student-next-step-actions {
+.student-next-step-actions,
+.faq-next-step-actions,
+.career-next-step-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-}
-
-.phd-faq-intro h2,
-.faq-next-step h3 {
-  margin-top: 0;
 }
 
 .phd-faq-intro h2 {
   margin-bottom: 1rem;
 }
 
-.faq-lead {
-  color: var(--navy-soft);
-  font-size: 1.12rem;
-}
-
-.faq-disclaimer {
+.faq-disclaimer,
+.career-note {
   margin: 1.25rem 0 0;
   padding-left: 1rem;
   border-left: 3px solid var(--lime);
@@ -979,29 +985,91 @@ main {
   color: var(--muted);
 }
 
-.faq-next-step {
-  display: grid;
+.faq-next-step,
+.career-next-step {
   margin-top: 2.5rem;
-  padding: 1.5rem;
-  border-top: 2px solid var(--lime);
-  background: rgb(246 247 243 / 58%);
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
+}
+
+.career-guide-intro h2 {
+  max-width: 20ch;
+  margin-bottom: 1rem;
+}
+
+.career-principles {
+  display: grid;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  counter-reset: career-principle;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
+  list-style: none;
 }
 
-.faq-next-step h3 {
-  margin-bottom: 0.5rem;
+.career-principles li {
+  max-width: none;
+  margin: 0;
+  padding: 1rem 0 0;
+  border-top: 2px solid var(--lime);
+  counter-increment: career-principle;
 }
 
-.faq-next-step p {
+.career-principles li:last-child {
+  grid-column: 1 / -1;
+}
+
+.career-principles h3 {
+  display: flex;
+  margin: 0 0 0.65rem;
+  align-items: baseline;
+  gap: 0.7rem;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.career-principles h3::before {
+  color: var(--accent);
+  content: counter(career-principle, decimal-leading-zero);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+}
+
+.career-principles p {
   margin: 0;
 }
 
-.faq-next-step-actions {
+.career-question {
+  margin-top: 0.75rem !important;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.career-sources {
+  margin-top: 2.5rem;
+  padding: 1.25rem;
+  border-left: 3px solid var(--lime);
+  background: rgb(246 247 243 / 58%);
+}
+
+.career-sources h3 {
+  margin: 0 0 0.35rem;
+}
+
+.career-sources p {
+  margin: 0;
+}
+
+.career-sources ul {
   display: flex;
+  margin: 0.75rem 0 0;
+  padding: 0;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem 1.25rem;
+  list-style: none;
+}
+
+.career-sources li {
+  max-width: none;
+  margin: 0;
 }
 
 .wp-block-columns {
@@ -1517,8 +1585,14 @@ th {
   .research-habit-grid,
   .student-next-step,
   .faq-skill-grid,
-  .faq-next-step {
+  .faq-next-step,
+  .career-principles,
+  .career-next-step {
     grid-template-columns: 1fr;
+  }
+
+  .career-principles li:last-child {
+    grid-column: auto;
   }
 
   .about-biography .wp-block-media-text {
