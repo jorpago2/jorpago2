@@ -32,8 +32,8 @@ const navigation = [
 
 const pagePresentation = {
   "about-me": {
-    eyebrow: "A little context",
-    description: "How I arrived at integrated photonics, the places where I have worked and a few milestones along the way.",
+    eyebrow: "Academic profile",
+    description: "Career, education and research experience in integrated photonics and emerging devices.",
     sections: [
       ["Biography", "biography"],
       ["Highlights", "highlights"],
@@ -41,8 +41,8 @@ const pagePresentation = {
     ],
   },
   research: {
-    eyebrow: "What I work on",
-    description: "The questions, materials and collaborations behind my work in integrated photonics and emerging devices.",
+    eyebrow: "Research areas",
+    description: "Integrated photonics, functional materials and emerging devices for communications, computing and neuromorphic systems.",
     actions: [
       ["Google Scholar", "https://scholar.google.es/citations?user=5kYBpXIAAAAJ&hl=en"],
       ["ORCID", "https://orcid.org/0000-0003-4610-3411"],
@@ -53,7 +53,7 @@ const pagePresentation = {
     ],
   },
   publications: {
-    eyebrow: "Written work",
+    eyebrow: "Publications",
     description: "Papers on photonic integrated devices, functional optical materials and neuromorphic hardware.",
     actions: [
       ["Google Scholar", "https://scholar.google.es/citations?user=5kYBpXIAAAAJ&hl=en"],
@@ -65,8 +65,8 @@ const pagePresentation = {
     ],
   },
   teaching: {
-    eyebrow: "In the classroom",
-    description: "The courses, experiments and learning material I use to teach electronics, photonics and communication systems.",
+    eyebrow: "Teaching",
+    description: "Courses and learning material in electronics, photonics and communication systems.",
     actions: [
       ["Books", route("books")],
       ["Resources", route("resources")],
@@ -77,13 +77,13 @@ const pagePresentation = {
       ["Previous years", "previous-years"],
     ],
   },
-  books: { eyebrow: "From my bookshelf", description: "Teaching and technical books I have written for electronics and engineering education." },
-  theses: { eyebrow: "Working with students", description: "Bachelor's, master's and doctoral projects that I have had the opportunity to supervise." },
-  resources: { eyebrow: "Things I return to", description: "Tools, references and practical material that I find useful for teaching and research." },
-  contact: { eyebrow: "Say hello", description: "Where to find me if you would like to talk about research, teaching or a possible collaboration." },
-  "new-students": { eyebrow: "Thinking about a PhD?", description: "A few honest notes for students interested in research projects and doctoral work." },
-  faq: { eyebrow: "Before you write", description: "Answers to the questions I most often receive from prospective students and researchers." },
-  "career-strategy": { eyebrow: "Notes to myself", description: "Personal principles and practical advice for starting an academic research career in Spain." },
+  books: { eyebrow: "Books", description: "Teaching and technical books for electronics and engineering education." },
+  theses: { eyebrow: "Supervision", description: "Bachelor's, master's and doctoral projects developed under my supervision." },
+  resources: { eyebrow: "Resources", description: "Tools, references and practical material for teaching and research." },
+  contact: { eyebrow: "Contact", description: "Contact information for research, teaching and academic collaboration." },
+  "new-students": { eyebrow: "Prospective students", description: "Information for students interested in research projects and doctoral work." },
+  faq: { eyebrow: "Frequently asked questions", description: "Answers for prospective students and researchers considering joining a project." },
+  "career-strategy": { eyebrow: "Academic career", description: "Practical advice for starting an academic research career in Spain." },
 };
 
 function escapeHtml(value) {
@@ -309,7 +309,7 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=6">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=7">
   <meta name="theme-color" content="#173134">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
@@ -364,35 +364,35 @@ function homeContent(content) {
   return `<article class="home-layout">
       <section class="home-intro" aria-labelledby="home-title">
         <div class="home-intro-copy">
-          <p class="eyebrow">A personal academic notebook · Valencia</p>
-          <h1 id="home-title">I’m Jorge. I teach electronics and research what light and new materials can do together.</h1>
-          <p class="home-lead">This is where I keep my research, publications, teaching material and a few honest notes for students considering an academic path.</p>
+          <p class="eyebrow">Assistant Professor · Universitat de València</p>
+          <h1 id="home-title">Research and teaching in photonics and electronic engineering.</h1>
+          <p class="home-lead">My work focuses on integrated photonics, functional materials, emerging devices and neuromorphic hardware. This website collects my research, publications, teaching and academic resources.</p>
           <div class="page-actions">
-            <a class="button primary" href="${route("research")}">What I’m researching</a>
-            <a class="button" href="${route("about-me")}">A little about me</a>
+            <a class="button primary" href="${route("research")}">Research</a>
+            <a class="button" href="${route("about-me")}">About me</a>
           </div>
         </div>
         <figure class="profile-card">
           <img src="${HOME_PORTRAIT_PATH}" alt="Jorge Parra working at an optical laboratory bench" width="890" height="1024">
-          <figcaption><strong>At the optical table.</strong><span>Photonics is precise work, but curiosity is usually where it starts.</span></figcaption>
+          <figcaption>Integrated photonics laboratory · Universitat de València</figcaption>
         </figure>
       </section>
       <section class="home-updates" aria-labelledby="updates-title">
-        <div class="section-heading"><p class="eyebrow">Two notes I often share</p><h2 id="updates-title">For students and early-career researchers</h2></div>
+        <div class="section-heading"><p class="eyebrow">Information</p><h2 id="updates-title">For students and early-career researchers</h2></div>
         <div class="update-grid">
           ${notices.join("\n          ")}
         </div>
       </section>
       <section class="home-gallery" aria-labelledby="gallery-title">
-        <div class="section-heading"><p class="eyebrow">From my camera roll</p><h2 id="gallery-title">A few places, experiments and teaching moments</h2></div>
+        <div class="section-heading"><p class="eyebrow">Gallery</p><h2 id="gallery-title">Research and teaching</h2></div>
 ${removeSpacers(gallery)}
       </section>
       <section class="home-explore" aria-labelledby="explore-title">
-        <div class="section-heading"><p class="eyebrow">The longer version</p><h2 id="explore-title">Follow the threads</h2></div>
+        <div class="section-heading"><p class="eyebrow">Sections</p><h2 id="explore-title">Academic activity</h2></div>
         <div class="explore-grid">
-          <a href="${route("about-me")}"><span>Profile</span><strong>About me</strong><small>Career, education and awards</small></a>
-          <a href="${route("research")}"><span>Laboratory</span><strong>Research</strong><small>Questions, collaborations and projects</small></a>
-          <a href="${route("teaching")}"><span>Classroom</span><strong>Teaching</strong><small>Courses, books and resources</small></a>
+          <a href="${route("about-me")}"><span>Biography</span><strong>About me</strong><small>Career, education and awards</small></a>
+          <a href="${route("research")}"><span>Projects</span><strong>Research</strong><small>Research areas, collaborations and publications</small></a>
+          <a href="${route("teaching")}"><span>Courses</span><strong>Teaching</strong><small>Teaching, books and resources</small></a>
         </div>
       </section>
     </article>`;

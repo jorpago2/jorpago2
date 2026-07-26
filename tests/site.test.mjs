@@ -39,13 +39,13 @@ test("all imported pages are built with metadata", async () => {
   }
 });
 
-test("homepage has the personal notebook layout and keeps the five-image carousel", async () => {
+test("homepage has the personal academic layout and keeps the five-image carousel", async () => {
   const html = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
 
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="profile-card"/);
   assert.match(html, /assets\/media\/2025\/08\/Imagen1\.jpg/);
-  assert.match(html, /assets\/style\.css\?v=6/);
+  assert.match(html, /assets\/style\.css\?v=7/);
   assert.match(html, /class="home-updates"/);
   assert.match(html, /class="home-explore"/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
