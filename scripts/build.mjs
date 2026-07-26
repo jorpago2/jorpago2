@@ -309,8 +309,8 @@ ${preparePageContent(page.slug, content)}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=10">
-  <meta name="theme-color" content="#173134">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=11">
+  <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">
   <meta property="og:title" content="${escapeHtml(pageTitle)}">

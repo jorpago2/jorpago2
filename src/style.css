@@ -1,16 +1,19 @@
 :root {
   color-scheme: light;
-  --ink: #28302f;
-  --navy: #173134;
-  --navy-soft: #385658;
-  --accent: #a94f32;
-  --accent-soft: #f1ddd3;
-  --muted: #6d6a63;
+  --ink: #141713;
+  --navy: #141713;
+  --navy-soft: #343a34;
+  --accent: #5c7e00;
+  --accent-soft: #e8f4b7;
+  --muted: #697068;
   --canvas: #f6f7f3;
-  --white: #fffdf8;
-  --line: #d8d0c2;
-  --max-width: 1120px;
-  --shadow: 0 12px 32px rgb(53 43 28 / 10%);
+  --white: #fff;
+  --surface: #fff;
+  --line: #d8dcd5;
+  --lime: #d8ff54;
+  --blue: #b9d7ff;
+  --max-width: 1240px;
+  --shadow: 0 14px 36px rgb(7 18 38 / 10%);
 }
 
 *,
@@ -27,9 +30,36 @@ body {
   margin: 0;
   background: var(--canvas);
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.65;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  position: fixed;
+  z-index: 0;
+  inset: -20%;
+  pointer-events: none;
+  content: "";
+}
+
+body::before {
+  background:
+    repeating-radial-gradient(circle at 8% 45%, transparent 0 52px, rgb(92 126 0 / 8%) 53px 54px, transparent 55px 104px),
+    repeating-radial-gradient(circle at 92% 58%, transparent 0 64px, rgb(64 105 154 / 9%) 65px 66px, transparent 67px 128px);
+  animation: 10s ease-in-out infinite alternate wave-motion;
+}
+
+body::after {
+  inset: -10%;
+  background:
+    radial-gradient(circle, rgb(92 126 0 / 30%) 0 1.5px, transparent 2px) 0 0 / 83px 97px,
+    radial-gradient(circle, rgb(64 105 154 / 26%) 0 1.25px, transparent 1.75px) 24px 31px / 127px 113px,
+    radial-gradient(circle, rgb(20 23 19 / 16%) 0 1px, transparent 1.5px) 63px 17px / 173px 149px;
+  animation: 14s linear infinite particle-motion;
 }
 
 button {
@@ -63,9 +93,10 @@ h2,
 h3,
 h4 {
   color: var(--navy);
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
-  line-height: 1.25;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
 }
 
 h1 {
@@ -172,7 +203,7 @@ li {
   padding: 0.55rem 0.8rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: transparent;
+  background: var(--surface);
   color: var(--ink);
   font-size: 0.75rem;
   font-weight: 700;
@@ -229,7 +260,7 @@ li {
   padding: 0.4rem;
   border: 1px solid var(--line);
   border-radius: 0.25rem;
-  background: var(--canvas);
+  background: var(--surface);
   box-shadow: var(--shadow);
 }
 
@@ -251,7 +282,7 @@ li {
   padding: 0.65rem 0.9rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: transparent;
+  background: var(--surface);
 }
 
 .primary-nav > .hub-link:hover {
@@ -261,12 +292,14 @@ li {
 }
 
 main {
+  position: relative;
+  z-index: 1;
   min-height: 70vh;
 }
 
 .home-layout,
 .page-layout {
-  width: min(calc(100% - 2rem), var(--max-width));
+  width: min(calc(100% - 5rem), var(--max-width));
   margin: 1.5rem auto 3rem;
 }
 
@@ -278,7 +311,6 @@ main {
 .home-intro {
   display: grid;
   padding: clamp(1.5rem, 3.5vw, 3rem);
-  border-top: 4px solid var(--accent);
   border-bottom: 1px solid var(--line);
   background: transparent;
   grid-template-columns: minmax(0, 1.45fr) minmax(15rem, 0.55fr);
@@ -288,7 +320,7 @@ main {
 
 .eyebrow {
   margin: 0 0 0.8rem;
-  color: var(--accent);
+  color: var(--muted);
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.13em;
@@ -297,7 +329,7 @@ main {
 
 .home-intro .eyebrow,
 .page-heading .eyebrow {
-  color: var(--accent);
+  color: var(--muted);
 }
 
 .home-intro h1 {
@@ -305,8 +337,8 @@ main {
   margin: 0;
   color: var(--navy);
   font-size: clamp(2.3rem, 4.5vw, 3.8rem);
-  letter-spacing: -0.035em;
-  line-height: 1.02;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
 }
 
 .home-lead {
@@ -330,6 +362,8 @@ main {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center 32%;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
 }
 
 .profile-card figcaption {
@@ -354,9 +388,10 @@ main {
   padding: 0.5rem 0.9rem;
   align-items: center;
   justify-content: center;
-  border: 0;
-  border-bottom: 1px solid currentColor;
-  color: var(--navy);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
   font-weight: 700;
   text-decoration: none;
 }
@@ -364,9 +399,16 @@ main {
 .button.primary,
 .home-intro .button:hover,
 .page-heading .button:hover {
-  border-bottom-color: var(--accent);
-  background: var(--accent);
+  border-color: var(--ink);
+  background: var(--ink);
   color: var(--white);
+}
+
+.button:hover,
+.button.primary:hover {
+  border-color: var(--accent);
+  background: var(--lime);
+  color: var(--ink);
 }
 
 .section-heading h2 {
@@ -392,7 +434,7 @@ main {
   max-width: none;
   margin: 0;
   padding: 0.4rem 1.4rem;
-  border-left: 3px solid var(--accent);
+  border-left: 5px solid var(--lime);
   background: transparent;
 }
 
@@ -451,7 +493,7 @@ main {
 }
 
 .explore-grid strong {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -462,7 +504,6 @@ main {
 
 .page-heading {
   padding: clamp(1.75rem, 4vw, 3rem);
-  border-top: 4px solid var(--accent);
   border-bottom: 1px solid var(--line);
   background: transparent;
 }
@@ -529,7 +570,7 @@ main {
 .wp-block-quote {
   margin: 2rem 0;
   padding: 0.25rem 0 0.25rem 1.25rem;
-  border-left: 4px solid var(--accent);
+  border-left: 5px solid var(--lime);
   color: #394957;
 }
 
@@ -562,6 +603,7 @@ figcaption {
   width: 100% !important;
   margin: 1.5rem 0 1rem;
   background: #e8ecef;
+  border-radius: 1rem;
 }
 
 .metaslider .slides {
@@ -806,6 +848,7 @@ th {
   padding: 1.25rem;
   border: 1px solid var(--line);
   background: var(--canvas);
+  border-radius: 1rem;
 }
 
 .page-research .wp-block-columns figure,
@@ -826,12 +869,15 @@ th {
   padding: 1rem 1.2rem;
   border: 1px solid var(--line);
   background: var(--canvas);
+  border-radius: 1rem;
 }
 
 .wp-block-details {
   margin-top: 2rem;
   border: 1px solid var(--line);
   background: var(--canvas);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .wp-block-details > summary {
@@ -859,6 +905,8 @@ th {
 }
 
 .site-footer {
+  position: relative;
+  z-index: 1;
   padding-block: 2.2rem;
   border-top: 1px solid var(--line);
   background: transparent;
@@ -866,9 +914,38 @@ th {
   font-size: 0.9rem;
 }
 
+@keyframes wave-motion {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes particle-motion {
+  0%,
+  100% {
+    transform: translate(-2%, 1%);
+  }
+
+  25% {
+    transform: translate(1%, -2%);
+  }
+
+  50% {
+    transform: translate(2.5%, 1%);
+  }
+
+  75% {
+    transform: translate(-1%, 2%);
+  }
+}
+
 .site-footer > div,
 .site-footer > p {
-  width: min(calc(100% - 2rem), var(--max-width));
+  width: min(calc(100% - 5rem), var(--max-width));
   margin-inline: auto;
 }
 
@@ -942,7 +1019,7 @@ th {
     display: none;
     padding: 0.75rem;
     border: 1px solid var(--line);
-    background: var(--canvas);
+    background: var(--surface);
     box-shadow: var(--shadow);
   }
 
@@ -982,6 +1059,11 @@ th {
   .page-layout {
     width: 100%;
     margin-top: 0.75rem;
+  }
+
+  .site-footer > div,
+  .site-footer > p {
+    width: min(calc(100% - 2rem), var(--max-width));
   }
 
   .identity-copy small {
@@ -1073,6 +1155,11 @@ th {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  body::before,
+  body::after {
+    animation: none;
   }
 }
 
