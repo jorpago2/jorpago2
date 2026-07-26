@@ -1058,7 +1058,24 @@ th {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 0.4rem;
+}
+
+.site-footer nav a {
+  padding: 0.3rem 0.65rem 0.3rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: radial-gradient(circle at 0.55rem 50%, var(--accent) 0 2px, transparent 2.5px);
+  color: var(--ink);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.site-footer nav a:hover {
+  background-color: var(--accent-soft);
+  color: var(--ink);
 }
 
 .footer-copy {
