@@ -706,10 +706,53 @@ th {
 
 .about-carousel .metaslider {
   margin: 0;
+  border: 1px solid rgb(20 23 19 / 10%);
+  background: rgb(232 236 239 / 76%);
+  box-shadow: 0 1.2rem 2.8rem rgb(20 23 19 / 14%);
 }
 
 .about-carousel .metaslider .slides {
   aspect-ratio: 4 / 3;
+}
+
+.about-biography .wp-block-media-text {
+  grid-template-columns: minmax(20rem, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 3.5rem);
+}
+
+.about-carousel .carousel-controls {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  min-height: 0;
+  padding: 0.75rem;
+  border: 0;
+  background: transparent;
+  justify-content: space-between;
+}
+
+.about-carousel .carousel-arrow {
+  background: rgb(20 23 19 / 68%);
+  box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 22%);
+  backdrop-filter: blur(0.35rem);
+}
+
+.about-carousel .carousel-dots {
+  position: absolute;
+  top: 0.75rem;
+  left: 50%;
+  background: rgb(20 23 19 / 64%);
+  box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 18%);
+  translate: -50% 0;
+  backdrop-filter: blur(0.35rem);
+}
+
+.about-carousel .carousel-dots button {
+  border-color: var(--white);
+}
+
+.about-carousel .carousel-dots button[aria-current="true"] {
+  background: var(--white);
 }
 
 .page-showcase .section-heading {
@@ -938,6 +981,11 @@ th {
     grid-template-columns: minmax(10rem, 0.4fr) 1fr;
   }
 
+  .about-biography .wp-block-media-text {
+    grid-template-columns: minmax(18rem, 0.85fr) minmax(0, 1.15fr);
+    gap: 2rem;
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -1043,6 +1091,10 @@ th {
     max-width: none;
   }
 
+  .about-biography .wp-block-media-text {
+    grid-template-columns: 1fr;
+  }
+
   .carousel-dots {
     display: none;
   }
@@ -1058,6 +1110,19 @@ th {
     color: var(--muted);
     text-align: center;
     white-space: normal;
+  }
+
+  .about-carousel .carousel-status {
+    position: absolute;
+    top: 0.65rem;
+    left: 50%;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    background: rgb(20 23 19 / 68%);
+    color: var(--white);
+    font-size: 0.78rem;
+    translate: -50% 0;
+    backdrop-filter: blur(0.35rem);
   }
 
   .hero-carousel .carousel-status {
