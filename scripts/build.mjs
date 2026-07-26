@@ -170,7 +170,7 @@ function navigationHtml(activeSlug) {
         })
         .join("\n              ");
 
-      return `<details class="nav-group"${groupIsCurrent ? ' data-current="true"' : ""}>
+      return `<details class="nav-group" name="primary-navigation"${groupIsCurrent ? ' data-current="true"' : ""}>
             <summary>${item.label}</summary>
             <div class="nav-submenu">
               ${links}

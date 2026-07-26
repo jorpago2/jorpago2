@@ -54,7 +54,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
-  assert.equal((html.match(/<details class="nav-group"/g) ?? []).length, 3);
+  assert.equal((html.match(/<details class="nav-group" name="primary-navigation"/g) ?? []).length, 3);
 });
 
 test("contact page highlights email, student projects and office location", async () => {
