@@ -1,5 +1,13 @@
 [
   {
+    "id": "about-me",
+    "slug": "sobre-mi",
+    "title": "Sobre mí",
+    "seoTitle": "Sobre Jorge Parra | Investigador en fotónica integrada",
+    "description": "Jorge Parra es Profesor Ayudante Doctor en la Universitat de València e investiga en fotónica integrada reconfigurable, materiales funcionales y hardware neuromórfico.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
     "id": "research",
     "slug": "investigacion",
     "title": "Investigación",
@@ -24,11 +32,27 @@
     "modified": "2026-07-27T00:00:00"
   },
   {
+    "id": "new-students",
+    "slug": "estudiantes",
+    "title": "Iniciación a la investigación",
+    "seoTitle": "Iniciación a la investigación para estudiantes | Jorge Parra",
+    "description": "Guía para estudiantes que se plantean iniciar una actividad investigadora: curiosidad, pensamiento crítico, reformulación y descomposición de problemas.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
     "id": "resources",
     "slug": "recursos",
     "title": "Recursos",
     "seoTitle": "Simuladores y recursos de fotónica y electrónica",
     "description": "Simuladores interactivos y una selección de recursos científicos sobre diseño, fabricación, medida, fotónica y electrónica.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "faq",
+    "slug": "doctorado",
+    "title": "Preguntas frecuentes sobre el doctorado",
+    "seoTitle": "Doctorado en España: preguntas frecuentes para estudiantes",
+    "description": "Orientación práctica para futuros estudiantes de doctorado en España sobre salidas profesionales, supervisión, financiación, condiciones laborales y competencias investigadoras.",
     "modified": "2026-07-27T00:00:00"
   },
   {
