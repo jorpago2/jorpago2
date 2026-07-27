@@ -92,6 +92,44 @@ test("locale sources keep shared strings separate from page content", async () =
   assert.match(home, /<body data-carousel-previous="Previous image"/);
 });
 
+test("shared records live in JSON and render in both languages", async () => {
+  const dataRoot = path.resolve("content", "data");
+  const publications = JSON.parse(await readFile(path.join(dataRoot, "publications.json"), "utf8"));
+  const teaching = JSON.parse(await readFile(path.join(dataRoot, "teaching.json"), "utf8"));
+  const resources = JSON.parse(await readFile(path.join(dataRoot, "resources.json"), "utf8"));
+
+  assert.equal(publications.reduce((count, group) => count + group.entries.length, 0), 26);
+  assert.equal(teaching.currentCourses.length, 7);
+  assert.equal(teaching.previousCourses.length, 4);
+  assert.equal(teaching.thesisGroups.reduce((count, group) => count + group.entries.length, 0), 10);
+  assert.equal(teaching.book.title, "Teoría de circuitos eléctricos. Problemas resueltos");
+  assert.equal(resources.tools.length, 2);
+  assert.equal(resources.groups.length, 5);
+  assert.equal(resources.groups.reduce((count, group) => count + group.items.length, 0), 26);
+  assert.ok(teaching.currentCourses.every((course) => course.details.en && course.details.es));
+  assert.ok(resources.groups.every((group) => group.title.en && group.title.es));
+
+  for (const locale of localeConfig.locales) {
+    const pageRoot = path.resolve("content", "pages", locale.code);
+    const researchSource = await readFile(path.join(pageRoot, "research.html"), "utf8");
+    const teachingSource = await readFile(path.join(pageRoot, "teaching.html"), "utf8");
+    const resourcesSource = await readFile(path.join(pageRoot, "resources.html"), "utf8");
+    assert.match(researchSource, /\{\{PUBLICATIONS\}\}/);
+    assert.match(teachingSource, /\{\{CURRENT_COURSES\}\}[\s\S]*\{\{BOOK_RESOURCE\}\}[\s\S]*\{\{MASTER_THESES\}\}/);
+    assert.match(resourcesSource, /\{\{ONLINE_TOOLS\}\}[\s\S]*\{\{RESOURCE_GROUPS\}\}/);
+    assert.doesNotMatch(researchSource, /href="https:\/\/doi\.org\//);
+    assert.doesNotMatch(teachingSource, /href="https:\/\/riunet\.upv\.es\//);
+    assert.doesNotMatch(resourcesSource, /href="https:\/\/www\.youtube\.com\/@BranchEducation/);
+  }
+
+  const spanishResearch = await readFile(path.join(OUTPUT_ROOT, "es", "investigacion", "index.html"), "utf8");
+  const spanishTeaching = await readFile(path.join(OUTPUT_ROOT, "es", "docencia", "index.html"), "utf8");
+  const spanishResources = await readFile(path.join(OUTPUT_ROOT, "es", "recursos", "index.html"), "utf8");
+  assert.equal((spanishResearch.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
+  assert.equal((spanishTeaching.match(/class="supervision-year"/g) ?? []).length, 10);
+  assert.equal((spanishResources.match(/class="resource-group /g) ?? []).length, 5);
+});
+
 test("Spanish pages use localized routes, interface text and SEO alternates", async () => {
   const spanishLocale = localeConfig.locales.find((locale) => locale.code === "es");
   const spanishPages = localizedPages.get("es");

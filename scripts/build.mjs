@@ -173,6 +173,171 @@ function externalLinksInNewTab(html) {
   });
 }
 
+function requiredArray(value, label) {
+  if (!Array.isArray(value)) throw new Error(`${label} must be an array.`);
+  return value;
+}
+
+function localized(value, localeCode, label) {
+  const resolved = typeof value === "string" ? value : value?.[localeCode];
+  if (typeof resolved !== "string" || !resolved.trim()) {
+    throw new Error(`Missing ${localeCode} value for ${label}.`);
+  }
+  return resolved;
+}
+
+function safeExternalUrl(value, label) {
+  if (typeof value !== "string" || !value.startsWith("https://")) {
+    throw new Error(`Invalid external URL for ${label}.`);
+  }
+  return escapeHtml(value);
+}
+
+function renderPublications(publications) {
+  return requiredArray(publications, "publications")
+    .map((group) => {
+      if (!Number.isInteger(group.year) || !Number.isInteger(group.start)) {
+        throw new Error("Publication years and list starts must be integers.");
+      }
+      const entries = requiredArray(group.entries, `publications for ${group.year}`);
+      const listAttributes = `${group.reversed ? " reversed" : ""}${group.start > 1 ? ` start="${group.start}"` : ""}`;
+      return `<details class="publication-year wp-block-details" name="publication-years"${group.open ? " open" : ""}><summary>${group.year}</summary><ol${listAttributes} class="wp-block-list">
+${entries.map((entry) => `<li>${entry}</li>`).join("\n")}
+</ol></details>`;
+    })
+    .join("\n\n");
+}
+
+function renderCourses(courses, localeCode) {
+  return requiredArray(courses, "courses")
+    .map(
+      (course) =>
+        `    <li><strong>${escapeHtml(localized(course.title, localeCode, "course title"))}</strong><span>${escapeHtml(localized(course.details, localeCode, "course details"))}</span></li>`,
+    )
+    .join("\n");
+}
+
+function renderTheses(entries, localeCode) {
+  return requiredArray(entries, "theses")
+    .map((entry) => {
+      if (!Number.isInteger(entry.year) || typeof entry.titleHtml !== "string") {
+        throw new Error("Invalid thesis entry.");
+      }
+      return `      <li><span class="supervision-year">${entry.year}</span><div><strong><a href="${safeExternalUrl(entry.url, "thesis")}">${entry.titleHtml}</a></strong><p>${escapeHtml(localized(entry.metadata, localeCode, "thesis metadata"))}</p></div></li>`;
+    })
+    .join("\n");
+}
+
+function renderBook(book, localeCode) {
+  if (!book || typeof book.title !== "string" || !book.cover?.startsWith(`${SITE_BASE_PATH}/assets/`)) {
+    throw new Error("Invalid teaching book data.");
+  }
+  const url = safeExternalUrl(book.url, "teaching book");
+  return `  <article class="book-resource">
+    <a class="book-cover" href="${url}">
+      <img loading="lazy" decoding="async" width="700" height="1024" src="${escapeHtml(book.cover)}" alt="${escapeHtml(localized(book.coverAlt, localeCode, "book cover alt"))}">
+    </a>
+    <div class="book-resource-copy">
+      <p class="eyebrow">${escapeHtml(localized(book.eyebrow, localeCode, "book eyebrow"))}</p>
+      <h3 id="teoria-de-circuitos-electricos-problemas-resueltos"><a href="${url}">${escapeHtml(book.title)}</a></h3>
+      <p class="book-authors">${escapeHtml(localized(book.authors, localeCode, "book authors"))}</p>
+      <p>${escapeHtml(localized(book.description, localeCode, "book description"))}</p>
+      <p class="resource-meta">${escapeHtml(book.metadata)}</p>
+      <a class="button" href="${url}">${escapeHtml(localized(book.action, localeCode, "book action"))}</a>
+    </div>
+  </article>`;
+}
+
+function renderOnlineTools(tools, localeCode) {
+  return requiredArray(tools, "online tools")
+    .map(
+      (tool) => `  <a class="online-tool-card" href="${safeExternalUrl(tool.url, "online tool")}">
+    <span class="online-tool-number">${escapeHtml(tool.number)}</span>
+    <strong>${escapeHtml(localized(tool.title, localeCode, "tool title"))}</strong>
+    <span>${escapeHtml(localized(tool.description, localeCode, "tool description"))}</span>
+    <span class="online-tool-action">${escapeHtml(localized(tool.action, localeCode, "tool action"))}</span>
+  </a>`,
+    )
+    .join("\n");
+}
+
+function renderResourceGroups(groups, localeCode, resourceCountLabel) {
+  return requiredArray(groups, "resource groups")
+    .map((group) => {
+      if (!/^[a-z-]+$/.test(group.id)) throw new Error("Invalid resource group id.");
+      const items = requiredArray(group.items, `${group.id} resources`);
+      const count = String(items.length).padStart(2, "0");
+      const itemHtml = items
+        .map(
+          (item) =>
+            `      <li><a href="${safeExternalUrl(item.url, "resource")}">${localized(item.labelHtml, localeCode, "resource label")}</a>. ${localized(item.descriptionHtml, localeCode, "resource description")}</li>`,
+        )
+        .join("\n");
+      return `  <section class="resource-group resource-${group.id}" aria-labelledby="resources-${group.id}">
+    <header class="resource-group-heading">
+      <h3 id="resources-${group.id}">${escapeHtml(localized(group.title, localeCode, "resource group title"))}</h3>
+      <span aria-label="${items.length} ${escapeHtml(resourceCountLabel)}">${count}</span>
+    </header>
+    <ul>
+${itemHtml}
+    </ul>
+  </section>`;
+    })
+    .join("\n\n");
+}
+
+function renderSharedContent(pageId, content, localeCode, strings, sharedData) {
+  let replacements;
+  if (pageId === "research") {
+    replacements = [["{{PUBLICATIONS}}", renderPublications(sharedData.publications)]];
+  } else if (pageId === "teaching") {
+    const thesisGroups = new Map(
+      requiredArray(sharedData.teaching.thesisGroups, "thesis groups").map((group) => [group.id, group.entries]),
+    );
+    replacements = [
+      ["{{CURRENT_COURSES}}", renderCourses(sharedData.teaching.currentCourses, localeCode)],
+      ["{{PREVIOUS_COURSES}}", renderCourses(sharedData.teaching.previousCourses, localeCode)],
+      ["{{BOOK_RESOURCE}}", renderBook(sharedData.teaching.book, localeCode)],
+      ["{{MASTER_THESES}}", renderTheses(thesisGroups.get("masters"), localeCode)],
+      ["{{BACHELOR_THESES}}", renderTheses(thesisGroups.get("bachelors"), localeCode)],
+    ];
+  } else if (pageId === "resources") {
+    replacements = [
+      ["{{ONLINE_TOOLS}}", renderOnlineTools(sharedData.resources.tools, localeCode)],
+      [
+        "{{RESOURCE_GROUPS}}",
+        renderResourceGroups(sharedData.resources.groups, localeCode, strings.resourceCountLabel),
+      ],
+    ];
+  } else {
+    return content;
+  }
+
+  let rendered = content;
+  for (const [marker, html] of replacements) {
+    if (!rendered.includes(marker)) throw new Error(`Missing ${marker} in ${localeCode}/${pageId}.`);
+    rendered = rendered.replace(marker, html);
+  }
+  if (/\{\{[A-Z_]+\}\}/.test(rendered)) throw new Error(`Unresolved content marker in ${localeCode}/${pageId}.`);
+  return rendered;
+}
+
+async function loadSharedData() {
+  const [publications, teaching, resources] = await Promise.all(
+    ["publications", "teaching", "resources"].map((name) =>
+      readFile(path.join(CONTENT_ROOT, "data", `${name}.json`), "utf8").then(JSON.parse),
+    ),
+  );
+  requiredArray(publications, "publications");
+  requiredArray(teaching.currentCourses, "current courses");
+  requiredArray(teaching.previousCourses, "previous courses");
+  requiredArray(teaching.thesisGroups, "thesis groups");
+  if (!teaching.book) throw new Error("Missing teaching book.");
+  requiredArray(resources.tools, "online tools");
+  requiredArray(resources.groups, "resource groups");
+  return { publications, teaching, resources };
+}
+
 function pageShell({ page, content, locale, strings, localeBundles }) {
   const isHome = page.id === "home";
   const pageTitle = page.seoTitle || `${page.title} | Dr. Jorge Parra`;
@@ -358,7 +523,7 @@ async function loadLocaleBundles() {
 }
 
 async function main() {
-  const localeBundles = await loadLocaleBundles();
+  const [localeBundles, sharedData] = await Promise.all([loadLocaleBundles(), loadSharedData()]);
   const socialImagePath = path.join(CONTENT_ROOT, "og.png");
 
   await rm(OUTPUT_ROOT, { recursive: true, force: true });
@@ -382,9 +547,12 @@ async function main() {
       await mkdir(outputDirectory, { recursive: true });
       const redirect = mergedRoutes[page.id];
       const fragmentName = page.id;
-      const content = redirect
+      const fragment = redirect
         ? ""
         : await readFile(path.join(bundle.localeRoot, `${fragmentName}.html`), "utf8");
+      const content = redirect
+        ? ""
+        : renderSharedContent(page.id, fragment, bundle.locale.code, bundle.strings, sharedData);
       await writeFile(
         path.join(outputDirectory, "index.html"),
         redirect

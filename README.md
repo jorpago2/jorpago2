@@ -19,5 +19,7 @@ keeps the canonical URLs on the UV domain and prevents indexing of the mirror.
 
 Enabled languages are declared in `content/locales.json`. Shared interface text
 lives in `content/i18n/<locale>.json`; page metadata and HTML fragments live in
-`content/pages/<locale>/`. Presentation lives in `src/style.css`.
+`content/pages/<locale>/`. Publications, courses, supervised projects and curated
+resources are maintained once in `content/data/` and rendered into every language.
+Presentation lives in `src/style.css`.
 Unused WordPress media is retained in `archive/wordpress-media/` and is not published.
