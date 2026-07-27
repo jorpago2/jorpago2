@@ -17,5 +17,7 @@ is limited to navigation and carousels.
 GitHub Pages is a temporary preview and is built with `SITE_PREVIEW=true`, which
 keeps the canonical URLs on the UV domain and prevents indexing of the mirror.
 
-Content is stored in `content/pages/`; presentation lives in `src/style.css`.
+Enabled languages are declared in `content/locales.json`. Shared interface text
+lives in `content/i18n/<locale>.json`; page metadata and HTML fragments live in
+`content/pages/<locale>/`. Presentation lives in `src/style.css`.
 Unused WordPress media is retained in `archive/wordpress-media/` and is not published.

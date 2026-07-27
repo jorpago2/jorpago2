@@ -7,7 +7,12 @@ const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
 const IS_PREVIEW = process.env.SITE_PREVIEW === "true";
 const OUTPUT_ROOT = path.resolve("publish", "jorpago2");
-const pages = JSON.parse(await readFile(path.resolve("content", "pages.json"), "utf8"));
+const localeConfig = JSON.parse(await readFile(path.resolve("content", "locales.json"), "utf8"));
+const defaultLocale = localeConfig.locales.find(
+  (locale) => locale.code === localeConfig.defaultLocale,
+);
+const DEFAULT_CONTENT_ROOT = path.resolve("content", "pages", defaultLocale.code);
+const pages = JSON.parse(await readFile(path.join(DEFAULT_CONTENT_ROOT, "pages.json"), "utf8"));
 const mergedRoutes = {
   publications: "/jorpago2/research/#publications",
   books: "/jorpago2/teaching/#books",
@@ -47,9 +52,30 @@ test("all imported pages are built with metadata", async () => {
       assert.doesNotMatch(html, /assets\/site\.js/);
       continue;
     }
-    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=3" defer><\/script>/);
+    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=4" defer><\/script>/);
     assert.doesNotMatch(html, /Last update:|Last updated|class="last-updated"/);
   }
+});
+
+test("locale sources keep shared strings separate from page content", async () => {
+  assert.equal(localeConfig.defaultLocale, "en");
+  assert.equal(defaultLocale.path, "");
+
+  for (const locale of localeConfig.locales) {
+    const strings = JSON.parse(
+      await readFile(path.resolve("content", "i18n", `${locale.code}.json`), "utf8"),
+    );
+    const localePages = JSON.parse(
+      await readFile(path.resolve("content", "pages", locale.code, "pages.json"), "utf8"),
+    );
+    assert.ok(strings.navigation.research);
+    assert.ok(strings.carousel.previous);
+    assert.ok(localePages.some((page) => page.slug === ""));
+  }
+
+  const home = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
+  assert.match(home, /<html lang="en">/);
+  assert.match(home, /<body data-carousel-previous="Previous image"/);
 });
 
 test("SEO metadata identifies the site and academic profile", async () => {
@@ -276,10 +302,10 @@ test("external links open safely in a new tab", async () => {
 });
 
 test("migrated content images have alternative text", async () => {
-  const fragments = await readdir(path.resolve("content", "pages"));
+  const fragments = await readdir(DEFAULT_CONTENT_ROOT);
 
-  for (const fragment of fragments) {
-    const html = await readFile(path.resolve("content", "pages", fragment), "utf8");
+  for (const fragment of fragments.filter((name) => name.endsWith(".html"))) {
+    const html = await readFile(path.join(DEFAULT_CONTENT_ROOT, fragment), "utf8");
     for (const image of html.matchAll(/<img\b[^>]*>/gi)) {
       assert.match(image[0], /\salt="[^"]+"/i, `${fragment} contains an image without alt text`);
     }

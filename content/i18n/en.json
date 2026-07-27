@@ -1,0 +1,52 @@
+{
+  "siteName": "Dr. Jorge Parra — Photonics and Electronics",
+  "skipLink": "Skip to content",
+  "homepageLabel": "Dr. Jorge Parra — homepage",
+  "menu": "Menu",
+  "primaryNavigation": "Primary navigation",
+  "languageNavigation": "Language",
+  "identitySubtitle": "Assistant Professor at University of Valencia · Photonics · Electronics",
+  "professionalProfiles": "Professional profiles",
+  "footerName": "Dr. Jorge Parra",
+  "footerInstitution": "Department of Electronic Engineering · Universitat de València",
+  "footerCopyright": "Jorge Parra",
+  "socialImageAlt": "Dr. Jorge Parra — Photonics and Electronics",
+  "navigation": {
+    "about-me": "About me",
+    "research": "Research",
+    "teaching": "Teaching",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "profiles": {
+    "linkedin": "LinkedIn",
+    "researchGate": "ResearchGate",
+    "x": "X",
+    "uv": "UV profile"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The requested page could not be found.",
+    "message": "The page may have moved during the migration from WordPress.",
+    "action": "Return to the homepage"
+  },
+  "redirectMessage": "This content moved to",
+  "carousel": {
+    "previous": "Previous image",
+    "next": "Next image",
+    "slide": "{current} of {total}",
+    "show": "Show image {current} of {total}",
+    "status": "Image {current} of {total}"
+  },
+  "person": {
+    "jobTitle": "Assistant Professor",
+    "description": "Assistant Professor researching integrated photonics, functional materials, emerging devices and neuromorphic hardware.",
+    "knowsAbout": [
+      "Integrated photonics",
+      "Functional materials",
+      "Electronic engineering",
+      "Emerging electronic and photonic devices",
+      "Neuromorphic hardware"
+    ]
+  }
+}

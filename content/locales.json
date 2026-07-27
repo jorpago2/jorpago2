@@ -1,0 +1,10 @@
+{
+  "defaultLocale": "en",
+  "locales": [
+    {
+      "code": "en",
+      "path": "",
+      "label": "English"
+    }
+  ]
+}

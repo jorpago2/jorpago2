@@ -1,5 +1,16 @@
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".primary-nav");
+const carouselLabels = {
+  previous: document.body.dataset.carouselPrevious || "Previous image",
+  next: document.body.dataset.carouselNext || "Next image",
+  slide: document.body.dataset.carouselSlide || "{current} of {total}",
+  show: document.body.dataset.carouselShow || "Show image {current} of {total}",
+  status: document.body.dataset.carouselStatus || "Image {current} of {total}",
+};
+
+function carouselLabel(template, current, total) {
+  return template.replace("{current}", current).replace("{total}", total);
+}
 
 if (menuButton && navigation) {
   menuButton.addEventListener("click", () => {
@@ -34,19 +45,22 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   status.setAttribute("aria-live", "polite");
   previousButton.type = "button";
   previousButton.className = "carousel-arrow";
-  previousButton.setAttribute("aria-label", "Previous image");
+  previousButton.setAttribute("aria-label", carouselLabels.previous);
   previousButton.textContent = "‹";
   nextButton.type = "button";
   nextButton.className = "carousel-arrow";
-  nextButton.setAttribute("aria-label", "Next image");
+  nextButton.setAttribute("aria-label", carouselLabels.next);
   nextButton.textContent = "›";
 
   const dotButtons = slides.map((slide, index) => {
     slide.removeAttribute("style");
-    slide.setAttribute("aria-label", `${index + 1} of ${slides.length}`);
+    slide.setAttribute("aria-label", carouselLabel(carouselLabels.slide, index + 1, slides.length));
     const button = document.createElement("button");
     button.type = "button";
-    button.setAttribute("aria-label", `Show image ${index + 1} of ${slides.length}`);
+    button.setAttribute(
+      "aria-label",
+      carouselLabel(carouselLabels.show, index + 1, slides.length),
+    );
     button.addEventListener("click", () => showSlide(index));
     dots.append(button);
     return button;
@@ -62,7 +76,7 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
     dotButtons.forEach((button, buttonIndex) => {
       button.setAttribute("aria-current", buttonIndex === currentSlide ? "true" : "false");
     });
-    status.textContent = `Image ${currentSlide + 1} of ${slides.length}`;
+    status.textContent = carouselLabel(carouselLabels.status, currentSlide + 1, slides.length);
   }
 
   function stopAutoplay() {
