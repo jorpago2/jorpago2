@@ -1477,8 +1477,24 @@ th {
   line-height: 1.5;
 }
 
-.teaching-intro {
-  max-width: 55rem;
+.section-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(28rem, 1.05fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.section-intro-visual {
+  min-width: 0;
+  margin: 0;
+}
+
+.section-intro-visual img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  object-fit: cover;
 }
 
 .teaching-statement {
@@ -1690,10 +1706,6 @@ th {
   font-weight: 760;
   letter-spacing: -0.035em;
   line-height: 1.08;
-}
-
-.research-intro {
-  max-width: 55rem;
 }
 
 .research-lead {
@@ -2017,6 +2029,11 @@ th {
     gap: 2rem;
   }
 
+  .section-intro {
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.8fr);
+    gap: 2rem;
+  }
+
   .hero-carousel {
     max-width: 23rem;
     justify-self: center;
@@ -2143,6 +2160,10 @@ th {
   }
 
   .home-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .section-intro {
     grid-template-columns: 1fr;
   }
 

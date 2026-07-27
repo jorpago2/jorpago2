@@ -56,7 +56,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=47/);
+  assert.match(html, /assets\/style\.css\?v=48/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
@@ -143,6 +143,7 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.match(research, /id="overview"[\s\S]*?id="publications"/);
   assert.equal((research.match(/class="research-area"/g) ?? []).length, 3);
   assert.match(research, /Functional materials for integrated photonics/);
+  assert.match(research, /class="section-intro research-intro"[\s\S]*?research-integrated-photonics\.webp/);
   assert.match(research, /Reconfigurable and non-volatile photonic devices/);
   assert.match(research, /Neuromorphic photonic hardware/);
   assert.doesNotMatch(research, /Emerging optoelectronic devices and characterization/);
@@ -164,6 +165,7 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.equal((teaching.match(/· Co-supervisor/g) ?? []).length, 10);
   assert.doesNotMatch(teaching, /· Supervisor/);
   assert.match(teaching, /Electronics and photonics education/);
+  assert.match(teaching, /class="section-intro teaching-intro"[\s\S]*?teaching-electronics-photonics\.webp/);
   assert.match(teaching, /Teoría de circuitos eléctricos/);
   assert.match(teaching, /href="\/jorpago2\/resources\/#online-tools"/);
   assert.match(teaching, /href="\/jorpago2\/contact\/#student-projects-title"/);
@@ -256,5 +258,5 @@ test("legacy route redirects and sitemap lists every page", async () => {
   assert.match(oldThesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
   assert.equal((sitemap.match(/<url>/g) ?? []).length, pages.length - Object.keys(mergedRoutes).length);
   assert.doesNotMatch(sitemap, /<loc>[^<]+\/(?:publications|books|theses)\/<\/loc>/);
-  assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g)$/i.test(file)).length, 59);
+  assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 61);
 });
