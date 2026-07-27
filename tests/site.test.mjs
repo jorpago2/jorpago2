@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile, readdir } from "node:fs/promises";
+import { access, readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 
@@ -75,6 +75,13 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
+  assert.match(html, /<img decoding="async" fetchpriority="high" src="\/jorpago2\/assets\/media\/2025\/08\/1750954398339\.jpg"/);
+  assert.doesNotMatch(html, /1750954398339\.jpg"[^>]*loading="lazy"/);
+  assert.match(html, /Imagen1\.webp/);
+  assert.match(html, /Imagen2\.webp/);
+  assert.doesNotMatch(html, /Imagen[12]\.png/);
+  assert.ok((await stat(path.join(OUTPUT_ROOT, "assets", "media", "2025", "08", "Imagen1.webp"))).size < 250_000);
+  assert.ok((await stat(path.join(OUTPUT_ROOT, "assets", "media", "2025", "08", "Imagen2.webp"))).size < 250_000);
   assert.doesNotMatch(html, /class="nav-group"|class="nav-submenu"/);
 });
 
