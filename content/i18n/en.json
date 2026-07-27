@@ -35,6 +35,8 @@
   "carousel": {
     "previous": "Previous image",
     "next": "Next image",
+    "pause": "Pause slideshow",
+    "play": "Play slideshow",
     "slide": "{current} of {total}",
     "show": "Show image {current} of {total}",
     "status": "Image {current} of {total}"

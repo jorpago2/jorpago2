@@ -362,7 +362,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=49">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=50">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -379,7 +379,7 @@ ${alternateLinks(page.id, localeBundles)}
   <meta name="twitter:image" content="${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png">
   ${structuredData(page, pageTitle, description, locale, strings)}
 </head>
-<body data-carousel-previous="${escapeHtml(strings.carousel.previous)}" data-carousel-next="${escapeHtml(strings.carousel.next)}" data-carousel-slide="${escapeHtml(strings.carousel.slide)}" data-carousel-show="${escapeHtml(strings.carousel.show)}" data-carousel-status="${escapeHtml(strings.carousel.status)}">
+<body data-carousel-previous="${escapeHtml(strings.carousel.previous)}" data-carousel-next="${escapeHtml(strings.carousel.next)}" data-carousel-pause="${escapeHtml(strings.carousel.pause)}" data-carousel-play="${escapeHtml(strings.carousel.play)}" data-carousel-slide="${escapeHtml(strings.carousel.slide)}" data-carousel-show="${escapeHtml(strings.carousel.show)}" data-carousel-status="${escapeHtml(strings.carousel.status)}">
   <a class="skip-link" href="#main-content">${escapeHtml(strings.skipLink)}</a>
   <header class="site-header">
     <div class="header-inner">
@@ -409,7 +409,7 @@ ${alternateLinks(page.id, localeBundles)}
       <p class="footer-copy">© ${new Date().getFullYear()} ${escapeHtml(strings.footerCopyright)}</p>
     </div>
   </footer>
-  <script src="${SITE_BASE_PATH}/assets/site.js?v=5" defer></script>
+  <script src="${SITE_BASE_PATH}/assets/site.js?v=6" defer></script>
 </body>
 </html>
 `);

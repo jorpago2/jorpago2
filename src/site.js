@@ -6,6 +6,8 @@ const carouselLabels = {
   slide: document.body.dataset.carouselSlide || "{current} of {total}",
   show: document.body.dataset.carouselShow || "Show image {current} of {total}",
   status: document.body.dataset.carouselStatus || "Image {current} of {total}",
+  pause: document.body.dataset.carouselPause || "Pause slideshow",
+  play: document.body.dataset.carouselPlay || "Play slideshow",
 };
 
 function carouselLabel(template, current, total) {
@@ -13,10 +15,24 @@ function carouselLabel(template, current, total) {
 }
 
 if (menuButton && navigation) {
+  function closeNavigation() {
+    menuButton.setAttribute("aria-expanded", "false");
+    navigation.classList.remove("is-open");
+  }
+
   menuButton.addEventListener("click", () => {
     const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-    menuButton.setAttribute("aria-expanded", String(!isOpen));
-    navigation.classList.toggle("is-open", !isOpen);
+    if (isOpen) closeNavigation();
+    else {
+      menuButton.setAttribute("aria-expanded", "true");
+      navigation.classList.add("is-open");
+    }
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
+      closeNavigation();
+      menuButton.focus();
+    }
   });
 }
 
@@ -50,11 +66,13 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
 
   let currentSlide = 0;
   let timer;
+  let isPaused = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const controls = document.createElement("div");
   const dots = document.createElement("div");
   const status = document.createElement("p");
   const previousButton = document.createElement("button");
   const nextButton = document.createElement("button");
+  const pauseButton = document.createElement("button");
   const carouselWidth = Number(carousel.dataset.width);
   const carouselHeight = Number(carousel.dataset.height);
 
@@ -66,7 +84,6 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   controls.className = "carousel-controls";
   dots.className = "carousel-dots";
   status.className = "carousel-status";
-  status.setAttribute("aria-live", "polite");
   previousButton.type = "button";
   previousButton.className = "carousel-arrow";
   previousButton.setAttribute("aria-label", carouselLabels.previous);
@@ -75,6 +92,16 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   nextButton.className = "carousel-arrow";
   nextButton.setAttribute("aria-label", carouselLabels.next);
   nextButton.textContent = "›";
+  pauseButton.type = "button";
+  pauseButton.className = "carousel-arrow carousel-toggle";
+
+  function updatePauseButton() {
+    pauseButton.setAttribute("aria-pressed", String(isPaused));
+    pauseButton.setAttribute("aria-label", isPaused ? carouselLabels.play : carouselLabels.pause);
+    pauseButton.textContent = isPaused ? "▶" : "⏸";
+  }
+
+  updatePauseButton();
 
   const dotButtons = slides.map((slide, index) => {
     slide.removeAttribute("style");
@@ -90,8 +117,16 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
     return button;
   });
 
-  function showSlide(index) {
+  function loadSlideImage(slide) {
+    const image = slide.querySelector("img[data-src]");
+    if (!image) return;
+    image.src = image.dataset.src;
+    image.removeAttribute("data-src");
+  }
+
+  function showSlide(index, announce = true) {
     currentSlide = (index + slides.length) % slides.length;
+    loadSlideImage(slides[currentSlide]);
     slides.forEach((slide, slideIndex) => {
       const isActive = slideIndex === currentSlide;
       slide.classList.toggle("is-active", isActive);
@@ -100,7 +135,9 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
     dotButtons.forEach((button, buttonIndex) => {
       button.setAttribute("aria-current", buttonIndex === currentSlide ? "true" : "false");
     });
+    status.setAttribute("aria-live", announce ? "polite" : "off");
     status.textContent = carouselLabel(carouselLabels.status, currentSlide + 1, slides.length);
+    loadSlideImage(slides[(currentSlide + 1) % slides.length]);
   }
 
   function stopAutoplay() {
@@ -108,10 +145,17 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   }
 
   function startAutoplay() {
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (isPaused) return;
     stopAutoplay();
-    timer = setInterval(() => showSlide(currentSlide + 1), 6000);
+    timer = setInterval(() => showSlide(currentSlide + 1, false), 6000);
   }
+
+  pauseButton.addEventListener("click", () => {
+    isPaused = !isPaused;
+    updatePauseButton();
+    if (isPaused) stopAutoplay();
+    else startAutoplay();
+  });
 
   previousButton.addEventListener("click", () => showSlide(currentSlide - 1));
   nextButton.addEventListener("click", () => showSlide(currentSlide + 1));
@@ -124,8 +168,8 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
     if (event.key === "ArrowRight") showSlide(currentSlide + 1);
   });
 
-  controls.append(previousButton, dots, status, nextButton);
+  controls.append(previousButton, dots, status, nextButton, pauseButton);
   carousel.append(controls);
-  showSlide(0);
+  showSlide(0, false);
   startAutoplay();
 });

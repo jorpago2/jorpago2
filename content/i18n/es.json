@@ -35,6 +35,8 @@
   "carousel": {
     "previous": "Imagen anterior",
     "next": "Imagen siguiente",
+    "pause": "Pausar presentación",
+    "play": "Reproducir presentación",
     "slide": "{current} de {total}",
     "show": "Mostrar la imagen {current} de {total}",
     "status": "Imagen {current} de {total}"

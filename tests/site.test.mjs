@@ -66,7 +66,7 @@ test("all imported pages are built with metadata", async () => {
       assert.doesNotMatch(html, /assets\/site\.js/);
       continue;
     }
-    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=5" defer><\/script>/);
+    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=6" defer><\/script>/);
     assert.doesNotMatch(html, /Last update:|Last updated|class="last-updated"/);
   }
 });
@@ -84,12 +84,14 @@ test("locale sources keep shared strings separate from page content", async () =
     );
     assert.ok(strings.navigation.research);
     assert.ok(strings.carousel.previous);
+    assert.ok(strings.carousel.pause);
     assert.ok(localePages.some((page) => page.slug === ""));
   }
 
   const home = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
   assert.match(home, /<html lang="en">/);
   assert.match(home, /<body data-carousel-previous="Previous image"/);
+  assert.match(home, /data-carousel-pause="Pause slideshow"/);
 });
 
 test("shared records live in JSON and render in both languages", async () => {
@@ -221,7 +223,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=49/);
+  assert.match(html, /assets\/style\.css\?v=50/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
@@ -242,6 +244,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.match(html, /<img decoding="async" fetchpriority="high" src="\/jorpago2\/assets\/media\/2025\/08\/1750954398339\.jpg"/);
   assert.doesNotMatch(html, /1750954398339\.jpg"[^>]*loading="lazy"/);
+  assert.equal((html.match(/data-src="/g) ?? []).length, 4);
   assert.match(html, /Imagen1\.webp/);
   assert.match(html, /Imagen2\.webp/);
   assert.doesNotMatch(html, /Imagen[12]\.png/);
@@ -366,6 +369,7 @@ test("about page presents a curated carousel and compact academic trajectory", a
   assert.doesNotMatch(html, /Polytechnical|Telecomunnication|next-gen|disruptive communications|memdevices/);
   assert.match(css, /\.about-biography \.wp-block-media-text \{[\s\S]*?grid-template-columns: minmax\(20rem/);
   assert.match(css, /\.about-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
+  assert.match(css, /\.about-carousel \.carousel-toggle \{[\s\S]*?position: absolute;[\s\S]*?right: 0\.75rem;/);
   assert.match(css, /\.about-carousel \.carousel-dots \{\s*display: none;/);
 });
 
@@ -382,11 +386,16 @@ test("carousels use their original proportions and compact mobile controls", asy
   const css = await readFile(path.resolve("src", "style.css"), "utf8");
 
   assert.match(script, /--carousel-aspect/);
+  assert.match(script, /event\.key === "Escape"/);
+  assert.match(script, /carouselLabels\.pause/);
+  assert.match(script, /img\[data-src\]/);
   assert.match(css, /aspect-ratio: var\(--carousel-aspect/);
   assert.match(css, /\.metaslider\.carousel-ready \.slides li \{[\s\S]*?opacity: 0;[\s\S]*?transition: opacity 0\.8s ease/);
   assert.match(css, /\.hero-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
   assert.match(css, /\.carousel-dots \{\s*display: none;/);
   assert.match(css, /\.carousel-status \{[\s\S]*position: static;/);
+  assert.match(css, /\.carousel-dots button \{[\s\S]*?width: 1\.5rem;[\s\S]*?height: 1\.5rem;/);
+  assert.doesNotMatch(css, /width: 100vw/);
 });
 
 test("header and page content share the same horizontal alignment", async () => {
@@ -402,7 +411,7 @@ test("local links and assets resolve", async () => {
     for (const page of localizedPages.get(locale.code)) {
       const html = await readFile(outputFileForPage(page, locale), "utf8");
       const urls = [
-        ...html.matchAll(/(?:href|src)="(\/jorpago2(?:\/[^"#?]*)?)/g),
+        ...html.matchAll(/(?:href|src|data-src)="(\/jorpago2(?:\/[^"#?]*)?)/g),
       ].map((match) => match[1]);
 
       for (const url of new Set(urls)) {
