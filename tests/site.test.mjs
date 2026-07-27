@@ -232,6 +232,22 @@ test("local links and assets resolve", async () => {
   }
 });
 
+test("external links open safely in a new tab", async () => {
+  let externalLinkCount = 0;
+
+  for (const page of pages.filter((page) => !mergedRoutes[page.slug])) {
+    const html = await readFile(path.join(OUTPUT_ROOT, page.slug, "index.html"), "utf8");
+    for (const match of html.matchAll(/<a\b(?=[^>]*\bhref="https?:\/\/)[^>]*>/gi)) {
+      externalLinkCount += 1;
+      assert.match(match[0], /\starget="_blank"/i);
+      assert.match(match[0], /\bnoopener\b/i);
+      assert.match(match[0], /\bnoreferrer\b/i);
+    }
+  }
+
+  assert.ok(externalLinkCount > 0);
+});
+
 test("migrated content images have alternative text", async () => {
   const fragments = await readdir(path.resolve("content", "pages"));
 

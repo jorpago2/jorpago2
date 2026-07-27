@@ -267,6 +267,20 @@ ${JSON.stringify(
 </script>`;
 }
 
+function externalLinksInNewTab(html) {
+  return html.replace(/<a\b(?=[^>]*\bhref="https?:\/\/)[^>]*>/gi, (anchor) => {
+    let updated = /\starget="[^"]*"/i.test(anchor)
+      ? anchor.replace(/\starget="[^"]*"/i, ' target="_blank"')
+      : anchor.replace(/>$/, ' target="_blank">');
+    if (!/\bnoopener\b/i.test(updated) || !/\bnoreferrer\b/i.test(updated)) {
+      updated = /\srel="/i.test(updated)
+        ? updated.replace(/\srel="([^"]*)"/i, ' rel="$1 noopener noreferrer"')
+        : updated.replace(/>$/, ' rel="noopener noreferrer">');
+    }
+    return updated;
+  });
+}
+
 function pageShell({ page, content, hasSocialImage }) {
   const isHome = page.slug === "";
   const pageTitle = isHome
@@ -292,7 +306,7 @@ ${content}
         </div>
       </article>`;
 
-  return `<!doctype html>
+  return externalLinksInNewTab(`<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -342,7 +356,7 @@ ${content}
   <script src="${SITE_BASE_PATH}/assets/site.js?v=3" defer></script>
 </body>
 </html>
-`;
+`);
 }
 
 function homeContent(content) {
