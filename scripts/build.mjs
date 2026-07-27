@@ -132,8 +132,11 @@ function preparePageContent(slug, sourceContent) {
             `<div class="wp-block-media-text__media about-carousel">${carouselWithPortrait}</div>`,
           )
         : biography;
-      content = `<section class="about-biography">
-<h2 id="biography">Biography</h2>
+      content = `<section class="about-biography" aria-labelledby="about-focus-title">
+<header class="about-heading">
+  <p class="eyebrow">About me</p>
+  <h2 id="about-focus-title">Researcher and educator in integrated photonics</h2>
+</header>
 ${biographyWithCarousel}
 </section>
 ${career}`;
@@ -298,7 +301,7 @@ ${content}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=45">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=46">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">

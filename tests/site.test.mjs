@@ -56,7 +56,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=45/);
+  assert.match(html, /assets\/style\.css\?v=46/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
@@ -164,17 +164,21 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.doesNotMatch(teaching, /metaslider|<table|Teaching in practice|>TBC</);
 });
 
-test("about page places the expanded carousel beside the biography", async () => {
+test("about page presents a curated carousel and compact academic trajectory", async () => {
   const html = await readFile(path.join(OUTPUT_ROOT, "about-me", "index.html"), "utf8");
   const css = await readFile(path.resolve("src", "style.css"), "utf8");
   const carousel = html.match(/<div class="wp-block-media-text__media about-carousel">[\s\S]*?<\/ul>/)?.[0] ?? "";
 
   assert.match(carousel, /class="slide-profile ms-image"/);
   assert.match(carousel, /src="\/jorpago2\/assets\/media\/2025\/08\/Imagen1\.jpg"[^>]*alt="Jorge Parra"/);
-  assert.equal((carousel.match(/aria-roledescription="slide"/g) ?? []).length, 13);
-  assert.doesNotMatch(html, /id="highlights"|Selected moments/);
+  assert.equal((carousel.match(/aria-roledescription="slide"/g) ?? []).length, 7);
+  assert.match(html, /Researcher and educator in integrated photonics/);
+  assert.equal((html.match(/class="trajectory-date"/g) ?? []).length, 9);
+  assert.match(html, /COIT-AEIT National Award for Best Academic Record · 2021/);
+  assert.doesNotMatch(html, /Polytechnical|Telecomunnication|next-gen|disruptive communications|memdevices/);
   assert.match(css, /\.about-biography \.wp-block-media-text \{[\s\S]*?grid-template-columns: minmax\(20rem/);
   assert.match(css, /\.about-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
+  assert.match(css, /\.about-carousel \.carousel-dots \{\s*display: none;/);
 });
 
 test("interior pages begin directly with content and keep an accessible page title", async () => {
