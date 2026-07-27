@@ -154,6 +154,8 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
   assert.equal((teaching.match(/class="course-list previous-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 4);
   assert.equal((teaching.match(/class="supervision-year"/g) ?? []).length, 10);
+  assert.equal((teaching.match(/· Co-supervisor/g) ?? []).length, 10);
+  assert.doesNotMatch(teaching, /· Supervisor/);
   assert.match(teaching, /Electronics and photonics education/);
   assert.match(teaching, /Teoría de circuitos eléctricos/);
   assert.match(teaching, /href="\/jorpago2\/resources\/#online-tools"/);
