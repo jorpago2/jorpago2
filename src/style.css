@@ -250,6 +250,28 @@ li {
   color: var(--accent);
 }
 
+.language-nav {
+  display: inline-flex;
+  margin-left: 0.45rem;
+  padding-left: 0.65rem;
+  border-left: 1px solid var(--line);
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.language-nav a {
+  padding: 0.35rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.language-nav a:hover,
+.language-nav a[aria-current="page"] {
+  color: var(--accent);
+}
+
 main {
   position: relative;
   z-index: 1;
@@ -2031,6 +2053,14 @@ figcaption {
 
   .primary-nav > a {
     padding: 0.7rem;
+  }
+
+  .language-nav {
+    display: flex;
+    margin: 0.35rem 0 0;
+    padding: 0.55rem 0 0 0.35rem;
+    border-top: 1px solid var(--line);
+    border-left: 0;
   }
 
   .site-footer > div {

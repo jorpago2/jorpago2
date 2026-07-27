@@ -1,0 +1,52 @@
+{
+  "siteName": "Dr. Jorge Parra — Fotónica y electrónica",
+  "skipLink": "Saltar al contenido",
+  "homepageLabel": "Dr. Jorge Parra — página de inicio",
+  "menu": "Menú",
+  "primaryNavigation": "Navegación principal",
+  "languageNavigation": "Idioma",
+  "identitySubtitle": "Profesor en la Universitat de València · Fotónica · Electrónica",
+  "professionalProfiles": "Perfiles profesionales",
+  "footerName": "Dr. Jorge Parra",
+  "footerInstitution": "Departamento de Ingeniería Electrónica · Universitat de València",
+  "footerCopyright": "Jorge Parra",
+  "socialImageAlt": "Dr. Jorge Parra — Fotónica y electrónica",
+  "navigation": {
+    "about-me": "Sobre mí",
+    "research": "Investigación",
+    "teaching": "Docencia",
+    "resources": "Recursos",
+    "contact": "Contacto"
+  },
+  "profiles": {
+    "linkedin": "LinkedIn",
+    "researchGate": "ResearchGate",
+    "x": "X",
+    "uv": "Perfil UV"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "No se ha encontrado la página solicitada.",
+    "message": "Es posible que la página se haya trasladado durante la migración desde WordPress.",
+    "action": "Volver a la página de inicio"
+  },
+  "redirectMessage": "Este contenido se ha trasladado a",
+  "carousel": {
+    "previous": "Imagen anterior",
+    "next": "Imagen siguiente",
+    "slide": "{current} de {total}",
+    "show": "Mostrar la imagen {current} de {total}",
+    "status": "Imagen {current} de {total}"
+  },
+  "person": {
+    "jobTitle": "Profesor",
+    "description": "Profesor e investigador en fotónica integrada, materiales funcionales, dispositivos emergentes y hardware neuromórfico.",
+    "knowsAbout": [
+      "Fotónica integrada",
+      "Materiales funcionales",
+      "Ingeniería electrónica",
+      "Dispositivos electrónicos y fotónicos emergentes",
+      "Hardware neuromórfico"
+    ]
+  }
+}

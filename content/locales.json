@@ -4,7 +4,12 @@
     {
       "code": "en",
       "path": "",
-      "label": "English"
+      "label": "EN"
+    },
+    {
+      "code": "es",
+      "path": "es",
+      "label": "ES"
     }
   ]
 }

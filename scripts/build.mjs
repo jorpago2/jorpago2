@@ -10,7 +10,7 @@ const LOGO_PATH = `${SITE_BASE_PATH}/assets/media/2025/07/cropped-ChatGPT-Image-
 const PROFILE_IMAGE_PATH = `${SITE_BASE_PATH}/assets/github-profile.jpg`;
 const PERSON_ID = `${SITE_ORIGIN}${SITE_BASE_PATH}/about-me/#person`;
 
-const navigationSlugs = ["about-me", "research", "teaching", "resources", "contact"];
+const navigationIds = ["about-me", "research", "teaching", "resources", "contact"];
 
 const mergedRoutes = {
   publications: { target: "research", anchor: "publications" },
@@ -45,43 +45,46 @@ function conciseDescription(value) {
   return `${cleaned.slice(0, 157).replace(/\s+\S*$/, "")}…`;
 }
 
-function navigationHtml(activeSlug, locale, strings) {
-  return navigationSlugs
-    .map((slug) => {
-      const current = activeSlug === slug ? ' aria-current="page"' : "";
-      return `<a href="${route(slug, locale)}"${current}>${escapeHtml(strings.navigation[slug])}</a>`;
+function navigationHtml(activeId, bundle) {
+  return navigationIds
+    .map((id) => {
+      const page = bundle.pagesById.get(id);
+      if (!page) return "";
+      const current = activeId === id ? ' aria-current="page"' : "";
+      return `<a href="${route(page.slug, bundle.locale)}"${current}>${escapeHtml(bundle.strings.navigation[id])}</a>`;
     })
+    .filter(Boolean)
     .join("\n          ");
 }
 
-function alternateLinks(slug, localeBundles) {
-  const available = localeBundles.filter(({ pagesBySlug }) => pagesBySlug.has(slug));
+function alternateLinks(pageId, localeBundles) {
+  const available = localeBundles.filter(({ pagesById }) => pagesById.has(pageId));
   if (available.length < 2) return "";
 
   const links = available.map(
-    ({ locale }) =>
-      `  <link rel="alternate" hreflang="${locale.code}" href="${canonicalUrl(slug, locale)}">`,
+    ({ locale, pagesById }) =>
+      `  <link rel="alternate" hreflang="${locale.code}" href="${canonicalUrl(pagesById.get(pageId).slug, locale)}">`,
   );
   const defaultBundle = available.find(({ locale }) => locale.isDefault);
   if (defaultBundle) {
     links.push(
-      `  <link rel="alternate" hreflang="x-default" href="${canonicalUrl(slug, defaultBundle.locale)}">`,
+      `  <link rel="alternate" hreflang="x-default" href="${canonicalUrl(defaultBundle.pagesById.get(pageId).slug, defaultBundle.locale)}">`,
     );
   }
   return links.join("\n");
 }
 
-function languageSwitcherHtml(slug, locale, strings, localeBundles) {
-  const available = localeBundles.filter(({ pagesBySlug }) => pagesBySlug.has(slug));
+function languageSwitcherHtml(pageId, locale, strings, localeBundles) {
+  const available = localeBundles.filter(({ pagesById }) => pagesById.has(pageId));
   if (available.length < 2) return "";
 
   const links = available
-    .map(({ locale: option }) => {
+    .map(({ locale: option, pagesById }) => {
       const current = option.code === locale.code ? ' aria-current="page"' : "";
-      return `<a href="${route(slug, option)}" lang="${option.code}"${current}>${escapeHtml(option.label)}</a>`;
+      return `<a href="${route(pagesById.get(pageId).slug, option)}" lang="${option.code}"${current}>${escapeHtml(option.label)}</a>`;
     })
     .join("\n          ");
-  return `<nav class="language-nav" aria-label="${escapeHtml(strings.languageNavigation)}">\n          ${links}\n      </nav>`;
+  return `<span class="language-nav" role="group" aria-label="${escapeHtml(strings.languageNavigation)}">\n          ${links}\n        </span>`;
 }
 
 function schemaScript(value) {
@@ -121,7 +124,7 @@ function personSchemaData(strings) {
 function structuredData(page, pageTitle, description, locale, strings) {
   const person = personSchemaData(strings);
 
-  if (page.slug === "") {
+  if (page.id === "home") {
     return schemaScript({
       "@context": "https://schema.org",
       "@graph": [
@@ -139,7 +142,7 @@ function structuredData(page, pageTitle, description, locale, strings) {
     });
   }
 
-  if (page.slug === "about-me") {
+  if (page.id === "about-me") {
     return schemaScript({
       "@context": "https://schema.org",
       "@type": "ProfilePage",
@@ -171,12 +174,12 @@ function externalLinksInNewTab(html) {
 }
 
 function pageShell({ page, content, locale, strings, localeBundles }) {
-  const isHome = page.slug === "";
+  const isHome = page.id === "home";
   const pageTitle = page.seoTitle || `${page.title} | Dr. Jorge Parra`;
   const description = conciseDescription(page.description);
   const mainContent = isHome
     ? content
-    : `<article class="page-layout page-${page.slug}">
+    : `<article class="page-layout page-${page.id}">
         <h1 class="visually-hidden">${escapeHtml(page.title)}</h1>
         <div class="page-content">
 ${content}
@@ -193,9 +196,9 @@ ${content}
   <meta name="author" content="Jorge Parra Gómez">
   <meta name="robots" content="${IS_PREVIEW ? "noindex, nofollow, noarchive" : "index, follow, max-image-preview:large"}">
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
-${alternateLinks(page.slug, localeBundles)}
+${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=48">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=49">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -222,9 +225,9 @@ ${alternateLinks(page.slug, localeBundles)}
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">${escapeHtml(strings.menu)}</button>
       <nav class="primary-nav" id="primary-navigation" aria-label="${escapeHtml(strings.primaryNavigation)}">
-          ${navigationHtml(page.slug, locale, strings)}
+          ${navigationHtml(page.id, localeBundles.find(({ locale: option }) => option.code === locale.code))}
+          ${languageSwitcherHtml(page.id, locale, strings, localeBundles)}
       </nav>
-      ${languageSwitcherHtml(page.slug, locale, strings, localeBundles)}
     </div>
   </header>
   <main id="main-content">
@@ -250,6 +253,7 @@ ${alternateLinks(page.slug, localeBundles)}
 
 function notFoundPage(locale, strings, localeBundles) {
   const page = {
+    id: "404",
     slug: "404",
     title: strings.notFound.title,
     description: strings.notFound.description,
@@ -259,19 +263,21 @@ function notFoundPage(locale, strings, localeBundles) {
   return pageShell({ page, content, locale, strings, localeBundles });
 }
 
-function redirectPage(page, destination, locale, strings) {
-  const target = `${route(destination.target, locale)}#${destination.anchor}`;
+function redirectPage(page, destination, bundle) {
+  const targetPage = bundle.pagesById.get(destination.target);
+  if (!targetPage) throw new Error(`Missing redirect target in ${bundle.locale.code}: ${destination.target}`);
+  const target = `${route(targetPage.slug, bundle.locale)}#${destination.anchor}`;
   return `<!doctype html>
-<html lang="${locale.code}">
+<html lang="${bundle.locale.code}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(page.title)} | Dr. Jorge Parra</title>
   <meta name="description" content="${escapeHtml(conciseDescription(page.description))}">
-  <link rel="canonical" href="${canonicalUrl(destination.target, locale)}">
+  <link rel="canonical" href="${canonicalUrl(targetPage.slug, bundle.locale)}">
   <meta http-equiv="refresh" content="0; url=${target}">
 </head>
-<body><p>${escapeHtml(strings.redirectMessage)} <a href="${target}">${escapeHtml(page.title)}</a>.</p></body>
+<body><p>${escapeHtml(bundle.strings.redirectMessage)} <a href="${target}">${escapeHtml(page.title)}</a>.</p></body>
 </html>\n`;
 }
 
@@ -317,7 +323,7 @@ async function loadLocaleBundles() {
         readFile(path.join(CONTENT_ROOT, "i18n", `${locale.code}.json`), "utf8").then(JSON.parse),
         readFile(path.join(localeRoot, "pages.json"), "utf8").then(JSON.parse),
       ]);
-      if (!strings.navigation || navigationSlugs.some((slug) => !strings.navigation[slug])) {
+      if (!strings.navigation || navigationIds.some((id) => !strings.navigation[id])) {
         throw new Error(`Missing navigation strings for locale: ${locale.code}`);
       }
       if (!strings.carousel || !Array.isArray(strings.person?.knowsAbout)) {
@@ -326,16 +332,27 @@ async function loadLocaleBundles() {
       if (!Array.isArray(pages)) throw new Error(`Invalid page list for locale: ${locale.code}`);
 
       const pagesBySlug = new Map();
+      const pagesById = new Map();
       for (const page of pages) {
-        if (!/^[a-z0-9-]*$/.test(page.slug) || !page.title || !page.description || !page.modified) {
+        if (
+          !/^[a-z0-9-]+$/.test(page.id) ||
+          !/^[a-z0-9-]*$/.test(page.slug) ||
+          !page.title ||
+          !page.description ||
+          !page.modified
+        ) {
           throw new Error(`Invalid page metadata in locale: ${locale.code}`);
+        }
+        if (pagesById.has(page.id)) {
+          throw new Error(`Duplicate page id in ${locale.code}: ${page.id}`);
         }
         if (pagesBySlug.has(page.slug)) {
           throw new Error(`Duplicate page slug in ${locale.code}: ${page.slug}`);
         }
+        pagesById.set(page.id, page);
         pagesBySlug.set(page.slug, page);
       }
-      return { locale, localeRoot, strings, pages, pagesBySlug };
+      return { locale, localeRoot, strings, pages, pagesById, pagesBySlug };
     }),
   );
 }
@@ -363,15 +380,15 @@ async function main() {
         ? path.join(localeOutputRoot, page.slug)
         : localeOutputRoot;
       await mkdir(outputDirectory, { recursive: true });
-      const redirect = mergedRoutes[page.slug];
-      const fragmentName = page.slug || "home";
+      const redirect = mergedRoutes[page.id];
+      const fragmentName = page.id;
       const content = redirect
         ? ""
         : await readFile(path.join(bundle.localeRoot, `${fragmentName}.html`), "utf8");
       await writeFile(
         path.join(outputDirectory, "index.html"),
         redirect
-          ? redirectPage(page, redirect, bundle.locale, bundle.strings)
+          ? redirectPage(page, redirect, bundle)
           : pageShell({
               page,
               content,
@@ -390,10 +407,9 @@ async function main() {
   await writeFile(
     path.join(oldThesesRoute, "index.html"),
     redirectPage(
-      { title: "Theses", description: "Supervised theses." },
+      { id: "theases", slug: "theases", title: "Theses", description: "Supervised theses." },
       mergedRoutes.theses,
-      defaultBundle.locale,
-      defaultBundle.strings,
+      defaultBundle,
     ),
     "utf8",
   );
@@ -401,7 +417,7 @@ async function main() {
   const sitemap = localeBundles
     .flatMap((bundle) =>
       bundle.pages
-        .filter((page) => !mergedRoutes[page.slug])
+        .filter((page) => !mergedRoutes[page.id])
         .map(
           (page) =>
             `  <url><loc>${canonicalUrl(page.slug, bundle.locale)}</loc><lastmod>${page.modified.slice(0, 10)}</lastmod></url>`,
@@ -432,11 +448,11 @@ async function main() {
   );
 
   const pageCount = localeBundles.reduce(
-    (count, bundle) => count + bundle.pages.filter((page) => !mergedRoutes[page.slug]).length,
+    (count, bundle) => count + bundle.pages.filter((page) => !mergedRoutes[page.id]).length,
     0,
   );
   const redirectCount = localeBundles.reduce(
-    (count, bundle) => count + bundle.pages.filter((page) => mergedRoutes[page.slug]).length,
+    (count, bundle) => count + bundle.pages.filter((page) => mergedRoutes[page.id]).length,
     1,
   );
   console.log(`Built ${pageCount} pages and ${redirectCount} redirects in ${OUTPUT_ROOT}.`);

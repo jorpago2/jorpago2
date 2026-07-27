@@ -13,6 +13,16 @@ const defaultLocale = localeConfig.locales.find(
 );
 const DEFAULT_CONTENT_ROOT = path.resolve("content", "pages", defaultLocale.code);
 const pages = JSON.parse(await readFile(path.join(DEFAULT_CONTENT_ROOT, "pages.json"), "utf8"));
+const localizedPages = new Map(
+  await Promise.all(
+    localeConfig.locales.map(async (locale) => [
+      locale.code,
+      JSON.parse(
+        await readFile(path.resolve("content", "pages", locale.code, "pages.json"), "utf8"),
+      ),
+    ]),
+  ),
+);
 const mergedRoutes = {
   publications: "/jorpago2/research/#publications",
   books: "/jorpago2/teaching/#books",
@@ -37,6 +47,10 @@ function outputFileForUrl(urlPath) {
   return path.join(OUTPUT_ROOT, relativePath, "index.html");
 }
 
+function outputFileForPage(page, locale) {
+  return path.join(OUTPUT_ROOT, locale.path, page.slug, "index.html");
+}
+
 test("all imported pages are built with metadata", async () => {
   assert.equal(pages.length, 12);
 
@@ -47,8 +61,8 @@ test("all imported pages are built with metadata", async () => {
     assert.ok(html.includes(`<link rel="canonical" href="${SITE_ORIGIN}/jorpago2/`));
     assert.doesNotMatch(html, /jorpago2\.blogs\.uv\.es/);
     assert.doesNotMatch(html, /<script[^>]+src="https?:/i);
-    if (mergedRoutes[page.slug]) {
-      assert.match(html, new RegExp(`http-equiv="refresh" content="0; url=${mergedRoutes[page.slug]}`));
+    if (mergedRoutes[page.id]) {
+      assert.match(html, new RegExp(`http-equiv="refresh" content="0; url=${mergedRoutes[page.id]}`));
       assert.doesNotMatch(html, /assets\/site\.js/);
       continue;
     }
@@ -78,6 +92,34 @@ test("locale sources keep shared strings separate from page content", async () =
   assert.match(home, /<body data-carousel-previous="Previous image"/);
 });
 
+test("Spanish priority pages use localized routes, interface text and SEO alternates", async () => {
+  const spanishLocale = localeConfig.locales.find((locale) => locale.code === "es");
+  const spanishPages = localizedPages.get("es");
+  const byId = new Map(spanishPages.map((page) => [page.id, page]));
+  const home = await readFile(outputFileForPage(byId.get("home"), spanishLocale), "utf8");
+  const research = await readFile(outputFileForPage(byId.get("research"), spanishLocale), "utf8");
+  const teaching = await readFile(outputFileForPage(byId.get("teaching"), spanishLocale), "utf8");
+  const resources = await readFile(outputFileForPage(byId.get("resources"), spanishLocale), "utf8");
+  const contact = await readFile(outputFileForPage(byId.get("contact"), spanishLocale), "utf8");
+
+  assert.deepEqual([...byId.keys()].sort(), ["contact", "home", "research", "resources", "teaching"]);
+  assert.match(home, /<html lang="es">/);
+  assert.match(home, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\/es\/">/);
+  assert.match(home, /hreflang="en" href="https:\/\/www\.uv\.es\/jorpago2\/">/);
+  assert.match(home, /hreflang="es" href="https:\/\/www\.uv\.es\/jorpago2\/es\/">/);
+  assert.match(home, /hreflang="x-default" href="https:\/\/www\.uv\.es\/jorpago2\/">/);
+  assert.match(home, /href="\/jorpago2\/es\/investigacion\/">Investigación<\/a>/);
+  assert.match(home, /href="\/jorpago2\/es\/docencia\/">Docencia<\/a>/);
+  assert.match(home, /class="language-nav"[\s\S]*?href="\/jorpago2\/" lang="en">EN<\/a>[\s\S]*?lang="es" aria-current="page">ES<\/a>/);
+  assert.match(home, /href="\/jorpago2\/new-students\/" lang="en"/);
+  assert.match(research, /Fotónica integrada reconfigurable con materiales funcionales/);
+  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
+  assert.equal((teaching.match(/· Codirector/g) ?? []).length, 10);
+  assert.match(resources, /Simuladores y herramientas en línea/);
+  assert.match(resources, /Diseño, simulación y medida/);
+  assert.match(contact, /Estudiantes de grado y máster/);
+});
+
 test("SEO metadata identifies the site and academic profile", async () => {
   const home = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
   const about = await readFile(path.join(OUTPUT_ROOT, "about-me", "index.html"), "utf8");
@@ -102,7 +144,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=48/);
+  assert.match(html, /assets\/style\.css\?v=49/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
@@ -273,14 +315,16 @@ test("header and page content share the same horizontal alignment", async () => 
 });
 
 test("local links and assets resolve", async () => {
-  for (const page of pages) {
-    const html = await readFile(path.join(OUTPUT_ROOT, page.slug, "index.html"), "utf8");
-    const urls = [
-      ...html.matchAll(/(?:href|src)="(\/jorpago2(?:\/[^"#?]*)?)/g),
-    ].map((match) => match[1]);
+  for (const locale of localeConfig.locales) {
+    for (const page of localizedPages.get(locale.code)) {
+      const html = await readFile(outputFileForPage(page, locale), "utf8");
+      const urls = [
+        ...html.matchAll(/(?:href|src)="(\/jorpago2(?:\/[^"#?]*)?)/g),
+      ].map((match) => match[1]);
 
-    for (const url of new Set(urls)) {
-      assert.equal(await exists(outputFileForUrl(url)), true, `Missing target for ${url}`);
+      for (const url of new Set(urls)) {
+        assert.equal(await exists(outputFileForUrl(url)), true, `Missing target for ${url}`);
+      }
     }
   }
 });
@@ -288,13 +332,15 @@ test("local links and assets resolve", async () => {
 test("external links open safely in a new tab", async () => {
   let externalLinkCount = 0;
 
-  for (const page of pages.filter((page) => !mergedRoutes[page.slug])) {
-    const html = await readFile(path.join(OUTPUT_ROOT, page.slug, "index.html"), "utf8");
-    for (const match of html.matchAll(/<a\b(?=[^>]*\bhref="https?:\/\/)[^>]*>/gi)) {
-      externalLinkCount += 1;
-      assert.match(match[0], /\starget="_blank"/i);
-      assert.match(match[0], /\bnoopener\b/i);
-      assert.match(match[0], /\bnoreferrer\b/i);
+  for (const locale of localeConfig.locales) {
+    for (const page of localizedPages.get(locale.code).filter((item) => !mergedRoutes[item.id])) {
+      const html = await readFile(outputFileForPage(page, locale), "utf8");
+      for (const match of html.matchAll(/<a\b(?=[^>]*\bhref="https?:\/\/)[^>]*>/gi)) {
+        externalLinkCount += 1;
+        assert.match(match[0], /\starget="_blank"/i);
+        assert.match(match[0], /\bnoopener\b/i);
+        assert.match(match[0], /\bnoreferrer\b/i);
+      }
     }
   }
 
@@ -302,12 +348,15 @@ test("external links open safely in a new tab", async () => {
 });
 
 test("migrated content images have alternative text", async () => {
-  const fragments = await readdir(DEFAULT_CONTENT_ROOT);
+  for (const locale of localeConfig.locales) {
+    const contentRoot = path.resolve("content", "pages", locale.code);
+    const fragments = await readdir(contentRoot);
 
-  for (const fragment of fragments.filter((name) => name.endsWith(".html"))) {
-    const html = await readFile(path.join(DEFAULT_CONTENT_ROOT, fragment), "utf8");
-    for (const image of html.matchAll(/<img\b[^>]*>/gi)) {
-      assert.match(image[0], /\salt="[^"]+"/i, `${fragment} contains an image without alt text`);
+    for (const fragment of fragments.filter((name) => name.endsWith(".html"))) {
+      const html = await readFile(path.join(contentRoot, fragment), "utf8");
+      for (const image of html.matchAll(/<img\b[^>]*>/gi)) {
+        assert.match(image[0], /\salt="[^"]+"/i, `${locale.code}/${fragment} contains an image without alt text`);
+      }
     }
   }
 });
@@ -327,8 +376,13 @@ test("legacy route redirects and sitemap lists every page", async () => {
   assert.match(booksRedirect, /url=\/jorpago2\/teaching\/#books/);
   assert.match(thesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
   assert.match(oldThesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, pages.length - Object.keys(mergedRoutes).length);
+  const sitemapPageCount = localeConfig.locales.reduce(
+    (count, locale) => count + localizedPages.get(locale.code).filter((page) => !mergedRoutes[page.id]).length,
+    0,
+  );
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, sitemapPageCount);
   assert.match(sitemap, /<loc>https:\/\/www\.uv\.es\/jorpago2\//);
+  assert.match(sitemap, /<loc>https:\/\/www\.uv\.es\/jorpago2\/es\/investigacion\/<\/loc>/);
   assert.equal(
     robots,
     IS_PREVIEW

@@ -1,5 +1,6 @@
 [
   {
+    "id": "about-me",
     "slug": "about-me",
     "title": "About me",
     "seoTitle": "About Jorge Parra | Integrated Photonics Researcher",
@@ -7,6 +8,7 @@
     "modified": "2026-07-27T00:00:00"
   },
   {
+    "id": "research",
     "slug": "research",
     "title": "Research",
     "seoTitle": "Integrated Photonics Research & Publications | Jorge Parra",
@@ -14,12 +16,14 @@
     "modified": "2026-07-26T00:00:00"
   },
   {
+    "id": "theses",
     "slug": "theses",
     "title": "Theses",
     "description": "Doctoral TBC Master Bachelor",
     "modified": "2025-08-14T16:53:13"
   },
   {
+    "id": "contact",
     "slug": "contact",
     "title": "Contact",
     "seoTitle": "Contact and Student Projects | Dr. Jorge Parra",
@@ -27,6 +31,7 @@
     "modified": "2026-07-27T00:00:00"
   },
   {
+    "id": "home",
     "slug": "",
     "title": "Homepage",
     "seoTitle": "Dr. Jorge Parra | Integrated Photonics & Electronic Engineering",
@@ -34,12 +39,14 @@
     "modified": "2026-07-27T00:00:00"
   },
   {
+    "id": "publications",
     "slug": "publications",
     "title": "Publications",
     "description": "Journal papers 2026 2025 2024 2023 2022 2021 2020 2019 2018",
     "modified": "2026-05-02T19:18:30"
   },
   {
+    "id": "new-students",
     "slug": "new-students",
     "title": "New students",
     "seoTitle": "Research Projects for Students | Dr. Jorge Parra",
@@ -47,6 +54,7 @@
     "modified": "2026-07-26T00:00:00"
   },
   {
+    "id": "resources",
     "slug": "resources",
     "title": "Resources",
     "seoTitle": "Photonics & Electronics Simulators and Resources",
@@ -54,6 +62,7 @@
     "modified": "2026-07-26T00:00:00"
   },
   {
+    "id": "faq",
     "slug": "faq",
     "title": "FAQ for prospective PhD students",
     "seoTitle": "PhD in Spain: FAQ for Prospective Students",
@@ -61,6 +70,7 @@
     "modified": "2026-07-26T00:00:00"
   },
   {
+    "id": "teaching",
     "slug": "teaching",
     "title": "Teaching",
     "seoTitle": "Electronics & Photonics Teaching | Dr. Jorge Parra",
@@ -68,6 +78,7 @@
     "modified": "2026-07-26T00:00:00"
   },
   {
+    "id": "career-strategy",
     "slug": "career-strategy",
     "title": "Career Strategy",
     "seoTitle": "Research Career Strategy | Dr. Jorge Parra",
@@ -75,6 +86,7 @@
     "modified": "2026-07-26T00:00:00"
   },
   {
+    "id": "books",
     "slug": "books",
     "title": "Books",
     "description": "Teoría de circuitos eléctricos. Problemas resueltos Authors: Sanchis Kilders, Pablo Díaz Rubio, Ana Parra Gómez, Jorge ISBN: 978-84-1396-370-9 Ref.: 636 Language: Spanish",
