@@ -1,110 +1,74 @@
 [
   {
-    "id": 25,
     "slug": "about-me",
-    "originalSlug": "about-me",
     "title": "About me",
     "description": "Jorge Parra is an Assistant Professor at the Universitat de València working on reconfigurable integrated photonics, functional materials and neuromorphic hardware.",
-    "modified": "2025-08-15T14:41:32",
-    "source": "https://jorpago2.blogs.uv.es/about-me/"
+    "modified": "2025-08-15T14:41:32"
   },
   {
-    "id": 26,
     "slug": "research",
-    "originalSlug": "research",
     "title": "Research",
     "description": "Research areas and journal publications in functional materials, reconfigurable integrated photonics and neuromorphic photonic hardware.",
-    "modified": "2026-07-26T00:00:00",
-    "source": "https://jorpago2.blogs.uv.es/research/"
+    "modified": "2026-07-26T00:00:00"
   },
   {
-    "id": 27,
     "slug": "theses",
-    "originalSlug": "theases",
     "title": "Theses",
     "description": "Doctoral TBC Master Bachelor",
-    "modified": "2025-08-14T16:53:13",
-    "source": "https://jorpago2.blogs.uv.es/theases/"
+    "modified": "2025-08-14T16:53:13"
   },
   {
-    "id": 28,
     "slug": "contact",
-    "originalSlug": "contact",
     "title": "Contact",
     "description": "You can contact me at: jorge [dot] parra [at] uv [dot] es (Apologies for the odd format; it’s to help prevent spam) BSc and MSc students If you are a Bachelor’s or Master’s student looking for a thesis project (TFG/TFM), feel free to reach out. I am happy to discuss potential topics and ideas with … Read more",
-    "modified": "2025-08-17T20:07:43",
-    "source": "https://jorpago2.blogs.uv.es/contact/"
+    "modified": "2025-08-17T20:07:43"
   },
   {
-    "id": 37,
     "slug": "",
-    "originalSlug": "main",
     "title": "Homepage",
     "description": "Welcome to the homepage of Dr. Jorge Parra, Assistant Professor in the Department of Electronic Engineering at the University of Valencia. 🔬🎓 Are you interested in doing research and getting a PhD? Read this first and consult the FAQ for prospective PhD students. 🔑👨‍🏫 Practical advice I try to follow to start my research career … Read more",
-    "modified": "2026-07-26T00:00:00",
-    "source": "https://jorpago2.blogs.uv.es/"
+    "modified": "2026-07-26T00:00:00"
   },
   {
-    "id": 51,
     "slug": "publications",
-    "originalSlug": "publications",
     "title": "Publications",
     "description": "Journal papers 2026 2025 2024 2023 2022 2021 2020 2019 2018",
-    "modified": "2026-05-02T19:18:30",
-    "source": "https://jorpago2.blogs.uv.es/publications/"
+    "modified": "2026-05-02T19:18:30"
   },
   {
-    "id": 115,
     "slug": "new-students",
-    "originalSlug": "new-students",
     "title": "New students",
     "description": "A concise guide for students considering scientific research, focused on curiosity, constructive dissatisfaction, reframing and problem decomposition.",
-    "modified": "2026-07-26T00:00:00",
-    "source": "https://jorpago2.blogs.uv.es/new-students/"
+    "modified": "2026-07-26T00:00:00"
   },
   {
-    "id": 122,
     "slug": "resources",
-    "originalSlug": "resources",
     "title": "Resources",
     "description": "Curated scientific links, design and fabrication resources, communication tools and interactive online simulators.",
-    "modified": "2026-07-26T00:00:00",
-    "source": "https://jorpago2.blogs.uv.es/resources/"
+    "modified": "2026-07-26T00:00:00"
   },
   {
-    "id": 213,
     "slug": "faq",
-    "originalSlug": "faq",
     "title": "FAQ for prospective PhD students",
     "description": "Practical guidance for prospective PhD students in Spain: careers, supervision, funding, working conditions and research skills.",
-    "modified": "2026-07-26T00:00:00",
-    "source": "https://jorpago2.blogs.uv.es/faq/"
+    "modified": "2026-07-26T00:00:00"
   },
   {
-    "id": 290,
     "slug": "teaching",
-    "originalSlug": "teaching",
     "title": "Teaching",
     "description": "Current and previous university teaching, educational resources, and supervised bachelor’s and master’s projects in electronics and photonics.",
-    "modified": "2026-07-26T00:00:00",
-    "source": "https://jorpago2.blogs.uv.es/teaching/"
+    "modified": "2026-07-26T00:00:00"
   },
   {
-    "id": 440,
     "slug": "career-strategy",
-    "originalSlug": "career-strategy",
     "title": "Career Strategy",
     "description": "A personal framework for choosing research questions, developing a coherent profile, publishing responsibly, collaborating and matching ambitions to resources.",
-    "modified": "2026-07-26T00:00:00",
-    "source": "https://jorpago2.blogs.uv.es/career-strategy/"
+    "modified": "2026-07-26T00:00:00"
   },
   {
-    "id": 483,
     "slug": "books",
-    "originalSlug": "books",
     "title": "Books",
     "description": "Teoría de circuitos eléctricos. Problemas resueltos Authors: Sanchis Kilders, Pablo Díaz Rubio, Ana Parra Gómez, Jorge ISBN: 978-84-1396-370-9 Ref.: 636 Language: Spanish",
-    "modified": "2025-11-09T18:59:08",
-    "source": "https://jorpago2.blogs.uv.es/books/"
+    "modified": "2025-11-09T18:59:08"
   }
 ]

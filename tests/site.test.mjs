@@ -275,5 +275,5 @@ test("legacy route redirects and sitemap lists every page", async () => {
   assert.match(oldThesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
   assert.equal((sitemap.match(/<url>/g) ?? []).length, pages.length - Object.keys(mergedRoutes).length);
   assert.doesNotMatch(sitemap, /<loc>[^<]+\/(?:publications|books|theses)\/<\/loc>/);
-  assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 61);
+  assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 17);
 });

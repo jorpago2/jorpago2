@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "import": "node scripts/import-wordpress.mjs",
     "build": "node scripts/build.mjs",
     "test": "node scripts/build.mjs && node --test tests/site.test.mjs"
   },
