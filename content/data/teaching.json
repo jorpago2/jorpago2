@@ -3,71 +3,85 @@
     {
       "title": {
         "en": "Electronic Technology",
-        "es": "Tecnología electrónica"
+        "es": "Tecnología electrónica",
+        "ca": "Tecnologia electrònica"
       },
       "details": {
         "en": "Laboratory · BSc in Industrial Electronic Engineering",
-        "es": "Laboratorio · Grado en Ingeniería Electrónica Industrial"
+        "es": "Laboratorio · Grado en Ingeniería Electrónica Industrial",
+        "ca": "Laboratori · Grau en Enginyeria Electrònica Industrial"
       }
     },
     {
       "title": {
         "en": "Electronic Circuits",
-        "es": "Circuitos electrónicos"
+        "es": "Circuitos electrónicos",
+        "ca": "Circuits electrònics"
       },
       "details": {
         "en": "Laboratory · BSc in Telecommunications Electronic Engineering",
-        "es": "Laboratorio · Grado en Ingeniería Electrónica de Telecomunicación"
+        "es": "Laboratorio · Grado en Ingeniería Electrónica de Telecomunicación",
+        "ca": "Laboratori · Grau en Enginyeria Electrònica de Telecomunicació"
       }
     },
     {
       "title": {
         "en": "High-Frequency Circuits and Subsystems",
-        "es": "Circuitos y subsistemas de alta frecuencia"
+        "es": "Circuitos y subsistemas de alta frecuencia",
+        "ca": "Circuits i subsistemes d’alta freqüència"
       },
       "details": {
         "en": "Lectures · BSc in Telecommunications Electronic Engineering",
-        "es": "Teoría · Grado en Ingeniería Electrónica de Telecomunicación"
+        "es": "Teoría · Grado en Ingeniería Electrónica de Telecomunicación",
+        "ca": "Teoria · Grau en Enginyeria Electrònica de Telecomunicació"
       }
     },
     {
       "title": {
         "en": "Electronic and Photonic Devices",
-        "es": "Dispositivos electrónicos y fotónicos"
+        "es": "Dispositivos electrónicos y fotónicos",
+        "ca": "Dispositius electrònics i fotònics"
       },
       "details": {
         "en": "Laboratory · BSc in Telecommunications Electronic Engineering and BSc in Telematics Engineering",
-        "es": "Laboratorio · Grados en Ingeniería Electrónica de Telecomunicación e Ingeniería Telemática"
+        "es": "Laboratorio · Grados en Ingeniería Electrónica de Telecomunicación e Ingeniería Telemática",
+        "ca": "Laboratori · Graus en Enginyeria Electrònica de Telecomunicació i Enginyeria Telemàtica"
       }
     },
     {
       "title": {
         "en": "Analogue Electronics II",
-        "es": "Electrónica analógica II"
+        "es": "Electrónica analógica II",
+        "ca": "Electrònica analògica II"
       },
       "details": {
         "en": "Lectures and laboratory · BSc in Telecommunications Electronic Engineering",
-        "es": "Teoría y laboratorio · Grado en Ingeniería Electrónica de Telecomunicación"
+        "es": "Teoría y laboratorio · Grado en Ingeniería Electrónica de Telecomunicación",
+        "ca": "Teoria i laboratori · Grau en Enginyeria Electrònica de Telecomunicació"
       }
     },
     {
       "title": {
         "en": "Fundamentals of Communications",
-        "es": "Fundamentos de las comunicaciones"
+        "es": "Fundamentos de las comunicaciones",
+        "ca": "Fonaments de les comunicacions"
       },
       "details": {
         "en": "Laboratory · BSc in Telecommunications Electronic Engineering",
-        "es": "Laboratorio · Grado en Ingeniería Electrónica de Telecomunicación"
+        "es": "Laboratorio · Grado en Ingeniería Electrónica de Telecomunicación",
+        "ca": "Laboratori · Grau en Enginyeria Electrònica de Telecomunicació"
       }
     },
     {
       "title": {
         "en": "Digital Electronic Systems I",
-        "es": "Sistemas electrónicos digitales I"
+        "es": "Sistemas electrónicos digitales I",
+        "ca": "Sistemes electrònics digitals I"
       },
       "details": {
         "en": "Laboratory · BSc in Telecommunications Electronic Engineering",
-        "es": "Laboratorio · Grado en Ingeniería Electrónica de Telecomunicación"
+        "es": "Laboratorio · Grado en Ingeniería Electrónica de Telecomunicación",
+        "ca": "Laboratori · Grau en Enginyeria Electrònica de Telecomunicació"
       }
     }
   ],
@@ -75,41 +89,49 @@
     {
       "title": {
         "en": "Circuit Theory",
-        "es": "Teoría de circuitos"
+        "es": "Teoría de circuitos",
+        "ca": "Teoria de circuits"
       },
       "details": {
         "en": "Lectures and laboratory · BSc in Telecommunication Engineering · 2019–2025",
-        "es": "Teoría y laboratorio · Grado en Ingeniería de Telecomunicación · 2019–2025"
+        "es": "Teoría y laboratorio · Grado en Ingeniería de Telecomunicación · 2019–2025",
+        "ca": "Teoria i laboratori · Grau en Enginyeria de Telecomunicació · 2019–2025"
       }
     },
     {
       "title": {
         "en": "Integrated Photonics",
-        "es": "Fotónica integrada"
+        "es": "Fotónica integrada",
+        "ca": "Fotònica integrada"
       },
       "details": {
         "en": "Laboratory · BSc in Engineering Physics · 2024–2025",
-        "es": "Laboratorio · Grado en Ingeniería Física · 2024–2025"
+        "es": "Laboratorio · Grado en Ingeniería Física · 2024–2025",
+        "ca": "Laboratori · Grau en Enginyeria Física · 2024–2025"
       }
     },
     {
       "title": {
         "en": "Communication, Navigation and Surveillance Systems",
-        "es": "Sistemas de comunicación, navegación y vigilancia"
+        "es": "Sistemas de comunicación, navegación y vigilancia",
+        "ca": "Sistemes de comunicació, navegació i vigilància"
       },
       "details": {
         "en": "Laboratory · MSc in Aeronautical Engineering · 2022–2025",
-        "es": "Laboratorio · Máster en Ingeniería Aeronáutica · 2022–2025"
+        "es": "Laboratorio · Máster en Ingeniería Aeronáutica · 2022–2025",
+        "ca": "Laboratori · Màster en Enginyeria Aeronàutica · 2022–2025"
       }
     },
     {
       "title": {
         "en": "Transmission Media",
-        "es": "Medios de transmisión"
+        "es": "Medios de transmisión",
+        "ca": "Mitjans de transmissió"
       },
       "details": {
         "en": "Laboratory · BSc in Multimedia Technologies · 2022–2024",
-        "es": "Laboratorio · Grado en Tecnologías Multimedia · 2022–2024"
+        "es": "Laboratorio · Grado en Tecnologías Multimedia · 2022–2024",
+        "ca": "Laboratori · Grau en Tecnologies Multimèdia · 2022–2024"
       }
     }
   ],
@@ -123,7 +145,8 @@
           "titleHtml": "Energy-efficient ITO microheaters on hybrid VO<sub>2</sub>/Si waveguides for photonic neural networks",
           "metadata": {
             "en": "Juan Francisco Morcillo Roldán · Telecommunication Engineering · Co-supervisor",
-            "es": "Juan Francisco Morcillo Roldán · Ingeniería de Telecomunicación · Codirector"
+            "es": "Juan Francisco Morcillo Roldán · Ingeniería de Telecomunicación · Codirector",
+            "ca": "Juan Francisco Morcillo Roldán · Enginyeria de Telecomunicació · Codirector"
           }
         },
         {
@@ -132,7 +155,8 @@
           "titleHtml": "Photonic switches based on Sb<sub>2</sub>Se<sub>3</sub>/Si technology for datacom applications",
           "metadata": {
             "en": "Cristina Benacloche Llácer · Telecommunication Engineering · Co-supervisor",
-            "es": "Cristina Benacloche Llácer · Ingeniería de Telecomunicación · Codirector"
+            "es": "Cristina Benacloche Llácer · Ingeniería de Telecomunicación · Codirector",
+            "ca": "Cristina Benacloche Llácer · Enginyeria de Telecomunicació · Codirector"
           }
         },
         {
@@ -141,7 +165,8 @@
           "titleHtml": "Demonstration of ultra-low-loss electro-optical switches in silicon nitride technology",
           "metadata": {
             "en": "Miguel Ribera Vicent · Telecommunication Engineering · Co-supervisor",
-            "es": "Miguel Ribera Vicent · Ingeniería de Telecomunicación · Codirector"
+            "es": "Miguel Ribera Vicent · Ingeniería de Telecomunicación · Codirector",
+            "ca": "Miguel Ribera Vicent · Enginyeria de Telecomunicació · Codirector"
           }
         },
         {
@@ -150,7 +175,8 @@
           "titleHtml": "Design of an asymmetric directional coupler combining silicon and silicon nitride",
           "metadata": {
             "en": "Alejandro Santomé Valverde · Telecommunication Engineering · Co-supervisor",
-            "es": "Alejandro Santomé Valverde · Ingeniería de Telecomunicación · Codirector"
+            "es": "Alejandro Santomé Valverde · Ingeniería de Telecomunicación · Codirector",
+            "ca": "Alejandro Santomé Valverde · Enginyeria de Telecomunicació · Codirector"
           }
         },
         {
@@ -159,7 +185,8 @@
           "titleHtml": "Analysis of photonic switching based on Si/GST technology",
           "metadata": {
             "en": "Alejandro Santomé Valverde · Communication Technologies, Systems and Networks · Co-supervisor",
-            "es": "Alejandro Santomé Valverde · Tecnologías, Sistemas y Redes de Comunicaciones · Codirector"
+            "es": "Alejandro Santomé Valverde · Tecnologías, Sistemas y Redes de Comunicaciones · Codirector",
+            "ca": "Alejandro Santomé Valverde · Tecnologies, Sistemes i Xarxes de Comunicacions · Codirector"
           }
         },
         {
@@ -168,7 +195,8 @@
           "titleHtml": "Demostración de dispositivos fotónicos basados en silicio/GST con respuesta no-volátil",
           "metadata": {
             "en": "Helen Urgelles Pérez · Communication Technologies, Systems and Networks · Co-supervisor",
-            "es": "Helen Urgelles Pérez · Tecnologías, Sistemas y Redes de Comunicaciones · Codirector"
+            "es": "Helen Urgelles Pérez · Tecnologías, Sistemas y Redes de Comunicaciones · Codirector",
+            "ca": "Helen Urgelles Pérez · Tecnologies, Sistemes i Xarxes de Comunicacions · Codirector"
           }
         }
       ]
@@ -182,7 +210,8 @@
           "titleHtml": "Design of a switch in GST/Si Technology for in-memory photonic computing",
           "metadata": {
             "en": "Salvador Vázquez Desco · Engineering Physics · Co-supervisor",
-            "es": "Salvador Vázquez Desco · Ingeniería Física · Codirector"
+            "es": "Salvador Vázquez Desco · Ingeniería Física · Codirector",
+            "ca": "Salvador Vázquez Desco · Enginyeria Física · Codirector"
           }
         },
         {
@@ -191,7 +220,8 @@
           "titleHtml": "Sb<sub>2</sub>Se<sub>3</sub> technological platform for the development of low-cost photonic circuits",
           "metadata": {
             "en": "Lorena Gimeno Almiñana · Engineering Physics · Co-supervisor",
-            "es": "Lorena Gimeno Almiñana · Ingeniería Física · Codirector"
+            "es": "Lorena Gimeno Almiñana · Ingeniería Física · Codirector",
+            "ca": "Lorena Gimeno Almiñana · Enginyeria Física · Codirector"
           }
         },
         {
@@ -200,7 +230,8 @@
           "titleHtml": "Optical switching in VO<sub>2</sub>/Si waveguides with efficient microheaters",
           "metadata": {
             "en": "Juan Francisco Morcillo Roldán · Telecommunication Technologies and Services · Co-supervisor",
-            "es": "Juan Francisco Morcillo Roldán · Tecnologías y Servicios de Telecomunicación · Codirector"
+            "es": "Juan Francisco Morcillo Roldán · Tecnologías y Servicios de Telecomunicación · Codirector",
+            "ca": "Juan Francisco Morcillo Roldán · Tecnologies i Serveis de Telecomunicació · Codirector"
           }
         },
         {
@@ -209,7 +240,8 @@
           "titleHtml": "Diseño de acopladores direccionales fotónicos usando herramientas comerciales",
           "metadata": {
             "en": "Abel García Devesa · Telecommunication Technologies and Services · Co-supervisor",
-            "es": "Abel García Devesa · Tecnologías y Servicios de Telecomunicación · Codirector"
+            "es": "Abel García Devesa · Tecnologías y Servicios de Telecomunicación · Codirector",
+            "ca": "Abel García Devesa · Tecnologies i Serveis de Telecomunicació · Codirector"
           }
         }
       ]
@@ -221,23 +253,28 @@
     "title": "Teoría de circuitos eléctricos. Problemas resueltos",
     "authors": {
       "en": "Pablo Sanchis Kilders, Ana Díaz Rubio and Jorge Parra Gómez",
-      "es": "Pablo Sanchis Kilders, Ana Díaz Rubio y Jorge Parra Gómez"
+      "es": "Pablo Sanchis Kilders, Ana Díaz Rubio y Jorge Parra Gómez",
+      "ca": "Pablo Sanchis Kilders, Ana Díaz Rubio i Jorge Parra Gómez"
     },
     "description": {
       "en": "A progressive collection of problems for introductory circuit theory, covering DC and AC analysis, fundamental laws, network theorems and systematic solution methods.",
-      "es": "Una colección progresiva de problemas introductorios de teoría de circuitos que abarca el análisis en continua y alterna, las leyes fundamentales, los teoremas de redes y los métodos sistemáticos de resolución."
+      "es": "Una colección progresiva de problemas introductorios de teoría de circuitos que abarca el análisis en continua y alterna, las leyes fundamentales, los teoremas de redes y los métodos sistemáticos de resolución.",
+      "ca": "Una col·lecció progressiva de problemes introductoris de teoria de circuits que abasta l’anàlisi en contínua i alterna, les lleis fonamentals, els teoremes de xarxes i els mètodes sistemàtics de resolució."
     },
     "eyebrow": {
       "en": "Book · Spanish",
-      "es": "Libro · Español"
+      "es": "Libro · Español",
+      "ca": "Llibre · Espanyol"
     },
     "coverAlt": {
       "en": "Cover of Teoría de circuitos eléctricos. Problemas resueltos",
-      "es": "Portada de Teoría de circuitos eléctricos. Problemas resueltos"
+      "es": "Portada de Teoría de circuitos eléctricos. Problemas resueltos",
+      "ca": "Portada de Teoría de circuitos eléctricos. Problemas resueltos"
     },
     "action": {
       "en": "View book ↗",
-      "es": "Ver libro ↗"
+      "es": "Ver libro ↗",
+      "ca": "Consulta el llibre ↗"
     },
     "metadata": "ISBN 978-84-1396-370-9 · UPV Ref. 636"
   }

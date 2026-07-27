@@ -5,15 +5,18 @@
       "number": "01",
       "title": {
         "en": "Electromagnetic Wave Simulator",
-        "es": "Simulador de ondas electromagnéticas"
+        "es": "Simulador de ondas electromagnéticas",
+        "ca": "Simulador d’ones electromagnètiques"
       },
       "description": {
         "en": "Explore propagation, interference, resonators, waveguides and advanced optical materials through more than 100 interactive scenes.",
-        "es": "Explora la propagación, la interferencia, los resonadores, las guías de onda y los materiales ópticos avanzados mediante más de 100 escenas interactivas."
+        "es": "Explora la propagación, la interferencia, los resonadores, las guías de onda y los materiales ópticos avanzados mediante más de 100 escenas interactivas.",
+        "ca": "Explora la propagació, la interferència, els ressonadors, les guies d’ona i els materials òptics avançats mitjançant més de 100 escenes interactives."
       },
       "action": {
         "en": "Open simulator ↗",
-        "es": "Abrir simulador ↗"
+        "es": "Abrir simulador ↗",
+        "ca": "Obri el simulador ↗"
       }
     },
     {
@@ -21,15 +24,18 @@
       "number": "02",
       "title": {
         "en": "Semiconductor Device Simulator",
-        "es": "Simulador de dispositivos semiconductores"
+        "es": "Simulador de dispositivos semiconductores",
+        "ca": "Simulador de dispositius semiconductors"
       },
       "description": {
         "en": "Solve a silicon PN junction with Poisson and carrier-continuity equations, then inspect fields, bands, currents and convergence.",
-        "es": "Resuelve una unión PN de silicio mediante las ecuaciones de Poisson y continuidad de portadores, y analiza campos, bandas, corrientes y convergencia."
+        "es": "Resuelve una unión PN de silicio mediante las ecuaciones de Poisson y continuidad de portadores, y analiza campos, bandas, corrientes y convergencia.",
+        "ca": "Resol una unió PN de silici mitjançant les equacions de Poisson i continuïtat de portadors, i analitza camps, bandes, corrents i convergència."
       },
       "action": {
         "en": "Open simulator ↗",
-        "es": "Abrir simulador ↗"
+        "es": "Abrir simulador ↗",
+        "ca": "Obri el simulador ↗"
       }
     }
   ],
@@ -38,51 +44,60 @@
       "id": "learning",
       "title": {
         "en": "Learning and data",
-        "es": "Aprendizaje y datos"
+        "es": "Aprendizaje y datos",
+        "ca": "Aprenentatge i dades"
       },
       "items": [
         {
           "url": "https://www.youtube.com/@BranchEducation",
           "labelHtml": {
             "en": "Branch Education",
-            "es": "Branch Education"
+            "es": "Branch Education",
+            "ca": "Branch Education"
           },
           "descriptionHtml": {
             "en": "YouTube channel with insightful 3D animations explaining science, engineering and modern technology.",
-            "es": "Canal de YouTube con animaciones 3D claras sobre ciencia, ingeniería y tecnología moderna."
+            "es": "Canal de YouTube con animaciones 3D claras sobre ciencia, ingeniería y tecnología moderna.",
+            "ca": "Canal de YouTube amb animacions 3D clares sobre ciència, enginyeria i tecnologia moderna."
           }
         },
         {
           "url": "https://www.aimphotonics.com/simulation-library",
           "labelHtml": {
             "en": "Virtual lab of integrated photonic building blocks",
-            "es": "Laboratorio virtual de componentes fotónicos integrados"
+            "es": "Laboratorio virtual de componentes fotónicos integrados",
+            "ca": "Laboratori virtual de components fotònics integrats"
           },
           "descriptionHtml": {
             "en": "Interactive web simulations for building intuition about photonic integrated circuit components.",
-            "es": "Simulaciones web interactivas para comprender de forma intuitiva los componentes de los circuitos fotónicos integrados."
+            "es": "Simulaciones web interactivas para comprender de forma intuitiva los componentes de los circuitos fotónicos integrados.",
+            "ca": "Simulacions web interactives per a comprendre de manera intuïtiva els components dels circuits fotònics integrats."
           }
         },
         {
           "url": "https://epoch.ai/",
           "labelHtml": {
             "en": "Epoch AI",
-            "es": "Epoch AI"
+            "es": "Epoch AI",
+            "ca": "Epoch AI"
           },
           "descriptionHtml": {
             "en": "Current data and resources about the growth and impact of artificial intelligence.",
-            "es": "Datos y recursos actualizados sobre el crecimiento y el impacto de la inteligencia artificial."
+            "es": "Datos y recursos actualizados sobre el crecimiento y el impacto de la inteligencia artificial.",
+            "ca": "Dades i recursos actualitzats sobre el creixement i l’impacte de la intel·ligència artificial."
           }
         },
         {
           "url": "https://2d.stanford.edu/2D_Trends",
           "labelHtml": {
             "en": "2D Trends",
-            "es": "2D Trends"
+            "es": "2D Trends",
+            "ca": "2D Trends"
           },
           "descriptionHtml": {
             "en": "Semiconductor transistor trends from the Pop Lab at Stanford.",
-            "es": "Tendencias de transistores semiconductores recopiladas por el Pop Lab de Stanford."
+            "es": "Tendencias de transistores semiconductores recopiladas por el Pop Lab de Stanford.",
+            "ca": "Tendències de transistors semiconductors recopilades pel Pop Lab de Stanford."
           }
         }
       ]
@@ -91,62 +106,73 @@
       "id": "design",
       "title": {
         "en": "Design, simulation and measurement",
-        "es": "Diseño, simulación y medida"
+        "es": "Diseño, simulación y medida",
+        "ca": "Disseny, simulació i mesura"
       },
       "items": [
         {
           "url": "https://www.flexcompute.com/tidy3d/",
           "labelHtml": {
             "en": "Tidy3D",
-            "es": "Tidy3D"
+            "es": "Tidy3D",
+            "ca": "Tidy3D"
           },
           "descriptionHtml": {
             "en": "Fast cloud-based electromagnetic simulation with web and Python interfaces and extensive photonics examples.",
-            "es": "Simulación electromagnética rápida en la nube, con interfaces web y Python y numerosos ejemplos de fotónica."
+            "es": "Simulación electromagnética rápida en la nube, con interfaces web y Python y numerosos ejemplos de fotónica.",
+            "ca": "Simulació electromagnètica ràpida al núvol, amb interfícies web i Python i nombrosos exemples de fotònica."
           }
         },
         {
           "url": "https://refractiveindex.info/",
           "labelHtml": {
             "en": "Refractiveindex.info",
-            "es": "Refractiveindex.info"
+            "es": "Refractiveindex.info",
+            "ca": "Refractiveindex.info"
           },
           "descriptionHtml": {
             "en": "Comprehensive database of optical constants.",
-            "es": "Base de datos completa de constantes ópticas."
+            "es": "Base de datos completa de constantes ópticas.",
+            "ca": "Base de dades completa de constants òptiques."
           }
         },
         {
           "url": "https://gdsfactory.github.io/gdsfactory/index.html",
           "labelHtml": {
             "en": "GDSFactory",
-            "es": "GDSFactory"
+            "es": "GDSFactory",
+            "ca": "GDSFactory"
           },
           "descriptionHtml": {
             "en": "Python library for designing photonic, electronic, quantum and MEMS chips and generating CAD files.",
-            "es": "Biblioteca de Python para diseñar chips fotónicos, electrónicos, cuánticos y MEMS y generar archivos CAD."
+            "es": "Biblioteca de Python para diseñar chips fotónicos, electrónicos, cuánticos y MEMS y generar archivos CAD.",
+            "ca": "Biblioteca de Python per a dissenyar xips fotònics, electrònics, quàntics i MEMS i generar fitxers CAD."
           }
         },
         {
           "url": "https://www.prefabphotonics.com/",
           "labelHtml": {
             "en": "PreFab",
-            "es": "PreFab"
+            "es": "PreFab",
+            "ca": "PreFab"
           },
           "descriptionHtml": {
             "en": "Machine-learning tools for predicting and correcting nanoscale photonic fabrication outcomes.",
-            "es": "Herramientas de aprendizaje automático para predecir y corregir los resultados de fabricación fotónica a escala nanométrica."
+            "es": "Herramientas de aprendizaje automático para predecir y corregir los resultados de fabricación fotónica a escala nanométrica.",
+            "ca": "Eines d’aprenentatge automàtic per a predir i corregir els resultats de fabricació fotònica a escala nanomètrica."
           }
         },
         {
           "url": "https://pyvisa.readthedocs.io/en/latest/",
           "labelHtml": {
             "en": "PyVISA",
-            "es": "PyVISA"
+            "es": "PyVISA",
+            "ca": "PyVISA"
           },
           "descriptionHtml": {
             "en": "Python package for controlling measurement instruments over GPIB, RS232, USB or Ethernet.",
-            "es": "Paquete de Python para controlar instrumentos de medida mediante GPIB, RS232, USB o Ethernet."
+            "es": "Paquete de Python para controlar instrumentos de medida mediante GPIB, RS232, USB o Ethernet.",
+            "ca": "Paquet de Python per a controlar instruments de mesura mitjançant GPIB, RS232, USB o Ethernet."
           }
         }
       ]
@@ -155,62 +181,73 @@
       "id": "collections",
       "title": {
         "en": "Further reading and collections",
-        "es": "Lecturas y colecciones"
+        "es": "Lecturas y colecciones",
+        "ca": "Lectures i col·leccions"
       },
       "items": [
         {
           "url": "https://poplab.stanford.edu/links.html",
           "labelHtml": {
             "en": "Pop Lab links",
-            "es": "Enlaces del Pop Lab"
+            "es": "Enlaces del Pop Lab",
+            "ca": "Enllaços del Pop Lab"
           },
           "descriptionHtml": {
             "en": "Semiconductor and nanoscale electronics resources from Stanford.",
-            "es": "Recursos de Stanford sobre semiconductores y electrónica a escala nanométrica."
+            "es": "Recursos de Stanford sobre semiconductores y electrónica a escala nanométrica.",
+            "ca": "Recursos de Stanford sobre semiconductors i electrònica a escala nanomètrica."
           }
         },
         {
           "url": "https://github.com/joamatab/awesome_photonics",
           "labelHtml": {
             "en": "Awesome Photonics",
-            "es": "Awesome Photonics"
+            "es": "Awesome Photonics",
+            "ca": "Awesome Photonics"
           },
           "descriptionHtml": {
             "en": "Curated collection of photonics software, courses and references.",
-            "es": "Colección seleccionada de software, cursos y referencias de fotónica."
+            "es": "Colección seleccionada de software, cursos y referencias de fotónica.",
+            "ca": "Col·lecció seleccionada de programari, cursos i referències de fotònica."
           }
         },
         {
           "url": "https://github.com/kitspace/awesome-electronics",
           "labelHtml": {
             "en": "Awesome Electronics",
-            "es": "Awesome Electronics"
+            "es": "Awesome Electronics",
+            "ca": "Awesome Electronics"
           },
           "descriptionHtml": {
             "en": "Curated collection of electronics resources and tools.",
-            "es": "Colección seleccionada de recursos y herramientas de electrónica."
+            "es": "Colección seleccionada de recursos y herramientas de electrónica.",
+            "ca": "Col·lecció seleccionada de recursos i eines d’electrònica."
           }
         },
         {
           "url": "https://empossible.net/",
           "labelHtml": {
             "en": "EMPossible",
-            "es": "EMPossible"
+            "es": "EMPossible",
+            "ca": "EMPossible"
           },
           "descriptionHtml": {
             "en": "Educational material on electromagnetics and computational methods.",
-            "es": "Material docente sobre electromagnetismo y métodos computacionales."
+            "es": "Material docente sobre electromagnetismo y métodos computacionales.",
+            "ca": "Material docent sobre electromagnetisme i mètodes computacionals."
           }
         },
         {
           "url": "https://doi.org/10.1016/j.obhdp.2009.04.002",
           "labelHtml": {
             "en": "Attention residue and task switching",
-            "es": "Attention residue and task switching"
+            "es": "Attention residue and task switching",
+            "ca": "Attention residue and task switching"
           },
           "descriptionHtml": {
             "en": "Research on why switching between tasks makes focused work difficult.",
-            "es": "Investigación sobre por qué cambiar de tarea dificulta el trabajo concentrado."
+            "es": "Investigación sobre por qué cambiar de tarea dificulta el trabajo concentrado.",
+            "ca": "Investigació sobre per què canviar de tasca dificulta el treball concentrat."
           }
         }
       ]
@@ -219,95 +256,112 @@
       "id": "fabrication",
       "title": {
         "en": "Fabrication",
-        "es": "Fabricación"
+        "es": "Fabricación",
+        "ca": "Fabricació"
       },
       "items": [
         {
           "url": "https://www.klayout.de/",
           "labelHtml": {
             "en": "KLayout",
-            "es": "KLayout"
+            "es": "KLayout",
+            "ca": "KLayout"
           },
           "descriptionHtml": {
             "en": "Free layout viewer and editor compatible with GDS and OASIS files.",
-            "es": "Visor y editor gratuito de diseños de máscara compatible con archivos GDS y OASIS."
+            "es": "Visor y editor gratuito de diseños de máscara compatible con archivos GDS y OASIS.",
+            "ca": "Visor i editor gratuït de dissenys de màscara compatible amb fitxers GDS i OASIS."
           }
         },
         {
           "url": "https://nano.physics.leidenuniv.nl/dokuwiki/doku.php?id=start",
           "labelHtml": {
             "en": "NanoWiki",
-            "es": "NanoWiki"
+            "es": "NanoWiki",
+            "ca": "NanoWiki"
           },
           "descriptionHtml": {
             "en": "Equipment manuals, recipes and safety procedures from Leiden University’s NanoLab group.",
-            "es": "Manuales de equipos, recetas y procedimientos de seguridad del grupo NanoLab de la Universidad de Leiden."
+            "es": "Manuales de equipos, recetas y procedimientos de seguridad del grupo NanoLab de la Universidad de Leiden.",
+            "ca": "Manuals d’equips, receptes i procediments de seguretat del grup NanoLab de la Universitat de Leiden."
           }
         },
         {
           "url": "https://nanolithography.gatech.edu/processes.html",
           "labelHtml": {
             "en": "Nanolithography",
-            "es": "Nanolithography"
+            "es": "Nanolithography",
+            "ca": "Nanolithography"
           },
           "descriptionHtml": {
             "en": "Detailed fabrication processes and recipes from Georgia Tech’s Institute for Electronics and Nanotechnology.",
-            "es": "Procesos y recetas de fabricación detallados del Institute for Electronics and Nanotechnology de Georgia Tech."
+            "es": "Procesos y recetas de fabricación detallados del Institute for Electronics and Nanotechnology de Georgia Tech.",
+            "ca": "Processos i receptes de fabricació detallats de l’Institute for Electronics and Nanotechnology de Georgia Tech."
           }
         },
         {
           "url": "https://nanofab-net.org/",
           "labelHtml": {
             "en": "Nanofab-net",
-            "es": "Nanofab-net"
+            "es": "Nanofab-net",
+            "ca": "Nanofab-net"
           },
           "descriptionHtml": {
             "en": "Open platform for sharing nanofabrication processes and cleanroom information.",
-            "es": "Plataforma abierta para compartir procesos de nanofabricación e información sobre salas blancas."
+            "es": "Plataforma abierta para compartir procesos de nanofabricación e información sobre salas blancas.",
+            "ca": "Plataforma oberta per a compartir processos de nanofabricació i informació sobre sales blanques."
           }
         },
         {
           "url": "https://www.youtube.com/@SamZeloof",
           "labelHtml": {
             "en": "Sam Zeloof",
-            "es": "Sam Zeloof"
+            "es": "Sam Zeloof",
+            "ca": "Sam Zeloof"
           },
           "descriptionHtml": {
             "en": "Homemade semiconductor fabrication and related projects. See also his <a href=\"https://sam.zeloof.xyz/\" target=\"_blank\" rel=\"noopener noreferrer\">website</a>.",
-            "es": "Fabricación casera de semiconductores y proyectos relacionados. Véase también su <a href=\"https://sam.zeloof.xyz/\" target=\"_blank\" rel=\"noopener noreferrer\">sitio web</a>."
+            "es": "Fabricación casera de semiconductores y proyectos relacionados. Véase también su <a href=\"https://sam.zeloof.xyz/\" target=\"_blank\" rel=\"noopener noreferrer\">sitio web</a>.",
+            "ca": "Fabricació casolana de semiconductors i projectes relacionats. Vegeu també el seu <a href=\"https://sam.zeloof.xyz/\" target=\"_blank\" rel=\"noopener noreferrer\">lloc web</a>."
           }
         },
         {
           "url": "https://www.youtube.com/@projectsinflight",
           "labelHtml": {
             "en": "Projects in Flight",
-            "es": "Projects in Flight"
+            "es": "Projects in Flight",
+            "ca": "Projects in Flight"
           },
           "descriptionHtml": {
             "en": "Semiconductor projects and practical insights into homemade IC fabrication. See also the <a href=\"https://www.projectsinflight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">blog</a>.",
-            "es": "Proyectos de semiconductores y experiencias prácticas sobre la fabricación casera de circuitos integrados. Véase también el <a href=\"https://www.projectsinflight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">blog</a>."
+            "es": "Proyectos de semiconductores y experiencias prácticas sobre la fabricación casera de circuitos integrados. Véase también el <a href=\"https://www.projectsinflight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">blog</a>.",
+            "ca": "Projectes de semiconductors i experiències pràctiques sobre la fabricació casolana de circuits integrats. Vegeu també el <a href=\"https://www.projectsinflight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">blog</a>."
           }
         },
         {
           "url": "https://docs.hackerfab.org/home",
           "labelHtml": {
             "en": "HackerFab",
-            "es": "HackerFab"
+            "es": "HackerFab",
+            "ca": "HackerFab"
           },
           "descriptionHtml": {
             "en": "Open guides, fabrication processes and fab toolkits inspired by Sam Zeloof’s work.",
-            "es": "Guías abiertas, procesos de fabricación y herramientas inspiradas en el trabajo de Sam Zeloof."
+            "es": "Guías abiertas, procesos de fabricación y herramientas inspiradas en el trabajo de Sam Zeloof.",
+            "ca": "Guies obertes, processos de fabricació i eines inspirades en el treball de Sam Zeloof."
           }
         },
         {
           "url": "https://www.fabublox.com/",
           "labelHtml": {
             "en": "FabuBlox",
-            "es": "FabuBlox"
+            "es": "FabuBlox",
+            "ca": "FabuBlox"
           },
           "descriptionHtml": {
             "en": "Design and data-management tools for micro- and nanofabrication processes.",
-            "es": "Herramientas de diseño y gestión de datos para procesos de microfabricación y nanofabricación."
+            "es": "Herramientas de diseño y gestión de datos para procesos de microfabricación y nanofabricación.",
+            "ca": "Eines de disseny i gestió de dades per a processos de microfabricació i nanofabricació."
           }
         }
       ]
@@ -316,51 +370,60 @@
       "id": "communication",
       "title": {
         "en": "Scientific communication and graphics",
-        "es": "Comunicación científica y recursos gráficos"
+        "es": "Comunicación científica y recursos gráficos",
+        "ca": "Comunicació científica i recursos gràfics"
       },
       "items": [
         {
           "url": "https://www.gwoptics.org/ComponentLibrary/",
           "labelHtml": {
             "en": "ComponentLibrary",
-            "es": "ComponentLibrary"
+            "es": "ComponentLibrary",
+            "ca": "ComponentLibrary"
           },
           "descriptionHtml": {
             "en": "Open collection of optical and electronic components for technical diagrams.",
-            "es": "Colección abierta de componentes ópticos y electrónicos para diagramas técnicos."
+            "es": "Colección abierta de componentes ópticos y electrónicos para diagramas técnicos.",
+            "ca": "Col·lecció oberta de components òptics i electrònics per a diagrames tècnics."
           }
         },
         {
           "url": "https://www.blender.org/",
           "labelHtml": {
             "en": "Blender",
-            "es": "Blender"
+            "es": "Blender",
+            "ca": "Blender"
           },
           "descriptionHtml": {
             "en": "Free and open-source 3D creation suite.",
-            "es": "Suite de creación 3D gratuita y de código abierto."
+            "es": "Suite de creación 3D gratuita y de código abierto.",
+            "ca": "Suite de creació 3D gratuïta i de codi obert."
           }
         },
         {
           "url": "https://ryomizuta.com/resources/",
           "labelHtml": {
             "en": "Ryo Mizuta Graphics",
-            "es": "Ryo Mizuta Graphics"
+            "es": "Ryo Mizuta Graphics",
+            "ca": "Ryo Mizuta Graphics"
           },
           "descriptionHtml": {
             "en": "Free Blender assets and tutorials for scientific illustrations.",
-            "es": "Recursos gratuitos de Blender y tutoriales para ilustraciones científicas."
+            "es": "Recursos gratuitos de Blender y tutoriales para ilustraciones científicas.",
+            "ca": "Recursos gratuïts de Blender i tutorials per a il·lustracions científiques."
           }
         },
         {
           "url": "https://zbib.org/",
           "labelHtml": {
             "en": "ZoteroBib",
-            "es": "ZoteroBib"
+            "es": "ZoteroBib",
+            "ca": "ZoteroBib"
           },
           "descriptionHtml": {
             "en": "Fast web-based bibliography generator for short reference lists.",
-            "es": "Generador web rápido de bibliografías para listas de referencias breves."
+            "es": "Generador web rápido de bibliografías para listas de referencias breves.",
+            "ca": "Generador web ràpid de bibliografies per a llistes de referències breus."
           }
         }
       ]

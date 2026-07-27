@@ -1,0 +1,55 @@
+{
+  "siteName": "Dr. Jorge Parra — Fotònica i electrònica",
+  "skipLink": "Ves al contingut",
+  "homepageLabel": "Dr. Jorge Parra — pàgina d’inici",
+  "menu": "Menú",
+  "primaryNavigation": "Navegació principal",
+  "languageNavigation": "Idioma",
+  "resourceCountLabel": "recursos",
+  "identitySubtitle": "Professor Ajudant Doctor a la Universitat de València · Fotònica · Electrònica",
+  "professionalProfiles": "Perfils professionals",
+  "footerName": "Dr. Jorge Parra",
+  "footerInstitution": "Departament d’Enginyeria Electrònica · Universitat de València",
+  "footerCopyright": "Jorge Parra",
+  "socialImageAlt": "Dr. Jorge Parra — Fotònica i electrònica",
+  "navigation": {
+    "about-me": "Sobre mi",
+    "research": "Investigació",
+    "teaching": "Docència",
+    "resources": "Recursos",
+    "contact": "Contacte"
+  },
+  "profiles": {
+    "linkedin": "LinkedIn",
+    "researchGate": "ResearchGate",
+    "x": "X",
+    "uv": "Perfil UV"
+  },
+  "notFound": {
+    "title": "Pàgina no trobada",
+    "description": "No s’ha trobat la pàgina sol·licitada.",
+    "message": "És possible que la pàgina s’haja traslladat durant la migració des de WordPress.",
+    "action": "Torna a la pàgina d’inici"
+  },
+  "redirectMessage": "Aquest contingut s’ha traslladat a",
+  "carousel": {
+    "previous": "Imatge anterior",
+    "next": "Imatge següent",
+    "pause": "Pausa la presentació",
+    "play": "Reprodueix la presentació",
+    "slide": "{current} de {total}",
+    "show": "Mostra la imatge {current} de {total}",
+    "status": "Imatge {current} de {total}"
+  },
+  "person": {
+    "jobTitle": "Professor Ajudant Doctor",
+    "description": "Professor Ajudant Doctor i investigador en fotònica integrada, materials funcionals, dispositius emergents i maquinari neuromòrfic.",
+    "knowsAbout": [
+      "Fotònica integrada",
+      "Materials funcionals",
+      "Enginyeria electrònica",
+      "Dispositius electrònics i fotònics emergents",
+      "Maquinari neuromòrfic"
+    ]
+  }
+}

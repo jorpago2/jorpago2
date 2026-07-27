@@ -10,6 +10,11 @@
       "code": "es",
       "path": "es",
       "label": "ES"
+    },
+    {
+      "code": "ca",
+      "path": "va",
+      "label": "VA"
     }
   ]
 }

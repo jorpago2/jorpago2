@@ -1,0 +1,74 @@
+[
+  {
+    "id": "about-me",
+    "slug": "sobre-mi",
+    "title": "Sobre mi",
+    "seoTitle": "Sobre Jorge Parra | Investigador en fotònica integrada",
+    "description": "Jorge Parra és Professor Ajudant Doctor a la Universitat de València i investiga en fotònica integrada reconfigurable, materials funcionals i maquinari neuromòrfic.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "research",
+    "slug": "investigacio",
+    "title": "Investigació",
+    "seoTitle": "Investigació en fotònica integrada i publicacions | Jorge Parra",
+    "description": "Línies d’investigació i publicacions sobre materials funcionals, fotònica integrada reconfigurable i maquinari fotònic neuromòrfic.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "contact",
+    "slug": "contacte",
+    "title": "Contacte",
+    "seoTitle": "Contacte i projectes TFG/TFM | Dr. Jorge Parra",
+    "description": "Contacta amb el Dr. Jorge Parra a la Universitat de València i consulta possibles projectes TFG i TFM sobre electrònica, fotònica i dispositius emergents.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "home",
+    "slug": "",
+    "title": "Inici",
+    "seoTitle": "Dr. Jorge Parra | Fotònica integrada i enginyeria electrònica",
+    "description": "El Dr. Jorge Parra és professor ajudant doctor a la Universitat de València i investiga en fotònica integrada, materials funcionals i dispositius emergents.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "new-students",
+    "slug": "estudiants",
+    "title": "Iniciació a la investigació",
+    "seoTitle": "Iniciació a la investigació per a estudiants | Jorge Parra",
+    "description": "Guia per a estudiants que es plantegen iniciar una activitat investigadora: curiositat, pensament crític, reformulació i descomposició de problemes.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "resources",
+    "slug": "recursos",
+    "title": "Recursos",
+    "seoTitle": "Simuladors i recursos de fotònica i electrònica",
+    "description": "Simuladors interactius i una selecció de recursos científics sobre disseny, fabricació, mesura, fotònica i electrònica.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "faq",
+    "slug": "doctorat",
+    "title": "Preguntes freqüents sobre el doctorat",
+    "seoTitle": "Doctorat a Espanya: preguntes freqüents per a estudiants",
+    "description": "Orientació pràctica per a futurs estudiants de doctorat a Espanya sobre eixides professionals, supervisió, finançament, condicions laborals i competències investigadores.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "teaching",
+    "slug": "docencia",
+    "title": "Docència",
+    "seoTitle": "Docència en electrònica i fotònica | Dr. Jorge Parra",
+    "description": "Docència universitària, recursos educatius i treballs de fi de grau i màster codirigits en electrònica i fotònica.",
+    "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "career-strategy",
+    "slug": "carrera-investigadora",
+    "title": "Estratègia de carrera investigadora",
+    "seoTitle": "Estratègia per a la carrera investigadora | Jorge Parra",
+    "description": "Marc personal per a triar preguntes d’investigació, construir un perfil coherent, publicar amb rigor, col·laborar i ajustar les ambicions als recursos disponibles.",
+    "modified": "2026-07-27T00:00:00"
+  }
+]

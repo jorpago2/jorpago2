@@ -94,7 +94,7 @@ test("locale sources keep shared strings separate from page content", async () =
   assert.match(home, /data-carousel-pause="Pause slideshow"/);
 });
 
-test("shared records live in JSON and render in both languages", async () => {
+test("shared records live in JSON and render in every language", async () => {
   const dataRoot = path.resolve("content", "data");
   const publications = JSON.parse(await readFile(path.join(dataRoot, "publications.json"), "utf8"));
   const teaching = JSON.parse(await readFile(path.join(dataRoot, "teaching.json"), "utf8"));
@@ -108,13 +108,13 @@ test("shared records live in JSON and render in both languages", async () => {
   assert.equal(resources.tools.length, 2);
   assert.equal(resources.groups.length, 5);
   assert.equal(resources.groups.reduce((count, group) => count + group.items.length, 0), 26);
-  assert.ok(teaching.currentCourses.every((course) => course.details.en && course.details.es));
+  assert.ok(teaching.currentCourses.every((course) => course.details.en && course.details.es && course.details.ca));
   assert.ok(
     [...teaching.currentCourses, ...teaching.previousCourses].every(
       (course) => course.title.en !== course.title.es,
     ),
   );
-  assert.ok(resources.groups.every((group) => group.title.en && group.title.es));
+  assert.ok(resources.groups.every((group) => group.title.en && group.title.es && group.title.ca));
 
   for (const locale of localeConfig.locales) {
     const pageRoot = path.resolve("content", "pages", locale.code);
@@ -167,6 +167,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(home, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\/es\/">/);
   assert.match(home, /hreflang="en" href="https:\/\/www\.uv\.es\/jorpago2\/">/);
   assert.match(home, /hreflang="es" href="https:\/\/www\.uv\.es\/jorpago2\/es\/">/);
+  assert.match(home, /hreflang="ca" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
   assert.match(home, /hreflang="x-default" href="https:\/\/www\.uv\.es\/jorpago2\/">/);
   assert.match(home, /href="\/jorpago2\/es\/investigacion\/">Investigación<\/a>/);
   assert.match(home, /href="\/jorpago2\/es\/docencia\/">Docencia<\/a>/);
@@ -197,6 +198,37 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(career, /aneca\.es\/web\/guest\/criterios-de-evaluaci/);
   assert.match(career, /erc\.europa\.eu\/news-events\/events\/erc-grants-what-expect-2026-calls/);
   assert.match(career, /href="\/jorpago2\/es\/investigacion\/"/);
+});
+
+test("Valencian pages use translated routes, content and SEO alternates", async () => {
+  const valencianLocale = localeConfig.locales.find((locale) => locale.code === "ca");
+  const valencianPages = localizedPages.get("ca");
+  const byId = new Map(valencianPages.map((page) => [page.id, page]));
+  const readPage = (id) => readFile(outputFileForPage(byId.get(id), valencianLocale), "utf8");
+  const [home, about, research, teaching, resources, contact, students, faq, career] = await Promise.all([
+    "home", "about-me", "research", "teaching", "resources", "contact", "new-students", "faq", "career-strategy",
+  ].map(readPage));
+
+  assert.match(home, /<html lang="ca">/);
+  assert.match(home, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
+  assert.match(home, /hreflang="ca" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
+  assert.match(home, /href="\/jorpago2\/va\/investigacio\/">Investigació<\/a>/);
+  assert.match(home, /lang="ca" aria-current="page">VA<\/a>/);
+  assert.match(home, /Cinc principis per a construir una carrera investigadora/);
+  assert.match(about, /Investigador i docent en fotònica integrada/);
+  assert.match(research, /Fotònica integrada reconfigurable amb materials funcionals/);
+  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
+  assert.match(teaching, /Sistemes electrònics digitals I/);
+  assert.equal((teaching.match(/· Codirector/g) ?? []).length, 10);
+  assert.match(resources, /Disseny, simulació i mesura/);
+  assert.match(contact, /Estudiants de grau i màster/);
+  assert.match(students, /Quatre hàbits útils per a investigar/);
+  assert.equal((faq.match(/<details class="faq-item" name="phd-faq"/g) ?? []).length, 5);
+  assert.match(career, /Criteris vigents i normes de finançament/);
+  const mainContent = [home, about, research, teaching, resources, contact, students, faq, career]
+    .map((html) => html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1] ?? "")
+    .join("");
+  assert.doesNotMatch(mainContent, /\/jorpago2\/es\//);
 });
 
 test("SEO metadata identifies the site and academic profile", async () => {
