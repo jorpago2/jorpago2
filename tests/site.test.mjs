@@ -149,7 +149,11 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.doesNotMatch(research, /Collaborations|Participation in projects|Research visuals|metaslider/);
   assert.equal((research.match(/<details class="publication-year wp-block-details" name="publication-years"/g) ?? []).length, 9);
   assert.equal((research.match(/name="publication-years" open/g) ?? []).length, 1);
+  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
   assert.match(research, /10\.1088\/2515-7647\/ae6004/);
+  assert.match(research, /Photonics<\/em>, vol\. 12, no\. 5, Art\. no\. 428, 2025/);
+  assert.match(research, /VO<sub>2<\/sub>-integrated photonics/);
+  assert.doesNotMatch(research, /<em>(?:J\. Phys\. Photonics|Sci Rep|npj Nanophoton\.|Opt\. Express|Opt\. Mater\. Express|Opt\. Lett\.)<\/em>/);
   assert.match(teaching, /id="courses"[\s\S]*?id="books"[\s\S]*?id="theses"/);
   assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
   assert.equal((teaching.match(/class="course-list previous-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 4);
