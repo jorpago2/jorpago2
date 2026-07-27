@@ -151,7 +151,7 @@ ${career}`;
 }
 
 function onlineToolsContent() {
-  return `<section class="merged-section merged-section-tools" id="online-tools" aria-labelledby="online-tools-title">
+  return `<section class="merged-section merged-section-first merged-section-tools" id="online-tools" aria-labelledby="online-tools-title">
 <header class="merged-section-heading">
   <p class="eyebrow">Interactive learning</p>
   <h2 id="online-tools-title">Online simulators and tools</h2>
@@ -220,11 +220,11 @@ ${theses}
 
   if (slug === "resources") {
     const links = shiftHeadings(preparePageContent("resources", fragments.get("resources")), { 2: 3 });
-    return `<section class="merged-section merged-section-first merged-section-links" id="links" aria-labelledby="resources-links-title">
+    return `${onlineToolsContent()}
+<section class="merged-section merged-section-links" id="links" aria-labelledby="resources-links-title">
 <h2 class="merged-section-title" id="resources-links-title">Links and references</h2>
 ${links}
-</section>
-${onlineToolsContent()}`;
+</section>`;
   }
 
   return preparePageContent(slug, fragments.get(slug));

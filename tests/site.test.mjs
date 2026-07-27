@@ -131,6 +131,7 @@ test("resources page uses a compact five-group directory", async () => {
   assert.doesNotMatch(html, />Others</);
   assert.doesNotMatch(html, />https?:\/\//);
   assert.equal((html.match(/class="online-tool-card"/g) ?? []).length, 2);
+  assert.ok(html.indexOf('id="online-tools"') < html.indexOf('id="links"'));
   assert.match(html, /href="https:\/\/jorpago2\.github\.io\/fdtd-2d-simulator\/"/);
   assert.match(html, /href="https:\/\/jorpago2\.github\.io\/drift-difussion-simulator\/"/);
 });
