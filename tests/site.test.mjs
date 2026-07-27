@@ -84,14 +84,13 @@ test("locale sources keep shared strings separate from page content", async () =
     );
     assert.ok(strings.navigation.research);
     assert.ok(strings.carousel.previous);
-    assert.ok(strings.carousel.pause);
     assert.ok(localePages.some((page) => page.slug === ""));
   }
 
   const home = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
   assert.match(home, /<html lang="en">/);
   assert.match(home, /<body data-carousel-previous="Previous image"/);
-  assert.match(home, /data-carousel-pause="Pause slideshow"/);
+  assert.doesNotMatch(home, /data-carousel-(?:pause|play)=/);
 });
 
 test("shared records live in JSON and render in every language", async () => {
@@ -404,7 +403,7 @@ test("about page presents a curated carousel and compact academic trajectory", a
   assert.doesNotMatch(html, /Polytechnical|Telecomunnication|next-gen|disruptive communications|memdevices/);
   assert.match(css, /\.about-biography \.wp-block-media-text \{[\s\S]*?grid-template-columns: minmax\(20rem/);
   assert.match(css, /\.about-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
-  assert.match(css, /\.about-carousel \.carousel-toggle \{[\s\S]*?position: absolute;[\s\S]*?right: 0\.75rem;/);
+  assert.doesNotMatch(html, /carousel-toggle|Pause slideshow|Play slideshow/);
   assert.match(css, /\.about-carousel \.carousel-dots \{\s*display: none;/);
 });
 
@@ -422,7 +421,7 @@ test("carousels use their original proportions and compact mobile controls", asy
 
   assert.match(script, /--carousel-aspect/);
   assert.match(script, /event\.key === "Escape"/);
-  assert.match(script, /carouselLabels\.pause/);
+  assert.doesNotMatch(script, /pauseButton|carouselLabels\.(?:pause|play)|setInterval/);
   assert.match(script, /img\[data-src\]/);
   assert.match(css, /aspect-ratio: var\(--carousel-aspect/);
   assert.match(css, /\.metaslider\.carousel-ready \.slides li \{[\s\S]*?opacity: 0;[\s\S]*?transition: opacity 0\.8s ease/);

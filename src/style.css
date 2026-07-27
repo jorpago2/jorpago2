@@ -1234,10 +1234,6 @@ figcaption {
   line-height: 1;
 }
 
-.carousel-toggle {
-  font-size: 1rem;
-}
-
 .carousel-dots {
   --carousel-dot-color: var(--navy);
   display: flex;
@@ -1358,12 +1354,6 @@ figcaption {
   background: rgb(20 23 19 / 68%);
   box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 22%);
   backdrop-filter: blur(0.35rem);
-}
-
-.about-carousel .carousel-toggle {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
 }
 
 .about-carousel .carousel-dots {

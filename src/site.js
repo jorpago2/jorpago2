@@ -6,8 +6,6 @@ const carouselLabels = {
   slide: document.body.dataset.carouselSlide || "{current} of {total}",
   show: document.body.dataset.carouselShow || "Show image {current} of {total}",
   status: document.body.dataset.carouselStatus || "Image {current} of {total}",
-  pause: document.body.dataset.carouselPause || "Pause slideshow",
-  play: document.body.dataset.carouselPlay || "Play slideshow",
 };
 
 function carouselLabel(template, current, total) {
@@ -65,14 +63,11 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   if (slides.length < 2) return;
 
   let currentSlide = 0;
-  let timer;
-  let isPaused = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const controls = document.createElement("div");
   const dots = document.createElement("div");
   const status = document.createElement("p");
   const previousButton = document.createElement("button");
   const nextButton = document.createElement("button");
-  const pauseButton = document.createElement("button");
   const carouselWidth = Number(carousel.dataset.width);
   const carouselHeight = Number(carousel.dataset.height);
 
@@ -92,16 +87,6 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   nextButton.className = "carousel-arrow";
   nextButton.setAttribute("aria-label", carouselLabels.next);
   nextButton.textContent = "›";
-  pauseButton.type = "button";
-  pauseButton.className = "carousel-arrow carousel-toggle";
-
-  function updatePauseButton() {
-    pauseButton.setAttribute("aria-pressed", String(isPaused));
-    pauseButton.setAttribute("aria-label", isPaused ? carouselLabels.play : carouselLabels.pause);
-    pauseButton.textContent = isPaused ? "▶" : "⏸";
-  }
-
-  updatePauseButton();
 
   const dotButtons = slides.map((slide, index) => {
     slide.removeAttribute("style");
@@ -140,36 +125,14 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
     loadSlideImage(slides[(currentSlide + 1) % slides.length]);
   }
 
-  function stopAutoplay() {
-    clearInterval(timer);
-  }
-
-  function startAutoplay() {
-    if (isPaused) return;
-    stopAutoplay();
-    timer = setInterval(() => showSlide(currentSlide + 1, false), 6000);
-  }
-
-  pauseButton.addEventListener("click", () => {
-    isPaused = !isPaused;
-    updatePauseButton();
-    if (isPaused) stopAutoplay();
-    else startAutoplay();
-  });
-
   previousButton.addEventListener("click", () => showSlide(currentSlide - 1));
   nextButton.addEventListener("click", () => showSlide(currentSlide + 1));
-  carousel.addEventListener("mouseenter", stopAutoplay);
-  carousel.addEventListener("mouseleave", startAutoplay);
-  carousel.addEventListener("focusin", stopAutoplay);
-  carousel.addEventListener("focusout", startAutoplay);
   carousel.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") showSlide(currentSlide - 1);
     if (event.key === "ArrowRight") showSlide(currentSlide + 1);
   });
 
-  controls.append(previousButton, dots, status, nextButton, pauseButton);
+  controls.append(previousButton, dots, status, nextButton);
   carousel.append(controls);
   showSlide(0, false);
-  startAutoplay();
 });

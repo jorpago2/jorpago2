@@ -379,7 +379,7 @@ ${alternateLinks(page.id, localeBundles)}
   <meta name="twitter:image" content="${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png">
   ${structuredData(page, pageTitle, description, locale, strings)}
 </head>
-<body data-carousel-previous="${escapeHtml(strings.carousel.previous)}" data-carousel-next="${escapeHtml(strings.carousel.next)}" data-carousel-pause="${escapeHtml(strings.carousel.pause)}" data-carousel-play="${escapeHtml(strings.carousel.play)}" data-carousel-slide="${escapeHtml(strings.carousel.slide)}" data-carousel-show="${escapeHtml(strings.carousel.show)}" data-carousel-status="${escapeHtml(strings.carousel.status)}">
+<body data-carousel-previous="${escapeHtml(strings.carousel.previous)}" data-carousel-next="${escapeHtml(strings.carousel.next)}" data-carousel-slide="${escapeHtml(strings.carousel.slide)}" data-carousel-show="${escapeHtml(strings.carousel.show)}" data-carousel-status="${escapeHtml(strings.carousel.status)}">
   <a class="skip-link" href="#main-content">${escapeHtml(strings.skipLink)}</a>
   <header class="site-header">
     <div class="header-inner">
