@@ -104,9 +104,11 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   const contact = await readFile(outputFileForPage(byId.get("contact"), spanishLocale), "utf8");
   const students = await readFile(outputFileForPage(byId.get("new-students"), spanishLocale), "utf8");
   const faq = await readFile(outputFileForPage(byId.get("faq"), spanishLocale), "utf8");
+  const career = await readFile(outputFileForPage(byId.get("career-strategy"), spanishLocale), "utf8");
 
   assert.deepEqual([...byId.keys()].sort(), [
     "about-me",
+    "career-strategy",
     "contact",
     "faq",
     "home",
@@ -124,6 +126,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(home, /href="\/jorpago2\/es\/docencia\/">Docencia<\/a>/);
   assert.match(home, /class="language-nav"[\s\S]*?href="\/jorpago2\/" lang="en">EN<\/a>[\s\S]*?lang="es" aria-current="page">ES<\/a>/);
   assert.match(home, /href="\/jorpago2\/es\/estudiantes\/">¿Puede encajar contigo la investigación\?/);
+  assert.match(home, /href="\/jorpago2\/es\/carrera-investigadora\/">Cinco principios para construir una carrera investigadora/);
   assert.match(about, /hreflang="en" href="https:\/\/www\.uv\.es\/jorpago2\/about-me\/">/);
   assert.match(about, /hreflang="es" href="https:\/\/www\.uv\.es\/jorpago2\/es\/sobre-mi\/">/);
   assert.match(about, /Investigador y docente en fotónica integrada/);
@@ -141,6 +144,12 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(faq, /hreflang="es" href="https:\/\/www\.uv\.es\/jorpago2\/es\/doctorado\/">/);
   assert.match(faq, /Ley de la Ciencia — artículo 21/);
   assert.match(faq, /href="\/jorpago2\/es\/estudiantes\/"/);
+  assert.equal((career.match(/<p class="career-question">/g) ?? []).length, 5);
+  assert.match(career, /hreflang="en" href="https:\/\/www\.uv\.es\/jorpago2\/career-strategy\/">/);
+  assert.match(career, /hreflang="es" href="https:\/\/www\.uv\.es\/jorpago2\/es\/carrera-investigadora\/">/);
+  assert.match(career, /aneca\.es\/web\/guest\/criterios-de-evaluaci/);
+  assert.match(career, /erc\.europa\.eu\/news-events\/events\/erc-grants-what-expect-2026-calls/);
+  assert.match(career, /href="\/jorpago2\/es\/investigacion\/"/);
 });
 
 test("SEO metadata identifies the site and academic profile", async () => {

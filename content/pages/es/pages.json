@@ -62,5 +62,13 @@
     "seoTitle": "Docencia en electrónica y fotónica | Dr. Jorge Parra",
     "description": "Docencia universitaria, recursos educativos y proyectos de grado y máster codirigidos en electrónica y fotónica.",
     "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "career-strategy",
+    "slug": "carrera-investigadora",
+    "title": "Estrategia de carrera investigadora",
+    "seoTitle": "Estrategia para la carrera investigadora | Jorge Parra",
+    "description": "Marco personal para elegir preguntas de investigación, construir un perfil coherente, publicar con rigor, colaborar y ajustar las ambiciones a los recursos disponibles.",
+    "modified": "2026-07-27T00:00:00"
   }
 ]
