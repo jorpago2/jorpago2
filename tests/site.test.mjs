@@ -66,7 +66,7 @@ test("all imported pages are built with metadata", async () => {
       assert.doesNotMatch(html, /assets\/site\.js/);
       continue;
     }
-    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=4" defer><\/script>/);
+    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=5" defer><\/script>/);
     assert.doesNotMatch(html, /Last update:|Last updated|class="last-updated"/);
   }
 });
@@ -252,9 +252,14 @@ test("homepage has the personal academic layout and keeps the five-image carouse
 
 test("contact page highlights email, student projects and office location", async () => {
   const html = await readFile(path.join(OUTPUT_ROOT, "contact", "index.html"), "utf8");
+  const script = await readFile(path.join(OUTPUT_ROOT, "assets", "site.js"), "utf8");
 
   assert.match(html, /class="contact-lead"/);
   assert.match(html, /class="contact-email">jorge \[dot\] parra \[at\] uv \[dot\] es/);
+  assert.doesNotMatch(html, /jorge\.parra@uv\.es/);
+  assert.match(html, /class="button copy-email"[^>]+data-email-local="jorge\.parra"[^>]+data-email-domain="uv\.es"/);
+  assert.match(html, /class="visually-hidden email-copy-status" aria-live="polite"/);
+  assert.match(script, /navigator\.clipboard\.writeText\(`\$\{localPart\}@\$\{domain\}`\)/);
   assert.match(html, /class="contact-students"/);
   assert.match(html, /Potential project topics include, but are not limited to:/);
   assert.equal((html.match(/<li>\s*<strong>[^<]+<\/strong>\s*<span>[^<]+<\/span>\s*<\/li>/g) ?? []).length, 5);

@@ -20,6 +20,30 @@ if (menuButton && navigation) {
   });
 }
 
+document.querySelectorAll(".copy-email").forEach((button) => {
+  const status = button.parentElement?.querySelector(".email-copy-status");
+  const localPart = button.dataset.emailLocal;
+  const domain = button.dataset.emailDomain;
+
+  if (!status || !localPart || !domain || !navigator.clipboard) {
+    button.parentElement.hidden = true;
+    return;
+  }
+
+  button.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(`${localPart}@${domain}`);
+      const message = button.dataset.copySuccess || "Email address copied";
+      button.textContent = message;
+      status.textContent = message;
+    } catch {
+      const message = button.dataset.copyError || "The address could not be copied";
+      button.textContent = message;
+      status.textContent = message;
+    }
+  });
+});
+
 document.querySelectorAll(".metaslider").forEach((carousel) => {
   const slides = [...carousel.querySelectorAll(".slides > li")];
   if (slides.length < 2) return;

@@ -103,7 +103,6 @@ function personSchemaData(strings) {
     description: strings.person.description,
     image: `${SITE_ORIGIN}${PROFILE_IMAGE_PATH}`,
     url: `${SITE_ORIGIN}${SITE_BASE_PATH}/about-me/`,
-    email: "mailto:jorge.parra@uv.es",
     worksFor: {
       "@type": "CollegeOrUniversity",
       name: "Universitat de València",
@@ -410,7 +409,7 @@ ${alternateLinks(page.id, localeBundles)}
       <p class="footer-copy">© ${new Date().getFullYear()} ${escapeHtml(strings.footerCopyright)}</p>
     </div>
   </footer>
-  <script src="${SITE_BASE_PATH}/assets/site.js?v=4" defer></script>
+  <script src="${SITE_BASE_PATH}/assets/site.js?v=5" defer></script>
 </body>
 </html>
 `);
