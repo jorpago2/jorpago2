@@ -213,7 +213,7 @@ test("Valencian pages use translated routes, content and SEO alternates", async 
   assert.match(home, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
   assert.match(home, /hreflang="ca" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
   assert.match(home, /href="\/jorpago2\/va\/investigacio\/">Investigació<\/a>/);
-  assert.match(home, /lang="ca" aria-current="page">VA<\/a>/);
+  assert.match(home, /lang="ca" aria-current="page">VAL<\/a>/);
   assert.match(home, /Cinc principis per a construir una carrera investigadora/);
   assert.match(about, /Investigador i docent en fotònica integrada/);
   assert.match(research, /Fotònica integrada reconfigurable amb materials funcionals/);
