@@ -13,13 +13,13 @@
     "title": "Research",
     "seoTitle": "Integrated Photonics Research & Publications | Jorge Parra",
     "description": "Research areas and journal publications in functional materials, reconfigurable integrated photonics and neuromorphic photonic hardware.",
-    "modified": "2026-07-26T00:00:00"
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "id": "theses",
     "slug": "theses",
     "title": "Theses",
-    "description": "Doctoral TBC Master Bachelor",
+    "description": "Selected co-supervised BSc and MSc theses in integrated photonics and related technologies.",
     "modified": "2025-08-14T16:53:13"
   },
   {
@@ -42,16 +42,16 @@
     "id": "publications",
     "slug": "publications",
     "title": "Publications",
-    "description": "Journal papers 2026 2025 2024 2023 2022 2021 2020 2019 2018",
+    "description": "Journal publications in integrated photonics, functional materials, emerging devices and neuromorphic hardware.",
     "modified": "2026-05-02T19:18:30"
   },
   {
     "id": "new-students",
     "slug": "new-students",
-    "title": "New students",
+    "title": "Starting research",
     "seoTitle": "Research Projects for Students | Dr. Jorge Parra",
     "description": "A concise guide for students considering scientific research, focused on curiosity, constructive dissatisfaction, reframing and problem decomposition.",
-    "modified": "2026-07-26T00:00:00"
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "id": "resources",
@@ -59,7 +59,7 @@
     "title": "Resources",
     "seoTitle": "Photonics & Electronics Simulators and Resources",
     "description": "Curated scientific links, design and fabrication resources, communication tools and interactive online simulators.",
-    "modified": "2026-07-26T00:00:00"
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "id": "faq",
@@ -67,29 +67,29 @@
     "title": "FAQ for prospective PhD students",
     "seoTitle": "PhD in Spain: FAQ for Prospective Students",
     "description": "Practical guidance for prospective PhD students in Spain: careers, supervision, funding, working conditions and research skills.",
-    "modified": "2026-07-26T00:00:00"
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "id": "teaching",
     "slug": "teaching",
     "title": "Teaching",
     "seoTitle": "Electronics & Photonics Teaching | Dr. Jorge Parra",
-    "description": "Current and previous university teaching, educational resources, and supervised bachelor’s and master’s projects in electronics and photonics.",
-    "modified": "2026-07-26T00:00:00"
+    "description": "Current and previous university teaching, educational resources, and co-supervised bachelor’s and master’s projects in electronics and photonics.",
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "id": "career-strategy",
     "slug": "career-strategy",
-    "title": "Career Strategy",
+    "title": "Research career strategy",
     "seoTitle": "Research Career Strategy | Dr. Jorge Parra",
     "description": "A personal framework for choosing research questions, developing a coherent profile, publishing responsibly, collaborating and matching ambitions to resources.",
-    "modified": "2026-07-26T00:00:00"
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "id": "books",
     "slug": "books",
     "title": "Books",
-    "description": "Teoría de circuitos eléctricos. Problemas resueltos Authors: Sanchis Kilders, Pablo Díaz Rubio, Ana Parra Gómez, Jorge ISBN: 978-84-1396-370-9 Ref.: 636 Language: Spanish",
+    "description": "Teoría de circuitos eléctricos. Problemas resueltos, a Spanish-language problem book for introductory circuit theory.",
     "modified": "2025-11-09T18:59:08"
   }
 ]

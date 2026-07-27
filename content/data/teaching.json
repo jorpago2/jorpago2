@@ -2,8 +2,8 @@
   "currentCourses": [
     {
       "title": {
-        "en": "Electronics Technology",
-        "es": "Electronics Technology"
+        "en": "Electronic Technology",
+        "es": "Tecnología electrónica"
       },
       "details": {
         "en": "Laboratory · BSc in Industrial Electronic Engineering",
@@ -13,7 +13,7 @@
     {
       "title": {
         "en": "Electronic Circuits",
-        "es": "Electronic Circuits"
+        "es": "Circuitos electrónicos"
       },
       "details": {
         "en": "Laboratory · BSc in Telecommunications Electronic Engineering",
@@ -23,7 +23,7 @@
     {
       "title": {
         "en": "High-Frequency Circuits and Subsystems",
-        "es": "High-Frequency Circuits and Subsystems"
+        "es": "Circuitos y subsistemas de alta frecuencia"
       },
       "details": {
         "en": "Lectures · BSc in Telecommunications Electronic Engineering",
@@ -33,7 +33,7 @@
     {
       "title": {
         "en": "Electronic and Photonic Devices",
-        "es": "Electronic and Photonic Devices"
+        "es": "Dispositivos electrónicos y fotónicos"
       },
       "details": {
         "en": "Laboratory · BSc in Telecommunications Electronic Engineering and BSc in Telematics Engineering",
@@ -42,8 +42,8 @@
     },
     {
       "title": {
-        "en": "Analog Electronics II",
-        "es": "Analog Electronics II"
+        "en": "Analogue Electronics II",
+        "es": "Electrónica analógica II"
       },
       "details": {
         "en": "Lectures and laboratory · BSc in Telecommunications Electronic Engineering",
@@ -53,7 +53,7 @@
     {
       "title": {
         "en": "Fundamentals of Communications",
-        "es": "Fundamentals of Communications"
+        "es": "Fundamentos de las comunicaciones"
       },
       "details": {
         "en": "Laboratory · BSc in Telecommunications Electronic Engineering",
@@ -62,8 +62,8 @@
     },
     {
       "title": {
-        "en": "Digital Systems I",
-        "es": "Digital Systems I"
+        "en": "Digital Electronic Systems I",
+        "es": "Sistemas electrónicos digitales I"
       },
       "details": {
         "en": "Laboratory · BSc in Telecommunications Electronic Engineering",
@@ -75,7 +75,7 @@
     {
       "title": {
         "en": "Circuit Theory",
-        "es": "Circuit Theory"
+        "es": "Teoría de circuitos"
       },
       "details": {
         "en": "Lectures and laboratory · BSc in Telecommunication Engineering · 2019–2025",
@@ -85,7 +85,7 @@
     {
       "title": {
         "en": "Integrated Photonics",
-        "es": "Integrated Photonics"
+        "es": "Fotónica integrada"
       },
       "details": {
         "en": "Laboratory · BSc in Engineering Physics · 2024–2025",
@@ -95,7 +95,7 @@
     {
       "title": {
         "en": "Communication, Navigation and Surveillance Systems",
-        "es": "Communication, Navigation and Surveillance Systems"
+        "es": "Sistemas de comunicación, navegación y vigilancia"
       },
       "details": {
         "en": "Laboratory · MSc in Aeronautical Engineering · 2022–2025",
@@ -105,7 +105,7 @@
     {
       "title": {
         "en": "Transmission Media",
-        "es": "Transmission Media"
+        "es": "Medios de transmisión"
       },
       "details": {
         "en": "Laboratory · BSc in Multimedia Technologies · 2022–2024",

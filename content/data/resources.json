@@ -70,7 +70,7 @@
             "es": "Epoch AI"
           },
           "descriptionHtml": {
-            "en": "Updated data and resources about the growth and impact of artificial intelligence.",
+            "en": "Current data and resources about the growth and impact of artificial intelligence.",
             "es": "Datos y recursos actualizados sobre el crecimiento y el impacto de la inteligencia artificial."
           }
         },
@@ -230,7 +230,7 @@
           },
           "descriptionHtml": {
             "en": "Free layout viewer and editor compatible with GDS and OASIS files.",
-            "es": "Visor y editor de layouts gratuito compatible con archivos GDS y OASIS."
+            "es": "Visor y editor gratuito de diseños de máscara compatible con archivos GDS y OASIS."
           }
         },
         {
@@ -315,8 +315,8 @@
     {
       "id": "communication",
       "title": {
-        "en": "Communication and graphics",
-        "es": "Comunicación y gráficos"
+        "en": "Scientific communication and graphics",
+        "es": "Comunicación científica y recursos gráficos"
       },
       "items": [
         {

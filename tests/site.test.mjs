@@ -107,6 +107,11 @@ test("shared records live in JSON and render in both languages", async () => {
   assert.equal(resources.groups.length, 5);
   assert.equal(resources.groups.reduce((count, group) => count + group.items.length, 0), 26);
   assert.ok(teaching.currentCourses.every((course) => course.details.en && course.details.es));
+  assert.ok(
+    [...teaching.currentCourses, ...teaching.previousCourses].every(
+      (course) => course.title.en !== course.title.es,
+    ),
+  );
   assert.ok(resources.groups.every((group) => group.title.en && group.title.es));
 
   for (const locale of localeConfig.locales) {
@@ -127,6 +132,7 @@ test("shared records live in JSON and render in both languages", async () => {
   const spanishResources = await readFile(path.join(OUTPUT_ROOT, "es", "recursos", "index.html"), "utf8");
   assert.equal((spanishResearch.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
   assert.equal((spanishTeaching.match(/class="supervision-year"/g) ?? []).length, 10);
+  assert.match(spanishTeaching, /Sistemas electrónicos digitales I/);
   assert.equal((spanishResources.match(/class="resource-group /g) ?? []).length, 5);
 });
 
@@ -163,7 +169,8 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(home, /href="\/jorpago2\/es\/investigacion\/">Investigación<\/a>/);
   assert.match(home, /href="\/jorpago2\/es\/docencia\/">Docencia<\/a>/);
   assert.match(home, /class="language-nav"[\s\S]*?href="\/jorpago2\/" lang="en">EN<\/a>[\s\S]*?lang="es" aria-current="page">ES<\/a>/);
-  assert.match(home, /href="\/jorpago2\/es\/estudiantes\/">¿Puede encajar contigo la investigación\?/);
+  assert.match(home, /href="\/jorpago2\/es\/estudiantes\/">¿Podría encajar contigo la investigación\?/);
+  assert.match(home, /href="\/jorpago2\/es\/doctorado\/">Consulta las preguntas frecuentes sobre el doctorado/);
   assert.match(home, /href="\/jorpago2\/es\/carrera-investigadora\/">Cinco principios para construir una carrera investigadora/);
   assert.match(about, /hreflang="en" href="https:\/\/www\.uv\.es\/jorpago2\/about-me\/">/);
   assert.match(about, /hreflang="es" href="https:\/\/www\.uv\.es\/jorpago2\/es\/sobre-mi\/">/);
@@ -330,6 +337,7 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.equal((teaching.match(/class="supervision-year"/g) ?? []).length, 10);
   assert.equal((teaching.match(/· Co-supervisor/g) ?? []).length, 10);
   assert.doesNotMatch(teaching, /· Supervisor/);
+  assert.match(teaching, /Co-supervised theses/);
   assert.match(teaching, /Electronics and photonics education/);
   assert.match(teaching, /class="section-intro teaching-intro"[\s\S]*?teaching-electronics-photonics\.webp\?v=2/);
   assert.match(teaching, /Teoría de circuitos eléctricos/);
