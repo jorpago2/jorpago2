@@ -143,7 +143,7 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.match(research, /id="overview"[\s\S]*?id="publications"/);
   assert.equal((research.match(/class="research-area"/g) ?? []).length, 3);
   assert.match(research, /Functional materials for integrated photonics/);
-  assert.match(research, /class="section-intro research-intro"[\s\S]*?research-integrated-photonics\.webp/);
+  assert.match(research, /class="section-intro research-intro"[\s\S]*?research-integrated-photonics\.webp\?v=2/);
   assert.match(research, /Reconfigurable and non-volatile photonic devices/);
   assert.match(research, /Neuromorphic photonic hardware/);
   assert.doesNotMatch(research, /Emerging optoelectronic devices and characterization/);
@@ -165,7 +165,7 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.equal((teaching.match(/· Co-supervisor/g) ?? []).length, 10);
   assert.doesNotMatch(teaching, /· Supervisor/);
   assert.match(teaching, /Electronics and photonics education/);
-  assert.match(teaching, /class="section-intro teaching-intro"[\s\S]*?teaching-electronics-photonics\.webp/);
+  assert.match(teaching, /class="section-intro teaching-intro"[\s\S]*?teaching-electronics-photonics\.webp\?v=2/);
   assert.match(teaching, /Teoría de circuitos eléctricos/);
   assert.match(teaching, /href="\/jorpago2\/resources\/#online-tools"/);
   assert.match(teaching, /href="\/jorpago2\/contact\/#student-projects-title"/);
