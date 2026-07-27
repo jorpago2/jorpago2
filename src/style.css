@@ -1322,14 +1322,8 @@ th {
   margin-top: 1.8rem;
 }
 
-.page-showcase,
 .about-biography {
   margin-bottom: 2.5rem;
-}
-
-.page-showcase .metaslider {
-  max-width: 52rem;
-  margin-inline: auto;
 }
 
 .about-carousel .metaslider {
@@ -1383,10 +1377,6 @@ th {
   background: var(--white);
 }
 
-.page-showcase .section-heading {
-  margin-bottom: 1rem;
-}
-
 .wp-block-media-text {
   display: grid;
   grid-template-columns: minmax(12rem, 0.48fr) 1fr;
@@ -1436,6 +1426,211 @@ th {
   display: inline-block;
   margin-right: 0.35rem;
   padding: 0.1rem 0.35rem;
+}
+
+.teaching-intro {
+  max-width: 55rem;
+}
+
+.teaching-statement {
+  max-width: 24ch;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.teaching-lead {
+  max-width: 48rem;
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.current-teaching {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+}
+
+.teaching-section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.teaching-section-heading .eyebrow,
+.teaching-section-heading h2 {
+  margin: 0;
+}
+
+.teaching-section-heading .eyebrow {
+  margin-bottom: 0.4rem;
+}
+
+.course-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 clamp(1.5rem, 4vw, 3rem);
+  list-style: none;
+}
+
+.course-list li {
+  max-width: none;
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.course-list li + li,
+.supervision-list li + li {
+  margin-top: 0;
+}
+
+.course-list strong,
+.course-list span {
+  display: block;
+}
+
+.course-list span {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.teaching-history {
+  margin-top: 1.75rem;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.teaching-history > summary {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.teaching-history > summary span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.teaching-history[open] > summary {
+  border-bottom: 0;
+}
+
+.teaching-history > :not(summary) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.teaching-resource-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(16rem, 0.75fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.book-resource {
+  display: grid;
+  grid-template-columns: minmax(8rem, 10rem) 1fr;
+  align-items: start;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.book-cover img {
+  width: 100%;
+}
+
+.book-resource-copy .eyebrow,
+.book-resource-copy h3 {
+  margin: 0;
+}
+
+.book-resource-copy h3 {
+  margin-top: 0.45rem;
+}
+
+.book-authors,
+.resource-meta {
+  color: var(--muted);
+}
+
+.resource-meta {
+  font-size: 0.88rem;
+}
+
+.simulator-resource {
+  padding-top: 1rem;
+  border-top: 2px solid var(--lime);
+}
+
+.simulator-resource .eyebrow,
+.simulator-resource h3 {
+  margin: 0;
+}
+
+.simulator-resource h3 {
+  margin-top: 0.45rem;
+}
+
+.supervision-intro {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.supervision-intro p {
+  max-width: 43rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.supervision-intro .button {
+  flex: none;
+}
+
+.supervision-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.supervision-groups h3 {
+  margin: 0 0 1rem;
+}
+
+.supervision-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.supervision-list li {
+  display: grid;
+  max-width: none;
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+.supervision-year {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.supervision-list p {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
 .research-statement {
@@ -1723,6 +1918,11 @@ th {
     grid-template-columns: 1fr;
   }
 
+  .teaching-resource-grid,
+  .supervision-groups {
+    grid-template-columns: 1fr;
+  }
+
   .identity img {
     width: 3.5rem;
     height: 3.5rem;
@@ -1870,6 +2070,28 @@ th {
 
   .information-grid {
     grid-template-columns: 1fr;
+  }
+
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+
+  .book-resource {
+    grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    max-width: 9rem;
+  }
+
+  .supervision-intro {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .teaching-history > summary {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .research-publications-heading {

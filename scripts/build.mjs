@@ -140,20 +140,6 @@ ${career}`;
     }
   }
 
-  if (slug === "publications" || slug === "teaching") {
-    const firstHeading = content.search(/<h2\b/i);
-    if (firstHeading > 0) {
-      const carousel = content.slice(0, firstHeading).trim();
-      const remainder = content.slice(firstHeading).trim();
-      const isPublications = slug === "publications";
-      content = `<section class="page-showcase">
-<div class="section-heading"><p class="eyebrow">${isPublications ? "Selected devices" : "Learning and outreach"}</p><h2 id="${isPublications ? "research-visuals" : "teaching-in-practice"}">${isPublications ? "Research visuals" : "Teaching in practice"}</h2></div>
-${carousel}
-</section>
-${remainder}`;
-    }
-  }
-
   if (slug === "teaching") {
     content = content.replace(/<details\b(?![^>]*\sid=)/i, '<details id="previous-years"');
   }
@@ -212,15 +198,15 @@ ${publications}
   }
 
   if (slug === "teaching") {
-    const courses = shiftHeadings(preparePageContent("teaching", fragments.get("teaching")), { 2: 3 });
+    const courses = preparePageContent("teaching", fragments.get("teaching"));
     const books = shiftHeadings(preparePageContent("books", fragments.get("books")), { 2: 3 });
     const theses = preparePageContent("theses", fragments.get("theses"));
     return `<section class="merged-section merged-section-first" id="courses" aria-labelledby="courses-title">
-<h2 class="merged-section-title" id="courses-title">Courses</h2>
+<h2 class="merged-section-title visually-hidden" id="courses-title">Courses</h2>
 ${courses}
 </section>
 <section class="merged-section merged-section-books" id="books" aria-labelledby="books-title">
-<h2 class="merged-section-title" id="books-title">Books and teaching materials</h2>
+<h2 class="merged-section-title" id="books-title">Teaching resources</h2>
 ${books}
 </section>
 <section class="merged-section merged-section-theses" id="theses" aria-labelledby="theses-title">
@@ -312,7 +298,7 @@ ${content}
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=44">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=45">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dr. Jorge Parra">

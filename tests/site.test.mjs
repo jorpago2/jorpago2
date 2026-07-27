@@ -56,7 +56,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=44/);
+  assert.match(html, /assets\/style\.css\?v=45/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
@@ -151,8 +151,15 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.equal((research.match(/name="publication-years" open/g) ?? []).length, 1);
   assert.match(research, /10\.1088\/2515-7647\/ae6004/);
   assert.match(teaching, /id="courses"[\s\S]*?id="books"[\s\S]*?id="theses"/);
+  assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
+  assert.equal((teaching.match(/class="course-list previous-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 4);
+  assert.equal((teaching.match(/class="supervision-year"/g) ?? []).length, 10);
+  assert.match(teaching, /Electronics and photonics education/);
   assert.match(teaching, /Teoría de circuitos eléctricos/);
+  assert.match(teaching, /href="\/jorpago2\/resources\/#online-tools"/);
+  assert.match(teaching, /href="\/jorpago2\/contact\/#student-projects-title"/);
   assert.match(teaching, /Energy-efficient ITO microheaters/);
+  assert.doesNotMatch(teaching, /metaslider|<table|Teaching in practice|>TBC</);
 });
 
 test("about page places the expanded carousel beside the biography", async () => {
