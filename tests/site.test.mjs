@@ -171,6 +171,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(home, /hreflang="x-default" href="https:\/\/www\.uv\.es\/jorpago2\/">/);
   assert.match(home, /href="\/jorpago2\/es\/investigacion\/">Investigación<\/a>/);
   assert.match(home, /href="\/jorpago2\/es\/docencia\/">Docencia<\/a>/);
+  assert.match(home, /class="page-actions">[\s\S]*?Investigación y publicaciones[\s\S]*?Docencia y proyectos de estudiantes/);
   assert.match(home, /class="language-nav"[\s\S]*?href="\/jorpago2\/" lang="en">EN<\/a>[\s\S]*?lang="es" aria-current="page">ES<\/a>/);
   assert.match(home, /href="\/jorpago2\/es\/estudiantes\/">¿Podría encajar contigo la investigación\?/);
   assert.match(home, /href="\/jorpago2\/es\/doctorado\/">Consulta las preguntas frecuentes sobre el doctorado/);
@@ -213,6 +214,7 @@ test("Valencian pages use translated routes, content and SEO alternates", async 
   assert.match(home, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
   assert.match(home, /hreflang="ca" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
   assert.match(home, /href="\/jorpago2\/va\/investigacio\/">Investigació<\/a>/);
+  assert.match(home, /class="page-actions">[\s\S]*?Investigació i publicacions[\s\S]*?Docència i projectes d’estudiants/);
   assert.match(home, /lang="ca" aria-current="page">VAL<\/a>/);
   assert.match(home, /Cinc principis per a construir una carrera investigadora/);
   assert.match(about, /Investigador i docent en fotònica integrada/);
@@ -256,6 +258,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.match(html, /assets\/style\.css\?v=50/);
+  assert.match(html, /class="page-actions">[\s\S]*?Research &amp; publications[\s\S]*?Teaching &amp; student projects/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
