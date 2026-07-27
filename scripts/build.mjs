@@ -3,6 +3,7 @@ import path from "node:path";
 
 const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
+const IS_PREVIEW = process.env.SITE_PREVIEW === "true";
 const OUTPUT_ROOT = path.resolve("publish", "jorpago2");
 const CONTENT_ROOT = path.resolve("content");
 const LOGO_PATH = `${SITE_BASE_PATH}/assets/media/2025/07/cropped-ChatGPT-Image-13-jul-2025-19_12_48-1.png`;
@@ -57,32 +58,83 @@ function navigationHtml(activeSlug) {
     .join("\n          ");
 }
 
-function personSchema() {
+function schemaScript(value) {
   return `<script type="application/ld+json">
-${JSON.stringify(
-  {
-    "@context": "https://schema.org",
+${JSON.stringify(value, null, 2)}
+</script>`;
+}
+
+function personSchemaData() {
+  return {
     "@type": "Person",
+    "@id": `${canonicalUrl("about-me")}#person`,
     name: "Jorge Parra Gómez",
     honorificPrefix: "Dr.",
     jobTitle: "Assistant Professor",
-    affiliation: {
+    description:
+      "Assistant Professor researching integrated photonics, functional materials, emerging devices and neuromorphic hardware.",
+    image: `${SITE_ORIGIN}${PROFILE_IMAGE_PATH}`,
+    url: canonicalUrl("about-me"),
+    email: "mailto:jorge.parra@uv.es",
+    worksFor: {
       "@type": "CollegeOrUniversity",
       name: "Universitat de València",
       url: "https://www.uv.es/",
     },
-    url: canonicalUrl(),
-    email: "mailto:jorge.parra@uv.es",
-    sameAs: [
-      "https://www.linkedin.com/in/jorgeparragomez/",
-      "https://x.com/jorpargo_",
-      "https://www.researchgate.net/profile/Jorge-Parra-11",
+    knowsAbout: [
+      "Integrated photonics",
+      "Functional materials",
+      "Electronic engineering",
+      "Emerging electronic and photonic devices",
+      "Neuromorphic hardware",
     ],
-  },
-  null,
-  2,
-)}
-</script>`;
+    sameAs: [
+      "https://orcid.org/0000-0003-4610-3411",
+      "https://scholar.google.es/citations?user=5kYBpXIAAAAJ&hl=en",
+      "https://www.linkedin.com/in/jorgeparragomez/",
+      "https://www.researchgate.net/profile/Jorge-Parra-11",
+      "https://x.com/jorpargo_",
+      "https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=jorpago2",
+    ],
+  };
+}
+
+function structuredData(page, pageTitle, description) {
+  const person = personSchemaData();
+
+  if (page.slug === "") {
+    return schemaScript({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": `${canonicalUrl()}#website`,
+          name: "Dr. Jorge Parra — Photonics and Electronics",
+          url: canonicalUrl(),
+          description,
+          inLanguage: "en",
+          author: { "@id": person["@id"] },
+        },
+        person,
+      ],
+    });
+  }
+
+  if (page.slug === "about-me") {
+    return schemaScript({
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": `${canonicalUrl(page.slug)}#profile`,
+      url: canonicalUrl(page.slug),
+      name: pageTitle,
+      description,
+      dateModified: page.modified,
+      inLanguage: "en",
+      mainEntity: person,
+    });
+  }
+
+  return "";
 }
 
 function externalLinksInNewTab(html) {
@@ -101,12 +153,8 @@ function externalLinksInNewTab(html) {
 
 function pageShell({ page, content }) {
   const isHome = page.slug === "";
-  const pageTitle = isHome
-    ? "Dr. Jorge Parra | Photonics and Electronics"
-    : `${page.title} | Dr. Jorge Parra`;
-  const description = isHome
-    ? "Dr. Jorge Parra is an Assistant Professor at the University of Valencia working on integrated photonics, advanced materials and emerging devices."
-    : conciseDescription(page.description);
+  const pageTitle = page.seoTitle || `${page.title} | Dr. Jorge Parra`;
+  const description = conciseDescription(page.description);
   const mainContent = isHome
     ? content
     : `<article class="page-layout page-${page.slug}">
@@ -123,6 +171,8 @@ ${content}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(pageTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
+  <meta name="author" content="Jorge Parra Gómez">
+  <meta name="robots" content="${IS_PREVIEW ? "noindex, nofollow, noarchive" : "index, follow, max-image-preview:large"}">
   <link rel="canonical" href="${canonicalUrl(page.slug)}">
   <link rel="icon" href="${LOGO_PATH}">
   <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=48">
@@ -137,7 +187,10 @@ ${content}
   <meta property="og:image:height" content="1024">
   <meta property="og:image:alt" content="Dr. Jorge Parra — Photonics and Electronics">
   <meta name="twitter:card" content="summary_large_image">
-  ${isHome ? personSchema() : ""}
+  <meta name="twitter:title" content="${escapeHtml(pageTitle)}">
+  <meta name="twitter:description" content="${escapeHtml(description)}">
+  <meta name="twitter:image" content="${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png">
+  ${structuredData(page, pageTitle, description)}
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -252,7 +305,9 @@ async function main() {
   );
   await writeFile(
     path.join(OUTPUT_ROOT, "robots.txt"),
-    `User-agent: *\nAllow: /\nSitemap: ${SITE_ORIGIN}${SITE_BASE_PATH}/sitemap.xml\n`,
+    IS_PREVIEW
+      ? "User-agent: *\nDisallow: /\n"
+      : `User-agent: *\nAllow: /\nSitemap: ${SITE_ORIGIN}${SITE_BASE_PATH}/sitemap.xml\n`,
     "utf8",
   );
   await writeFile(path.join(OUTPUT_ROOT, "404.html"), notFoundPage(), "utf8");

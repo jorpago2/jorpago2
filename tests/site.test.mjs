@@ -4,6 +4,8 @@ import path from "node:path";
 import test from "node:test";
 
 const SITE_BASE_PATH = "/jorpago2";
+const SITE_ORIGIN = "https://www.uv.es";
+const IS_PREVIEW = process.env.SITE_PREVIEW === "true";
 const OUTPUT_ROOT = path.resolve("publish", "jorpago2");
 const pages = JSON.parse(await readFile(path.resolve("content", "pages.json"), "utf8"));
 const mergedRoutes = {
@@ -37,7 +39,7 @@ test("all imported pages are built with metadata", async () => {
     const outputFile = path.join(OUTPUT_ROOT, page.slug, "index.html");
     const html = await readFile(outputFile, "utf8");
     assert.match(html, /<meta name="description" content="[^"]+">/);
-    assert.match(html, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\//);
+    assert.ok(html.includes(`<link rel="canonical" href="${SITE_ORIGIN}/jorpago2/`));
     assert.doesNotMatch(html, /jorpago2\.blogs\.uv\.es/);
     assert.doesNotMatch(html, /<script[^>]+src="https?:/i);
     if (mergedRoutes[page.slug]) {
@@ -48,6 +50,24 @@ test("all imported pages are built with metadata", async () => {
     assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=3" defer><\/script>/);
     assert.doesNotMatch(html, /Last update:|Last updated|class="last-updated"/);
   }
+});
+
+test("SEO metadata identifies the site and academic profile", async () => {
+  const home = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
+  const about = await readFile(path.join(OUTPUT_ROOT, "about-me", "index.html"), "utf8");
+
+  assert.match(home, /"@type": "WebSite"/);
+  assert.match(home, /"@type": "Person"/);
+  assert.match(about, /"@type": "ProfilePage"/);
+  assert.match(about, /https:\/\/orcid\.org\/0000-0003-4610-3411/);
+  assert.match(about, /https:\/\/scholar\.google\.es\/citations\?user=5kYBpXIAAAAJ&hl=en/);
+  assert.ok(
+    home.includes(
+      `<meta name="robots" content="${IS_PREVIEW ? "noindex, nofollow, noarchive" : "index, follow, max-image-preview:large"}">`,
+    ),
+  );
+  assert.match(home, /<meta name="twitter:title" content="[^"]+">/);
+  assert.match(home, new RegExp(`${SITE_ORIGIN.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/jorpago2/assets/og\\.png`));
 });
 
 test("homepage has the personal academic layout and keeps the five-image carousel", async () => {
@@ -272,6 +292,7 @@ test("legacy route redirects and sitemap lists every page", async () => {
   const booksRedirect = await readFile(path.join(OUTPUT_ROOT, "books", "index.html"), "utf8");
   const thesesRedirect = await readFile(path.join(OUTPUT_ROOT, "theses", "index.html"), "utf8");
   const sitemap = await readFile(path.join(OUTPUT_ROOT, "sitemap.xml"), "utf8");
+  const robots = await readFile(path.join(OUTPUT_ROOT, "robots.txt"), "utf8");
   const mediaFiles = await readdir(path.join(OUTPUT_ROOT, "assets", "media"), {
     recursive: true,
   });
@@ -281,6 +302,13 @@ test("legacy route redirects and sitemap lists every page", async () => {
   assert.match(thesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
   assert.match(oldThesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
   assert.equal((sitemap.match(/<url>/g) ?? []).length, pages.length - Object.keys(mergedRoutes).length);
+  assert.match(sitemap, /<loc>https:\/\/www\.uv\.es\/jorpago2\//);
+  assert.equal(
+    robots,
+    IS_PREVIEW
+      ? "User-agent: *\nDisallow: /\n"
+      : "User-agent: *\nAllow: /\nSitemap: https://www.uv.es/jorpago2/sitemap.xml\n",
+  );
   assert.doesNotMatch(sitemap, /<loc>[^<]+\/(?:publications|books|theses)\/<\/loc>/);
   assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 17);
 });

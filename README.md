@@ -14,5 +14,8 @@ Upload the contents of `publish/jorpago2/` to the UV web directory assigned to
 `/jorpago2/`. The site does not require a database, PHP or cookies. JavaScript
 is limited to navigation and carousels.
 
+GitHub Pages is a temporary preview and is built with `SITE_PREVIEW=true`, which
+keeps the canonical URLs on the UV domain and prevents indexing of the mirror.
+
 Content is stored in `content/pages/`; presentation lives in `src/style.css`.
 Unused WordPress media is retained in `archive/wordpress-media/` and is not published.

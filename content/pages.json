@@ -2,12 +2,14 @@
   {
     "slug": "about-me",
     "title": "About me",
+    "seoTitle": "About Jorge Parra | Integrated Photonics Researcher",
     "description": "Jorge Parra is an Assistant Professor at the Universitat de València working on reconfigurable integrated photonics, functional materials and neuromorphic hardware.",
-    "modified": "2025-08-15T14:41:32"
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "slug": "research",
     "title": "Research",
+    "seoTitle": "Integrated Photonics Research & Publications | Jorge Parra",
     "description": "Research areas and journal publications in functional materials, reconfigurable integrated photonics and neuromorphic photonic hardware.",
     "modified": "2026-07-26T00:00:00"
   },
@@ -20,14 +22,16 @@
   {
     "slug": "contact",
     "title": "Contact",
-    "description": "You can contact me at: jorge [dot] parra [at] uv [dot] es (Apologies for the odd format; it’s to help prevent spam) BSc and MSc students If you are a Bachelor’s or Master’s student looking for a thesis project (TFG/TFM), feel free to reach out. I am happy to discuss potential topics and ideas with … Read more",
-    "modified": "2025-08-17T20:07:43"
+    "seoTitle": "Contact and Student Projects | Dr. Jorge Parra",
+    "description": "Contact Dr. Jorge Parra at the Universitat de València and explore potential BSc and MSc projects in electronics, photonics and emerging devices.",
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "slug": "",
     "title": "Homepage",
-    "description": "Welcome to the homepage of Dr. Jorge Parra, Assistant Professor in the Department of Electronic Engineering at the University of Valencia. 🔬🎓 Are you interested in doing research and getting a PhD? Read this first and consult the FAQ for prospective PhD students. 🔑👨‍🏫 Practical advice I try to follow to start my research career … Read more",
-    "modified": "2026-07-26T00:00:00"
+    "seoTitle": "Dr. Jorge Parra | Integrated Photonics & Electronic Engineering",
+    "description": "Dr. Jorge Parra is an Assistant Professor at the Universitat de València researching integrated photonics, functional materials and emerging devices.",
+    "modified": "2026-07-27T00:00:00"
   },
   {
     "slug": "publications",
@@ -38,30 +42,35 @@
   {
     "slug": "new-students",
     "title": "New students",
+    "seoTitle": "Research Projects for Students | Dr. Jorge Parra",
     "description": "A concise guide for students considering scientific research, focused on curiosity, constructive dissatisfaction, reframing and problem decomposition.",
     "modified": "2026-07-26T00:00:00"
   },
   {
     "slug": "resources",
     "title": "Resources",
+    "seoTitle": "Photonics & Electronics Simulators and Resources",
     "description": "Curated scientific links, design and fabrication resources, communication tools and interactive online simulators.",
     "modified": "2026-07-26T00:00:00"
   },
   {
     "slug": "faq",
     "title": "FAQ for prospective PhD students",
+    "seoTitle": "PhD in Spain: FAQ for Prospective Students",
     "description": "Practical guidance for prospective PhD students in Spain: careers, supervision, funding, working conditions and research skills.",
     "modified": "2026-07-26T00:00:00"
   },
   {
     "slug": "teaching",
     "title": "Teaching",
+    "seoTitle": "Electronics & Photonics Teaching | Dr. Jorge Parra",
     "description": "Current and previous university teaching, educational resources, and supervised bachelor’s and master’s projects in electronics and photonics.",
     "modified": "2026-07-26T00:00:00"
   },
   {
     "slug": "career-strategy",
     "title": "Career Strategy",
+    "seoTitle": "Research Career Strategy | Dr. Jorge Parra",
     "description": "A personal framework for choosing research questions, developing a coherent profile, publishing responsibly, collaborating and matching ambitions to resources.",
     "modified": "2026-07-26T00:00:00"
   },
