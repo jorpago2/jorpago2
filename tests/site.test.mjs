@@ -56,7 +56,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /assets\/style\.css\?v=46/);
+  assert.match(html, /assets\/style\.css\?v=47/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
@@ -138,6 +138,7 @@ test("resources page uses a compact five-group directory", async () => {
 test("research and teaching consolidate their former child pages", async () => {
   const research = await readFile(path.join(OUTPUT_ROOT, "research", "index.html"), "utf8");
   const teaching = await readFile(path.join(OUTPUT_ROOT, "teaching", "index.html"), "utf8");
+  const css = await readFile(path.resolve("src", "style.css"), "utf8");
 
   assert.match(research, /id="overview"[\s\S]*?id="publications"/);
   assert.equal((research.match(/class="research-area"/g) ?? []).length, 3);
@@ -154,6 +155,8 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.match(research, /Photonics<\/em>, vol\. 12, no\. 5, Art\. no\. 428, 2025/);
   assert.match(research, /VO<sub>2<\/sub>-integrated photonics/);
   assert.doesNotMatch(research, /<em>(?:J\. Phys\. Photonics|Sci Rep|npj Nanophoton\.|Opt\. Express|Opt\. Mater\. Express|Opt\. Lett\.)<\/em>/);
+  assert.match(css, /\.publication-year > ol > li::marker \{[\s\S]*?color: var\(--accent\);/);
+  assert.match(css, /\.publication-year a\[href\^="https:\/\/doi\.org\/"\] \{[\s\S]*?border-radius: 999px;/);
   assert.match(teaching, /id="courses"[\s\S]*?id="books"[\s\S]*?id="theses"/);
   assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
   assert.equal((teaching.match(/class="course-list previous-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 4);

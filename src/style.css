@@ -1781,7 +1781,42 @@ th {
   padding: 1rem 0 1.1rem 0.35rem;
   border-top: 1px solid var(--line);
   background: transparent;
-  line-height: 1.55;
+  line-height: 1.65;
+}
+
+.merged-section-publications .publication-year > ol > li::marker {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+
+.merged-section-publications .publication-year > ol > li em {
+  color: var(--navy);
+  font-weight: 650;
+}
+
+.merged-section-publications .publication-year a[href^="https://doi.org/"] {
+  display: inline-block;
+  max-width: 100%;
+  margin-left: 0.15rem;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid rgb(92 126 0 / 24%);
+  border-radius: 999px;
+  background: rgb(232 244 183 / 58%);
+  color: var(--navy);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+  vertical-align: 0.08em;
+}
+
+.merged-section-publications .publication-year a[href^="https://doi.org/"]:hover {
+  background: var(--accent-soft);
+  color: var(--navy);
 }
 
 .merged-section-publications .publication-year {
