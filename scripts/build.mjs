@@ -358,6 +358,7 @@ ${content}
   <title>${escapeHtml(pageTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="author" content="Jorge Parra Gómez">
+  ${isHome ? '<meta name="google-site-verification" content="s-CARN0HZd9E6lBDvB6sLS076HB8eLKs8p6fHRFt-Xo">' : ""}
   <meta name="robots" content="${IS_PREVIEW ? "noindex, nofollow, noarchive" : "index, follow, max-image-preview:large"}">
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}

@@ -241,6 +241,7 @@ test("SEO metadata identifies the site and academic profile", async () => {
   assert.match(about, /"@type": "ProfilePage"/);
   assert.match(about, /https:\/\/orcid\.org\/0000-0003-4610-3411/);
   assert.match(about, /https:\/\/scholar\.google\.es\/citations\?user=5kYBpXIAAAAJ&hl=en/);
+  assert.match(home, /<meta name="google-site-verification" content="s-CARN0HZd9E6lBDvB6sLS076HB8eLKs8p6fHRFt-Xo">/);
   assert.ok(
     home.includes(
       `<meta name="robots" content="${IS_PREVIEW ? "noindex, nofollow, noarchive" : "index, follow, max-image-preview:large"}">`,

@@ -163,14 +163,19 @@ def verify(sftp: paramiko.SFTPClient, remote_root: str, files: list[Path]) -> No
 def verify_http() -> None:
     for relative_path in ("index.html", "es/index.html", "va/index.html"):
         public_path = relative_path.removesuffix("index.html")
-        url = f"{REMOTE_URL}{public_path}?v={time.time_ns()}"
-        request = urllib.request.Request(url, headers={"User-Agent": "jorpago2-deploy/1.0"})
-        with urllib.request.urlopen(request, timeout=20) as response:
-            content = response.read()
-            if response.status != 200:
-                raise RuntimeError(f"HTTP verification failed ({response.status}): {url}")
-        if hashlib.sha256(content).digest() != sha256_file(SOURCE_DIRECTORY / relative_path):
-            raise RuntimeError(f"Published page differs from build output: {url}")
+        expected_digest = sha256_file(SOURCE_DIRECTORY / relative_path)
+        for attempt in range(6):
+            url = f"{REMOTE_URL}{public_path}?v={time.time_ns()}"
+            request = urllib.request.Request(url, headers={"User-Agent": "jorpago2-deploy/1.0"})
+            with urllib.request.urlopen(request, timeout=20) as response:
+                content = response.read()
+                if response.status != 200:
+                    raise RuntimeError(f"HTTP verification failed ({response.status}): {url}")
+            if hashlib.sha256(content).digest() == expected_digest:
+                break
+            if attempt == 5:
+                raise RuntimeError(f"Published page differs from build output: {url}")
+            time.sleep(5)
     print("HTTP: English, Spanish and Valencian homepages verified")
 
 
