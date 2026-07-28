@@ -14,6 +14,23 @@ Upload the contents of `publish/jorpago2/` to the UV web directory assigned to
 `/jorpago2/`. The site does not require a database, PHP or cookies. JavaScript
 is limited to navigation and carousels.
 
+## Deploy to the UV
+
+Install the SFTP dependency once:
+
+```powershell
+python -m pip install --user paramiko==4.0.0
+```
+
+Then build, test, back up, publish and verify the website with:
+
+```powershell
+python scripts/deploy_uv.py
+```
+
+The command reads the `disco.uv.es` credential from Windows Credential Manager;
+the password is never stored in the repository or printed in the terminal.
+
 GitHub Pages is a temporary preview and is built with `SITE_PREVIEW=true`, which
 keeps the canonical URLs on the UV domain and prevents indexing of the mirror.
 

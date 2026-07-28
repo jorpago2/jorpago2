@@ -1,6 +1,8 @@
 # Generated deployment bundle and temporary tool output.
 publish/
 node_modules/
+__pycache__/
+*.pyc
 .vinext/
 .next/
 .wrangler/
