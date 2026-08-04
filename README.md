@@ -6,8 +6,8 @@ Static migration of `jorpago2.blogs.uv.es`, prepared for publication at
 ## Update and build
 
 ```text
-npm run build    # create publish/jorpago2
-npm test         # verify links, images, metadata and routes
+pnpm build    # create publish/jorpago2
+pnpm test     # verify links, images, metadata and routes
 ```
 
 Upload the contents of `publish/jorpago2/` to the UV web directory assigned to

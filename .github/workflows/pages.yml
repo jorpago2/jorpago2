@@ -21,11 +21,16 @@ jobs:
       SITE_PREVIEW: "true"
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.9.0
       - uses: actions/setup-node@v6
         with:
-          node-version: 22
-      - run: node scripts/build.mjs
-      - run: node --test tests/site.test.mjs
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Test and build static site
+        run: pnpm test
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
