@@ -218,6 +218,7 @@ li {
 }
 
 .menu-toggle {
+  min-height: 36px;
   display: none;
   padding: 0.55rem 0.8rem;
   border: 1px solid var(--line);
@@ -235,6 +236,7 @@ li {
 }
 
 .primary-nav > a {
+  min-height: 36px;
   display: block;
   padding: 0.7rem 0.85rem;
   border-radius: 0.2rem;
@@ -260,7 +262,11 @@ li {
 }
 
 .language-nav a {
+  min-width: 36px;
+  min-height: 36px;
   padding: 0.35rem;
+  display: grid;
+  place-items: center;
   color: var(--muted);
   font-size: 0.7rem;
   font-weight: 700;
@@ -2034,6 +2040,7 @@ figcaption {
   }
 
   .menu-toggle {
+    min-height: 44px;
     display: block;
   }
 
@@ -2054,7 +2061,13 @@ figcaption {
   }
 
   .primary-nav > a {
+    min-height: 44px;
     padding: 0.7rem;
+  }
+
+  .language-nav a {
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .language-nav {

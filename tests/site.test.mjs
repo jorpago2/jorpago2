@@ -437,6 +437,8 @@ test("header and page content share the same horizontal alignment", async () => 
   const css = await readFile(path.resolve("src", "style.css"), "utf8");
 
   assert.match(css, /\.header-inner \{[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
+  assert.match(css, /\.primary-nav > a \{[\s\S]*?min-height: 36px;/);
+  assert.match(css, /\.language-nav a \{[\s\S]*?min-width: 36px;[\s\S]*?min-height: 36px;/);
   assert.match(css, /\.home-layout,[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
   assert.match(css, /\.home-intro \{[\s\S]*?padding: clamp\([^;]+\) 0;/);
 });
