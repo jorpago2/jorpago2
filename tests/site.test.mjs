@@ -99,7 +99,7 @@ test("shared records live in JSON and render in every language", async () => {
   const teaching = JSON.parse(await readFile(path.join(dataRoot, "teaching.json"), "utf8"));
   const resources = JSON.parse(await readFile(path.join(dataRoot, "resources.json"), "utf8"));
 
-  assert.equal(publications.reduce((count, group) => count + group.entries.length, 0), 26);
+  assert.equal(publications.reduce((count, group) => count + group.entries.length, 0), 27);
   assert.equal(teaching.currentCourses.length, 7);
   assert.equal(teaching.previousCourses.length, 4);
   assert.equal(teaching.thesisGroups.reduce((count, group) => count + group.entries.length, 0), 10);
@@ -131,7 +131,7 @@ test("shared records live in JSON and render in every language", async () => {
   const spanishResearch = await readFile(path.join(OUTPUT_ROOT, "es", "investigacion", "index.html"), "utf8");
   const spanishTeaching = await readFile(path.join(OUTPUT_ROOT, "es", "docencia", "index.html"), "utf8");
   const spanishResources = await readFile(path.join(OUTPUT_ROOT, "es", "recursos", "index.html"), "utf8");
-  assert.equal((spanishResearch.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
+  assert.equal((spanishResearch.match(/href="https:\/\/doi\.org\//g) ?? []).length, 27);
   assert.equal((spanishTeaching.match(/class="supervision-year"/g) ?? []).length, 10);
   assert.match(spanishTeaching, /Sistemas electrónicos digitales I/);
   assert.equal((spanishResources.match(/class="resource-group /g) ?? []).length, 5);
@@ -180,7 +180,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(about, /Investigador y docente en fotónica integrada/);
   assert.equal((about.match(/aria-roledescription="slide"/g) ?? []).length, 7);
   assert.match(research, /Fotónica integrada reconfigurable con materiales funcionales/);
-  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
+  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 27);
   assert.equal((teaching.match(/· Codirector/g) ?? []).length, 10);
   assert.match(resources, /Simuladores y herramientas en línea/);
   assert.match(resources, /Diseño, simulación y medida/);
@@ -218,7 +218,7 @@ test("Valencian pages use translated routes, content and SEO alternates", async 
   assert.match(home, /Cinc principis per a construir una carrera investigadora/);
   assert.match(about, /Investigador i docent en fotònica integrada/);
   assert.match(research, /Fotònica integrada reconfigurable amb materials funcionals/);
-  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
+  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 27);
   assert.match(teaching, /Sistemes electrònics digitals I/);
   assert.equal((teaching.match(/· Codirector/g) ?? []).length, 10);
   assert.match(resources, /Disseny, simulació i mesura/);
@@ -367,7 +367,7 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.doesNotMatch(research, /Collaborations|Participation in projects|Research visuals|metaslider/);
   assert.equal((research.match(/<details class="publication-year wp-block-details" name="publication-years"/g) ?? []).length, 9);
   assert.equal((research.match(/name="publication-years" open/g) ?? []).length, 1);
-  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 26);
+  assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 27);
   assert.match(research, /10\.1088\/2515-7647\/ae6004/);
   assert.match(research, /Photonics<\/em>, vol\. 12, no\. 5, Art\. no\. 428, 2025/);
   assert.match(research, /VO<sub>2<\/sub>-integrated photonics/);
