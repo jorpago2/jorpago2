@@ -248,6 +248,7 @@ test("SEO metadata identifies the site and academic profile", async () => {
     ),
   );
   assert.match(home, /<meta name="twitter:title" content="[^"]+">/);
+  assert.match(home, /<meta name="twitter:image:alt" content="[^"]+">/);
   assert.match(home, new RegExp(`${SITE_ORIGIN.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/jorpago2/assets/og\\.png`));
 });
 

@@ -378,6 +378,7 @@ ${alternateLinks(page.id, localeBundles)}
   <meta name="twitter:title" content="${escapeHtml(pageTitle)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
   <meta name="twitter:image" content="${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png">
+  <meta name="twitter:image:alt" content="${escapeHtml(strings.socialImageAlt)}">
   ${structuredData(page, pageTitle, description, locale, strings)}
 </head>
 <body data-carousel-previous="${escapeHtml(strings.carousel.previous)}" data-carousel-next="${escapeHtml(strings.carousel.next)}" data-carousel-slide="${escapeHtml(strings.carousel.slide)}" data-carousel-show="${escapeHtml(strings.carousel.show)}" data-carousel-status="${escapeHtml(strings.carousel.status)}">
