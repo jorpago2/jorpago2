@@ -432,6 +432,8 @@ test("carousels use their original proportions and compact mobile controls", asy
   assert.match(css, /\.carousel-dots \{\s*display: none;/);
   assert.match(css, /\.carousel-status \{[\s\S]*position: static;/);
   assert.match(css, /\.carousel-dots button \{[\s\S]*?width: 1\.5rem;[\s\S]*?height: 1\.5rem;/);
+  assert.match(css, /\.carousel-arrow \{[\s\S]*?width: 2\.75rem;[\s\S]*?height: 2\.75rem;/);
+  assert.match(css, /\.site-footer nav a \{[\s\S]*?min-height: 2\.75rem;/);
   assert.doesNotMatch(css, /width: 100vw/);
 });
 

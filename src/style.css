@@ -1129,8 +1129,8 @@ figcaption {
 
 .carousel-arrow {
   display: grid;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0;
   border-radius: 50%;
   place-items: center;
@@ -1818,6 +1818,8 @@ figcaption {
 }
 
 .site-footer nav a {
+  display: inline-flex;
+  min-height: 2.75rem;
   padding: 0.3rem 0.65rem 0.3rem 1rem;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -1826,6 +1828,7 @@ figcaption {
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.4;
+  align-items: center;
   text-decoration: none;
 }
 
