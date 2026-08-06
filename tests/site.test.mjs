@@ -259,7 +259,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.match(html, /family=IBM\+Plex\+Sans[^\"]+family=Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=54/);
+  assert.match(html, /assets\/style\.css\?v=55/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?Teaching/);
   assert.match(html, /<a\b[^>]*href="\/jorpago2\/research\/"[^>]*>Research<\/a>/);
   assert.match(html, /<a\b[^>]*href="\/jorpago2\/teaching\/"[^>]*>Teaching<\/a>/);
@@ -431,7 +431,7 @@ test("carousels use their original proportions and compact mobile controls", asy
   assert.match(css, /\.hero-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
   assert.match(css, /\.carousel-dots \{\s*display: none;/);
   assert.match(css, /\.carousel-status \{[\s\S]*position: static;/);
-  assert.match(css, /\.carousel-dots button \{[\s\S]*?width: 1\.5rem;[\s\S]*?height: 1\.5rem;/);
+  assert.match(css, /\.carousel-dots button \{[\s\S]*?width: 2\.75rem;[\s\S]*?height: 2\.75rem;/);
   assert.match(css, /\.carousel-arrow \{[\s\S]*?width: 2\.75rem;[\s\S]*?height: 2\.75rem;/);
   assert.match(css, /\.site-footer nav a \{[\s\S]*?min-height: 2\.75rem;/);
   assert.doesNotMatch(css, /width: 100vw/);

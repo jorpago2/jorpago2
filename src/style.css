@@ -1151,8 +1151,8 @@ figcaption {
 
 .carousel-dots button {
   display: grid;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0;
   place-items: center;
   background: transparent;
