@@ -259,7 +259,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.match(html, /family=IBM\+Plex\+Sans[^\"]+family=Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=53/);
+  assert.match(html, /assets\/style\.css\?v=54/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?Teaching/);
   assert.match(html, /<a\b[^>]*href="\/jorpago2\/research\/"[^>]*>Research<\/a>/);
   assert.match(html, /<a\b[^>]*href="\/jorpago2\/teaching\/"[^>]*>Teaching<\/a>/);
