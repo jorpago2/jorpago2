@@ -1,24 +1,17 @@
-import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
-import { execFile } from "node:child_process";
+import { cp, mkdir, readFile, realpath, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { promisify } from "node:util";
+import { compileAsync, NodePackageImporter } from "sass";
 
 const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
 const IS_PREVIEW = process.env.SITE_PREVIEW === "true";
 const OUTPUT_ROOT = path.resolve("publish", "jorpago2");
 const CONTENT_ROOT = path.resolve("content");
+const carbonNodeModules = path.resolve(path.dirname(await realpath(fileURLToPath(import.meta.resolve("@carbon/styles/package.json")))), "..", "..");
 const LOGO_PATH = `${SITE_BASE_PATH}/assets/media/2025/07/cropped-ChatGPT-Image-13-jul-2025-19_12_48-1.png`;
 const PROFILE_IMAGE_PATH = `${SITE_BASE_PATH}/assets/github-profile.jpg`;
 const PERSON_ID = `${SITE_ORIGIN}${SITE_BASE_PATH}/about-me/#person`;
-const execFileAsync = promisify(execFile);
-const tailwindCli = path.join(
-  path.dirname(fileURLToPath(import.meta.resolve("@tailwindcss/cli/package.json"))),
-  "dist",
-  "index.mjs",
-);
-
 const navigationIds = ["about-me", "research", "teaching", "resources", "contact"];
 
 const mergedRoutes = {
@@ -60,7 +53,7 @@ function navigationHtml(activeId, bundle) {
       const page = bundle.pagesById.get(id);
       if (!page) return "";
       const current = activeId === id ? ' aria-current="page"' : "";
-      return `<a class="block min-h-11 cursor-pointer rounded-ui-control px-3.5 py-2.5 text-[0.78rem] font-bold text-ui-ink no-underline hover:text-ui-accent" href="${route(page.slug, bundle.locale)}"${current}>${escapeHtml(bundle.strings.navigation[id])}</a>`;
+      return `<a class="nav-link" href="${route(page.slug, bundle.locale)}"${current}>${escapeHtml(bundle.strings.navigation[id])}</a>`;
     })
     .filter(Boolean)
     .join("\n          ");
@@ -90,10 +83,10 @@ function languageSwitcherHtml(pageId, locale, strings, localeBundles) {
   const links = available
     .map(({ locale: option, pagesById }) => {
       const current = option.code === locale.code ? ' aria-current="page"' : "";
-      return `<a class="grid min-h-11 min-w-11 place-items-center p-1.5 text-[0.7rem] font-bold text-ui-muted no-underline hover:text-ui-accent" href="${route(pagesById.get(pageId).slug, option)}" lang="${option.code}"${current}>${escapeHtml(option.label)}</a>`;
+      return `<a class="language-link" href="${route(pagesById.get(pageId).slug, option)}" lang="${option.code}"${current}>${escapeHtml(option.label)}</a>`;
     })
     .join("\n          ");
-  return `<span class="language-nav ml-2 inline-flex items-center gap-0.5 border-l border-ui pl-2.5 max-[820px]:mt-1.5 max-[820px]:ml-0 max-[820px]:flex max-[820px]:border-t max-[820px]:border-l-0 max-[820px]:pt-2.5 max-[820px]:pl-1.5" role="group" aria-label="${escapeHtml(strings.languageNavigation)}">\n          ${links}\n        </span>`;
+  return `<span class="language-nav" role="group" aria-label="${escapeHtml(strings.languageNavigation)}">\n          ${links}\n        </span>`;
 }
 
 function schemaScript(value) {
@@ -372,10 +365,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=55">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=56">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -393,26 +383,26 @@ ${alternateLinks(page.id, localeBundles)}
   <meta name="twitter:image:alt" content="${escapeHtml(strings.socialImageAlt)}">
   ${structuredData(page, pageTitle, description, locale, strings)}
 </head>
-<body data-carousel-previous="${escapeHtml(strings.carousel.previous)}" data-carousel-next="${escapeHtml(strings.carousel.next)}" data-carousel-slide="${escapeHtml(strings.carousel.slide)}" data-carousel-show="${escapeHtml(strings.carousel.show)}" data-carousel-status="${escapeHtml(strings.carousel.status)}" class="relative m-0 min-h-dvh w-full overflow-x-hidden bg-ui-canvas font-ui-body text-base leading-[1.65] text-ui-ink">
+<body data-carousel-previous="${escapeHtml(strings.carousel.previous)}" data-carousel-next="${escapeHtml(strings.carousel.next)}" data-carousel-slide="${escapeHtml(strings.carousel.slide)}" data-carousel-show="${escapeHtml(strings.carousel.show)}" data-carousel-status="${escapeHtml(strings.carousel.status)}" class="site-body cds--g10">
   <a class="skip-link" href="#main-content">${escapeHtml(strings.skipLink)}</a>
-  <header class="site-header relative z-20 bg-transparent">
-    <div class="header-inner mx-auto flex min-h-[5.25rem] w-[calc(100%-5rem)] max-w-[1160px] items-center justify-between gap-8 border-b border-ui max-[820px]:min-h-28 max-[560px]:min-h-0 max-[560px]:w-[calc(100%-2rem)] max-[560px]:gap-3 max-[560px]:py-3">
-      <a class="identity inline-flex shrink-0 items-center gap-4 text-ui-ink no-underline max-[560px]:min-w-0 max-[560px]:flex-1 max-[560px]:gap-2.5" href="${route("", locale)}" aria-label="${escapeHtml(strings.homepageLabel)}">
-        <img class="size-12 rounded-full border border-ui object-cover max-[820px]:size-14 max-[560px]:size-10" src="${PROFILE_IMAGE_PATH}" alt="" width="52" height="52">
+  <header class="site-header">
+    <div class="header-inner cds--grid">
+      <a class="identity" href="${route("", locale)}" aria-label="${escapeHtml(strings.homepageLabel)}">
+        <img class="identity-avatar" src="${PROFILE_IMAGE_PATH}" alt="" width="52" height="52">
         <span class="identity-copy"><strong>Jorge Parra</strong><small>${escapeHtml(strings.identitySubtitle)}</small></span>
       </a>
-      <button class="menu-toggle hidden min-h-11 rounded-full border border-ui bg-ui-surface px-3.5 py-2 text-xs font-bold text-ui-ink max-[820px]:block" type="button" aria-expanded="false" aria-controls="primary-navigation">${escapeHtml(strings.menu)}</button>
-      <nav class="primary-nav flex items-center gap-1 max-[820px]:absolute max-[820px]:top-full max-[820px]:right-4 max-[820px]:left-4 max-[820px]:hidden max-[820px]:rounded-ui-panel max-[820px]:border max-[820px]:border-ui max-[820px]:bg-ui-surface max-[820px]:p-3 max-[820px]:shadow-ui-raised" id="primary-navigation" aria-label="${escapeHtml(strings.primaryNavigation)}">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">${escapeHtml(strings.menu)}</button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="${escapeHtml(strings.primaryNavigation)}">
           ${navigationHtml(page.id, localeBundles.find(({ locale: option }) => option.code === locale.code))}
           ${languageSwitcherHtml(page.id, locale, strings, localeBundles)}
       </nav>
     </div>
   </header>
-  <main class="relative z-1 min-h-[70vh]" id="main-content">
+  <main class="site-main" id="main-content">
     ${mainContent}
   </main>
-  <footer class="site-footer relative z-1 border-t border-ui py-6 text-sm text-ui-muted">
-    <div class="mx-auto flex w-[calc(100%-5rem)] max-w-[1160px] items-end justify-between gap-8 max-[820px]:block max-[560px]:w-[calc(100%-2rem)]">
+  <footer class="site-footer">
+    <div class="footer-inner cds--grid">
       <p><strong>${escapeHtml(strings.footerName)}</strong><br>${escapeHtml(strings.footerInstitution)}</p>
       <nav aria-label="${escapeHtml(strings.professionalProfiles)}">
         <a href="https://www.linkedin.com/in/jorgeparragomez/">${escapeHtml(strings.profiles.linkedin)}</a>
@@ -594,14 +584,12 @@ async function main() {
     "utf8",
   );
 
-  await execFileAsync(process.execPath, [
-    tailwindCli,
-    "-i",
-    path.resolve("src", "tailwind.css"),
-    "-o",
-    path.join(OUTPUT_ROOT, "assets", "style.css"),
-    "--minify",
-  ]);
+  const stylesheet = await compileAsync(path.resolve("src", "carbon.scss"), {
+    importers: [new NodePackageImporter()],
+    loadPaths: [carbonNodeModules],
+    style: "compressed",
+  });
+  await writeFile(path.join(OUTPUT_ROOT, "assets", "style.css"), stylesheet.css, "utf8");
 
   const sitemap = localeBundles
     .flatMap((bundle) =>

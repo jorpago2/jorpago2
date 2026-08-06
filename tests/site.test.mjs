@@ -258,8 +258,8 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /family=IBM\+Plex\+Sans[^\"]+family=Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=55/);
+  assert.doesNotMatch(html, /fonts\.googleapis\.com|Space\+Grotesk/);
+  assert.match(html, /assets\/style\.css\?v=56/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?Teaching/);
   assert.match(html, /<a\b[^>]*href="\/jorpago2\/research\/"[^>]*>Research<\/a>/);
   assert.match(html, /<a\b[^>]*href="\/jorpago2\/teaching\/"[^>]*>Teaching<\/a>/);
@@ -441,23 +441,21 @@ test("header and page content share the same horizontal alignment", async () => 
   const html = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
   const css = await readFile(path.resolve("src", "style.css"), "utf8");
 
-  assert.match(html, /class="header-inner[^"]*w-\[calc\(100%-5rem\)\][^"]*max-w-\[1160px\]/);
-  assert.match(html, /class="block min-h-11[^"]*" href="\/jorpago2\/about-me\/"/);
-  assert.match(html, /class="grid min-h-11 min-w-11[^"]*" href="\/jorpago2\/" lang="en"/);
+  assert.match(html, /class="header-inner cds--grid"/);
+  assert.match(html, /class="nav-link" href="\/jorpago2\/about-me\/"/);
+  assert.match(html, /class="language-link" href="\/jorpago2\/" lang="en"/);
   assert.match(css, /\.home-layout,[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
   assert.match(css, /\.home-intro \{[\s\S]*?padding: clamp\([^;]+\) 0;/);
 });
 
-test("Tailwind compiles semantic utilities without Preflight", async () => {
-  const source = await readFile(path.resolve("src", "tailwind.css"), "utf8");
+test("Carbon compiles the site interface", async () => {
+  const source = await readFile(path.resolve("src", "carbon.scss"), "utf8");
   const css = await readFile(path.join(OUTPUT_ROOT, "assets", "style.css"), "utf8");
 
-  assert.match(source, /tailwindcss\/theme\.css/);
-  assert.match(source, /tailwindcss\/utilities\.css/);
-  assert.doesNotMatch(source, /tailwindcss\/preflight\.css|@import\s+["']tailwindcss["']/);
-  assert.match(source, /--color-ui-canvas:/);
-  assert.match(css, /\.bg-ui-canvas\{/);
-  assert.match(css, /\.min-h-11\{/);
+  assert.match(source, /@use ["']pkg:@carbon\/styles["']/);
+  assert.doesNotMatch(source, /tailwindcss|@theme inline/);
+  assert.match(css, /\.cds--grid/);
+  assert.match(css, /\.nav-link/);
 });
 
 test("local links and assets resolve", async () => {
