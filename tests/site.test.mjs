@@ -536,3 +536,10 @@ test("legacy route redirects and sitemap lists every page", async () => {
   assert.doesNotMatch(sitemap, /<loc>[^<]+\/(?:publications|books|theses)\/<\/loc>/);
   assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 17);
 });
+
+test("UV deployment keeps backups beside the workspace", async () => {
+  const deployScript = await readFile(path.resolve("scripts", "deploy_uv.py"), "utf8");
+
+  assert.match(deployScript, /BACKUP_ROOT = PROJECT_ROOT\.parent \/ "web-jorge-uv-backups"/);
+  assert.doesNotMatch(deployScript, /Path\.home\(\) \/ "Desktop"/);
+});

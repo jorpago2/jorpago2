@@ -19,13 +19,13 @@ is limited to navigation and carousels.
 Install the SFTP dependency once:
 
 ```powershell
-python -m pip install --user paramiko==4.0.0
+py -m pip install --user paramiko==4.0.0
 ```
 
 Then build, test, back up, publish and verify the website with:
 
 ```powershell
-python scripts/deploy_uv.py
+py scripts/deploy_uv.py
 ```
 
 The command reads the `disco.uv.es` credential from Windows Credential Manager;

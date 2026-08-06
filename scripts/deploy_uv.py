@@ -12,7 +12,7 @@ from pathlib import Path
 try:
     import paramiko
 except ImportError as error:
-    raise SystemExit("Missing Paramiko. Run: python -m pip install --user paramiko==4.0.0") from error
+    raise SystemExit("Missing Paramiko. Run: py -m pip install --user paramiko==4.0.0") from error
 
 
 HOST = "disco.uv.es"
@@ -22,7 +22,7 @@ REMOTE_DIRECTORY = "web"
 REMOTE_URL = "https://www.uv.es/jorpago2/"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SOURCE_DIRECTORY = PROJECT_ROOT / "publish" / "jorpago2"
-BACKUP_ROOT = Path.home() / "Desktop" / "web-jorge-uv-backups"
+BACKUP_ROOT = PROJECT_ROOT.parent / "web-jorge-uv-backups"
 
 
 class Credential(ctypes.Structure):
