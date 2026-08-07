@@ -16,8 +16,9 @@
   "devDependencies": {
     "@carbon/styles": "1.112.0",
     "@ibm/plex": "6.4.1",
+    "@storybook/html-vite": "^10.5.7",
+    "playwright": "1.62.1",
     "sass": "1.102.0",
-    "storybook": "^10.5.7",
-    "@storybook/html-vite": "^10.5.7"
+    "storybook": "^10.5.7"
   }
 }
