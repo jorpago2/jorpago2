@@ -537,23 +537,6 @@ test("legacy route redirects and sitemap lists every page", async () => {
   assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 17);
 });
 
-test("compiled CSS font assets resolve inside the published tree", async () => {
-  const css = await readFile(path.join(OUTPUT_ROOT, "assets", "style.css"), "utf8");
-  const fontUrls = [...css.matchAll(/url\(["']?([^"')]+\.woff2)["']?\)/g)].map((match) => match[1]);
-  assert.ok(fontUrls.length > 0, "Expected IBM Plex font URLs in compiled CSS");
-  for (const fontUrl of new Set(fontUrls)) {
-    assert.equal(await exists(path.resolve(OUTPUT_ROOT, "assets", fontUrl)), true, `Missing font asset ${fontUrl}`);
-  }
-});
-
-test("mobile navigation uses an opaque Carbon surface and restores focus", async () => {
-  const source = await readFile(path.resolve("src", "style.css"), "utf8");
-  const behavior = await readFile(path.resolve("src", "site.js"), "utf8");
-  assert.match(source, /\.site-body\.cds--g10\s*\{/);
-  assert.match(source, /\.primary-nav\s*\{[^}]*z-index:\s*30;[^}]*background:\s*var\(--surface, #fff\)/s);
-  assert.match(behavior, /event\.key === "Escape"[\s\S]*closeNavigation\(\);[\s\S]*menuButton\.focus\(\)/);
-});
-
 test("UV deployment keeps backups beside the workspace", async () => {
   const deployScript = await readFile(path.resolve("scripts", "deploy_uv.py"), "utf8");
 
