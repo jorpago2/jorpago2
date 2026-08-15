@@ -133,6 +133,30 @@ def ensure_remote_directory(
             sftp.mkdir(current)
 
 
+def remote_exists(sftp: paramiko.SFTPClient, remote_path: str) -> bool:
+    try:
+        sftp.stat(remote_path)
+        return True
+    except FileNotFoundError:
+        return False
+
+
+def remove_remote_tree(sftp: paramiko.SFTPClient, remote_path: str) -> None:
+    if not remote_exists(sftp, remote_path):
+        return
+    attributes = sftp.stat(remote_path)
+    if not stat.S_ISDIR(attributes.st_mode):
+        sftp.remove(remote_path)
+        return
+    for entry in sftp.listdir_attr(remote_path):
+        child = posixpath.join(remote_path, entry.filename)
+        if stat.S_ISDIR(entry.st_mode):
+            remove_remote_tree(sftp, child)
+        else:
+            sftp.remove(child)
+    sftp.rmdir(remote_path)
+
+
 def upload(sftp: paramiko.SFTPClient, remote_root: str, files: list[Path]) -> None:
     for index, local_path in enumerate(files, start=1):
         relative_path = local_path.relative_to(SOURCE_DIRECTORY).as_posix()
@@ -158,6 +182,30 @@ def verify(sftp: paramiko.SFTPClient, remote_root: str, files: list[Path]) -> No
                 remote_digest.update(chunk)
         if sha256_file(local_path) != remote_digest.digest():
             raise RuntimeError(f"Remote verification failed: {relative_path}")
+
+
+def publish_atomically(
+    sftp: paramiko.SFTPClient,
+    remote_root: str,
+    files: list[Path],
+) -> str:
+    token = time.time_ns()
+    staging_root = f"{remote_root}.staging-{token}"
+    previous_root = f"{remote_root}.previous-{token}"
+    sftp.mkdir(staging_root)
+    try:
+        upload(sftp, staging_root, files)
+        verify(sftp, staging_root, files)
+        sftp.rename(remote_root, previous_root)
+        try:
+            sftp.rename(staging_root, remote_root)
+        except Exception:
+            sftp.rename(previous_root, remote_root)
+            raise
+    except Exception:
+        remove_remote_tree(sftp, staging_root)
+        raise
+    return previous_root
 
 
 def verify_http() -> None:
@@ -191,13 +239,20 @@ def main() -> None:
         if not stat.S_ISDIR(sftp.stat(remote_root).st_mode):
             raise RuntimeError(f"Remote target is not a directory: {remote_root}")
         backup_remote(sftp, remote_root)
-        upload(sftp, remote_root, files)
-        verify(sftp, remote_root, files)
+        previous_root = publish_atomically(sftp, remote_root, files)
+        try:
+            verify_http()
+        except Exception:
+            failed_root = f"{remote_root}.failed-{time.time_ns()}"
+            sftp.rename(remote_root, failed_root)
+            sftp.rename(previous_root, remote_root)
+            remove_remote_tree(sftp, failed_root)
+            raise
+        remove_remote_tree(sftp, previous_root)
     finally:
         sftp.close()
         client.close()
 
-    verify_http()
     print(f"Published and verified {len(files)} files: {REMOTE_URL}")
 
 

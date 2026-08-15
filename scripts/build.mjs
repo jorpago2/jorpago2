@@ -590,6 +590,14 @@ async function main() {
     style: "compressed",
   });
   await writeFile(path.join(OUTPUT_ROOT, "assets", "style.css"), stylesheet.css, "utf8");
+  const plexOutput = path.join(OUTPUT_ROOT, "assets", "@ibm", "plex");
+  for (const family of ["IBM-Plex-Mono", "IBM-Plex-Sans", "IBM-Plex-Serif"]) {
+    await cp(
+      path.resolve("node_modules", "@ibm", "plex", family, "fonts", "split", "woff2"),
+      path.join(plexOutput, family, "fonts", "split", "woff2"),
+      { recursive: true },
+    );
+  }
 
   const sitemap = localeBundles
     .flatMap((bundle) =>
