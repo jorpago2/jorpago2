@@ -3,19 +3,19 @@
 
 ## Project Context
 
-This repository contains a static multilingual website compiled with Tailwind CSS. The UI must remain responsive, accessible, visually coherent, and behaviorally correct. Treat visual correctness and interaction behavior as first-class requirements.
+This repository contains a static multilingual website styled with project-owned CSS. The UI must remain responsive, accessible, visually coherent, and behaviorally correct. Treat visual correctness and interaction behavior as first-class requirements.
 
 ## Working Rules
 
-Before modifying code, inspect the relevant implementation, nearby templates, project conventions, `package.json`, package manager, scripts, Tailwind setup, and reproduce the problem whenever possible. For UI bugs, inspect the application in a real browser when available. Do not invent scripts, dependencies, utilities, or component APIs. Prefer the smallest root-cause fix without regressions.
+Before modifying code, inspect the relevant implementation, nearby templates, project conventions, `package.json`, package manager, scripts, stylesheet structure, and reproduce the problem whenever possible. For UI bugs, inspect the application in a real browser when available. Do not invent scripts, dependencies, utilities, or component APIs. Prefer the smallest root-cause fix without regressions.
 
 ## Static Architecture
 
 Keep localized page fragments in `content/pages`, shared records in `content/data`, interface strings in `content/i18n`, and rendering logic in `scripts/build.mjs`. Prefer semantic HTML, existing utilities, and stable layouts. Avoid unrelated rewrites during visual fixes.
 
-## Tailwind CSS
+## CSS
 
-Use the installed Tailwind implementation and existing project utilities first. Keep reusable design values in `src/tailwind.css` or the existing CSS custom properties rather than duplicating arbitrary utilities.
+Use the existing project stylesheet first. Keep reusable design values in the CSS custom properties in `src/style.css` rather than duplicating arbitrary values.
 
 Use project tokens for spacing, typography, color, backgrounds, borders, layers, focus, and sizing. Avoid arbitrary magic values unless product-specific and intentional. Respect the established gutters, margins, maximum widths, and breakpoints; do not replace a functioning layout with local hacks.
 
@@ -45,7 +45,7 @@ During browser validation inspect exceptions, failed relevant requests, invalid 
 
 ## Definition of Done
 
-A UI change is complete only when the problem is reproduced or understood, the root cause is identified, the site architecture and Tailwind conventions are respected, browser behavior is verified, relevant responsive viewports and interaction states are checked, accessibility and runtime behavior have not regressed, automated checks pass, and nearby UI has been inspected.
+A UI change is complete only when the problem is reproduced or understood, the root cause is identified, the site architecture and CSS conventions are respected, browser behavior is verified, relevant responsive viewports and interaction states are checked, accessibility and runtime behavior have not regressed, automated checks pass, and nearby UI has been inspected.
 
 ## Required UI Bug Workflow
 

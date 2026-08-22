@@ -171,7 +171,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(home, /href="\/jorpago2\/es\/investigacion\/">Investigación<\/a>/);
   assert.match(home, /href="\/jorpago2\/es\/docencia\/">Docencia<\/a>/);
   assert.match(home, /class="page-actions">[\s\S]*?Investigación[\s\S]*?Docencia/);
-  assert.match(home, /class="language-nav[^"]*"[\s\S]*?href="\/jorpago2\/" lang="en">EN<\/a>[\s\S]*?lang="es" aria-current="page">ES<\/a>/);
+  assert.match(home, /class="language-nav"[\s\S]*?href="\/jorpago2\/" lang="en">EN<\/a>[\s\S]*?lang="es" aria-current="page">ES<\/a>/);
   assert.match(home, /href="\/jorpago2\/es\/estudiantes\/">¿Podría encajar contigo la investigación\?/);
   assert.match(home, /href="\/jorpago2\/es\/doctorado\/">Consulta las preguntas frecuentes sobre el doctorado/);
   assert.match(home, /href="\/jorpago2\/es\/carrera-investigadora\/">Cinco principios para construir una carrera investigadora/);
@@ -259,11 +259,11 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.match(html, /family=IBM\+Plex\+Sans[^\"]+family=Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=55/);
+  assert.match(html, /assets\/style\.css\?v=52/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?Teaching/);
-  assert.match(html, /<a\b[^>]*href="\/jorpago2\/research\/"[^>]*>Research<\/a>/);
-  assert.match(html, /<a\b[^>]*href="\/jorpago2\/teaching\/"[^>]*>Teaching<\/a>/);
-  assert.match(html, /<a\b[^>]*href="\/jorpago2\/resources\/"[^>]*>Resources<\/a>/);
+  assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
+  assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
+  assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
   assert.match(html, /<h2 class="visually-hidden" id="updates-title">Information<\/h2>/);
@@ -277,7 +277,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.doesNotMatch(html, /class="update-grid"/);
   assert.doesNotMatch(html, /class="home-explore"/);
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);
-  assert.match(html, /<img\b[^>]*src="\/jorpago2\/assets\/github-profile\.jpg"[^>]*alt=""[^>]*width="52" height="52">/);
+  assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
   assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
   assert.match(html, /<img decoding="async" fetchpriority="high" src="\/jorpago2\/assets\/media\/2025\/08\/1750954398339\.jpg"/);
   assert.doesNotMatch(html, /1750954398339\.jpg"[^>]*loading="lazy"/);
@@ -375,7 +375,7 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.match(research, /VO<sub>2<\/sub>-integrated photonics/);
   assert.doesNotMatch(research, /<em>(?:J\. Phys\. Photonics|Sci Rep|npj Nanophoton\.|Opt\. Express|Opt\. Mater\. Express|Opt\. Lett\.)<\/em>/);
   assert.match(css, /\.publication-year > ol > li::marker \{[\s\S]*?color: var\(--accent\);/);
-  assert.match(css, /\.publication-year a\[href\^="https:\/\/doi\.org\/"\] \{[\s\S]*?border-radius: var\(--radius-ui-control\);/);
+  assert.match(css, /\.publication-year a\[href\^="https:\/\/doi\.org\/"\] \{[\s\S]*?border-radius: 999px;/);
   assert.match(teaching, /id="courses"[\s\S]*?id="books"[\s\S]*?id="theses"/);
   assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
   assert.equal((teaching.match(/class="course-list previous-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 4);
@@ -431,35 +431,18 @@ test("carousels use their original proportions and compact mobile controls", asy
   assert.match(css, /\.hero-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
   assert.match(css, /\.carousel-dots \{\s*display: none;/);
   assert.match(css, /\.carousel-status \{[\s\S]*position: static;/);
-  assert.match(css, /\.carousel-dots button \{[\s\S]*?width: 2\.75rem;[\s\S]*?height: 2\.75rem;/);
-  assert.match(css, /\.carousel-arrow \{[\s\S]*?width: 2\.75rem;[\s\S]*?height: 2\.75rem;/);
-  assert.match(css, /\.site-footer nav a \{[\s\S]*?min-height: 2\.75rem;/);
+  assert.match(css, /\.carousel-dots button \{[\s\S]*?width: 1\.5rem;[\s\S]*?height: 1\.5rem;/);
   assert.doesNotMatch(css, /width: 100vw/);
 });
 
 test("header and page content share the same horizontal alignment", async () => {
-  const html = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
   const css = await readFile(path.resolve("src", "style.css"), "utf8");
 
-  assert.match(html, /class="header-inner[^"]*w-\[calc\(100%-5rem\)\][^"]*max-w-\[1160px\]/);
-  assert.match(html, /class="block min-h-11[^"]*" href="\/jorpago2\/about-me\/"/);
-  assert.match(html, /class="grid min-h-11 min-w-11[^"]*" href="\/jorpago2\/" lang="en"/);
+  assert.match(css, /\.header-inner \{[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
+  assert.match(css, /\.primary-nav > a \{[\s\S]*?min-height: 36px;/);
+  assert.match(css, /\.language-nav a \{[\s\S]*?min-width: 36px;[\s\S]*?min-height: 36px;/);
   assert.match(css, /\.home-layout,[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
   assert.match(css, /\.home-intro \{[\s\S]*?padding: clamp\([^;]+\) 0;/);
-});
-
-test("Tailwind compiles semantic utilities without Preflight", async () => {
-  const source = await readFile(path.resolve("src", "tailwind.css"), "utf8");
-  const css = await readFile(path.join(OUTPUT_ROOT, "assets", "style.css"), "utf8");
-
-  assert.match(source, /tailwindcss\/theme\.css/);
-  assert.match(source, /tailwindcss\/utilities\.css/);
-  assert.doesNotMatch(source, /tailwindcss\/preflight\.css|@import\s+["']tailwindcss["']/);
-  assert.match(source, /--color-ui-canvas:/);
-  assert.match(source, /--radius-ui-control: 0\.25rem;/);
-  assert.match(source, /--radius-ui-panel: 0\.5rem;/);
-  assert.match(css, /\.bg-ui-canvas\{/);
-  assert.match(css, /\.min-h-11\{/);
 });
 
 test("local links and assets resolve", async () => {

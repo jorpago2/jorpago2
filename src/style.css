@@ -29,6 +29,18 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  position: relative;
+  overflow-x: hidden;
+}
+
 body::before,
 body::after {
   position: fixed;
@@ -149,6 +161,40 @@ li {
   translate: 0;
 }
 
+.site-header {
+  position: relative;
+  z-index: 20;
+  background: transparent;
+}
+
+.header-inner {
+  display: flex;
+  width: min(calc(100% - 5rem), var(--max-width));
+  min-height: 5.25rem;
+  margin-inline: auto;
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.identity {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 1rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.identity img {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .identity-copy {
   min-width: 0;
   line-height: 1.5;
@@ -174,14 +220,71 @@ li {
   line-height: 1.4;
 }
 
+.menu-toggle {
+  min-height: 36px;
+  display: none;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.primary-nav > a {
+  min-height: 36px;
+  display: block;
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.2rem;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .primary-nav > a:hover,
 .primary-nav > a[aria-current="page"] {
   color: var(--accent);
 }
 
+.language-nav {
+  display: inline-flex;
+  margin-left: 0.45rem;
+  padding-left: 0.65rem;
+  border-left: 1px solid var(--line);
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.language-nav a {
+  min-width: 36px;
+  min-height: 36px;
+  padding: 0.35rem;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .language-nav a:hover,
 .language-nav a[aria-current="page"] {
   color: var(--accent);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  min-height: 70vh;
 }
 
 .home-layout,
@@ -295,12 +398,12 @@ li {
 
 .button {
   display: inline-flex;
-  min-height: 2.75rem;
+  min-height: 2.6rem;
   padding: 0.5rem 0.9rem;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--line);
-  border-radius: var(--radius-ui-control);
+  border-radius: 999px;
   background: var(--surface);
   color: var(--ink);
   font-weight: 700;
@@ -605,7 +708,7 @@ li {
   margin: 2.5rem 0;
   padding: 1.5rem 1.75rem;
   border: 1px solid var(--line);
-  border-radius: var(--radius-ui-panel);
+  border-radius: 1rem;
   background: rgb(246 247 243 / 72%);
   grid-template-columns: minmax(16rem, 0.75fr) minmax(0, 1.25fr);
   gap: clamp(2rem, 5vw, 4rem);
@@ -689,7 +792,7 @@ li {
 .contact-map {
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: var(--radius-ui-panel);
+  border-radius: 1rem;
   box-shadow: var(--shadow);
 }
 
@@ -1049,7 +1152,7 @@ figcaption {
   width: 100% !important;
   margin: 1.5rem 0 1rem;
   background: #e8ecef;
-  border-radius: var(--radius-ui-panel);
+  border-radius: 1rem;
 }
 
 .metaslider .slides {
@@ -1129,8 +1232,8 @@ figcaption {
 
 .carousel-arrow {
   display: grid;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0;
   border-radius: 50%;
   place-items: center;
@@ -1151,8 +1254,8 @@ figcaption {
 
 .carousel-dots button {
   display: grid;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
   padding: 0;
   place-items: center;
   background: transparent;
@@ -1276,7 +1379,7 @@ figcaption {
   min-width: 4.5rem;
   margin: 0;
   padding: 0.35rem 0.65rem;
-  border-radius: var(--radius-ui-control);
+  border-radius: 999px;
   background: rgb(20 23 19 / 68%);
   clip: auto;
   color: var(--white);
@@ -1369,7 +1472,7 @@ figcaption {
   width: 100%;
   aspect-ratio: 3 / 2;
   border: 1px solid var(--line);
-  border-radius: var(--radius-ui-panel);
+  border-radius: 1rem;
   object-fit: cover;
 }
 
@@ -1690,7 +1793,7 @@ figcaption {
   margin-left: 0.15rem;
   padding: 0.12rem 0.5rem;
   border: 1px solid rgb(92 126 0 / 24%);
-  border-radius: var(--radius-ui-control);
+  border-radius: 999px;
   background: rgb(232 244 183 / 58%);
   color: var(--navy);
   font-family: Consolas, "Courier New", monospace;
@@ -1757,7 +1860,7 @@ figcaption {
   margin-top: 2rem;
   border: 1px solid var(--line);
   background: var(--canvas);
-  border-radius: var(--radius-ui-panel);
+  border-radius: 1rem;
   overflow: hidden;
 }
 
@@ -1775,6 +1878,16 @@ figcaption {
 .wp-block-details > :not(summary) {
   margin-right: 1.2rem;
   margin-left: 1.2rem;
+}
+
+.site-footer {
+  position: relative;
+  z-index: 1;
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 @keyframes wave-motion {
@@ -1806,6 +1919,15 @@ figcaption {
   }
 }
 
+.site-footer > div {
+  width: min(calc(100% - 5rem), var(--max-width));
+  margin-inline: auto;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .site-footer p {
   margin-block: 0;
 }
@@ -1818,17 +1940,14 @@ figcaption {
 }
 
 .site-footer nav a {
-  display: inline-flex;
-  min-height: 2.75rem;
   padding: 0.3rem 0.65rem 0.3rem 1rem;
   border: 1px solid var(--line);
-  border-radius: var(--radius-ui-control);
+  border-radius: 999px;
   background: radial-gradient(circle at 0.55rem 50%, var(--accent) 0 2px, transparent 2.5px);
   color: var(--ink);
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.4;
-  align-items: center;
   text-decoration: none;
 }
 
@@ -1846,6 +1965,11 @@ figcaption {
 @media (max-width: 820px) {
   body {
     width: auto;
+  }
+
+  .header-inner {
+    width: min(calc(100% - 5rem), var(--max-width));
+    min-height: 7rem;
   }
 
   .resource-directory {
@@ -1869,6 +1993,11 @@ figcaption {
   .teaching-resource-grid,
   .supervision-groups {
     grid-template-columns: 1fr;
+  }
+
+  .identity img {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .home-intro {
@@ -1913,7 +2042,46 @@ figcaption {
     gap: 2rem;
   }
 
+  .menu-toggle {
+    min-height: 44px;
+    display: block;
+  }
+
+  .primary-nav {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    left: 1rem;
+    display: none;
+    padding: 0.75rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
   .primary-nav.is-open {
+    display: block;
+  }
+
+  .primary-nav > a {
+    min-height: 44px;
+    padding: 0.7rem;
+  }
+
+  .language-nav a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .language-nav {
+    display: flex;
+    margin: 0.35rem 0 0;
+    padding: 0.55rem 0 0 0.35rem;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .site-footer > div {
     display: block;
   }
 
@@ -1937,6 +2105,24 @@ figcaption {
     animation: none;
   }
 
+  .header-inner {
+    width: min(calc(100% - 2rem), var(--max-width));
+    min-height: auto;
+    padding: 0.75rem 0;
+    gap: 0.75rem;
+  }
+
+  .identity {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 0.625rem;
+  }
+
+  .identity img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
   .identity-copy strong {
     margin-bottom: 2px;
   }
@@ -1945,6 +2131,10 @@ figcaption {
   .page-layout {
     width: min(calc(100% - 2rem), var(--max-width));
     margin-top: 0.75rem;
+  }
+
+  .site-footer > div {
+    width: min(calc(100% - 2rem), var(--max-width));
   }
 
   .identity-copy small {
@@ -2063,7 +2253,7 @@ figcaption {
 
   .hero-carousel .carousel-status {
     padding: 0.35rem 0.65rem;
-    border-radius: var(--radius-ui-control);
+    border-radius: 999px;
     align-self: flex-end;
     background: rgb(20 23 19 / 68%);
     color: var(--white);
