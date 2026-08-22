@@ -249,6 +249,7 @@ test("SEO metadata identifies the site and academic profile", async () => {
   );
   assert.match(home, /<meta name="twitter:title" content="[^"]+">/);
   assert.match(home, /<meta name="twitter:image:alt" content="[^"]+">/);
+  assert.ok((await stat(path.join(OUTPUT_ROOT, "assets", "og.png"))).size < 1_200_000);
   assert.match(home, new RegExp(`${SITE_ORIGIN.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/jorpago2/assets/og\\.png`));
 });
 
@@ -305,6 +306,8 @@ test("contact page highlights email, student projects and office location", asyn
   assert.equal((html.match(/<li>\s*<strong>[^<]+<\/strong>\s*<span>[^<]+<\/span>\s*<\/li>/g) ?? []).length, 5);
   assert.match(html, /class="contact-location"/);
   assert.match(html, /class="contact-map" href="https:\/\/maps\.app\.goo\.gl\/LvbvRk8MteuCgczDA"/);
+  assert.match(html, /src="\/jorpago2\/assets\/media\/2025\/08\/mapa\.webp"/);
+  assert.ok((await stat(path.join(OUTPUT_ROOT, "assets", "media", "2025", "08", "mapa.webp"))).size < 200_000);
 });
 
 test("new students page presents compact research guidance", async () => {
@@ -400,7 +403,7 @@ test("about page presents a curated carousel and compact academic trajectory", a
   const carousel = html.match(/<div class="wp-block-media-text__media about-carousel">[\s\S]*?<\/ul>/)?.[0] ?? "";
 
   assert.match(carousel, /class="slide-profile ms-image"/);
-  assert.match(carousel, /src="\/jorpago2\/assets\/media\/2025\/08\/Imagen1\.jpg"[^>]*alt="Jorge Parra"/);
+  assert.match(carousel, /<img decoding="async" fetchpriority="high"[^>]+src="\/jorpago2\/assets\/media\/2025\/08\/Imagen1\.jpg"[^>]*alt="Jorge Parra"/);
   assert.equal((carousel.match(/aria-roledescription="slide"/g) ?? []).length, 7);
   assert.match(html, /Researcher and educator in integrated photonics/);
   assert.equal((html.match(/class="trajectory-date"/g) ?? []).length, 9);
