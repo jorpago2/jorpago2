@@ -401,7 +401,7 @@ ${alternateLinks(page.id, localeBundles)}
         <img class="size-12 rounded-full border border-ui object-cover max-[820px]:size-14 max-[560px]:size-10" src="${PROFILE_IMAGE_PATH}" alt="" width="52" height="52">
         <span class="identity-copy"><strong>Jorge Parra</strong><small>${escapeHtml(strings.identitySubtitle)}</small></span>
       </a>
-      <button class="menu-toggle hidden min-h-11 rounded-full border border-ui bg-ui-surface px-3.5 py-2 text-xs font-bold text-ui-ink max-[820px]:block" type="button" aria-expanded="false" aria-controls="primary-navigation">${escapeHtml(strings.menu)}</button>
+      <button class="menu-toggle hidden min-h-11 rounded-ui-control border border-ui bg-ui-surface px-3.5 py-2 text-xs font-bold text-ui-ink max-[820px]:block" type="button" aria-expanded="false" aria-controls="primary-navigation">${escapeHtml(strings.menu)}</button>
       <nav class="primary-nav flex items-center gap-1 max-[820px]:absolute max-[820px]:top-full max-[820px]:right-4 max-[820px]:left-4 max-[820px]:hidden max-[820px]:rounded-ui-panel max-[820px]:border max-[820px]:border-ui max-[820px]:bg-ui-surface max-[820px]:p-3 max-[820px]:shadow-ui-raised" id="primary-navigation" aria-label="${escapeHtml(strings.primaryNavigation)}">
           ${navigationHtml(page.id, localeBundles.find(({ locale: option }) => option.code === locale.code))}
           ${languageSwitcherHtml(page.id, locale, strings, localeBundles)}

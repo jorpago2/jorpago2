@@ -375,7 +375,7 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.match(research, /VO<sub>2<\/sub>-integrated photonics/);
   assert.doesNotMatch(research, /<em>(?:J\. Phys\. Photonics|Sci Rep|npj Nanophoton\.|Opt\. Express|Opt\. Mater\. Express|Opt\. Lett\.)<\/em>/);
   assert.match(css, /\.publication-year > ol > li::marker \{[\s\S]*?color: var\(--accent\);/);
-  assert.match(css, /\.publication-year a\[href\^="https:\/\/doi\.org\/"\] \{[\s\S]*?border-radius: 999px;/);
+  assert.match(css, /\.publication-year a\[href\^="https:\/\/doi\.org\/"\] \{[\s\S]*?border-radius: var\(--radius-ui-control\);/);
   assert.match(teaching, /id="courses"[\s\S]*?id="books"[\s\S]*?id="theses"/);
   assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
   assert.equal((teaching.match(/class="course-list previous-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 4);
@@ -456,6 +456,8 @@ test("Tailwind compiles semantic utilities without Preflight", async () => {
   assert.match(source, /tailwindcss\/utilities\.css/);
   assert.doesNotMatch(source, /tailwindcss\/preflight\.css|@import\s+["']tailwindcss["']/);
   assert.match(source, /--color-ui-canvas:/);
+  assert.match(source, /--radius-ui-control: 0\.25rem;/);
+  assert.match(source, /--radius-ui-panel: 0\.5rem;/);
   assert.match(css, /\.bg-ui-canvas\{/);
   assert.match(css, /\.min-h-11\{/);
 });

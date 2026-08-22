@@ -20,7 +20,7 @@
   --color-ui-success: #587900;
   --font-ui-body: var(--font-body);
   --font-ui-display: var(--font-display);
-  --radius-ui-control: 0.625rem;
-  --radius-ui-panel: 1rem;
+  --radius-ui-control: 0.25rem;
+  --radius-ui-panel: 0.5rem;
   --shadow-ui-raised: var(--shadow);
 }

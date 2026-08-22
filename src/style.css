@@ -300,7 +300,7 @@ li {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--radius-ui-control);
   background: var(--surface);
   color: var(--ink);
   font-weight: 700;
@@ -605,7 +605,7 @@ li {
   margin: 2.5rem 0;
   padding: 1.5rem 1.75rem;
   border: 1px solid var(--line);
-  border-radius: 1rem;
+  border-radius: var(--radius-ui-panel);
   background: rgb(246 247 243 / 72%);
   grid-template-columns: minmax(16rem, 0.75fr) minmax(0, 1.25fr);
   gap: clamp(2rem, 5vw, 4rem);
@@ -689,7 +689,7 @@ li {
 .contact-map {
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 1rem;
+  border-radius: var(--radius-ui-panel);
   box-shadow: var(--shadow);
 }
 
@@ -1049,7 +1049,7 @@ figcaption {
   width: 100% !important;
   margin: 1.5rem 0 1rem;
   background: #e8ecef;
-  border-radius: 1rem;
+  border-radius: var(--radius-ui-panel);
 }
 
 .metaslider .slides {
@@ -1276,7 +1276,7 @@ figcaption {
   min-width: 4.5rem;
   margin: 0;
   padding: 0.35rem 0.65rem;
-  border-radius: 999px;
+  border-radius: var(--radius-ui-control);
   background: rgb(20 23 19 / 68%);
   clip: auto;
   color: var(--white);
@@ -1369,7 +1369,7 @@ figcaption {
   width: 100%;
   aspect-ratio: 3 / 2;
   border: 1px solid var(--line);
-  border-radius: 1rem;
+  border-radius: var(--radius-ui-panel);
   object-fit: cover;
 }
 
@@ -1690,7 +1690,7 @@ figcaption {
   margin-left: 0.15rem;
   padding: 0.12rem 0.5rem;
   border: 1px solid rgb(92 126 0 / 24%);
-  border-radius: 999px;
+  border-radius: var(--radius-ui-control);
   background: rgb(232 244 183 / 58%);
   color: var(--navy);
   font-family: Consolas, "Courier New", monospace;
@@ -1757,7 +1757,7 @@ figcaption {
   margin-top: 2rem;
   border: 1px solid var(--line);
   background: var(--canvas);
-  border-radius: 1rem;
+  border-radius: var(--radius-ui-panel);
   overflow: hidden;
 }
 
@@ -1822,7 +1822,7 @@ figcaption {
   min-height: 2.75rem;
   padding: 0.3rem 0.65rem 0.3rem 1rem;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--radius-ui-control);
   background: radial-gradient(circle at 0.55rem 50%, var(--accent) 0 2px, transparent 2.5px);
   color: var(--ink);
   font-size: 0.75rem;
@@ -2063,7 +2063,7 @@ figcaption {
 
   .hero-carousel .carousel-status {
     padding: 0.35rem 0.65rem;
-    border-radius: 999px;
+    border-radius: var(--radius-ui-control);
     align-self: flex-end;
     background: rgb(20 23 19 / 68%);
     color: var(--white);
