@@ -66,7 +66,7 @@ test("all imported pages are built with metadata", async () => {
       assert.doesNotMatch(html, /assets\/site\.js/);
       continue;
     }
-    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=6" defer><\/script>/);
+    assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=7" defer><\/script>/);
     assert.doesNotMatch(html, /Last update:|Last updated|class="last-updated"/);
   }
 });
@@ -169,8 +169,8 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(home, /hreflang="ca" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
   assert.match(home, /hreflang="x-default" href="https:\/\/www\.uv\.es\/jorpago2\/">/);
   assert.match(home, /href="\/jorpago2\/es\/investigacion\/">Investigación<\/a>/);
-  assert.match(home, /href="\/jorpago2\/es\/docencia\/">Docencia<\/a>/);
-  assert.match(home, /class="page-actions">[\s\S]*?Investigación[\s\S]*?Docencia/);
+  assert.match(home, /href="\/jorpago2\/es\/sobre-mi\/">Sobre mí<\/a>/);
+  assert.match(home, /class="page-actions">[\s\S]*?Investigación[\s\S]*?Sobre mí/);
   assert.match(home, /class="language-nav"[\s\S]*?href="\/jorpago2\/" lang="en">EN<\/a>[\s\S]*?lang="es" aria-current="page">ES<\/a>/);
   assert.match(home, /href="\/jorpago2\/es\/estudiantes\/">¿Podría encajar contigo la investigación\?/);
   assert.match(home, /href="\/jorpago2\/es\/doctorado\/">Consulta las preguntas frecuentes sobre el doctorado/);
@@ -213,7 +213,7 @@ test("Valencian pages use translated routes, content and SEO alternates", async 
   assert.match(home, /<link rel="canonical" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
   assert.match(home, /hreflang="ca" href="https:\/\/www\.uv\.es\/jorpago2\/va\/">/);
   assert.match(home, /href="\/jorpago2\/va\/investigacio\/">Investigació<\/a>/);
-  assert.match(home, /class="page-actions">[\s\S]*?Investigació[\s\S]*?Docència/);
+  assert.match(home, /class="page-actions">[\s\S]*?Investigació[\s\S]*?Sobre mi/);
   assert.match(home, /lang="ca" aria-current="page">VAL<\/a>/);
   assert.match(home, /Cinc principis per a construir una carrera investigadora/);
   assert.match(about, /Investigador i docent en fotònica integrada/);
@@ -258,11 +258,11 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<article class="home-layout">/);
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
-  assert.match(html, /family=IBM\+Plex\+Sans[^\"]+family=Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=52/);
-  assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?Teaching/);
+  assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
+  assert.match(html, /assets\/style\.css\?v=57/);
+  assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
-  assert.match(html, /<a href="\/jorpago2\/teaching\/">Teaching<\/a>/);
+  assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
@@ -424,23 +424,25 @@ test("carousels use their original proportions and compact mobile controls", asy
 
   assert.match(script, /--carousel-aspect/);
   assert.match(script, /event\.key === "Escape"/);
-  assert.doesNotMatch(script, /pauseButton|carouselLabels\.(?:pause|play)|setInterval/);
+  assert.doesNotMatch(script, /pauseButton|carouselLabels\.(?:pause|play)/);
+  assert.match(script, /setInterval\(\(\) => showSlide\(currentSlide \+ 1, false\), 6000\)/);
   assert.match(script, /img\[data-src\]/);
   assert.match(css, /aspect-ratio: var\(--carousel-aspect/);
   assert.match(css, /\.metaslider\.carousel-ready \.slides li \{[\s\S]*?opacity: 0;[\s\S]*?transition: opacity 0\.8s ease/);
   assert.match(css, /\.hero-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
   assert.match(css, /\.carousel-dots \{\s*display: none;/);
   assert.match(css, /\.carousel-status \{[\s\S]*position: static;/);
-  assert.match(css, /\.carousel-dots button \{[\s\S]*?width: 1\.5rem;[\s\S]*?height: 1\.5rem;/);
-  assert.doesNotMatch(css, /width: 100vw/);
+  assert.match(css, /body \{[\s\S]*?width: 100vw;/);
+  assert.match(css, /@media \(max-width: 560px\) \{[\s\S]*?body \{[\s\S]*?width: 100vw;/);
+  assert.doesNotMatch(css, /@media \(max-width: 560px\) \{\s*body \{[^}]+\}\s*body::before/);
 });
 
 test("header and page content share the same horizontal alignment", async () => {
   const css = await readFile(path.resolve("src", "style.css"), "utf8");
 
   assert.match(css, /\.header-inner \{[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
-  assert.match(css, /\.primary-nav > a \{[\s\S]*?min-height: 36px;/);
-  assert.match(css, /\.language-nav a \{[\s\S]*?min-width: 36px;[\s\S]*?min-height: 36px;/);
+  assert.match(css, /\.primary-nav > a \{[\s\S]*?padding: 0\.7rem 0\.85rem;/);
+  assert.match(css, /\.language-nav a \{[\s\S]*?padding: 0\.35rem;/);
   assert.match(css, /\.home-layout,[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
   assert.match(css, /\.home-intro \{[\s\S]*?padding: clamp\([^;]+\) 0;/);
 });

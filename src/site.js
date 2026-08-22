@@ -63,6 +63,7 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   if (slides.length < 2) return;
 
   let currentSlide = 0;
+  let timer;
   const controls = document.createElement("div");
   const dots = document.createElement("div");
   const status = document.createElement("p");
@@ -125,8 +126,22 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
     loadSlideImage(slides[(currentSlide + 1) % slides.length]);
   }
 
+  function stopAutoplay() {
+    clearInterval(timer);
+  }
+
+  function startAutoplay() {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    stopAutoplay();
+    timer = setInterval(() => showSlide(currentSlide + 1, false), 6000);
+  }
+
   previousButton.addEventListener("click", () => showSlide(currentSlide - 1));
   nextButton.addEventListener("click", () => showSlide(currentSlide + 1));
+  carousel.addEventListener("mouseenter", stopAutoplay);
+  carousel.addEventListener("mouseleave", startAutoplay);
+  carousel.addEventListener("focusin", stopAutoplay);
+  carousel.addEventListener("focusout", startAutoplay);
   carousel.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") showSlide(currentSlide - 1);
     if (event.key === "ArrowRight") showSlide(currentSlide + 1);
@@ -135,4 +150,5 @@ document.querySelectorAll(".metaslider").forEach((carousel) => {
   controls.append(previousButton, dots, status, nextButton);
   carousel.append(controls);
   showSlide(0, false);
+  startAutoplay();
 });

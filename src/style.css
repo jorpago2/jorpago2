@@ -3,18 +3,15 @@
   --ink: #141713;
   --navy: #141713;
   --navy-soft: #343a34;
-  --accent: #587900;
+  --accent: #5c7e00;
   --accent-soft: #e8f4b7;
   --muted: #697068;
   --canvas: #f6f7f3;
   --white: #fff;
-  --surface: #fbfcf7;
+  --surface: #fff;
   --line: #d8dcd5;
   --lime: #d8ff54;
   --blue: #b9d7ff;
-  --focus: #3577ad;
-  --font-body: "IBM Plex Sans", Arial, sans-serif;
-  --font-display: "Space Grotesk", Arial, sans-serif;
   --max-width: 1160px;
   --shadow: 0 14px 36px rgb(7 18 38 / 10%);
 }
@@ -30,11 +27,11 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   margin: 0;
   background: var(--canvas);
   color: var(--ink);
-  font-family: var(--font-body);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.65;
   position: relative;
@@ -102,7 +99,7 @@ a:hover {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
-  outline: 3px solid var(--focus);
+  outline: 3px solid #f0b429;
   outline-offset: 3px;
 }
 
@@ -111,7 +108,7 @@ h2,
 h3,
 h4 {
   color: var(--navy);
-  font-family: var(--font-display);
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: -0.045em;
   line-height: 1.08;
@@ -207,7 +204,7 @@ li {
 
 .identity-copy strong {
   margin-bottom: 5px;
-  font-family: var(--font-display);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -221,7 +218,6 @@ li {
 }
 
 .menu-toggle {
-  min-height: 36px;
   display: none;
   padding: 0.55rem 0.8rem;
   border: 1px solid var(--line);
@@ -239,7 +235,6 @@ li {
 }
 
 .primary-nav > a {
-  min-height: 36px;
   display: block;
   padding: 0.7rem 0.85rem;
   border-radius: 0.2rem;
@@ -265,11 +260,7 @@ li {
 }
 
 .language-nav a {
-  min-width: 36px;
-  min-height: 36px;
   padding: 0.35rem;
-  display: grid;
-  place-items: center;
   color: var(--muted);
   font-size: 0.7rem;
   font-weight: 700;
@@ -369,10 +360,17 @@ main {
 }
 
 .hero-carousel .carousel-dots {
-  --carousel-dot-color: var(--white);
   align-self: flex-end;
   background: rgb(20 23 19 / 68%);
   backdrop-filter: blur(0.35rem);
+}
+
+.hero-carousel .carousel-dots button {
+  border-color: var(--white);
+}
+
+.hero-carousel .carousel-dots button[aria-current="true"] {
+  background: var(--white);
 }
 
 .hero-carousel > .wp-block-group {
@@ -1244,33 +1242,24 @@ figcaption {
 }
 
 .carousel-dots {
-  --carousel-dot-color: var(--navy);
   display: flex;
   padding: 0.55rem 0.7rem;
   border-radius: 999px;
-  gap: 0.15rem;
+  gap: 0.45rem;
   background: #e8ecef;
 }
 
 .carousel-dots button {
-  display: grid;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
   padding: 0;
-  place-items: center;
+  border: 2px solid var(--navy);
+  border-radius: 50%;
   background: transparent;
 }
 
-.carousel-dots button::before {
-  width: 0.7rem;
-  height: 0.7rem;
-  border: 2px solid var(--carousel-dot-color);
-  border-radius: 50%;
-  content: "";
-}
-
-.carousel-dots button[aria-current="true"]::before {
-  background: var(--carousel-dot-color);
+.carousel-dots button[aria-current="true"] {
+  background: var(--navy);
 }
 
 .carousel-status {
@@ -2043,7 +2032,6 @@ figcaption {
   }
 
   .menu-toggle {
-    min-height: 44px;
     display: block;
   }
 
@@ -2064,13 +2052,7 @@ figcaption {
   }
 
   .primary-nav > a {
-    min-height: 44px;
     padding: 0.7rem;
-  }
-
-  .language-nav a {
-    min-width: 44px;
-    min-height: 44px;
   }
 
   .language-nav {
@@ -2097,12 +2079,7 @@ figcaption {
 
 @media (max-width: 560px) {
   body {
-    width: 100%;
-  }
-
-  body::before,
-  body::after {
-    animation: none;
+    width: 100vw;
   }
 
   .header-inner {
