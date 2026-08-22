@@ -13,7 +13,7 @@ Do not begin by adding a media query. First determine which element fails, the f
 
 ## Understand the page
 
-Before editing identify the route, component tree, outer layout, Carbon grid, shell/navigation, parent constraints, relevant CSS/Sass files, responsive utilities, and existing conventions. Inspect comparable working pages.
+Before editing identify the route, template structure, outer layout, shell/navigation, parent constraints, relevant CSS files, responsive utilities, and existing conventions. Inspect comparable working pages.
 
 ## Browser reproduction
 
@@ -25,7 +25,7 @@ Find the actual overflowing element. Do not immediately add `overflow-x: hidden`
 
 ## Flex, grid, and width rules
 
-Inspect flex grow/shrink/basis, intrinsic minimum sizes, wrapping, gap, parent width, Carbon `Grid`/`Column`, nested grids, tracks, gutters, spans, and width constraints. Prefer correcting Carbon grid configuration over replacing it. Treat `width`, `min-width`, `max-width`, `inline-size`, and their logical equivalents as intentional constraints to understand rather than blindly remove.
+Inspect flex grow/shrink/basis, intrinsic minimum sizes, wrapping, gap, parent width, nested grids, tracks, gutters, spans, and width constraints. Prefer correcting the existing layout configuration over replacing it. Treat `width`, `min-width`, `max-width`, `inline-size`, and their logical equivalents as intentional constraints to understand rather than blindly remove.
 
 ## Content resilience
 
@@ -45,7 +45,7 @@ Test before and after resizing: open navigation, resize to mobile, close it, res
 
 ## Avoid breakpoint explosion
 
-Inspect existing breakpoints before adding one. Nearby one-off breakpoints usually indicate a structural problem. Prefer fluid sizing, correct grid spans, wrapping, minimum-size fixes, max-widths, and existing project/Carbon breakpoints.
+Inspect existing breakpoints before adding one. Nearby one-off breakpoints usually indicate a structural problem. Prefer fluid sizing, correct grid spans, wrapping, minimum-size fixes, max-widths, and existing project breakpoints.
 
 ## Root-cause categories
 
