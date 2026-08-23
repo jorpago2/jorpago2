@@ -429,7 +429,7 @@ main {
 
 .information-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: clamp(1.5rem, 3vw, 2.25rem);
 }
 
@@ -446,6 +446,7 @@ main {
 
 .information-list {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
@@ -480,28 +481,6 @@ main {
 .information-entry-description {
   margin-top: 0.25rem;
   color: var(--muted);
-}
-
-.simulator-information {
-  border-top-color: var(--blue);
-}
-
-.information-label,
-.simulator-topics {
-  color: var(--muted);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.information-label {
-  margin: 0 0 0.45rem;
-}
-
-.simulator-topics {
-  margin: 1.25rem 0;
-  line-height: 1.5;
 }
 
 .page-content {
@@ -2147,6 +2126,10 @@ figcaption {
   }
 
   .information-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .information-list {
     grid-template-columns: 1fr;
   }
 
