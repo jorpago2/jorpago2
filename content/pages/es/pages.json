@@ -29,7 +29,7 @@
     "title": "Inicio",
     "seoTitle": "Dr. Jorge Parra | Fotónica integrada e ingeniería electrónica",
     "description": "El Dr. Jorge Parra es profesor ayudante doctor en la Universitat de València e investiga en fotónica integrada, materiales funcionales y dispositivos emergentes.",
-    "modified": "2026-07-27T00:00:00"
+    "modified": "2026-08-23T00:00:00"
   },
   {
     "id": "new-students",
@@ -43,9 +43,9 @@
     "id": "resources",
     "slug": "recursos",
     "title": "Recursos",
-    "seoTitle": "Simuladores y recursos de fotónica y electrónica",
-    "description": "Simuladores interactivos y una selección de recursos científicos sobre diseño, fabricación, medida, fotónica y electrónica.",
-    "modified": "2026-07-27T00:00:00"
+    "seoTitle": "Aplicaciones científicas, simuladores y recursos | Jorge Parra",
+    "description": "Aplicaciones web científicas para simulación, diseño experimental, análisis con OpenAlex y gestión universitaria, junto con recursos de fotónica y electrónica.",
+    "modified": "2026-08-23T00:00:00"
   },
   {
     "id": "faq",

@@ -37,6 +37,177 @@
         "es": "Abrir simulador ↗",
         "ca": "Obri el simulador ↗"
       }
+    },
+    {
+      "url": "https://jorpago2.github.io/waveguide-mode-solver/",
+      "number": "03",
+      "title": {
+        "en": "Waveguide Mode Solver",
+        "es": "Solucionador de modos de guía de onda",
+        "ca": "Solucionador de modes de guia d’ona"
+      },
+      "description": {
+        "en": "Calculate straight and bent dielectric waveguide modes with a full-vector finite-difference solver, then inspect fields, confinement and polarization.",
+        "es": "Calcula los modos de guías dieléctricas rectas y curvas mediante un método vectorial completo de diferencias finitas, y analiza campos, confinamiento y polarización.",
+        "ca": "Calcula els modes de guies dielèctriques rectes i corbes mitjançant un mètode vectorial complet de diferències finites, i analitza camps, confinament i polarització."
+      },
+      "action": {
+        "en": "Open simulator ↗",
+        "es": "Abrir simulador ↗",
+        "ca": "Obri el simulador ↗"
+      }
+    },
+    {
+      "url": "https://jorpago2.github.io/rf-web-simulator/",
+      "number": "04",
+      "title": {
+        "en": "RF Network Simulator",
+        "es": "Simulador de redes de RF",
+        "ca": "Simulador de xarxes de RF"
+      },
+      "description": {
+        "en": "Build RF chains and analyse S-parameters, phase, group delay, mismatch and internal reflections with ideal blocks or imported Touchstone data.",
+        "es": "Construye cadenas de RF y analiza parámetros S, fase, retardo de grupo, desadaptación y reflexiones internas con bloques ideales o datos Touchstone.",
+        "ca": "Construeix cadenes de RF i analitza paràmetres S, fase, retard de grup, desadaptació i reflexions internes amb blocs ideals o dades Touchstone."
+      },
+      "action": {
+        "en": "Open simulator ↗",
+        "es": "Abrir simulador ↗",
+        "ca": "Obri el simulador ↗"
+      }
+    },
+    {
+      "url": "https://jorpago2.github.io/optothermal_simulator/",
+      "number": "05",
+      "title": {
+        "en": "Optothermal Simulator",
+        "es": "Simulador optotérmico",
+        "ca": "Simulador optotèrmic"
+      },
+      "description": {
+        "en": "Simulate transient heating, phase transition and thin-film absorptance in VO₂ driven by a pulsed Gaussian laser beam.",
+        "es": "Simula el calentamiento transitorio, la transición de fase y la absorbancia de una película de VO₂ excitada por un haz láser gaussiano pulsado.",
+        "ca": "Simula l’escalfament transitori, la transició de fase i l’absorbància d’una pel·lícula de VO₂ excitada per un feix làser gaussià polsat."
+      },
+      "action": {
+        "en": "Open simulator ↗",
+        "es": "Abrir simulador ↗",
+        "ca": "Obri el simulador ↗"
+      }
+    },
+    {
+      "url": "https://jorpago2.github.io/reflectometry/",
+      "number": "06",
+      "title": {
+        "en": "Reflectometry",
+        "es": "Reflectometría",
+        "ca": "Reflectometria"
+      },
+      "description": {
+        "en": "Fit calibrated reflectance and transmittance spectra from coherent multilayer stacks using reusable optical models.",
+        "es": "Ajusta espectros calibrados de reflectancia y transmitancia de estructuras multicapa coherentes mediante modelos ópticos reutilizables.",
+        "ca": "Ajusta espectres calibrats de reflectància i transmitància d’estructures multicapa coherents mitjançant models òptics reutilitzables."
+      },
+      "action": {
+        "en": "Open tool ↗",
+        "es": "Abrir herramienta ↗",
+        "ca": "Obri l’eina ↗"
+      }
+    },
+    {
+      "url": "https://jorpago2.github.io/gds2goo/",
+      "number": "07",
+      "title": {
+        "en": "GDS2GOO",
+        "es": "GDS2GOO",
+        "ca": "GDS2GOO"
+      },
+      "description": {
+        "en": "Convert GDSII layouts into GOO exposure files for maskless photolithography with the Elegoo Mars 4 9K while keeping all processing local.",
+        "es": "Convierte diseños GDSII en archivos de exposición GOO para fotolitografía sin máscara con la Elegoo Mars 4 9K, manteniendo todo el procesamiento en local.",
+        "ca": "Converteix dissenys GDSII en fitxers d’exposició GOO per a fotolitografia sense màscara amb l’Elegoo Mars 4 9K, mantenint tot el processament en local."
+      },
+      "action": {
+        "en": "Open tool ↗",
+        "es": "Abrir herramienta ↗",
+        "ca": "Obri l’eina ↗"
+      }
+    },
+    {
+      "url": "https://jorpago2.github.io/spincoatsim/",
+      "number": "08",
+      "title": {
+        "en": "SpinCoatSim",
+        "es": "SpinCoatSim",
+        "ca": "SpinCoatSim"
+      },
+      "description": {
+        "en": "Explore GDSII cross-sections, material stacks, spin-coated thickness, annealing shrinkage and thin-film planarization.",
+        "es": "Explora secciones GDSII, pilas de materiales, espesor por spin coating, contracción por recocido y planarización de películas delgadas.",
+        "ca": "Explora seccions GDSII, piles de materials, gruix per spin coating, contracció per recuit i planarització de pel·lícules primes."
+      },
+      "action": {
+        "en": "Open tool ↗",
+        "es": "Abrir herramienta ↗",
+        "ca": "Obri l’eina ↗"
+      }
+    },
+    {
+      "url": "https://jorpago2.github.io/setupsketch/",
+      "number": "09",
+      "title": {
+        "en": "SetupSketch",
+        "es": "SetupSketch",
+        "ca": "SetupSketch"
+      },
+      "description": {
+        "en": "Create optical, photonic and electronic experimental setup diagrams and export them as SVG, PNG, PDF or editable JSON.",
+        "es": "Crea diagramas de montajes experimentales ópticos, fotónicos y electrónicos y expórtalos como SVG, PNG, PDF o JSON editable.",
+        "ca": "Crea diagrames de muntatges experimentals òptics, fotònics i electrònics i exporta’ls com a SVG, PNG, PDF o JSON editable."
+      },
+      "action": {
+        "en": "Open editor ↗",
+        "es": "Abrir editor ↗",
+        "ca": "Obri l’editor ↗"
+      }
+    },
+    {
+      "url": "https://jorpago2.github.io/research-topic-explorer/",
+      "number": "10",
+      "title": {
+        "en": "Research Topic Explorer",
+        "es": "Explorador de temas de investigación",
+        "ca": "Explorador de temes d’investigació"
+      },
+      "description": {
+        "en": "Analyse OpenAlex research subfields through topic rankings, trends, normalised citation impact, institutions and co-occurrence networks.",
+        "es": "Analiza subcampos de investigación de OpenAlex mediante clasificaciones temáticas, tendencias, impacto normalizado de citas, instituciones y redes de coocurrencia.",
+        "ca": "Analitza subcamps d’investigació d’OpenAlex mitjançant classificacions temàtiques, tendències, impacte normalitzat de citacions, institucions i xarxes de coocurrència."
+      },
+      "action": {
+        "en": "Open explorer ↗",
+        "es": "Abrir explorador ↗",
+        "ca": "Obri l’explorador ↗"
+      }
+    },
+    {
+      "url": "https://jorpago2.github.io/uv-administracion/",
+      "number": "11",
+      "title": {
+        "en": "UV Administration Guide",
+        "es": "Guía de administración UV",
+        "ca": "Guia d’administració UV"
+      },
+      "description": {
+        "en": "Consult procedures, official regulations, funding routes, calendars and calculators for teaching and research staff at the Universitat de València.",
+        "es": "Consulta procedimientos, normativa oficial, vías de financiación, calendarios y calculadoras para el personal docente e investigador de la Universitat de València.",
+        "ca": "Consulta procediments, normativa oficial, vies de finançament, calendaris i calculadores per al personal docent i investigador de la Universitat de València."
+      },
+      "action": {
+        "en": "Open guide ↗",
+        "es": "Abrir guía ↗",
+        "ca": "Obri la guia ↗"
+      }
     }
   ],
   "groups": [

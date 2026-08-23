@@ -29,7 +29,7 @@
     "title": "Inici",
     "seoTitle": "Dr. Jorge Parra | Fotònica integrada i enginyeria electrònica",
     "description": "El Dr. Jorge Parra és professor ajudant doctor a la Universitat de València i investiga en fotònica integrada, materials funcionals i dispositius emergents.",
-    "modified": "2026-07-27T00:00:00"
+    "modified": "2026-08-23T00:00:00"
   },
   {
     "id": "new-students",
@@ -43,9 +43,9 @@
     "id": "resources",
     "slug": "recursos",
     "title": "Recursos",
-    "seoTitle": "Simuladors i recursos de fotònica i electrònica",
-    "description": "Simuladors interactius i una selecció de recursos científics sobre disseny, fabricació, mesura, fotònica i electrònica.",
-    "modified": "2026-07-27T00:00:00"
+    "seoTitle": "Aplicacions científiques, simuladors i recursos | Jorge Parra",
+    "description": "Aplicacions web científiques per a simulació, disseny experimental, anàlisi amb OpenAlex i gestió universitària, juntament amb recursos de fotònica i electrònica.",
+    "modified": "2026-08-23T00:00:00"
   },
   {
     "id": "faq",

@@ -36,7 +36,7 @@
     "title": "Homepage",
     "seoTitle": "Dr. Jorge Parra | Integrated Photonics & Electronic Engineering",
     "description": "Dr. Jorge Parra is an Assistant Professor at the Universitat de València researching integrated photonics, functional materials and emerging devices.",
-    "modified": "2026-07-27T00:00:00"
+    "modified": "2026-08-23T00:00:00"
   },
   {
     "id": "publications",
@@ -57,9 +57,9 @@
     "id": "resources",
     "slug": "resources",
     "title": "Resources",
-    "seoTitle": "Photonics & Electronics Simulators and Resources",
-    "description": "Curated scientific links, design and fabrication resources, communication tools and interactive online simulators.",
-    "modified": "2026-07-27T00:00:00"
+    "seoTitle": "Scientific Web Apps, Simulators and Resources | Jorge Parra",
+    "description": "Scientific web applications for simulation, experimental design, OpenAlex analysis and university workflows, plus curated photonics and electronics resources.",
+    "modified": "2026-08-23T00:00:00"
   },
   {
     "id": "faq",
