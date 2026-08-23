@@ -624,6 +624,10 @@ main {
   gap: 1.5rem;
 }
 
+.online-tool-card:first-child {
+  grid-column: 1 / -1;
+}
+
 .online-tool-card {
   display: grid;
   min-width: 0;
@@ -660,10 +664,6 @@ main {
 
 .online-tool-action {
   margin-top: 0.35rem;
-}
-
-.online-tools-hub {
-  margin: 1.25rem 0 0;
 }
 
 .contact-lead {

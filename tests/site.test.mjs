@@ -104,7 +104,7 @@ test("shared records live in JSON and render in every language", async () => {
   assert.equal(teaching.previousCourses.length, 4);
   assert.equal(teaching.thesisGroups.reduce((count, group) => count + group.entries.length, 0), 10);
   assert.equal(teaching.book.title, "Teoría de circuitos eléctricos. Problemas resueltos");
-  assert.equal(resources.tools.length, 11);
+  assert.equal(resources.tools.length, 3);
   assert.equal(resources.groups.length, 5);
   assert.equal(resources.groups.reduce((count, group) => count + group.items.length, 0), 26);
   assert.ok(teaching.currentCourses.every((course) => course.details.en && course.details.es && course.details.ca));
@@ -193,7 +193,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.match(research, /Fotónica integrada reconfigurable con materiales funcionales/);
   assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 28);
   assert.equal((teaching.match(/· Codirector/g) ?? []).length, 10);
-  assert.match(resources, /Simuladores y aplicaciones web/);
+  assert.match(resources, /Aplicaciones web y recursos/);
   assert.match(resources, /Diseño, simulación y medida/);
   assert.match(contact, /Estudiantes de grado y máster/);
   assert.equal((students.match(/<li>\s*<strong>[^<]+<\/strong>/g) ?? []).length, 4);
@@ -285,7 +285,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /href="\/jorpago2\/new-students\/">Could research be right for you\?/);
   assert.match(html, /href="\/jorpago2\/career-strategy\/">Five principles for building a research career/);
   assert.doesNotMatch(html, /research-career decisions|>this<|ðŸ”/);
-  assert.match(html, /class="information-panel simulator-information"[\s\S]*?Online simulators and web applications[\s\S]*?href="\/jorpago2\/resources\/#online-tools"/);
+  assert.match(html, /class="information-panel simulator-information"[\s\S]*?Browser-based simulators and tools[\s\S]*?href="https:\/\/jorpago2\.github\.io\/"/);
   assert.doesNotMatch(html, /class="update-grid"/);
   assert.doesNotMatch(html, /class="home-explore"/);
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);
@@ -355,22 +355,22 @@ test("career strategy presents five concise principles and current sources", asy
 
 test("resources page uses a compact five-group directory", async () => {
   const html = await readFile(path.join(OUTPUT_ROOT, "resources", "index.html"), "utf8");
+  const css = await readFile(path.resolve("src", "style.css"), "utf8");
 
   assert.match(html, /class="resource-directory"/);
   assert.equal((html.match(/class="resource-group /g) ?? []).length, 5);
   assert.ok(html.indexOf("resources-collections") < html.indexOf("resources-fabrication"));
   assert.doesNotMatch(html, />Others</);
   assert.doesNotMatch(html, />https?:\/\//);
-  assert.equal((html.match(/class="online-tool-card"/g) ?? []).length, 11);
+  assert.equal((html.match(/class="online-tool-card"/g) ?? []).length, 3);
   assert.ok(html.indexOf('id="online-tools"') < html.indexOf('id="links"'));
-  assert.match(html, /href="https:\/\/jorpago2\.github\.io\/fdtd-2d-simulator\/"/);
-  assert.match(html, /href="https:\/\/jorpago2\.github\.io\/drift-difussion-simulator\/"/);
-  assert.match(html, /href="https:\/\/jorpago2\.github\.io\/waveguide-mode-solver\/"/);
-  assert.match(html, /href="https:\/\/jorpago2\.github\.io\/optothermal_simulator\/"/);
+  assert.match(html, /href="https:\/\/jorpago2\.github\.io\/"/);
   assert.match(html, /href="https:\/\/jorpago2\.github\.io\/research-topic-explorer\/"/);
   assert.match(html, /href="https:\/\/jorpago2\.github\.io\/uv-administracion\/"/);
+  assert.match(html, /Scientific Software Hub/);
   assert.match(html, /Research Topic Explorer/);
   assert.match(html, /UV Administration Guide/);
+  assert.match(css, /\.online-tool-card:first-child \{[\s\S]*?grid-column: 1 \/ -1;/);
 });
 
 test("research and teaching consolidate their former child pages", async () => {
