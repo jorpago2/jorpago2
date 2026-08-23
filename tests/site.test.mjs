@@ -278,15 +278,14 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<a href="\/jorpago2\/resources\/">Resources<\/a>/);
   assert.doesNotMatch(html, /class="hub-link"/);
   assert.match(html, /class="home-updates"/);
-  assert.match(html, /<h2 class="visually-hidden" id="updates-title">Information and resources<\/h2>/);
+  assert.match(html, /<h2 class="visually-hidden" id="updates-title">Information<\/h2>/);
   assert.doesNotMatch(html, /Opportunities and learning tools/);
   assert.match(html, /class="information-grid"/);
-  assert.equal((html.match(/class="information-entry /g) ?? []).length, 3);
+  assert.equal((html.match(/class="information-entry /g) ?? []).length, 2);
   assert.match(html, /href="\/jorpago2\/new-students\/">Could research be right for you\?/);
   assert.match(html, /href="\/jorpago2\/career-strategy\/">Five principles for building a research career/);
   assert.doesNotMatch(html, /research-career decisions|>this<|ðŸ”/);
-  assert.match(html, /class="information-list"[\s\S]*?Scientific software[\s\S]*?href="https:\/\/jorpago2\.github\.io\/"/);
-  assert.doesNotMatch(html, /simulator-information/);
+  assert.match(html, /class="information-panel simulator-information"[\s\S]*?Browser-based simulators and tools[\s\S]*?href="https:\/\/jorpago2\.github\.io\/"/);
   assert.doesNotMatch(html, /class="update-grid"/);
   assert.doesNotMatch(html, /class="home-explore"/);
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);
