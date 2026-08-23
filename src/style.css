@@ -508,8 +508,11 @@ main {
   display: grid;
   margin: 1rem 0 0;
   gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 700;
+}
+
+.simulator-links .button {
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .page-content {
