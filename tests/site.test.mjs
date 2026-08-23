@@ -285,7 +285,8 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /href="\/jorpago2\/new-students\/">Could research be right for you\?/);
   assert.match(html, /href="\/jorpago2\/career-strategy\/">Five principles for building a research career/);
   assert.doesNotMatch(html, /research-career decisions|>this<|ðŸ”/);
-  assert.match(html, /class="information-panel simulator-information"[\s\S]*?Browser-based simulators and tools[\s\S]*?href="https:\/\/jorpago2\.github\.io\/"/);
+  assert.match(html, /class="information-panel simulator-information"[\s\S]*?Scientific software and digital resources[\s\S]*?href="https:\/\/jorpago2\.github\.io\/"/);
+  assert.match(html, /class="simulator-links"[\s\S]*?href="https:\/\/jorpago2\.github\.io\/research-topic-explorer\/"[\s\S]*?href="https:\/\/jorpago2\.github\.io\/uv-administracion\/"/);
   assert.doesNotMatch(html, /class="update-grid"/);
   assert.doesNotMatch(html, /class="home-explore"/);
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);

@@ -504,6 +504,15 @@ main {
   line-height: 1.5;
 }
 
+.simulator-links {
+  display: flex;
+  margin: 1rem 0 0;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .page-content {
   padding: clamp(1.25rem, 3vw, 2rem) 0;
   border: 0;
