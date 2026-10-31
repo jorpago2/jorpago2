@@ -281,7 +281,7 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.match(html, /<h2 class="visually-hidden" id="updates-title">Information<\/h2>/);
   assert.doesNotMatch(html, /Opportunities and learning tools/);
   assert.match(html, /class="information-grid"/);
-  assert.equal((html.match(/class="information-entry /g) ?? []).length, 2);
+  assert.equal((html.match(/class="information-entry /g) ?? []).length, 3);
   assert.match(html, /href="\/jorpago2\/new-students\/">Could research be right for you\?/);
   assert.match(html, /href="\/jorpago2\/career-strategy\/">Five principles for building a research career/);
   assert.doesNotMatch(html, /research-career decisions|>this<|ðŸ”/);
