@@ -346,6 +346,21 @@ main {
   border: 0;
   background: transparent;
   justify-content: space-between;
+  pointer-events: none;
+}
+
+.hero-carousel .carousel-controls > * {
+  pointer-events: auto;
+}
+
+.hero-carousel .carousel-book-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  min-height: 0;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
 }
 
 .hero-carousel .carousel-arrow,
