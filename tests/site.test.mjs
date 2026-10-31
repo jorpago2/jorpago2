@@ -264,7 +264,7 @@ test("SEO metadata identifies the site and academic profile", async () => {
   assert.match(home, new RegExp(`${SITE_ORIGIN.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/jorpago2/assets/og\\.png`));
 });
 
-test("homepage has the personal academic layout and keeps the five-image carousel", async () => {
+test("homepage has the personal academic layout and opens the six-image carousel with the book", async () => {
   const html = await readFile(path.join(OUTPUT_ROOT, "index.html"), "utf8");
 
   assert.match(html, /<article class="home-layout">/);
@@ -291,10 +291,10 @@ test("homepage has the personal academic layout and keeps the five-image carouse
   assert.doesNotMatch(html, /class="home-explore"/);
   assert.match(html, /© \d{4} Jorge Parra<\/p>/);
   assert.match(html, /<img src="\/jorpago2\/assets\/github-profile\.jpg" alt="" width="52" height="52">/);
-  assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 5);
-  assert.match(html, /<img decoding="async" fetchpriority="high" src="\/jorpago2\/assets\/media\/2025\/08\/1750954398339\.jpg"/);
-  assert.doesNotMatch(html, /1750954398339\.jpg"[^>]*loading="lazy"/);
-  assert.equal((html.match(/data-src="/g) ?? []).length, 4);
+  assert.equal((html.match(/aria-roledescription="slide"/g) ?? []).length, 6);
+  assert.match(html, /<img decoding="async" fetchpriority="high" src="\/jorpago2\/assets\/media\/generated\/paradoja-profesor-universitario\.jpg"/);
+  assert.ok(html.indexOf('class="slide-book ms-image"') < html.indexOf('class="slide-71 ms-image '));
+  assert.equal((html.match(/data-src="/g) ?? []).length, 5);
   assert.match(html, /Imagen1\.webp/);
   assert.match(html, /Imagen2\.webp/);
   assert.doesNotMatch(html, /Imagen[12]\.png/);
@@ -546,7 +546,7 @@ test("legacy route redirects and sitemap lists every page", async () => {
       : "User-agent: *\nAllow: /\nSitemap: https://www.uv.es/jorpago2/sitemap.xml\n",
   );
   assert.doesNotMatch(sitemap, /<loc>[^<]+\/(?:publications|books|theses)\/<\/loc>/);
-  assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 17);
+  assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 18);
 });
 
 test("UV deployment keeps backups beside the workspace", async () => {
