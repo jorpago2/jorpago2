@@ -70,5 +70,13 @@
     "seoTitle": "Estrategia para la carrera investigadora | Jorge Parra",
     "description": "Marco personal para elegir preguntas de investigación, construir un perfil coherente, publicar con rigor, colaborar y ajustar las ambiciones a los recursos disponibles.",
     "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "research-notes",
+    "slug": "lecturas",
+    "title": "Lecturas de investigación",
+    "seoTitle": "Lecturas de investigación | Jorge Parra",
+    "description": "Notas sobre artículos recientes de fotónica, electrónica y materiales emergentes.",
+    "modified": "2026-11-17T00:00:00"
   }
 ]

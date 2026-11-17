@@ -52,7 +52,7 @@ function outputFileForPage(page, locale) {
 }
 
 test("all imported pages are built with metadata", async () => {
-  assert.equal(pages.length, 12);
+  assert.equal(pages.length, 13);
 
   for (const page of pages) {
     const outputFile = path.join(OUTPUT_ROOT, page.slug, "index.html");
@@ -170,6 +170,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
     "home",
     "new-students",
     "research",
+    "research-notes",
     "resources",
     "teaching",
   ]);
@@ -271,7 +272,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=58/);
+  assert.match(html, /assets\/style\.css\?v=59/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);

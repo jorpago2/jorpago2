@@ -70,5 +70,13 @@
     "seoTitle": "Estratègia per a la carrera investigadora | Jorge Parra",
     "description": "Marc personal per a triar preguntes d’investigació, construir un perfil coherent, publicar amb rigor, col·laborar i ajustar les ambicions als recursos disponibles.",
     "modified": "2026-07-27T00:00:00"
+  },
+  {
+    "id": "research-notes",
+    "slug": "lectures",
+    "title": "Lectures de recerca",
+    "seoTitle": "Lectures de recerca | Jorge Parra",
+    "description": "Notes sobre articles recents de fotònica, electrònica i materials emergents.",
+    "modified": "2026-11-17T00:00:00"
   }
 ]

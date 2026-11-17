@@ -177,7 +177,8 @@ li {
 
 .identity {
   display: inline-flex;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  min-width: 0;
   align-items: center;
   gap: 1rem;
   color: var(--ink);
@@ -2299,3 +2300,21 @@ figcaption {
     color: black;
   }
 }
+
+
+.research-notes { max-width: 82rem; }
+.notes-intro { max-width: 52rem; padding: clamp(2rem, 5vw, 4.5rem) 0 2rem; }
+.notes-intro h2 { margin: .3rem 0 1rem; font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1.08; letter-spacing: -.035em; }
+.notes-intro p:not(.eyebrow) { max-width: 42rem; font-size: 1.15rem; line-height: 1.65; color: var(--muted); }
+.notes-issue { border-top: 1px solid var(--line); padding-top: 2rem; }
+.notes-issue > h3 { max-width: 46rem; margin: .6rem 0 2.5rem; font-size: clamp(1.7rem, 3vw, 2.6rem); line-height: 1.2; }
+.note-entry { display: grid; grid-template-columns: minmax(12rem, 1fr) minmax(0, 2fr); gap: clamp(1rem, 5vw, 5rem); border-top: 1px solid var(--line); padding: 2rem 0 2.5rem; }
+.note-entry h4 { margin: 0 0 .75rem; font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.2; }
+.note-meta { color: var(--muted); font-size: .88rem; line-height: 1.6; }
+.note-body { max-width: 48rem; font-size: 1.05rem; line-height: 1.75; }
+.note-body p:first-child { margin-top: 0; }
+.note-link { display: inline-block; font-weight: 700; margin-top: .35rem; }
+.home-reading { border-top: 1px solid var(--line); padding: 2rem 0; }
+.home-reading h2 { margin: 0 0 .5rem; font-size: 1.5rem; }
+.home-reading p { margin: .5rem 0; }
+@media (max-width: 700px) { .note-entry { grid-template-columns: 1fr; gap: .75rem; } .notes-intro { padding-top: 2rem; } }

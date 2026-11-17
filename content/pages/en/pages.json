@@ -91,5 +91,13 @@
     "title": "Books",
     "description": "Teoría de circuitos eléctricos. Problemas resueltos, a Spanish-language problem book for introductory circuit theory.",
     "modified": "2025-11-09T18:59:08"
+  },
+  {
+    "id": "research-notes",
+    "slug": "research-notes",
+    "title": "Research notes",
+    "seoTitle": "Research notes | Jorge Parra",
+    "description": "Notes on recent papers in photonics, electronics and emerging materials.",
+    "modified": "2026-11-17T00:00:00"
   }
 ]
