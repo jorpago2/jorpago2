@@ -1,0 +1,38 @@
+﻿[
+    {
+        "date":  "Dec 202X",
+        "tag":  "Innovation",
+        "title":  "[Innovation News Title]",
+        "content":  "Description of a recent innovation or spin-off company created by the research group."
+    },
+    {
+        "date":  "Nov 202X",
+        "tag":  "Project",
+        "title":  "[New Project Acronym]",
+        "content":  "Description of a new funded project related to clean energy or nanotechnology."
+    },
+    {
+        "date":  "Oct 202X",
+        "tag":  "Research",
+        "title":  "[Equipment Acquisition]",
+        "content":  "Details about new equipment acquired for the laboratory facilities."
+    },
+    {
+        "date":  "Jul 202X",
+        "tag":  "Conference",
+        "title":  "[International Conference Presentation]",
+        "content":  "Our team presented 3 oral contributions at the Photonics West Conference in San Francisco."
+    },
+    {
+        "date":  "Jun 202X",
+        "tag":  "Thesis",
+        "title":  "[PhD Thesis Defense]",
+        "content":  "Congratulations to [Student Name] for successfully defending their PhD thesis on Quantum Dots."
+    },
+    {
+        "date":  "May 202X",
+        "tag":  "Outreach",
+        "title":  "[Science Fair Participation]",
+        "content":  "The group participated in the University Science Fair demonstrating light properties to high school students."
+    }
+]

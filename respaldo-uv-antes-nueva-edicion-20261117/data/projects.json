@@ -1,0 +1,32 @@
+﻿[
+    {
+        "title":  "[Project Title A]",
+        "ref":  "REF-123456",
+        "desc":  "Funding agency description and main goals of the research project."
+    },
+    {
+        "title":  "[Project Title B]",
+        "ref":  "REF-789012",
+        "desc":  "Funding agency description and main goals of the research project."
+    },
+    {
+        "title":  "[Project Title C]",
+        "ref":  "REF-345678",
+        "desc":  "Funding agency description and main goals of the research project."
+    },
+    {
+        "title":  "[European Consortium Project]",
+        "ref":  "HORIZON-202X",
+        "desc":  "Large scale international collaboration focused on sustainable energy solutions."
+    },
+    {
+        "title":  "[Industrial Contract]",
+        "ref":  "IND-CONTRACT-01",
+        "desc":  "Technology transfer project with [Company Name] for sensor development."
+    },
+    {
+        "title":  "[Regional Innovation Grant]",
+        "ref":  "REG-INNO-99",
+        "desc":  "Grant for developing prototype devices for local industry application."
+    }
+]
