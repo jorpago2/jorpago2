@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.uv.es/jorpago2/sitemap.xml
