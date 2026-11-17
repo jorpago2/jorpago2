@@ -1,0 +1,50 @@
+﻿[
+    {
+        "acronym":  "NEUROVIS",
+        "tag":  "Neuromorphic",
+        "title":  "Photodetectors for Neuromorphic Vision",
+        "content":  "Photodetectors based on 2D semiconductors and metal halide perovskites. We investigate optical properties and recombination dynamics for vision systems."
+    },
+    {
+        "acronym":  "TOPIN",
+        "tag":  "Theory",
+        "title":  "Nonlinear \u0026 Topological Photonics",
+        "content":  "Theoretical foundations of nonlinear optical properties. Development of advanced concepts like dielectric metasurfaces and topological photonics."
+    },
+    {
+        "acronym":  "PHOTOT",
+        "tag":  "Devices",
+        "title":  "Photonics \u0026 Optical Transistors",
+        "content":  "Implementation of photonic devices for optical amplification and lasers, developing advanced concepts in collaboration with the TOPIN theory line."
+    },
+    {
+        "acronym":  "LOWDIM",
+        "tag":  "2D Materials",
+        "title":  "Low-Dimensional Semiconductors",
+        "content":  "Synthesis and fundamental understanding of 2D materials. Tuning electronic properties via doping and characterization using unique ARPES techniques."
+    },
+    {
+        "acronym":  "ABX3",
+        "tag":  "Perovskites",
+        "title":  "Metal Halide Perovskites for Optoelectronics",
+        "content":  "Preparation of polycrystalline and epitaxial thin films for memristors, LEDs, and solar cells. Characterization and modeling of key physical processes."
+    },
+    {
+        "acronym":  "ArQuS",
+        "tag":  "Quantum",
+        "title":  "Artificial Quantum Systems",
+        "content":  "Quantum devices based on light-matter interaction: single-photon emitters, entangled photons, quantum cryptography, and quantum simulation."
+    },
+    {
+        "acronym":  "QMAT-SIM",
+        "tag":  "Simulation",
+        "title":  "Theory \u0026 Simulation of Quantum Materials",
+        "content":  "Study of electronic, optical, and magnetic properties in 2D materials using First-Principles and semi-empirical methods under external perturbations."
+    },
+    {
+        "acronym":  "CHEMDO",
+        "tag":  "Chemistry",
+        "title":  "Advanced Materials Chemistry",
+        "content":  "Chemical synthesis of metal halide perovskites and metal oxides in solution/thin films. Applications in sensors and energy via Photo/Electro-catalysis."
+    }
+]

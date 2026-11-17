@@ -1,0 +1,89 @@
+{
+  "source": {
+    "scope": "Current infrastructure associated with UMDO+ only."
+  },
+  "available_labs": [
+    {
+      "line_group": "ABX3-UMDO+",
+      "laboratory": "Chemical Synthesis Lab for Advanced Semiconductor Films",
+      "equipment": [
+        "Fume-hood chemical benches",
+        "Multiple spin coaters and 2 blade coaters (ambient and glovebox)",
+        "Slot-die coater with controlled atmosphere",
+        "2 gloveboxes (one coupled to high-vacuum thermal evaporator)"
+      ]
+    },
+    {
+      "line_group": "UMDO+",
+      "laboratory": "Micro/Nano Device Fabrication Lab",
+      "equipment": [
+        "E-beam lithography (Raith50)",
+        "UV mask aligners (MJB3 and MJB4, UV nanoimprint option)",
+        "Direct laser writing systems (homebuilt and UVW03)",
+        "Ultra-high vacuum sputtering system",
+        "High-vacuum thermal evaporation",
+        "PECVD system and rapid thermal process/spray CVD"
+      ]
+    },
+    {
+      "line_group": "UMDO+",
+      "laboratory": "Optical Characterization Lab for Semiconductors and Quantum Dots",
+      "equipment": [
+        "Spectroscopic ellipsometer (J.A. Woollam V-VASE, 250-2000 nm)",
+        "Edinburgh Instruments FLS-1000 spectrometer",
+        "Steady-state and transient photoluminescence setups",
+        "Closed-cycle cryostat (25-300 K)",
+        "Hamamatsu PMT and NIR detectors up to 1700 nm"
+      ]
+    },
+    {
+      "line_group": "UMDO-UMDO+",
+      "laboratory": "Photodetector Characterization Lab",
+      "equipment": [
+        "Spectral responsivity and EQE setup (300-1700 nm)",
+        "Keithley SMUs and picoammeter instrumentation",
+        "Probe stations for ambient and vacuum/gas operation (80-300 K)",
+        "CW and pulsed lasers (visible and NIR ranges)"
+      ]
+    },
+    {
+      "line_group": "ABX3-UMDO-UMDO+",
+      "laboratory": "Photovoltaic Device Characterization Lab",
+      "equipment": [
+        "3 small-area solar simulators",
+        "2 impedance analyzers",
+        "Bentham PVE300 for responsivity/EQE/IQE measurements"
+      ]
+    },
+    {
+      "line_group": "Photonics-UMDO+",
+      "laboratory": "Photonics and Lasers Lab",
+      "equipment": [
+        "Nd:YAG pulsed lasers (355 and 532 nm)",
+        "High-power sub-ps pulsed laser (FYLA PS50)",
+        "Inverted microscope with piezo stage",
+        "Mach-Zehnder and Michelson interferometric setups",
+        "Spectrographs, UV-Vis reflectometry and lock-in electronics"
+      ]
+    },
+    {
+      "line_group": "MAGMA-UMDO+",
+      "laboratory": "High Performance Computing Facility (LYNX)",
+      "equipment": [
+        "Dedicated HPC servers for ab initio and photonics simulations",
+        "192-core compute infrastructure"
+      ]
+    },
+    {
+      "line_group": "ArQus-UMDO+ / QuMatter",
+      "laboratory": "Nanoscience and Quantum Spectroscopy Labs",
+      "equipment": [
+        "Fiber-based confocal microscope (Attocube AttoDry 800, 4-300 K)",
+        "Ti:sapphire, diode and pulsed laser excitation platforms",
+        "CCD and InGaAs detection chains with dedicated spectrometers",
+        "Streak camera and photon-correlation/timing electronics",
+        "Spin-resolved XPS/ARPES capabilities (QuMatter)"
+      ]
+    }
+  ]
+}
