@@ -2318,3 +2318,12 @@ figcaption {
 .home-reading h2 { margin: 0 0 .5rem; font-size: 1.5rem; }
 .home-reading p { margin: .5rem 0; }
 @media (max-width: 700px) { .note-entry { grid-template-columns: 1fr; gap: .75rem; } .notes-intro { padding-top: 2rem; } }
+
+/* Research notes: illustrative image and short mentions. */
+.notes-section-label { margin: 0 0 1rem; color: var(--muted); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.notes-mention { max-width: 52rem; border-top: 1px solid var(--line); padding: 2rem 0; line-height: 1.7; }
+.notes-mention h4 { margin: .5rem 0; font-size: clamp(1.35rem, 2vw, 1.8rem); }
+
+.paper-figure { margin: 0 0 1.5rem; }
+.paper-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: var(--surface); }
+.paper-figure figcaption { margin-top: .6rem; color: var(--muted); font-size: .8rem; line-height: 1.5; }
