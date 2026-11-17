@@ -83,12 +83,12 @@ test("the blog links to one complete translated edition", async () => {
     assert.equal((edition.match(/class="note-entry"/g) ?? []).length, 3);
     assert.equal((edition.match(/class="paper-figure"/g) ?? []).length, 3);
     assert.match(edition, /class="notes-mention"/);
-    assert.equal((edition.match(/hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
+    assert.equal((edition.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
   }
 });
 
 test("word cloud counts article prose and excludes captions and common words", () => {
-  const fragment = `<article><h4>Memoria de luz</h4><figure><figcaption>memoria memoria</figcaption></figure><p>La luz y la memoria. Luz y memoria.</p><a href="/">memoria</a></article>`;
+  const fragment = `<article><h4>Memoria de luz</h4><figure><figcaption>memoria memoria</figcaption></figure><p>La <a href="/">luz</a> y la memoria. Luz y memoria.</p><a class="note-link" href="/">memoria</a></article>`;
   const counts = new Map(countBlogWords([fragment], "es"));
   assert.equal(counts.get("memoria"), 3);
   assert.equal(counts.get("luz"), 3);

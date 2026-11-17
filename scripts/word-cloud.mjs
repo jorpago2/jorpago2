@@ -23,7 +23,9 @@ export function countBlogWords(fragments, locale) {
   for (const fragment of fragments) {
     // Count the prose and section titles; omit figures, captions, links and metadata.
     const clean = fragment.replace(/<figure\b[^>]*>[\s\S]*?<\/figure>/gi, " ")
-      .replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi, " ")
+      .replace(/<a\b[^>]*class="note-link"[^>]*>[\s\S]*?<\/a>/gi, " ")
+      .replace(/<aside\b[^>]*class="further-reading"[^>]*>[\s\S]*?<\/aside>/gi, " ")
+      .replace(/<span\b[^>]*class="resource-language"[^>]*>[\s\S]*?<\/span>/gi, " ")
       .replace(/<p\b[^>]*class="[^"]*"[^>]*>[\s\S]*?<\/p>/gi, " ");
     const parts = [...clean.matchAll(/<(?:h3|h4|p)\b[^>]*>([\s\S]*?)<\/(?:h3|h4|p)>/gi)];
     for (const [, part] of parts) {
