@@ -1,0 +1,7 @@
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /jorpago2/404.html
+Redirect 301 /jorpago2/publications/ /jorpago2/research/#publications
+Redirect 301 /jorpago2/books/ /jorpago2/teaching/#books
+Redirect 301 /jorpago2/theses/ /jorpago2/teaching/#theses
+Redirect 301 /jorpago2/theases/ /jorpago2/teaching/#theses
