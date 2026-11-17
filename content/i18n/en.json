@@ -50,5 +50,10 @@
       "Emerging electronic and photonic devices",
       "Neuromorphic hardware"
     ]
+  },
+  "wordCloud": {
+    "title": "Word cloud",
+    "description": "Words that appear most often in blog posts. Size reflects frequency.",
+    "occurrences": "occurrences"
   }
 }

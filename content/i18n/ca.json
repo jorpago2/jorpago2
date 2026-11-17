@@ -50,5 +50,10 @@
       "Dispositius electrònics i fotònics emergents",
       "Maquinari neuromòrfic"
     ]
+  },
+  "wordCloud": {
+    "title": "Núvol de paraules",
+    "description": "Les paraules que més apareixen en les entrades del blog. La mida n’indica la freqüència.",
+    "occurrences": "aparicions"
   }
 }

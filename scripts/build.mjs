@@ -1,5 +1,6 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { renderBlogWordCloud } from "./word-cloud.mjs";
 
 const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
@@ -363,7 +364,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=61">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=62">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -538,6 +539,9 @@ async function main() {
   await cp(socialImagePath, path.join(OUTPUT_ROOT, "assets", "og.png"));
 
   for (const bundle of localeBundles) {
+    const postFragments = await Promise.all(bundle.pages.filter((page) => page.id.startsWith("post-"))
+      .map((page) => readFile(path.join(bundle.localeRoot, `${page.id}.html`), "utf8")));
+    const wordCloud = renderBlogWordCloud(postFragments, bundle.locale.code, bundle.strings.wordCloud);
     const localeOutputRoot = bundle.locale.path
       ? path.join(OUTPUT_ROOT, bundle.locale.path)
       : OUTPUT_ROOT;
@@ -551,9 +555,10 @@ async function main() {
       const fragment = redirect
         ? ""
         : await readFile(path.join(bundle.localeRoot, `${fragmentName}.html`), "utf8");
-      const content = redirect
+      let content = redirect
         ? ""
         : renderSharedContent(page.id, fragment, bundle.locale.code, bundle.strings, sharedData);
+      if (page.id === "research-notes") content = content.replace("<!-- BLOG_WORD_CLOUD -->", wordCloud);
       await writeFile(
         path.join(outputDirectory, "index.html"),
         redirect

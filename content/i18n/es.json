@@ -50,5 +50,10 @@
       "Dispositivos electrónicos y fotónicos emergentes",
       "Hardware neuromórfico"
     ]
+  },
+  "wordCloud": {
+    "title": "Nube de palabras",
+    "description": "Las palabras que más aparecen en las entradas del blog. El tamaño indica su frecuencia.",
+    "occurrences": "apariciones"
   }
 }

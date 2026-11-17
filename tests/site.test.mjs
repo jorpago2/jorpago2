@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { access, readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
+import { countBlogWords } from "../scripts/word-cloud.mjs";
 
 const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
@@ -84,6 +85,14 @@ test("the blog links to one complete translated edition", async () => {
     assert.match(edition, /class="notes-mention"/);
     assert.equal((edition.match(/hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
   }
+});
+
+test("word cloud counts article prose and excludes captions and common words", () => {
+  const fragment = `<article><h4>Memoria de luz</h4><figure><figcaption>memoria memoria</figcaption></figure><p>La luz y la memoria. Luz y memoria.</p><a href="/">memoria</a></article>`;
+  const counts = new Map(countBlogWords([fragment], "es"));
+  assert.equal(counts.get("memoria"), 3);
+  assert.equal(counts.get("luz"), 3);
+  assert.equal(counts.has("para"), false);
 });
 
 test("locale sources keep shared strings separate from page content", async () => {
@@ -288,7 +297,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=61/);
+  assert.match(html, /assets\/style\.css\?v=62/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);

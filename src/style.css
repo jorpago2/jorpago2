@@ -2345,3 +2345,14 @@ figcaption {
 .blog-post-content { margin: 2.5rem 0 3rem; }
 .blog-post-content .paper-figure { margin-bottom: 2rem; }
 @media (max-width: 820px) { .blog-cards { grid-template-columns: 1fr; } }
+
+.blog-word-cloud { margin-top: clamp(3rem, 6vw, 5rem); padding: 2rem 0; border-top: 1px solid var(--line); }
+.blog-word-cloud h3 { margin: 0 0 .5rem; font-size: clamp(1.5rem, 3vw, 2rem); }
+.blog-word-cloud > p { color: var(--muted); max-width: 42rem; line-height: 1.6; }
+.word-cloud { display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem 1.2rem; max-width: 62rem; padding: 1rem 0; margin: 0; list-style: none; }
+.word-cloud li { line-height: 1.25; color: var(--muted); overflow-wrap: anywhere; }
+.word-cloud .cloud-level-1 { font-size: 1rem; }
+.word-cloud .cloud-level-2 { font-size: 1.25rem; }
+.word-cloud .cloud-level-3 { font-size: 1.55rem; color: var(--ink); }
+.word-cloud .cloud-level-4 { font-size: 1.9rem; color: var(--accent); }
+.word-cloud .cloud-level-5 { font-size: 2.25rem; font-weight: 700; color: var(--accent); }
