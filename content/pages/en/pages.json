@@ -95,9 +95,17 @@
   {
     "id": "research-notes",
     "slug": "research-notes",
-    "title": "Research notes",
-    "seoTitle": "Research notes | Jorge Parra",
-    "description": "Notes on recent papers in photonics, electronics and emerging materials.",
+    "title": "Blog",
+    "seoTitle": "Blog | Jorge Parra",
+    "description": "Research notes on photonics, electronics and emerging materials.",
+    "modified": "2026-11-17T00:00:00"
+  },
+  {
+    "id": "post-light-memory",
+    "slug": "light-memory-materials",
+    "title": "Light, memory and materials: three readings",
+    "seoTitle": "Light, memory and materials: three readings | Blog · Jorge Parra",
+    "description": "Three research notes on photonics, materials and neuromorphic computing, plus a brief mention.",
     "modified": "2026-11-17T00:00:00"
   }
 ]

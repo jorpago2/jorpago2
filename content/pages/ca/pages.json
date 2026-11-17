@@ -74,9 +74,17 @@
   {
     "id": "research-notes",
     "slug": "lectures",
-    "title": "Lectures de recerca",
-    "seoTitle": "Lectures de recerca | Jorge Parra",
-    "description": "Notes sobre articles recents de fotònica, electrònica i materials emergents.",
+    "title": "Blog",
+    "seoTitle": "Blog | Jorge Parra",
+    "description": "Ressenyes sobre fotònica, electrònica i materials emergents.",
+    "modified": "2026-11-17T00:00:00"
+  },
+  {
+    "id": "post-light-memory",
+    "slug": "llum-memoria-materials",
+    "title": "Llum, memòria i materials: tres lectures",
+    "seoTitle": "Llum, memòria i materials: tres lectures | Blog · Jorge Parra",
+    "description": "Tres lectures comentades sobre fotònica, materials i computació neuromòrfica, i una menció breu.",
     "modified": "2026-11-17T00:00:00"
   }
 ]

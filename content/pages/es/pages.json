@@ -74,9 +74,17 @@
   {
     "id": "research-notes",
     "slug": "lecturas",
-    "title": "Lecturas de investigación",
-    "seoTitle": "Lecturas de investigación | Jorge Parra",
-    "description": "Notas sobre artículos recientes de fotónica, electrónica y materiales emergentes.",
+    "title": "Blog",
+    "seoTitle": "Blog | Jorge Parra",
+    "description": "Reseñas sobre fotónica, electrónica y materiales emergentes.",
+    "modified": "2026-11-17T00:00:00"
+  },
+  {
+    "id": "post-light-memory",
+    "slug": "luz-memoria-materiales",
+    "title": "Luz, memoria y materiales: tres lecturas",
+    "seoTitle": "Luz, memoria y materiales: tres lecturas | Blog · Jorge Parra",
+    "description": "Tres lecturas comentadas sobre fotónica, materiales y computación neuromórfica, y una mención breve.",
     "modified": "2026-11-17T00:00:00"
   }
 ]

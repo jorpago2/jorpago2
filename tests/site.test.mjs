@@ -52,7 +52,7 @@ function outputFileForPage(page, locale) {
 }
 
 test("all imported pages are built with metadata", async () => {
-  assert.equal(pages.length, 13);
+  assert.equal(pages.length, 14);
 
   for (const page of pages) {
     const outputFile = path.join(OUTPUT_ROOT, page.slug, "index.html");
@@ -68,6 +68,21 @@ test("all imported pages are built with metadata", async () => {
     }
     assert.match(html, /<script src="\/jorpago2\/assets\/site\.js\?v=7" defer><\/script>/);
     assert.doesNotMatch(html, /Last update:|Last updated|class="last-updated"/);
+  }
+});
+
+test("the blog links to one complete translated edition", async () => {
+  for (const locale of localeConfig.locales) {
+    const byId = new Map(localizedPages.get(locale.code).map((page) => [page.id, page]));
+    const index = await readFile(outputFileForPage(byId.get("research-notes"), locale), "utf8");
+    const edition = await readFile(outputFileForPage(byId.get("post-light-memory"), locale), "utf8");
+    const postUrl = `${SITE_BASE_PATH}/${locale.path ? `${locale.path}/` : ""}${byId.get("post-light-memory").slug}/`;
+    assert.equal((index.match(/class="blog-card"/g) ?? []).length, 1);
+    assert.ok(index.includes(`href="${postUrl}"`));
+    assert.equal((edition.match(/class="note-entry"/g) ?? []).length, 3);
+    assert.equal((edition.match(/class="paper-figure"/g) ?? []).length, 3);
+    assert.match(edition, /class="notes-mention"/);
+    assert.equal((edition.match(/hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
   }
 });
 
@@ -169,6 +184,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
     "faq",
     "home",
     "new-students",
+    "post-light-memory",
     "research",
     "research-notes",
     "resources",
@@ -272,7 +288,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=60/);
+  assert.match(html, /assets\/style\.css\?v=61/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);

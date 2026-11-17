@@ -10,7 +10,7 @@ const LOGO_PATH = `${SITE_BASE_PATH}/assets/media/2025/07/cropped-ChatGPT-Image-
 const PROFILE_IMAGE_PATH = `${SITE_BASE_PATH}/assets/github-profile.jpg`;
 const PERSON_ID = `${SITE_ORIGIN}${SITE_BASE_PATH}/about-me/#person`;
 
-const navigationIds = ["about-me", "research", "teaching", "resources", "contact"];
+const navigationIds = ["about-me", "research", "teaching", "resources", "research-notes", "contact"];
 
 const mergedRoutes = {
   publications: { target: "research", anchor: "publications" },
@@ -50,7 +50,7 @@ function navigationHtml(activeId, bundle) {
     .map((id) => {
       const page = bundle.pagesById.get(id);
       if (!page) return "";
-      const current = activeId === id ? ' aria-current="page"' : "";
+      const current = activeId === id || (id === "research-notes" && activeId.startsWith("post-")) ? ' aria-current="page"' : "";
       return `<a href="${route(page.slug, bundle.locale)}"${current}>${escapeHtml(bundle.strings.navigation[id])}</a>`;
     })
     .filter(Boolean)
@@ -363,7 +363,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=60">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=61">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
