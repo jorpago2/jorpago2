@@ -1,0 +1,76 @@
+﻿[
+    {
+        "name":  "Juan P. Martínez Pastor",
+        "role":  "Full Professor",
+        "research_line":  "LOWDIM / ABX3 / NEUROVIS",
+        "website":  "https://www.uv.es",
+        "linkedin":  "https://linkedin.com",
+        "orcid":  "https://orcid.org/0000-0003-3683-0578",
+        "avatar":  "https://ui-avatars.com/api/?name=JP\u0026background=0ea5e9\u0026color=fff\u0026size=128",
+        "category":  "Faculty"
+    },
+    {
+        "name":  "Albert Ferrando Cogollos",
+        "role":  "Full Professor",
+        "research_line":  "TOPIN / PHOTOT",
+        "website":  "https://www.uv.es",
+        "linkedin":  "https://linkedin.com",
+        "orcid":  "",
+        "avatar":  "https://ui-avatars.com/api/?name=AF\u0026background=6366f1\u0026color=fff\u0026size=128",
+        "category":  "Faculty"
+    },
+    {
+        "name":  "Isaac Suárez Álvarez",
+        "role":  "Full Professor",
+        "research_line":  "PHOTOT / NEUROVIS",
+        "linkedin":  "https://linkedin.com",
+        "orcid":  "",
+        "avatar":  "https://ui-avatars.com/api/?name=IS\u0026background=8b5cf6\u0026color=fff\u0026size=128",
+        "category":  "Faculty"
+    },
+    {
+        "name":  "Juan F. Sánchez Royo",
+        "role":  "Full Professor",
+        "research_line":  "LOWDIM / MAGMA",
+        "orcid":  "",
+        "avatar":  "https://ui-avatars.com/api/?name=JS\u0026background=ec4899\u0026color=fff\u0026size=128",
+        "category":  "Faculty"
+    },
+    {
+        "name":  "Alejandro Molina Sánchez",
+        "role":  "Associate Professor",
+        "research_line":  "MAGMA / TOPIN",
+        "website":  "https://molina-sanchez.com",
+        "linkedin":  "https://linkedin.com",
+        "orcid":  "",
+        "avatar":  "https://ui-avatars.com/api/?name=AM\u0026background=10b981\u0026color=fff\u0026size=128",
+        "category":  "Faculty"
+    },
+    {
+        "name":  "Rafael Abargues López",
+        "role":  "Tenured Professor",
+        "research_line":  "CHEMDO / ABX3",
+        "linkedin":  "https://linkedin.com",
+        "orcid":  "",
+        "avatar":  "https://ui-avatars.com/api/?name=RA\u0026background=f59e0b\u0026color=fff\u0026size=128",
+        "category":  "Faculty"
+    },
+    {
+        "name":  "Guillermo Muñoz Matutano",
+        "role":  "Ramon y Cajal",
+        "research_line":  "ArQuS / ABX3",
+        "linkedin":  "https://linkedin.com",
+        "orcid":  "",
+        "avatar":  "https://ui-avatars.com/api/?name=GM\u0026background=ef4444\u0026color=fff\u0026size=128",
+        "category":  "Faculty"
+    },
+    {
+        "name":  "Jorge Parra Gómez",
+        "role":  "Assistant Professor",
+        "research_line":  "PHOTOT / TOPIN",
+        "website":  "https://jorgeparra.com",
+        "orcid":  "",
+        "avatar":  "https://ui-avatars.com/api/?name=JP\u0026background=3b82f6\u0026color=fff\u0026size=128",
+        "category":  "Faculty"
+    }
+]
