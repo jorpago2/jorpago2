@@ -175,7 +175,7 @@ def additional_material(locale: str, doi: str) -> str:
 
 
 def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
-    body = visible_text(source)
+    body = visible_text(source).replace(" · ", ", ")
     lines = body.splitlines()
     heading = next((line[2:].strip() for line in lines if line.startswith("# ")), "")
     if not heading:
@@ -191,9 +191,14 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
             label = next((line[4:].strip() for line in section_lines if line.startswith("### ")), label)
         label = re.sub(r"^(?:fot[oóò]nica|photonics|electr[oóò]nica|electronics|materials|materiales)\s*[—–-]\s*", "", label, flags=re.I)
         topics.append(label)
-    has_review_subheading = [
-        bool(re.search(r"^### ", section, flags=re.M)) for section in topic_sections
-    ]
+    if len(topics) != 3 or any(not title or category.fullmatch(title) for title in topics):
+        raise ValueError("Expected a title for each of the three weekly reviews")
+    labels = {
+        "es": ("Todas las entradas", "Semana del", ("Fotónica", "Electrónica", "Materiales"), "También me ha llamado la atención"),
+        "en": ("All posts", "Week of", ("Photonics", "Electronics", "Materials"), "Also worth a look"),
+        "ca": ("Totes les entrades", "Setmana del", ("Fotònica", "Electrònica", "Materials"), "També m’ha cridat l’atenció"),
+    }
+    back, prefix, category_labels, mentions_label = labels[locale]
     lines = lines[next(i for i, line in enumerate(lines) if line.startswith("# ")) + 1 :]
     blocks = re.split(r"\n\s*\n", "\n".join(lines).strip())
     rendered = []
@@ -216,22 +221,23 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
         if section_number == 0 and re.search(r"\b(?:borrador|esborrany|draft)\b", text, re.I) and len(text) < 220:
             continue
         if text.startswith("### "):
-            if 1 <= section_number <= 3:
-                rendered.append(f'<h4 class="weekly-review-title">{inline(text[4:])}</h4>')
-                reference_position = len(rendered)
-            else:
-                rendered.append(f"<h4>{inline(text[4:])}</h4>")
+            if 1 <= section_number <= 3 and text[4:] == topics[section_number - 1]:
+                continue
+            rendered.append(f"<h4>{inline(text[4:])}</h4>")
         elif text.startswith("## "):
             if 1 <= section_number <= 3:
                 add_missing_reference()
                 rendered.append(additional_material(locale, dois[section_number - 1]))
+                rendered.append("</article>")
             section_number += 1
-            reference_position = len(rendered)
             if section_number == 4:
-                rendered.append(f'<section class="notes-mention"><h4>{inline(text[3:])}</h4>')
+                rendered.append(f'<section class="notes-mention"><h3>{html.escape(mentions_label)}</h3>')
             else:
-                css = ' class="weekly-review-title"' if not has_review_subheading[section_number - 1] else ""
-                rendered.append(f"<h3{css}>{inline(text[3:])}</h3>")
+                if section_number > 4:
+                    raise ValueError("Unexpected section after the weekly mentions")
+                rendered.append('<article class="weekly-review">')
+                rendered.append(f'<p class="eyebrow weekly-review-category">{category_labels[section_number - 1]}</p>')
+                rendered.append(f'<h3 class="weekly-review-title">{inline(topics[section_number - 1])}</h3>')
                 reference_position = len(rendered)
         elif text.startswith("- "):
             items = re.split(r"\s+-\s+", text[2:])
@@ -259,14 +265,9 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
                 continue
             css = ' class="note-meta"' if citation and candidate else ""
             rendered.append(f"<p{css}>{inline(text)}</p>")
-    if section_number == 4:
-        rendered.append("</section>")
-    labels = {
-        "es": ("Todas las entradas", "Semana del"),
-        "en": ("All posts", "Week of"),
-        "ca": ("Totes les entrades", "Setmana del"),
-    }
-    back, prefix = labels[locale]
+    if section_number != 4:
+        raise ValueError("Missing weekly mentions")
+    rendered.append("</section>")
     description = ", ".join(topics)
     locale_path = {"es": "/es/lecturas/", "en": "/blog/", "ca": "/va/lectures/"}[locale]
     months = {
@@ -279,7 +280,7 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
                   f"{prefix} {day.day} {'d’' if locale == 'ca' and month[0] in 'aeiou' else 'de '}{month} de {day.year}")
     fragment = (f'<div class="blog-edition"><p class="blog-back"><a href="/jorpago2{locale_path}">← {back}</a></p>'
                 f'<section class="notes-issue weekly-copy"><p class="eyebrow">{html.escape(date_label)}</p>'
-                f'<h3>{html.escape(heading)}</h3>\n' + "\n".join(rendered) + "\n</section></div>\n")
+                f'<h2 class="weekly-issue-title">{html.escape(heading)}</h2>\n' + "\n".join(rendered) + "\n</section></div>\n")
     return heading, description, fragment
 
 

@@ -114,10 +114,18 @@ test("weekly editions exist in every language with matching dates and alternates
       const html = await readFile(outputFileForPage(page, locale), "utf8");
       assert.ok(index.includes(`/${page.slug}/`));
       assert.equal((html.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
-      assert.match(html, /class="notes-mention"/);
-      const issueTitle = html.match(/class="notes-issue weekly-copy">[\s\S]*?<h3>([^<]+)<\/h3>/)?.[1];
-      const reviewTitles = [...html.matchAll(/<h[34] class="weekly-review-title">([^<]+)<\/h[34]>/g)]
-        .map((match) => match[1]);
+      const issueTitle = html.match(/<h2 class="weekly-issue-title">([^<]+)<\/h2>/)?.[1];
+      const reviews = [...html.matchAll(/<article class="weekly-review">([\s\S]*?)<\/article>/g)];
+      const mention = html.match(/<section class="notes-mention"><h3>[^<]+<\/h3>/);
+      assert.equal(reviews.length, 3);
+      assert.ok(mention && mention.index > reviews[2].index);
+      const reviewTitles = reviews.map(([, review], index) => {
+        const header = review.match(/^\s*<p class="eyebrow weekly-review-category">[^<]+<\/p>\s*<h3 class="weekly-review-title">([^<]+)<\/h3>\s*<p class="note-meta weekly-reference">\[(\d+)\]/);
+        assert.ok(header, `${locale.code}/${page.id} review ${index + 1} should use the common header`);
+        assert.equal(Number(header[2]), index + 1);
+        assert.equal((review.match(/class="paper-figure weekly-figure"/g) ?? []).length, 1);
+        return header[1];
+      });
       assert.ok(issueTitle, `${locale.code}/${page.id} should have a visible edition title`);
       assert.equal(new Set(reviewTitles).size, 3);
       assert.ok(!reviewTitles.includes(issueTitle), "Review titles should be distinct from the edition title");
@@ -338,7 +346,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=75/);
+  assert.match(html, /assets\/style\.css\?v=76/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);

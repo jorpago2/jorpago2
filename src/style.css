@@ -2360,7 +2360,7 @@ figcaption {
   background: color-mix(in srgb, var(--accent-soft) 30%, var(--surface));
   line-height: 1.7;
 }
-.notes-mention h4 { margin: .5rem 0; font-size: clamp(1.35rem, 2vw, 1.8rem); }
+.notes-mention :is(h3, h4) { margin: .5rem 0; font-size: clamp(1.35rem, 2vw, 1.8rem); }
 
 .paper-figure { margin: 0 0 1.5rem; }
 .paper-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: var(--surface); }
@@ -2461,16 +2461,25 @@ figcaption {
   line-height: 1.75;
 }
 
-.weekly-copy > h3:not(:first-of-type) {
-  margin: 2.5rem 0 1rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
-  font-size: clamp(1.35rem, 2vw, 1.8rem);
+.weekly-copy > .weekly-issue-title {
+  max-width: 46rem;
+  margin: .6rem 0 clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  line-height: 1.2;
 }
 
-.weekly-copy > h4 {
-  margin: 1rem 0;
-  font-size: clamp(1.2rem, 1.7vw, 1.5rem);
+.weekly-review {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.weekly-review + .weekly-review { margin-top: clamp(2rem, 4vw, 3rem); }
+.weekly-review-category { margin: 0 0 .45rem; }
+
+.weekly-review > .weekly-review-title {
+  margin: 0 0 .75rem;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: 1.2;
 }
 
 .weekly-figure {
@@ -2478,7 +2487,7 @@ figcaption {
   margin: 1.5rem auto;
 }
 
-.blog-edition .paper-figure {
+.blog-edition .note-body .paper-figure {
   min-width: 0;
   margin: 0;
 }
