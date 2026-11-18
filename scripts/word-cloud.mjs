@@ -47,7 +47,7 @@ export function renderBlogWordCloud(fragments, locale, strings) {
   const min = counts.at(-1)[1];
   const labels = counts.map(([word, count]) => {
     const level = max === min ? 3 : 1 + Math.round(4 * (count - min) / (max - min));
-    return `<li class="cloud-level-${level}"><span aria-label="${word}: ${count} ${strings.occurrences}">${word}</span></li>`;
+    return `<li class="cloud-level-${level}"><span aria-label="${word}, ${count} ${strings.occurrences}">${word}</span></li>`;
   }).join("\n");
   return `<section class="blog-word-cloud" aria-labelledby="word-cloud-title"><h3 id="word-cloud-title">${strings.title}</h3><p>${strings.description}</p><ul class="word-cloud">${labels}</ul></section>`;
 }

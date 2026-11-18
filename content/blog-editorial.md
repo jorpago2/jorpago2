@@ -8,3 +8,4 @@
 - Keep the English, Spanish and Valencian versions consistent. Attribute article figures and verify their reuse licences.
 - Explain basic concepts in the text. Reserve supplementary links for novel methods, results and directly relevant coverage. Identify the source and label links in another language.
 - Use discourse connectors to make the logical relationship between sentences and paragraphs clear. Choose them for their meaning and keep them natural.
+- Do not use colons in blog prose, headlines or figure captions. Restructure sentences to keep the prose natural.
