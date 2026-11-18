@@ -37,7 +37,7 @@ export function weeklyPosts(pages) {
   return posts.sort((a, b) => b.weekStart.localeCompare(a.weekStart));
 }
 
-function weeklyCard(post, locale, strings, pageRoute, articles, featured = false) {
+function weeklyCard(post, locale, strings, pageRoute, articles, { featured = false, heading = "h4" } = {}) {
   const article = articles[post.coverDoi];
   const figure = article?.figure;
   if (!figure) throw new Error(`Missing cover figure for ${post.id}`);
@@ -55,11 +55,16 @@ function weeklyCard(post, locale, strings, pageRoute, articles, featured = false
     </figure>
     <div class="blog-card-copy">
       <p class="note-meta"><time datetime="${post.weekStart}">${escapeHtml(date)}</time></p>
-      <h4><a href="${url}">${escapeHtml(post.title)}</a></h4>
+      <${heading}><a href="${url}">${escapeHtml(post.title)}</a></${heading}>
       <p>${escapeHtml(post.description)}</p>
       <a class="${featured ? "button primary" : "blog-card-read"}" href="${url}">${escapeHtml(strings.read)} →</a>
     </div>
   </article>`;
+}
+
+export function renderHomeBlogCard(pages, locale, strings, pageRoute, articles) {
+  const [latest] = weeklyPosts(pages);
+  return latest ? weeklyCard(latest, locale, strings, pageRoute, articles, { heading: "h3" }) : "";
 }
 
 export function renderBlogFrontPage(pages, locale, strings, pageRoute, articles) {
@@ -69,7 +74,7 @@ export function renderBlogFrontPage(pages, locale, strings, pageRoute, articles)
     throw new Error(`Missing blog archive strings for ${locale.code}.`);
   }
   const featured = `<h3 id="blog-latest">${escapeHtml(strings.latest)}</h3>
-  <div class="blog-cards">${weeklyCard(latest, locale, strings, pageRoute, articles, true)}</div>`;
+  <div class="blog-cards">${weeklyCard(latest, locale, strings, pageRoute, articles, { featured: true })}</div>`;
   if (!posts.length) return { featured, archive: "" };
   const cards = posts.map((post) => weeklyCard(post, locale, strings, pageRoute, articles)).join("\n");
   const archive = `<section class="blog-archive" aria-labelledby="blog-archive-title">

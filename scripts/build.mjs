@@ -1,6 +1,6 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { renderBlogFrontPage } from "./blog-archive.mjs";
+import { renderBlogFrontPage, renderHomeBlogCard } from "./blog-archive.mjs";
 
 const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
@@ -365,7 +365,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=80">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=81">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -556,6 +556,12 @@ async function main() {
       let content = redirect
         ? ""
         : renderSharedContent(page.id, fragment, bundle.locale.code, bundle.strings, sharedData);
+      if (page.id === "home") {
+        const card = renderHomeBlogCard(
+          bundle.pages, bundle.locale, bundle.strings.blogArchive, route, sharedData.weeklyResearch.articles,
+        );
+        content = content.replace("<!-- HOME_BLOG_FEATURED -->", card);
+      }
       if (page.id === "research-notes") {
         const { featured, archive } = renderBlogFrontPage(
           bundle.pages, bundle.locale, bundle.strings.blogArchive, route, sharedData.weeklyResearch.articles,

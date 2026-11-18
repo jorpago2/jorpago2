@@ -82,6 +82,13 @@ test("the blog leads with a feature and lists previous editions without the pilo
     const pilotUrl = `${base}${byId.get("post-light-memory").slug}/`;
     const latest = [...byId.values()].filter((page) => page.weekStart)
       .sort((a, b) => b.weekStart.localeCompare(a.weekStart))[0];
+    const home = await readFile(outputFileForPage(byId.get("home"), locale), "utf8");
+    const homeBlog = home.match(/<section class="home-reading"[^>]*>([\s\S]*?)<\/section>/);
+    assert.ok(homeBlog && homeBlog.index < home.indexOf('class="home-updates"'));
+    assert.equal((homeBlog[1].match(/<article class="blog-card">/g) ?? []).length, 1);
+    assert.ok(homeBlog[1].includes(`<h3><a href="${base}${latest.slug}/">`));
+    assert.ok(homeBlog[1].includes(`class="home-reading-archive" href="${blogUrl}"`));
+    assert.ok(homeBlog[1].includes(`<time datetime="${latest.weekStart}">`));
     const cards = [...index.matchAll(/<article class="blog-card(?: blog-card-feature)?">[\s\S]*?<\/article>/g)];
     assert.equal(cards.length, 46);
     assert.match(cards[0][0], /class="blog-card blog-card-feature"/);
@@ -352,7 +359,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=80/);
+  assert.match(html, /assets\/style\.css\?v=81/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);
