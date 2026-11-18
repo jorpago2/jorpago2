@@ -2374,8 +2374,24 @@ figcaption {
   background: var(--surface);
 }
 .blog-card-figure { min-width: 0; margin: 0; }
-.blog-card-figure img { width: 100%; height: auto; border: 1px solid var(--line); }
+/* Frame the chip photograph in panel 2c of Lam and colleagues' figure 2. */
+.blog-card-figure > a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 272 / 205;
+  background: var(--canvas);
+}
+.blog-card-figure img {
+  position: absolute;
+  top: -190.24%;
+  left: -151.84%;
+  width: 251.84%;
+  max-width: none;
+  height: auto;
+}
 .blog-card-figure figcaption { margin-top: .5rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
+.blog-card-figure figcaption a[href*="creativecommons.org"] { white-space: nowrap; }
 .blog-card-copy { min-width: 0; }
 .blog-card-copy .note-meta { margin: 0 0 .8rem; }
 .blog-card h4 { margin: 0 0 1rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.45rem, 2vw, 1.9rem); font-weight: 700; letter-spacing: -.025em; line-height: 1.16; }
