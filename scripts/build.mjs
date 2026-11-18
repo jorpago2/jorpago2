@@ -1,6 +1,5 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { renderBlogWordCloud } from "./word-cloud.mjs";
 import { renderBlogFrontPage } from "./blog-archive.mjs";
 
 const SITE_BASE_PATH = "/jorpago2";
@@ -366,7 +365,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=73">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=74">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -541,9 +540,6 @@ async function main() {
   await cp(socialImagePath, path.join(OUTPUT_ROOT, "assets", "og.png"));
 
   for (const bundle of localeBundles) {
-    const postFragments = await Promise.all(bundle.pages.filter((page) => page.id.startsWith("post-") && !mergedRoutes[page.id])
-      .map((page) => readFile(path.join(bundle.localeRoot, `${page.id}.html`), "utf8")));
-    const wordCloud = renderBlogWordCloud(postFragments, bundle.locale.code, bundle.strings.wordCloud);
     const localeOutputRoot = bundle.locale.path
       ? path.join(OUTPUT_ROOT, bundle.locale.path)
       : OUTPUT_ROOT;
@@ -565,7 +561,6 @@ async function main() {
           bundle.pages, bundle.locale, bundle.strings.blogArchive, route, sharedData.weeklyResearch.articles,
         );
         content = content.replace("<!-- BLOG_FEATURED -->", featured)
-          .replace("<!-- BLOG_WORD_CLOUD -->", wordCloud)
           .replace("<!-- BLOG_ARCHIVE -->", archive);
       }
       await writeFile(

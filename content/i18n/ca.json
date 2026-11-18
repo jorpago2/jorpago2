@@ -56,10 +56,5 @@
     "latest": "Última entrada",
     "figure": "Enquadrament de la figura",
     "read": "Llegir la selecció"
-  },
-  "wordCloud": {
-    "title": "Núvol de paraules",
-    "description": "Les paraules que més apareixen en les entrades del blog. La mida n’indica la freqüència.",
-    "occurrences": "aparicions"
   }
 }

@@ -2404,18 +2404,7 @@ figcaption {
 .blog-post-header h2 { margin: .5rem 0 1rem; font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1.08; }
 .blog-post-content { margin: 2.5rem 0 3rem; }
 .blog-post-content .paper-figure { margin-bottom: 2rem; }
-.blog-word-cloud { margin-top: clamp(3rem, 6vw, 5rem); padding: 2rem 0; border-top: 1px solid var(--line); }
-.blog-word-cloud h3 { margin: 0 0 .5rem; font-size: clamp(1.5rem, 3vw, 2rem); }
-.blog-word-cloud > p { color: var(--muted); max-width: 42rem; line-height: 1.6; }
-.word-cloud { display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem 1.2rem; max-width: 62rem; padding: 1rem 0; margin: 0; list-style: none; }
-.word-cloud li { line-height: 1.25; color: var(--muted); overflow-wrap: anywhere; }
-.word-cloud .cloud-level-1 { font-size: 1rem; }
-.word-cloud .cloud-level-2 { font-size: 1.25rem; }
-.word-cloud .cloud-level-3 { font-size: 1.55rem; color: var(--ink); }
-.word-cloud .cloud-level-4 { font-size: 1.9rem; color: var(--accent); }
-.word-cloud .cloud-level-5 { font-size: 2.25rem; font-weight: 700; color: var(--accent); }
-
-.blog-archive { padding-top: 1.75rem; border-top: 1px solid var(--line); }
+.blog-archive { margin-top: clamp(2rem, 4vw, 3rem); padding-top: 1.75rem; border-top: 1px solid var(--line); }
 .blog-archive h3 { margin: 0 0 1.5rem; font-size: clamp(1.5rem, 3vw, 2rem); }
 .blog-archive .blog-cards { gap: clamp(1.5rem, 3vw, 2.25rem); }
 .blog-archive .blog-card { grid-template-rows: auto 1fr; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }

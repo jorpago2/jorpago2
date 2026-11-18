@@ -2,7 +2,6 @@ import assert from "node:assert/strict";
 import { access, readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
-import { countBlogWords } from "../scripts/word-cloud.mjs";
 
 const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
@@ -88,8 +87,9 @@ test("the blog leads with a feature and lists previous editions without the pilo
     assert.match(cards[0][0], /class="blog-card blog-card-feature"/);
     assert.equal(cards.filter(([card]) => card.includes("blog-card-feature")).length, 1);
     assert.ok(cards[0][0].includes(`href="${base}${latest.slug}/"`));
-    assert.ok(cards[0].index < index.indexOf('id="word-cloud-title"'));
-    assert.ok(cards[1].index > index.indexOf('id="blog-archive-title"'));
+    const archiveTitleIndex = index.indexOf('id="blog-archive-title"');
+    assert.ok(cards[0].index < archiveTitleIndex && archiveTitleIndex < cards[1].index);
+    assert.doesNotMatch(index, /blog-word-cloud|BLOG_WORD_CLOUD/);
     assert.doesNotMatch(index, /<details\b/);
     assert.ok(!index.includes(`href="${pilotUrl}"`));
     assert.ok(pilot.includes(`http-equiv="refresh" content="0; url=${blogUrl}"`));
@@ -134,14 +134,6 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.doesNotMatch(html, /BORRADOR DE TRADUCCIÓN AUTOMÁTICA|NO PUBLICAR/);
     }
   }
-});
-
-test("word cloud counts article prose and excludes captions and common words", () => {
-  const fragment = `<article><h4>Memoria de luz</h4><figure><figcaption>memoria memoria</figcaption></figure><p>La <a href="/">luz</a> y la memoria. Luz y memoria.</p><a class="note-link" href="/">memoria</a></article>`;
-  const counts = new Map(countBlogWords([fragment], "es"));
-  assert.equal(counts.get("memoria"), 3);
-  assert.equal(counts.get("luz"), 3);
-  assert.equal(counts.has("para"), false);
 });
 
 test("locale sources keep shared strings separate from page content", async () => {
@@ -346,7 +338,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=73/);
+  assert.match(html, /assets\/style\.css\?v=74/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);

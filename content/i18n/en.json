@@ -56,10 +56,5 @@
     "latest": "Latest post",
     "figure": "Detail from figure",
     "read": "Read the selection"
-  },
-  "wordCloud": {
-    "title": "Word cloud",
-    "description": "Words that appear most often in blog posts. Size reflects frequency.",
-    "occurrences": "occurrences"
   }
 }

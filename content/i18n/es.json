@@ -56,10 +56,5 @@
     "latest": "Última entrada",
     "figure": "Encuadre de la figura",
     "read": "Leer la selección"
-  },
-  "wordCloud": {
-    "title": "Nube de palabras",
-    "description": "Las palabras que más aparecen en las entradas del blog. El tamaño indica su frecuencia.",
-    "occurrences": "apariciones"
   }
 }
