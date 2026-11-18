@@ -26,8 +26,13 @@ METADATA = DATA["articles"]
 INSTITUTIONS = DATA["institutions"]
 COUNTRIES = {
     "AU": ("Australia", "Australia", "Austràlia"), "CN": ("China", "China", "Xina"),
+    "BE": ("Bélgica", "Belgium", "Bèlgica"), "CA": ("Canadá", "Canada", "Canadà"),
+    "CH": ("Suiza", "Switzerland", "Suïssa"), "GB": ("Reino Unido", "United Kingdom", "Regne Unit"),
     "DE": ("Alemania", "Germany", "Alemanya"), "HK": ("Hong Kong, China", "Hong Kong, China", "Hong Kong, Xina"),
+    "JP": ("Japón", "Japan", "Japó"), "NO": ("Noruega", "Norway", "Noruega"),
     "KR": ("Corea del Sur", "South Korea", "Corea del Sud"), "PT": ("Portugal", "Portugal", "Portugal"),
+    "SA": ("Arabia Saudí", "Saudi Arabia", "Aràbia Saudita"), "SE": ("Suecia", "Sweden", "Suècia"),
+    "SG": ("Singapur", "Singapore", "Singapur"), "TW": ("Taiwán", "Taiwan", "Taiwan"),
     "US": ("Estados Unidos", "United States", "Estats Units"),
 }
 ARTICLE_DOI = re.compile(r"10\.\d{4,9}/[\w.-]+", re.I)

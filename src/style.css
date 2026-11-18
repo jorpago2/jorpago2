@@ -2361,6 +2361,8 @@ figcaption {
   line-height: 1.7;
 }
 .notes-mention :is(h3, h4) { margin: .5rem 0; font-size: clamp(1.35rem, 2vw, 1.8rem); }
+.notes-mention ul { list-style: none; padding-inline-start: 0; }
+.notes-mention li + li { margin-block-start: 1rem; }
 
 .paper-figure { margin: 0 0 1.5rem; }
 .paper-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: var(--surface); }

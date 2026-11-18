@@ -1,168 +1,18 @@
 {
-  "2026-01-07": {
-    "es": "En una guía óptica suele interesar que la luz cambie lo menos posible mientras avanza. En cambio, el sensor y el dispositivo de telurio de esta semana dependen de que podamos medir cómo cambia su respuesta, ya sea al girar la polarización o al acercarse a una tensión umbral.",
-    "en": "In an optical waveguide, the less the light changes as it travels, the better. This week's sensor and tellurium device depend on changes we can measure, whether they come from rotating the polarization or approaching a threshold voltage.",
-    "ca": "En una guia òptica sol interessar que la llum canvie tan poc com siga possible mentre avança. En canvi, el sensor i el dispositiu de tel·luri d’esta setmana depenen del fet que puguem mesurar com canvia la resposta, ja siga en girar la polarització o en acostar-nos a una tensió llindar."
-  },
-  "2026-01-14": {
-    "es": "Para que dos fotones interfieran, no basta con que lleguen a tiempo. También importa que se parezcan, del mismo modo que en las otras dos lecturas los detalles de fabricación importan tanto como el material elegido, desde el tratamiento térmico de una memoria hasta el tamaño de los poros del oro.",
-    "en": "For two photons to interfere, arriving on time is only part of the problem. They also need to be alike. In the other two readings, fabrication matters just as much as the choice of material, from the heat treatment of a memory to the size of the pores in gold.",
-    "ca": "Si dos fotons han d’interferir, no basta que arriben a temps. També cal que s’assemblen, de la mateixa manera que en les altres dos lectures els detalls de fabricació importen tant com el material triat, des del tractament tèrmic d’una memòria fins a la grandària dels porus de l’or."
-  },
-  "2026-01-21": {
-    "es": "En el primer trabajo, una lámina sobre un detector permite reconstruir el espectro a partir de lo que mide cada píxel. En los otros dos, la orientación resulta decisiva a otra escala, ya sea para que los primeros dominios de MoS₂ se alineen o para cambiar lo que sucede en la unión entre dos cristales.",
-    "en": "In the first study, a film over a detector lets the researchers reconstruct a spectrum from individual pixel readings. In the other two, orientation matters at a different scale, either to align the first domains of MoS₂ or to change what happens where two crystals meet.",
-    "ca": "En el primer treball, una làmina damunt d’un detector permet reconstruir l’espectre a partir del que mesura cada píxel. En els altres dos, l’orientació és decisiva a una altra escala, ja siga per a alinear els primers dominis de MoS₂ o per a canviar el que passa en la unió entre dos cristalls."
-  },
   "2026-01-28": {
     "es": "La luz que vuelve hacia un láser puede desestabilizarlo, mientras que las fluctuaciones de una memoria, aunque también puedan estorbar, dan pistas sobre su estructura. Entre ambas lecturas, una fotosinapsis aprovecha una señal que a menudo se descarta al registrar una imagen, la orientación de la polarización.",
     "en": "Light reflected back into a laser can destabilize it, while fluctuations in a memory, troublesome as they may be, offer clues to its structure. Between those readings, a photosynapse uses information often discarded when taking an image, the orientation of the polarization.",
     "ca": "La llum que torna cap a un làser pot desestabilitzar-lo, mentre que les fluctuacions d’una memòria, encara que també puguen destorbar, donen pistes sobre la seua estructura. Entre les dos lectures, una fotosinapsi aprofita una informació que sovint es descarta quan es registra una imatge, l’orientació de la polarització."
-  },
-  "2026-02-04": {
-    "es": "Una estructura fotónica puede favorecer el intercambio de energía entre la luz y un material magnético. Las otras lecturas trasladan la cuestión al diseño de dispositivos y muestran qué se gana al acercar la detección y la memoria, o al controlar con más finura los estados de un ferroeléctrico.",
-    "en": "A photonic structure can strengthen the exchange of energy between light and a magnetic material. The other readings take us into device design and ask what we gain by bringing sensing and memory closer together or by controlling the states of a ferroelectric more finely.",
-    "ca": "Una estructura fotònica pot afavorir l’intercanvi d’energia entre la llum i un material magnètic. Les altres lectures traslladen la qüestió al disseny de dispositius i mostren què es guanya en acostar la detecció i la memòria, o en controlar amb més precisió els estats d’un ferroelèctric."
-  },
-  "2026-02-18": {
-    "es": "El ritmo de la respuesta importa tanto como su resultado. Lo vemos en una superficie que revela una imagen poco a poco y en una neurona artificial que necesita que su memoria se desvanezca, mientras que en el dióxido de vanadio la medida eléctrica y la recuperación del cristal muestran partes distintas de la transición.",
-    "en": "How quickly a response unfolds can matter as much as its outcome. A surface reveals an image little by little, and an artificial neuron needs its memory to fade. In vanadium dioxide, electrical measurements and the recovery of the crystal reveal different parts of the transition.",
-    "ca": "El ritme de la resposta importa tant com el resultat. Ho veiem en una superfície que revela una imatge a poc a poc i en una neurona artificial que necessita que la memòria s’esvaïsca, mentre que en el diòxid de vanadi la mesura elèctrica i la recuperació del cristall mostren parts diferents de la transició."
-  },
-  "2026-02-25": {
-    "es": "Una cavidad sin ganancia puede mostrar una evolución parecida a la del arranque de un láser. El parecido se entiende mirando cómo cambia la señal, una precaución que también conviene al estudiar una memoria sensible al ritmo de los pulsos o un detector cuya lectura depende de dónde se coloca la muestra.",
-    "en": "A cavity without gain can show a signal that evolves much like a laser during startup. The resemblance becomes clear when we follow the signal, a useful precaution when studying a memory sensitive to the timing of pulses or a detector whose reading depends on where the sample sits.",
-    "ca": "Una cavitat sense guany pot mostrar una evolució semblant a la de l’arrancada d’un làser. La semblança s’entén mirant com canvia el senyal, una precaució que també convé en estudiar una memòria sensible al ritme dels polsos o un detector que dona una lectura diferent segons on es col·loca la mostra."
-  },
-  "2026-03-04": {
-    "es": "Una red óptica puede diseñarse a partir de la transformación que queremos que haga, dejando que el cálculo encuentre por dónde debe pasar la luz. Las otras lecturas miran dentro del material y siguen el desplazamiento de iones en una fotosinapsis y la asimetría que una perovskita transmite a una molécula.",
-    "en": "An optical network can be designed around the transformation we want it to perform, leaving the calculation to work out where the light should go. The other readings look inside the material, following ion motion in a photosynapse and the asymmetry a perovskite passes on to a molecule.",
-    "ca": "Una xarxa òptica es pot dissenyar a partir de la transformació que volem que faça, deixant que el càlcul trobe per on ha de passar la llum. Les altres lectures miren dins del material i seguixen el desplaçament dels ions en una fotosinapsi i l’asimetria que una perovskita transmiteix a una molècula."
-  },
-  "2026-03-11": {
-    "es": "La corriente que se desvía por una celda vecina parece un detalle menor hasta que se intenta leer una matriz de memorias. Esta semana vemos cómo un memristor puede atajar ese problema y cómo, en otros dispositivos, la respuesta del propio material permite cambiar una operación óptica o reorientar una polarización.",
-    "en": "Current leaking through a neighboring cell seems like a minor detail until you try to read an array of memories. This week we look at how a memristor can address that problem and how the material itself can also help change an optical operation or redirect a polarization.",
-    "ca": "El corrent que es desvia per una cel·la veïna sembla un detall menor fins que s’intenta llegir una matriu de memòries. Esta setmana veiem com un memristor pot reduir eixe problema i com, en altres dispositius, la resposta del material permet canviar una operació òptica o reorientar una polarització."
-  },
-  "2026-03-18": {
-    "es": "La posición de una capa puede decidir qué excitaciones alcanza la luz o hacia dónde pueden moverse las vacantes de oxígeno. La tercera lectura lleva esa atención al interior de un cristal, donde un pulso láser modifica una región pequeña sin tener que dibujar primero en la superficie.",
-    "en": "Where a layer sits can determine which excitations the light reaches or where oxygen vacancies can move. The third reading takes us inside a crystal, where a laser pulse modifies a small region without first having to pattern the surface.",
-    "ca": "La posició d’una capa pot decidir a quines excitacions arriba la llum o cap a on es poden moure les vacants d’oxigen. La tercera lectura ens porta a l’interior d’un cristall, on un pols làser modifica una regió menuda sense haver de dibuixar primer en la superfície."
-  },
-  "2026-04-01": {
-    "es": "Cambiar la respuesta de una película con un pulso y reunir señales luminosas en una neurona de nanohilos son dos maneras de hacer que la luz intervenga en un dispositivo. La tercera lectura plantea una pregunta de fabricación, qué ocurre con un anillo de silicio cuando se introduce oro en él.",
-    "en": "A pulse can change how a film responds, and a nanowire neuron can bring several light signals together. The third reading asks a fabrication question that is easy to overlook, what happens to a silicon ring when gold is implanted in it?",
-    "ca": "Canviar la resposta d’una pel·lícula amb un pols i reunir senyals lluminosos en una neurona de nanofils són dos maneres de fer que la llum intervinga en un dispositiu. La tercera lectura planteja una pregunta de fabricació, què li passa a un anell de silici quan s’hi introdueix or?"
-  },
-  "2026-04-08": {
-    "es": "Que un chip pueda hacer operaciones con luz es solo una parte del problema si queremos usarlo con una red neuronal real. Las otras lecturas se ocupan de dos dificultades igual de concretas, cómo reunir varias funciones en una interfaz de óxidos y cómo conservar un ajuste óptico sin perder demasiada luz.",
-    "en": "Doing arithmetic with light addresses only part of the problem if the chip is to work with a real neural network. The other readings tackle two equally concrete challenges, combining several functions in an oxide interface and retaining an optical setting without losing too much light.",
-    "ca": "Que un xip puga fer operacions amb llum és només una part del problema si volem usar-lo amb una xarxa neuronal real. Les altres lectures tracten dos dificultats igualment concretes, com reunir diverses funcions en una interfície d’òxids i com conservar un ajust òptic sense perdre massa llum."
-  },
-  "2026-04-15": {
-    "es": "Una misma celda puede imitar una neurona o una sinapsis según cómo se controle con luz, mientras que una máquina de Ising aprovecha las fluctuaciones de un imán para explorar soluciones. La tercera lectura retrocede un paso, hasta la disolución en la que un polímero puede cambiar el crecimiento de una perovskita.",
-    "en": "The same cell can mimic a neuron or a synapse depending on how it is controlled with light, while an Ising machine uses a magnet's fluctuations to explore solutions. The third reading takes a step back to the solution in which a polymer can change how a perovskite grows.",
-    "ca": "Una mateixa cel·la pot imitar una neurona o una sinapsi segons com es controle amb llum, mentre que una màquina d’Ising aprofita les fluctuacions d’un imant per a explorar solucions. La tercera lectura fa un pas arrere, fins a la dissolució en què un polímer pot canviar el creixement d’una perovskita."
-  },
-  "2026-04-22": {
-    "es": "Que una lente enfoque cada color a una altura diferente puede ser útil cuando lo que queremos medir es la posición de una superficie. La luz también interviene en los otros estudios, al modificar la respuesta que identifica un circuito y al poner a prueba un óxido que incorpora oro entre sus capas.",
-    "en": "A lens that brings each color into focus at a different height can be useful when we want to locate a surface. Light also plays a part in the other studies, changing the response used to identify a circuit and testing an oxide with gold between its layers.",
-    "ca": "Que una lent enfoque cada color a una altura diferent pot ser útil quan volem mesurar la posició d’una superfície. La llum també intervé en els altres estudis, quan modifica la resposta que identifica un circuit i quan posa a prova un òxid que incorpora or entre les capes."
-  },
-  "2026-05-13": {
-    "es": "Una guía de MoS₂ puede hacer algo más que llevar luz de un punto a otro, mientras que una fotosinapsis puede responder de forma distinta según el color que recibe. La última lectura mira qué cambia dentro de otro material cuando un campo eléctrico ordena parte de su estructura.",
-    "en": "A MoS₂ waveguide can do more than carry light from one place to another, while a photosynapse can respond differently depending on the color it receives. The last reading looks inside another material to see what changes when an electric field orders part of its structure.",
-    "ca": "Una guia de MoS₂ pot fer més que portar llum d’un punt a un altre, mentre que una fotosinapsi pot respondre de manera diferent segons el color que rep. L’última lectura mira què canvia dins d’un altre material quan un camp elèctric ordena part de la seua estructura."
-  },
-  "2026-05-20": {
-    "es": "Hay ajustes que interesa conservar después de retirar la señal que los produjo, tanto en un circuito fotónico ya fabricado como en una memoria que aprovecha ondas de densidad de carga. La tercera lectura se fija en un cambio que se decide antes, al preparar una interfaz orgánica que aumenta la respuesta óptica no lineal.",
-    "en": "Some settings are worth keeping once the signal that set them is gone, whether in a fabricated photonic circuit or in a memory that uses charge-density waves. The third reading looks at a change made earlier, when an organic interface is prepared to strengthen the nonlinear optical response.",
-    "ca": "Hi ha ajustos que interessa conservar després de retirar el senyal que els ha produït, tant en un circuit fotònic ja fabricat com en una memòria que aprofita ones de densitat de càrrega. La tercera lectura es fixa en un canvi que es decideix abans, en preparar una interfície orgànica que augmenta la resposta òptica no lineal."
-  },
-  "2026-05-27": {
-    "es": "El primer estudio empieza por la respuesta que debería dar un circuito y busca después la geometría capaz de producirla. En los otros dos, una neurona de dióxido de vanadio adapta su actividad y una capa de moléculas dentro de un microláser participa en la respuesta de la cavidad.",
-    "en": "The first study starts with the response a circuit should produce and then looks for a geometry that can deliver it. In the other two, a vanadium dioxide neuron adapts its activity and a molecular layer inside a microlaser takes part in the cavity's response.",
-    "ca": "El primer estudi comença per la resposta que hauria de donar un circuit i busca després la geometria capaç de produir-la. En els altres dos, una neurona de diòxid de vanadi adapta la seua activitat i una capa de molècules dins d’un microlàser participa en la resposta de la cavitat."
-  },
-  "2026-06-03": {
-    "es": "Las guías de nitruro de silicio se suelen asociar con el transporte de luz, pero esta semana las vemos trabajar con pulsos intensos. Además, una memoria de zirconato de calcio guarda información en su resistencia y una perovskita permite observar qué cambia en la emisión cuando muchos emisores responden juntos.",
-    "en": "Silicon nitride waveguides are usually associated with carrying light, but this week we see them handle intense pulses. A calcium zirconate memory also stores information in its resistance, and a perovskite lets us see how emission changes when many emitters respond together.",
-    "ca": "Les guies de nitrur de silici se solen associar amb el transport de llum, però esta setmana les veiem treballar amb polsos intensos. A més, una memòria de zirconat de calci guarda informació en la seua resistència i una perovskita permet observar què canvia en l’emissió quan molts emissors responen junts."
-  },
-  "2026-06-10": {
-    "es": "Un peine óptico permite repartir la generación de señales caóticas entre muchos canales. El control se ejerce de otra manera en las otras dos lecturas, donde la estructura atómica condiciona el comportamiento de un transistor de nitruro de galio y un imán de tres capas permite sintonizar ondas de espín.",
-    "en": "An optical comb can spread the generation of chaotic signals across many channels. The other readings show two quite different kinds of control, with atomic structure shaping the behavior of a gallium nitride transistor and a three-layer magnet providing a way to tune spin waves.",
-    "ca": "Una pinta òptica permet repartir la generació de senyals caòtics entre molts canals. El control s’exerceix d’una altra manera en les altres dos lectures, on l’estructura atòmica condiciona el comportament d’un transistor de nitrur de gal·li i un imant de tres capes permet sintonitzar ones d’espín."
-  },
-  "2026-06-17": {
-    "es": "Para orientar varios haces de radio, el primer equipo recurre a un circuito fotónico. En la segunda lectura la propia luz hace que un transistor adopte tres niveles de respuesta, y en la tercera la pregunta es cuánto tiempo puede quedar registrada en una perovskita la orientación del espín.",
-    "en": "To steer several radio beams, the first team turns to a photonic circuit. In the second reading, light itself gives a transistor three levels of response, while the third asks how long a perovskite can retain information about spin orientation.",
-    "ca": "Per a orientar diversos feixos de ràdio, el primer equip recorre a un circuit fotònic. En la segona lectura, la llum fa que un transistor adopte tres nivells de resposta, i en la tercera la pregunta és quant de temps pot quedar registrada en una perovskita l’orientació de l’espín."
   },
   "2026-07-08": {
     "es": "Hay una diferencia entre medir la polarización que llega a un chip y preparar la que queremos enviar, aunque un mismo circuito pueda hacer ambas cosas. También miramos qué trabajo puede asumir un solo memristor durante el aprendizaje y qué cambia al reducir los defectos durante el crecimiento de una perovskita.",
     "en": "Measuring the polarization that arrives at a chip and preparing the one we want to send are different tasks, even if a single circuit can handle both. We also look at what one memristor can do during learning and what changes when fewer defects form as a perovskite grows.",
     "ca": "Hi ha una diferència entre mesurar la polarització que arriba a un xip i preparar la que volem enviar, encara que un mateix circuit puga fer les dos coses. També mirem quina faena pot assumir un sol memristor durant l’aprenentatge i què canvia en reduir els defectes durant el creixement d’una perovskita."
   },
-  "2026-07-15": {
-    "es": "Los anillos de silicio suelen asociarse con filtrar luz, aunque combinados también pueden participar en operaciones aritméticas. Esa distancia entre el material y la función reaparece en dos transistores hechos con un mismo semiconductor flexible y en un vidrio molecular que responde tanto a la luz como a un campo eléctrico.",
-    "en": "Silicon rings are often used to filter light, but in combination they can also take part in arithmetic operations. The distance between material and function comes up again in two types of transistor made with the same flexible semiconductor and in a molecular glass that responds to both light and an electric field.",
-    "ca": "Els anells de silici se solen associar amb filtrar llum, encara que, combinats, també poden participar en operacions aritmètiques. Eixa distància entre el material i la funció reapareix en dos tipus de transistor fets amb un mateix semiconductor flexible i en un vidre molecular que respon tant a la llum com a un camp elèctric."
-  },
-  "2026-07-22": {
-    "es": "Una guía hueca suele recibir luz por un extremo. Esta semana vemos qué permite hacer un acceso lateral y, ya en electrónica y materiales, cómo una matriz de memristores puede ayudar a distinguir idiomas y cómo la luz interviene en una memoria de seleniuro de indio.",
-    "en": "A hollow waveguide usually takes in light at one end. This week we look at what becomes possible when light can enter from the side, then turn to a memristor array that helps distinguish languages and an indium selenide memory activated by light.",
-    "ca": "Una guia buida sol rebre llum per un extrem. Esta setmana veiem què permet fer un accés lateral i, ja en electrònica i materials, com una matriu de memristors pot ajudar a distingir idiomes i com intervé la llum en una memòria de seleniur d’indi."
-  },
-  "2026-07-29": {
-    "es": "El borde de una estructura puede convertirse en el camino por el que viaja una excitación, y en un cristal anisótropo la dirección también decide por dónde se propagan los plasmones. Entre esos dos trabajos, una red de microondas explora qué parte del procesamiento de una señal puede hacerse a medida que llega.",
-    "en": "The edge of a structure can become a path for an excitation, and in an anisotropic crystal, direction can also determine where plasmons travel. Between those two studies, a microwave network explores how much signal processing can happen as the signal arrives.",
-    "ca": "La vora d’una estructura pot convertir-se en el camí per on viatja una excitació, i en un cristall anisòtrop la direcció també decideix per on es propaguen els plasmons. Entre eixos dos treballs, una xarxa de microones explora quina part del processament d’un senyal es pot fer a mesura que arriba."
-  },
-  "2026-08-05": {
-    "es": "Las reflexiones dentro de una guía dan a un espectrómetro más caminos de interferencia con los que distinguir señales próximas. Además, una memoria de óxido de zinc ayuda a seguir el movimiento y, en unas láminas de WTe₂, la polarización ferroeléctrica deja una huella en la respuesta Hall.",
-    "en": "Reflections inside a waveguide give a spectrometer more interference paths with which to distinguish closely spaced signals. A zinc oxide memory also helps track movement, and in sheets of WTe₂, ferroelectric polarization leaves a signature in the Hall response.",
-    "ca": "Les reflexions dins d’una guia donen a un espectròmetre més camins d’interferència amb què distingir senyals pròxims. A més, una memòria d’òxid de zinc ajuda a seguir el moviment i, en unes làmines de WTe₂, la polarització ferroelèctrica deixa una empremta en la resposta Hall."
-  },
-  "2026-08-12": {
-    "es": "La luz cumple tres funciones distintas en esta edición. Sirve para generar una señal de radio por encima de los cien gigahercios, permite distinguir el ultravioleta de una llama y revela cómo cambia la propagación de ondas de carga en el grafeno cuando se pone en contacto con un ferroeléctrico.",
-    "en": "Light does three different jobs in this edition. It helps generate a radio signal above 100 gigahertz, pick out the ultraviolet light from a flame, and reveal how charge waves in graphene propagate differently when it is brought into contact with a ferroelectric.",
-    "ca": "La llum fa tres funcions diferents en esta edició. Serveix per a generar un senyal de ràdio per damunt dels cent gigahertzs, permet distingir l’ultraviolat d’una flama i revela com canvia la propagació d’ones de càrrega en el grafé quan es posa en contacte amb un ferroelèctric."
-  },
-  "2026-08-19": {
-    "es": "Parte de la señal que avanza por una red neuronal puede tomar un atajo, y el primer estudio lleva ese recurso a un chip fotónico. Las otras lecturas muestran cómo una puerta ajusta la respuesta de un diodo y cómo unas perovskitas en capas consiguen emitir luz visible tras absorber varios fotones infrarrojos.",
-    "en": "Some of the signal in a neural network can take a shortcut, and the first study brings that idea to a photonic chip. The other readings show how a gate adjusts a diode's response and how layered perovskites emit visible light after absorbing several infrared photons.",
-    "ca": "Una part del senyal que avança per una xarxa neuronal pot prendre una drecera, i el primer estudi porta eixe recurs a un xip fotònic. Les altres lectures mostren com una porta ajusta la resposta d’un díode i com unes perovskites en capes aconsegueixen emetre llum visible després d’absorbir diversos fotons infrarojos."
-  },
-  "2026-08-26": {
-    "es": "Un emisor cuántico ofrece una forma de introducir no linealidad en un circuito óptico sin exigir intensidades elevadas, mientras que un sensor puede aprovechar el tiempo que tarda en apagarse para hacer parte del cálculo. La tercera lectura mira una cuestión de duración distinta, la de un LED de perovskita y su interfaz enterrada.",
-    "en": "A quantum emitter offers a way to introduce nonlinearity into an optical circuit without requiring high intensities, while a sensor can use the time it takes to fade to do some of the computation. The third reading looks at a different kind of lifetime, that of a perovskite LED with a buried interface.",
-    "ca": "Un emissor quàntic ofereix una manera d’introduir no-linealitat en un circuit òptic sense exigir intensitats elevades, mentre que un sensor pot aprofitar el temps que tarda a apagar-se per a fer part del càlcul. La tercera lectura mira una qüestió de duració diferent, la d’un LED de perovskita i la seua interfície soterrada."
-  },
-  "2026-09-16": {
-    "es": "Para enfriar átomos con un láser hay que poder ajustar con cuidado su frecuencia, y uno de los trabajos lleva parte de ese control al chip. En las otras dos lecturas, una memoria aprovecha dominios de polarización cerrados y un material que sirve para dibujar un patrón acaba emitiendo luz en un diodo.",
-    "en": "Cooling atoms with a laser calls for careful control of its frequency, and one of the studies brings part of that control onto a chip. In the other two readings, a memory uses closed polarization domains, and a material used for patterning goes on to emit light in a diode.",
-    "ca": "Per a refredar àtoms amb un làser cal poder ajustar-ne amb cura la freqüència, i un dels treballs porta part d’eixe control al xip. En les altres dos lectures, una memòria aprofita dominis de polarització tancats i un material que serveix per a dibuixar un patró acaba emetent llum en un díode."
-  },
   "2026-09-23": {
     "es": "Variar apenas el radio de una fibra óptica permite situar resonadores sobre ella, mientras que cruzar dos bordes de grafeno define el punto activo de una memoria. La tercera lectura se ocupa de otra geometría pequeña, por donde deben pasar los iones de un transistor sin que entre agua en exceso.",
     "en": "A tiny change in the radius of an optical fiber makes it possible to place resonators along it, while crossing two graphene edges defines the active point of a memory. The third reading turns to another small geometry, where ions need to pass through a transistor without letting in too much water.",
     "ca": "Variar a penes el radi d’una fibra òptica permet situar-hi ressonadors, mentre que creuar dos vores de grafé defineix el punt actiu d’una memòria. La tercera lectura tracta d’una altra geometria menuda, per on han de passar els ions d’un transistor sense que entre aigua en excés."
-  },
-  "2026-09-30": {
-    "es": "Poner dos componentes uno junto a otro permite seleccionar la polarización circular en poco espacio, y apilar un memristor con un transistor permite trabajar con el orden en que llegan las señales. La edición se completa con un dieléctrico para condensadores que busca mantener su respuesta al variar la temperatura.",
-    "en": "Bringing two components together lets the first team select circular polarization in a small space, while stacking a memristor with a transistor makes it possible to work with the order in which signals arrive. The edition ends with a capacitor dielectric designed to keep its response steady as the temperature changes.",
-    "ca": "Posar dos components l’un al costat de l’altre permet seleccionar la polarització circular en poc d’espai, i apilar un memristor amb un transistor permet treballar amb l’ordre en què arriben els senyals. L’edició es completa amb un dielèctric per a condensadors que busca mantindre la resposta quan varia la temperatura."
-  },
-  "2026-10-07": {
-    "es": "Las tres lecturas de esta semana miran qué ocurre justo donde se juntan capas muy finas. Una cavidad concentra la luz cerca de una monocapa, unos puntos de carbono ayudan a depositar un aislante y, en un cristal natural, la propia unión entre capas da lugar a polarización eléctrica.",
-    "en": "This week's three readings look at what happens where very thin layers meet. A cavity concentrates light near a monolayer, carbon dots help an insulator grow, and in a natural crystal the interface between layers gives rise to electric polarization.",
-    "ca": "Les tres lectures d’esta setmana miren què passa just on s’ajunten capes molt fines. Una cavitat concentra la llum prop d’una monocapa, uns punts de carboni ajuden a depositar un aïllant i, en un cristall natural, la unió entre capes dona lloc a polarització elèctrica."
-  },
-  "2026-10-14": {
-    "es": "Retorcer unas guías ópticas cambia la facilidad con que la luz pasa de una a otra. También leemos sobre un transistor que puede asumir distintas funciones y sobre un cambio que se decide antes de fabricar el dispositivo, en el momento en que empiezan a formarse cristales en una disolución.",
-    "en": "Twisting optical waveguides changes how readily light passes from one to another. We also read about a transistor that can take on different functions and about a change that happens before the device is made, when crystals start to form in a solution.",
-    "ca": "Retorçar unes guies òptiques canvia la facilitat amb què la llum passa de l’una a l’altra. També llegim sobre un transistor que pot assumir funcions diferents i sobre un canvi que es decideix abans de fabricar el dispositiu, en el moment en què comencen a formar-se cristalls en una dissolució."
   },
   "2026-10-21": {
     "es": "Un modulador puede preparar la señal para que los cambios rápidos se distingan mejor al otro extremo del enlace. Las dos lecturas sobre perovskitas se fijan en procesos menos visibles, los que permiten guardar información de dos maneras y los que determinan cómo se forma el cristal de un LED.",

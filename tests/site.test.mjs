@@ -117,11 +117,13 @@ test("weekly editions exist in every language with matching dates and alternates
       const issueTitle = html.match(/<h2 class="weekly-issue-title">([^<]+)<\/h2>/)?.[1];
       const reviews = [...html.matchAll(/<article class="weekly-review">([\s\S]*?)<\/article>/g)];
       const lead = html.match(/<p class="weekly-lead">([\s\S]+?)<\/p>/);
-      const mention = html.match(/<section class="notes-mention"><h3>[^<]+<\/h3>/);
+      const mention = html.match(/<section class="notes-mention"><h3>[^<]+<\/h3>([\s\S]*?)<\/section>/);
       assert.equal(reviews.length, 3);
       assert.ok(lead && lead.index < reviews[0].index && lead[1].length > 100,
         `${locale.code}/${page.id} should introduce the edition before its reviews`);
       assert.ok(mention && mention.index > reviews[2].index);
+      assert.equal((mention[1].match(/<li>/g) ?? []).length, 2,
+        `${locale.code}/${page.id} should have two highlights`);
       const reviewTitles = reviews.map(([, review], index) => {
         const header = review.match(/^\s*<p class="eyebrow weekly-review-category">[^<]+<\/p>\s*<h3 class="weekly-review-title">([^<]+)<\/h3>\s*<p class="note-meta weekly-reference">\[(\d+)\]/);
         assert.ok(header, `${locale.code}/${page.id} review ${index + 1} should use the common header`);
@@ -133,6 +135,7 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.equal(new Set(reviewTitles).size, 3);
       assert.ok(!reviewTitles.includes(issueTitle), "Review titles should be distinct from the edition title");
       assert.equal((html.match(/class="note-meta weekly-reference"/g) ?? []).length, 3);
+      assert.doesNotMatch(html, /10\.1038\/s41598-/i);
       const figures = [...html.matchAll(/<figure class="paper-figure weekly-figure">[\s\S]*?<\/figure>/g)];
       assert.equal(figures.length, 3, `${locale.code}/${page.id} should have one figure per review`);
       const figureSources = new Set();
@@ -349,7 +352,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=77/);
+  assert.match(html, /assets\/style\.css\?v=78/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);

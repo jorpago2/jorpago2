@@ -100,8 +100,8 @@
   {
     "id": "post-week-2026-01-07",
     "slug": "blog-2026-01-07",
-    "title": "Luz que permanece, sinapsis que ven y telurio desordenado",
-    "description": "Llevar al chip la tranquilidad de una fibra óptica, Una sinapsis que distingue la orientación de la luz, El desorden del telurio visto desde dentro del dispositivo",
+    "title": "Luz en el chip, iones en un poro y espines en un cristal",
+    "description": "Llevar al chip la tranquilidad de una fibra óptica, Un poro simétrico que deja pasar más iones en un sentido, Espines de cromo y hierro en un cristal de perovskita",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-01-07",
     "weekEnd": "2026-01-14",
@@ -110,8 +110,8 @@
   {
     "id": "post-week-2026-01-14",
     "slug": "blog-2026-01-14",
-    "title": "Fotones a demanda, memorias de óxido y oro poroso",
-    "description": "Fotones que llegan a tiempo y se parecen entre sí, Una memoria más estable después de calentarla, Cuando los poros cambian la respuesta del oro a la luz",
+    "title": "Fotones a demanda y dos maneras de poner a prueba un material con calor",
+    "description": "Fotones que llegan a tiempo y se parecen entre sí, Una memoria más estable después de calentarla, Qué le pasa a una célula de perovskita al calentarla y enfriarla",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-01-14",
     "weekEnd": "2026-01-21",
@@ -120,8 +120,8 @@
   {
     "id": "post-week-2026-01-21",
     "slug": "blog-2026-01-21",
-    "title": "Materiales que ordenan la luz y la corriente",
-    "description": "Un espectrómetro que cabe sobre un detector, Una capa de MoS₂ que encuentra su orientación, Lo que ocurre al girar dos cristales de niobato de litio",
+    "title": "Medir un espectro, orientar una monocapa y abrir poros en el oro",
+    "description": "Un espectrómetro que cabe sobre un detector, Una capa de MoS₂ que encuentra su orientación, Cuando los poros cambian la respuesta del oro a la luz",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-01-21",
     "weekEnd": "2026-01-28",
@@ -140,18 +140,18 @@
   {
     "id": "post-week-2026-02-04",
     "slug": "blog-2026-02-04",
-    "title": "Bandas planas, visión artificial y cristales que recuerdan",
-    "description": "Cuando una banda plana ayuda a mezclar luz y magnetismo, Una neurona que ve y una sinapsis que guarda, Afinar un ferroeléctrico para guardar más estados",
+    "title": "Un pulso de dos ciclos, una sinapsis sensible a la luz y una memoria multinivel",
+    "description": "Un pulso de luz de solo dos oscilaciones, Una sinapsis que distingue la orientación de la luz, Afinar un ferroeléctrico para guardar más estados",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-02-04",
     "weekEnd": "2026-02-11",
-    "coverDoi": "10.1038/s41467-026-69326-y"
+    "coverDoi": "10.1038/s41377-026-02187-8"
   },
   {
     "id": "post-week-2026-02-11",
     "slug": "blog-2026-02-11",
-    "title": "Luz entre gases, sombras y cristales",
-    "description": "Una guía de onda que detecta el calor de unas pocas moléculas, Un transistor que se adapta a la oscuridad, Triturar un cristal para cambiar la luz que emite",
+    "title": "Detectar calor con luz y ajustar la corriente con carga o con un campo",
+    "description": "Una guía de onda que detecta el calor de unas pocas moléculas, Una memoria que controla también cómo responde el sensor a la luz, La resistencia cambia al girar el campo en dos capas apiladas",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-02-11",
     "weekEnd": "2026-02-18",
@@ -160,8 +160,8 @@
   {
     "id": "post-week-2026-02-18",
     "slug": "blog-2026-02-18",
-    "title": "Colores que cambian con el tiempo y materiales que responden a la corriente",
-    "description": "Una imagen que aparece poco a poco, Un electrodo que da tiempo a la neurona artificial, La velocidad del VO₂ vista desde dentro",
+    "title": "Una imagen gradual, una neurona con retardo y dos cristales girados",
+    "description": "Una imagen que aparece poco a poco, Un electrodo que da tiempo a la neurona artificial, Lo que ocurre al girar dos cristales de niobato de litio",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-02-18",
     "weekEnd": "2026-02-25",
@@ -170,18 +170,18 @@
   {
     "id": "post-week-2026-02-25",
     "slug": "blog-2026-02-25",
-    "title": "Ganancia aparente, memorias lentas y óxidos que ven en infrarrojo",
-    "description": "Una cavidad pasiva que imita el arranque de un láser, La memoria que cambia a su propio ritmo, Cuando la posición de la muestra cambia lo que ve el IGZO",
+    "title": "Luz entre dos metales, potencia sobre una película y un diodo azul",
+    "description": "Un voltio para cambiar la luz en un hueco de escala atómica, Alimentar una matriz de sensores con transistores de película delgada, Una molécula de superficie para sostener el azul de una perovskita",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-02-25",
     "weekEnd": "2026-03-04",
-    "coverDoi": "10.1038/s41467-026-70123-w"
+    "coverDoi": "10.1038/s41467-026-68823-4"
   },
   {
     "id": "post-week-2026-03-04",
     "slug": "blog-2026-03-04",
-    "title": "Redes ópticas pequeñas, canales iónicos y perovskitas quirales",
-    "description": "Diseñar una red óptica dejando que la luz encuentre su camino, Una fotosinapsis que mueve iones, Una perovskita transmite su asimetría a una molécula",
+    "title": "Redes para guiar luz y protones, y un aislante con fronteras de grano",
+    "description": "Diseñar una red óptica dejando que la luz encuentre su camino, El movimiento de los protones da memoria a una red de niquelato, Un aislante que conserva su respuesta al cruzar un grano",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-03-04",
     "weekEnd": "2026-03-11",
@@ -190,18 +190,18 @@
   {
     "id": "post-week-2026-03-11",
     "slug": "blog-2026-03-11",
-    "title": "Puertas de luz y memorias ferroeléctricas",
-    "description": "Una puerta óptica que cambia de función, Un memristor que también rectifica, Cambiar la dirección de una polarización",
+    "title": "Mezclar luz y magnetismo, guardar carga y ver cómo envejece un LED",
+    "description": "Cuando una banda plana ayuda a mezclar luz y magnetismo, Una memoria electrónica junto al cálculo fotónico, Un microscopio sigue el deterioro de un LED mientras funciona",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-03-11",
     "weekEnd": "2026-03-18",
-    "coverDoi": "10.1038/s41467-026-70834-0"
+    "coverDoi": "10.1038/s41467-026-69326-y"
   },
   {
     "id": "post-week-2026-03-18",
     "slug": "blog-2026-03-18",
-    "title": "Luz atrapada y estructuras que guardan información",
-    "description": "Luz circular y excitones en una metasuperficie, Un depósito de oxígeno para controlar la memoria, Escribir regiones amorfas dentro de un cristal",
+    "title": "Luz circular, memoria en una sinapsis y regiones amorfas escritas en un cristal",
+    "description": "Luz circular y excitones en una metasuperficie, Una neurona que ve y una sinapsis que guarda, Escribir regiones amorfas dentro de un cristal",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-03-18",
     "weekEnd": "2026-03-25",
@@ -210,18 +210,18 @@
   {
     "id": "post-week-2026-03-25",
     "slug": "blog-2026-03-25",
-    "title": "Señales en el aire, memoria molecular y luz colectiva",
-    "description": "Del chip fotónico al enlace inalámbrico, Una molécula con varios estados de memoria, Cuando una red de puntos cuánticos parpadea al unísono",
+    "title": "Un modulador infrarrojo, una memoria tolerante a fallos y una célula ferroeléctrica",
+    "description": "Controlar el infrarrojo medio con niobato de litio sobre zafiro, Una memoria que aprende dónde están sus propios defectos, Una unión ferroeléctrica ayuda a separar cargas en una célula solar",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-03-25",
     "weekEnd": "2026-04-01",
-    "coverDoi": "10.1038/s41467-026-71081-z"
+    "coverDoi": "10.1038/s41467-026-69880-5"
   },
   {
     "id": "post-week-2026-04-01",
     "slug": "blog-2026-04-01",
-    "title": "Películas que giran la luz, nanohilos que responden y oro en un resonador",
-    "description": "Una película que cambia cómo responde a la polarización, Una neurona artificial construida con nanohilos, Qué ocurre al implantar oro en un anillo de silicio",
+    "title": "Polarización en una película, avalancha en un transistor y una transición en VO₂",
+    "description": "Una película que cambia cómo responde a la polarización, Un transistor que multiplica portadores en un canal de ReSe₂, La velocidad del VO₂ vista desde dentro",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-01",
     "weekEnd": "2026-04-08",
@@ -230,8 +230,8 @@
   {
     "id": "post-week-2026-04-08",
     "slug": "blog-2026-04-08",
-    "title": "Un procesador fotónico, tres funciones en un óxido y una memoria de baja pérdida",
-    "description": "Un procesador óptico que se conecta a una red neuronal, Un dispositivo que cambia de función al cambiar la tensión, Cambiar el camino de la luz sin absorberla demasiado",
+    "title": "Calcular con luz, cambiar de función con tensión y doblar un ojo compuesto",
+    "description": "Un procesador óptico que se conecta a una red neuronal, Un dispositivo que cambia de función al cambiar la tensión, Doblar una película frágil para montar un ojo compuesto",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-08",
     "weekEnd": "2026-04-15",
@@ -240,38 +240,38 @@
   {
     "id": "post-week-2026-04-15",
     "slug": "blog-2026-04-15",
-    "title": "Pulsos de luz, espines y cristales grandes",
-    "description": "Una celda para neuronas y sinapsis controladas con luz, Una máquina de Ising con memoria y un imán fluctuante, Hacer crecer cristales de perovskita con ayuda de un polímero",
+    "title": "Terahercios continuos, una fotosinapsis iónica y paredes entre dominios",
+    "description": "Dos láseres infrarrojos para cubrir de 1 a 11 terahercios, Una fotosinapsis que mueve iones, Dos tipos de orden eléctrico en una misma pared de dominio",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-15",
     "weekEnd": "2026-04-22",
-    "coverDoi": "10.1038/s41467-026-72119-y"
+    "coverDoi": "10.1038/s41566-026-01889-0"
   },
   {
     "id": "post-week-2026-04-22",
     "slug": "blog-2026-04-22",
-    "title": "Una lente que separa colores y dos formas de aprovechar los materiales en capas",
-    "description": "Una metalente que utiliza la dispersión a su favor, Una huella electrónica que cambia con la luz, Átomos de oro entre las capas de un óxido",
+    "title": "Fotónica para escuchar el espectro, corriente para mover un imán y oro entre capas",
+    "description": "Un chip que recorre el espectro casi en tiempo real, Cambiar la magnetización de una película con corriente, Átomos de oro entre las capas de un óxido",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-22",
     "weekEnd": "2026-04-29",
-    "coverDoi": "10.1038/s41467-026-72332-9"
+    "coverDoi": "10.1038/s41467-026-70389-0"
   },
   {
     "id": "post-week-2026-04-29",
     "slug": "blog-2026-04-29",
-    "title": "Fibras planas, transistores moleculares y nanocubos de oro",
-    "description": "Una fibra óptica que prefiere ser plana, Una monocapa molecular bajo una puerta de grafeno, Una cubierta semiconductora para nanocubos de oro",
+    "title": "Polaritones que rebotan, una puerta de grafeno y dipolos que cambian de dirección",
+    "description": "Seguir un polaritón hasta que rebota en el borde, Una monocapa molecular bajo una puerta de grafeno, Cambiar la dirección de una polarización",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-29",
     "weekEnd": "2026-05-06",
-    "coverDoi": "10.1038/s41467-026-72416-6"
+    "coverDoi": "10.1038/s41467-026-70565-2"
   },
   {
     "id": "post-week-2026-05-06",
     "slug": "blog-2026-05-06",
-    "title": "Dibujar, escuchar y moldear a escala pequeña",
-    "description": "Dibujar en grande y encoger después, Memristores para separar una señal del ruido, Un cristal que deja su huella en la sílice",
+    "title": "Encoger un patrón, separar ruido y hacer visible un excitón",
+    "description": "Dibujar en grande y encoger después, Memristores para separar una señal del ruido, Una capa ferroeléctrica hace visible un excitón oscuro",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-05-06",
     "weekEnd": "2026-05-13",
@@ -280,18 +280,18 @@
   {
     "id": "post-week-2026-05-13",
     "slug": "blog-2026-05-13",
-    "title": "Guiar, recordar y cambiar con luz",
-    "description": "Una guía de MoS₂ que también procesa la luz, Una fotosinapsis que responde al color, El campo eléctrico pone orden en un material desordenado",
+    "title": "Un enlace inalámbrico, una unión magnética y fotones que salen del borde",
+    "description": "Del chip fotónico al enlace inalámbrico, Una unión magnética que acumula pulsos, Los bordes de una perovskita ofrecen un camino para emitir fotones individuales",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-05-13",
     "weekEnd": "2026-05-20",
-    "coverDoi": "10.1038/s41467-026-73107-y"
+    "coverDoi": "10.1038/s41467-026-71081-z"
   },
   {
     "id": "post-week-2026-05-20",
     "slug": "blog-2026-05-20",
-    "title": "Afinar circuitos y ordenar electrones",
-    "description": "Ajustar un circuito fotónico después de fabricarlo, Una memoria basada en ondas de densidad de carga, Una interfaz orgánica que refuerza la respuesta no lineal",
+    "title": "Ajustar un chip ya fabricado, guardar estados en una molécula y observar puntos cuánticos",
+    "description": "Ajustar un circuito fotónico después de fabricarlo, Una molécula con varios estados de memoria, Cuando una red de puntos cuánticos parpadea al unísono",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-05-20",
     "weekEnd": "2026-05-27",
@@ -300,18 +300,18 @@
   {
     "id": "post-week-2026-05-27",
     "slug": "blog-2026-05-27",
-    "title": "Diseñar circuitos con algoritmos y dar nuevas funciones a materiales conocidos",
-    "description": "Dibujar un circuito fotónico empezando por lo que debe hacer, Una neurona de VO₂ que ajusta su actividad, Una monocapa orgánica dentro de un microláser",
+    "title": "Crecer puntos cuánticos a medida, construir una neurona y elegir las caras de un cristal",
+    "description": "Crecer puntos cuánticos donde luego irá el resonador, Una neurona artificial construida con nanohilos, Elegir qué caras crecen en una perovskita emisora",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-05-27",
     "weekEnd": "2026-06-03",
-    "coverDoi": "10.1038/s41467-026-73390-9"
+    "coverDoi": "10.1038/s41377-026-02343-0"
   },
   {
     "id": "post-week-2026-06-03",
     "slug": "blog-2026-06-03",
-    "title": "Un láser compacto, un óxido que recuerda y luz colectiva",
-    "description": "Pulsos intensos desde un circuito de nitruro de silicio, Una memoria resistiva con zirconato de calcio, Cuando muchos emisores de una perovskita responden juntos",
+    "title": "Pulsos en nitruro de silicio, una memoria elástica y emisores que cooperan",
+    "description": "Pulsos intensos desde un circuito de nitruro de silicio, Una memoria escrita con luz que se puede estirar, Cuando muchos emisores de una perovskita responden juntos",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-06-03",
     "weekEnd": "2026-06-10",
@@ -320,42 +320,42 @@
   {
     "id": "post-week-2026-06-10",
     "slug": "blog-2026-06-10",
-    "title": "Caos óptico, transistores de GaN y magnones ajustables",
-    "description": "Un peine óptico para generar muchas señales caóticas, Ajustar un transistor de nitruro de galio desde su estructura atómica, Sintonizar ondas de espín en un imán de tres capas",
+    "title": "Un obturador de cristal líquido y dos formas de aprovechar un imán",
+    "description": "Un cristal líquido que regula cuánta luz llega a los puntos cuánticos, Una máquina de Ising con memoria y un imán fluctuante, Sintonizar ondas de espín en un imán de tres capas",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-06-10",
     "weekEnd": "2026-06-17",
-    "coverDoi": "10.1038/s41467-026-73440-2"
+    "coverDoi": "10.1038/s41528-026-00578-w"
   },
   {
     "id": "post-week-2026-06-17",
     "slug": "blog-2026-06-17",
-    "title": "Dirigir una señal, contar con tres estados y leer el espín con luz",
-    "description": "La fotónica ayuda a orientar varios haces de radio, Un transistor que responde en tres niveles a la luz, Una perovskita que conserva durante más tiempo información de espín",
+    "title": "Celdas ópticas, corrientes que se desvían y luz que cambia de camino",
+    "description": "Una celda para neuronas y sinapsis controladas con luz, La interfaz que cambia el transporte en un altermagneto, Cambiar el camino de la luz sin absorberla demasiado",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-06-17",
     "weekEnd": "2026-06-24",
-    "coverDoi": "10.1038/s41467-026-74485-z"
+    "coverDoi": "10.1038/s41467-026-72119-y"
   },
   {
     "id": "post-week-2026-06-24",
     "slug": "blog-2026-06-24",
-    "title": "Conectar emisores, recordar imágenes y procesar polarización",
-    "description": "Diez emisores frente a diez guías, Un transistor de IGZO con respuesta a la luz y memoria, Un mismo elemento, dos respuestas ópticas",
+    "title": "Una fibra plana y dos dispositivos para trabajar con imágenes",
+    "description": "Una fibra óptica que prefiere ser plana, Un transistor de IGZO con respuesta a la luz y memoria, Una película ferroeléctrica alterna entre mostrar la imagen y destacar sus bordes",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-06-24",
     "weekEnd": "2026-07-01",
-    "coverDoi": "10.1038/s41467-026-74664-y"
+    "coverDoi": "10.1038/s41467-026-72416-6"
   },
   {
     "id": "post-week-2026-07-01",
     "slug": "blog-2026-07-01",
-    "title": "Píxeles infrarrojos, antenas de silicio y plata ultrafina",
-    "description": "Una imagen infrarroja escrita píxel a píxel, Antenas y conmutadores en una misma oblea, Cuando adelgazar la plata cambia su respuesta no lineal",
+    "title": "Una lente dispersiva, una huella sensible a la luz y un óxido magnetoeléctrico",
+    "description": "Una metalente que utiliza la dispersión a su favor, Una huella electrónica que cambia con la luz, Un campo magnético refuerza la polarización de un óxido de hafnio",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-01",
     "weekEnd": "2026-07-08",
-    "coverDoi": "10.1038/s41467-026-75346-5"
+    "coverDoi": "10.1038/s41467-026-72332-9"
   },
   {
     "id": "post-week-2026-07-08",
@@ -370,18 +370,18 @@
   {
     "id": "post-week-2026-07-15",
     "slug": "blog-2026-07-15",
-    "title": "Lógica con luz y materiales que responden",
-    "description": "Una unidad aritmética con anillos de silicio, Dos tipos de transistor con un mismo semiconductor flexible, Un vidrio molecular que responde a la luz y al campo",
+    "title": "Una guía que procesa luz, transistores flexibles y un vidrio que responde al campo",
+    "description": "Una guía de MoS₂ que también procesa la luz, Dos tipos de transistor con un mismo semiconductor flexible, Un vidrio molecular que responde a la luz y al campo",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-15",
     "weekEnd": "2026-07-22",
-    "coverDoi": "10.1038/s41467-026-75750-x"
+    "coverDoi": "10.1038/s41467-026-73107-y"
   },
   {
     "id": "post-week-2026-07-22",
     "slug": "blog-2026-07-22",
-    "title": "Guías abiertas, cálculo en memoria y una fotomemoria a baja temperatura",
-    "description": "Una guía hueca a la que también se puede entrar por los lados, Reconocer idiomas con matrices de memristores, La luz activa una memoria de seleniuro de indio",
+    "title": "Entrada lateral en una guía, actividad en una neurona y una monocapa que emite",
+    "description": "Una guía hueca a la que también se puede entrar por los lados, Una neurona de VO₂ que ajusta su actividad, Una monocapa orgánica dentro de un microláser",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-22",
     "weekEnd": "2026-07-29",
@@ -390,18 +390,18 @@
   {
     "id": "post-week-2026-07-29",
     "slug": "blog-2026-07-29",
-    "title": "Luz con dirección, neuronas de microondas y plasmones canalizados",
-    "description": "Dos bordes para conducir polaritones con distinta polarización, Una red de microondas que transforma datos mientras llegan, Un cristal que canaliza plasmones en el infrarrojo",
+    "title": "Haces de radio, cálculo con microondas y plasmones en un cristal",
+    "description": "La fotónica ayuda a orientar varios haces de radio, Una red de microondas que transforma datos mientras llegan, Un cristal que canaliza plasmones en el infrarrojo",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-29",
     "weekEnd": "2026-08-05",
-    "coverDoi": "10.1038/s41467-026-75965-y"
+    "coverDoi": "10.1038/s41467-026-74485-z"
   },
   {
     "id": "post-week-2026-08-05",
     "slug": "blog-2026-08-05",
-    "title": "Espectros en una guía, memoria visual y geometría cuántica",
-    "description": "Una guía con reflexiones para distinguir espectros, Una memoria de óxido de zinc que responde al movimiento, Una respuesta Hall que cambia con la polarización ferroeléctrica",
+    "title": "Reflexiones para leer un espectro, memoria del movimiento y dos respuestas de un elemento",
+    "description": "Una guía con reflexiones para distinguir espectros, Una memoria de óxido de zinc que responde al movimiento, Un mismo elemento, dos respuestas ópticas",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-08-05",
     "weekEnd": "2026-08-12",
@@ -410,18 +410,18 @@
   {
     "id": "post-week-2026-08-12",
     "slug": "blog-2026-08-12",
-    "title": "Moduladores rápidos, detectores de llamas y grafeno sobre un ferroeléctrico",
-    "description": "Dos materiales para enviar información por encima de los cien gigahercios, Un fotodetector que distingue una llama por su ultravioleta, Lo que una lámina ferroeléctrica le transmite al grafeno",
+    "title": "Escribir una imagen infrarroja, guardar carga y adelgazar la plata",
+    "description": "Una imagen infrarroja escrita píxel a píxel, Una memoria basada en ondas de densidad de carga, Cuando adelgazar la plata cambia su respuesta no lineal",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-08-12",
     "weekEnd": "2026-08-19",
-    "coverDoi": "10.1038/s41467-026-76733-8"
+    "coverDoi": "10.1038/s41467-026-75346-5"
   },
   {
     "id": "post-week-2026-08-19",
     "slug": "blog-2026-08-19",
-    "title": "Luz que calcula y materiales que cambian las reglas",
-    "description": "Una conexión de atajo dentro de un chip fotónico, Un diodo cuya respuesta se ajusta con una puerta, Perovskitas que convierten infrarrojo en color",
+    "title": "Un atajo para la luz, visión por eventos y color que nace del infrarrojo",
+    "description": "Una conexión de atajo dentro de un chip fotónico, Una matriz de transistores que detecta cuándo cambia la escena, Perovskitas que convierten infrarrojo en color",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-08-19",
     "weekEnd": "2026-08-26",
@@ -430,18 +430,18 @@
   {
     "id": "post-week-2026-08-26",
     "slug": "blog-2026-08-26",
-    "title": "El cálculo se acerca al sensor",
-    "description": "Un emisor cuántico para introducir no linealidad en una red óptica, Aprovechar el tiempo que tarda un sensor en apagarse, Una capa enterrada para cuidar un LED de perovskita",
+    "title": "Polaritones por los bordes, idiomas en una matriz y memoria activada por luz",
+    "description": "Dos bordes para conducir polaritones con distinta polarización, Reconocer idiomas con matrices de memristores, La luz activa una memoria de seleniuro de indio",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-08-26",
     "weekEnd": "2026-09-02",
-    "coverDoi": "10.1038/s41467-026-77202-y"
+    "coverDoi": "10.1038/s41467-026-75965-y"
   },
   {
     "id": "post-week-2026-09-02",
     "slug": "blog-2026-09-02",
-    "title": "Un material que recuerda la luz y vórtices sobre silicio",
-    "description": "Una metasuperficie que da acceso a la no linealidad, Una memoria escrita eléctricamente y leída con luz, Vórtices ferroeléctricos sobre una base de silicio",
+    "title": "Una metasuperficie no lineal, visión a alta temperatura y una respuesta Hall ajustable",
+    "description": "Una metasuperficie que da acceso a la no linealidad, Un sensor con memoria que sigue funcionando a temperaturas extremas, Una respuesta Hall que cambia con la polarización ferroeléctrica",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-02",
     "weekEnd": "2026-09-09",
@@ -450,22 +450,22 @@
   {
     "id": "post-week-2026-09-09",
     "slug": "blog-2026-09-09",
-    "title": "Guiar polaritones y pensar en el calor",
-    "description": "Las pérdidas como herramienta para orientar una onda, Filtrar antes de activar una red de impulsos, Un ferroeléctrico que también tiene que evacuar calor",
+    "title": "Transportar señales de alta frecuencia, filtrar impulsos y formar vórtices",
+    "description": "Dos materiales para enviar información por encima de los cien gigahercios, Filtrar antes de activar una red de impulsos, Vórtices ferroeléctricos sobre una base de silicio",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-09",
     "weekEnd": "2026-09-16",
-    "coverDoi": "10.1038/s41467-026-77412-4"
+    "coverDoi": "10.1038/s41467-026-76733-8"
   },
   {
     "id": "post-week-2026-09-16",
     "slug": "blog-2026-09-16",
-    "title": "Un láser para átomos fríos, memorias ferroeléctricas y OLED dibujados con luz",
-    "description": "Ajustar un láser con un resonador integrado, Una memoria que conserva lazos de polarización, Un material que sirve de máscara y también emite luz",
+    "title": "Procesar con luz, conservar polarización y convertir una máscara en emisor",
+    "description": "Guardar los ajustes de un procesador fotónico en sus propios moduladores, Una memoria que conserva lazos de polarización, Un material que sirve de máscara y también emite luz",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-16",
     "weekEnd": "2026-09-23",
-    "coverDoi": "10.1038/s41467-026-77526-9"
+    "coverDoi": "10.1038/s41467-026-75993-8"
   },
   {
     "id": "post-week-2026-09-23",
@@ -480,18 +480,18 @@
   {
     "id": "post-week-2026-09-30",
     "slug": "blog-2026-09-30",
-    "title": "Capas ultrafinas, memoria en tres dimensiones y cerámicas estables",
-    "description": "Dos cristales para seleccionar la polarización circular, Un memristor y un transistor apilados para procesar señales, Un dieléctrico que procura no cambiar con la temperatura",
+    "title": "Un espín que se lee con luz, un imán que la recuerda y un dieléctrico estable",
+    "description": "Un punto cuántico enlaza un espín con fotones de telecomunicaciones, Pulsos de luz para escribir varios estados en una memoria magnética, Un dieléctrico que procura no cambiar con la temperatura",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-30",
     "weekEnd": "2026-10-07",
-    "coverDoi": "10.1038/s41467-026-78564-z"
+    "coverDoi": "10.1038/s41467-026-77282-w"
   },
   {
     "id": "post-week-2026-10-07",
     "slug": "blog-2026-10-07",
-    "title": "Cavidades pequeñas e interfaces que hacen algo nuevo",
-    "description": "Concentrar la luz bajo una monocapa, Una capa de puntos de carbono ayuda a depositar un aislante, Una polarización que aparece entre capas naturales",
+    "title": "Luz bajo una monocapa, puntos de carbono y calor en un ferroeléctrico",
+    "description": "Concentrar la luz bajo una monocapa, Una capa de puntos de carbono ayuda a depositar un aislante, Un ferroeléctrico que también tiene que evacuar calor",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-10-07",
     "weekEnd": "2026-10-14",
@@ -500,12 +500,12 @@
   {
     "id": "post-week-2026-10-14",
     "slug": "blog-2026-10-14",
-    "title": "Guías retorcidas, un transistor versátil y el ritmo de la cristalización",
-    "description": "Girar la polarización para decidir por dónde pasa la luz, Un transistor que cambia de tarea, El momento de empezar a cristalizar",
+    "title": "Infrarrojo en una guía suspendida, un transistor reconfigurable y un cristal que empieza a crecer",
+    "description": "Un modulador suspendido para el infrarrojo medio, Un transistor que cambia de tarea, El momento de empezar a cristalizar",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-10-14",
     "weekEnd": "2026-10-21",
-    "coverDoi": "10.1038/s41467-026-78660-0"
+    "coverDoi": "10.1038/s41467-026-77674-y"
   },
   {
     "id": "post-week-2026-10-21",
