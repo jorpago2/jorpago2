@@ -37,11 +37,39 @@ export function weeklyPosts(pages) {
   return posts.sort((a, b) => b.weekStart.localeCompare(a.weekStart));
 }
 
-export function renderBlogArchive(pages, locale, strings, pageRoute) {
-  const posts = weeklyPosts(pages);
-  if (!posts.length) return "";
-  if (!strings?.title || !strings?.weekOf) throw new Error(`Missing blog archive strings for ${locale.code}.`);
+function weeklyCard(post, locale, strings, pageRoute, articles, featured = false) {
+  const article = articles[post.coverDoi];
+  const figure = article?.figure;
+  if (!figure) throw new Error(`Missing cover figure for ${post.id}`);
+  const author = article.reference.author[0].family;
+  const licenseType = new URL(figure.license).pathname.split("/")[2].toUpperCase();
+  const url = escapeHtml(pageRoute(post.slug, locale));
   const dateFormat = new Intl.DateTimeFormat(locale.code, { dateStyle: "long", timeZone: "UTC" });
+  const date = dateFormat.formatRange(parseDate(post.weekStart, "weekStart"), new Date(
+    parseDate(post.weekEnd, "weekEnd").getTime() - 24 * 60 * 60 * 1000,
+  ));
+  return `<article class="blog-card weekly-card${featured ? " weekly-card-featured" : ""}">
+    <figure class="blog-card-figure">
+      <a href="${url}" aria-label="${escapeHtml(post.title)}"><img src="${escapeHtml(figure.url)}" alt="${escapeHtml(figure.caption)}" lang="en"${featured ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></a>
+      <figcaption><a href="${escapeHtml(figure.source)}">${escapeHtml(strings.figure)} ${escapeHtml(figure.number)} · ${escapeHtml(author)} et al.</a> · <a href="${escapeHtml(figure.license)}">CC ${escapeHtml(licenseType)} 4.0</a></figcaption>
+    </figure>
+    <div class="blog-card-copy">
+      <p class="note-meta"><time datetime="${post.weekStart}">${escapeHtml(date)}</time></p>
+      <h4><a href="${url}">${escapeHtml(post.title)}</a></h4>
+      ${featured ? `<p>${escapeHtml(post.description)}</p><a class="button primary" href="${url}">${escapeHtml(strings.read)} →</a>` : ""}
+    </div>
+  </article>`;
+}
+
+export function renderBlogFrontPage(pages, locale, strings, pageRoute, articles) {
+  const [latest, ...posts] = weeklyPosts(pages);
+  if (!latest) return { featured: "", archive: "" };
+  if (!strings?.title || !strings?.latest || !strings?.figure || !strings?.read) {
+    throw new Error(`Missing blog archive strings for ${locale.code}.`);
+  }
+  const featured = `<h3 id="blog-latest">${escapeHtml(strings.latest)}</h3>
+  <div class="blog-cards">${weeklyCard(latest, locale, strings, pageRoute, articles, true)}</div>`;
+  if (!posts.length) return { featured, archive: "" };
   const monthFormat = new Intl.DateTimeFormat(locale.code, { month: "long", year: "numeric", timeZone: "UTC" });
   const groups = new Map();
   for (const post of posts) {
@@ -52,11 +80,9 @@ export function renderBlogArchive(pages, locale, strings, pageRoute) {
   }
   const groupHtml = [...groups.entries()].map(([month, entries], index) => {
     const title = monthFormat.format(parseDate(`${month}-01`, "archive month"));
-    const rows = entries.map((post) => {
-      const date = dateFormat.format(parseDate(post.weekStart, "weekStart"));
-      return `<li><p class="note-meta">${escapeHtml(strings.weekOf)} <time datetime="${post.weekStart}">${escapeHtml(date)}</time></p><h4><a href="${escapeHtml(pageRoute(post.slug, locale))}">${escapeHtml(post.title)}</a></h4><p>${escapeHtml(post.description)}</p></li>`;
-    }).join("\n");
+    const rows = entries.map((post) => `<li>${weeklyCard(post, locale, strings, pageRoute, articles)}</li>`).join("\n");
     return `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(title)}</summary><ol>\n${rows}\n</ol></details>`;
   }).join("\n");
-  return `<section class="blog-archive" aria-labelledby="blog-archive-title"><h3 id="blog-archive-title">${escapeHtml(strings.title)}</h3>\n${groupHtml}\n</section>`;
+  const archive = `<section class="blog-archive" aria-labelledby="blog-archive-title"><h3 id="blog-archive-title">${escapeHtml(strings.title)}</h3>\n${groupHtml}\n</section>`;
+  return { featured, archive };
 }

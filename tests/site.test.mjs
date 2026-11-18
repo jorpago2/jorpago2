@@ -28,6 +28,7 @@ const mergedRoutes = {
   publications: "/jorpago2/research/#publications",
   books: "/jorpago2/teaching/#books",
   theses: "/jorpago2/teaching/#theses",
+  "post-light-memory": "/jorpago2/blog/",
 };
 
 async function exists(filePath) {
@@ -72,20 +73,26 @@ test("all imported pages are built with metadata", async () => {
   }
 });
 
-test("the blog links to one complete translated edition", async () => {
+test("the blog features the latest week, illustrates its archive and retires the pilot", async () => {
   for (const locale of localeConfig.locales) {
     const byId = new Map(localizedPages.get(locale.code).map((page) => [page.id, page]));
     const index = await readFile(outputFileForPage(byId.get("research-notes"), locale), "utf8");
-    const edition = await readFile(outputFileForPage(byId.get("post-light-memory"), locale), "utf8");
-    const postUrl = `${SITE_BASE_PATH}/${locale.path ? `${locale.path}/` : ""}${byId.get("post-light-memory").slug}/`;
-    assert.equal((index.match(/class="blog-card"/g) ?? []).length, 1);
-    assert.ok(index.includes(`href="${postUrl}"`));
-    assert.match(index, /<figure class="blog-card-figure(?: [^"]*)?">[\s\S]*?<img[^>]+alt="[^"]+"/);
-    assert.match(index, /<figcaption>[\s\S]*?nature\.com\/articles\/s41467-026-69084-x\/figures\/2[\s\S]*?creativecommons\.org\/licenses\/by\/4\.0\//);
-    assert.equal((edition.match(/class="note-entry"/g) ?? []).length, 3);
-    assert.equal((edition.match(/class="paper-figure"/g) ?? []).length, 3);
-    assert.match(edition, /class="notes-mention"/);
-    assert.equal((edition.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
+    const pilot = await readFile(outputFileForPage(byId.get("post-light-memory"), locale), "utf8");
+    const base = `${SITE_BASE_PATH}/${locale.path ? `${locale.path}/` : ""}`;
+    const blogUrl = `${base}${byId.get("research-notes").slug}/`;
+    const pilotUrl = `${base}${byId.get("post-light-memory").slug}/`;
+    const latest = [...byId.values()].filter((page) => page.weekStart)
+      .sort((a, b) => b.weekStart.localeCompare(a.weekStart))[0];
+    const cards = [...index.matchAll(/<article class="blog-card weekly-card[^"]*">[\s\S]*?<\/article>/g)];
+    assert.equal(cards.length, 46);
+    assert.ok(cards[0][0].includes(`href="${base}${latest.slug}/"`));
+    assert.ok(index.indexOf("weekly-card-featured") < index.indexOf('id="word-cloud-title"'));
+    assert.ok(!index.includes(`href="${pilotUrl}"`));
+    assert.ok(pilot.includes(`http-equiv="refresh" content="0; url=${blogUrl}"`));
+    for (const [card] of cards) {
+      assert.match(card, /<img src="https:\/\/[^"]+" alt="[^"]+"/);
+      assert.match(card, /<figcaption>[\s\S]*?creativecommons\.org\/licenses\//);
+    }
   }
 });
 
@@ -334,7 +341,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=70/);
+  assert.match(html, /assets\/style\.css\?v=71/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);
@@ -497,7 +504,7 @@ test("about page presents a curated carousel and compact academic trajectory", a
 });
 
 test("interior pages begin directly with content and keep an accessible page title", async () => {
-  for (const slug of pages.map((page) => page.slug).filter((slug) => slug && !mergedRoutes[slug])) {
+  for (const { slug } of pages.filter((page) => page.slug && !mergedRoutes[page.id])) {
     const html = await readFile(path.join(OUTPUT_ROOT, slug, "index.html"), "utf8");
     assert.match(html, /<h1 class="visually-hidden">[^<]+<\/h1>\s*<div class="page-content">/);
     assert.doesNotMatch(html, /class="page-heading"|class="section-index"|On this page|class="page-description"/);

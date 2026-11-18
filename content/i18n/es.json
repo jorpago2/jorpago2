@@ -53,7 +53,9 @@
   },
   "blogArchive": {
     "title": "Archivo semanal",
-    "weekOf": "Semana del"
+    "latest": "Última edición",
+    "figure": "Figura",
+    "read": "Leer la entrada"
   },
   "wordCloud": {
     "title": "Nube de palabras",

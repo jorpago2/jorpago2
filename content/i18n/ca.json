@@ -53,7 +53,9 @@
   },
   "blogArchive": {
     "title": "Arxiu setmanal",
-    "weekOf": "Setmana del"
+    "latest": "Última edició",
+    "figure": "Figura",
+    "read": "Llegir l’entrada"
   },
   "wordCloud": {
     "title": "Núvol de paraules",

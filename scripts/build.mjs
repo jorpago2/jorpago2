@@ -1,7 +1,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { renderBlogWordCloud } from "./word-cloud.mjs";
-import { renderBlogArchive } from "./blog-archive.mjs";
+import { renderBlogFrontPage } from "./blog-archive.mjs";
 
 const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
@@ -18,6 +18,7 @@ const mergedRoutes = {
   publications: { target: "research", anchor: "publications" },
   books: { target: "teaching", anchor: "books" },
   theses: { target: "teaching", anchor: "theses" },
+  "post-light-memory": { target: "research-notes" },
 };
 
 function escapeHtml(value) {
@@ -324,8 +325,8 @@ function renderSharedContent(pageId, content, localeCode, strings, sharedData) {
 }
 
 async function loadSharedData() {
-  const [publications, teaching, resources] = await Promise.all(
-    ["publications", "teaching", "resources"].map((name) =>
+  const [publications, teaching, resources, weeklyResearch] = await Promise.all(
+    ["publications", "teaching", "resources", "weekly-research-2026"].map((name) =>
       readFile(path.join(CONTENT_ROOT, "data", `${name}.json`), "utf8").then(JSON.parse),
     ),
   );
@@ -336,7 +337,7 @@ async function loadSharedData() {
   if (!teaching.book) throw new Error("Missing teaching book.");
   requiredArray(resources.tools, "online tools");
   requiredArray(resources.groups, "resource groups");
-  return { publications, teaching, resources };
+  return { publications, teaching, resources, weeklyResearch };
 }
 
 function pageShell({ page, content, locale, strings, localeBundles }) {
@@ -365,7 +366,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=70">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=71">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -540,7 +541,7 @@ async function main() {
   await cp(socialImagePath, path.join(OUTPUT_ROOT, "assets", "og.png"));
 
   for (const bundle of localeBundles) {
-    const postFragments = await Promise.all(bundle.pages.filter((page) => page.id.startsWith("post-"))
+    const postFragments = await Promise.all(bundle.pages.filter((page) => page.id.startsWith("post-") && !mergedRoutes[page.id])
       .map((page) => readFile(path.join(bundle.localeRoot, `${page.id}.html`), "utf8")));
     const wordCloud = renderBlogWordCloud(postFragments, bundle.locale.code, bundle.strings.wordCloud);
     const localeOutputRoot = bundle.locale.path
@@ -560,9 +561,12 @@ async function main() {
         ? ""
         : renderSharedContent(page.id, fragment, bundle.locale.code, bundle.strings, sharedData);
       if (page.id === "research-notes") {
-        if (!content.includes("<!-- BLOG_ARCHIVE -->")) throw new Error(`Missing blog archive marker for ${bundle.locale.code}.`);
-        content = content.replace("<!-- BLOG_WORD_CLOUD -->", wordCloud)
-          .replace("<!-- BLOG_ARCHIVE -->", renderBlogArchive(bundle.pages, bundle.locale, bundle.strings.blogArchive, route));
+        const { featured, archive } = renderBlogFrontPage(
+          bundle.pages, bundle.locale, bundle.strings.blogArchive, route, sharedData.weeklyResearch.articles,
+        );
+        content = content.replace("<!-- BLOG_FEATURED -->", featured)
+          .replace("<!-- BLOG_WORD_CLOUD -->", wordCloud)
+          .replace("<!-- BLOG_ARCHIVE -->", archive);
       }
       await writeFile(
         path.join(outputDirectory, "index.html"),
@@ -632,9 +636,14 @@ async function main() {
     notFoundPage(defaultBundle.locale, defaultBundle.strings, localeBundles),
     "utf8",
   );
+  const retiredBlogRedirects = localeBundles.map(({ locale, pagesById }) => {
+    const pilot = pagesById.get("post-light-memory");
+    const blog = pagesById.get("research-notes");
+    return `Redirect 301 ${route(pilot.slug, locale)} ${route(blog.slug, locale)}`;
+  }).join("\n");
   await writeFile(
     path.join(OUTPUT_ROOT, ".htaccess"),
-    `Options -Indexes\nDirectoryIndex index.html\nErrorDocument 404 ${SITE_BASE_PATH}/404.html\nRedirect 301 ${SITE_BASE_PATH}/publications/ ${SITE_BASE_PATH}/research/#publications\nRedirect 301 ${SITE_BASE_PATH}/books/ ${SITE_BASE_PATH}/teaching/#books\nRedirect 301 ${SITE_BASE_PATH}/theses/ ${SITE_BASE_PATH}/teaching/#theses\nRedirect 301 ${SITE_BASE_PATH}/theases/ ${SITE_BASE_PATH}/teaching/#theses\nRedirect 301 ${SITE_BASE_PATH}/research-notes/ ${SITE_BASE_PATH}/blog/\n`,
+    `Options -Indexes\nDirectoryIndex index.html\nErrorDocument 404 ${SITE_BASE_PATH}/404.html\nRedirect 301 ${SITE_BASE_PATH}/publications/ ${SITE_BASE_PATH}/research/#publications\nRedirect 301 ${SITE_BASE_PATH}/books/ ${SITE_BASE_PATH}/teaching/#books\nRedirect 301 ${SITE_BASE_PATH}/theses/ ${SITE_BASE_PATH}/teaching/#theses\nRedirect 301 ${SITE_BASE_PATH}/theases/ ${SITE_BASE_PATH}/teaching/#theses\nRedirect 301 ${SITE_BASE_PATH}/research-notes/ ${SITE_BASE_PATH}/blog/\n${retiredBlogRedirects}\n`,
     "utf8",
   );
 

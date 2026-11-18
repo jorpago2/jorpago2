@@ -115,7 +115,8 @@
     "description": "A modulator with the material in its favor · A photosynapse that looks in several bands · A crystal that separates light also into the infrared",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2025-12-31",
-    "weekEnd": "2026-01-07"
+    "weekEnd": "2026-01-07",
+    "coverDoi": "10.1038/s41377-025-02081-9"
   },
   {
     "id": "post-week-2026-01-07",
@@ -124,7 +125,8 @@
     "description": "Bringing fibre-like losses to a chip · A synapse that distinguishes the orientation of light · Disordered tellurium seen from inside the device",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-01-07",
-    "weekEnd": "2026-01-14"
+    "weekEnd": "2026-01-14",
+    "coverDoi": "10.1038/s41586-025-09889-w"
   },
   {
     "id": "post-week-2026-01-14",
@@ -133,7 +135,8 @@
     "description": "Photons that arrive on cue and match one another · A more stable memory after annealing · When pores change gold's response to light",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-01-14",
-    "weekEnd": "2026-01-21"
+    "weekEnd": "2026-01-21",
+    "coverDoi": "10.1038/s41467-026-68336-0"
   },
   {
     "id": "post-week-2026-01-21",
@@ -142,7 +145,8 @@
     "description": "A spectrometer that fits on a detector · A layer of MoS₂ finds its orientation · What happens when two lithium niobate crystals are twisted",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-01-21",
-    "weekEnd": "2026-01-28"
+    "weekEnd": "2026-01-28",
+    "coverDoi": "10.1038/s41467-026-68685-w"
   },
   {
     "id": "post-week-2026-01-28",
@@ -151,7 +155,8 @@
     "description": "How much returning light can a laser tolerate · A photosynapse sensitive to the direction of light · Noise as a window into phase-change memory",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-01-28",
-    "weekEnd": "2026-02-04"
+    "weekEnd": "2026-02-04",
+    "coverDoi": "10.1038/s41377-026-02185-w"
   },
   {
     "id": "post-week-2026-02-04",
@@ -160,7 +165,8 @@
     "description": "When a flat band helps mix light and magnetism · A neuron that sees and a synapse that stores · Tune a ferroelectric to save more states",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-02-04",
-    "weekEnd": "2026-02-11"
+    "weekEnd": "2026-02-11",
+    "coverDoi": "10.1038/s41467-026-69326-y"
   },
   {
     "id": "post-week-2026-02-11",
@@ -169,7 +175,8 @@
     "description": "A waveguide that detects the heat of a few molecules · A dark-adaptive transistor · Crush a crystal to change the light it emits",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-02-11",
-    "weekEnd": "2026-02-18"
+    "weekEnd": "2026-02-18",
+    "coverDoi": "10.1038/s41377-026-02196-7"
   },
   {
     "id": "post-week-2026-02-18",
@@ -178,7 +185,8 @@
     "description": "An image that appears little by little · An electrode that gives time to the artificial neuron · VO₂ speed seen from the inside",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-02-18",
-    "weekEnd": "2026-02-25"
+    "weekEnd": "2026-02-25",
+    "coverDoi": "10.1038/s41377-026-02202-y"
   },
   {
     "id": "post-week-2026-02-25",
@@ -187,7 +195,8 @@
     "description": "A passive cavity that imitates the start of a laser · Memory that changes at its own pace · When the sample position changes what the IGZO sees",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-02-25",
-    "weekEnd": "2026-03-04"
+    "weekEnd": "2026-03-04",
+    "coverDoi": "10.1038/s41467-026-70123-w"
   },
   {
     "id": "post-week-2026-03-04",
@@ -196,7 +205,8 @@
     "description": "Design an optical network letting light find its way · A photosynapse that moves ions · A perovskite transmits its asymmetry to a molecule",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-03-04",
-    "weekEnd": "2026-03-11"
+    "weekEnd": "2026-03-11",
+    "coverDoi": "10.1038/s41467-026-68648-1"
   },
   {
     "id": "post-week-2026-03-11",
@@ -205,7 +215,8 @@
     "description": "An optical gate that changes its function · A memristor that also rectifies · Changing the direction of polarization",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-03-11",
-    "weekEnd": "2026-03-18"
+    "weekEnd": "2026-03-18",
+    "coverDoi": "10.1038/s41467-026-70834-0"
   },
   {
     "id": "post-week-2026-03-18",
@@ -214,7 +225,8 @@
     "description": "Circularly polarized light and excitons on a metasurface · An oxygen reservoir to control memory · Writing amorphous regions inside a crystal",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-03-18",
-    "weekEnd": "2026-03-25"
+    "weekEnd": "2026-03-25",
+    "coverDoi": "10.1038/s41467-026-70875-5"
   },
   {
     "id": "post-week-2026-03-25",
@@ -223,7 +235,8 @@
     "description": "From photonic chip to wireless link · A molecule with several memory states · When a network of quantum dots flashes in unison",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-03-25",
-    "weekEnd": "2026-04-01"
+    "weekEnd": "2026-04-01",
+    "coverDoi": "10.1038/s41467-026-71081-z"
   },
   {
     "id": "post-week-2026-04-01",
@@ -232,7 +245,8 @@
     "description": "A film whose response to polarisation can change · An artificial neuron built with nanowires · What happens when gold is implanted in a silicon ring",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-01",
-    "weekEnd": "2026-04-08"
+    "weekEnd": "2026-04-08",
+    "coverDoi": "10.1038/s41566-026-01886-3"
   },
   {
     "id": "post-week-2026-04-08",
@@ -241,7 +255,8 @@
     "description": "An optical processor that connects to a neural network · A device that changes function as the voltage changes · Change the path of light without absorbing too much of it",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-08",
-    "weekEnd": "2026-04-15"
+    "weekEnd": "2026-04-15",
+    "coverDoi": "10.1038/s41467-026-71599-2"
   },
   {
     "id": "post-week-2026-04-15",
@@ -250,7 +265,8 @@
     "description": "A cell for light-controlled neurons and synapses · An Ising machine with memory and a fluctuating magnet · Growing perovskite crystals with the help of a polymer",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-15",
-    "weekEnd": "2026-04-22"
+    "weekEnd": "2026-04-22",
+    "coverDoi": "10.1038/s41467-026-72119-y"
   },
   {
     "id": "post-week-2026-04-22",
@@ -259,7 +275,8 @@
     "description": "A metalens that makes use of dispersion · An electronic fingerprint that changes with light · Gold atoms between the layers of an oxide",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-22",
-    "weekEnd": "2026-04-29"
+    "weekEnd": "2026-04-29",
+    "coverDoi": "10.1038/s41467-026-72332-9"
   },
   {
     "id": "post-week-2026-04-29",
@@ -268,7 +285,8 @@
     "description": "An optical fiber that prefers to be flat · A molecular monolayer under a graphene gate · A semiconducting shell for gold nanocubes",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-04-29",
-    "weekEnd": "2026-05-06"
+    "weekEnd": "2026-05-06",
+    "coverDoi": "10.1038/s41467-026-72416-6"
   },
   {
     "id": "post-week-2026-05-06",
@@ -277,7 +295,8 @@
     "description": "Draw large and shrink later · Memristors to separate a signal from noise · A crystal that leaves its mark on silica",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-05-06",
-    "weekEnd": "2026-05-13"
+    "weekEnd": "2026-05-13",
+    "coverDoi": "10.1038/s41566-026-01896-1"
   },
   {
     "id": "post-week-2026-05-13",
@@ -286,7 +305,8 @@
     "description": "A MoS₂ waveguide that also processes light · A photosynapse that responds to color · The electric field brings order to a disordered material",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-05-13",
-    "weekEnd": "2026-05-20"
+    "weekEnd": "2026-05-20",
+    "coverDoi": "10.1038/s41467-026-73107-y"
   },
   {
     "id": "post-week-2026-05-20",
@@ -295,7 +315,8 @@
     "description": "Adjust a photonic circuit after manufacturing it · A memory based on charge density waves · An organic interface that reinforces non-linear response",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-05-20",
-    "weekEnd": "2026-05-27"
+    "weekEnd": "2026-05-27",
+    "coverDoi": "10.1038/s41467-026-73411-7"
   },
   {
     "id": "post-week-2026-05-27",
@@ -304,7 +325,8 @@
     "description": "Draw a photonic circuit starting with what it should do · A VO₂ neuron that adjusts its activity · An organic monolayer inside a microlaser",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-05-27",
-    "weekEnd": "2026-06-03"
+    "weekEnd": "2026-06-03",
+    "coverDoi": "10.1038/s41467-026-73390-9"
   },
   {
     "id": "post-week-2026-06-03",
@@ -313,7 +335,8 @@
     "description": "Intense pulses from a silicon nitride circuit · A resistive memory with calcium zirconate · When many emitters of a perovskite respond together",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-06-03",
-    "weekEnd": "2026-06-10"
+    "weekEnd": "2026-06-10",
+    "coverDoi": "10.1038/s41586-026-10517-4"
   },
   {
     "id": "post-week-2026-06-10",
@@ -322,7 +345,8 @@
     "description": "An optical comb to generate many chaotic signals · Tuning a gallium nitride transistor from its atomic structure · Tuning spin waves in a three-layer magnet",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-06-10",
-    "weekEnd": "2026-06-17"
+    "weekEnd": "2026-06-17",
+    "coverDoi": "10.1038/s41467-026-73440-2"
   },
   {
     "id": "post-week-2026-06-17",
@@ -331,7 +355,8 @@
     "description": "Photonics helps direct various radio beams · A transistor that responds in three levels to light · A perovskite that preserves spin information for longer",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-06-17",
-    "weekEnd": "2026-06-24"
+    "weekEnd": "2026-06-24",
+    "coverDoi": "10.1038/s41467-026-74485-z"
   },
   {
     "id": "post-week-2026-06-24",
@@ -340,7 +365,8 @@
     "description": "Ten emitters facing ten waveguides · An IGZO transistor with light response and memory · One element, two optical responses",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-06-24",
-    "weekEnd": "2026-07-01"
+    "weekEnd": "2026-07-01",
+    "coverDoi": "10.1038/s41467-026-74664-y"
   },
   {
     "id": "post-week-2026-07-01",
@@ -349,7 +375,8 @@
     "description": "An infrared image written pixel by pixel · Antennas and switches on the same wafer · When thinning silver changes its non-linear response",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-01",
-    "weekEnd": "2026-07-08"
+    "weekEnd": "2026-07-08",
+    "coverDoi": "10.1038/s41467-026-75346-5"
   },
   {
     "id": "post-week-2026-07-08",
@@ -358,7 +385,8 @@
     "description": "Measuring and preparing polarisation on a chip · A learning rule on a single memristor · Perovskites that grow with fewer defects",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-08",
-    "weekEnd": "2026-07-15"
+    "weekEnd": "2026-07-15",
+    "coverDoi": "10.1038/s41377-026-02405-3"
   },
   {
     "id": "post-week-2026-07-15",
@@ -367,7 +395,8 @@
     "description": "An arithmetic unit with silicon rings · Two types of transistor with the same flexible semiconductor · A molecular glass that responds to light and field",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-15",
-    "weekEnd": "2026-07-22"
+    "weekEnd": "2026-07-22",
+    "coverDoi": "10.1038/s41467-026-75750-x"
   },
   {
     "id": "post-week-2026-07-22",
@@ -376,7 +405,8 @@
     "description": "A hollow waveguide with room to enter from the sides · Recognising languages with memristor arrays · Light activates an indium selenide memory",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-22",
-    "weekEnd": "2026-07-29"
+    "weekEnd": "2026-07-29",
+    "coverDoi": "10.1038/s41467-026-75873-1"
   },
   {
     "id": "post-week-2026-07-29",
@@ -385,7 +415,8 @@
     "description": "Two edges to conduct polaritons with different polarization · A microwave network that transforms data as it arrives · A crystal that channels plasmons in the infrared",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-07-29",
-    "weekEnd": "2026-08-05"
+    "weekEnd": "2026-08-05",
+    "coverDoi": "10.1038/s41467-026-75965-y"
   },
   {
     "id": "post-week-2026-08-05",
@@ -394,7 +425,8 @@
     "description": "A guide with reflections to distinguish spectra · A zinc oxide memory that responds to movement · A Hall response that changes with ferroelectric polarization",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-08-05",
-    "weekEnd": "2026-08-12"
+    "weekEnd": "2026-08-12",
+    "coverDoi": "10.1038/s41467-026-76328-3"
   },
   {
     "id": "post-week-2026-08-12",
@@ -403,7 +435,8 @@
     "description": "Two materials to send information above one hundred gigahertz · A photodetector that picks out a flame by its ultraviolet light · What a ferroelectric layer passes on to graphene",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-08-12",
-    "weekEnd": "2026-08-19"
+    "weekEnd": "2026-08-19",
+    "coverDoi": "10.1038/s41467-026-76733-8"
   },
   {
     "id": "post-week-2026-08-19",
@@ -412,7 +445,8 @@
     "description": "A shortcut connection inside a photonic chip · A diode whose response is gate-tuned · Perovskites that convert infrared to color",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-08-19",
-    "weekEnd": "2026-08-26"
+    "weekEnd": "2026-08-26",
+    "coverDoi": "10.1038/s41377-026-02325-2"
   },
   {
     "id": "post-week-2026-08-26",
@@ -421,7 +455,8 @@
     "description": "A quantum emitter to introduce nonlinearity into an optical network · Using the time a sensor takes to switch off · A buried layer to care for a perovskite LED",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-08-26",
-    "weekEnd": "2026-09-02"
+    "weekEnd": "2026-09-02",
+    "coverDoi": "10.1038/s41467-026-77202-y"
   },
   {
     "id": "post-week-2026-09-02",
@@ -430,7 +465,8 @@
     "description": "A metasurface that gives access to nonlinearity · A memory written electrically and read with light · Ferroelectric vortices on a silicon base",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-02",
-    "weekEnd": "2026-09-09"
+    "weekEnd": "2026-09-09",
+    "coverDoi": "10.1038/s41565-026-02268-0"
   },
   {
     "id": "post-week-2026-09-09",
@@ -439,7 +475,8 @@
     "description": "Losses as a tool to guide a wave · Filtering before activating a spiking network · A ferroelectric that also has to evacuate heat",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-09",
-    "weekEnd": "2026-09-16"
+    "weekEnd": "2026-09-16",
+    "coverDoi": "10.1038/s41467-026-77412-4"
   },
   {
     "id": "post-week-2026-09-16",
@@ -448,7 +485,8 @@
     "description": "Adjusting a laser with a built-in resonator · A memory that preserves polarization loops · A material that serves as a mask and also emits light",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-16",
-    "weekEnd": "2026-09-23"
+    "weekEnd": "2026-09-23",
+    "coverDoi": "10.1038/s41467-026-77526-9"
   },
   {
     "id": "post-week-2026-09-23",
@@ -457,7 +495,8 @@
     "description": "Building a network of resonators on the surface of a fiber · A memristor where two graphene edges intersect · Allow ions to pass without water doing the same",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-23",
-    "weekEnd": "2026-09-30"
+    "weekEnd": "2026-09-30",
+    "coverDoi": "10.1038/s41467-026-76041-1"
   },
   {
     "id": "post-week-2026-09-30",
@@ -466,7 +505,8 @@
     "description": "Two crystals to select circular polarization · A stacked memristor and transistor for signal processing · A dielectric that tries not to change with temperature",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-09-30",
-    "weekEnd": "2026-10-07"
+    "weekEnd": "2026-10-07",
+    "coverDoi": "10.1038/s41467-026-78564-z"
   },
   {
     "id": "post-week-2026-10-07",
@@ -475,7 +515,8 @@
     "description": "Concentrating light beneath a monolayer · A layer of carbon dots helps deposit an insulator · A polarization that appears between natural layers",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-10-07",
-    "weekEnd": "2026-10-14"
+    "weekEnd": "2026-10-14",
+    "coverDoi": "10.1038/s41377-026-02436-w"
   },
   {
     "id": "post-week-2026-10-14",
@@ -484,7 +525,8 @@
     "description": "Turning the polarization to steer light · A transistor that changes tasks · The moment to start crystallizing",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-10-14",
-    "weekEnd": "2026-10-21"
+    "weekEnd": "2026-10-21",
+    "coverDoi": "10.1038/s41467-026-78660-0"
   },
   {
     "id": "post-week-2026-10-21",
@@ -493,7 +535,8 @@
     "description": "A modulator that prepares the signal before sending it · Two ways of remembering in the same perovskite · Giving the perovskite time to crystallize",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-10-21",
-    "weekEnd": "2026-10-28"
+    "weekEnd": "2026-10-28",
+    "coverDoi": "10.1038/s41467-026-78128-1"
   },
   {
     "id": "post-week-2026-10-28",
@@ -502,7 +545,8 @@
     "description": "Separate what light only half tells · An additive that reshapes the channel of a perovskite transistor · Track electrons as light oscillates",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-10-28",
-    "weekEnd": "2026-11-04"
+    "weekEnd": "2026-11-04",
+    "coverDoi": "10.1038/s41566-026-02035-6"
   },
   {
     "id": "post-week-2026-11-04",
@@ -511,7 +555,8 @@
     "description": "Two light patterns that form a moiré in free space · A transistor to remember for a moment and for longer · The luminous trace of an atomic defect",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-11-04",
-    "weekEnd": "2026-11-11"
+    "weekEnd": "2026-11-11",
+    "coverDoi": "10.1038/s41377-026-02533-w"
   },
   {
     "id": "post-week-2026-11-11",
@@ -520,6 +565,7 @@
     "description": "Illuminating a plane to see inside a tissue · Two stacked transistors and a cleaner interface · How gold and silicon nanoparticles differ when we measure them",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-11-11",
-    "weekEnd": "2026-11-18"
+    "weekEnd": "2026-11-18",
+    "coverDoi": "10.1038/s41467-026-78668-6"
   }
 ]

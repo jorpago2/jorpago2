@@ -2375,23 +2375,8 @@ figcaption {
 }
 .blog-card-figure { min-width: 0; margin: 0; }
 .blog-card-figure img { width: 100%; height: auto; border: 1px solid var(--line); }
-/* Frame the chip photograph in panel 2c of Lam and colleagues' figure 2. */
-.blog-card-figure.lam-crop > a {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  aspect-ratio: 272 / 205;
-  background: var(--canvas);
-}
-.blog-card-figure.lam-crop img {
-  position: absolute;
-  top: -190.24%;
-  left: -151.84%;
-  width: 251.84%;
-  max-width: none;
-  height: auto;
-  border: 0;
-}
+.weekly-card .blog-card-figure > a { display: block; }
+.weekly-card .blog-card-figure img { display: block; object-fit: contain; background: var(--canvas); }
 .blog-card-figure figcaption { margin-top: .5rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
 .blog-card-figure figcaption a[href*="creativecommons.org"] { white-space: nowrap; }
 .blog-card-copy { min-width: 0; }
@@ -2422,11 +2407,23 @@ figcaption {
 .blog-archive h3 { margin: 0 0 1.5rem; font-size: clamp(1.5rem, 3vw, 2rem); }
 .blog-archive details { border-top: 1px solid var(--line); }
 .blog-archive details:last-child { border-bottom: 1px solid var(--line); }
-.blog-archive summary { padding: 1rem 0; cursor: pointer; font-weight: 700; text-transform: capitalize; }
-.blog-archive ol { margin: 0; padding: 0 0 1rem; list-style: none; }
-.blog-archive li { max-width: 65rem; padding: 1rem 0; border-top: 1px solid var(--line); }
-.blog-archive li h4 { margin: .3rem 0; font-size: 1.2rem; line-height: 1.3; }
-.blog-archive li p { margin: .4rem 0; }
+.blog-archive summary { padding: 1rem 0; cursor: pointer; font-weight: 700; }
+.blog-archive ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0 0 1rem;
+  list-style: none;
+}
+.blog-archive ol > li { min-width: 0; }
+.blog-archive .weekly-card {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+  gap: 1rem;
+  height: 100%;
+}
+.blog-archive .weekly-card img { block-size: 7.5rem; }
+.blog-archive .weekly-card h4 { margin: .3rem 0; font-size: 1.2rem; line-height: 1.3; }
 
 /* Keep the commentary and its figure together on wider screens. */
 .blog-edition .note-entry {

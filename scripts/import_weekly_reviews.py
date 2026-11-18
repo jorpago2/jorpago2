@@ -299,7 +299,8 @@ def main() -> None:
                 if locale != "es" and links(visible_text(text)) != links(visible_text(texts["es"])):
                     raise ValueError(f"{locale} does not retain the source links")
                 title, description, fragment = render(text, locale, start)
-                week.append((locale, start, title, description, fragment))
+                first_review = re.split(r"^## ", visible_text(text), flags=re.M)[1]
+                week.append((locale, start, title, description, fragment, article_doi(first_review)))
             prepared.extend(week)
         except (OSError, ValueError) as error:
             errors.append(f"{stem}: {error}")
@@ -313,13 +314,14 @@ def main() -> None:
         index_path = folder / "pages.json"
         pages = json.loads(index_path.read_text(encoding="utf-8"))
         pages = [page for page in pages if not re.fullmatch(r"post-week-\d{4}-\d{2}-\d{2}", page["id"])]
-        for code, day, title, description, fragment in prepared:
+        for code, day, title, description, fragment, cover_doi in prepared:
             if code != locale:
                 continue
             page_id = f"post-week-{day.isoformat()}"
             pages.append({"id": page_id, "slug": f"blog-{day.isoformat()}", "title": title,
                           "description": description, "modified": "2026-11-18T00:00:00",
-                          "weekStart": day.isoformat(), "weekEnd": (day + timedelta(days=7)).isoformat()})
+                          "weekStart": day.isoformat(), "weekEnd": (day + timedelta(days=7)).isoformat(),
+                          "coverDoi": cover_doi})
             (folder / f"{page_id}.html").write_text(fragment, encoding="utf-8")
         index_path.write_text(json.dumps(pages, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Imported {len(prepared) // 3} weeks in three languages")
