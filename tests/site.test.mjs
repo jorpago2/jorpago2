@@ -545,6 +545,8 @@ test("migrated content images have alternative text", async () => {
 
 test("legacy route redirects and sitemap lists every page", async () => {
   const oldThesesRedirect = await readFile(path.join(OUTPUT_ROOT, "theases", "index.html"), "utf8");
+  const oldBlogRedirect = await readFile(path.join(OUTPUT_ROOT, "research-notes", "index.html"), "utf8");
+  const apacheRules = await readFile(path.join(OUTPUT_ROOT, ".htaccess"), "utf8");
   const publicationsRedirect = await readFile(path.join(OUTPUT_ROOT, "publications", "index.html"), "utf8");
   const booksRedirect = await readFile(path.join(OUTPUT_ROOT, "books", "index.html"), "utf8");
   const thesesRedirect = await readFile(path.join(OUTPUT_ROOT, "theses", "index.html"), "utf8");
@@ -558,6 +560,10 @@ test("legacy route redirects and sitemap lists every page", async () => {
   assert.match(booksRedirect, /url=\/jorpago2\/teaching\/#books/);
   assert.match(thesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
   assert.match(oldThesesRedirect, /url=\/jorpago2\/teaching\/#theses/);
+  assert.match(oldBlogRedirect, /url=\/jorpago2\/blog\//);
+  assert.match(apacheRules, /Redirect 301 \/jorpago2\/research-notes\/ \/jorpago2\/blog\//);
+  assert.match(sitemap, /<loc>https:\/\/www\.uv\.es\/jorpago2\/blog\/<\/loc>/);
+  assert.doesNotMatch(sitemap, /<loc>https:\/\/www\.uv\.es\/jorpago2\/research-notes\/<\/loc>/);
   const sitemapPageCount = localeConfig.locales.reduce(
     (count, locale) => count + localizedPages.get(locale.code).filter((page) => !mergedRoutes[page.id]).length,
     0,

@@ -433,7 +433,7 @@ function notFoundPage(locale, strings, localeBundles) {
 function redirectPage(page, destination, bundle) {
   const targetPage = bundle.pagesById.get(destination.target);
   if (!targetPage) throw new Error(`Missing redirect target in ${bundle.locale.code}: ${destination.target}`);
-  const target = `${route(targetPage.slug, bundle.locale)}#${destination.anchor}`;
+  const target = `${route(targetPage.slug, bundle.locale)}${destination.anchor ? `#${destination.anchor}` : ""}`;
   return `<!doctype html>
 <html lang="${bundle.locale.code}">
 <head>
@@ -588,6 +588,18 @@ async function main() {
     "utf8",
   );
 
+  const oldBlogRoute = path.join(OUTPUT_ROOT, "research-notes");
+  await mkdir(oldBlogRoute, { recursive: true });
+  await writeFile(
+    path.join(oldBlogRoute, "index.html"),
+    redirectPage(
+      { id: "old-blog", slug: "research-notes", title: "Blog", description: "Research blog." },
+      { target: "research-notes" },
+      defaultBundle,
+    ),
+    "utf8",
+  );
+
   const sitemap = localeBundles
     .flatMap((bundle) =>
       bundle.pages
@@ -617,7 +629,7 @@ async function main() {
   );
   await writeFile(
     path.join(OUTPUT_ROOT, ".htaccess"),
-    `Options -Indexes\nDirectoryIndex index.html\nErrorDocument 404 ${SITE_BASE_PATH}/404.html\nRedirect 301 ${SITE_BASE_PATH}/publications/ ${SITE_BASE_PATH}/research/#publications\nRedirect 301 ${SITE_BASE_PATH}/books/ ${SITE_BASE_PATH}/teaching/#books\nRedirect 301 ${SITE_BASE_PATH}/theses/ ${SITE_BASE_PATH}/teaching/#theses\nRedirect 301 ${SITE_BASE_PATH}/theases/ ${SITE_BASE_PATH}/teaching/#theses\n`,
+    `Options -Indexes\nDirectoryIndex index.html\nErrorDocument 404 ${SITE_BASE_PATH}/404.html\nRedirect 301 ${SITE_BASE_PATH}/publications/ ${SITE_BASE_PATH}/research/#publications\nRedirect 301 ${SITE_BASE_PATH}/books/ ${SITE_BASE_PATH}/teaching/#books\nRedirect 301 ${SITE_BASE_PATH}/theses/ ${SITE_BASE_PATH}/teaching/#theses\nRedirect 301 ${SITE_BASE_PATH}/theases/ ${SITE_BASE_PATH}/teaching/#theses\nRedirect 301 ${SITE_BASE_PATH}/research-notes/ ${SITE_BASE_PATH}/blog/\n`,
     "utf8",
   );
 
@@ -627,7 +639,7 @@ async function main() {
   );
   const redirectCount = localeBundles.reduce(
     (count, bundle) => count + bundle.pages.filter((page) => mergedRoutes[page.id]).length,
-    1,
+    2,
   );
   console.log(`Built ${pageCount} pages and ${redirectCount} redirects in ${OUTPUT_ROOT}.`);
 }
