@@ -2334,23 +2334,6 @@ figcaption {
 .note-entry { display: grid; grid-template-columns: minmax(12rem, 1fr) minmax(0, 2fr); gap: clamp(1rem, 5vw, 5rem); border-top: 1px solid var(--line); padding: 2rem 0 2.5rem; }
 .note-entry h4 { margin: 0 0 .75rem; font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.2; }
 .note-meta { color: var(--muted); font-size: .88rem; line-height: 1.6; }
-.paper-reference {
-  max-width: 75ch;
-  margin: 1rem 0;
-  padding: .85rem 1rem;
-  border-left: 3px solid var(--accent);
-  background: var(--surface);
-  font-size: .9rem;
-  line-height: 1.6;
-  overflow-wrap: anywhere;
-}
-.paper-reference-label {
-  display: block;
-  margin-bottom: .25rem;
-  color: var(--muted);
-  font-size: .78rem;
-  font-weight: 700;
-}
 .note-body { max-width: 48rem; font-size: 1.05rem; line-height: 1.75; }
 .note-body p:first-child { margin-top: 0; }
 .note-link { display: inline-block; font-weight: 700; margin-top: .35rem; }
