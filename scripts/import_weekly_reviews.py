@@ -191,8 +191,9 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
             label = next((line[4:].strip() for line in section_lines if line.startswith("### ")), label)
         label = re.sub(r"^(?:fot[oóò]nica|photonics|electr[oóò]nica|electronics|materials|materiales)\s*[—–-]\s*", "", label, flags=re.I)
         topics.append(label)
-    if re.match(r"^(?:semana|setmana|week|del\s+\d|from\s+)", heading, re.I) and topics:
-        heading = topics[0]
+    has_review_subheading = [
+        bool(re.search(r"^### ", section, flags=re.M)) for section in topic_sections
+    ]
     lines = lines[next(i for i, line in enumerate(lines) if line.startswith("# ")) + 1 :]
     blocks = re.split(r"\n\s*\n", "\n".join(lines).strip())
     rendered = []
@@ -215,11 +216,11 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
         if section_number == 0 and re.search(r"\b(?:borrador|esborrany|draft)\b", text, re.I) and len(text) < 220:
             continue
         if text.startswith("### "):
-            if section_number == 1 and text[4:].strip() == heading:
-                continue
-            rendered.append(f"<h4>{inline(text[4:])}</h4>")
             if 1 <= section_number <= 3:
+                rendered.append(f'<h4 class="weekly-review-title">{inline(text[4:])}</h4>')
                 reference_position = len(rendered)
+            else:
+                rendered.append(f"<h4>{inline(text[4:])}</h4>")
         elif text.startswith("## "):
             if 1 <= section_number <= 3:
                 add_missing_reference()
@@ -228,10 +229,9 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
             reference_position = len(rendered)
             if section_number == 4:
                 rendered.append(f'<section class="notes-mention"><h4>{inline(text[3:])}</h4>')
-            elif section_number == 1 and text[3:].strip() == heading:
-                continue
             else:
-                rendered.append(f"<h3>{inline(text[3:])}</h3>")
+                css = ' class="weekly-review-title"' if not has_review_subheading[section_number - 1] else ""
+                rendered.append(f"<h3{css}>{inline(text[3:])}</h3>")
                 reference_position = len(rendered)
         elif text.startswith("- "):
             items = re.split(r"\s+-\s+", text[2:])

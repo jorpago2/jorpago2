@@ -103,6 +103,12 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.ok(index.includes(`/${page.slug}/`));
       assert.equal((html.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
       assert.match(html, /class="notes-mention"/);
+      const issueTitle = html.match(/class="notes-issue weekly-copy">[\s\S]*?<h3>([^<]+)<\/h3>/)?.[1];
+      const reviewTitles = [...html.matchAll(/<h[34] class="weekly-review-title">([^<]+)<\/h[34]>/g)]
+        .map((match) => match[1]);
+      assert.ok(issueTitle, `${locale.code}/${page.id} should have a visible edition title`);
+      assert.equal(new Set(reviewTitles).size, 3);
+      assert.ok(!reviewTitles.includes(issueTitle), "Review titles should be distinct from the edition title");
       assert.equal((html.match(/class="note-meta weekly-reference"/g) ?? []).length, 3);
       const figures = [...html.matchAll(/<figure class="paper-figure weekly-figure">[\s\S]*?<\/figure>/g)];
       assert.equal(figures.length, 3, `${locale.code}/${page.id} should have one figure per review`);
