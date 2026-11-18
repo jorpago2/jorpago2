@@ -2468,6 +2468,13 @@ figcaption {
   line-height: 1.2;
 }
 
+.weekly-lead {
+  max-width: 45rem;
+  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
 .weekly-review {
   padding-top: 1.5rem;
   border-top: 1px solid var(--line);
