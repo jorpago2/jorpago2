@@ -502,6 +502,18 @@ main {
   color: var(--muted);
 }
 
+.information-entry-book {
+  padding-block-start: .5rem;
+}
+
+.information-entry-book .information-entry-description {
+  margin-block-start: .45rem;
+}
+
+.information-entry-book > .button {
+  margin-block-start: .8rem;
+}
+
 .simulator-information {
   border-top-color: var(--blue);
 }
@@ -2379,6 +2391,12 @@ figcaption {
   line-height: 1.02;
   text-wrap: balance;
 }
+.home-reading-subtitle {
+  max-width: 32ch;
+  margin: .7rem 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
 .home-reading-archive { font-size: .9rem; font-weight: 700; }
 .home-reading .blog-card {
   border-block-start: 1px solid var(--line);
@@ -2488,7 +2506,6 @@ figcaption {
 
 @media (min-width: 701px) {
   .home-reading { grid-template-columns: minmax(0, 1fr) minmax(0, 1.85fr); }
-  .home-reading-header { align-content: space-between; }
   .home-reading .blog-card {
     border-block-start: 0;
     border-inline-start: 1px solid var(--line);
