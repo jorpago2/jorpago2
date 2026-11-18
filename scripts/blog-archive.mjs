@@ -51,7 +51,7 @@ function weeklyCard(post, locale, strings, pageRoute, articles, featured = false
   return `<article class="blog-card${featured ? " blog-card-feature" : ""}">
     <figure class="blog-card-figure">
       <a href="${url}" aria-label="${escapeHtml(post.title)}"><img src="${escapeHtml(figure.url)}" alt="${escapeHtml(figure.caption)}" lang="en"${featured ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></a>
-      <figcaption><a href="${escapeHtml(figure.source)}">${escapeHtml(strings.figure)} ${escapeHtml(figure.number)} · ${escapeHtml(author)} et al.</a> · <a href="${escapeHtml(figure.license)}">CC ${escapeHtml(licenseType)} 4.0</a></figcaption>
+      <figcaption><a href="${escapeHtml(figure.source)}">${escapeHtml(strings.figure)} ${escapeHtml(figure.number)}, ${escapeHtml(author)} et al.</a>, <a href="${escapeHtml(figure.license)}">CC ${escapeHtml(licenseType)} 4.0</a></figcaption>
     </figure>
     <div class="blog-card-copy">
       <p class="note-meta"><time datetime="${post.weekStart}">${escapeHtml(date)}</time></p>

@@ -67,6 +67,10 @@ button {
   font: inherit;
 }
 
+ul {
+  list-style-type: "";
+}
+
 img {
   display: block;
   max-width: 100%;

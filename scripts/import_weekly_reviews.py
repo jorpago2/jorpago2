@@ -141,7 +141,7 @@ def institutions_html(doi: str, locale: str) -> str:
     label = ("Instituciones participantes", "Participating institutions", "Institucions participants")[translation]
     entries = [f'<a href="{html.escape(url)}">{html.escape(name)}</a> ({COUNTRIES[country][translation]})'
                for url, name, country in institutions if country in COUNTRIES]
-    return f'<p class="note-meta institutions">{label}<br>{" · ".join(entries)}</p>' if entries else ""
+    return f'<p class="note-meta institutions">{label}<br>{", ".join(entries)}</p>' if entries else ""
 
 
 def additional_material(locale: str, doi: str) -> str:
@@ -159,8 +159,8 @@ def additional_material(locale: str, doi: str) -> str:
             f'<figure class="paper-figure weekly-figure"><a href="{result["source"]}">'
             f'<img src="{result["url"]}" alt="{title}" lang="en" loading="lazy"></a>'
             f'<figcaption>{label} {result["number"]}. <span lang="en">{title}</span> '
-            f'<a href="https://doi.org/{doi}">{html.escape(credit)} et al.</a> · '
-            f'<a href="{result["license"]}">{license_label}</a> · {unchanged}.</figcaption></figure>'
+            f'<a href="https://doi.org/{doi}">{html.escape(credit)} et al.</a>, '
+            f'<a href="{result["license"]}">{license_label}</a>. {unchanged}.</figcaption></figure>'
         )
     else:
         figure_html = ""
@@ -246,7 +246,7 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
                     remaining = [m.group() for m in LINK.finditer(text)
                                  if "/dialog/" in m.group(2) or not article_doi(m.group(2))]
                     if remaining:
-                        citation_html = citation_html[:-4] + " " + " · ".join(inline(link) for link in remaining) + "</p>"
+                        citation_html = citation_html[:-4] + " " + ", ".join(inline(link) for link in remaining) + "</p>"
                     notes = [part for part in re.split(r"(?<=\.)\s+", text)
                              if re.match(r"^(?:Acceso abierto|Open access|Accés obert|La primera versi|The first version|La primera versi)", part, re.I)
                              and not article_doi(part) and len(part) < 240]
@@ -264,10 +264,10 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
     labels = {
         "es": ("Todas las entradas", "Semana del"),
         "en": ("All posts", "Week of"),
-        "ca": ("Totes les entrades", "Setmana ·"),
+        "ca": ("Totes les entrades", "Setmana del"),
     }
     back, prefix = labels[locale]
-    description = " · ".join(topics)
+    description = ", ".join(topics)
     locale_path = {"es": "/es/lecturas/", "en": "/blog/", "ca": "/va/lectures/"}[locale]
     months = {
         "es": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],

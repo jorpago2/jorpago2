@@ -259,7 +259,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   assert.equal((about.match(/aria-roledescription="slide"/g) ?? []).length, 7);
   assert.match(research, /Fotónica integrada reconfigurable con materiales funcionales/);
   assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 29);
-  assert.equal((teaching.match(/· Codirector/g) ?? []).length, 10);
+  assert.equal((teaching.match(/, Codirector/g) ?? []).length, 10);
   assert.match(resources, /Aplicaciones web y recursos/);
   assert.match(resources, /Diseño, simulación y medida/);
   assert.match(contact, /Estudiantes de grado y máster/);
@@ -298,7 +298,7 @@ test("Valencian pages use translated routes, content and SEO alternates", async 
   assert.match(research, /Fotònica integrada reconfigurable amb materials funcionals/);
   assert.equal((research.match(/href="https:\/\/doi\.org\//g) ?? []).length, 29);
   assert.match(teaching, /Sistemes electrònics digitals I/);
-  assert.equal((teaching.match(/· Codirector/g) ?? []).length, 10);
+  assert.equal((teaching.match(/, Codirector/g) ?? []).length, 10);
   assert.match(resources, /Disseny, simulació i mesura/);
   assert.match(contact, /Estudiants de grau i màster/);
   assert.match(students, /Quatre hàbits útils per a investigar/);
@@ -338,7 +338,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=74/);
+  assert.match(html, /assets\/style\.css\?v=75/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);
@@ -470,8 +470,8 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
   assert.equal((teaching.match(/class="course-list previous-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 4);
   assert.equal((teaching.match(/class="supervision-year"/g) ?? []).length, 10);
-  assert.equal((teaching.match(/· Co-supervisor/g) ?? []).length, 10);
-  assert.doesNotMatch(teaching, /· Supervisor/);
+  assert.equal((teaching.match(/, Co-supervisor/g) ?? []).length, 10);
+  assert.doesNotMatch(teaching, /, Supervisor/);
   assert.match(teaching, /Co-supervised theses/);
   assert.match(teaching, /Electronics and photonics education/);
   assert.match(teaching, /class="section-intro teaching-intro"[\s\S]*?teaching-electronics-photonics\.webp\?v=2/);
@@ -492,7 +492,7 @@ test("about page presents a curated carousel and compact academic trajectory", a
   assert.equal((carousel.match(/aria-roledescription="slide"/g) ?? []).length, 7);
   assert.match(html, /Researcher and educator in integrated photonics/);
   assert.equal((html.match(/class="trajectory-date"/g) ?? []).length, 9);
-  assert.match(html, /COIT-AEIT National Award for Best Academic Record · 2021/);
+  assert.match(html, /COIT-AEIT National Award for Best Academic Record, 2021/);
   assert.doesNotMatch(html, /Polytechnical|Telecomunnication|next-gen|disruptive communications|memdevices/);
   assert.match(css, /\.about-biography \.wp-block-media-text \{[\s\S]*?grid-template-columns: minmax\(20rem/);
   assert.match(css, /\.about-carousel \.carousel-controls \{[\s\S]*?position: absolute;[\s\S]*?inset: 0;/);
@@ -535,6 +535,15 @@ test("header and page content share the same horizontal alignment", async () => 
   assert.match(css, /\.language-nav a \{[\s\S]*?padding: 0\.35rem;/);
   assert.match(css, /\.home-layout,[\s\S]*?width: min\(calc\(100% - 5rem\), var\(--max-width\)\);/);
   assert.match(css, /\.home-intro \{[\s\S]*?padding: clamp\([^;]+\) 0;/);
+});
+
+test("published pages omit decorative bullet characters", async () => {
+  for (const locale of localeConfig.locales) {
+    for (const page of localizedPages.get(locale.code)) {
+      const html = await readFile(outputFileForPage(page, locale), "utf8");
+      assert.doesNotMatch(html, /•|&bull;|&#(?:0*8226|x0*2022);|\s·\s/i, `${locale.code}/${page.id}`);
+    }
+  }
 });
 
 test("local links and assets resolve", async () => {
