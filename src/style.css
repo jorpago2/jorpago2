@@ -2321,7 +2321,16 @@ figcaption {
 
 /* Research notes: illustrative image and short mentions. */
 .notes-section-label { margin: 0 0 1rem; color: var(--muted); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.notes-mention { max-width: 52rem; border-top: 1px solid var(--line); padding: 2rem 0; line-height: 1.7; }
+.notes-mention {
+  max-width: 52rem;
+  margin-top: 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  background: var(--surface);
+  background: color-mix(in srgb, var(--accent-soft) 30%, var(--surface));
+  line-height: 1.7;
+}
 .notes-mention h4 { margin: .5rem 0; font-size: clamp(1.35rem, 2vw, 1.8rem); }
 
 .paper-figure { margin: 0 0 1.5rem; }
