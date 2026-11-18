@@ -48,7 +48,7 @@ function weeklyCard(post, locale, strings, pageRoute, articles, featured = false
   const date = dateFormat.formatRange(parseDate(post.weekStart, "weekStart"), new Date(
     parseDate(post.weekEnd, "weekEnd").getTime() - 24 * 60 * 60 * 1000,
   ));
-  return `<article class="blog-card weekly-card${featured ? " weekly-card-featured" : ""}">
+  return `<article class="blog-card">
     <figure class="blog-card-figure">
       <a href="${url}" aria-label="${escapeHtml(post.title)}"><img src="${escapeHtml(figure.url)}" alt="${escapeHtml(figure.caption)}" lang="en"${featured ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></a>
       <figcaption><a href="${escapeHtml(figure.source)}">${escapeHtml(strings.figure)} ${escapeHtml(figure.number)} · ${escapeHtml(author)} et al.</a> · <a href="${escapeHtml(figure.license)}">CC ${escapeHtml(licenseType)} 4.0</a></figcaption>
@@ -56,7 +56,8 @@ function weeklyCard(post, locale, strings, pageRoute, articles, featured = false
     <div class="blog-card-copy">
       <p class="note-meta"><time datetime="${post.weekStart}">${escapeHtml(date)}</time></p>
       <h4><a href="${url}">${escapeHtml(post.title)}</a></h4>
-      ${featured ? `<p>${escapeHtml(post.description)}</p><a class="button primary" href="${url}">${escapeHtml(strings.read)} →</a>` : ""}
+      <p>${escapeHtml(post.description)}</p>
+      <a class="button primary" href="${url}">${escapeHtml(strings.read)} →</a>
     </div>
   </article>`;
 }
@@ -70,19 +71,10 @@ export function renderBlogFrontPage(pages, locale, strings, pageRoute, articles)
   const featured = `<h3 id="blog-latest">${escapeHtml(strings.latest)}</h3>
   <div class="blog-cards">${weeklyCard(latest, locale, strings, pageRoute, articles, true)}</div>`;
   if (!posts.length) return { featured, archive: "" };
-  const monthFormat = new Intl.DateTimeFormat(locale.code, { month: "long", year: "numeric", timeZone: "UTC" });
-  const groups = new Map();
-  for (const post of posts) {
-    // Group by the month in which the interval closes, including New Year weeks.
-    const month = post.weekEnd.slice(0, 7);
-    if (!groups.has(month)) groups.set(month, []);
-    groups.get(month).push(post);
-  }
-  const groupHtml = [...groups.entries()].map(([month, entries], index) => {
-    const title = monthFormat.format(parseDate(`${month}-01`, "archive month"));
-    const rows = entries.map((post) => `<li>${weeklyCard(post, locale, strings, pageRoute, articles)}</li>`).join("\n");
-    return `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(title)}</summary><ol>\n${rows}\n</ol></details>`;
-  }).join("\n");
-  const archive = `<section class="blog-archive" aria-labelledby="blog-archive-title"><h3 id="blog-archive-title">${escapeHtml(strings.title)}</h3>\n${groupHtml}\n</section>`;
+  const cards = posts.map((post) => weeklyCard(post, locale, strings, pageRoute, articles)).join("\n");
+  const archive = `<section class="blog-archive" aria-labelledby="blog-archive-title">
+    <h3 id="blog-archive-title">${escapeHtml(strings.title)}</h3>
+    <div class="blog-cards">${cards}</div>
+  </section>`;
   return { featured, archive };
 }

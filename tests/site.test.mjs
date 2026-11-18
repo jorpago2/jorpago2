@@ -73,7 +73,7 @@ test("all imported pages are built with metadata", async () => {
   }
 });
 
-test("the blog features the latest week, illustrates its archive and retires the pilot", async () => {
+test("the blog uses the same editorial card for all editions and retires the pilot", async () => {
   for (const locale of localeConfig.locales) {
     const byId = new Map(localizedPages.get(locale.code).map((page) => [page.id, page]));
     const index = await readFile(outputFileForPage(byId.get("research-notes"), locale), "utf8");
@@ -83,15 +83,18 @@ test("the blog features the latest week, illustrates its archive and retires the
     const pilotUrl = `${base}${byId.get("post-light-memory").slug}/`;
     const latest = [...byId.values()].filter((page) => page.weekStart)
       .sort((a, b) => b.weekStart.localeCompare(a.weekStart))[0];
-    const cards = [...index.matchAll(/<article class="blog-card weekly-card[^"]*">[\s\S]*?<\/article>/g)];
+    const cards = [...index.matchAll(/<article class="blog-card">[\s\S]*?<\/article>/g)];
     assert.equal(cards.length, 46);
     assert.ok(cards[0][0].includes(`href="${base}${latest.slug}/"`));
-    assert.ok(index.indexOf("weekly-card-featured") < index.indexOf('id="word-cloud-title"'));
+    assert.ok(cards[0].index < index.indexOf('id="word-cloud-title"'));
+    assert.ok(cards[1].index > index.indexOf('id="blog-archive-title"'));
+    assert.doesNotMatch(index, /<details\b/);
     assert.ok(!index.includes(`href="${pilotUrl}"`));
     assert.ok(pilot.includes(`http-equiv="refresh" content="0; url=${blogUrl}"`));
     for (const [card] of cards) {
       assert.match(card, /<img src="https:\/\/[^"]+" alt="[^"]+"/);
       assert.match(card, /<figcaption>[\s\S]*?creativecommons\.org\/licenses\//);
+      assert.match(card, /<p>[^<]+<\/p>\s*<a class="button primary"/);
     }
   }
 });
@@ -341,7 +344,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=71/);
+  assert.match(html, /assets\/style\.css\?v=72/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);

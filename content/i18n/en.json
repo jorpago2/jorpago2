@@ -52,10 +52,10 @@
     ]
   },
   "blogArchive": {
-    "title": "Weekly archive",
-    "latest": "Latest edition",
-    "figure": "Figure",
-    "read": "Read the edition"
+    "title": "Previous posts",
+    "latest": "Latest post",
+    "figure": "Detail from figure",
+    "read": "Read the selection"
   },
   "wordCloud": {
     "title": "Word cloud",

@@ -52,10 +52,10 @@
     ]
   },
   "blogArchive": {
-    "title": "Arxiu setmanal",
-    "latest": "Última edició",
-    "figure": "Figura",
-    "read": "Llegir l’entrada"
+    "title": "Entrades anteriors",
+    "latest": "Última entrada",
+    "figure": "Enquadrament de la figura",
+    "read": "Llegir la selecció"
   },
   "wordCloud": {
     "title": "Núvol de paraules",
