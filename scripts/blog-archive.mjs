@@ -48,7 +48,7 @@ function weeklyCard(post, locale, strings, pageRoute, articles, featured = false
   const date = dateFormat.formatRange(parseDate(post.weekStart, "weekStart"), new Date(
     parseDate(post.weekEnd, "weekEnd").getTime() - 24 * 60 * 60 * 1000,
   ));
-  return `<article class="blog-card">
+  return `<article class="blog-card${featured ? " blog-card-feature" : ""}">
     <figure class="blog-card-figure">
       <a href="${url}" aria-label="${escapeHtml(post.title)}"><img src="${escapeHtml(figure.url)}" alt="${escapeHtml(figure.caption)}" lang="en"${featured ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></a>
       <figcaption><a href="${escapeHtml(figure.source)}">${escapeHtml(strings.figure)} ${escapeHtml(figure.number)} · ${escapeHtml(author)} et al.</a> · <a href="${escapeHtml(figure.license)}">CC ${escapeHtml(licenseType)} 4.0</a></figcaption>
@@ -57,7 +57,7 @@ function weeklyCard(post, locale, strings, pageRoute, articles, featured = false
       <p class="note-meta"><time datetime="${post.weekStart}">${escapeHtml(date)}</time></p>
       <h4><a href="${url}">${escapeHtml(post.title)}</a></h4>
       <p>${escapeHtml(post.description)}</p>
-      <a class="button primary" href="${url}">${escapeHtml(strings.read)} →</a>
+      <a class="${featured ? "button primary" : "blog-card-read"}" href="${url}">${escapeHtml(strings.read)} →</a>
     </div>
   </article>`;
 }

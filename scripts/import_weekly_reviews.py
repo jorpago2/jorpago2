@@ -313,11 +313,15 @@ def main() -> None:
         folder = ROOT / "content" / "pages" / locale
         index_path = folder / "pages.json"
         pages = json.loads(index_path.read_text(encoding="utf-8"))
+        previous_covers = {page["id"]: page["coverDoi"] for page in pages if page.get("coverDoi")}
         pages = [page for page in pages if not re.fullmatch(r"post-week-\d{4}-\d{2}-\d{2}", page["id"])]
         for code, day, title, description, fragment, cover_doi in prepared:
             if code != locale:
                 continue
             page_id = f"post-week-{day.isoformat()}"
+            previous_cover = previous_covers.get(page_id)
+            if previous_cover and f'href="https://doi.org/{previous_cover}"' in fragment:
+                cover_doi = previous_cover
             pages.append({"id": page_id, "slug": f"blog-{day.isoformat()}", "title": title,
                           "description": description, "modified": "2026-11-18T00:00:00",
                           "weekStart": day.isoformat(), "weekEnd": (day + timedelta(days=7)).isoformat(),
