@@ -80,6 +80,8 @@ test("the blog links to one complete translated edition", async () => {
     const postUrl = `${SITE_BASE_PATH}/${locale.path ? `${locale.path}/` : ""}${byId.get("post-light-memory").slug}/`;
     assert.equal((index.match(/class="blog-card"/g) ?? []).length, 1);
     assert.ok(index.includes(`href="${postUrl}"`));
+    assert.match(index, /<figure class="blog-card-figure">[\s\S]*?<img[^>]+alt="[^"]+"/);
+    assert.match(index, /<figcaption>[\s\S]*?nature\.com\/articles\/s41427-026-00645-8\/figures\/4[\s\S]*?creativecommons\.org\/licenses\/by\/4\.0\//);
     assert.equal((edition.match(/class="note-entry"/g) ?? []).length, 3);
     assert.equal((edition.match(/class="paper-figure"/g) ?? []).length, 3);
     assert.match(edition, /class="notes-mention"/);
@@ -297,7 +299,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=64/);
+  assert.match(html, /assets\/style\.css\?v=65/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);
