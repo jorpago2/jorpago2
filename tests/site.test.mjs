@@ -104,6 +104,10 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.equal((html.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
       assert.match(html, /class="notes-mention"/);
       assert.equal((html.match(/class="note-meta weekly-reference"/g) ?? []).length, 3);
+      for (const [figure] of html.matchAll(/<figure class="paper-figure weekly-figure">[\s\S]*?<\/figure>/g)) {
+        assert.match(figure, /<img src="https:\/\/(?:media\.springernature\.com|cdn\.ncbi\.nlm\.nih\.gov|www\.frontiersin\.org)\//);
+        assert.match(figure, /href="https:\/\/creativecommons\.org\/licenses\//);
+      }
       assert.doesNotMatch(html, /BORRADOR DE TRADUCCIÓN AUTOMÁTICA|NO PUBLICAR/);
     }
   }

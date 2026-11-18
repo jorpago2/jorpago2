@@ -63,20 +63,6 @@ RELATED = [
         "en": "Integrating phase-change materials into foundry-made photonic circuits (Nature Communications).",
         "ca": "Com integrar materials de canvi de fase en circuits fotònics fabricats en una foneria (Nature Communications, en anglés)."}),
 ]
-FIGURES = [
-    ("s41467-026-79595-2", "Tang", "41467_2026_79595_Fig1_HTML.png", {
-        "es": "Detector de diseleniuro de tungsteno integrado en una guía de niobato de litio.",
-        "en": "Tungsten diselenide detector integrated into a lithium niobate waveguide.",
-        "ca": "Detector de diseleniur de tungsté integrat en una guia de niobat de liti."}),
-    ("s41586-026-11272-2", "Yang", "41586_2026_11272_Fig1_HTML.png", {
-        "es": "Preparación y transferencia de una membrana de dióxido de titanio monocristalino.",
-        "en": "Preparation and transfer of a single-crystal titanium dioxide membrane.",
-        "ca": "Preparació i transferència d'una membrana de diòxid de titani monocristal·lí."}),
-    ("s41467-026-79139-8", "Li", "41467_2026_79139_Fig1_HTML.png", {
-        "es": "Comparación entre el procesado convencional y el depósito acuoso de montmorillonita.",
-        "en": "Comparison of conventional processing with aqueous montmorillonite deposition.",
-        "ca": "Comparació entre el processament convencional i el dipòsit aquós de montmoril·lonita."}),
-]
 
 
 def links(text: str) -> set[str]:
@@ -158,11 +144,9 @@ def institutions_html(doi: str, locale: str) -> str:
     return f'<p class="note-meta institutions">{label}<br>{" · ".join(entries)}</p>' if entries else ""
 
 
-def additional_material(index: int, locale: str, day: date, doi: str) -> str:
+def additional_material(locale: str, doi: str) -> str:
     official = METADATA.get(doi, {}).get("figure")
-    if day == date(2026, 11, 11):
-        figure_html = figure(index, locale)
-    elif official:
+    if official:
         label = {"es": "Figura", "en": "Figure", "ca": "Figura"}[locale]
         unchanged = {"es": "Sin cambios", "en": "Unmodified", "ca": "Sense canvis"}[locale]
         credit = METADATA[doi].get("reference", {}).get("author", [{}])[0].get("family")
@@ -188,19 +172,6 @@ def additional_material(index: int, locale: str, day: date, doi: str) -> str:
         url, label = reading
         figure_html += f'<aside class="further-reading"><p><a href="{url}">{html.escape(label)}</a></p></aside>'
     return figure_html
-
-
-def figure(index: int, locale: str) -> str:
-    identifier, author, filename, captions = FIGURES[index]
-    doi = f"10.1038/{identifier}"
-    media = f"https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F{identifier}/MediaObjects/{filename}"
-    article_figure = f"https://www.nature.com/articles/{identifier}/figures/1"
-    unchanged = {"es": "Sin cambios", "en": "Unmodified", "ca": "Sense canvis"}[locale]
-    caption = html.escape(captions[locale])
-    return (f'<figure class="paper-figure weekly-figure"><a href="{article_figure}">'
-            f'<img src="{media}" alt="{caption}" loading="lazy"></a>'
-            f'<figcaption>{caption} <a href="https://doi.org/{doi}">{author} et al.</a> · '
-            f'<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · {unchanged}.</figcaption></figure>')
 
 
 def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
@@ -252,7 +223,7 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
         elif text.startswith("## "):
             if 1 <= section_number <= 3:
                 add_missing_reference()
-                rendered.append(additional_material(section_number - 1, locale, day, dois[section_number - 1]))
+                rendered.append(additional_material(locale, dois[section_number - 1]))
             section_number += 1
             reference_position = len(rendered)
             if section_number == 4:
