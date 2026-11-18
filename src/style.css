@@ -2362,6 +2362,8 @@ figcaption {
   gap: clamp(1.15rem, 3vw, 2.5rem);
   border-block: 1px solid var(--line);
   padding-block: clamp(1.35rem, 3vw, 2rem);
+  padding-inline: clamp(.75rem, 1.6vw, 1.25rem);
+  background-color: color-mix(in srgb, var(--accent-soft) 26%, transparent);
 }
 .home-reading-header {
   display: grid;
