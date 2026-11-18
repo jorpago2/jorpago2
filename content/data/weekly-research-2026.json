@@ -7982,7 +7982,11 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41586-026-11272-2",
         "number": "1",
-        "caption": "Preparation and characterization of wafer-scale free-standing single-crystal A-TiO2 layers."
+        "caption": "Preparation and characterization of wafer-scale free-standing single-crystal A-TiO2 layers.",
+        "localizedCaptions": {
+          "es": "Preparación y caracterización de membranas monocristalinas autoportantes de TiO₂ en fase anatasa, fabricadas a escala de oblea.",
+          "ca": "Preparació i caracterització de membranes monocristal·lines autoportants de TiO₂ en fase anatasa, fabricades a escala d’oblia."
+        }
       }
     },
     "10.1038/s41467-026-68336-0": {
@@ -8720,6 +8724,152 @@
         "licenseSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13721964/",
         "number": "1",
         "caption": "(A) Relative sizes of A-site cations (top) and the corresponding local environments in optimized FASnI3 structures with SCN incorporation (bottom) (without MACl)"
+      }
+    },
+    "10.1002/nap2.70338": {
+      "reference": {
+        "title": [
+          "High‐Frequency Stimulated Brillouin Scattering in Suspended Thin‐Film Lithium Niobate Waveguides"
+        ],
+        "author": [
+          {
+            "given": "Lisa-Sophie",
+            "family": "Haerteis"
+          },
+          {
+            "given": "Hadi",
+            "family": "Mahmodi"
+          },
+          {
+            "given": "Yunlong",
+            "family": "Qiang"
+          },
+          {
+            "given": "Yan",
+            "family": "Gao"
+          },
+          {
+            "given": "Madeline",
+            "family": "Hennessey"
+          },
+          {
+            "given": "Peter",
+            "family": "Thurgood"
+          },
+          {
+            "given": "Jochen",
+            "family": "Schröder"
+          },
+          {
+            "given": "Arnan",
+            "family": "Mitchell"
+          },
+          {
+            "given": "Irina V.",
+            "family": "Kabakova"
+          },
+          {
+            "given": "Michael J.",
+            "family": "Steel"
+          },
+          {
+            "given": "Andreas",
+            "family": "Boes"
+          }
+        ],
+        "container-title": [
+          "Nanophotonics"
+        ],
+        "short-container-title": [
+          "Nanophotonics"
+        ],
+        "volume": "15",
+        "issue": "22",
+        "article-number": "e70338",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              13
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/14a8/13764570/f9e912056b9f/NAP2-15-e70338-g002.webp",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13764570/figure/nap270338-fig-0002/",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13764570/",
+        "number": "2",
+        "caption": "Acoustic mode dispersion and phase matching for different scattering geometries.",
+        "localizedCaptions": {
+          "es": "Dispersión de los modos acústicos y ajuste de fase en distintas geometrías de dispersión.",
+          "ca": "Dispersió dels modes acústics i ajust de fase en diferents geometries de dispersió."
+        }
+      }
+    },
+    "10.1063/5.0358648": {
+      "reference": {
+        "title": [
+          "Nonvolatile multistate phase-change emitter for selective-access visible–infrared information encryption"
+        ],
+        "author": [
+          {
+            "given": "Xiuyu",
+            "family": "Chen"
+          },
+          {
+            "given": "Jinlong",
+            "family": "Huang"
+          },
+          {
+            "given": "Shuwen",
+            "family": "Zheng"
+          },
+          {
+            "given": "Kun",
+            "family": "Yu"
+          },
+          {
+            "given": "Mengdan",
+            "family": "Qian"
+          },
+          {
+            "given": "Yufang",
+            "family": "Liu"
+          }
+        ],
+        "container-title": [
+          "APL Photonics"
+        ],
+        "volume": "11",
+        "issue": "11",
+        "article-number": "116106",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              11
+            ]
+          ]
+        },
+        "short-container-title": [
+          "APL Photon."
+        ]
+      },
+      "figure": {
+        "url": "https://aipp.silverchair-cdn.com/aipp/content_public/journal/app/11/11/10.1063_5.0358648/1/m_116106_1_5.0358648.figures.online.f1.jpeg",
+        "source": "https://pubs.aip.org/aip/app/article/11/11/116106/3408454/Nonvolatile-multistate-phase-change-emitter-for#94587135",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://pubs.aip.org/aip/app/article/11/11/116106/3408454/Nonvolatile-multistate-phase-change-emitter-for",
+        "number": "1",
+        "caption": "Device structure and principle of selective access to visible and infrared information.",
+        "localizedCaptions": {
+          "es": "Estructura del dispositivo y principio de lectura selectiva de la información en luz visible e infrarroja.",
+          "ca": "Estructura del dispositiu i principi de lectura selectiva de la informació en llum visible i infraroja."
+        }
       }
     }
   },

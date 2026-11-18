@@ -137,7 +137,7 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.equal(figures.length, 3, `${locale.code}/${page.id} should have one figure per review`);
       const figureSources = new Set();
       for (const [figure] of figures) {
-        assert.match(figure, /<img src="https:\/\/(?:media\.springernature\.com|cdn\.ncbi\.nlm\.nih\.gov|www\.frontiersin\.org)\//);
+        assert.match(figure, /<img src="https:\/\/(?:media\.springernature\.com|cdn\.ncbi\.nlm\.nih\.gov|www\.frontiersin\.org|aipp\.silverchair-cdn\.com)\//);
         assert.match(figure, /href="https:\/\/creativecommons\.org\/licenses\//);
         figureSources.add(figure.match(/<img src="([^"]+)"/)[1]);
       }

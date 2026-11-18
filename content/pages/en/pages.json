@@ -561,11 +561,11 @@
   {
     "id": "post-week-2026-11-11",
     "slug": "blog-2026-11-11",
-    "title": "Imaging deep in tissue, stacked transistors and nanoparticles under light",
-    "description": "Illuminating a plane to see inside a tissue, Two stacked transistors and a cleaner interface, How gold and silicon nanoparticles differ when we measure them",
+    "title": "Light and sound on a chip, stacked transistors and an infrared image",
+    "description": "A suspended waveguide gives sound room to resonate, Two stacked transistors and a cleaner interface, Heating a film reveals a hidden infrared pattern",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-11-11",
     "weekEnd": "2026-11-18",
-    "coverDoi": "10.1038/s41563-026-02789-y"
+    "coverDoi": "10.1002/nap2.70338"
   }
 ]

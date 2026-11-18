@@ -154,12 +154,14 @@ def additional_material(locale: str, doi: str) -> str:
         if not credit:
             credit = {"es": "Autores del artículo", "en": "Article authors", "ca": "Autors de l'article"}[locale]
         license_label = "CC " + official["license"].split("/")[-3].upper() + " 4.0"
-        result = {key: html.escape(value) for key, value in official.items()}
-        title = result["caption"]
+        result = {key: html.escape(official[key]) for key in ("source", "url", "number", "license")}
+        captions = official.get("localizedCaptions", {})
+        title = html.escape(captions.get(locale, official["caption"]))
+        caption_language = "" if locale in captions else ' lang="en"'
         figure_html = (
             f'<figure class="paper-figure weekly-figure"><a href="{result["source"]}">'
-            f'<img src="{result["url"]}" alt="{title}" lang="en" loading="lazy"></a>'
-            f'<figcaption>{label} {result["number"]}. <span lang="en">{title}</span> '
+            f'<img src="{result["url"]}" alt="{title}"{caption_language} loading="lazy"></a>'
+            f'<figcaption>{label} {result["number"]}. <span{caption_language}>{title}</span> '
             f'<a href="https://doi.org/{doi}">{html.escape(credit)} et al.</a>, '
             f'<a href="{result["license"]}">{license_label}</a>. {unchanged}.</figcaption></figure>'
         )

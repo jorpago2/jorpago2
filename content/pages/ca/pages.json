@@ -540,11 +540,11 @@
   {
     "id": "post-week-2026-11-11",
     "slug": "blog-2026-11-11",
-    "title": "Microscòpia en profunditat, transistors apilats i nanopartícules sota la llum",
-    "description": "Il·luminar un pla per a veure què passa dins d'un teixit, Dos transistors apilats i una interfície més neta, Què canvia quan mesurem una nanopartícula d'or o de silici",
+    "title": "Llum i so en un xip, transistors apilats i una imatge en infraroig",
+    "description": "Una guia suspesa que deixa vibrar el xip, Dos transistors apilats i una interfície més neta, Un dibuix que apareix en infraroig quan calfem una pel·lícula",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-11-11",
     "weekEnd": "2026-11-18",
-    "coverDoi": "10.1038/s41563-026-02789-y"
+    "coverDoi": "10.1002/nap2.70338"
   }
 ]

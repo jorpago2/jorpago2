@@ -540,11 +540,11 @@
   {
     "id": "post-week-2026-11-11",
     "slug": "blog-2026-11-11",
-    "title": "Microscopía en profundidad, transistores apilados y nanopartículas bajo la luz",
-    "description": "Iluminar un plano para ver lo que sucede dentro de un tejido, Dos transistores apilados y una interfaz más limpia, Lo que cambia al medir una nanopartícula de oro o de silicio",
+    "title": "Luz y sonido en un chip, transistores apilados y una imagen en infrarrojo",
+    "description": "Una guía suspendida que deja vibrar al chip, Dos transistores apilados y una interfaz más limpia, Un dibujo que aparece en infrarrojo al calentar una película",
     "modified": "2026-11-18T00:00:00",
     "weekStart": "2026-11-11",
     "weekEnd": "2026-11-18",
-    "coverDoi": "10.1038/s41563-026-02789-y"
+    "coverDoi": "10.1002/nap2.70338"
   }
 ]
