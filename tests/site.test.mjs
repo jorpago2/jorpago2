@@ -103,6 +103,7 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.ok(index.includes(`/${page.slug}/`));
       assert.equal((html.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
       assert.match(html, /class="notes-mention"/);
+      assert.equal((html.match(/class="note-meta weekly-reference"/g) ?? []).length, 3);
       assert.doesNotMatch(html, /BORRADOR DE TRADUCCIÓN AUTOMÁTICA|NO PUBLICAR/);
     }
   }

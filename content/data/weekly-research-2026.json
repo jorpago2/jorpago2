@@ -1,0 +1,7699 @@
+{
+  "articles": {
+    "10.1038/s41377-025-02081-9": {
+      "reference": {
+        "title": [
+          "Self-buffered epitaxy of barium titanate on oxide insulators enables high-performance electro-optic modulators"
+        ],
+        "author": [
+          {
+            "given": "Chenguang",
+            "family": "Deng"
+          },
+          {
+            "given": "Yutong",
+            "family": "He"
+          },
+          {
+            "given": "Wenfeng",
+            "family": "Yang"
+          },
+          {
+            "given": "Han",
+            "family": "Yu"
+          },
+          {
+            "given": "Zijian",
+            "family": "Hong"
+          },
+          {
+            "given": "Hao",
+            "family": "Liu"
+          },
+          {
+            "given": "Haojie",
+            "family": "Han"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "21",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-025-02081-9/MediaObjects/41377_2025_2081_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Strain engineering of barium titanate thin films.",
+        "source": "https://www.nature.com/articles/s41377-025-02081-9/figures/1",
+        "licenseSource": "https://www.nature.com/articles/s41377-025-02081-9"
+      }
+    },
+    "10.1038/s41467-025-66810-9": {
+      "reference": {
+        "title": [
+          "Ultra-wide spectrum photosynapse array with 64k-scale for neuromorphic fusion imaging"
+        ],
+        "author": [
+          {
+            "given": "Guan-Hua",
+            "family": "Dun"
+          },
+          {
+            "given": "Jia-He",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xin-Xing",
+            "family": "Xie"
+          },
+          {
+            "given": "Ken",
+            "family": "Qin"
+          },
+          {
+            "given": "Daixuan",
+            "family": "Wu"
+          },
+          {
+            "given": "Jia-Li",
+            "family": "Peng"
+          },
+          {
+            "given": "He-Xuan",
+            "family": "Wang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "16",
+        "issue": "1",
+        "article-number": "10699",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              6
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-66810-9/MediaObjects/41467_2025_66810_Fig2_HTML.png",
+        "number": "2",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "caption": "Fabrication of a 65,536-pixel photosynapse array.",
+        "source": "https://www.nature.com/articles/s41467-025-66810-9/figures/2",
+        "licenseSource": "https://www.nature.com/articles/s41467-025-66810-9"
+      }
+    },
+    "10.1038/s41467-025-66148-2": {
+      "reference": {
+        "title": [
+          "[Hg3Se2]2- cluster drives giant optical anisotropy and broad infrared transparency"
+        ],
+        "author": [
+          {
+            "given": "Qixian",
+            "family": "Ren"
+          },
+          {
+            "given": "Chen",
+            "family": "Cui"
+          },
+          {
+            "given": "Xinchen",
+            "family": "Chen"
+          },
+          {
+            "given": "Yabo",
+            "family": "Wu"
+          },
+          {
+            "given": "Ran",
+            "family": "An"
+          },
+          {
+            "given": "Zhihua",
+            "family": "Yang"
+          },
+          {
+            "given": "Shilie",
+            "family": "Pan"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "40",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              6
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41586-025-09889-w": {
+      "reference": {
+        "title": [
+          "Towards fibre-like loss for photonic integration from violet to near-infrared"
+        ],
+        "author": [
+          {
+            "given": "Hao-Jing",
+            "family": "Chen"
+          },
+          {
+            "given": "Kellan",
+            "family": "Colburn"
+          },
+          {
+            "given": "Peng",
+            "family": "Liu"
+          },
+          {
+            "given": "Hongrui",
+            "family": "Yan"
+          },
+          {
+            "given": "Hanfei",
+            "family": "Hou"
+          },
+          {
+            "given": "Jinhao",
+            "family": "Ge"
+          },
+          {
+            "given": "Jin-Yu",
+            "family": "Liu"
+          }
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "short-container-title": [
+          "Nature"
+        ],
+        "volume": "649",
+        "issue": "8096",
+        "page": "338-344",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              7
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-025-68206-1": {
+      "reference": {
+        "title": [
+          "Coupled ferroelectric-anisotropic optoelectronic synapse for polarization-sensitive neuromorphic vision"
+        ],
+        "author": [
+          {
+            "given": "Jiali",
+            "family": "Huo"
+          },
+          {
+            "given": "Jinpeng",
+            "family": "Huo"
+          },
+          {
+            "given": "Jing",
+            "family": "Gao"
+          },
+          {
+            "given": "Lingqi",
+            "family": "Li"
+          },
+          {
+            "given": "Thaw Tint Te",
+            "family": "Tun"
+          },
+          {
+            "given": "Jin",
+            "family": "Peng"
+          },
+          {
+            "given": "Haofei",
+            "family": "Zheng"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "1468",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-025-68223-0": {
+      "reference": {
+        "title": [
+          "On-device cryogenic quenching enables robust amorphous tellurium for threshold switching"
+        ],
+        "author": [
+          {
+            "given": "Namwook",
+            "family": "Hur"
+          },
+          {
+            "given": "Seunghwan",
+            "family": "Kim"
+          },
+          {
+            "given": "Yu Bin",
+            "family": "Park"
+          },
+          {
+            "given": "Changhwan",
+            "family": "Kim"
+          },
+          {
+            "given": "Sohui",
+            "family": "Yoon"
+          },
+          {
+            "given": "Youngseok",
+            "family": "Cho"
+          },
+          {
+            "given": "Tae Hoon",
+            "family": "Lee"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "1509",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              13
+            ]
+          ]
+        }
+      }
+    },
+    "10.1002/lpor.202503275": {
+      "reference": {
+        "title": [
+          "Nonlinear Resonance Modulation in Single‐Crystalline VO\n                    <sub>2</sub>\n                    ‐Integrated Si Ring Resonator"
+        ],
+        "author": [
+          {
+            "given": "Sebae",
+            "family": "Park"
+          },
+          {
+            "given": "Dong Kyu",
+            "family": "Lee"
+          },
+          {
+            "given": "Junyeop",
+            "family": "Kim"
+          },
+          {
+            "given": "Sungwon",
+            "family": "Lee"
+          },
+          {
+            "given": "Heedeuk",
+            "family": "Shin"
+          },
+          {
+            "given": "Junwoo",
+            "family": "Son"
+          }
+        ],
+        "container-title": [
+          "Laser &amp; Photonics Reviews"
+        ],
+        "short-container-title": [
+          "Laser &amp;amp; Photonics Reviews"
+        ],
+        "volume": "20",
+        "issue": "10",
+        "article-number": "e03275",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              16
+            ]
+          ]
+        }
+      }
+    },
+    "10.3389/fnano.2026.1729291": {
+      "reference": {
+        "title": [
+          "Atomic layer deposited HfZrO4-based memristive devices: annealing effect and multilevel storage capability"
+        ],
+        "author": [
+          {
+            "given": "Rahul",
+            "family": "Ramesh"
+          },
+          {
+            "given": "Spyros",
+            "family": "Stathopoulos"
+          },
+          {
+            "given": "Sanjay",
+            "family": "Kumar"
+          },
+          {
+            "given": "Hannah",
+            "family": "Levene"
+          },
+          {
+            "given": "Deepika",
+            "family": "Yadav"
+          },
+          {
+            "given": "Andreas",
+            "family": "Tsiamis"
+          },
+          {
+            "given": "Themis",
+            "family": "Prodromakis"
+          }
+        ],
+        "container-title": [
+          "Frontiers in Nanotechnology"
+        ],
+        "volume": "8",
+        "article-number": "1729291",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              14
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://www.frontiersin.org/files/Articles/1729291/xml-images/fnano-08-1729291-g001.webp",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Film morphology before and after annealing, with X-ray photoelectron spectra.",
+        "source": "https://www.frontiersin.org/journals/nanotechnology/articles/10.3389/fnano.2026.1729291/full#F1",
+        "licenseSource": "https://www.frontiersin.org/journals/nanotechnology/articles/10.3389/fnano.2026.1729291/full"
+      }
+    },
+    "10.1038/s41467-026-68506-0": {
+      "reference": {
+        "title": [
+          "Morphology-modified contributions of electronic transitions to the optical response of plasmonic nanoporous gold metamaterial"
+        ],
+        "author": [
+          {
+            "given": "Tlek",
+            "family": "Tapani"
+          },
+          {
+            "given": "Jonas M.",
+            "family": "Pettersson"
+          },
+          {
+            "given": "Nils",
+            "family": "Henriksson"
+          },
+          {
+            "given": "Carla M.",
+            "family": "Brunner"
+          },
+          {
+            "given": "Ann Céline",
+            "family": "Zimmermann"
+          },
+          {
+            "given": "Erik",
+            "family": "Zäll"
+          },
+          {
+            "given": "Nils V.",
+            "family": "Hauff"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "829",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              20
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-68685-w": {
+      "reference": {
+        "title": [
+          "Broadband and high-resolution snapshot spectroscopy with high-index transition metal dichalcogenides"
+        ],
+        "author": [
+          {
+            "given": "Jianghong",
+            "family": "Wu"
+          },
+          {
+            "given": "Bangjie",
+            "family": "Shao"
+          },
+          {
+            "given": "Yuting",
+            "family": "Ye"
+          },
+          {
+            "given": "Qingyan",
+            "family": "Deng"
+          },
+          {
+            "given": "Jialing",
+            "family": "Jian"
+          },
+          {
+            "given": "Xixi",
+            "family": "Jiang"
+          },
+          {
+            "given": "Yafei",
+            "family": "Wu"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "1955",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              23
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-68320-8": {
+      "reference": {
+        "title": [
+          "Self-aligned and self-limiting van der Waals epitaxy of monolayer MoS2 for scalable 2D electronics"
+        ],
+        "author": [
+          {
+            "given": "Yoshiki",
+            "family": "Sakuma"
+          },
+          {
+            "given": "Keisuke",
+            "family": "Atsumi"
+          },
+          {
+            "given": "Takanobu",
+            "family": "Hiroto"
+          },
+          {
+            "given": "Jun",
+            "family": "Nara"
+          },
+          {
+            "given": "Akihiro",
+            "family": "Ohtake"
+          },
+          {
+            "given": "Yuki",
+            "family": "Ono"
+          },
+          {
+            "given": "Takashi",
+            "family": "Matsumoto"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "602",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              21
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-68553-7": {
+      "reference": {
+        "title": [
+          "Polar discontinuities, emergent conductivity, and critical twist-angle-dependent behaviour at wafer-bonded ferroelectric interfaces"
+        ],
+        "author": [
+          {
+            "given": "Andrew",
+            "family": "Rogers"
+          },
+          {
+            "given": "Kristina",
+            "family": "Holsgrove"
+          },
+          {
+            "given": "Nils A.",
+            "family": "Schäfer"
+          },
+          {
+            "given": "Boris",
+            "family": "Koppitz"
+          },
+          {
+            "given": "Conor J.",
+            "family": "McCluskey"
+          },
+          {
+            "given": "Shivani",
+            "family": "Yedama"
+          },
+          {
+            "given": "Ronan",
+            "family": "Lynch"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "1842",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              23
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-026-02185-w": {
+      "reference": {
+        "title": [
+          "Exploring the feedback limits of quantum dot lasers for isolator-free photonic integrated circuits"
+        ],
+        "author": [
+          {
+            "given": "Ying",
+            "family": "Shi"
+          },
+          {
+            "given": "Bozhang",
+            "family": "Dong"
+          },
+          {
+            "given": "Xiangpeng",
+            "family": "Ou"
+          },
+          {
+            "given": "Artem",
+            "family": "Prokoshin"
+          },
+          {
+            "given": "Chen",
+            "family": "Shang"
+          },
+          {
+            "given": "John E.",
+            "family": "Bowers"
+          },
+          {
+            "given": "Yating",
+            "family": "Wan"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "96",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              30
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-025-02125-0": {
+      "reference": {
+        "title": [
+          "Polarization-sensitive neuromorphic vision sensing enabled by pristine black arsenic-phosphorus"
+        ],
+        "author": [
+          {
+            "given": "Shi",
+            "family": "Zhang"
+          },
+          {
+            "given": "Shuguang",
+            "family": "Zhu"
+          },
+          {
+            "given": "Shijian",
+            "family": "Tian"
+          },
+          {
+            "given": "Libo",
+            "family": "Zhang"
+          },
+          {
+            "given": "Cheng",
+            "family": "Chen"
+          },
+          {
+            "given": "Kening",
+            "family": "Xiao"
+          },
+          {
+            "given": "Wenqi",
+            "family": "Mo"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "100",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41563-026-02487-9": {
+      "reference": {
+        "title": [
+          "A free energy landscape analysis of resistance fluctuations in a memristive device"
+        ],
+        "author": [
+          {
+            "given": "Sebastian",
+            "family": "Walfort"
+          },
+          {
+            "given": "Xuan Thang",
+            "family": "Vu"
+          },
+          {
+            "given": "Jakob",
+            "family": "Ballmaier"
+          },
+          {
+            "given": "Nils",
+            "family": "Holle"
+          },
+          {
+            "given": "Niklas",
+            "family": "Vollmar"
+          },
+          {
+            "given": "Martin",
+            "family": "Salinga"
+          }
+        ],
+        "container-title": [
+          "Nature Materials"
+        ],
+        "short-container-title": [
+          "Nat. Mater."
+        ],
+        "volume": "25",
+        "issue": "4",
+        "page": "643-650",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              30
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-69326-y": {
+      "reference": {
+        "title": [
+          "Strong magnon–photon coupling enhanced by photonic lattice flat-bands"
+        ],
+        "author": [
+          {
+            "given": "Qi",
+            "family": "Hong"
+          },
+          {
+            "given": "Jie",
+            "family": "Qian"
+          },
+          {
+            "given": "Fujia",
+            "family": "Chen"
+          },
+          {
+            "given": "Yihao",
+            "family": "Yang"
+          },
+          {
+            "given": "Yi-Pu",
+            "family": "Wang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "2438",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              6
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-69326-y/MediaObjects/41467_2026_69326_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "caption": "Magnon–photon coupling in one-dimensional Tight-binding and Lieb lattices.",
+        "source": "https://www.nature.com/articles/s41467-026-69326-y/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC12987957"
+      }
+    },
+    "10.1038/s41467-026-68905-3": {
+      "reference": {
+        "title": [
+          "Homogeneous integration of two-dimensional material-based optoelectronic neurons and ferroelectric synapses for neuromorphic vision"
+        ],
+        "author": [
+          {
+            "given": "Jiarong",
+            "family": "Wang"
+          },
+          {
+            "given": "Keqin",
+            "family": "Liu"
+          },
+          {
+            "given": "Pek Jun",
+            "family": "Tiw"
+          },
+          {
+            "given": "Dawei",
+            "family": "He"
+          },
+          {
+            "given": "Lianfeng",
+            "family": "Yu"
+          },
+          {
+            "given": "Bowen",
+            "family": "Wang"
+          },
+          {
+            "given": "Jinxuan",
+            "family": "Bai"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "2538",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              9
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-69272-9": {
+      "reference": {
+        "title": [
+          "Phase engineering of relaxor ferroelectricity in van der Waals crystal"
+        ],
+        "author": [
+          {
+            "given": "Tao",
+            "family": "Yang"
+          },
+          {
+            "given": "Yinchang",
+            "family": "Ma"
+          },
+          {
+            "given": "Dongxing",
+            "family": "Zheng"
+          },
+          {
+            "given": "Weili",
+            "family": "Deng"
+          },
+          {
+            "given": "Chen",
+            "family": "Liu"
+          },
+          {
+            "given": "Maolin",
+            "family": "Chen"
+          },
+          {
+            "given": "Kairan",
+            "family": "Mai"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "2546",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              9
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-026-02196-7": {
+      "reference": {
+        "title": [
+          "Suspended waveguide-enhanced near-infrared photothermal spectroscopy for ppb-level molecular gas sensing on a chalcogenide chip"
+        ],
+        "author": [
+          {
+            "given": "Kaiyuan",
+            "family": "Zheng"
+          },
+          {
+            "given": "Hanyu",
+            "family": "Liao"
+          },
+          {
+            "given": "Fengbo",
+            "family": "Han"
+          },
+          {
+            "given": "Xueying",
+            "family": "Wang"
+          },
+          {
+            "given": "Yan",
+            "family": "Zhang"
+          },
+          {
+            "given": "Jiaxin",
+            "family": "Gu"
+          },
+          {
+            "given": "Pengcheng",
+            "family": "Zhao"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "116",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              17
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-69123-7": {
+      "reference": {
+        "title": [
+          "Owl-vision-inspired near sensor computing"
+        ],
+        "author": [
+          {
+            "given": "Zishen",
+            "family": "Zhao"
+          },
+          {
+            "given": "Yixin",
+            "family": "Cao"
+          },
+          {
+            "given": "Shuaiwei",
+            "family": "Huang"
+          },
+          {
+            "given": "Kaiwen",
+            "family": "Fan"
+          },
+          {
+            "given": "Yuyao",
+            "family": "Ding"
+          },
+          {
+            "given": "Ganggui",
+            "family": "Zhu"
+          },
+          {
+            "given": "Linhui",
+            "family": "Li"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "2676",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-69353-9": {
+      "reference": {
+        "title": [
+          "Mechanochemical engineering of chiroptical properties in indium-based chiral metal halides by grinding"
+        ],
+        "author": [
+          {
+            "given": "Junhong",
+            "family": "Wu"
+          },
+          {
+            "given": "Hao",
+            "family": "Li"
+          },
+          {
+            "given": "Jialu",
+            "family": "Wang"
+          },
+          {
+            "given": "Xiaorui",
+            "family": "Yang"
+          },
+          {
+            "given": "Tianyong",
+            "family": "Zhang"
+          },
+          {
+            "given": "Bin",
+            "family": "Li"
+          },
+          {
+            "given": "Shuang",
+            "family": "Jiang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "2619",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              11
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-026-02202-y": {
+      "reference": {
+        "title": [
+          "Time-programmable coloration via 3D metastructures for optical encryption"
+        ],
+        "author": [
+          {
+            "given": "Ming-Ze",
+            "family": "Zhao"
+          },
+          {
+            "given": "Zhi-Yong",
+            "family": "Hu"
+          },
+          {
+            "given": "Yi-Han",
+            "family": "Tao"
+          },
+          {
+            "given": "Ze-Xin",
+            "family": "Zhou"
+          },
+          {
+            "given": "Li-Jun",
+            "family": "He"
+          },
+          {
+            "given": "Zhen-Nan",
+            "family": "Tian"
+          },
+          {
+            "given": "Xue-Qing",
+            "family": "Liu"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "118",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              19
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-69805-2": {
+      "reference": {
+        "title": [
+          "Feedback neurons based on perovskite memristor with nickel single-atom engineered reduced graphene oxide cathode"
+        ],
+        "author": [
+          {
+            "given": "Qing-Xiu",
+            "family": "Li"
+          },
+          {
+            "given": "Hua-Xin",
+            "family": "Li"
+          },
+          {
+            "given": "Tao",
+            "family": "Sun"
+          },
+          {
+            "given": "Ming-Hao",
+            "family": "Jiang"
+          },
+          {
+            "given": "Yan-Bing",
+            "family": "Leng"
+          },
+          {
+            "given": "Zi-Yu",
+            "family": "Lv"
+          },
+          {
+            "given": "You",
+            "family": "Zhou"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3085",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              23
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-69904-0": {
+      "reference": {
+        "title": [
+          "Switching speed limits in electrically driven VO2 structural Mott–Peierls transition"
+        ],
+        "author": [
+          {
+            "given": "Alexandre",
+            "family": "Pofelski"
+          },
+          {
+            "given": "Chuhang",
+            "family": "Liu"
+          },
+          {
+            "given": "Spencer A.",
+            "family": "Reisbick"
+          },
+          {
+            "given": "Myung-Geun",
+            "family": "Han"
+          },
+          {
+            "given": "Lijun",
+            "family": "Wu"
+          },
+          {
+            "given": "Henry",
+            "family": "Navarro"
+          },
+          {
+            "given": "Erbin",
+            "family": "Qiu"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3139",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70123-w": {
+      "reference": {
+        "title": [
+          "Lasing-like dynamics with virtual gain driven by complex-frequency excitations"
+        ],
+        "author": [
+          {
+            "given": "Boyi",
+            "family": "Xue"
+          },
+          {
+            "given": "Ruixiang",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yicheng",
+            "family": "Zhu"
+          },
+          {
+            "given": "Yuncong",
+            "family": "Sun"
+          },
+          {
+            "given": "Xianfeng",
+            "family": "Chen"
+          },
+          {
+            "given": "Andrea",
+            "family": "Alù"
+          },
+          {
+            "given": "Wenjie",
+            "family": "Wan"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3359",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70014-0": {
+      "reference": {
+        "title": [
+          "Intrinsic gradient oxygen-driven second-order memristors for continual reinforcement learning"
+        ],
+        "author": [
+          {
+            "given": "Jianyu",
+            "family": "Ming"
+          },
+          {
+            "given": "Ruiheng",
+            "family": "Wang"
+          },
+          {
+            "given": "Jingwei",
+            "family": "Fu"
+          },
+          {
+            "given": "Jing",
+            "family": "Liu"
+          },
+          {
+            "given": "Siqi",
+            "family": "Wu"
+          },
+          {
+            "given": "Shanshuo",
+            "family": "Liu"
+          },
+          {
+            "given": "He",
+            "family": "Shao"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3367",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41598-026-40769-z": {
+      "reference": {
+        "title": [
+          "Sputtering-driven formation of interstitial oxygen for intrinsic NIR detection in IGZO phototransistor"
+        ],
+        "author": [
+          {
+            "given": "Jinsik",
+            "family": "Choe"
+          },
+          {
+            "given": "Hyeonmin",
+            "family": "Bong"
+          },
+          {
+            "given": "Huiyeong",
+            "family": "Lee"
+          },
+          {
+            "given": "Dong-Hun",
+            "family": "Yeo"
+          },
+          {
+            "given": "Sahn",
+            "family": "Nahm"
+          },
+          {
+            "given": "In Soo",
+            "family": "Kim"
+          },
+          {
+            "given": "Mann-Ho",
+            "family": "Cho"
+          }
+        ],
+        "container-title": [
+          "Scientific Reports"
+        ],
+        "short-container-title": [
+          "Sci Rep"
+        ],
+        "volume": "16",
+        "issue": "1",
+        "article-number": "11065",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              25
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-68648-1": {
+      "reference": {
+        "title": [
+          "Inverse-designed nanophotonic neural network accelerators for ultra-compact optical computing"
+        ],
+        "author": [
+          {
+            "given": "Joel",
+            "family": "Sved"
+          },
+          {
+            "given": "Shijie",
+            "family": "Song"
+          },
+          {
+            "given": "Liwei",
+            "family": "Li"
+          },
+          {
+            "given": "George",
+            "family": "Li"
+          },
+          {
+            "given": "Debin",
+            "family": "Meng"
+          },
+          {
+            "given": "Xiaoke",
+            "family": "Yi"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "1059",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70337-y": {
+      "reference": {
+        "title": [
+          "Bioinspired nanofluidic iontronic device with integrated photoreceptor and photosynaptic functions"
+        ],
+        "author": [
+          {
+            "given": "Wenchao",
+            "family": "Liu"
+          },
+          {
+            "given": "Lian",
+            "family": "Duan"
+          },
+          {
+            "given": "Xiangyu",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xinyi",
+            "family": "Zhu"
+          },
+          {
+            "given": "Yongxin",
+            "family": "Ge"
+          },
+          {
+            "given": "Guoheng",
+            "family": "Xu"
+          },
+          {
+            "given": "Zhixiao",
+            "family": "Si"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3523",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              5
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70362-x": {
+      "reference": {
+        "title": [
+          "Chirality transfer from chiral perovskite to molecular dopants via charge transfer states"
+        ],
+        "author": [
+          {
+            "given": "Guan-Lin",
+            "family": "Chen"
+          },
+          {
+            "given": "Hsinhan",
+            "family": "Tsai"
+          },
+          {
+            "given": "Reshna",
+            "family": "Shrestha"
+          },
+          {
+            "given": "Aaron",
+            "family": "Forde"
+          },
+          {
+            "given": "Matthew R.",
+            "family": "Crawley"
+          },
+          {
+            "given": "Cunyi",
+            "family": "Wei"
+          },
+          {
+            "given": "Kai-Wei",
+            "family": "Tseng"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3757",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              10
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70834-0": {
+      "reference": {
+        "title": [
+          "All-optical logic processing unit using Kerr nonlinearity of MXene"
+        ],
+        "author": [
+          {
+            "given": "Yanqi",
+            "family": "Ge"
+          },
+          {
+            "given": "Wenkai",
+            "family": "Wang"
+          },
+          {
+            "given": "Meng",
+            "family": "Wang"
+          },
+          {
+            "given": "Shoukai",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yuanjiang",
+            "family": "Zhong"
+          },
+          {
+            "given": "Yule",
+            "family": "Zhang"
+          },
+          {
+            "given": "Songrui",
+            "family": "Wei"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "4078",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              17
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70727-2": {
+      "reference": {
+        "title": [
+          "Programmable ferroelectric rectifier for reliable and efficient neuromorphic crossbar array"
+        ],
+        "author": [
+          {
+            "given": "Youngmin",
+            "family": "Kim"
+          },
+          {
+            "given": "Yoon Jung",
+            "family": "Lee"
+          },
+          {
+            "given": "Jiwoong",
+            "family": "Yang"
+          },
+          {
+            "given": "Byungsoo",
+            "family": "Kim"
+          },
+          {
+            "given": "Seung Ju",
+            "family": "Kim"
+          },
+          {
+            "given": "Jaehyun",
+            "family": "Kim"
+          },
+          {
+            "given": "Inhyuk",
+            "family": "Im"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6377",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              17
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70676-w": {
+      "reference": {
+        "title": [
+          "Templated perpendicular ferroelectricity in textured Aurivillius oxide-based thin films"
+        ],
+        "author": [
+          {
+            "given": "Song",
+            "family": "Zhou"
+          },
+          {
+            "given": "Shulin",
+            "family": "Zhong"
+          },
+          {
+            "given": "Songge",
+            "family": "Zhang"
+          },
+          {
+            "given": "Lei",
+            "family": "Liao"
+          },
+          {
+            "given": "Siyuan",
+            "family": "Huang"
+          },
+          {
+            "given": "Ze",
+            "family": "Zhang"
+          },
+          {
+            "given": "Dongfeng",
+            "family": "Zheng"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3890",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              13
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70875-5": {
+      "reference": {
+        "title": [
+          "Intrinsically chiral exciton polaritons in an atomically-thin semiconductor"
+        ],
+        "author": [
+          {
+            "given": "M. J.",
+            "family": "Wurdack"
+          },
+          {
+            "given": "I.",
+            "family": "Iorsh"
+          },
+          {
+            "given": "S.",
+            "family": "Vavreckova"
+          },
+          {
+            "given": "T.",
+            "family": "Bucher"
+          },
+          {
+            "given": "M.",
+            "family": "Król"
+          },
+          {
+            "given": "Z.",
+            "family": "Fedorova"
+          },
+          {
+            "given": "E.",
+            "family": "Estrecho"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "2742",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              23
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-70875-5/MediaObjects/41467_2026_70875_Fig4_HTML.png",
+        "number": "4",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Angle- and polarisation-resolved PL spectra.",
+        "source": "https://www.nature.com/articles/s41467-026-70875-5/figures/4",
+        "licenseSource": "https://europepmc.org/articles/PMC13013978"
+      }
+    },
+    "10.1038/s41467-026-70806-4": {
+      "reference": {
+        "title": [
+          "High-speed energy-efficient memristor confined in sub-5 nm space with elemental oxygen reservoir layer"
+        ],
+        "author": [
+          {
+            "given": "Chenfei",
+            "family": "Li"
+          },
+          {
+            "given": "Wencheng",
+            "family": "Niu"
+          },
+          {
+            "given": "Da",
+            "family": "Wan"
+          },
+          {
+            "given": "Lin",
+            "family": "Tang"
+          },
+          {
+            "given": "Zhengdao",
+            "family": "Xie"
+          },
+          {
+            "given": "Kai",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yuan",
+            "family": "Liu"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "4117",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              18
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-026-02253-1": {
+      "reference": {
+        "title": [
+          "Single-pulse lithography of amorphous photonic architectures inside all-inorganic dielectric crystals"
+        ],
+        "author": [
+          {
+            "given": "Zhuo",
+            "family": "Wang"
+          },
+          {
+            "given": "Rongze",
+            "family": "Ma"
+          },
+          {
+            "given": "Han",
+            "family": "Lin"
+          },
+          {
+            "given": "Pengfei",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yu",
+            "family": "Lu"
+          },
+          {
+            "given": "Feng",
+            "family": "Chen"
+          },
+          {
+            "given": "Baohua",
+            "family": "Jia"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "177",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              18
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-71081-z": {
+      "reference": {
+        "title": [
+          "Minimalist terahertz wireless transceiver in integrated photonics"
+        ],
+        "author": [
+          {
+            "given": "Yijun",
+            "family": "Guo"
+          },
+          {
+            "given": "Xuguang",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yunhao",
+            "family": "Zhang"
+          },
+          {
+            "given": "Bitao",
+            "family": "Shen"
+          },
+          {
+            "given": "Luyu",
+            "family": "Wang"
+          },
+          {
+            "given": "Peiqi",
+            "family": "Zhou"
+          },
+          {
+            "given": "Tianyu",
+            "family": "Long"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "4429",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              26
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-71127-2": {
+      "reference": {
+        "title": [
+          "Single-molecule neuromorphic device with aJ-level power consumption per switching"
+        ],
+        "author": [
+          {
+            "given": "Hua",
+            "family": "Zhang"
+          },
+          {
+            "given": "Jingyao",
+            "family": "Ye"
+          },
+          {
+            "given": "Mingbin",
+            "family": "Gao"
+          },
+          {
+            "given": "Chenshuai",
+            "family": "Yan"
+          },
+          {
+            "given": "Yiqiang",
+            "family": "Jiang"
+          },
+          {
+            "given": "Bei",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yu",
+            "family": "Zhou"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "4655",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              31
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-70931-0": {
+      "reference": {
+        "title": [
+          "Room temperature collective blinking and photon bunching from CsPbBr3 quantum dot superlattice"
+        ],
+        "author": [
+          {
+            "given": "Qiwen",
+            "family": "Tan"
+          },
+          {
+            "given": "Sudipta",
+            "family": "Seth"
+          },
+          {
+            "given": "Boris",
+            "family": "Louis"
+          },
+          {
+            "given": "Xiayan",
+            "family": "Wu"
+          },
+          {
+            "given": "Nithin",
+            "family": "Pathoor"
+          },
+          {
+            "given": "Toranosuke",
+            "family": "Takagi"
+          },
+          {
+            "given": "Shun",
+            "family": "Omagari"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "4536",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              27
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41566-026-01886-3": {
+      "reference": {
+        "title": [
+          "All-optical polarization control in time-varying low-index films via plasma symmetry breaking"
+        ],
+        "author": [
+          {
+            "given": "Wallace",
+            "family": "Jaffray"
+          },
+          {
+            "given": "Sven",
+            "family": "Stengel"
+          },
+          {
+            "given": "Alexandra",
+            "family": "Boltasseva"
+          },
+          {
+            "given": "Vladimir M.",
+            "family": "Shalaev"
+          },
+          {
+            "given": "Maria Antonietta",
+            "family": "Vincenti"
+          },
+          {
+            "given": "Domenico",
+            "family": "de Ceglia"
+          },
+          {
+            "given": "Michael",
+            "family": "Scalora"
+          }
+        ],
+        "container-title": [
+          "Nature Photonics"
+        ],
+        "short-container-title": [
+          "Nat. Photon."
+        ],
+        "volume": "20",
+        "issue": "6",
+        "page": "628-636",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-71446-4": {
+      "reference": {
+        "title": [
+          "Nanoscale photonic artificial neuron with biological signal processing"
+        ],
+        "author": [
+          {
+            "given": "Joachim E.",
+            "family": "Sestoft"
+          },
+          {
+            "given": "Thomas K.",
+            "family": "Jensen"
+          },
+          {
+            "given": "Vidar",
+            "family": "Flodgren"
+          },
+          {
+            "given": "Abhijit",
+            "family": "Das"
+          },
+          {
+            "given": "Rasmus D.",
+            "family": "Schlosser"
+          },
+          {
+            "given": "David",
+            "family": "Alcer"
+          },
+          {
+            "given": "Mariia",
+            "family": "Lamers"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "4798",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41598-026-46478-x": {
+      "reference": {
+        "title": [
+          "Shallow Au implantation into silicon-on-insulator slot ring resonator waveguide devices"
+        ],
+        "author": [
+          {
+            "given": "Quan-Shan",
+            "family": "Liu"
+          },
+          {
+            "given": "Maddison",
+            "family": "Coke"
+          },
+          {
+            "given": "Alexander",
+            "family": "Lincoln"
+          },
+          {
+            "given": "William",
+            "family": "Wren"
+          },
+          {
+            "given": "Tim",
+            "family": "Echtermeyer"
+          },
+          {
+            "given": "Iain",
+            "family": "Crowe"
+          },
+          {
+            "given": "Richard J.",
+            "family": "Curry"
+          }
+        ],
+        "container-title": [
+          "Scientific Reports"
+        ],
+        "short-container-title": [
+          "Sci Rep"
+        ],
+        "volume": "16",
+        "issue": "1",
+        "article-number": "15959",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              3
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-026-46478-x/MediaObjects/41598_2026_46478_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Design and optical micrographs of three slot ring resonators.",
+        "source": "https://www.nature.com/articles/s41598-026-46478-x/figures/1",
+        "licenseSource": "https://www.nature.com/articles/s41598-026-46478-x"
+      }
+    },
+    "10.1038/s41467-026-71599-2": {
+      "reference": {
+        "title": [
+          "Deep neural network inference on an integrated, reconfigurable photonic tensor processor"
+        ],
+        "author": [
+          {
+            "given": "Lennart",
+            "family": "Meyer"
+          },
+          {
+            "given": "Jelle",
+            "family": "Dijkstra"
+          },
+          {
+            "given": "Simon",
+            "family": "Tebeck"
+          },
+          {
+            "given": "Liam",
+            "family": "McRae"
+          },
+          {
+            "given": "Niklas",
+            "family": "Bahr"
+          },
+          {
+            "given": "Daniel",
+            "family": "Steinmeyer"
+          },
+          {
+            "given": "Sergey",
+            "family": "Koptyaev"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3396",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              9
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-71599-2/MediaObjects/41467_2026_71599_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Photonic tensor processor architecture.",
+        "source": "https://www.nature.com/articles/s41467-026-71599-2/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC13066431"
+      }
+    },
+    "10.1038/s41467-026-71642-2": {
+      "reference": {
+        "title": [
+          "Oxide interface-based polymorphic electronic devices for neuromorphic computing"
+        ],
+        "author": [
+          {
+            "given": "Soumen",
+            "family": "Pradhan"
+          },
+          {
+            "given": "Kirill",
+            "family": "Miller"
+          },
+          {
+            "given": "Fabian",
+            "family": "Hartmann"
+          },
+          {
+            "given": "Merit",
+            "family": "Spring"
+          },
+          {
+            "given": "Judith",
+            "family": "Gabel"
+          },
+          {
+            "given": "Berengar",
+            "family": "Leikert"
+          },
+          {
+            "given": "Silke",
+            "family": "Kuhn"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "3406",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              9
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-71642-2/MediaObjects/41467_2026_71642_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Polymorphic functionality of a runtime reconfigurable oxide interface-based device.",
+        "source": "https://www.nature.com/articles/s41467-026-71642-2/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC13069107"
+      }
+    },
+    "10.1038/s41427-026-00645-8": {
+      "reference": {
+        "title": [
+          "Low-loss phase-change material-based programmable mode converter for photonic computing"
+        ],
+        "author": [
+          {
+            "given": "Xueyang",
+            "family": "Shen"
+          },
+          {
+            "given": "Ruixuan",
+            "family": "Chu"
+          },
+          {
+            "given": "Ding",
+            "family": "Xu"
+          },
+          {
+            "given": "Yuan",
+            "family": "Gao"
+          },
+          {
+            "given": "Wen",
+            "family": "Zhou"
+          },
+          {
+            "given": "Wei",
+            "family": "Zhang"
+          }
+        ],
+        "container-title": [
+          "NPG Asia Materials"
+        ],
+        "short-container-title": [
+          "NPG Asia Mater"
+        ],
+        "volume": "18",
+        "issue": "1",
+        "article-number": "22",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              14
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-72119-y": {
+      "reference": {
+        "title": [
+          "Accelerating spiking neural networks with photonic reconfigurable devices"
+        ],
+        "author": [
+          {
+            "given": "Chen",
+            "family": "Lu"
+          },
+          {
+            "given": "Kangli",
+            "family": "Xu"
+          },
+          {
+            "given": "Jiaming",
+            "family": "Liu"
+          },
+          {
+            "given": "Yuanhong",
+            "family": "Ding"
+          },
+          {
+            "given": "Jiajie",
+            "family": "Yu"
+          },
+          {
+            "given": "Jieru",
+            "family": "Song"
+          },
+          {
+            "given": "Jialin",
+            "family": "Meng"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5367",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              17
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-71844-8": {
+      "reference": {
+        "title": [
+          "Intrinsic annealing in a hybrid memristor-magnetic tunnel junction Ising machine"
+        ],
+        "author": [
+          {
+            "given": "Mohammed Akib",
+            "family": "Iftakher"
+          },
+          {
+            "given": "Hugo",
+            "family": "Levices"
+          },
+          {
+            "given": "Kamel-Eddine",
+            "family": "Harabi"
+          },
+          {
+            "given": "Adrien",
+            "family": "Renaudineau"
+          },
+          {
+            "given": "Mathieu-Coumba",
+            "family": "Faye"
+          },
+          {
+            "given": "Corentin",
+            "family": "Bouchard"
+          },
+          {
+            "given": "Florian",
+            "family": "Disdier"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5246",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              16
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-72042-2": {
+      "reference": {
+        "title": [
+          "Polymer-templated mesoscale assembly directs synthesis of centimetre-scale perovskite single crystals"
+        ],
+        "author": [
+          {
+            "given": "Jingyi",
+            "family": "Sun"
+          },
+          {
+            "given": "Xinyi",
+            "family": "Shao"
+          },
+          {
+            "given": "Wei",
+            "family": "Fan"
+          },
+          {
+            "given": "Borui",
+            "family": "Lei"
+          },
+          {
+            "given": "Xiaonan",
+            "family": "Wang"
+          },
+          {
+            "given": "Yang",
+            "family": "Gui"
+          },
+          {
+            "given": "Jingjing",
+            "family": "Zhou"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5435",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              20
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-72332-9": {
+      "reference": {
+        "title": [
+          "Ultra-dispersive metasurfaces enabled by convergence-phase design using simplified nanopillar arrays"
+        ],
+        "author": [
+          {
+            "given": "Yunquan",
+            "family": "Wu"
+          },
+          {
+            "given": "Zhichen",
+            "family": "Cao"
+          },
+          {
+            "given": "Hao",
+            "family": "Wang"
+          },
+          {
+            "given": "Xinwei",
+            "family": "Wang"
+          },
+          {
+            "given": "Huijie",
+            "family": "Hao"
+          },
+          {
+            "given": "Suping",
+            "family": "Chang"
+          },
+          {
+            "given": "Wei",
+            "family": "Chen"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5766",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              27
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-72557-8": {
+      "reference": {
+        "title": [
+          "Optically reconfigurable physical unclonable functions based on 2D MoS2 ring-oscillator arrays for attack-resistant hardware authentication"
+        ],
+        "author": [
+          {
+            "given": "Tong",
+            "family": "Li"
+          },
+          {
+            "given": "Yuchao",
+            "family": "Zhou"
+          },
+          {
+            "given": "Xingchao",
+            "family": "Zhang"
+          },
+          {
+            "given": "Qing",
+            "family": "Guan"
+          },
+          {
+            "given": "Haoyang",
+            "family": "Cheng"
+          },
+          {
+            "given": "Liangfeng",
+            "family": "Huang"
+          },
+          {
+            "given": "Hongyue",
+            "family": "Du"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5803",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              28
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-72314-x": {
+      "reference": {
+        "title": [
+          "Engineering temperature- and radiation-resistant van der Waals oxide optoelectronics via heteroatom-intercalation"
+        ],
+        "author": [
+          {
+            "given": "Xiaoqiang",
+            "family": "Feng"
+          },
+          {
+            "given": "Ruiqing",
+            "family": "Cheng"
+          },
+          {
+            "given": "Xiaolin",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xinjie",
+            "family": "Hou"
+          },
+          {
+            "given": "Yiling",
+            "family": "Yu"
+          },
+          {
+            "given": "Yao",
+            "family": "Wen"
+          },
+          {
+            "given": "Tu",
+            "family": "Zhao"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5691",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-72416-6": {
+      "reference": {
+        "title": [
+          "High aspect-ratio quadrilateral flexible silica optical fibers for enhanced multi-parameter sensing"
+        ],
+        "author": [
+          {
+            "given": "Pawel",
+            "family": "Maniewski"
+          },
+          {
+            "given": "Robin",
+            "family": "Hartley"
+          },
+          {
+            "given": "Timothy",
+            "family": "Lee"
+          },
+          {
+            "given": "Matthew",
+            "family": "Whitaker"
+          },
+          {
+            "given": "Bruno",
+            "family": "Moog"
+          },
+          {
+            "given": "Martynas",
+            "family": "Beresna"
+          },
+          {
+            "given": "Janice M.",
+            "family": "Dulieu-Barton"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5636",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              29
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-72416-6/MediaObjects/41467_2026_72416_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Comparison of the second moment of area (Ix) between a circular fiber and 800 µm wide High Aspect-Ratio Flat Fiber (HARFF).",
+        "source": "https://www.nature.com/articles/s41467-026-72416-6/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC13315245"
+      }
+    },
+    "10.1038/s41467-026-72473-x": {
+      "reference": {
+        "title": [
+          "High-performance microelectronic-integratable molecular transistors"
+        ],
+        "author": [
+          {
+            "given": "Yu",
+            "family": "Xie"
+          },
+          {
+            "given": "Zhou",
+            "family": "Cao"
+          },
+          {
+            "given": "Ziming",
+            "family": "Zhou"
+          },
+          {
+            "given": "Enrique",
+            "family": "del Barco"
+          },
+          {
+            "given": "Wenkun",
+            "family": "Lv"
+          },
+          {
+            "given": "Shuangan",
+            "family": "Zang"
+          },
+          {
+            "given": "Ningyue",
+            "family": "Chen"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5871",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              29
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-71517-6": {
+      "reference": {
+        "title": [
+          "Single-particle catalytic monitoring of interfacial charge dynamics during light-driven CdS shell growth on Au nanocubes"
+        ],
+        "author": [
+          {
+            "given": "Xiulin",
+            "family": "Fan"
+          },
+          {
+            "given": "Chen",
+            "family": "Zhang"
+          },
+          {
+            "given": "Mengtian",
+            "family": "Chen"
+          },
+          {
+            "given": "Qin",
+            "family": "Zhang"
+          },
+          {
+            "given": "Lin",
+            "family": "Wei"
+          },
+          {
+            "given": "Zhongju",
+            "family": "Ye"
+          },
+          {
+            "given": "Lehui",
+            "family": "Xiao"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5988",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41566-026-01896-1": {
+      "reference": {
+        "title": [
+          "Isotropic shrinkage of patterned vacancies enables three-dimensional nanoprecise metastructures for visible light applications"
+        ],
+        "author": [
+          {
+            "given": "Quansan",
+            "family": "Yang"
+          },
+          {
+            "given": "Gaojie",
+            "family": "Yang"
+          },
+          {
+            "given": "Takahiro",
+            "family": "Nambara"
+          },
+          {
+            "given": "Hiroyuki",
+            "family": "Kusaka"
+          },
+          {
+            "given": "Yuichiro",
+            "family": "Kunai"
+          },
+          {
+            "given": "Alex C.",
+            "family": "Matlock"
+          },
+          {
+            "given": "Corban",
+            "family": "Swain"
+          }
+        ],
+        "container-title": [
+          "Nature Photonics"
+        ],
+        "short-container-title": [
+          "Nat. Photon."
+        ],
+        "volume": "20",
+        "issue": "6",
+        "page": "653-663",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-72740-x": {
+      "reference": {
+        "title": [
+          "Biomimetic-voltage nitride-enhanced memristor arrays for femtojoule in-memory biosignal processing"
+        ],
+        "author": [
+          {
+            "given": "Zijian",
+            "family": "Wang"
+          },
+          {
+            "given": "Zhejia",
+            "family": "Zhang"
+          },
+          {
+            "given": "Guobin",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xuemeng",
+            "family": "Fan"
+          },
+          {
+            "given": "Pengtao",
+            "family": "Li"
+          },
+          {
+            "given": "Baicheng",
+            "family": "Zhu"
+          },
+          {
+            "given": "Yi",
+            "family": "Tong"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6072",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              6
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-72740-x/MediaObjects/41467_2026_72740_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "caption": "Schematic illustration of the bio-inspired memristor array system for noise-resilient audio denoising and recognition.",
+        "source": "https://www.nature.com/articles/s41467-026-72740-x/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC13351000"
+      }
+    },
+    "10.1038/s41467-026-73078-0": {
+      "reference": {
+        "title": [
+          "Room temperature molding of amorphous dielectrics via van der Waals anisotropy at the nanoscale"
+        ],
+        "author": [
+          {
+            "given": "Yifeng",
+            "family": "Liu"
+          },
+          {
+            "given": "Zhengjie",
+            "family": "Huang"
+          },
+          {
+            "given": "Xinyan",
+            "family": "Li"
+          },
+          {
+            "given": "Chen-yang",
+            "family": "Lin"
+          },
+          {
+            "given": "Aryan",
+            "family": "Chugh"
+          },
+          {
+            "given": "Tian",
+            "family": "Lang"
+          },
+          {
+            "given": "Kenji",
+            "family": "Watanabe"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6355",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-73107-y": {
+      "reference": {
+        "title": [
+          "Integrated van der Waals waveguides for all-optical nonlinear photonic circuits"
+        ],
+        "author": [
+          {
+            "given": "Xiaowen",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xiangpeng",
+            "family": "Ou"
+          },
+          {
+            "given": "Zhican",
+            "family": "Zhou"
+          },
+          {
+            "given": "Han",
+            "family": "Xiao"
+          },
+          {
+            "given": "Yuxuan",
+            "family": "Huang"
+          },
+          {
+            "given": "Chen",
+            "family": "Liu"
+          },
+          {
+            "given": "Yujia",
+            "family": "Zhai"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6549",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              15
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-73235-5": {
+      "reference": {
+        "title": [
+          "Disorder-mediated non-equilibrium photocurrent redistribution enables homeostatic synaptic conditioning in AgBiS2 heterostructure"
+        ],
+        "author": [
+          {
+            "given": "Hyun Woo",
+            "family": "Kim"
+          },
+          {
+            "given": "Neul",
+            "family": "Ha"
+          },
+          {
+            "given": "Hyun Min",
+            "family": "Kwon"
+          },
+          {
+            "given": "Chan",
+            "family": "Kim"
+          },
+          {
+            "given": "Jin Hyeon",
+            "family": "Kim"
+          },
+          {
+            "given": "Min Sung",
+            "family": "Kim"
+          },
+          {
+            "given": "Minkyun",
+            "family": "Son"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6521",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              18
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-72970-z": {
+      "reference": {
+        "title": [
+          "Non-Arrhenius threshold switching by field-driven dipolar ordering"
+        ],
+        "author": [
+          {
+            "given": "Wen-Xiong",
+            "family": "Song"
+          },
+          {
+            "given": "Guangjie",
+            "family": "Shi"
+          },
+          {
+            "given": "Qi",
+            "family": "Hu"
+          },
+          {
+            "given": "Fan",
+            "family": "Zhu"
+          },
+          {
+            "given": "Tianjiao",
+            "family": "Xin"
+          },
+          {
+            "given": "Ying",
+            "family": "Chen"
+          },
+          {
+            "given": "Sergiu",
+            "family": "Clima"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6404",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              13
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-73411-7": {
+      "reference": {
+        "title": [
+          "Localized carbon deposition enables trimming of photonic integrated circuits"
+        ],
+        "author": [
+          {
+            "given": "Rongyang",
+            "family": "Xu"
+          },
+          {
+            "given": "Zhongyu",
+            "family": "Tang"
+          },
+          {
+            "given": "Liam",
+            "family": "McRae"
+          },
+          {
+            "given": "Akhil",
+            "family": "Varri"
+          },
+          {
+            "given": "Frank",
+            "family": "Brückerhoff-Plückelmann"
+          },
+          {
+            "given": "Xinyu",
+            "family": "Ma"
+          },
+          {
+            "given": "Julian Rasmus",
+            "family": "Bankwitz"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "4562",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              21
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-73267-x": {
+      "reference": {
+        "title": [
+          "Room-temperature memristive switching between charge density wave states"
+        ],
+        "author": [
+          {
+            "given": "R.",
+            "family": "Venturini"
+          },
+          {
+            "given": "M.",
+            "family": "Rupnik"
+          },
+          {
+            "given": "J.",
+            "family": "Gašperlin"
+          },
+          {
+            "given": "J.",
+            "family": "Lipič"
+          },
+          {
+            "given": "P.",
+            "family": "Šutar"
+          },
+          {
+            "given": "Y.",
+            "family": "Vaskivskyi"
+          },
+          {
+            "given": "F.",
+            "family": "Ščepanović"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8360",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              21
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-73597-w": {
+      "reference": {
+        "title": [
+          "Interfacial dipolar interactions drive giant second-harmonic generation in 2D organic–inorganic heterostructures"
+        ],
+        "author": [
+          {
+            "given": "Ye-Tao",
+            "family": "Chen"
+          },
+          {
+            "given": "Shi-Yi",
+            "family": "Yuan"
+          },
+          {
+            "given": "Xiu-Bin",
+            "family": "Liu"
+          },
+          {
+            "given": "Xiu-Qi",
+            "family": "Shi"
+          },
+          {
+            "given": "Xi",
+            "family": "Xu"
+          },
+          {
+            "given": "Yi-Neng",
+            "family": "Bao"
+          },
+          {
+            "given": "Keng",
+            "family": "Chen"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6753",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              22
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-73597-w/MediaObjects/41467_2026_73597_Fig3_HTML.png",
+        "number": "3",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "caption": "Controllable SHG via anisotropic interfacial energy transfer.",
+        "source": "https://www.nature.com/articles/s41467-026-73597-w/figures/3",
+        "licenseSource": "https://europepmc.org/articles/PMC13385836"
+      }
+    },
+    "10.1038/s41467-026-73390-9": {
+      "reference": {
+        "title": [
+          "Inverse-designed silicon nitride nanophotonics"
+        ],
+        "author": [
+          {
+            "given": "Toby",
+            "family": "Bi"
+          },
+          {
+            "given": "Shuangyou",
+            "family": "Zhang"
+          },
+          {
+            "given": "Egemen",
+            "family": "Bostan"
+          },
+          {
+            "given": "Danxian",
+            "family": "Liu"
+          },
+          {
+            "given": "Aditya",
+            "family": "Paul"
+          },
+          {
+            "given": "Olga",
+            "family": "Ohletz"
+          },
+          {
+            "given": "Irina",
+            "family": "Harder"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6943",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              28
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-73669-x": {
+      "reference": {
+        "title": [
+          "Homeostatic dendritic neuron based on co-integrated volatile and non-volatile memristors for neuromorphic processing"
+        ],
+        "author": [
+          {
+            "given": "Licheng",
+            "family": "Zhang"
+          },
+          {
+            "given": "Teng",
+            "family": "Zhang"
+          },
+          {
+            "given": "Pek Jun",
+            "family": "Tiw"
+          },
+          {
+            "given": "Xulei",
+            "family": "Wu"
+          },
+          {
+            "given": "Yuqi",
+            "family": "Su"
+          },
+          {
+            "given": "Yuchao",
+            "family": "Yang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "6918",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              28
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-73984-3": {
+      "reference": {
+        "title": [
+          "Continuous-wave organic laser enabled by monolayer molecular crystal"
+        ],
+        "author": [
+          {
+            "given": "Lan",
+            "family": "Zhang"
+          },
+          {
+            "given": "Boxiang",
+            "family": "Zhao"
+          },
+          {
+            "given": "Tao",
+            "family": "Wang"
+          },
+          {
+            "given": "Bingyan",
+            "family": "Ren"
+          },
+          {
+            "given": "Haoyun",
+            "family": "Huang"
+          },
+          {
+            "given": "Guangpeng",
+            "family": "Zhu"
+          },
+          {
+            "given": "Wenfei",
+            "family": "Li"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "7061",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              2
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-73984-3/MediaObjects/41467_2026_73984_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "caption": "Excited state kinetics of the gain medium.",
+        "source": "https://www.nature.com/articles/s41467-026-73984-3/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC13392000"
+      }
+    },
+    "10.1038/s41586-026-10517-4": {
+      "reference": {
+        "title": [
+          "High-pulse-energy integrated mode-locked laser using a Mamyshev oscillator"
+        ],
+        "author": [
+          {
+            "given": "Zheru",
+            "family": "Qiu"
+          },
+          {
+            "given": "Xuan",
+            "family": "Yang"
+          },
+          {
+            "given": "Xurong",
+            "family": "Li"
+          },
+          {
+            "given": "Jianqi",
+            "family": "Hu"
+          },
+          {
+            "given": "Zhongshu",
+            "family": "Liu"
+          },
+          {
+            "given": "Yichi",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xinru",
+            "family": "Ji"
+          }
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "short-container-title": [
+          "Nature"
+        ],
+        "volume": "654",
+        "issue": "8117",
+        "page": "57-63",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41598-026-51653-1": {
+      "reference": {
+        "title": [
+          "Bipolar resistive switching in amorphous calcium zirconate memristors"
+        ],
+        "author": [
+          {
+            "given": "Vithaldas",
+            "family": "Raja"
+          },
+          {
+            "given": "Simran",
+            "family": "Nehra"
+          },
+          {
+            "given": "Anjana",
+            "family": "Dogra"
+          },
+          {
+            "given": "Ankur",
+            "family": "Rastogi"
+          }
+        ],
+        "container-title": [
+          "Scientific Reports"
+        ],
+        "short-container-title": [
+          "Sci Rep"
+        ],
+        "volume": "16",
+        "issue": "1",
+        "article-number": "24022",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              9
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41586-026-10637-x": {
+      "reference": {
+        "title": [
+          "Chiral superfluorescence from perovskite superlattices at room temperature"
+        ],
+        "author": [
+          {
+            "given": "Qi",
+            "family": "Wei"
+          },
+          {
+            "given": "Jonah S.",
+            "family": "Peter"
+          },
+          {
+            "given": "Hui",
+            "family": "Ren"
+          },
+          {
+            "given": "Weizhen",
+            "family": "Wang"
+          },
+          {
+            "given": "Luwei",
+            "family": "Zhou"
+          },
+          {
+            "given": "Qi",
+            "family": "Liu"
+          },
+          {
+            "given": "Stefan",
+            "family": "Ostermann"
+          }
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "short-container-title": [
+          "Nature"
+        ],
+        "volume": "654",
+        "issue": "8118",
+        "page": "369-374",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-73440-2": {
+      "reference": {
+        "title": [
+          "Large-scale integrated optoelectronic chaos for machine learning acceleration"
+        ],
+        "author": [
+          {
+            "given": "Zhouyang",
+            "family": "Pan"
+          },
+          {
+            "given": "Zhekai",
+            "family": "Zheng"
+          },
+          {
+            "given": "Ping",
+            "family": "Li"
+          },
+          {
+            "given": "Hao",
+            "family": "Wang"
+          },
+          {
+            "given": "Jiacheng",
+            "family": "Guo"
+          },
+          {
+            "given": "Ding",
+            "family": "Cui"
+          },
+          {
+            "given": "Zhihui",
+            "family": "Li"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "7488",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-74233-3": {
+      "reference": {
+        "title": [
+          "Atomically confined insertion for 2D strain and polarization engineered GaN electronics"
+        ],
+        "author": [
+          {
+            "given": "Yuanhong",
+            "family": "Shi"
+          },
+          {
+            "given": "Zilong",
+            "family": "Dong"
+          },
+          {
+            "given": "Jiangwen",
+            "family": "Wang"
+          },
+          {
+            "given": "Di",
+            "family": "Guo"
+          },
+          {
+            "given": "Wanpeng",
+            "family": "Li"
+          },
+          {
+            "given": "Wei",
+            "family": "Sha"
+          },
+          {
+            "given": "Zekun",
+            "family": "Li"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "7437",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              11
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-74067-z": {
+      "reference": {
+        "title": [
+          "Tunable magnons in a dual-gated 2D antiferromagnet"
+        ],
+        "author": [
+          {
+            "given": "Nele",
+            "family": "Stetzuhn"
+          },
+          {
+            "given": "Abhijeet M.",
+            "family": "Kumar"
+          },
+          {
+            "given": "Sviatoslav",
+            "family": "Kovalchuk"
+          },
+          {
+            "given": "Denis",
+            "family": "Yagodkin"
+          },
+          {
+            "given": "Louis",
+            "family": "Simon"
+          },
+          {
+            "given": "Samuel",
+            "family": "Mañas-Valero"
+          },
+          {
+            "given": "Eugenio",
+            "family": "Coronado"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "5262",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              12
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-74067-z/MediaObjects/41467_2026_74067_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Magnons in dual-gated trilayer CrSBr.",
+        "source": "https://www.nature.com/articles/s41467-026-74067-z/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC13263320"
+      }
+    },
+    "10.1038/s41467-026-74485-z": {
+      "reference": {
+        "title": [
+          "Fully-connected microwave photonic multi-beamformer with fast beam-steering for broadband wireless communication"
+        ],
+        "author": [
+          {
+            "given": "Ziheng",
+            "family": "Ni"
+          },
+          {
+            "given": "Liangjun",
+            "family": "Lu"
+          },
+          {
+            "given": "Kai",
+            "family": "Fu"
+          },
+          {
+            "given": "Haowei",
+            "family": "Zhang"
+          },
+          {
+            "given": "Tianxiang",
+            "family": "Wang"
+          },
+          {
+            "given": "Chao",
+            "family": "Wang"
+          },
+          {
+            "given": "Huashan",
+            "family": "Yang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "7743",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              19
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-74238-y": {
+      "reference": {
+        "title": [
+          "A light-driven multi-state heterojunction transistor for optoelectronic ternary logic circuits"
+        ],
+        "author": [
+          {
+            "given": "Chungryeol",
+            "family": "Lee"
+          },
+          {
+            "given": "Dongho",
+            "family": "Choi"
+          },
+          {
+            "given": "Sanghoon",
+            "family": "Park"
+          },
+          {
+            "given": "Jeong-ik",
+            "family": "Park"
+          },
+          {
+            "given": "Taehyun",
+            "family": "Nam"
+          },
+          {
+            "given": "Minjae",
+            "family": "Jang"
+          },
+          {
+            "given": "Seunghyup",
+            "family": "Yoo"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "7736",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              19
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-74479-x": {
+      "reference": {
+        "title": [
+          "Optical access of spin-polarized excited states in Cs(PbMgZnCd)Br3 nanocrystals"
+        ],
+        "author": [
+          {
+            "given": "Yu",
+            "family": "Zhang"
+          },
+          {
+            "given": "Haidi",
+            "family": "Liu"
+          },
+          {
+            "given": "Shuchun",
+            "family": "Zhang"
+          },
+          {
+            "given": "Zhengwei",
+            "family": "Yang"
+          },
+          {
+            "given": "Qingda",
+            "family": "Chang"
+          },
+          {
+            "given": "Lixin",
+            "family": "Xu"
+          },
+          {
+            "given": "Yongli",
+            "family": "Yan"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "7702",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              18
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-74664-y": {
+      "reference": {
+        "title": [
+          "Site-controlled quantum dot arrays edge-coupled to integrated silicon nitride waveguides and devices"
+        ],
+        "author": [
+          {
+            "given": "John",
+            "family": "O’Hara"
+          },
+          {
+            "given": "Nicola",
+            "family": "Maraviglia"
+          },
+          {
+            "given": "Mack",
+            "family": "Johnson"
+          },
+          {
+            "given": "Jesper",
+            "family": "Håkansson"
+          },
+          {
+            "given": "Salvador A.",
+            "family": "Medina-Rangel"
+          },
+          {
+            "given": "Gediminas",
+            "family": "Juska"
+          },
+          {
+            "given": "Luca",
+            "family": "Colavecchi"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "7945",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    "10.1002/advs.76218": {
+      "reference": {
+        "title": [
+          "Retinomorphic Visual Processing Enabled by Contact‐Engineered IGZO Optoelectronic Synaptic Memtransistors"
+        ],
+        "author": [
+          {
+            "given": "Donghyun",
+            "family": "Kang"
+          },
+          {
+            "given": "San",
+            "family": "Nam"
+          },
+          {
+            "given": "Dayul",
+            "family": "Nam"
+          },
+          {
+            "given": "In‐Soo",
+            "family": "Kim"
+          },
+          {
+            "given": "Myung‐Gil",
+            "family": "Kim"
+          },
+          {
+            "given": "Sung Kyu",
+            "family": "Park"
+          },
+          {
+            "given": "Yong‐Hoon",
+            "family": "Kim"
+          }
+        ],
+        "container-title": [
+          "Advanced Science"
+        ],
+        "short-container-title": [
+          "Advanced Science"
+        ],
+        "article-number": "e76218",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              25
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75197-0": {
+      "reference": {
+        "title": [
+          "Complementary nonlinear optics for polarimetric computing in tellurium"
+        ],
+        "author": [
+          {
+            "given": "Hao",
+            "family": "Liu"
+          },
+          {
+            "given": "Guokai",
+            "family": "Bai"
+          },
+          {
+            "given": "Chuanqi",
+            "family": "Tang"
+          },
+          {
+            "given": "Zhihan",
+            "family": "Jin"
+          },
+          {
+            "given": "Fanhao",
+            "family": "Meng"
+          },
+          {
+            "given": "Zhaozhao",
+            "family": "Tang"
+          },
+          {
+            "given": "Feifan",
+            "family": "Xu"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8118",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              29
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75346-5": {
+      "reference": {
+        "title": [
+          "Two-dimensional pixel-level addressable mid-infrared metasurface spatial light modulator"
+        ],
+        "author": [
+          {
+            "given": "Cosmin-Constantin",
+            "family": "Popescu"
+          },
+          {
+            "given": "Maarten Robbert Anton",
+            "family": "Peters"
+          },
+          {
+            "given": "Oleg",
+            "family": "Maksimov"
+          },
+          {
+            "given": "Harish B.",
+            "family": "Bhandari"
+          },
+          {
+            "given": "Rashi",
+            "family": "Sharma"
+          },
+          {
+            "given": "Kathleen A.",
+            "family": "Richardson"
+          },
+          {
+            "given": "Arka",
+            "family": "Majumdar"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8393",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              7
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-74911-2": {
+      "reference": {
+        "title": [
+          "STARE: a semiconductor-integrated transmit-array architecture for 6G beamforming"
+        ],
+        "author": [
+          {
+            "given": "Jinhyun",
+            "family": "Kim"
+          },
+          {
+            "given": "Byeongjin",
+            "family": "Kim"
+          },
+          {
+            "given": "Minkyu",
+            "family": "Park"
+          },
+          {
+            "given": "Jeongtaek",
+            "family": "Oh"
+          },
+          {
+            "given": "Jungsuek",
+            "family": "Oh"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8199",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-74804-4": {
+      "reference": {
+        "title": [
+          "Few-atom-thick silver films for enhanced nanoscale nonlinear optics"
+        ],
+        "author": [
+          {
+            "given": "Philipp K.",
+            "family": "Jenke"
+          },
+          {
+            "given": "Saad",
+            "family": "Abdullah"
+          },
+          {
+            "given": "Andrew P.",
+            "family": "Weber"
+          },
+          {
+            "given": "Álvaro",
+            "family": "Rodríguez Echarri"
+          },
+          {
+            "given": "Fadil",
+            "family": "Iyikanat"
+          },
+          {
+            "given": "Vahagn",
+            "family": "Mkhitaryan"
+          },
+          {
+            "given": "Frederik",
+            "family": "Schiller"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8214",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              1
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-74804-4/MediaObjects/41467_2026_74804_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Interplay between electronic structure and nonlinear response in ultra-thin metal films.",
+        "source": "https://www.nature.com/articles/s41467-026-74804-4/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC13463075"
+      }
+    },
+    "10.1038/s41377-026-02405-3": {
+      "reference": {
+        "title": [
+          "Integrated photonic polarization synthesizer and analyzer"
+        ],
+        "author": [
+          {
+            "given": "Carson G.",
+            "family": "Valdez"
+          },
+          {
+            "given": "Anna J.",
+            "family": "Miller"
+          },
+          {
+            "given": "Anne R.",
+            "family": "Kroo"
+          },
+          {
+            "given": "Charles",
+            "family": "Roques-Carmes"
+          },
+          {
+            "given": "David A. B.",
+            "family": "Miller"
+          },
+          {
+            "given": "Olav",
+            "family": "Solgaard"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "309",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              10
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75488-6": {
+      "reference": {
+        "title": [
+          "Realization of the Bienenstock-Cooper-Munro rule in a single memristor"
+        ],
+        "author": [
+          {
+            "given": "Jiangshun",
+            "family": "Huang"
+          },
+          {
+            "given": "Anping",
+            "family": "Huang"
+          },
+          {
+            "given": "Qiaofeng",
+            "family": "Yang"
+          },
+          {
+            "given": "Pengzhan",
+            "family": "Li"
+          },
+          {
+            "given": "Qin",
+            "family": "Gao"
+          },
+          {
+            "given": "Mei",
+            "family": "Wang"
+          },
+          {
+            "given": "Zhisong",
+            "family": "Xiao"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8473",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              9
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75434-6": {
+      "reference": {
+        "title": [
+          "Living growth of ultra-bright 2D perovskites with long-lived carriers"
+        ],
+        "author": [
+          {
+            "given": "Yanxin",
+            "family": "Han"
+          },
+          {
+            "given": "Yahui",
+            "family": "Li"
+          },
+          {
+            "given": "Qingyang",
+            "family": "Wei"
+          },
+          {
+            "given": "Hongzhi",
+            "family": "Zhou"
+          },
+          {
+            "given": "Hongzhi",
+            "family": "Shen"
+          },
+          {
+            "given": "Wenbo",
+            "family": "Ma"
+          },
+          {
+            "given": "Zhongpu",
+            "family": "Wang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8629",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              14
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75750-x": {
+      "reference": {
+        "title": [
+          "Reconfigurable optical arithmetic logic unit and its applications"
+        ],
+        "author": [
+          {
+            "given": "Xudong",
+            "family": "Zhou"
+          },
+          {
+            "given": "Mingrui",
+            "family": "Yuan"
+          },
+          {
+            "given": "Huifu",
+            "family": "Xiao"
+          },
+          {
+            "given": "Yongheng",
+            "family": "Jiang"
+          },
+          {
+            "given": "Pu",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yonghui",
+            "family": "Tian"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8793",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              18
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41528-026-00621-w": {
+      "reference": {
+        "title": [
+          "Seed-assisted polarity control of flexible WSe2 transistors and demonstration of CMOS inverter"
+        ],
+        "author": [
+          {
+            "given": "Quỳnh Thị",
+            "family": "Phùng"
+          },
+          {
+            "given": "Kha Minh",
+            "family": "Nguyen"
+          },
+          {
+            "given": "Ji-Yong",
+            "family": "Park"
+          },
+          {
+            "given": "Alwin",
+            "family": "Daus"
+          }
+        ],
+        "container-title": [
+          "npj Flexible Electronics"
+        ],
+        "short-container-title": [
+          "npj Flex Electron"
+        ],
+        "volume": "10",
+        "issue": "1",
+        "article-number": "88",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              20
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75838-4": {
+      "reference": {
+        "title": [
+          "Relaxor-like ferroelectric response and achiral–chiral switching in an amorphous molecular solid"
+        ],
+        "author": [
+          {
+            "given": "Hanyu",
+            "family": "Liu"
+          },
+          {
+            "given": "Yuqin",
+            "family": "Xiong"
+          },
+          {
+            "given": "Ti",
+            "family": "Xie"
+          },
+          {
+            "given": "Cheng",
+            "family": "Gong"
+          },
+          {
+            "given": "Shenqiang",
+            "family": "Ren"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "8806",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              20
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75873-1": {
+      "reference": {
+        "title": [
+          "Photonic scaffolds as ultrahigh-openness on-chip hollow-core waveguides for quantum photonics and optofluidics"
+        ],
+        "author": [
+          {
+            "given": "Wenqin",
+            "family": "Huang"
+          },
+          {
+            "given": "Diana",
+            "family": "Pereira"
+          },
+          {
+            "given": "Matthias",
+            "family": "Zeisberger"
+          },
+          {
+            "given": "Hala",
+            "family": "Said"
+          },
+          {
+            "given": "Esteban",
+            "family": "Gómez-López"
+          },
+          {
+            "given": "Jun",
+            "family": "Sun"
+          },
+          {
+            "given": "Oliver",
+            "family": "Benson"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "7563",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              28
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-76067-5": {
+      "reference": {
+        "title": [
+          "Hyperdimensional in-memory computing with analogue memristive crossbar arrays"
+        ],
+        "author": [
+          {
+            "given": "Yi",
+            "family": "Huang"
+          },
+          {
+            "given": "Alireza Jaberi",
+            "family": "Rad"
+          },
+          {
+            "given": "Daniel",
+            "family": "Belkin"
+          },
+          {
+            "given": "Ning",
+            "family": "Ge"
+          },
+          {
+            "given": "J.",
+            "family": "Joshua Yang"
+          },
+          {
+            "given": "Miao",
+            "family": "Hu"
+          },
+          {
+            "given": "Qiangfei",
+            "family": "Xia"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9162",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              28
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-026-76067-5/MediaObjects/41467_2026_76067_Fig1_HTML.png",
+        "number": "1",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "caption": "Hardware-algorithm co-design using analog in-memory computing (AIMC) hardware and hyperdimensional computing (HDC) algorithm for language identification.",
+        "source": "https://www.nature.com/articles/s41467-026-76067-5/figures/1",
+        "licenseSource": "https://europepmc.org/articles/PMC13522599"
+      }
+    },
+    "10.1038/s41467-026-76121-2": {
+      "reference": {
+        "title": [
+          "Photo-activated digital resistive switching in a cryogenic photomemory"
+        ],
+        "author": [
+          {
+            "given": "Jiarui",
+            "family": "Wang"
+          },
+          {
+            "given": "Yu-Ting",
+            "family": "Huang"
+          },
+          {
+            "given": "Yuhao",
+            "family": "Li"
+          },
+          {
+            "given": "Meiyu",
+            "family": "Wang"
+          },
+          {
+            "given": "Shengsheng",
+            "family": "Lin"
+          },
+          {
+            "given": "Yuanhao",
+            "family": "Wei"
+          },
+          {
+            "given": "Jingjing",
+            "family": "Chang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9167",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              28
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75965-y": {
+      "reference": {
+        "title": [
+          "Chiral polariton transport enabled by optical spin Hall effect in perovskite waveguides"
+        ],
+        "author": [
+          {
+            "given": "Mateusz",
+            "family": "Kędziora"
+          },
+          {
+            "given": "Andrzej",
+            "family": "Opala"
+          },
+          {
+            "given": "Maciej",
+            "family": "Zaremba"
+          },
+          {
+            "given": "Helgi",
+            "family": "Sigurðsson"
+          },
+          {
+            "given": "Barbara",
+            "family": "Piętka"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9188",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              29
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-75783-2": {
+      "reference": {
+        "title": [
+          "Broadband encoding and high-speed probabilistic bit generation with integrated microwave neurons"
+        ],
+        "author": [
+          {
+            "given": "Bala",
+            "family": "Govind"
+          },
+          {
+            "given": "Pablo",
+            "family": "Raigoza"
+          },
+          {
+            "given": "Alyssa",
+            "family": "Apsel"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9252",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              29
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41565-026-02243-9": {
+      "reference": {
+        "title": [
+          "Intrinsic plasmon canalization in the biaxial van der Waals crystal MoOCl2"
+        ],
+        "author": [
+          {
+            "given": "Farid",
+            "family": "Aghashirinov"
+          },
+          {
+            "given": "Andrea",
+            "family": "Mancini"
+          },
+          {
+            "given": "Lin",
+            "family": "Nan"
+          },
+          {
+            "given": "Giacomo",
+            "family": "Venturi"
+          },
+          {
+            "given": "Bettina",
+            "family": "Frank"
+          },
+          {
+            "given": "Harald",
+            "family": "Giessen"
+          },
+          {
+            "given": "Antonio",
+            "family": "Ambrosio"
+          }
+        ],
+        "container-title": [
+          "Nature Nanotechnology"
+        ],
+        "short-container-title": [
+          "Nat. Nanotechnol."
+        ],
+        "volume": "21",
+        "issue": "9",
+        "page": "1238-1244",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-76328-3": {
+      "reference": {
+        "title": [
+          "Hyper-spectral photonic integrated circuits based on recursive inverse design"
+        ],
+        "author": [
+          {
+            "given": "Hao",
+            "family": "He"
+          },
+          {
+            "given": "Zengji",
+            "family": "Tu"
+          },
+          {
+            "given": "Yuanlei",
+            "family": "Wang"
+          },
+          {
+            "given": "Hongyan",
+            "family": "Zhao"
+          },
+          {
+            "given": "Chuangxin",
+            "family": "Feng"
+          },
+          {
+            "given": "Yongzhuo",
+            "family": "Zhou"
+          },
+          {
+            "given": "Yujun",
+            "family": "Chen"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9613",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              11
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-76261-5": {
+      "reference": {
+        "title": [
+          "Wide field-of-view anisotropic optoelectronic resistive memory for monocular in-sensor 3D motion perception and localization system"
+        ],
+        "author": [
+          {
+            "given": "Zhen",
+            "family": "Wang"
+          },
+          {
+            "given": "Biyi",
+            "family": "Jiang"
+          },
+          {
+            "given": "Ruoge",
+            "family": "Pan"
+          },
+          {
+            "given": "Liang",
+            "family": "Ran"
+          },
+          {
+            "given": "Huansong",
+            "family": "Tang"
+          },
+          {
+            "given": "Khalil",
+            "family": "Harrabi"
+          },
+          {
+            "given": "Yanghui",
+            "family": "Liu"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9470",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              5
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-76369-8": {
+      "reference": {
+        "title": [
+          "Room-temperature ferroelectrically switchable quantum geometry in few-layer WTe2 for complementary in-memory computing"
+        ],
+        "author": [
+          {
+            "given": "Ruihan",
+            "family": "Wang"
+          },
+          {
+            "given": "Pengfei",
+            "family": "Wang"
+          },
+          {
+            "given": "Haoyun",
+            "family": "Chen"
+          },
+          {
+            "given": "Yunze",
+            "family": "Peng"
+          },
+          {
+            "given": "Bingyan",
+            "family": "Liu"
+          },
+          {
+            "given": "Junlin",
+            "family": "Xiong"
+          },
+          {
+            "given": "Xueyuan",
+            "family": "Zhang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9466",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              6
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-76733-8": {
+      "reference": {
+        "title": [
+          "Heterogeneously integrated photonic terahertz transmitter on thin-film lithium niobate"
+        ],
+        "author": [
+          {
+            "given": "Luyu",
+            "family": "Wang"
+          },
+          {
+            "given": "Hanke",
+            "family": "Feng"
+          },
+          {
+            "given": "Liga",
+            "family": "Bai"
+          },
+          {
+            "given": "Zhouze",
+            "family": "Zhang"
+          },
+          {
+            "given": "Zhe",
+            "family": "Ding"
+          },
+          {
+            "given": "Yifan",
+            "family": "Wu"
+          },
+          {
+            "given": "Linze",
+            "family": "Li"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9797",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              14
+            ]
+          ]
+        }
+      }
+    },
+    "10.1002/adfm.77694": {
+      "reference": {
+        "title": [
+          "Memristive‐Gated RC‐Delay Synaptic Transistors for Time‐Encoded Analog in‐Memory Computing"
+        ],
+        "author": [
+          {
+            "given": "Yun‐Seo",
+            "family": "Shin"
+          },
+          {
+            "given": "Eunjoo",
+            "family": "Yoo"
+          },
+          {
+            "given": "Ki‐Hoon",
+            "family": "Son"
+          },
+          {
+            "given": "Hyun‐Sik",
+            "family": "Kim"
+          },
+          {
+            "given": "Dae‐Hee",
+            "family": "Han"
+          },
+          {
+            "given": "Jeong Hyeon",
+            "family": "Son"
+          },
+          {
+            "given": "Seung Hwan",
+            "family": "Lee"
+          }
+        ],
+        "container-title": [
+          "Advanced Functional Materials"
+        ],
+        "short-container-title": [
+          "Adv Funct Materials"
+        ],
+        "article-number": "e77694",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              13
+            ]
+          ]
+        }
+      }
+    },
+    "10.1002/adfm.77741": {
+      "reference": {
+        "title": [
+          "Domain Engineering and Anisotropic Domain‐Wall Photovoltaic Effects in Ferroelectric SnS"
+        ],
+        "author": [
+          {
+            "given": "Ryo",
+            "family": "Nanae"
+          },
+          {
+            "given": "Satsuki",
+            "family": "Kitamura"
+          },
+          {
+            "given": "Tomonori",
+            "family": "Nishimura"
+          },
+          {
+            "given": "Kaito",
+            "family": "Kanahashi"
+          },
+          {
+            "given": "Tomoaki",
+            "family": "Kameda"
+          },
+          {
+            "given": "Katsunori",
+            "family": "Wakabayashi"
+          },
+          {
+            "given": "Redhwan A",
+            "family": "Moqbel"
+          }
+        ],
+        "container-title": [
+          "Advanced Functional Materials"
+        ],
+        "short-container-title": [
+          "Adv Funct Materials"
+        ],
+        "volume": "36",
+        "issue": "75",
+        "article-number": "e77741",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              16
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-026-02325-2": {
+      "reference": {
+        "title": [
+          "On-chip non-volatile all-optical residual neural network accelerator"
+        ],
+        "author": [
+          {
+            "given": "Zhiqiang",
+            "family": "Quan"
+          },
+          {
+            "given": "Bing",
+            "family": "Han"
+          },
+          {
+            "given": "Xiaoxiao",
+            "family": "Ma"
+          },
+          {
+            "given": "Jingyuan",
+            "family": "Qu"
+          },
+          {
+            "given": "Xiangshui",
+            "family": "Miao"
+          },
+          {
+            "given": "Qiang",
+            "family": "He"
+          },
+          {
+            "given": "Jian",
+            "family": "Wang"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "348",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              19
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41598-026-68365-1": {
+      "reference": {
+        "title": [
+          "Gate-tunable negative differential resistance in multifunctional van der Waals heterostructure"
+        ],
+        "author": [
+          {
+            "given": "Richa",
+            "family": "Mitra"
+          },
+          {
+            "given": "Konstantina",
+            "family": "Iordanidou"
+          },
+          {
+            "given": "Naveen",
+            "family": "Shetty"
+          },
+          {
+            "given": "Md Anamul",
+            "family": "Hoque"
+          },
+          {
+            "given": "Anushree",
+            "family": "Datta"
+          },
+          {
+            "given": "Alexei",
+            "family": "Kalaboukhov"
+          },
+          {
+            "given": "Julia",
+            "family": "Wiktor"
+          }
+        ],
+        "container-title": [
+          "Scientific Reports"
+        ],
+        "short-container-title": [
+          "Sci Rep"
+        ],
+        "volume": "16",
+        "issue": "1",
+        "article-number": "26526",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-026-02286-6": {
+      "reference": {
+        "title": [
+          "Giant anomalous exciton-multiphoton nonlinearities in layered hybrid perovskites"
+        ],
+        "author": [
+          {
+            "given": "Yanming",
+            "family": "Xu"
+          },
+          {
+            "given": "Yi",
+            "family": "Liu"
+          },
+          {
+            "given": "Chao",
+            "family": "Yu"
+          },
+          {
+            "given": "Jinlong",
+            "family": "Xu"
+          },
+          {
+            "given": "Wenqi",
+            "family": "Huang"
+          },
+          {
+            "given": "Weichu",
+            "family": "Mo"
+          },
+          {
+            "given": "Canhua",
+            "family": "Xu"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "360",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              25
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77202-y": {
+      "reference": {
+        "title": [
+          "Quantum nonlinearity for optical neural computing"
+        ],
+        "author": [
+          {
+            "given": "Qingyi",
+            "family": "Zhou"
+          },
+          {
+            "given": "Jungmin",
+            "family": "Kim"
+          },
+          {
+            "given": "Yutian",
+            "family": "Tao"
+          },
+          {
+            "given": "Guoming",
+            "family": "Huang"
+          },
+          {
+            "given": "Ming",
+            "family": "Zhou"
+          },
+          {
+            "given": "Zewei",
+            "family": "Shao"
+          },
+          {
+            "given": "Zongfu",
+            "family": "Yu"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10241",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              27
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-76950-1": {
+      "reference": {
+        "title": [
+          "Single-device in-sensor computing for multi-channel multiply-accumulate operations"
+        ],
+        "author": [
+          {
+            "given": "Mingqiang",
+            "family": "Wang"
+          },
+          {
+            "given": "Hui",
+            "family": "Yu"
+          },
+          {
+            "given": "Benshan",
+            "family": "Wang"
+          },
+          {
+            "given": "Zebo",
+            "family": "Xu"
+          },
+          {
+            "given": "Zhenguang",
+            "family": "Cai"
+          },
+          {
+            "given": "Chaoran",
+            "family": "Huang"
+          },
+          {
+            "given": "Ni",
+            "family": "Zhao"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10196",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              26
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77166-z": {
+      "reference": {
+        "title": [
+          "Ultrathin nano-layered boron nitride stabilizing perovskite quantum dot-based light-emitting diodes"
+        ],
+        "author": [
+          {
+            "given": "Jindi",
+            "family": "Wang"
+          },
+          {
+            "given": "Hongdan",
+            "family": "Ren"
+          },
+          {
+            "given": "Bo",
+            "family": "Cai"
+          },
+          {
+            "given": "Mingyang",
+            "family": "Li"
+          },
+          {
+            "given": "Wenxuan",
+            "family": "Fan"
+          },
+          {
+            "given": "Leimeng",
+            "family": "Xu"
+          },
+          {
+            "given": "Jisong",
+            "family": "Yao"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10415",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41565-026-02268-0": {
+      "reference": {
+        "title": [
+          "Quantum-well metasurface for free-space-accessible enhanced nonlinear polarization"
+        ],
+        "author": [
+          {
+            "given": "Pernille Undrum",
+            "family": "Fathi"
+          },
+          {
+            "given": "Irene",
+            "family": "Occhiodori"
+          },
+          {
+            "given": "Patrick",
+            "family": "Devaney"
+          },
+          {
+            "given": "Amberly",
+            "family": "Ricks"
+          },
+          {
+            "given": "Rithvik",
+            "family": "Ramesh"
+          },
+          {
+            "given": "Yiwei",
+            "family": "Ju"
+          },
+          {
+            "given": "Moaz",
+            "family": "Waqar"
+          }
+        ],
+        "container-title": [
+          "Nature Nanotechnology"
+        ],
+        "short-container-title": [
+          "Nat. Nanotechnol."
+        ],
+        "volume": "21",
+        "issue": "11",
+        "page": "1558-1564",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77397-0": {
+      "reference": {
+        "title": [
+          "Ferroelectrically programmable lanthanide luminescent memristor"
+        ],
+        "author": [
+          {
+            "given": "Yiyang",
+            "family": "Wen"
+          },
+          {
+            "given": "Ziyun",
+            "family": "Chen"
+          },
+          {
+            "given": "Yilin",
+            "family": "Cao"
+          },
+          {
+            "given": "Wenzheng",
+            "family": "Ma"
+          },
+          {
+            "given": "Hongda",
+            "family": "Ren"
+          },
+          {
+            "given": "Xiaona",
+            "family": "Du"
+          },
+          {
+            "given": "Minghao",
+            "family": "Hu"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10597",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77270-0": {
+      "reference": {
+        "title": [
+          "Periodic polar vortices in BaTiO3/SrTiO3 superlattices monolithically grown on silicon"
+        ],
+        "author": [
+          {
+            "given": "Valentin Väinö",
+            "family": "Hevelke"
+          },
+          {
+            "given": "Ines",
+            "family": "Häusler"
+          },
+          {
+            "given": "Aiden",
+            "family": "Ross"
+          },
+          {
+            "given": "Israel Ibukun",
+            "family": "Olaniyan"
+          },
+          {
+            "given": "Sven",
+            "family": "Wiesner"
+          },
+          {
+            "given": "Minh Anh",
+            "family": "Luong"
+          },
+          {
+            "given": "Leifeng",
+            "family": "Zhang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9648",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77412-4": {
+      "reference": {
+        "title": [
+          "Loss-engineered reconfigurable polaritons"
+        ],
+        "author": [
+          {
+            "given": "Hongyi",
+            "family": "Yuan"
+          },
+          {
+            "given": "Kaijun",
+            "family": "Feng"
+          },
+          {
+            "given": "Oubo",
+            "family": "You"
+          },
+          {
+            "given": "Yihan",
+            "family": "Liao"
+          },
+          {
+            "given": "Yongxin",
+            "family": "Lan"
+          },
+          {
+            "given": "Shenghan",
+            "family": "Zhou"
+          },
+          {
+            "given": "Shu",
+            "family": "Zhang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10658",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              9
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41928-026-01706-0": {
+      "reference": {
+        "title": [
+          "A spiking neural network-in-logic architecture based on reconfigurable molybdenum disulfide dual-gate transistors with ferroelectric gating"
+        ],
+        "author": [
+          {
+            "given": "Lingqi",
+            "family": "Li"
+          },
+          {
+            "given": "Haofei",
+            "family": "Zheng"
+          },
+          {
+            "given": "Chenyang",
+            "family": "Li"
+          },
+          {
+            "given": "Heng",
+            "family": "Xiang"
+          },
+          {
+            "given": "Jianze",
+            "family": "Wang"
+          },
+          {
+            "given": "Fangyuan",
+            "family": "Zheng"
+          },
+          {
+            "given": "Mingxi",
+            "family": "Chen"
+          }
+        ],
+        "container-title": [
+          "Nature Electronics"
+        ],
+        "short-container-title": [
+          "Nat Electron"
+        ],
+        "volume": "9",
+        "issue": "10",
+        "page": "1110-1121",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              14
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77264-y": {
+      "reference": {
+        "title": [
+          "Thermal conductivity and optical phonon scattering of CMOS compatible aluminum nitride based ferroelectric thin films"
+        ],
+        "author": [
+          {
+            "given": "Sara",
+            "family": "Makarem"
+          },
+          {
+            "given": "Ian",
+            "family": "Mercer"
+          },
+          {
+            "given": "Saman",
+            "family": "Zare"
+          },
+          {
+            "given": "Michael S.",
+            "family": "Lafferty"
+          },
+          {
+            "given": "Thomas W.",
+            "family": "Pfeifer"
+          },
+          {
+            "given": "William",
+            "family": "Hutchins"
+          },
+          {
+            "given": "Daniel",
+            "family": "Hirt"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10725",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              11
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77526-9": {
+      "reference": {
+        "title": [
+          "Sub-Doppler rubidium atom cooling using a programmable agile integrated PZT-on-SiN resonator"
+        ],
+        "author": [
+          {
+            "given": "Andrei",
+            "family": "Isichenko"
+          },
+          {
+            "given": "Steven",
+            "family": "Carpenter"
+          },
+          {
+            "given": "Nick",
+            "family": "Montifiore"
+          },
+          {
+            "given": "Jiawei",
+            "family": "Wang"
+          },
+          {
+            "given": "Mayand",
+            "family": "Dangi"
+          },
+          {
+            "given": "Nitesh",
+            "family": "Chauhan"
+          },
+          {
+            "given": "Pritha",
+            "family": "Mukherjee"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10275",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              16
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77913-2": {
+      "reference": {
+        "title": [
+          "Creation of ferroelectric flux-closure transistor array for non-volatile field-effect memory"
+        ],
+        "author": [
+          {
+            "given": "Feng-Hui",
+            "family": "Gong"
+          },
+          {
+            "given": "Songge",
+            "family": "Zhang"
+          },
+          {
+            "given": "Na",
+            "family": "Li"
+          },
+          {
+            "given": "Xiangwei",
+            "family": "Guo"
+          },
+          {
+            "given": "Yu-Ting",
+            "family": "Chen"
+          },
+          {
+            "given": "Yin-Lian",
+            "family": "Zhu"
+          },
+          {
+            "given": "Jing-Hui",
+            "family": "Wang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "11009",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              21
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41586-026-11042-0": {
+      "reference": {
+        "title": [
+          "Electroluminescent photoresists extending lithographic scaling to OLEDs"
+        ],
+        "author": [
+          {
+            "given": "Shao-Wei",
+            "family": "Lo"
+          },
+          {
+            "given": "Sunil B.",
+            "family": "Shivarudraiah"
+          },
+          {
+            "given": "Zhan-Hong",
+            "family": "Lin"
+          },
+          {
+            "given": "Patrick",
+            "family": "Helbling"
+          },
+          {
+            "given": "Lifei",
+            "family": "Song"
+          },
+          {
+            "given": "Jiachen",
+            "family": "Wang"
+          },
+          {
+            "given": "Miguel",
+            "family": "Nouman"
+          }
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "short-container-title": [
+          "Nature"
+        ],
+        "volume": "658",
+        "issue": "8134",
+        "page": "78-85",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              16
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-76041-1": {
+      "reference": {
+        "title": [
+          "Multiband topological heterojunctions on the surface nanoscale axial photonics platform"
+        ],
+        "author": [
+          {
+            "given": "Nathaniel",
+            "family": "Fried"
+          },
+          {
+            "given": "Dashiell L. P.",
+            "family": "Vitullo"
+          },
+          {
+            "given": "Avik",
+            "family": "Dutt"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10071",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              29
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-77789-2": {
+      "reference": {
+        "title": [
+          "Stress-engineered 0.34 nm graphene memristors for low-power probabilistic computing"
+        ],
+        "author": [
+          {
+            "given": "Yanming",
+            "family": "Liu"
+          },
+          {
+            "given": "Jinzhu",
+            "family": "Li"
+          },
+          {
+            "given": "Zhoujie",
+            "family": "Pan"
+          },
+          {
+            "given": "Hengbin",
+            "family": "Ding"
+          },
+          {
+            "given": "Yuwan",
+            "family": "Hong"
+          },
+          {
+            "given": "Fan",
+            "family": "Wu"
+          },
+          {
+            "given": "Peigen",
+            "family": "Zhang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "11054",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              23
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41563-026-02745-w": {
+      "reference": {
+        "title": [
+          "Rapid-responsive and water-stable organic electrochemical transistors enabled by supramolecular artificial ion channels"
+        ],
+        "author": [
+          {
+            "given": "Yuhui",
+            "family": "Wang"
+          },
+          {
+            "given": "Bowen",
+            "family": "Cao"
+          },
+          {
+            "given": "Yikai",
+            "family": "Zou"
+          },
+          {
+            "given": "Ta-Chung",
+            "family": "Lu"
+          },
+          {
+            "given": "Yewei",
+            "family": "Huang"
+          },
+          {
+            "given": "Yihan",
+            "family": "Gao"
+          },
+          {
+            "given": "Yutong",
+            "family": "Wang"
+          }
+        ],
+        "container-title": [
+          "Nature Materials"
+        ],
+        "short-container-title": [
+          "Nat. Mater."
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              25
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-78564-z": {
+      "reference": {
+        "title": [
+          "Ultrathin high-performance circular polarizers based on MoOCl2/NbOCl2 van der Waals heterostructures"
+        ],
+        "author": [
+          {
+            "given": "Shuxin",
+            "family": "Huang"
+          },
+          {
+            "given": "Guanyu",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yaolong",
+            "family": "Li"
+          },
+          {
+            "given": "Xianghan",
+            "family": "Meng"
+          },
+          {
+            "given": "Yijun",
+            "family": "Wang"
+          },
+          {
+            "given": "Weizhe",
+            "family": "Zhang"
+          },
+          {
+            "given": "Minghao",
+            "family": "Deng"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "11378",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              6
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-78364-5": {
+      "reference": {
+        "title": [
+          "Monolithic three-dimensionally integrated memristor-thin-film transistor for electrically programmable multimode reservoir computing"
+        ],
+        "author": [
+          {
+            "given": "Sung Keun",
+            "family": "Shim"
+          },
+          {
+            "given": "Wonho",
+            "family": "Choi"
+          },
+          {
+            "given": "Sunwoo",
+            "family": "Cheong"
+          },
+          {
+            "given": "Dong Hoon",
+            "family": "Shin"
+          },
+          {
+            "given": "Jonghoon",
+            "family": "Shin"
+          },
+          {
+            "given": "Janguk",
+            "family": "Han"
+          },
+          {
+            "given": "Jiseong",
+            "family": "Im"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "11306",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41928-026-01721-1": {
+      "reference": {
+        "title": [
+          "Temperature-stable high-κ oxides for miniaturized capacitors"
+        ],
+        "author": [
+          {
+            "given": "Junlei",
+            "family": "Qi"
+          },
+          {
+            "given": "Yiying",
+            "family": "Chen"
+          },
+          {
+            "given": "Jincheng",
+            "family": "Qin"
+          },
+          {
+            "given": "Bin",
+            "family": "Wei"
+          },
+          {
+            "given": "Hao",
+            "family": "Pan"
+          },
+          {
+            "given": "Tengfei",
+            "family": "Hu"
+          },
+          {
+            "given": "Zhengqian",
+            "family": "Fu"
+          }
+        ],
+        "container-title": [
+          "Nature Electronics"
+        ],
+        "short-container-title": [
+          "Nat Electron"
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              6
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-026-02436-w": {
+      "reference": {
+        "title": [
+          "Topology-optimized dielectric cavities for enhanced excitonic light emission from WSe2"
+        ],
+        "author": [
+          {
+            "given": "Owen",
+            "family": "Matthiessen"
+          },
+          {
+            "given": "Brandon",
+            "family": "Triplett"
+          },
+          {
+            "given": "Omer",
+            "family": "Yesilyurt"
+          },
+          {
+            "given": "Davide",
+            "family": "Cassara"
+          },
+          {
+            "given": "Karthik",
+            "family": "Pagadala"
+          },
+          {
+            "given": "Morris M.",
+            "family": "Yang"
+          },
+          {
+            "given": "Andres E.",
+            "family": "Llacsahuanga Allcca"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "387",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              13
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-78053-3": {
+      "reference": {
+        "title": [
+          "Integration of high-κ oxide on 2D semiconductors with carbon-dot monolayer assembly as van der Waals interfacial layer"
+        ],
+        "author": [
+          {
+            "given": "Sunny",
+            "family": "Wong"
+          },
+          {
+            "given": "Fufei",
+            "family": "An"
+          },
+          {
+            "given": "Yu",
+            "family": "Wu"
+          },
+          {
+            "given": "Viet Hung",
+            "family": "Pham"
+          },
+          {
+            "given": "Yanxiao",
+            "family": "Li"
+          },
+          {
+            "given": "Robert L.",
+            "family": "Thompson"
+          },
+          {
+            "given": "Junseok",
+            "family": "Lee"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10362",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              7
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-78336-9": {
+      "reference": {
+        "title": [
+          "Interfacial ferroelectricity at naturally-formed van der Waals interfaces"
+        ],
+        "author": [
+          {
+            "given": "Jiawen",
+            "family": "Dai"
+          },
+          {
+            "given": "Beituo",
+            "family": "Liu"
+          },
+          {
+            "given": "Fengrui",
+            "family": "Sui"
+          },
+          {
+            "given": "Zihao",
+            "family": "Yang"
+          },
+          {
+            "given": "Shujing",
+            "family": "Jia"
+          },
+          {
+            "given": "Yilun",
+            "family": "Yu"
+          },
+          {
+            "given": "Rong",
+            "family": "Jin"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "11403",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              7
+            ]
+          ]
+        }
+      }
+    },
+    "10.1002/lpor.72032": {
+      "reference": {
+        "title": [
+          "Wavefront Shaping for Optimal Extinction of Focused Light by Individual Nanoscatterers"
+        ],
+        "author": [
+          {
+            "given": "Nick",
+            "family": "Feldman"
+          },
+          {
+            "given": "Joris",
+            "family": "Pals"
+          },
+          {
+            "given": "Arie J.",
+            "family": "den Boef"
+          },
+          {
+            "given": "F. Javier",
+            "family": "García de Abajo"
+          },
+          {
+            "given": "Lyubov V.",
+            "family": "Amitonova"
+          },
+          {
+            "given": "A. Femius",
+            "family": "Koenderink"
+          }
+        ],
+        "container-title": [
+          "Laser &amp; Photonics Reviews"
+        ],
+        "short-container-title": [
+          "Laser &amp;amp; Photonics Reviews"
+        ],
+        "article-number": "e72032",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              19
+            ]
+          ]
+        }
+      }
+    },
+    "10.1002/advs.78415": {
+      "reference": {
+        "title": [
+          "Multifunctional Vertical Bulk‐Heterojunction Transistors With Amorphous GaO\n                    <sub>x</sub>\n                    for Neuromorphic Perception‐to‐Decision"
+        ],
+        "author": [
+          {
+            "given": "Jinkui",
+            "family": "Si"
+          },
+          {
+            "given": "Qiong",
+            "family": "Zhuang"
+          },
+          {
+            "given": "Rengjian",
+            "family": "Yu"
+          },
+          {
+            "given": "Junling",
+            "family": "Zhou"
+          },
+          {
+            "given": "Lan",
+            "family": "Yang"
+          },
+          {
+            "given": "Changjie",
+            "family": "Zhou"
+          },
+          {
+            "given": "Huili",
+            "family": "Zhu"
+          }
+        ],
+        "container-title": [
+          "Advanced Science"
+        ],
+        "short-container-title": [
+          "Advanced Science"
+        ],
+        "article-number": "e78415",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              20
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-78354-7": {
+      "reference": {
+        "title": [
+          "Universal crystallization kinetics of solution-processed semiconductors"
+        ],
+        "author": [
+          {
+            "given": "Zhitian",
+            "family": "Ling"
+          },
+          {
+            "given": "Mateusz",
+            "family": "Brzezinski"
+          },
+          {
+            "given": "Shuanglong",
+            "family": "Wang"
+          },
+          {
+            "given": "Konstantinos",
+            "family": "Bidinakis"
+          },
+          {
+            "given": "Lei",
+            "family": "Gao"
+          },
+          {
+            "given": "Chongyao",
+            "family": "Li"
+          },
+          {
+            "given": "Xin",
+            "family": "Zhou"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10785",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              14
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-78128-1": {
+      "reference": {
+        "title": [
+          "Reduced-DSP 200G/λ low-voltage slow-light silicon modulator enabled by built-in EO equalizer"
+        ],
+        "author": [
+          {
+            "given": "Keisuke",
+            "family": "Kawahara"
+          },
+          {
+            "given": "Tai",
+            "family": "Tsuchizawa"
+          },
+          {
+            "given": "Noritsugu",
+            "family": "Yamamoto"
+          },
+          {
+            "given": "Yuriko",
+            "family": "Maegami"
+          },
+          {
+            "given": "Koji",
+            "family": "Yamada"
+          },
+          {
+            "given": "Nobuhiko",
+            "family": "Nishiyama"
+          },
+          {
+            "given": "Toshihiko",
+            "family": "Baba"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10446",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              22
+            ]
+          ]
+        }
+      }
+    },
+    "10.1002/advs.78211": {
+      "reference": {
+        "title": [
+          "Polarity‐Controlled Coexistence of Electrochemical Metallization and Valence Change Mechanisms in a Unified Metal Halide Perovskite Memristor"
+        ],
+        "author": [
+          {
+            "given": "Ismael",
+            "family": "Fernandez‐Guillen"
+          },
+          {
+            "given": "Omar E.",
+            "family": "Solis"
+          },
+          {
+            "given": "Pablo F.",
+            "family": "Betancur"
+          },
+          {
+            "given": "Rafael",
+            "family": "Abargues"
+          },
+          {
+            "given": "Pablo P.",
+            "family": "Boix"
+          }
+        ],
+        "container-title": [
+          "Advanced Science"
+        ],
+        "short-container-title": [
+          "Advanced Science"
+        ],
+        "article-number": "e78211",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              26
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-78371-6": {
+      "reference": {
+        "title": [
+          "Singularity-free supertwisted atomic layers with giant circular dichroisms"
+        ],
+        "author": [
+          {
+            "given": "Xinchao",
+            "family": "Wang"
+          },
+          {
+            "given": "Kaifeng",
+            "family": "Lin"
+          },
+          {
+            "given": "Guodong",
+            "family": "Xue"
+          },
+          {
+            "given": "Lifeng",
+            "family": "Hou"
+          },
+          {
+            "given": "Yinghui",
+            "family": "Wei"
+          },
+          {
+            "given": "Liantuan",
+            "family": "Xiao"
+          },
+          {
+            "given": "Hao",
+            "family": "Hong"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41566-026-02035-6": {
+      "reference": {
+        "title": [
+          "Automatic on-chip separation of partially coherent light into its mutually incoherent components"
+        ],
+        "author": [
+          {
+            "given": "Paul-Alexis",
+            "family": "Mor"
+          },
+          {
+            "given": "Anne R.",
+            "family": "Kroo"
+          },
+          {
+            "given": "Carson G.",
+            "family": "Valdez"
+          },
+          {
+            "given": "Marko",
+            "family": "Šimić"
+          },
+          {
+            "given": "Aviv",
+            "family": "Karnieli"
+          },
+          {
+            "given": "Gabriele",
+            "family": "Cavicchioli"
+          },
+          {
+            "given": "Zhanghao",
+            "family": "Sun"
+          }
+        ],
+        "container-title": [
+          "Nature Photonics"
+        ],
+        "short-container-title": [
+          "Nat. Photon."
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              30
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-79253-7": {
+      "reference": {
+        "title": [
+          "High-performance annealing-free wurtzite ferroelectric field-effect transistors with ultrathin oxide semiconductors for neuromorphic computing"
+        ],
+        "author": [
+          {
+            "given": "Kai",
+            "family": "Wang"
+          },
+          {
+            "given": "Tingting",
+            "family": "Gao"
+          },
+          {
+            "given": "Kaisheng",
+            "family": "Hu"
+          },
+          {
+            "given": "Suyuan",
+            "family": "Cai"
+          },
+          {
+            "given": "Huibo",
+            "family": "Liu"
+          },
+          {
+            "given": "Haotian",
+            "family": "Liang"
+          },
+          {
+            "given": "Jianye",
+            "family": "Zhang"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41586-026-11214-y": {
+      "reference": {
+        "title": [
+          "Subcycle videography of Landau–Zener–Majorana transitions in graphene"
+        ],
+        "author": [
+          {
+            "given": "V.",
+            "family": "Eggers"
+          },
+          {
+            "given": "G.",
+            "family": "Inzani"
+          },
+          {
+            "given": "M.",
+            "family": "Meierhofer"
+          },
+          {
+            "given": "L.",
+            "family": "Münster"
+          },
+          {
+            "given": "J.",
+            "family": "Helml"
+          },
+          {
+            "given": "R.",
+            "family": "Wallauer"
+          },
+          {
+            "given": "S.",
+            "family": "Zajusch"
+          }
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "short-container-title": [
+          "Nature"
+        ],
+        "volume": "659",
+        "issue": "8139",
+        "page": "63-68",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              28
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-79026-2": {
+      "reference": {
+        "title": [
+          "Silicon photonics provides a unified solution for all-distance optical communications"
+        ],
+        "author": [
+          {
+            "given": "Zixuan",
+            "family": "Zhou"
+          },
+          {
+            "given": "Jiahui",
+            "family": "Huang"
+          },
+          {
+            "given": "Yiqing",
+            "family": "Liu"
+          },
+          {
+            "given": "Xuguang",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yujun",
+            "family": "Chen"
+          },
+          {
+            "given": "Xu",
+            "family": "Gao"
+          },
+          {
+            "given": "Gang",
+            "family": "Qiao"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41377-026-02420-4": {
+      "reference": {
+        "title": [
+          "Orthogonally regulated multi-timescale reservoir and linear nonvolatile readout in a vertical transistor for dynamic machine vision"
+        ],
+        "author": [
+          {
+            "given": "Qinyong",
+            "family": "Dai"
+          },
+          {
+            "given": "Hangyuan",
+            "family": "Cui"
+          },
+          {
+            "given": "Yishan",
+            "family": "Cao"
+          },
+          {
+            "given": "Kai",
+            "family": "Chen"
+          },
+          {
+            "given": "Chao",
+            "family": "Ai"
+          },
+          {
+            "given": "Qijing",
+            "family": "Wang"
+          },
+          {
+            "given": "Shunwei",
+            "family": "Zhu"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "398",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              9
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41565-026-02314-x": {
+      "reference": {
+        "title": [
+          "Atomically resolved exciton emission from single defects in MoS2"
+        ],
+        "author": [
+          {
+            "given": "Lysander",
+            "family": "Huberich"
+          },
+          {
+            "given": "Eve",
+            "family": "Ammerman"
+          },
+          {
+            "given": "Yu",
+            "family": "Gu"
+          },
+          {
+            "given": "Yining",
+            "family": "Ren"
+          },
+          {
+            "given": "Sotirios",
+            "family": "Papadopoulos"
+          },
+          {
+            "given": "Chengye",
+            "family": "Dong"
+          },
+          {
+            "given": "Joshua A.",
+            "family": "Robinson"
+          }
+        ],
+        "container-title": [
+          "Nature Nanotechnology"
+        ],
+        "short-container-title": [
+          "Nat. Nanotechnol."
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-79595-2": {
+      "reference": {
+        "title": [
+          "Thin-film lithium niobate waveguide-integrated p-i-n Tungsten selenide photodiodes with 10Gbit/s data reception"
+        ],
+        "author": [
+          {
+            "given": "Weijia",
+            "family": "Tang"
+          },
+          {
+            "given": "Zixian",
+            "family": "Wei"
+          },
+          {
+            "given": "Ting",
+            "family": "He"
+          },
+          {
+            "given": "Haoyu",
+            "family": "Huang"
+          },
+          {
+            "given": "Xin",
+            "family": "He"
+          },
+          {
+            "given": "Su",
+            "family": "Wu"
+          },
+          {
+            "given": "Jun",
+            "family": "Liu"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41586-026-11272-2": {
+      "reference": {
+        "title": [
+          "Low-power 2D CFETs using single-crystal high-κ dielectrics"
+        ],
+        "author": [
+          {
+            "given": "Ni",
+            "family": "Yang"
+          },
+          {
+            "given": "Ji",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yu-Cheng",
+            "family": "Lu"
+          },
+          {
+            "given": "Zeheng",
+            "family": "Wang"
+          },
+          {
+            "given": "Yu-Ming",
+            "family": "Chang"
+          },
+          {
+            "given": "Fangyuan",
+            "family": "Zheng"
+          },
+          {
+            "given": "Zi-Liang",
+            "family": "Yang"
+          }
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "short-container-title": [
+          "Nature"
+        ],
+        "volume": "659",
+        "issue": "8141",
+        "page": "657-665",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              11
+            ]
+          ]
+        }
+      }
+    },
+    "10.1038/s41467-026-79139-8": {
+      "reference": {
+        "title": [
+          "Low-thermal-budget solution-processed montmorillonite dielectric for low-voltage 2D electronics"
+        ],
+        "author": [
+          {
+            "given": "Wenjie",
+            "family": "Li"
+          },
+          {
+            "given": "Junying",
+            "family": "Xue"
+          },
+          {
+            "given": "Peng",
+            "family": "Chen"
+          },
+          {
+            "given": "Yongping",
+            "family": "Dai"
+          },
+          {
+            "given": "Jing",
+            "family": "He"
+          },
+          {
+            "given": "Ruihao",
+            "family": "Tan"
+          },
+          {
+            "given": "Jifeng",
+            "family": "Ge"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              11
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "institutions": {
+    "10.1038/s41467-026-72557-8": [
+      [
+        "https://ror.org/05htk5m33",
+        "Hunan University",
+        "CN"
+      ]
+    ],
+    "10.1038/s41467-026-72314-x": [
+      [
+        "https://ror.org/033vjfk17",
+        "Wuhan University",
+        "CN"
+      ]
+    ],
+    "10.1038/s41467-026-71517-6": [
+      [
+        "https://ror.org/00f1zfq44",
+        "Central South University",
+        "CN"
+      ],
+      [
+        "https://ror.org/053w1zy07",
+        "Hunan Normal University",
+        "CN"
+      ],
+      [
+        "https://ror.org/04ypx8c21",
+        "Zhengzhou University",
+        "CN"
+      ]
+    ],
+    "10.1002/advs.76218": [
+      [
+        "https://ror.org/04q78tk20",
+        "Sungkyunkwan University",
+        "KR"
+      ],
+      [
+        "https://ror.org/01r024a98",
+        "Chung-Ang University",
+        "KR"
+      ]
+    ],
+    "10.1038/s41467-026-75873-1": [
+      [
+        "https://ror.org/05qpz1x62",
+        "Friedrich Schiller University Jena",
+        "DE"
+      ],
+      [
+        "https://ror.org/00nt41z93",
+        "University of Aveiro",
+        "PT"
+      ],
+      [
+        "https://ror.org/01hcx6992",
+        "Humboldt-Universität zu Berlin",
+        "DE"
+      ]
+    ],
+    "10.1038/s41467-026-76067-5": [
+      [
+        "https://ror.org/0072zz521",
+        "University of Massachusetts Amherst",
+        "US"
+      ],
+      [
+        "https://ror.org/03taz7m60",
+        "University of Southern California",
+        "US"
+      ]
+    ],
+    "10.1038/s41467-026-76121-2": [
+      [
+        "https://ror.org/01rxvg760",
+        "Nanjing University",
+        "CN"
+      ],
+      [
+        "https://ror.org/00js3aw79",
+        "Jilin University",
+        "CN"
+      ],
+      [
+        "https://ror.org/05s92vm98",
+        "Xidian University",
+        "CN"
+      ]
+    ],
+    "10.1038/s41467-026-77913-2": [
+      [
+        "https://ror.org/0030zas98",
+        "Hong Kong Polytechnic University",
+        "HK"
+      ],
+      [
+        "https://ror.org/00a2xv884",
+        "Zhejiang University",
+        "CN"
+      ],
+      [
+        "https://ror.org/02m9vrb24",
+        "Hunan University of Science and Technology",
+        "CN"
+      ],
+      [
+        "https://ror.org/03panb555",
+        "Lanzhou University of Technology",
+        "CN"
+      ]
+    ],
+    "10.1038/s41377-026-02436-w": [
+      [
+        "https://ror.org/02dqehb95",
+        "Purdue University West Lafayette",
+        "US"
+      ],
+      [
+        "https://ror.org/03vek6s52",
+        "Harvard University",
+        "US"
+      ]
+    ],
+    "10.1038/s41467-026-78053-3": [
+      [
+        "https://ror.org/047426m28",
+        "University of Illinois Urbana-Champaign",
+        "US"
+      ],
+      [
+        "https://ror.org/02bfwt286",
+        "Monash University",
+        "AU"
+      ]
+    ],
+    "10.1038/s41467-026-78336-9": [
+      [
+        "https://ror.org/02n96ep67",
+        "East China Normal University",
+        "CN"
+      ],
+      [
+        "https://ror.org/00p991c53",
+        "Huazhong University of Science and Technology",
+        "CN"
+      ],
+      [
+        "https://ror.org/013q1eq08",
+        "Fudan University",
+        "CN"
+      ]
+    ]
+  }
+}
