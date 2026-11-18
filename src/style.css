@@ -2356,3 +2356,60 @@ figcaption {
 .word-cloud .cloud-level-3 { font-size: 1.55rem; color: var(--ink); }
 .word-cloud .cloud-level-4 { font-size: 1.9rem; color: var(--accent); }
 .word-cloud .cloud-level-5 { font-size: 2.25rem; font-weight: 700; color: var(--accent); }
+
+/* Keep the commentary and its figure together on wider screens. */
+.blog-edition .note-entry {
+  display: block;
+}
+
+.blog-edition .note-entry > div:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.blog-edition .note-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  max-width: none;
+  align-items: start;
+}
+
+.blog-edition .note-copy {
+  min-width: 0;
+}
+
+.blog-edition .paper-figure {
+  min-width: 0;
+  margin: 0;
+}
+
+@media (min-width: 821px) {
+  .blog-index {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+
+  .blog-index > .eyebrow,
+  .blog-index > h3 {
+    grid-column: 1 / -1;
+  }
+
+  .blog-index .blog-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-index .blog-word-cloud {
+    margin: 0;
+    padding: 0 0 0 clamp(2rem, 4vw, 4rem);
+    border-top: 0;
+    border-left: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 820px) {
+  .blog-edition .note-body {
+    grid-template-columns: 1fr;
+  }
+}
