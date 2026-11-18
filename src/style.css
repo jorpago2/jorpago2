@@ -2374,21 +2374,23 @@ figcaption {
   background: var(--surface);
 }
 .blog-card-figure { min-width: 0; margin: 0; }
+.blog-card-figure img { width: 100%; height: auto; border: 1px solid var(--line); }
 /* Frame the chip photograph in panel 2c of Lam and colleagues' figure 2. */
-.blog-card-figure > a {
+.blog-card-figure.lam-crop > a {
   position: relative;
   display: block;
   overflow: hidden;
   aspect-ratio: 272 / 205;
   background: var(--canvas);
 }
-.blog-card-figure img {
+.blog-card-figure.lam-crop img {
   position: absolute;
   top: -190.24%;
   left: -151.84%;
   width: 251.84%;
   max-width: none;
   height: auto;
+  border: 0;
 }
 .blog-card-figure figcaption { margin-top: .5rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
 .blog-card-figure figcaption a[href*="creativecommons.org"] { white-space: nowrap; }
@@ -2416,6 +2418,16 @@ figcaption {
 .word-cloud .cloud-level-4 { font-size: 1.9rem; color: var(--accent); }
 .word-cloud .cloud-level-5 { font-size: 2.25rem; font-weight: 700; color: var(--accent); }
 
+.blog-archive { margin-top: clamp(3rem, 6vw, 5rem); padding-top: 2rem; border-top: 1px solid var(--line); }
+.blog-archive h3 { margin: 0 0 1.5rem; font-size: clamp(1.5rem, 3vw, 2rem); }
+.blog-archive details { border-top: 1px solid var(--line); }
+.blog-archive details:last-child { border-bottom: 1px solid var(--line); }
+.blog-archive summary { padding: 1rem 0; cursor: pointer; font-weight: 700; text-transform: capitalize; }
+.blog-archive ol { margin: 0; padding: 0 0 1rem; list-style: none; }
+.blog-archive li { max-width: 65rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+.blog-archive li h4 { margin: .3rem 0; font-size: 1.2rem; line-height: 1.3; }
+.blog-archive li p { margin: .4rem 0; }
+
 /* Keep the commentary and its figure together on wider screens. */
 .blog-edition .note-entry {
   display: block;
@@ -2437,6 +2449,29 @@ figcaption {
   min-width: 0;
 }
 
+.weekly-copy {
+  max-width: 56rem;
+  margin-inline: auto;
+  line-height: 1.75;
+}
+
+.weekly-copy > h3:not(:first-of-type) {
+  margin: 2.5rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.weekly-copy > h4 {
+  margin: 1rem 0;
+  font-size: clamp(1.2rem, 1.7vw, 1.5rem);
+}
+
+.weekly-figure {
+  max-width: 42rem;
+  margin: 1.5rem auto;
+}
+
 .blog-edition .paper-figure {
   min-width: 0;
   margin: 0;
@@ -2453,6 +2488,8 @@ figcaption {
   .blog-index > h3 {
     grid-column: 1 / -1;
   }
+
+  .blog-index > .blog-archive { grid-column: 1 / -1; }
 
   .blog-index .blog-word-cloud {
     margin: 0;

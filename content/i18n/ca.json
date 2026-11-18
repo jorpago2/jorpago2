@@ -51,6 +51,10 @@
       "Maquinari neuromòrfic"
     ]
   },
+  "blogArchive": {
+    "title": "Arxiu setmanal",
+    "weekOf": "Setmana del"
+  },
   "wordCloud": {
     "title": "Núvol de paraules",
     "description": "Les paraules que més apareixen en les entrades del blog. La mida n’indica la freqüència.",

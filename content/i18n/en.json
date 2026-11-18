@@ -51,6 +51,10 @@
       "Neuromorphic hardware"
     ]
   },
+  "blogArchive": {
+    "title": "Weekly archive",
+    "weekOf": "Week of"
+  },
   "wordCloud": {
     "title": "Word cloud",
     "description": "Words that appear most often in blog posts. Size reflects frequency.",

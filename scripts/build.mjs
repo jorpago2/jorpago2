@@ -1,6 +1,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { renderBlogWordCloud } from "./word-cloud.mjs";
+import { renderBlogArchive } from "./blog-archive.mjs";
 
 const SITE_BASE_PATH = "/jorpago2";
 const SITE_ORIGIN = "https://www.uv.es";
@@ -364,7 +365,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=69">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=70">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -558,7 +559,11 @@ async function main() {
       let content = redirect
         ? ""
         : renderSharedContent(page.id, fragment, bundle.locale.code, bundle.strings, sharedData);
-      if (page.id === "research-notes") content = content.replace("<!-- BLOG_WORD_CLOUD -->", wordCloud);
+      if (page.id === "research-notes") {
+        if (!content.includes("<!-- BLOG_ARCHIVE -->")) throw new Error(`Missing blog archive marker for ${bundle.locale.code}.`);
+        content = content.replace("<!-- BLOG_WORD_CLOUD -->", wordCloud)
+          .replace("<!-- BLOG_ARCHIVE -->", renderBlogArchive(bundle.pages, bundle.locale, bundle.strings.blogArchive, route));
+      }
       await writeFile(
         path.join(outputDirectory, "index.html"),
         redirect

@@ -28,7 +28,7 @@ Then build, test, back up, publish and verify the website with:
 py scripts/deploy_uv.py
 ```
 
-The command reads the `disco.uv.es` credential from Windows Credential Manager;
+The command reads the `UV disco SFTP` credential from Windows Credential Manager;
 the password is never stored in the repository or printed in the terminal.
 
 GitHub Pages is a temporary preview and is built with `SITE_PREVIEW=true`, which

@@ -51,6 +51,10 @@
       "Hardware neuromórfico"
     ]
   },
+  "blogArchive": {
+    "title": "Archivo semanal",
+    "weekOf": "Semana del"
+  },
   "wordCloud": {
     "title": "Nube de palabras",
     "description": "Las palabras que más aparecen en las entradas del blog. El tamaño indica su frecuencia.",

@@ -1,6 +1,7 @@
 import ctypes
 import hashlib
 import posixpath
+import socket
 import stat
 import subprocess
 import time
@@ -17,7 +18,7 @@ except ImportError as error:
 
 HOST = "disco.uv.es"
 USERNAME = "jorpago2"
-CREDENTIAL_TARGET = HOST
+CREDENTIAL_TARGET = "UV disco SFTP"
 REMOTE_DIRECTORY = "web"
 REMOTE_URL = "https://www.uv.es/jorpago2/"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -81,15 +82,26 @@ def connect() -> tuple[paramiko.SSHClient, paramiko.SFTPClient]:
     client = paramiko.SSHClient()
     client.load_host_keys(str(known_hosts))
     client.set_missing_host_key_policy(paramiko.RejectPolicy())
-    client.connect(
-        HOST,
-        username=username,
-        password=password,
-        look_for_keys=False,
-        allow_agent=False,
-        timeout=15,
-        auth_timeout=15,
-    )
+    # IPv6 currently accepts TCP but does not send an SSH banner. Resolve IPv4
+    # explicitly while retaining the hostname for SSH host-key verification.
+    addresses = socket.getaddrinfo(HOST, 22, socket.AF_INET, socket.SOCK_STREAM)
+    if not addresses:
+        raise RuntimeError(f"No IPv4 address for {HOST}")
+    connection = socket.create_connection(addresses[0][4], timeout=15)
+    try:
+        client.connect(
+            HOST,
+            sock=connection,
+            username=username,
+            password=password,
+            look_for_keys=False,
+            allow_agent=False,
+            timeout=15,
+            auth_timeout=15,
+        )
+    except Exception:
+        connection.close()
+        raise
     return client, client.open_sftp()
 
 

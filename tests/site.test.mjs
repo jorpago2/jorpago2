@@ -53,7 +53,7 @@ function outputFileForPage(page, locale) {
 }
 
 test("all imported pages are built with metadata", async () => {
-  assert.equal(pages.length, 14);
+  assert.equal(pages.filter((page) => !page.weekStart).length, 14);
 
   for (const page of pages) {
     const outputFile = path.join(OUTPUT_ROOT, page.slug, "index.html");
@@ -80,12 +80,31 @@ test("the blog links to one complete translated edition", async () => {
     const postUrl = `${SITE_BASE_PATH}/${locale.path ? `${locale.path}/` : ""}${byId.get("post-light-memory").slug}/`;
     assert.equal((index.match(/class="blog-card"/g) ?? []).length, 1);
     assert.ok(index.includes(`href="${postUrl}"`));
-    assert.match(index, /<figure class="blog-card-figure">[\s\S]*?<img[^>]+alt="[^"]+"/);
+    assert.match(index, /<figure class="blog-card-figure(?: [^"]*)?">[\s\S]*?<img[^>]+alt="[^"]+"/);
     assert.match(index, /<figcaption>[\s\S]*?nature\.com\/articles\/s41467-026-69084-x\/figures\/2[\s\S]*?creativecommons\.org\/licenses\/by\/4\.0\//);
     assert.equal((edition.match(/class="note-entry"/g) ?? []).length, 3);
     assert.equal((edition.match(/class="paper-figure"/g) ?? []).length, 3);
     assert.match(edition, /class="notes-mention"/);
     assert.equal((edition.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
+  }
+});
+
+test("weekly editions exist in every language with matching dates and alternates", async () => {
+  const weekly = new Map(localeConfig.locales.map((locale) => [locale.code,
+    localizedPages.get(locale.code).filter((page) => page.weekStart)]));
+  const expected = weekly.get("en").map((page) => page.id).sort();
+  for (const locale of localeConfig.locales) {
+    const entries = weekly.get(locale.code);
+    assert.deepEqual(entries.map((page) => page.id).sort(), expected);
+    const indexPage = localizedPages.get(locale.code).find((page) => page.id === "research-notes");
+    const index = await readFile(outputFileForPage(indexPage, locale), "utf8");
+    for (const page of entries) {
+      const html = await readFile(outputFileForPage(page, locale), "utf8");
+      assert.ok(index.includes(`/${page.slug}/`));
+      assert.equal((html.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
+      assert.match(html, /class="notes-mention"/);
+      assert.doesNotMatch(html, /BORRADOR DE TRADUCCIÓN AUTOMÁTICA|NO PUBLICAR/);
+    }
   }
 });
 
@@ -188,7 +207,7 @@ test("Spanish pages use localized routes, interface text and SEO alternates", as
   const faq = await readFile(outputFileForPage(byId.get("faq"), spanishLocale), "utf8");
   const career = await readFile(outputFileForPage(byId.get("career-strategy"), spanishLocale), "utf8");
 
-  assert.deepEqual([...byId.keys()].sort(), [
+  assert.deepEqual([...byId.keys()].filter((id) => !id.startsWith("post-week-")).sort(), [
     "about-me",
     "career-strategy",
     "contact",
