@@ -2323,10 +2323,8 @@ figcaption {
 .notes-intro.blog-masthead h2 {
   margin: .5rem 0 .65rem;
   color: var(--white);
-  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(3rem, 6vw, 4.75rem);
-  font-weight: 400;
-  letter-spacing: -.04em;
+  letter-spacing: -.045em;
 }
 .notes-intro.blog-masthead p:not(.eyebrow) {
   max-width: 31rem;
@@ -2396,7 +2394,7 @@ figcaption {
 .blog-card-figure figcaption a[href*="creativecommons.org"] { white-space: nowrap; }
 .blog-card-copy { min-width: 0; }
 .blog-card-copy .note-meta { margin: 0 0 .8rem; }
-.blog-card h4 { margin: 0 0 1rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.45rem, 2vw, 1.9rem); font-weight: 700; letter-spacing: -.025em; line-height: 1.16; }
+.blog-card h4 { margin: 0 0 1rem; font-size: clamp(1.45rem, 2vw, 1.9rem); line-height: 1.16; }
 .blog-card h4 a { color: inherit; text-decoration: none; }
 .blog-card h4 a:hover { color: var(--accent); }
 .blog-card-feature h4 { font-size: clamp(2rem, 3.1vw, 2.75rem); line-height: 1.1; }
