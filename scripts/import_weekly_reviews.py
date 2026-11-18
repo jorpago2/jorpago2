@@ -31,10 +31,10 @@ COUNTRIES = {
 }
 ARTICLE_DOI = re.compile(r"10\.\d{4,9}/[\w.-]+", re.I)
 READING = [
-    ("10.1038/s41467-026-79595-2", "https://seas.harvard.edu/news/ultraviolet-light-fits-chip", {
-        "es": "El mismo niobato de litio sirve para generar luz ultravioleta en un chip (Harvard SEAS, en inglés).",
-        "en": "The same lithium niobate platform can generate ultraviolet light on a chip (Harvard SEAS).",
-        "ca": "El mateix niobat de liti permet generar llum ultraviolada en un xip (Harvard SEAS, en anglés)."}),
+    ("10.1038/s41566-026-02036-5", "https://www.nju.edu.cn/info/1067/486531.htm", {
+        "es": "La Universidad de Nankín explica el proceso y sus aplicaciones en emisores infrarrojos (en chino).",
+        "en": "Nanjing University explains the process and its applications to infrared emitters (in Chinese).",
+        "ca": "La Universitat de Nanjing explica el procés i les seues aplicacions als emissors infrarojos (en xinés)."}),
 ]
 RELATED = [
     (r"(?:memristor|synap\w+)\b.*(?:neuromorph|reservoir|spiking)|(?:neuromorph|reservoir|spiking).*?(?:memristor|synap\w+)",

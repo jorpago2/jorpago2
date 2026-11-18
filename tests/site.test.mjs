@@ -104,10 +104,15 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.equal((html.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
       assert.match(html, /class="notes-mention"/);
       assert.equal((html.match(/class="note-meta weekly-reference"/g) ?? []).length, 3);
-      for (const [figure] of html.matchAll(/<figure class="paper-figure weekly-figure">[\s\S]*?<\/figure>/g)) {
+      const figures = [...html.matchAll(/<figure class="paper-figure weekly-figure">[\s\S]*?<\/figure>/g)];
+      assert.equal(figures.length, 3, `${locale.code}/${page.id} should have one figure per review`);
+      const figureSources = new Set();
+      for (const [figure] of figures) {
         assert.match(figure, /<img src="https:\/\/(?:media\.springernature\.com|cdn\.ncbi\.nlm\.nih\.gov|www\.frontiersin\.org)\//);
         assert.match(figure, /href="https:\/\/creativecommons\.org\/licenses\//);
+        figureSources.add(figure.match(/<img src="([^"]+)"/)[1]);
       }
+      assert.equal(figureSources.size, 3);
       assert.doesNotMatch(html, /BORRADOR DE TRADUCCIÓN AUTOMÁTICA|NO PUBLICAR/);
     }
   }

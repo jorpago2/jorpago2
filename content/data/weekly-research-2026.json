@@ -378,57 +378,6 @@
         "caption": "Monatomic tellurium (Te)-based Joule heating device."
       }
     },
-    "10.1002/lpor.202503275": {
-      "reference": {
-        "title": [
-          "Nonlinear Resonance Modulation in Single‐Crystalline VO\n                    <sub>2</sub>\n                    ‐Integrated Si Ring Resonator"
-        ],
-        "author": [
-          {
-            "given": "Sebae",
-            "family": "Park"
-          },
-          {
-            "given": "Dong Kyu",
-            "family": "Lee"
-          },
-          {
-            "given": "Junyeop",
-            "family": "Kim"
-          },
-          {
-            "given": "Sungwon",
-            "family": "Lee"
-          },
-          {
-            "given": "Heedeuk",
-            "family": "Shin"
-          },
-          {
-            "given": "Junwoo",
-            "family": "Son"
-          }
-        ],
-        "container-title": [
-          "Laser &amp; Photonics Reviews"
-        ],
-        "short-container-title": [
-          "Laser &amp;amp; Photonics Reviews"
-        ],
-        "volume": "20",
-        "issue": "10",
-        "article-number": "e03275",
-        "published-online": {
-          "date-parts": [
-            [
-              2026,
-              1,
-              16
-            ]
-          ]
-        }
-      }
-    },
     "10.3389/fnano.2026.1729291": {
       "reference": {
         "title": [
@@ -5997,114 +5946,6 @@
         "caption": "Heterogeneously integrated TFLN-based photonic THz transmitter."
       }
     },
-    "10.1002/adfm.77694": {
-      "reference": {
-        "title": [
-          "Memristive‐Gated RC‐Delay Synaptic Transistors for Time‐Encoded Analog in‐Memory Computing"
-        ],
-        "author": [
-          {
-            "given": "Yun‐Seo",
-            "family": "Shin"
-          },
-          {
-            "given": "Eunjoo",
-            "family": "Yoo"
-          },
-          {
-            "given": "Ki‐Hoon",
-            "family": "Son"
-          },
-          {
-            "given": "Hyun‐Sik",
-            "family": "Kim"
-          },
-          {
-            "given": "Dae‐Hee",
-            "family": "Han"
-          },
-          {
-            "given": "Jeong Hyeon",
-            "family": "Son"
-          },
-          {
-            "given": "Seung Hwan",
-            "family": "Lee"
-          }
-        ],
-        "container-title": [
-          "Advanced Functional Materials"
-        ],
-        "short-container-title": [
-          "Adv Funct Materials"
-        ],
-        "article-number": "e77694",
-        "published-online": {
-          "date-parts": [
-            [
-              2026,
-              8,
-              13
-            ]
-          ]
-        }
-      }
-    },
-    "10.1002/adfm.77741": {
-      "reference": {
-        "title": [
-          "Domain Engineering and Anisotropic Domain‐Wall Photovoltaic Effects in Ferroelectric SnS"
-        ],
-        "author": [
-          {
-            "given": "Ryo",
-            "family": "Nanae"
-          },
-          {
-            "given": "Satsuki",
-            "family": "Kitamura"
-          },
-          {
-            "given": "Tomonori",
-            "family": "Nishimura"
-          },
-          {
-            "given": "Kaito",
-            "family": "Kanahashi"
-          },
-          {
-            "given": "Tomoaki",
-            "family": "Kameda"
-          },
-          {
-            "given": "Katsunori",
-            "family": "Wakabayashi"
-          },
-          {
-            "given": "Redhwan A",
-            "family": "Moqbel"
-          }
-        ],
-        "container-title": [
-          "Advanced Functional Materials"
-        ],
-        "short-container-title": [
-          "Adv Funct Materials"
-        ],
-        "volume": "36",
-        "issue": "75",
-        "article-number": "e77741",
-        "published-online": {
-          "date-parts": [
-            [
-              2026,
-              8,
-              16
-            ]
-          ]
-        }
-      }
-    },
     "10.1038/s41377-026-02325-2": {
       "reference": {
         "title": [
@@ -7595,55 +7436,6 @@
         "caption": "Structure and symmetry characterizations of SnSe2 with different stacking configurations."
       }
     },
-    "10.1002/lpor.72032": {
-      "reference": {
-        "title": [
-          "Wavefront Shaping for Optimal Extinction of Focused Light by Individual Nanoscatterers"
-        ],
-        "author": [
-          {
-            "given": "Nick",
-            "family": "Feldman"
-          },
-          {
-            "given": "Joris",
-            "family": "Pals"
-          },
-          {
-            "given": "Arie J.",
-            "family": "den Boef"
-          },
-          {
-            "given": "F. Javier",
-            "family": "García de Abajo"
-          },
-          {
-            "given": "Lyubov V.",
-            "family": "Amitonova"
-          },
-          {
-            "given": "A. Femius",
-            "family": "Koenderink"
-          }
-        ],
-        "container-title": [
-          "Laser &amp; Photonics Reviews"
-        ],
-        "short-container-title": [
-          "Laser &amp;amp; Photonics Reviews"
-        ],
-        "article-number": "e72032",
-        "published-online": {
-          "date-parts": [
-            [
-              2026,
-              10,
-              19
-            ]
-          ]
-        }
-      }
-    },
     "10.1002/advs.78415": {
       "reference": {
         "title": [
@@ -7884,58 +7676,6 @@
         "caption": "Electroforming process (a) and I–V curves (b) for ITO/PEDOT:PSS/ FA0.9Cs0.1PbI3/Graphite device structure"
       }
     },
-    "10.1038/s41467-026-78371-6": {
-      "reference": {
-        "title": [
-          "Singularity-free supertwisted atomic layers with giant circular dichroisms"
-        ],
-        "author": [
-          {
-            "given": "Xinchao",
-            "family": "Wang"
-          },
-          {
-            "given": "Kaifeng",
-            "family": "Lin"
-          },
-          {
-            "given": "Guodong",
-            "family": "Xue"
-          },
-          {
-            "given": "Lifeng",
-            "family": "Hou"
-          },
-          {
-            "given": "Yinghui",
-            "family": "Wei"
-          },
-          {
-            "given": "Liantuan",
-            "family": "Xiao"
-          },
-          {
-            "given": "Hao",
-            "family": "Hong"
-          }
-        ],
-        "container-title": [
-          "Nature Communications"
-        ],
-        "short-container-title": [
-          "Nat Commun"
-        ],
-        "published-online": {
-          "date-parts": [
-            [
-              2026,
-              10,
-              23
-            ]
-          ]
-        }
-      }
-    },
     "10.1038/s41566-026-02035-6": {
       "reference": {
         "title": [
@@ -7994,58 +7734,6 @@
         "licenseSource": "https://www.nature.com/articles/s41566-026-02035-6",
         "number": "1",
         "caption": "An integrated photonic circuit to process spatial partial coherence."
-      }
-    },
-    "10.1038/s41467-026-79253-7": {
-      "reference": {
-        "title": [
-          "High-performance annealing-free wurtzite ferroelectric field-effect transistors with ultrathin oxide semiconductors for neuromorphic computing"
-        ],
-        "author": [
-          {
-            "given": "Kai",
-            "family": "Wang"
-          },
-          {
-            "given": "Tingting",
-            "family": "Gao"
-          },
-          {
-            "given": "Kaisheng",
-            "family": "Hu"
-          },
-          {
-            "given": "Suyuan",
-            "family": "Cai"
-          },
-          {
-            "given": "Huibo",
-            "family": "Liu"
-          },
-          {
-            "given": "Haotian",
-            "family": "Liang"
-          },
-          {
-            "given": "Jianye",
-            "family": "Zhang"
-          }
-        ],
-        "container-title": [
-          "Nature Communications"
-        ],
-        "short-container-title": [
-          "Nat Commun"
-        ],
-        "published-online": {
-          "date-parts": [
-            [
-              2026,
-              11,
-              3
-            ]
-          ]
-        }
       }
     },
     "10.1038/s41586-026-11214-y": {
@@ -8109,58 +7797,6 @@
         "licenseSource": "https://www.nature.com/articles/s41586-026-11214-y",
         "number": "1",
         "caption": "LZM transitions in 2D momentum space."
-      }
-    },
-    "10.1038/s41467-026-79026-2": {
-      "reference": {
-        "title": [
-          "Silicon photonics provides a unified solution for all-distance optical communications"
-        ],
-        "author": [
-          {
-            "given": "Zixuan",
-            "family": "Zhou"
-          },
-          {
-            "given": "Jiahui",
-            "family": "Huang"
-          },
-          {
-            "given": "Yiqing",
-            "family": "Liu"
-          },
-          {
-            "given": "Xuguang",
-            "family": "Zhang"
-          },
-          {
-            "given": "Yujun",
-            "family": "Chen"
-          },
-          {
-            "given": "Xu",
-            "family": "Gao"
-          },
-          {
-            "given": "Gang",
-            "family": "Qiao"
-          }
-        ],
-        "container-title": [
-          "Nature Communications"
-        ],
-        "short-container-title": [
-          "Nat Commun"
-        ],
-        "published-online": {
-          "date-parts": [
-            [
-              2026,
-              11,
-              5
-            ]
-          ]
-        }
       }
     },
     "10.1038/s41377-026-02420-4": {
@@ -8286,58 +7922,6 @@
         "caption": "Electronic properties of MoS2 on ultrathin hBN decoupling layers."
       }
     },
-    "10.1038/s41467-026-79595-2": {
-      "reference": {
-        "title": [
-          "Thin-film lithium niobate waveguide-integrated p-i-n Tungsten selenide photodiodes with 10Gbit/s data reception"
-        ],
-        "author": [
-          {
-            "given": "Weijia",
-            "family": "Tang"
-          },
-          {
-            "given": "Zixian",
-            "family": "Wei"
-          },
-          {
-            "given": "Ting",
-            "family": "He"
-          },
-          {
-            "given": "Haoyu",
-            "family": "Huang"
-          },
-          {
-            "given": "Xin",
-            "family": "He"
-          },
-          {
-            "given": "Su",
-            "family": "Wu"
-          },
-          {
-            "given": "Jun",
-            "family": "Liu"
-          }
-        ],
-        "container-title": [
-          "Nature Communications"
-        ],
-        "short-container-title": [
-          "Nat Commun"
-        ],
-        "published-online": {
-          "date-parts": [
-            [
-              2026,
-              11,
-              12
-            ]
-          ]
-        }
-      }
-    },
     "10.1038/s41586-026-11272-2": {
       "reference": {
         "title": [
@@ -8401,39 +7985,55 @@
         "caption": "Preparation and characterization of wafer-scale free-standing single-crystal A-TiO2 layers."
       }
     },
-    "10.1038/s41467-026-79139-8": {
+    "10.1038/s41467-026-68336-0": {
       "reference": {
         "title": [
-          "Low-thermal-budget solution-processed montmorillonite dielectric for low-voltage 2D electronics"
+          "Deterministic and highly indistinguishable single photons in the telecom C-band"
         ],
         "author": [
           {
-            "given": "Wenjie",
-            "family": "Li"
+            "given": "Nico",
+            "family": "Hauser"
           },
           {
-            "given": "Junying",
-            "family": "Xue"
+            "given": "Matthias",
+            "family": "Bayerbach"
           },
           {
-            "given": "Peng",
-            "family": "Chen"
+            "given": "Jochen",
+            "family": "Kaupp"
           },
           {
-            "given": "Yongping",
-            "family": "Dai"
+            "given": "Yorick",
+            "family": "Reum"
           },
           {
-            "given": "Jing",
-            "family": "He"
+            "given": "Giora",
+            "family": "Peniakov"
           },
           {
-            "given": "Ruihao",
-            "family": "Tan"
+            "given": "Johannes",
+            "family": "Michl"
           },
           {
-            "given": "Jifeng",
-            "family": "Ge"
+            "given": "Martin",
+            "family": "Kamp"
+          },
+          {
+            "given": "Tobias",
+            "family": "Huber-Loyola"
+          },
+          {
+            "given": "Andreas T.",
+            "family": "Pfenning"
+          },
+          {
+            "given": "Sven",
+            "family": "Höfling"
+          },
+          {
+            "given": "Stefanie",
+            "family": "Barz"
           }
         ],
         "container-title": [
@@ -8442,15 +8042,684 @@
         "short-container-title": [
           "Nat Commun"
         ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "537",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              14
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-68336-0/MediaObjects/41467_2026_68336_Fig1_HTML.png",
+        "source": "https://www.nature.com/articles/s41467-026-68336-0/figures/1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://www.nature.com/articles/s41467-026-68336-0",
+        "number": "1",
+        "caption": "Experimental setup for characterizing the quantum dot emission."
+      }
+    },
+    "10.1038/s41467-026-76846-0": {
+      "reference": {
+        "title": [
+          "Isotropic-carrier-transport perovskite single crystal enables high-photoresponsivity solar-blind photodetectors for selective flame monitoring"
+        ],
+        "author": [
+          {
+            "given": "Mengyao",
+            "family": "Zhang"
+          },
+          {
+            "given": "Fei",
+            "family": "Wang"
+          },
+          {
+            "given": "Zhuangzhuang",
+            "family": "Ma"
+          },
+          {
+            "given": "Dongwen",
+            "family": "Yang"
+          },
+          {
+            "given": "Jingli",
+            "family": "Ma"
+          },
+          {
+            "given": "Xinzhen",
+            "family": "Ji"
+          },
+          {
+            "given": "Meng",
+            "family": "Wang"
+          },
+          {
+            "given": "Lejin",
+            "family": "Li"
+          },
+          {
+            "given": "Huifang",
+            "family": "Jiang"
+          },
+          {
+            "given": "Conghui",
+            "family": "Dun"
+          },
+          {
+            "given": "Ruoting",
+            "family": "Yang"
+          },
+          {
+            "given": "Yanbing",
+            "family": "Han"
+          },
+          {
+            "given": "Mochen",
+            "family": "Jia"
+          },
+          {
+            "given": "Xu",
+            "family": "Chen"
+          },
+          {
+            "given": "Yongtao",
+            "family": "Tian"
+          },
+          {
+            "given": "Jibin",
+            "family": "Zhang"
+          },
+          {
+            "given": "Ying",
+            "family": "Li"
+          },
+          {
+            "given": "Xinjian",
+            "family": "Li"
+          },
+          {
+            "given": "Zhifeng",
+            "family": "Shi"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "9779",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              14
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-76846-0/MediaObjects/41467_2026_76846_Fig1_HTML.png",
+        "source": "https://www.nature.com/articles/s41467-026-76846-0/figures/1",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "licenseSource": "https://www.nature.com/articles/s41467-026-76846-0",
+        "number": "1",
+        "caption": "Electronic structure of Cd-based perovskites."
+      }
+    },
+    "10.1038/s41467-026-76909-2": {
+      "reference": {
+        "title": [
+          "Ferroelectric-assisted charge-transfer plasmons in graphene/CuInP2S6"
+        ],
+        "author": [
+          {
+            "given": "Yinming",
+            "family": "Shao"
+          },
+          {
+            "given": "Hae Yeon",
+            "family": "Lee"
+          },
+          {
+            "given": "Jin",
+            "family": "Zhang"
+          },
+          {
+            "given": "S. L.",
+            "family": "Moore"
+          },
+          {
+            "given": "Shizhe",
+            "family": "Zhou"
+          },
+          {
+            "given": "Carlton",
+            "family": "Drew"
+          },
+          {
+            "given": "Anjaly",
+            "family": "Rajendran"
+          },
+          {
+            "given": "Jacob",
+            "family": "Amontree"
+          },
+          {
+            "given": "Thomas P.",
+            "family": "Darlington"
+          },
+          {
+            "given": "Daniel G.",
+            "family": "Chica"
+          },
+          {
+            "given": "Chun-Ying",
+            "family": "Huang"
+          },
+          {
+            "given": "Seng Huat",
+            "family": "Lee"
+          },
+          {
+            "given": "Saugata",
+            "family": "Sarker"
+          },
+          {
+            "given": "Kenji",
+            "family": "Watanabe"
+          },
+          {
+            "given": "Takashi",
+            "family": "Taniguchi"
+          },
+          {
+            "given": "Venkatraman",
+            "family": "Gopalan"
+          },
+          {
+            "given": "Zhiqiang",
+            "family": "Mao"
+          },
+          {
+            "given": "X.-Y.",
+            "family": "Zhu"
+          },
+          {
+            "given": "Xavier",
+            "family": "Roy"
+          },
+          {
+            "given": "P. James",
+            "family": "Schuck"
+          },
+          {
+            "given": "Angel",
+            "family": "Rubio"
+          },
+          {
+            "given": "James C.",
+            "family": "Hone"
+          },
+          {
+            "given": "D. N.",
+            "family": "Basov"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "10102",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              17
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-76909-2/MediaObjects/41467_2026_76909_Fig1_HTML.png",
+        "source": "https://www.nature.com/articles/s41467-026-76909-2/figures/1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://www.nature.com/articles/s41467-026-76909-2",
+        "number": "1",
+        "caption": "Charge-transfer plasmons in graphene on vdW ferroelectric CuInP2S6 (CIPS)."
+      }
+    },
+    "10.1038/s41467-026-78660-0": {
+      "reference": {
+        "title": [
+          "Polarization-controlled Floquet engineering in twisted photonic lattices"
+        ],
+        "author": [
+          {
+            "given": "Jinze",
+            "family": "Gao"
+          },
+          {
+            "given": "Guibin",
+            "family": "Li"
+          },
+          {
+            "given": "Zhuochen",
+            "family": "Du"
+          },
+          {
+            "given": "Kun",
+            "family": "Liao"
+          },
+          {
+            "given": "Kunyu",
+            "family": "Yu"
+          },
+          {
+            "given": "C. T.",
+            "family": "Chan"
+          },
+          {
+            "given": "Ruo-Yang",
+            "family": "Zhang"
+          },
+          {
+            "given": "Daopeng",
+            "family": "Yuan"
+          },
+          {
+            "given": "Yan",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xiaoyong",
+            "family": "Hu"
+          },
+          {
+            "given": "Qihuang",
+            "family": "Gong"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "11655",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              15
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-78660-0/MediaObjects/41467_2026_78660_Fig1_HTML.png",
+        "source": "https://www.nature.com/articles/s41467-026-78660-0/figures/1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://www.nature.com/articles/s41467-026-78660-0",
+        "number": "1",
+        "caption": "Polarization-controlled Floquet engineering enabled by twisted photonic lattices."
+      }
+    },
+    "10.1038/s41566-026-02036-5": {
+      "reference": {
+        "title": [
+          "Regulating the crystallization of thermally evaporated perovskites for efficient near-infrared light-emitting diodes"
+        ],
+        "author": [
+          {
+            "given": "Yangyu",
+            "family": "Liu"
+          },
+          {
+            "given": "Yuhan",
+            "family": "Zhou"
+          },
+          {
+            "given": "Jianing",
+            "family": "Chang"
+          },
+          {
+            "given": "Jie",
+            "family": "Yang"
+          },
+          {
+            "given": "Dongqin",
+            "family": "Yuan"
+          },
+          {
+            "given": "Weidong",
+            "family": "Xu"
+          },
+          {
+            "given": "Wang",
+            "family": "Wang"
+          },
+          {
+            "given": "Zhonghua",
+            "family": "Li"
+          },
+          {
+            "given": "Xingjiao",
+            "family": "Feng"
+          },
+          {
+            "given": "Liuchong",
+            "family": "Fu"
+          },
+          {
+            "given": "Jianpu",
+            "family": "Wang"
+          },
+          {
+            "given": "Zhaosheng",
+            "family": "Li"
+          },
+          {
+            "given": "Bingchen",
+            "family": "He"
+          },
+          {
+            "given": "Tao",
+            "family": "Yu"
+          },
+          {
+            "given": "Zhigang",
+            "family": "Zou"
+          },
+          {
+            "given": "Feng",
+            "family": "Gao"
+          },
+          {
+            "given": "Chunxiong",
+            "family": "Bao"
+          }
+        ],
+        "container-title": [
+          "Nature Photonics"
+        ],
+        "short-container-title": [
+          "Nat. Photon."
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-026-02036-5/MediaObjects/41566_2026_2036_Fig1_HTML.png",
+        "source": "https://www.nature.com/articles/s41566-026-02036-5/figures/1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://www.nature.com/articles/s41566-026-02036-5",
+        "number": "1",
+        "caption": "In situ characterization of thermally evaporated films and their performance in PeLEDs."
+      }
+    },
+    "10.1038/s41377-026-02533-w": {
+      "reference": {
+        "title": [
+          "Freespace “twistronics”: moiré structured light for optical supertopologies"
+        ],
+        "author": [
+          {
+            "given": "Vasu",
+            "family": "Dev"
+          },
+          {
+            "given": "Yijie",
+            "family": "Shen"
+          }
+        ],
+        "container-title": [
+          "Light: Science &amp; Applications"
+        ],
+        "short-container-title": [
+          "Light Sci Appl"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "396",
         "published-online": {
           "date-parts": [
             [
               2026,
               11,
-              11
+              6
             ]
           ]
         }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-026-02533-w/MediaObjects/41377_2026_2533_Fig1_HTML.png",
+        "source": "https://www.nature.com/articles/s41377-026-02533-w/figures/1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://www.nature.com/articles/s41377-026-02533-w",
+        "number": "1",
+        "caption": "Concept of freespace twistronics and supertopologies."
+      }
+    },
+    "10.1038/s41467-026-78668-6": {
+      "reference": {
+        "title": [
+          "Depth-enhanced molecular imaging with two-photon oblique plane microscopy"
+        ],
+        "author": [
+          {
+            "given": "Kevin",
+            "family": "Keomanee-Dizon"
+          },
+          {
+            "given": "Yaakov",
+            "family": "Clenman"
+          },
+          {
+            "given": "Alejandra",
+            "family": "Duran"
+          },
+          {
+            "given": "Sergey",
+            "family": "Ryabichko"
+          },
+          {
+            "given": "Pauline",
+            "family": "Hansen"
+          },
+          {
+            "given": "Tohn",
+            "family": "Borjigin"
+          },
+          {
+            "given": "Richard H.",
+            "family": "Thornton"
+          },
+          {
+            "given": "Jared E.",
+            "family": "Toettcher"
+          },
+          {
+            "given": "Harold M.",
+            "family": "McNamara"
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "short-container-title": [
+          "Nat Commun"
+        ],
+        "volume": "17",
+        "issue": "1",
+        "article-number": "11798",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              13
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-78668-6/MediaObjects/41467_2026_78668_Fig1_HTML.png",
+        "source": "https://www.nature.com/articles/s41467-026-78668-6/figures/1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://www.nature.com/articles/s41467-026-78668-6",
+        "number": "1",
+        "caption": "Two-photon oblique plane microscopy (2P-OPM)."
+      }
+    },
+    "10.1038/s41563-026-02789-y": {
+      "reference": {
+        "title": [
+          "Controlling the flow of information in optical metrology"
+        ],
+        "author": [
+          {
+            "given": "Maximilian",
+            "family": "Weimar"
+          },
+          {
+            "given": "Huanli",
+            "family": "Zhou"
+          },
+          {
+            "given": "Luca",
+            "family": "Neubacher"
+          },
+          {
+            "given": "Thomas A.",
+            "family": "Grant"
+          },
+          {
+            "given": "Jakob",
+            "family": "Hüpfl"
+          },
+          {
+            "given": "Kevin F.",
+            "family": "MacDonald"
+          },
+          {
+            "given": "Stefan",
+            "family": "Rotter"
+          },
+          {
+            "given": "Nikolay I.",
+            "family": "Zheludev"
+          }
+        ],
+        "container-title": [
+          "Nature Materials"
+        ],
+        "short-container-title": [
+          "Nat. Mater."
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              16
+            ]
+          ]
+        }
+      },
+      "figure": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41563-026-02789-y/MediaObjects/41563_2026_2789_Fig2_HTML.png",
+        "source": "https://www.nature.com/articles/s41563-026-02789-y/figures/2",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://www.nature.com/articles/s41563-026-02789-y",
+        "number": "2",
+        "caption": "Optical energy and Fisher information around gold and silicon nanospheres."
+      }
+    },
+    "10.1126/sciadv.aeh2062": {
+      "reference": {
+        "title": [
+          "A-site cation–pseudohalide co-design for tin halide perovskite transistors"
+        ],
+        "container-title": [
+          "Science Advances"
+        ],
+        "short-container-title": [
+          "Sci. Adv."
+        ],
+        "volume": "12",
+        "issue": "44",
+        "article-number": "eaeh2062",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              30
+            ]
+          ]
+        },
+        "author": [
+          {
+            "given": "Bum Ho",
+            "family": "Jeong"
+          },
+          {
+            "given": "Cheong Beom",
+            "family": "Lee"
+          },
+          {
+            "given": "Hansol",
+            "family": "Park"
+          },
+          {
+            "given": "Seung Yoon",
+            "family": "Shin"
+          },
+          {
+            "given": "Soobin",
+            "family": "Heo"
+          },
+          {
+            "given": "Kyeounghak",
+            "family": "Kim"
+          },
+          {
+            "given": "Hui Joon",
+            "family": "Park"
+          }
+        ]
+      },
+      "figure": {
+        "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/678f/13721964/98911a1eae54/sciadv.aeh2062-f1.webp",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13721964/#F1",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13721964/",
+        "number": "1",
+        "caption": "(A) Relative sizes of A-site cations (top) and the corresponding local environments in optimized FASnI3 structures with SCN incorporation (bottom) (without MACl)"
       }
     }
   },
