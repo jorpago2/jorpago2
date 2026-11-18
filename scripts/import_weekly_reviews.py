@@ -22,6 +22,7 @@ WARNING = re.compile(r"traducci[oó]n autom[aá]tica sin revisar|automatic trans
 METADATA_PATH = ROOT / "content" / "data" / "weekly-research-2026.json"
 DATA = json.loads(METADATA_PATH.read_text(encoding="utf-8"))
 WEEKLY_LEADS = json.loads(METADATA_PATH.with_name("weekly-leads-2026.json").read_text(encoding="utf-8"))
+WEEKLY_TEASERS = json.loads(METADATA_PATH.with_name("weekly-teasers-2026.json").read_text(encoding="utf-8"))
 METADATA = DATA["articles"]
 INSTITUTIONS = DATA["institutions"]
 COUNTRIES = {
@@ -213,7 +214,7 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
     section_number = 0
     reference_position = 0
     rendered_references = set()
-    has_lead = False
+    lead = ""
     date_line = re.compile(r"\*{0,2}(?:Del? |Semana del |Setmana de[l]? |Week (?:of|from) |From |\d)[^.!?]*\b20\d{2}\.?\*{0,2}")
 
     def add_missing_reference() -> None:
@@ -235,7 +236,7 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
                 continue
             rendered.append(f"<h4>{inline(text[4:])}</h4>")
         elif text.startswith("## "):
-            if section_number == 0 and not has_lead:
+            if section_number == 0 and not lead:
                 lead = WEEKLY_LEADS.get(day.isoformat(), {}).get(locale)
                 if not lead:
                     raise ValueError(f"Missing weekly lead for {day} ({locale})")
@@ -258,8 +259,10 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
             items = re.split(r"\s+-\s+", text[2:])
             rendered.append("<ul>" + "".join(f"<li>{inline(item)}</li>" for item in items) + "</ul>")
         elif section_number == 0 and not date_line.fullmatch(text):
-            rendered.append(f'<p class="weekly-lead">{inline(text)}</p>')
-            has_lead = True
+            lead_html = inline(text)
+            rendered.append(f'<p class="weekly-lead">{lead_html}</p>')
+            if not lead:
+                lead = html.unescape(re.sub(r"<[^>]+>", "", lead_html))
         else:
             citation = re.match(r'^(?:[A-Z]\.\s?|\[[«“"])', text) or re.search(
                 r"\*et al\.\*|publicaci[oó] electr[oò]nica|published online|first published", text, re.I)
@@ -286,7 +289,7 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
     if section_number != 4:
         raise ValueError("Missing weekly mentions")
     rendered.append("</section>")
-    description = ", ".join(topics)
+    description = WEEKLY_TEASERS.get(day.isoformat(), {}).get(locale) or lead
     locale_path = {"es": "/es/lecturas/", "en": "/blog/", "ca": "/va/lectures/"}[locale]
     months = {
         "es": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],

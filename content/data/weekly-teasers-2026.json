@@ -1,0 +1,232 @@
+{
+  "2025-12-31": {
+    "es": "Una fotosinapsis conserva durante un tiempo la huella de la luz. Esa memoria permite que un mismo sensor responda de forma distinta según lo que haya visto antes.",
+    "en": "A photosynapse retains a trace of light, so the same sensor can respond differently depending on what it has seen before.",
+    "ca": "Una fotosinapsi conserva durant un temps l’empremta de la llum. Eixa memòria fa que el mateix sensor responga de manera diferent segons què ha vist abans."
+  },
+  "2026-01-07": {
+    "es": "Un poro simétrico deja pasar más iones en un sentido. Para entenderlo hay que mirar la polarización de la membrana que lo rodea.",
+    "en": "A symmetric pore lets more ions through in one direction. The explanation lies in the polarisation of the membrane around it.",
+    "ca": "Un porus simètric deixa passar més ions en un sentit. Per a entendre-ho cal mirar la polarització de la membrana que l’envolta."
+  },
+  "2026-01-14": {
+    "es": "Calentar una memoria durante su fabricación puede estabilizarla. Una célula solar de perovskita cuenta la otra cara de la historia cuando se calienta y se enfría mientras funciona.",
+    "en": "Heating a memory device during fabrication can stabilise it. A working perovskite solar cell tells a different story as it heats and cools.",
+    "ca": "Calfar una memòria durant la fabricació pot estabilitzar-la. Una cèl·lula solar de perovskita conta l’altra cara de la història quan es calfa i es refreda mentre funciona."
+  },
+  "2026-01-21": {
+    "es": "Tras el mismo pulso de luz, las señales de dos películas de oro se recuperan a ritmos distintos. La del oro poroso tarda unas tres veces más.",
+    "en": "Expose two gold films to the same pulse of light and their signals recover at different rates. The one from porous gold takes about three times as long.",
+    "ca": "Després del mateix pols de llum, els senyals de dos pel·lícules d’or es recuperen a ritmes distints. El de l’or porós tarda unes tres vegades més."
+  },
+  "2026-01-28": {
+    "es": "Las fluctuaciones que estorban al leer una memoria también dan pistas sobre el material que guarda el bit. Una de las lecturas se fija precisamente en ese ruido.",
+    "en": "The fluctuations that complicate reading a memory cell can also tell us about the material that stores the bit. One paper listens to that noise.",
+    "ca": "Les fluctuacions que fan nosa en llegir una memòria també donen pistes sobre el material que guarda el bit. Una de les lectures es fixa en eixe soroll."
+  },
+  "2026-02-04": {
+    "es": "Trece femtosegundos apenas dan para dos oscilaciones de la luz infrarroja del experimento. Una guía de niobato de litio comprime el pulso hasta esa duración.",
+    "en": "Thirteen femtoseconds leave room for barely two cycles of the infrared light in the experiment. A lithium niobate waveguide compresses the pulse that far.",
+    "ca": "Tretze femtosegons a penes donen per a dos oscil·lacions de la llum infraroja de l’experiment. Una guia de niobat de liti comprimix el pols fins a eixa duració."
+  },
+  "2026-02-11": {
+    "es": "¿Cómo se detecta la absorción de unas pocas moléculas? Una de las lecturas busca el calor que dejan en una guía de onda.",
+    "en": "How do you detect absorption by a few molecules? One paper looks for the heat they leave in a waveguide.",
+    "ca": "Com es detecta l’absorció d’unes poques molècules? Una de les lectures busca la calor que deixen en una guia d’ona."
+  },
+  "2026-02-18": {
+    "es": "La unión entre dos cristales de niobato de litio puede conducir corriente. Al cambiar el ángulo entre ellos, algunas uniones también reorganizan sus dipolos.",
+    "en": "The junction between two lithium niobate crystals can conduct current. At certain angles between the crystals, the dipoles near the junction rearrange as well.",
+    "ca": "La unió entre dos cristalls de niobat de liti pot conduir corrent. Amb certs angles entre els cristalls, també es reorganitzen els dipols prop de la unió."
+  },
+  "2026-02-25": {
+    "es": "Al aplicar un voltio entre una punta metálica y una superficie separadas por un hueco casi atómico, la señal óptica al doble de frecuencia se dispara.",
+    "en": "Apply a volt across a near-atomic gap between a metal tip and a surface, and the light signal at twice the input frequency rises sharply.",
+    "ca": "En aplicar un volt entre una punta metàl·lica i una superfície separades per un espai quasi atòmic, el senyal òptic al doble de freqüència creix de colp."
+  },
+  "2026-03-04": {
+    "es": "Las fronteras entre granos suelen ser puntos débiles de un aislante. En una película de óxido de antimonio, una punta conductora apenas distingue la frontera del interior.",
+    "en": "Grain boundaries are often weak spots in an insulator. A conductive tip scanning an antimony oxide film barely sees a difference between a grain and its boundary.",
+    "ca": "Les fronteres entre grans solen ser punts dèbils d’un aïllant. En una pel·lícula d’òxid d’antimoni, una punta conductora a penes distingix la frontera de l’interior."
+  },
+  "2026-03-11": {
+    "es": "Un LED de perovskita funciona dentro de un microscopio electrónico. Al seguirlo bajo tensión, el equipo localiza dónde empieza a degradarse.",
+    "en": "A perovskite LED runs inside an electron microscope. Watching it under bias lets the researchers pinpoint where degradation begins.",
+    "ca": "Un LED de perovskita funciona dins d’un microscopi electrònic. En seguir-lo sota tensió, l’equip localitza on comença a degradar-se."
+  },
+  "2026-03-18": {
+    "es": "Un mismo cristal puede conservar su orden en casi todo el volumen y perderlo en las zonas donde se escribe. Una de las lecturas examina cómo se crean esas regiones amorfas.",
+    "en": "A crystal can remain ordered through most of its volume while losing that order in the regions written into it. One paper looks at how those amorphous regions form.",
+    "ca": "Un mateix cristall pot conservar l’orde en quasi tot el volum i perdre’l en les zones on s’escriu. Una de les lectures examina com es creen eixes regions amorfes."
+  },
+  "2026-03-25": {
+    "es": "Si algunos memristores de una matriz se quedan bloqueados, aún se pueden recuperar patrones. El equipo ajusta el entrenamiento a los fallos medidos en el propio circuito.",
+    "en": "Even with some memristors stuck, an array can still retrieve patterns. The team adapts training to faults measured in the circuit itself.",
+    "ca": "Si alguns memristors d’una matriu es queden bloquejats, encara es poden recuperar patrons. L’equip ajusta l’entrenament a les fallades mesurades en el circuit."
+  },
+  "2026-04-01": {
+    "es": "En un transistor de ReSe₂, orientar bien el canal ayuda a que las cargas se multipliquen con un campo comparativamente bajo. El efecto se pone a prueba en un fotodetector.",
+    "en": "Aligning a ReSe₂ transistor’s channel helps charges multiply at a comparatively low field. A photodetector puts the effect to the test.",
+    "ca": "En un transistor de ReSe₂, orientar bé el canal ajuda a multiplicar càrregues amb un camp relativament baix. L’efecte es posa a prova en un fotodetector."
+  },
+  "2026-04-08": {
+    "es": "¿Cómo se monta un ojo compuesto con 185 píxeles sin romper la película sensible a la luz? El diseño transforma buena parte del estiramiento en flexión.",
+    "en": "How do you assemble a 185-pixel compound eye without breaking the light-sensitive film? The design turns much of the stretching into bending.",
+    "ca": "Com es munta un ull compost amb 185 píxels sense trencar la pel·lícula sensible a la llum? El disseny transforma bona part de l’estirament en flexió."
+  },
+  "2026-04-15": {
+    "es": "Al mezclar dos láseres infrarrojos en una superficie muy fina, la diferencia entre sus frecuencias se convierte en una fuente continua y sintonizable de terahercios.",
+    "en": "Mix two infrared lasers on a very thin surface, and the difference between their frequencies becomes a continuous, tunable terahertz source.",
+    "ca": "En mesclar dos làsers infrarojos en una superfície molt prima, la diferència entre les freqüències es convertix en una font contínua i sintonitzable de terahertzs."
+  },
+  "2026-04-22": {
+    "es": "Para detectar una interferencia a tiempo, un chip fotónico separa las frecuencias de radio y las registra en instantes distintos. Todo el análisis tarda menos de 110 nanosegundos.",
+    "en": "To catch interference as it happens, a photonic chip registers different radio frequencies at different times. The analysis takes less than 110 nanoseconds.",
+    "ca": "Per a detectar una interferència a temps, un xip fotònic separa les freqüències de ràdio i les registra en instants diferents. L’anàlisi tarda menys de 110 nanosegons."
+  },
+  "2026-04-29": {
+    "es": "En una lámina de MoOCl₂, una onda acoplada a la luz recorre más de diez micras. El microscopio la sigue hasta que se refleja en el borde.",
+    "en": "In a MoOCl₂ flake, a wave coupled to light travels more than ten micrometres. A microscope follows it as it reflects off the edge.",
+    "ca": "En una làmina de MoOCl₂, una ona acoblada a la llum recorre més de deu micres. El microscopi la seguix fins que es reflectix en la vora."
+  },
+  "2026-05-06": {
+    "es": "Una capa ferroeléctrica basta para que un excitón que apenas emitía luz aparezca en el espectro. Al girar las capas cambia la intensidad del efecto.",
+    "en": "A ferroelectric layer brings an exciton that barely emitted light into view in the spectrum. Twisting the layers changes the strength of the effect.",
+    "ca": "Una capa ferroelèctrica fa aparéixer en l’espectre un excitó que a penes emetia llum. En girar les capes canvia la intensitat de l’efecte."
+  },
+  "2026-05-13": {
+    "es": "En una perovskita, el borde de un cristal puede conducir las cargas hasta un punto que emite fotones de uno en uno.",
+    "en": "At the edge of a perovskite crystal, charges can find their way to a spot that emits photons one at a time.",
+    "ca": "A la vora d’un cristall de perovskita, les càrregues poden arribar a un punt que emet fotons d’un en un."
+  },
+  "2026-05-20": {
+    "es": "Un circuito fotónico puede salir de fábrica algo desajustado. Una de las lecturas examina qué margen queda para afinar su respuesta después.",
+    "en": "A photonic circuit can come out of fabrication slightly off target. One paper looks at how much room there is to tune it afterwards.",
+    "ca": "Un circuit fotònic pot eixir de fàbrica un poc desajustat. Una de les lectures examina quin marge queda per a afinar-ne la resposta després."
+  },
+  "2026-05-27": {
+    "es": "Un punto cuántico bien centrado en su resonador deja escapar más fotones útiles. Para colocarlo ahí, los autores eligen dónde crecerá antes de fabricar el resonador.",
+    "en": "A quantum dot at the centre of its resonator releases more usable photons. The team chooses where the dot will grow before building the resonator.",
+    "ca": "Un punt quàntic ben centrat en el ressonador deixa escapar més fotons útils. Per a situar-lo allí, els autors trien on creixerà abans de fabricar el ressonador."
+  },
+  "2026-06-03": {
+    "es": "La luz visible escribe en un transistor flexible y la ultravioleta ayuda a borrar lo escrito. La memoria sigue funcionando cuando el material se estira en dos direcciones.",
+    "en": "Visible light writes into a flexible transistor, and ultraviolet light helps erase it. The memory still works when the material is stretched in two directions.",
+    "ca": "La llum visible escriu en un transistor flexible i la ultraviolada ajuda a esborrar el que s’ha escrit. La memòria continua funcionant quan el material s’estira en dos direccions."
+  },
+  "2026-06-10": {
+    "es": "La luz que llega a un punto cuántico determina cuánto brilla. Una película de cristal líquido permite regular esa iluminación con un voltaje y conservar el color.",
+    "en": "A quantum dot’s brightness depends on the light reaching it. A voltage across a liquid-crystal film adjusts that illumination while the colour stays the same.",
+    "ca": "La llum que arriba a un punt quàntic determina quant brilla. Una pel·lícula de cristall líquid permet regular eixa il·luminació amb una tensió i conservar el color."
+  },
+  "2026-06-17": {
+    "es": "Una capa de apenas 2,4 nanómetros ya se comporta de otro modo al ponerle un material encima. La corriente que se desvía da pistas sobre lo que ocurre en la unión.",
+    "en": "A layer just 2.4 nanometres thick behaves differently when another material is placed on top. A sideways current gives clues to what happens at the junction.",
+    "ca": "Una capa de només 2,4 nanòmetres es comporta de manera diferent quan li posem un material damunt. El corrent que es desvia dona pistes sobre què passa en la unió."
+  },
+  "2026-06-24": {
+    "es": "Una misma película puede mostrar una imagen completa o resaltar sus contornos. Basta cambiar el campo eléctrico que reorienta el material ferroeléctrico.",
+    "en": "The same film can show a full image or pick out its outlines. The switch comes from changing the electric field that reorients the ferroelectric material.",
+    "ca": "Una mateixa pel·lícula pot mostrar una imatge completa o ressaltar-ne els contorns. N’hi ha prou de canviar el camp elèctric que reorienta el material ferroelèctric."
+  },
+  "2026-07-01": {
+    "es": "Muchas lentes se diseñan para que los colores se desvíen lo menos posible unos de otros. La metalente de esta semana saca partido precisamente de esa diferencia.",
+    "en": "Many lenses are designed to keep different colours from straying apart. This week’s metalens puts that separation to work.",
+    "ca": "Moltes lents es dissenyen perquè els colors es desvien tan poc com siga possible els uns dels altres. La metalent d’esta setmana aprofita precisament eixa diferència."
+  },
+  "2026-07-08": {
+    "es": "El mismo circuito puede medir cómo está polarizada la luz que llega y preparar la polarización que queremos enviar. La prueba está en qué ajustes necesita cada tarea.",
+    "en": "The same circuit can measure the polarisation of incoming light and prepare the polarisation we want to send. Each task calls for different settings.",
+    "ca": "El mateix circuit pot mesurar com està polaritzada la llum que arriba i preparar la polarització que volem enviar. Cada tasca demana uns ajustos diferents."
+  },
+  "2026-07-15": {
+    "es": "Una lámina de MoS₂ puede hacer de camino para la luz y, a la vez, intervenir en la señal que lleva. Una de las lecturas reúne ambas funciones en la misma guía.",
+    "en": "A MoS₂ sheet can guide light and also act on the signal it carries. One paper brings both jobs into the same waveguide.",
+    "ca": "Una làmina de MoS₂ pot fer de camí per a la llum i, alhora, intervindre en el senyal que porta. Una de les lectures reunix les dos funcions en la mateixa guia."
+  },
+  "2026-07-22": {
+    "es": "La luz suele entrar por el extremo de una guía. Poder introducirla por el costado de una guía hueca cambia dónde se puede colocar en un montaje.",
+    "en": "Light usually enters a waveguide at one end. Feeding it through the side of a hollow guide changes where the guide can sit in an assembly.",
+    "ca": "La llum sol entrar per l’extrem d’una guia. Poder introduir-la pel costat d’una guia buida canvia on es pot col·locar en un muntatge."
+  },
+  "2026-07-29": {
+    "es": "Una señal de microondas cambia mientras recorre una red, y ese recorrido se puede aprovechar para hacer parte del cálculo antes de recoger la salida.",
+    "en": "A microwave signal changes as it travels through a network. That journey can do some of the computation before the output is read.",
+    "ca": "Un senyal de microones canvia mentre recorre una xarxa, i eixe recorregut es pot aprofitar per a fer part del càlcul abans de recollir l’eixida."
+  },
+  "2026-08-05": {
+    "es": "Las reflexiones dentro de una guía pueden parecer un estorbo. Una de las lecturas muestra cómo aprovecharlas para distinguir qué espectro entró en la guía.",
+    "en": "Reflections inside a waveguide might seem like a nuisance. One paper uses them to tell what spectrum entered the guide.",
+    "ca": "Les reflexions dins d’una guia poden semblar una molèstia. Una de les lectures mostra com aprofitar-les per a distingir quin espectre hi ha entrat."
+  },
+  "2026-08-12": {
+    "es": "¿Qué cambia en la respuesta de la plata a la luz al reducir el metal a una película muy delgada? La medida pone a prueba cuánto importa el espesor.",
+    "en": "How does the optical response of silver change as the film grows thinner? The measurements show why thickness matters.",
+    "ca": "Què canvia en la resposta de la plata a la llum quan es reduïx a una pel·lícula molt prima? Les mesures posen a prova fins a quin punt importa el gruix."
+  },
+  "2026-08-19": {
+    "es": "Si una parte de la escena sigue igual, ¿hace falta volver a registrarla? Una matriz de transistores detecta los cambios de luz y trabaja a partir de ellos.",
+    "en": "If part of a scene stays the same, does it need to be recorded again? A transistor array detects changes in light and works from those events.",
+    "ca": "Si una part de l’escena es manté igual, cal tornar a registrar-la? Una matriu de transistors detecta els canvis de llum i treballa a partir d’eixos canvis."
+  },
+  "2026-08-26": {
+    "es": "Una matriz de memristores ayuda a identificar el idioma de un texto. El trabajo muestra cómo repartir esa tarea entre el algoritmo y las operaciones que hace el circuito.",
+    "en": "A memristor array helps identify the language of a written text. The paper shows how the task is divided between the algorithm and the operations performed in the circuit.",
+    "ca": "Una matriu de memristors ajuda a identificar l’idioma d’un text. El treball mostra com es repartix la faena entre l’algoritme i les operacions que fa el circuit."
+  },
+  "2026-09-02": {
+    "es": "A 450 °C, una unión basada en MoS₂ todavía detecta luz visible. El estudio explora qué papel tiene la interfaz en un sensor que también guarda memoria.",
+    "en": "A junction based on MoS₂ still detects visible light at 450 °C. The study explores what the interface contributes to a sensor that also stores a signal.",
+    "ca": "A 450 °C, una unió basada en MoS₂ encara detecta llum visible. L’estudi explora quin paper té la interfície en un sensor que també guarda un senyal."
+  },
+  "2026-09-09": {
+    "es": "Al crecer un ferroeléctrico sobre silicio, los dipolos pueden organizarse en remolinos. La cuestión es cómo se forman esos vórtices en una base útil para fabricar circuitos.",
+    "en": "When a ferroelectric is grown on silicon, its dipoles can arrange themselves into vortices. The puzzle is how those patterns form on a substrate used for circuits.",
+    "ca": "En fer créixer un ferroelèctric sobre silici, els dipols poden organitzar-se en remolins. La qüestió és com es formen eixos vòrtexs en una base que servix per a fabricar circuits."
+  },
+  "2026-09-16": {
+    "es": "En un procesador fotónico, gastar energía en mantener un ajuste es un coste aparte del cálculo. Un modulador ferroeléctrico puede conservar ese ajuste por sí mismo.",
+    "en": "A photonic processor can use power just to hold its settings, even before it computes anything. A ferroelectric modulator can retain a setting on its own.",
+    "ca": "En un processador fotònic, mantindre un ajust té un cost afegit al càlcul. Un modulador ferroelèctric pot conservar eixe ajust per si mateix."
+  },
+  "2026-09-23": {
+    "es": "Un pequeño cambio en el radio de una fibra basta para confinar la luz en una zona. Al repetirlo, se pueden colocar varios resonadores en la propia fibra.",
+    "en": "A small change in a fibre’s radius can trap light in one region. Repeat it and several resonators can sit along the fibre itself.",
+    "ca": "Un canvi menut en el radi d’una fibra pot confinar la llum en una zona. En repetir-lo, es poden col·locar diversos ressonadors en la mateixa fibra."
+  },
+  "2026-09-30": {
+    "es": "Un punto cuántico enlaza el espín de un hueco con fotones que pueden viajar por fibra. El tiempo de desfasaje indica cuánto margen queda para actuar sobre ese espín.",
+    "en": "A quantum dot links a hole spin to photons that can travel through fibre. Its dephasing time gives a measure of how long the spin can be manipulated coherently.",
+    "ca": "Un punt quàntic enllaça l’espín d’un buit amb fotons que poden viatjar per fibra. El temps de desfasament dona una mesura del marge per a actuar sobre eixe espín."
+  },
+  "2026-10-07": {
+    "es": "Un aislante que funciona bien eléctricamente puede dificultar la salida del calor. Una de las lecturas examina las dos exigencias en el mismo ferroeléctrico.",
+    "en": "An insulator can do its electrical job well and still make it harder for heat to escape. One paper examines both demands in the same ferroelectric.",
+    "ca": "Un aïllant pot funcionar bé elèctricament i dificultar l’eixida de la calor. Una de les lectures examina les dos exigències en el mateix ferroelèctric."
+  },
+  "2026-10-14": {
+    "es": "Para modular el infrarrojo medio, un equipo retira el sustrato que absorbería parte de la luz y diseña al mismo tiempo la guía suspendida y sus electrodos.",
+    "en": "To modulate mid-infrared light, a team removes the substrate that would absorb some of it, then designs the suspended guide and its electrodes together.",
+    "ca": "Per a modular l’infraroig mitjà, un equip retira el substrat que absorbiria part de la llum i dissenya alhora la guia suspesa i els elèctrodes."
+  },
+  "2026-10-21": {
+    "es": "En una memoria de perovskita se puede escribir formando filamentos metálicos o moviendo iones. La elección influye en cuántas veces se puede reescribir y cuánto dura el estado guardado.",
+    "en": "A perovskite memory can be written by forming metal filaments or by moving ions within the material. The choice changes the trade-off between retention and endurance.",
+    "ca": "En una memòria de perovskita es pot escriure formant filaments metàl·lics o movent ions dins del material. L’elecció canvia el compromís entre la retenció i la resistència a l’ús."
+  },
+  "2026-10-28": {
+    "es": "La luz hace oscilar a los electrones del grafeno. El reto del experimento es seguir su respuesta dentro de un ciclo de esa misma onda.",
+    "en": "Light makes the electrons in graphene oscillate. The experimental challenge is to follow their response within a cycle of the driving wave itself.",
+    "ca": "La llum fa oscil·lar els electrons del grafé. El repte de l’experiment és seguir la resposta dins d’un cicle de la mateixa ona."
+  },
+  "2026-11-04": {
+    "es": "Un defecto atómico puede dejar una huella en la luz que emite una monocapa. El experimento combina la posición y el color de esa emisión para identificarlo.",
+    "en": "An atomic defect can leave a signature in the light a monolayer emits. The experiment combines the position and colour of the emission to identify it.",
+    "ca": "Un defecte atòmic pot deixar una empremta en la llum que emet una monocapa. L’experiment combina la posició i el color de l’emissió per a identificar-lo."
+  },
+  "2026-11-11": {
+    "es": "Un dibujo apenas se distingue en infrarrojo hasta que se calienta la película que lo contiene. Al cristalizar, sus regiones emiten cantidades distintas de radiación y el dibujo aparece.",
+    "en": "An infrared pattern barely shows up until the film that holds it is heated. As the material crystallises, its regions emit different amounts of radiation, revealing the pattern.",
+    "ca": "Un dibuix a penes es distingix en infraroig fins que es calfa la pel·lícula que el conté. En cristal·litzar, les regions emeten quantitats diferents de radiació i el dibuix apareix."
+  }
+}
