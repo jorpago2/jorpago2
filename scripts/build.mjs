@@ -365,7 +365,7 @@ ${content}
   <link rel="canonical" href="${canonicalUrl(page.slug, locale)}">
 ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
-  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=81">
+  <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=82">
   <meta name="theme-color" content="#f6f7f3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
@@ -558,7 +558,7 @@ async function main() {
         : renderSharedContent(page.id, fragment, bundle.locale.code, bundle.strings, sharedData);
       if (page.id === "home") {
         const card = renderHomeBlogCard(
-          bundle.pages, bundle.locale, bundle.strings.blogArchive, route, sharedData.weeklyResearch.articles,
+          bundle.pages, bundle.locale, bundle.strings.blogArchive, route,
         );
         content = content.replace("<!-- HOME_BLOG_FEATURED -->", card);
       }
