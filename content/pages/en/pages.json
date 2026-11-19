@@ -362,7 +362,7 @@
     "id": "post-week-2026-06-24",
     "slug": "blog-2026-06-24",
     "title": "A flat fibre and two devices for working with images",
-    "description": "What if some image processing happens before the image is sent? A transistor retains the light response and a film selects the full scene or just its edges. Elsewhere, flattening a fibre opens up another way to fit it into a setup.",
+    "description": "A strip of silica bends more readily flatwise than edgewise, a useful clue when designing a pressure sensor. There are choices about what to capture in an image, too, from the outline of a cell under a microscope to the trace an exposure leaves in a transistor.",
     "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-24",
     "weekEnd": "2026-07-01",
@@ -401,7 +401,7 @@
   {
     "id": "post-week-2026-07-22",
     "slug": "blog-2026-07-22",
-    "title": "Side entry into a waveguide, activity in a neuron and an emitting monolayer",
+    "title": "A waveguide open to molecules, a self-regulating neuron and a monolayer laser",
     "description": "Openings in the wall of a hollow guide give access to the region the light travels through. Also in this edition are a VO₂ neuron that adjusts its activity and an organic laser that keeps emitting under continuous illumination.",
     "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-22",

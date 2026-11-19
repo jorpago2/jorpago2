@@ -125,9 +125,9 @@
     "ca": "Enviar un senyal lluminós pot canviar el paper d’una cel·la entre neurona i sinapsi. Les altres ressenyes seguixen senyals que es desvien, un corrent prop d’una interfície magnètica i un feix que canvia de camí amb poca pèrdua."
   },
   "2026-06-24": {
-    "es": "¿Y si parte del trabajo de procesar una imagen ocurre antes de enviarla? Un transistor guarda la respuesta de la luz y una película decide si muestra la escena completa o sus bordes. Por otro lado, aplanar una fibra abre otra forma de colocarla en un montaje.",
-    "en": "What if some image processing happens before the image is sent? A transistor retains the light response and a film selects the full scene or just its edges. Elsewhere, flattening a fibre opens up another way to fit it into a setup.",
-    "ca": "I si una part del processament d’una imatge ocorre abans d’enviar-la? Un transistor guarda la resposta a la llum i una pel·lícula tria si mostra l’escena completa o les vores. D’altra banda, aplanar una fibra dona una altra manera de col·locar-la en un muntatge."
+    "es": "Una tira de sílice se dobla de canto o de plano con distinta facilidad, lo que da una pista para construir un sensor de presión. Al trabajar con imágenes también se puede elegir qué información guardar, desde el contorno de una célula al microscopio hasta la huella que una exposición deja en un transistor.",
+    "en": "A strip of silica bends more readily flatwise than edgewise, a useful clue when designing a pressure sensor. There are choices about what to capture in an image, too, from the outline of a cell under a microscope to the trace an exposure leaves in a transistor.",
+    "ca": "Una tira de sílice es doblega amb més facilitat de pla que de cantell, cosa que dona una pista per a construir un sensor de pressió. També es pot triar quina informació de la llum interessa, des del contorn d’una cèl·lula al microscopi fins al rastre que una exposició deixa en un transistor."
   },
   "2026-07-01": {
     "es": "En un sensor de distancia, que cada color enfoque en un punto distinto puede ser una ventaja. El color de la iluminación también cambia la huella electrónica de un circuito de MoS₂, mientras que en una película de hafnia el mando que modifica la polarización es un campo magnético.",

@@ -341,7 +341,7 @@
     "id": "post-week-2026-06-24",
     "slug": "blog-2026-06-24",
     "title": "Una fibra plana i dos dispositius per a treballar amb imatges",
-    "description": "I si una part del processament d’una imatge ocorre abans d’enviar-la? Un transistor guarda la resposta a la llum i una pel·lícula tria si mostra l’escena completa o les vores. D’altra banda, aplanar una fibra dona una altra manera de col·locar-la en un muntatge.",
+    "description": "Una tira de sílice es doblega amb més facilitat de pla que de cantell, cosa que dona una pista per a construir un sensor de pressió. També es pot triar quina informació de la llum interessa, des del contorn d’una cèl·lula al microscopi fins al rastre que una exposició deixa en un transistor.",
     "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-24",
     "weekEnd": "2026-07-01",
@@ -380,7 +380,7 @@
   {
     "id": "post-week-2026-07-22",
     "slug": "blog-2026-07-22",
-    "title": "Entrada lateral en una guia, activitat en una neurona i una monocapa que emet",
+    "title": "Una guia oberta a les molècules, una neurona que es regula i un làser d’una monocapa",
     "description": "Deixar obertures a la paret d’una guia buida dona accés a la regió per on viatja la llum. En aquesta edició també hi ha una neurona de VO₂ que regula la seua activitat i un làser orgànic que continua emetent sota il·luminació contínua.",
     "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-22",
