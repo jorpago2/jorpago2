@@ -44,27 +44,27 @@ READING = [
         "ca": "La Universitat de Nanjing explica el procés i les seues aplicacions als emissors infrarojos (en xinés)."}),
 ]
 RELATED = [
-    (r"(?:memristor|synap\w+)\b.*(?:neuromorph|reservoir|spiking)|(?:neuromorph|reservoir|spiking).*?(?:memristor|synap\w+)",
+    ({"10.1038/s41467-025-66810-9", "10.1038/s41467-026-68905-3"},
      "https://www.nature.com/articles/s41578-022-00434-z", {
         "es": "Cómo aprovechar la dinámica de los memristores para calcular (Nature Reviews Materials, en inglés).",
         "en": "How memristor dynamics can be used for computation (Nature Reviews Materials).",
         "ca": "Com aprofitar la dinàmica dels memristors per a calcular (Nature Reviews Materials, en anglés)."}),
-    (r"(?:dielectric|transistor|fet).*?(?:2d\b|two.dimension)|(?:2d\b|two.dimension).*?(?:dielectric|transistor|fet)",
+    ({"10.1038/s41586-026-11272-2"},
      "https://www.nature.com/articles/s41467-023-41779-5", {
         "es": "Qué dificulta integrar contactos y dieléctricos en transistores 2D (Nature Communications, en inglés).",
         "en": "What makes contacts and dielectrics difficult to integrate in 2D transistors (Nature Communications).",
         "ca": "Què dificulta la integració de contactes i dielèctrics en transistors 2D (Nature Communications, en anglés)."}),
-    (r"(?:neural|deep learning).*?(?:optical|photonic)|(?:optical|photonic).*?(?:neural|deep learning)",
+    ({"10.1038/s41467-026-68648-1", "10.1038/s41467-026-71599-2", "10.1038/s41377-026-02325-2"},
      "https://news.mit.edu/2024/photonic-processor-could-enable-ultrafast-ai-computations-1202", {
         "es": "Un procesador fotónico que incorpora operaciones no lineales en el chip (MIT News, en inglés).",
         "en": "A photonic processor that brings nonlinear operations onto the chip (MIT News).",
         "ca": "Un processador fotònic que incorpora operacions no lineals en el xip (MIT News, en anglés)."}),
-    (r"lithium niobate",
+    ({"10.1038/s41467-026-69880-5", "10.1038/s41467-026-77674-y"},
      "https://www.nature.com/articles/s41377-022-01029-7", {
         "es": "Otro uso de los moduladores de niobato de litio, esta vez con fotones individuales (Light: Science & Applications, en inglés).",
         "en": "Another use of lithium niobate modulators, this time with individual photons (Light: Science & Applications).",
         "ca": "Un altre ús dels moduladors de niobat de liti, ara amb fotons individuals (Light: Science & Applications, en anglés)."}),
-    (r"(?:phase.change).*?(?:photonic|optical)|(?:photonic|optical).*?(?:phase.change)",
+    ({"10.1038/s41427-026-00645-8"},
      "https://www.nature.com/articles/s41467-024-47206-7", {
         "es": "Cómo se integran materiales de cambio de fase en circuitos fotónicos fabricados en una fundición (Nature Communications, en inglés).",
         "en": "Integrating phase-change materials into foundry-made photonic circuits (Nature Communications).",
@@ -107,6 +107,8 @@ def reference_html(doi: str, number: int, day: date) -> str | None:
     ref = METADATA.get(doi, {}).get("reference")
     if not ref or not all(ref.get(key) for key in ("title", "author", "container-title")):
         return None
+    if any("," in author.get("given", "") for author in ref["author"]):
+        raise ValueError(f"{doi} has an unparsed author name")
     names = []
     for author in ref["author"][:6]:
         initials = " ".join("-".join(part[0] + "." for part in name.split("-") if part)
@@ -116,7 +118,7 @@ def reference_html(doi: str, number: int, day: date) -> str | None:
         names = [names[0] + " et al."]
     elif len(names) > 1:
         names = [", ".join(names[:-1]) + (", and " if len(names) > 2 else " and ") + names[-1]]
-    journal = (ref.get("short-container-title") or ref["container-title"])[0]
+    journal = ref["container-title"][0]
     title = re.sub(r"</?(?:jats:)?(?:i|b)>", "", ref["title"][0])
     title = re.sub(r"</?(?:jats:)?(?:sub|sup)>", "", title)
     details = [f"vol. {ref['volume']}"] if ref.get("volume") else []
@@ -127,14 +129,11 @@ def reference_html(doi: str, number: int, day: date) -> str | None:
     elif ref.get("page"):
         page = ref["page"]
         details.append(f"{'pp.' if '-' in page else 'p.'} {page.replace('-', '–')}")
-    # Use the electronic date only when it agrees with the issue's date window.
-    online = ref.get("published-online", {}).get("date-parts", [[]])[0]
-    published = date(*online) if len(online) == 3 else None
-    if published and day <= published < day + timedelta(days=7):
-        months = ("Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec.")
-        details.append(f"{months[published.month - 1]} {published.day}, {published.year}")
-    else:
-        details.append(str((day + timedelta(days=6)).year))
+    published = date.fromisoformat(METADATA[doi]["versionOfRecordDate"])
+    if not day <= published < day + timedelta(days=7):
+        raise ValueError(f"{doi} was published outside the week starting {day}")
+    months = ("Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec.")
+    details.append(f"{months[published.month - 1]} {published.day}, {published.year}")
     return (f'<p class="note-meta weekly-reference">[{number}] {html.escape(", ".join(names))}, '
             f'“{html.escape(title)},” <cite>{html.escape(journal)}</cite>, '
             f'{html.escape(", ".join(details))}, doi <a href="https://doi.org/{doi}">{doi}</a>.</p>')
@@ -173,10 +172,9 @@ def additional_material(locale: str, doi: str) -> str:
         )
     else:
         figure_html = ""
-    title = next(iter(METADATA.get(doi, {}).get("reference", {}).get("title", [])), "")
     reading = next(((url, label[locale]) for key, url, label in READING if key == doi), None)
     if not reading:
-        reading = next(((url, label[locale]) for pattern, url, label in RELATED if re.search(pattern, title, re.I)), None)
+        reading = next(((url, label[locale]) for dois, url, label in RELATED if doi in dois), None)
     if reading:
         url, label = reading
         figure_html += f'<aside class="further-reading"><p><a href="{url}">{html.escape(label)}</a></p></aside>'
@@ -208,6 +206,11 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
         "ca": ("Totes les entrades", "Setmana del", ("Fotònica", "Electrònica", "Materials"), "També m’ha cridat l’atenció"),
     }
     back, prefix, category_labels, mentions_label = labels[locale]
+    mentions_source = {
+        "es": "Estos dos apuntes se basan en los resúmenes públicos de artículos bajo suscripción.",
+        "ca": "Aquests dos apunts es basen en els resums públics d’articles sota subscripció.",
+        "en": "These two notes draw on the public abstracts of papers published under subscription.",
+    }[locale]
     lines = lines[next(i for i, line in enumerate(lines) if line.startswith("# ")) + 1 :]
     blocks = re.split(r"\n\s*\n", "\n".join(lines).strip())
     rendered = []
@@ -247,7 +250,8 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
                 rendered.append("</article>")
             section_number += 1
             if section_number == 4:
-                rendered.append(f'<section class="notes-mention"><h3>{html.escape(mentions_label)}</h3>')
+                rendered.append(f'<section class="notes-mention"><h3>{html.escape(mentions_label)}</h3>'
+                                f'<p class="note-meta mention-source">{html.escape(mentions_source)}</p>')
             else:
                 if section_number > 4:
                     raise ValueError("Unexpected section after the weekly mentions")
@@ -269,17 +273,7 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
             candidate = article_doi(text)
             if citation and 1 <= section_number <= 3 and candidate == dois[section_number - 1] and section_number not in rendered_references:
                 citation_html = reference_html(candidate, section_number, day)
-                if citation_html:
-                    remaining = [m.group() for m in LINK.finditer(text)
-                                 if "/dialog/" in m.group(2) or not article_doi(m.group(2))]
-                    if remaining:
-                        citation_html = citation_html[:-4] + " " + ", ".join(inline(link) for link in remaining) + "</p>"
-                    notes = [part for part in re.split(r"(?<=\.)\s+", text)
-                             if re.match(r"^(?:Acceso abierto|Open access|Accés obert|La primera versi|The first version|La primera versi)", part, re.I)
-                             and not article_doi(part) and len(part) < 240]
-                    if notes:
-                        citation_html = citation_html[:-4] + f' <span>{" ".join(inline(note) for note in notes)}</span></p>'
-                else:
+                if not citation_html:
                     citation_html = f'<p class="note-meta weekly-reference">[{section_number}] {inline(text)}</p>'
                 rendered.insert(reference_position, citation_html + institutions_html(candidate, locale))
                 rendered_references.add(section_number)
@@ -345,7 +339,7 @@ def main() -> None:
             if previous_cover and f'href="https://doi.org/{previous_cover}"' in fragment:
                 cover_doi = previous_cover
             pages.append({"id": page_id, "slug": f"blog-{day.isoformat()}", "title": title,
-                          "description": description, "modified": "2026-11-18T00:00:00",
+                          "description": description, "modified": "2026-11-19T00:00:00",
                           "weekStart": day.isoformat(), "weekEnd": (day + timedelta(days=7)).isoformat(),
                           "coverDoi": cover_doi})
             (folder / f"{page_id}.html").write_text(fragment, encoding="utf-8")

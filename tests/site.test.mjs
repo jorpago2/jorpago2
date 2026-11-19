@@ -90,6 +90,9 @@ test("the blog leads with a feature and lists previous editions without the pilo
     assert.ok(homeBlog[1].includes(`class="home-reading-archive" href="${blogUrl}"`));
     assert.ok(homeBlog[1].includes(`<time datetime="${latest.weekStart}">`));
     const cards = [...index.matchAll(/<article class="blog-card(?: blog-card-feature)?">[\s\S]*?<\/article>/g)];
+    const jumps = [...index.matchAll(/href="#(archive-[0-9]{4}-[0-9]{2})"/g)];
+    assert.ok(jumps.length > 1);
+    for (const [, id] of jumps) assert.ok(index.includes(`<h4 id="${id}" tabindex="-1">`));
     assert.equal(cards.length, 46);
     assert.match(cards[0][0], /class="blog-card blog-card-feature"/);
     assert.equal(cards.filter(([card]) => card.includes("blog-card-feature")).length, 1);
@@ -145,10 +148,12 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.doesNotMatch(html, /10\.1038\/s41598-/i);
       const figures = [...html.matchAll(/<figure class="paper-figure weekly-figure">[\s\S]*?<\/figure>/g)];
       assert.equal(figures.length, 3, `${locale.code}/${page.id} should have one figure per review`);
+      assert.equal((html.match(/class="note-meta mention-source"/g) ?? []).length, 1);
       const figureSources = new Set();
       for (const [figure] of figures) {
         assert.match(figure, /<img src="https:\/\/(?:media\.springernature\.com|cdn\.ncbi\.nlm\.nih\.gov|www\.frontiersin\.org|aipp\.silverchair-cdn\.com)\//);
         assert.match(figure, /href="https:\/\/creativecommons\.org\/licenses\//);
+        assert.match(figure.match(/alt="([^"]*)"/)?.[1] ?? "", /\p{L}{2}/u);
         figureSources.add(figure.match(/<img src="([^"]+)"/)[1]);
       }
       assert.equal(figureSources.size, 3);
@@ -359,7 +364,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=85/);
+  assert.match(html, /assets\/style\.css\?v=86/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);

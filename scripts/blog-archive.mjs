@@ -37,15 +37,16 @@ export function weeklyPosts(pages) {
   return posts.sort((a, b) => b.weekStart.localeCompare(a.weekStart));
 }
 
-function cardCover(post, strings, articles, url, featured) {
+function cardCover(post, locale, strings, articles, url, featured) {
   const article = articles[post.coverDoi];
   const figure = article?.figure;
   if (!figure) throw new Error(`Missing cover figure for ${post.id}`);
+  const caption = figure.localizedCaptions?.[locale.code] ?? figure.caption;
   const author = article.reference.author[0].family;
   const licenseType = new URL(figure.license).pathname.split("/")[2].toUpperCase();
   return `
     <figure class="blog-card-figure">
-      <a href="${url}" aria-label="${escapeHtml(post.title)}"><img src="${escapeHtml(figure.url)}" alt="${escapeHtml(figure.caption)}" lang="en"${featured ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></a>
+      <a href="${url}" aria-label="${escapeHtml(post.title)}"><img src="${escapeHtml(figure.url)}" alt="${escapeHtml(caption)}"${figure.localizedCaptions?.[locale.code] ? "" : ' lang="en"'}${featured ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></a>
       <figcaption><a href="${escapeHtml(figure.source)}">${escapeHtml(strings.figure)} ${escapeHtml(figure.number)}, ${escapeHtml(author)} et al.</a>, <a href="${escapeHtml(figure.license)}">CC ${escapeHtml(licenseType)} 4.0</a></figcaption>
     </figure>`;
 }
@@ -56,7 +57,7 @@ function weeklyCard(post, locale, strings, pageRoute, { articles, featured = fal
   const date = dateFormat.formatRange(parseDate(post.weekStart, "weekStart"), new Date(
     parseDate(post.weekEnd, "weekEnd").getTime() - 24 * 60 * 60 * 1000,
   ));
-  const cover = articles ? cardCover(post, strings, articles, url, featured) : "";
+  const cover = articles ? cardCover(post, locale, strings, articles, url, featured) : "";
   return `<article class="blog-card${featured ? " blog-card-feature" : ""}">${cover}
     <div class="blog-card-copy">
       <p class="note-meta"><time datetime="${post.weekStart}">${escapeHtml(date)}</time></p>
@@ -81,10 +82,36 @@ export function renderBlogFrontPage(pages, locale, strings, pageRoute, articles)
   const featured = `<h3 id="blog-latest">${escapeHtml(strings.latest)}</h3>
   <div class="blog-cards">${weeklyCard(latest, locale, strings, pageRoute, { articles, featured: true })}</div>`;
   if (!posts.length) return { featured, archive: "" };
-  const cards = posts.map((post) => weeklyCard(post, locale, strings, pageRoute, { articles })).join("\n");
+  const monthFormat = new Intl.DateTimeFormat(locale.code, {
+    month: "long", year: "numeric", timeZone: "UTC",
+  });
+  // File each completed edition under the month of its last publication day.
+  const months = new Map();
+  for (const post of posts) {
+    const lastDay = new Date(parseDate(post.weekEnd, "weekEnd").getTime() - 86_400_000);
+    const key = lastDay.toISOString().slice(0, 7);
+    if (!months.has(key)) months.set(key, { label: monthFormat.format(lastDay), posts: [] });
+    months.get(key).posts.push(post);
+  }
+  const shortMonth = new Intl.DateTimeFormat(locale.code, { month: "long", timeZone: "UTC" });
+  const sameYear = new Set([...months.keys()].map((key) => key.slice(0, 4))).size === 1;
+  const links = [];
+  const sections = [];
+  for (const [key, month] of months) {
+    const id = `archive-${key}`;
+    const label = escapeHtml(month.label);
+    const linkLabel = sameYear ? escapeHtml(shortMonth.format(parseDate(`${key}-01`, "month"))) : label;
+    links.push(`<a href="#${id}">${linkLabel}</a>`);
+    const cards = month.posts.map((post) =>
+      weeklyCard(post, locale, strings, pageRoute, { articles, heading: "h5" })).join("\n");
+    sections.push(`<section class="archive-month" aria-labelledby="${id}">
+      <h4 id="${id}" tabindex="-1">${label}</h4><div class="blog-cards">${cards}</div>
+    </section>`);
+  }
   const archive = `<section class="blog-archive" aria-labelledby="blog-archive-title">
     <h3 id="blog-archive-title">${escapeHtml(strings.title)}</h3>
-    <div class="blog-cards">${cards}</div>
+    <nav class="archive-month-links" aria-label="${escapeHtml(strings.months)}">${links.join(" ")}</nav>
+    ${sections.join("\n")}
   </section>`;
   return { featured, archive };
 }

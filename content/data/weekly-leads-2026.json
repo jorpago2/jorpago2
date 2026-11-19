@@ -28,5 +28,10 @@
     "es": "Dos patrones de luz casi alineados bastan para que aparezca un muaré en el aire. En las otras dos lecturas, un transistor combina dos escalas de memoria y la luz emitida por una monocapa ayuda a distinguir qué tipo de defecto atómico la produce.",
     "en": "Two nearly aligned light patterns are enough to produce a moiré in free space. In the other two readings, a transistor brings together two timescales of memory, and light emitted by a monolayer helps distinguish the kind of atomic defect that produces it.",
     "ca": "Dos patrons de llum quasi alineats basten perquè aparega un moarè en l’aire. En les altres dos lectures, un transistor combina dos escales de memòria i la llum que emet una monocapa ajuda a distingir quin tipus de defecte atòmic la produeix."
+  },
+  "2026-02-11": {
+    "es": "Cuando el acetileno absorbe luz cerca de una guía suspendida, el gas libera calor y altera la fase de otra onda que viaja por la guía. En el sensor con memoria importa dónde queda atrapada la carga, mientras que la resistencia de la unión entre dos capas depende de la dirección en que se aplica el campo.",
+    "ca": "Quan l’acetilé absorbeix llum prop d’una guia suspesa, el gas allibera calor i altera la fase d’una altra ona que viatja per la guia. En el sensor amb memòria importa on queda atrapada la càrrega, mentre que la resistència de la unió entre dues capes depén de la direcció en què s’aplica el camp.",
+    "en": "When acetylene absorbs light near a suspended waveguide, the gas releases heat and changes the phase of another wave travelling through the guide. The response of a sensor with memory depends on where charge gets trapped, while the resistance of a two-layer junction depends on the direction of the applied field."
   }
 }

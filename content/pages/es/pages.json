@@ -92,7 +92,7 @@
     "slug": "blog-2025-12-31",
     "title": "La luz aprende a viajar, recordar y cambiar de dirección",
     "description": "¿Qué puede hacer un material con la luz que recibe? Según el que elijamos, puede modularla dentro de un chip, guardar durante un tiempo la huella de su paso o separar dos polarizaciones en el infrarrojo.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2025-12-31",
     "weekEnd": "2026-01-07",
     "coverDoi": "10.1038/s41377-025-02081-9"
@@ -101,8 +101,8 @@
     "id": "post-week-2026-01-07",
     "slug": "blog-2026-01-07",
     "title": "Luz en el chip, iones en un poro y espines en un cristal",
-    "description": "Un poro simétrico puede dejar pasar más iones en un sentido. Ese resultado invita a mirar qué controla de verdad cada experimento, desde la estabilidad de la luz que viaja por un chip hasta el tiempo que conserva su fase un espín en una perovskita.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un poro simétrico deja pasar más iones en un sentido que en otro. Esta semana, además de averiguar por qué, seguimos la luz que se pierde en una guía de germanosilicato y el espín que conserva su fase durante microsegundos en una perovskita.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-01-07",
     "weekEnd": "2026-01-14",
     "coverDoi": "10.1038/s41586-025-09889-w"
@@ -111,8 +111,8 @@
     "id": "post-week-2026-01-14",
     "slug": "blog-2026-01-14",
     "title": "Fotones a demanda y dos maneras de poner a prueba un material con calor",
-    "description": "¿Cómo se comprueba si algo responde como queremos? En una fuente cuántica se comparan dos fotones consecutivos. En una memoria y una célula solar de perovskita, la prueba pasa por el calor, que ayuda a estabilizar la primera durante la fabricación y deteriora la segunda durante el funcionamiento.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Calentar una memoria durante la fabricación puede mejorar su respuesta, mientras que los ciclos de calor deterioran una célula solar de perovskita. En la fuente cuántica de esta edición, la prueba de repetibilidad consiste en hacer interferir dos fotones emitidos uno tras otro.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-01-14",
     "weekEnd": "2026-01-21",
     "coverDoi": "10.1038/s41467-026-68336-0"
@@ -122,7 +122,7 @@
     "slug": "blog-2026-01-21",
     "title": "Medir un espectro, orientar una monocapa y abrir poros en el oro",
     "description": "Cambiar la forma de una película puede alterar lo que vemos al iluminarla. Basta comparar oro compacto y poroso, mirar cómo se orienta una monocapa de MoS₂ al crecer y ver cómo unas láminas delgadas permiten reconstruir un espectro sobre el propio detector.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-01-21",
     "weekEnd": "2026-01-28",
     "coverDoi": "10.1038/s41467-026-68685-w"
@@ -132,7 +132,7 @@
     "slug": "blog-2026-01-28",
     "title": "Láseres, visión y memorias que fluctúan",
     "description": "Una reflexión basta para perturbar un láser, mientras que el ruido de una memoria puede dar pistas sobre el material que guarda el bit. Entre ambos trabajos, una fotosinapsis aprovecha otro detalle que suele pasar inadvertido, la orientación de la luz que recibe.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-01-28",
     "weekEnd": "2026-02-04",
     "coverDoi": "10.1038/s41377-026-02185-w"
@@ -141,8 +141,8 @@
     "id": "post-week-2026-02-04",
     "slug": "blog-2026-02-04",
     "title": "Un pulso de dos ciclos, una sinapsis sensible a la luz y una memoria multinivel",
-    "description": "En trece femtosegundos cabe un pulso de luz de apenas dos ciclos. En las otras dos lecturas importa cuánto se puede distinguir o conservar de una señal, desde su polarización en una fotosinapsis hasta los distintos estados que retiene una memoria ferroeléctrica.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un pulso infrarrojo dura tan poco que su campo solo alcanza a oscilar dos veces. Una fotosinapsis distingue la orientación de la luz y un cristal ferroeléctrico conserva varios niveles de resistencia, dos formas de retener información después de que pase el estímulo.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-02-04",
     "weekEnd": "2026-02-11",
     "coverDoi": "10.1038/s41377-026-02187-8"
@@ -151,8 +151,8 @@
     "id": "post-week-2026-02-11",
     "slug": "blog-2026-02-11",
     "title": "Detectar calor con luz y ajustar la corriente con carga o con un campo",
-    "description": "Para detectar unas pocas moléculas puede bastar con buscar el calor que dejan al absorber luz. En un sensor con memoria, la clave está en dónde queda la carga, mientras que en dos capas apiladas la resistencia cambia según hacia dónde apunta el campo magnético.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "El acetileno delata su presencia por el calor que libera junto a una guía óptica. También hay señales que se pueden preparar antes de leerlas, repartiendo la carga entre dos puertas de memoria o girando el campo respecto a una interfaz magnética.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-02-11",
     "weekEnd": "2026-02-18",
     "coverDoi": "10.1038/s41377-026-02196-7"
@@ -162,7 +162,7 @@
     "slug": "blog-2026-02-18",
     "title": "Una imagen gradual, una neurona con retardo y dos cristales girados",
     "description": "Una imagen que aparece de forma gradual y un electrodo que retrasa la respuesta de una neurona aprovechan el tiempo de maneras distintas. Al unir dos cristales de niobato de litio, el ajuste está en el ángulo, que puede cambiar cómo se ordenan los dipolos de la frontera.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-02-18",
     "weekEnd": "2026-02-25",
     "coverDoi": "10.1038/s41377-026-02202-y"
@@ -172,7 +172,7 @@
     "slug": "blog-2026-02-25",
     "title": "Luz entre dos metales, potencia sobre una película y un diodo azul",
     "description": "Un voltio aplicado en un hueco casi atómico puede cambiar mucho la luz que sale de él. A otra escala, unos transistores de película delgada llevan potencia a grandes matrices, y una molécula en la superficie de un nanocristal ayuda a mantener el azul de un LED.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-02-25",
     "weekEnd": "2026-03-04",
     "coverDoi": "10.1038/s41467-026-68823-4"
@@ -182,7 +182,7 @@
     "slug": "blog-2026-03-04",
     "title": "Redes para guiar luz y protones, y un aislante con fronteras de grano",
     "description": "En una red óptica se dibujan caminos para la luz y en otra, de niquelato, se aprovecha el movimiento de los protones para recordar. El tercer trabajo busca un camino que conviene evitar, el de la corriente de fuga por la frontera entre dos granos.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-03-04",
     "weekEnd": "2026-03-11",
     "coverDoi": "10.1038/s41467-026-68648-1"
@@ -191,8 +191,8 @@
     "id": "post-week-2026-03-11",
     "slug": "blog-2026-03-11",
     "title": "Mezclar luz y magnetismo, guardar carga y ver cómo envejece un LED",
-    "description": "Un microscopio mira dónde falla primero un LED en funcionamiento. Los otros dos trabajos se acercan al punto donde ocurre lo que les interesa, al favorecer el acoplamiento entre luz y magnetismo y al poner un condensador al lado de la unidad fotónica que usa su memoria.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un LED que se deteriora bajo el microscopio deja ver qué interfaz falla primero. Mientras tanto, una red de resonadores concentra la interacción entre microondas y magnetismo, y un condensador acerca la memoria al lugar donde se calcula con luz.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-03-11",
     "weekEnd": "2026-03-18",
     "coverDoi": "10.1038/s41467-026-69326-y"
@@ -202,7 +202,7 @@
     "slug": "blog-2026-03-18",
     "title": "Luz circular, memoria en una sinapsis y regiones amorfas escritas en un cristal",
     "description": "La luz circular sirve para preguntar cómo responden los excitones en una metasuperficie. Las otras lecturas siguen lo que queda después de la señal, desde el estado que conserva una sinapsis hasta una zona del cristal que ha perdido su orden.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-03-18",
     "weekEnd": "2026-03-25",
     "coverDoi": "10.1038/s41467-026-70875-5"
@@ -212,7 +212,7 @@
     "slug": "blog-2026-03-25",
     "title": "Un modulador infrarrojo, una memoria tolerante a fallos y una célula ferroeléctrica",
     "description": "Un modulador de niobato lleva la señal al infrarrojo medio. En una memoria, tener en cuenta los fallos del circuito permite recuperar más patrones, mientras que en una célula solar el lugar donde se separan las cargas decide cuánto se pierde por el camino.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-03-25",
     "weekEnd": "2026-04-01",
     "coverDoi": "10.1038/s41467-026-69880-5"
@@ -222,7 +222,7 @@
     "slug": "blog-2026-04-01",
     "title": "Polarización en una película, avalancha en un transistor y una transición en VO₂",
     "description": "Un pulso cambia cómo responde una película a la luz polarizada, mientras que el canal de un transistor orienta el movimiento de las cargas. Con el VO₂, la pregunta pasa a ser cuánto tarda el material en cambiar y cómo seguir esa transición desde dentro.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-01",
     "weekEnd": "2026-04-08",
     "coverDoi": "10.1038/s41566-026-01886-3"
@@ -232,7 +232,7 @@
     "slug": "blog-2026-04-08",
     "title": "Calcular con luz, cambiar de función con tensión y doblar un ojo compuesto",
     "description": "Poner 185 píxeles sobre una superficie curva obliga a decidir dónde se dobla la película. Otras dos decisiones de diseño completan la edición, cómo conectar un procesador óptico a una red neuronal y cómo hacer que un dispositivo cambie de función con la tensión.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-08",
     "weekEnd": "2026-04-15",
     "coverDoi": "10.1038/s41467-026-71599-2"
@@ -242,7 +242,7 @@
     "slug": "blog-2026-04-15",
     "title": "Terahercios continuos, una fotosinapsis iónica y paredes entre dominios",
     "description": "De dos láseres infrarrojos sale una señal que se puede sintonizar en terahercios. En una fotosinapsis, son los iones los que cambian de sitio, y en un óxido la sorpresa aparece en la frontera donde se encuentran dos tipos de orden eléctrico.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-15",
     "weekEnd": "2026-04-22",
     "coverDoi": "10.1038/s41566-026-01889-0"
@@ -252,7 +252,7 @@
     "slug": "blog-2026-04-22",
     "title": "Fotónica para escuchar el espectro, corriente para mover un imán y oro entre capas",
     "description": "Un chip distingue qué frecuencias de radio están ocupadas en menos de 110 nanosegundos. Los otros trabajos miran qué pasa al juntar capas, tanto para cambiar la magnetización con corriente como para alojar átomos de oro dentro de un óxido.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-22",
     "weekEnd": "2026-04-29",
     "coverDoi": "10.1038/s41467-026-70389-0"
@@ -262,7 +262,7 @@
     "slug": "blog-2026-04-29",
     "title": "Polaritones que rebotan, una puerta de grafeno y dipolos que cambian de dirección",
     "description": "¿Hasta dónde llega una onda antes de reflejarse en el borde de una lámina? Trabajar con capas finas permite hacer esa pregunta y otras dos muy distintas, cómo gobierna el grafeno una monocapa de moléculas y de qué modo se puede reorientar la polarización de un material.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-29",
     "weekEnd": "2026-05-06",
     "coverDoi": "10.1038/s41467-026-70565-2"
@@ -271,8 +271,8 @@
     "id": "post-week-2026-05-06",
     "slug": "blog-2026-05-06",
     "title": "Encoger un patrón, separar ruido y hacer visible un excitón",
-    "description": "Si el patrón es demasiado pequeño para fabricarlo directamente, se puede dibujar en grande y encoger después. En las otras dos lecturas, el reto es hacer visible una señal débil, con memristores para separarla del ruido y con una capa ferroeléctrica para revelar un excitón oscuro.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "¿Cómo se talla un hueco más pequeño que la herramienta con la que se dibuja? Una solución es encoger después la pieza entera. También seguimos una señal de audio enterrada en ruido y un excitón oscuro cuya emisión se revela al añadir una capa ferroeléctrica.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-05-06",
     "weekEnd": "2026-05-13",
     "coverDoi": "10.1038/s41566-026-01896-1"
@@ -281,8 +281,8 @@
     "id": "post-week-2026-05-13",
     "slug": "blog-2026-05-13",
     "title": "Un enlace inalámbrico, una unión magnética y fotones que salen del borde",
-    "description": "Una señal sale de un chip fotónico y sigue por un enlace inalámbrico. Las otras lecturas se acercan a donde nace la respuesta, ya sea en una unión magnética que acumula pulsos o en el borde de una perovskita donde la luz sale fotón a fotón.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un enlace inalámbrico conserva una pequeña parte de la portadora para que el receptor pueda orientarse. En una unión magnética lo que se acumula son pulsos, mientras que en el borde de una perovskita se puede aislar la emisión de un solo fotón.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-05-13",
     "weekEnd": "2026-05-20",
     "coverDoi": "10.1038/s41467-026-71081-z"
@@ -291,8 +291,8 @@
     "id": "post-week-2026-05-20",
     "slug": "blog-2026-05-20",
     "title": "Ajustar un chip ya fabricado, guardar estados en una molécula y observar puntos cuánticos",
-    "description": "Un chip fotónico aún se puede afinar después de fabricarlo. Al bajar de escala, las otras lecturas preguntan cuánto control queda sobre una sola molécula que guarda varios estados y sobre una red de puntos cuánticos que emiten juntos.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un depósito de carbono corrige el recorrido de la luz en un chip que ya está fabricado. El margen de ajuste llega hasta una molécula en el trabajo sobre memoria, mientras que en una red de puntos cuánticos hay que observar varios emisores a la vez para entender cómo parpadean.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-05-20",
     "weekEnd": "2026-05-27",
     "coverDoi": "10.1038/s41467-026-73411-7"
@@ -302,7 +302,7 @@
     "slug": "blog-2026-05-27",
     "title": "Crecer puntos cuánticos a medida, construir una neurona y elegir las caras de un cristal",
     "description": "Centrar un punto cuántico en su resonador empieza antes de fabricar el resonador. La forma de crecer una perovskita también cambia su luz azul y, entre ambos trabajos, unos nanohilos muestran cómo dar forma a una neurona artificial.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-05-27",
     "weekEnd": "2026-06-03",
     "coverDoi": "10.1038/s41377-026-02343-0"
@@ -312,7 +312,7 @@
     "slug": "blog-2026-06-03",
     "title": "Pulsos en nitruro de silicio, una memoria elástica y emisores que cooperan",
     "description": "En un circuito de nitruro de silicio se obtienen pulsos intensos de luz. Las otras dos lecturas la usan para escribir en un transistor que se puede estirar y para estudiar qué ocurre cuando los emisores de una perovskita responden juntos.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-03",
     "weekEnd": "2026-06-10",
     "coverDoi": "10.1038/s41586-026-10517-4"
@@ -322,7 +322,7 @@
     "slug": "blog-2026-06-10",
     "title": "Un obturador de cristal líquido y dos formas de aprovechar un imán",
     "description": "Un cristal líquido regula el brillo de unos puntos cuánticos sin cambiar su color. Otros dos trabajos encuentran maneras de aprovechar un imán, dejando que fluctúe para explorar un cálculo o ajustando el acoplamiento entre sus capas para sintonizar ondas de espín.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-10",
     "weekEnd": "2026-06-17",
     "coverDoi": "10.1038/s41528-026-00578-w"
@@ -332,7 +332,7 @@
     "slug": "blog-2026-06-17",
     "title": "Celdas ópticas, corrientes que se desvían y luz que cambia de camino",
     "description": "Enviar una señal luminosa puede cambiar el papel de una celda entre neurona y sinapsis. Las otras dos reseñas siguen señales que se desvían, una corriente junto a una interfaz magnética y un haz que cambia de camino con poca pérdida.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-17",
     "weekEnd": "2026-06-24",
     "coverDoi": "10.1038/s41467-026-72119-y"
@@ -342,7 +342,7 @@
     "slug": "blog-2026-06-24",
     "title": "Una fibra plana y dos dispositivos para trabajar con imágenes",
     "description": "¿Y si parte del trabajo de procesar una imagen ocurre antes de enviarla? Un transistor guarda la respuesta de la luz y una película decide si muestra la escena completa o sus bordes. Por otro lado, aplanar una fibra abre otra forma de colocarla en un montaje.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-24",
     "weekEnd": "2026-07-01",
     "coverDoi": "10.1038/s41467-026-72416-6"
@@ -351,8 +351,8 @@
     "id": "post-week-2026-07-01",
     "slug": "blog-2026-07-01",
     "title": "Una lente dispersiva, una huella sensible a la luz y un óxido magnetoeléctrico",
-    "description": "Separar colores puede ser justo lo que interesa en una metalente. Las otras dos lecturas dejan que un estímulo cambie la respuesta, ya sea la luz que modifica una huella electrónica o el campo magnético que refuerza la polarización en un óxido de hafnio.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "En un sensor de distancia, que cada color enfoque en un punto distinto puede ser una ventaja. El color de la iluminación también cambia la huella electrónica de un circuito de MoS₂, mientras que en una película de hafnia el mando que modifica la polarización es un campo magnético.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-01",
     "weekEnd": "2026-07-08",
     "coverDoi": "10.1038/s41467-026-72332-9"
@@ -362,7 +362,7 @@
     "slug": "blog-2026-07-08",
     "title": "Polarización, memoria y perovskitas",
     "description": "Un circuito óptico funciona de ida y vuelta, preparando la polarización y después midiéndola al invertir el recorrido. En las otras dos lecturas, simplificar el montaje pasa por reunir una regla de aprendizaje en un memristor y por corregir defectos mientras crece una perovskita.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-08",
     "weekEnd": "2026-07-15",
     "coverDoi": "10.1038/s41377-026-02405-3"
@@ -372,7 +372,7 @@
     "slug": "blog-2026-07-15",
     "title": "Una guía que procesa luz, transistores flexibles y un vidrio que responde al campo",
     "description": "La misma lámina de MoS₂ puede guiar la luz y modificar la señal que transporta. Un semiconductor flexible también admite dos clases de transistor, mientras que un vidrio molecular cambia de respuesta según reciba luz o un campo eléctrico.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-15",
     "weekEnd": "2026-07-22",
     "coverDoi": "10.1038/s41467-026-73107-y"
@@ -381,8 +381,8 @@
     "id": "post-week-2026-07-22",
     "slug": "blog-2026-07-22",
     "title": "Entrada lateral en una guía, actividad en una neurona y una monocapa que emite",
-    "description": "¿Y si la luz pudiera entrar por el costado de la guía? Cambiar el punto de entrada permite repensar el montaje. En los otros dos trabajos, una neurona de VO₂ ajusta su actividad y una sola capa de moléculas se incorpora a un microláser.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Dejar aberturas en la pared de una guía hueca da acceso a la región por la que viaja la luz. En esta edición también hay una neurona de VO₂ que regula su actividad y un láser orgánico que sigue emitiendo bajo iluminación continua.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-22",
     "weekEnd": "2026-07-29",
     "coverDoi": "10.1038/s41467-026-75873-1"
@@ -392,7 +392,7 @@
     "slug": "blog-2026-07-29",
     "title": "Haces de radio, cálculo con microondas y plasmones en un cristal",
     "description": "La trayectoria de una onda puede ser parte del diseño. Una red fotónica permite orientar haces de radio, un circuito de microondas aprovecha el recorrido de la señal para calcular y, en un cristal, el propio material favorece que los plasmones viajen en una dirección.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-29",
     "weekEnd": "2026-08-05",
     "coverDoi": "10.1038/s41467-026-74485-z"
@@ -402,7 +402,7 @@
     "slug": "blog-2026-08-05",
     "title": "Reflexiones para leer un espectro, memoria del movimiento y dos respuestas de un elemento",
     "description": "Una guía llena de pequeñas reflexiones guarda pistas sobre qué luz entró. En las otras lecturas, una memoria de óxido de zinc recoge información de movimiento y un mismo elemento permite distinguir señales ópticas que serían difíciles de separar mirando solo la intensidad.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-08-05",
     "weekEnd": "2026-08-12",
     "coverDoi": "10.1038/s41467-026-76328-3"
@@ -412,7 +412,7 @@
     "slug": "blog-2026-08-12",
     "title": "Escribir una imagen infrarroja, guardar carga y adelgazar la plata",
     "description": "Una imagen en infrarrojo se puede escribir píxel a píxel, mientras que una memoria guarda un estado a través de ondas de densidad de carga. La escala vuelve a importar en la tercera lectura, donde se mide cuánto cambia la respuesta óptica de la plata al adelgazarla.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-08-12",
     "weekEnd": "2026-08-19",
     "coverDoi": "10.1038/s41467-026-75346-5"
@@ -422,7 +422,7 @@
     "slug": "blog-2026-08-19",
     "title": "Un atajo para la luz, visión por eventos y color que nace del infrarrojo",
     "description": "Una conexión de atajo cambia por dónde viaja la luz en un chip. Los otros dos trabajos cambian lo que podemos hacer con ella, desde registrar solo qué cambia en una escena hasta conseguir que varios fotones infrarrojos den lugar a luz visible.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-08-19",
     "weekEnd": "2026-08-26",
     "coverDoi": "10.1038/s41377-026-02325-2"
@@ -432,7 +432,7 @@
     "slug": "blog-2026-08-26",
     "title": "Polaritones por los bordes, idiomas en una matriz y memoria activada por luz",
     "description": "La polarización puede elegir el borde por donde viaja un polaritón, mientras que en el seleniuro de indio la luz ayuda a escribir un estado de memoria. La tercera lectura va de texto y de cómo repartir el reconocimiento de idiomas entre un algoritmo y una matriz de memristores.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-08-26",
     "weekEnd": "2026-09-02",
     "coverDoi": "10.1038/s41467-026-75965-y"
@@ -442,7 +442,7 @@
     "slug": "blog-2026-09-02",
     "title": "Una metasuperficie no lineal, visión a alta temperatura y una respuesta Hall ajustable",
     "description": "Detectar luz visible a 450 °C es una de las pruebas de la semana. Las otras dos examinan hasta dónde se puede controlar una señal, al transformar la luz con una metasuperficie y al cambiar la respuesta Hall de un material desde una capa ferroeléctrica vecina.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-02",
     "weekEnd": "2026-09-09",
     "coverDoi": "10.1038/s41565-026-02268-0"
@@ -452,7 +452,7 @@
     "slug": "blog-2026-09-09",
     "title": "Transportar señales de alta frecuencia, filtrar impulsos y formar vórtices",
     "description": "Pasar de cien gigahercios en un enlace y preparar una señal para una red de impulsos plantean preguntas distintas sobre qué parte de la señal se conserva. En la tercera lectura, la señal de interés está dentro de un ferroeléctrico, donde los dipolos forman remolinos sobre silicio.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-09",
     "weekEnd": "2026-09-16",
     "coverDoi": "10.1038/s41467-026-76733-8"
@@ -461,8 +461,8 @@
     "id": "post-week-2026-09-16",
     "slug": "blog-2026-09-16",
     "title": "Procesar con luz, conservar polarización y convertir una máscara en emisor",
-    "description": "Un modulador retiene su ajuste y reduce el consumo necesario para mantenerlo y una memoria guarda información en un lazo de polarización. La tercera lectura explora otra forma de hacer más con el material que ya está ahí, al usar como emisor la misma capa que sirve de máscara.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un modulador conserva su ajuste cuando se retira la tensión y una película ferroeléctrica mantiene lazos de polarización al pasar de un sustrato a otro. Para dibujar píxeles luminosos, el tercer equipo hace que la capa fotosensible sea también la que emite luz.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-16",
     "weekEnd": "2026-09-23",
     "coverDoi": "10.1038/s41467-026-75993-8"
@@ -472,7 +472,7 @@
     "slug": "blog-2026-09-23",
     "title": "Cavidades sobre una fibra, electrodos de grafeno y canales para iones",
     "description": "A veces basta tocar la geometría para decidir por dónde pasa una señal. Un pequeño cambio en el radio de una fibra confina luz, dos bordes de grafeno delimitan dónde conmuta una memoria y un canal deja pasar iones sin que entre demasiada agua.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-23",
     "weekEnd": "2026-09-30",
     "coverDoi": "10.1038/s41467-026-76041-1"
@@ -482,7 +482,7 @@
     "slug": "blog-2026-09-30",
     "title": "Un espín que se lee con luz, un imán que la recuerda y un dieléctrico estable",
     "description": "La luz puede leer el espín de un hueco o escribir estados en un imán. En ambos casos importa cuánto dura el efecto, una pregunta que reaparece en la tercera lectura cuando se prueba si un dieléctrico mantiene su respuesta al cambiar la temperatura.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-30",
     "weekEnd": "2026-10-07",
     "coverDoi": "10.1038/s41467-026-77282-w"
@@ -492,7 +492,7 @@
     "slug": "blog-2026-10-07",
     "title": "Luz bajo una monocapa, puntos de carbono y calor en un ferroeléctrico",
     "description": "Debajo de una monocapa se puede concentrar la luz, mientras que encima de un semiconductor unos puntos de carbono preparan la superficie para depositar un aislante. El tercer trabajo sigue un recorrido menos visible pero igual de necesario, por dónde sale el calor de una película ferroeléctrica.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-10-07",
     "weekEnd": "2026-10-14",
     "coverDoi": "10.1038/s41377-026-02436-w"
@@ -502,7 +502,7 @@
     "slug": "blog-2026-10-14",
     "title": "Infrarrojo en una guía suspendida, un transistor reconfigurable y un cristal que empieza a crecer",
     "description": "Quitar el sustrato permite llevar la modulación a una zona del infrarrojo donde parte de la luz se perdería en él. Las otras dos lecturas cambian el momento del ajuste, al elegir la tarea de un transistor ya fabricado o intervenir justo cuando empieza a crecer el cristal.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-10-14",
     "weekEnd": "2026-10-21",
     "coverDoi": "10.1038/s41467-026-77674-y"
@@ -512,7 +512,7 @@
     "slug": "blog-2026-10-21",
     "title": "Un modulador de silicio y dos maneras de usar las perovskitas",
     "description": "Un modulador de silicio corrige parte de la señal antes de enviarla. También hay dos razones para mirar de cerca una perovskita, entender por qué un mismo dispositivo puede guardar información por dos vías y ver cómo el ritmo de cristalización cambia la película de un LED.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-10-21",
     "weekEnd": "2026-10-28",
     "coverDoi": "10.1038/s41467-026-78128-1"
@@ -521,8 +521,8 @@
     "id": "post-week-2026-10-28",
     "slug": "blog-2026-10-28",
     "title": "Separar modos de luz, estabilizar transistores y seguir electrones en grafeno",
-    "description": "Un circuito puede separar físicamente lo que dos haces cuentan juntos. La luz también sirve para seguir a los electrones del grafeno durante una oscilación, mientras que un aditivo permite intervenir mucho antes, cuando se está formando el canal de un transistor de perovskita.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Dos haces pueden tener la misma intensidad y distinta coherencia espacial, una diferencia que un circuito óptico consigue separar. Mientras un equipo sigue el movimiento de electrones en grafeno durante una oscilación de la luz, otro modifica con un aditivo el camino de las cargas en una perovskita.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-10-28",
     "weekEnd": "2026-11-04",
     "coverDoi": "10.1038/s41566-026-02035-6"
@@ -532,7 +532,7 @@
     "slug": "blog-2026-11-04",
     "title": "Muaré de luz, memoria en dos escalas y la emisión de un defecto",
     "description": "Dos patrones de luz casi alineados dibujan un muaré en el aire y un defecto atómico deja su propia huella en la luz de una monocapa. Entre los dos experimentos, un transistor permite preguntar qué parte de una señal queda al cabo de un instante y qué parte dura más.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-11-04",
     "weekEnd": "2026-11-11",
     "coverDoi": "10.1038/s41377-026-02533-w"
@@ -542,7 +542,7 @@
     "slug": "blog-2026-11-11",
     "title": "Luz y sonido en un chip, transistores apilados y una imagen en infrarrojo",
     "description": "¿Cuánto cambia un dispositivo al quitar el material que tiene debajo, añadir una capa aislante o retocar unos espesores? Esta semana, esas decisiones bastan para confinar sonido en una guía óptica, apilar transistores con pocas fugas y revelar un dibujo en infrarrojo.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-11-11",
     "weekEnd": "2026-11-18",
     "coverDoi": "10.1002/nap2.70338"

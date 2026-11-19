@@ -52,6 +52,7 @@
     ]
   },
   "blogArchive": {
+    "months": "Cerca per mes",
     "title": "Entrades anteriors",
     "latest": "Última entrada",
     "figure": "Enquadrament de la figura",

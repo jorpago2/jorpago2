@@ -2484,9 +2484,9 @@ figcaption {
 .blog-card-figure figcaption a[href*="creativecommons.org"] { white-space: nowrap; }
 .blog-card-copy { min-width: 0; }
 .blog-card-copy .note-meta { margin: 0 0 .8rem; }
-.blog-card h4 { margin: 0 0 1rem; font-size: clamp(1.45rem, 2vw, 1.9rem); line-height: 1.16; }
-.blog-card h4 a { color: inherit; text-decoration: none; }
-.blog-card h4 a:hover { color: var(--accent); }
+.blog-card :is(h4, h5) { margin: 0 0 1rem; font-size: clamp(1.45rem, 2vw, 1.9rem); line-height: 1.16; }
+.blog-card :is(h4, h5) a { color: inherit; text-decoration: none; }
+.blog-card :is(h4, h5) a:hover { color: var(--accent); }
 .blog-card-feature h4 { font-size: clamp(2rem, 3.1vw, 2.75rem); line-height: 1.1; }
 .blog-card-copy > p:not(.note-meta) { line-height: 1.65; }
 .blog-card-feature .blog-card-copy > p:not(.note-meta) { font-size: 1.1rem; }
@@ -2500,6 +2500,21 @@ figcaption {
 .blog-post-content .paper-figure { margin-bottom: 2rem; }
 .blog-archive { margin-top: clamp(2rem, 4vw, 3rem); padding-top: 1.75rem; border-top: 1px solid var(--line); }
 .blog-archive h3 { margin: 0 0 1.5rem; font-size: clamp(1.5rem, 3vw, 2rem); }
+.archive-month-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1.1rem;
+  padding-block: .5rem 1rem;
+  border-block-end: 1px solid var(--line);
+}
+.archive-month-links a { padding-block: .35rem; text-underline-offset: .2em; }
+.archive-month { margin-block-start: 2rem; }
+.archive-month > h4 {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  scroll-margin-block-start: 1rem;
+}
+.archive-month > h4::first-letter { text-transform: uppercase; }
 .blog-archive .blog-cards { gap: clamp(1.5rem, 3vw, 2.25rem); }
 .blog-archive .blog-card { grid-template-rows: auto 1fr; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
 .blog-archive .blog-card-figure img { aspect-ratio: 16 / 9; }
@@ -2554,7 +2569,7 @@ figcaption {
 }
 
 .weekly-copy {
-  max-width: 56rem;
+  max-width: 76ch;
   margin-inline: auto;
   line-height: 1.75;
 }
@@ -2579,7 +2594,12 @@ figcaption {
 }
 
 .weekly-review + .weekly-review { margin-top: clamp(2rem, 4vw, 3rem); }
-.weekly-review-category { margin: 0 0 .45rem; }
+.weekly-review-category { margin: 0 0 .45rem; color: var(--accent); }
+.weekly-reference { overflow-wrap: anywhere; }
+.weekly-review > p:not([class]) { font-size: 1.0625rem; line-height: 1.7; }
+.weekly-copy .notes-mention { margin-inline: 0; }
+.notes-mention .mention-source { margin-block: .35rem 1.25rem; }
+.notes-mention li + li { border-block-start: 1px solid var(--line); padding-block-start: 1rem; }
 
 .weekly-review > .weekly-review-title {
   margin: 0 0 .75rem;

@@ -5,14 +5,14 @@
     "ca": "Què pot fer un material amb la llum que rep? Segons quin triem, pot modular-la dins d’un xip, guardar durant un temps l’empremta del seu pas o separar dos polaritzacions en l’infraroig."
   },
   "2026-01-07": {
-    "es": "Un poro simétrico puede dejar pasar más iones en un sentido. Ese resultado invita a mirar qué controla de verdad cada experimento, desde la estabilidad de la luz que viaja por un chip hasta el tiempo que conserva su fase un espín en una perovskita.",
-    "en": "A symmetric pore can let more ions through one way. That result invites a closer look at what really controls each experiment, from the stability of light on a chip to the time a spin in a perovskite retains its phase.",
-    "ca": "Un porus simètric pot deixar passar més ions en un sentit. El resultat convida a mirar què controla cada experiment, des de l’estabilitat de la llum que viatja pel xip fins al temps que un espín conserva la fase en una perovskita."
+    "es": "Un poro simétrico deja pasar más iones en un sentido que en otro. Esta semana, además de averiguar por qué, seguimos la luz que se pierde en una guía de germanosilicato y el espín que conserva su fase durante microsegundos en una perovskita.",
+    "en": "A symmetric pore lets more ions through in one direction than the other. Alongside the reason why, this week’s experiments reveal where a germanosilicate guide loses light and how long a spin keeps its phase in a perovskite.",
+    "ca": "Un porus simètric deixa passar més ions en un sentit que en l’altre. Aquesta setmana, a més d’esbrinar per què, seguim la llum que es perd en una guia de germanosilicat i l’espín que conserva la fase durant microsegons en una perovskita."
   },
   "2026-01-14": {
-    "es": "¿Cómo se comprueba si algo responde como queremos? En una fuente cuántica se comparan dos fotones consecutivos. En una memoria y una célula solar de perovskita, la prueba pasa por el calor, que ayuda a estabilizar la primera durante la fabricación y deteriora la segunda durante el funcionamiento.",
-    "en": "How do we check that something responds as intended? In a quantum source, we compare two successive photons. Heat is the test for a memory and a perovskite solar cell, helping stabilise the first during fabrication and degrading the second during operation.",
-    "ca": "Com es comprova si una cosa respon com volem? En una font quàntica es comparen dos fotons consecutius. En una memòria i una cèl·lula solar de perovskita, la prova passa per la calor, que ajuda a estabilitzar la primera durant la fabricació i deteriora la segona quan funciona."
+    "es": "Calentar una memoria durante la fabricación puede mejorar su respuesta, mientras que los ciclos de calor deterioran una célula solar de perovskita. En la fuente cuántica de esta edición, la prueba de repetibilidad consiste en hacer interferir dos fotones emitidos uno tras otro.",
+    "en": "Heating a memory during fabrication can improve its response, whereas cycling a perovskite solar cell through hot and cold degrades it. For this week’s quantum source, the test of repeatability is whether two photons emitted in succession interfere.",
+    "ca": "Escalfar una memòria durant la fabricació en pot millorar la resposta, mentre que els cicles de calor deterioren una cèl·lula solar de perovskita. En la font quàntica d’aquesta edició, la prova de repetibilitat consisteix a fer interferir dos fotons emesos l’un darrere de l’altre."
   },
   "2026-01-21": {
     "es": "Cambiar la forma de una película puede alterar lo que vemos al iluminarla. Basta comparar oro compacto y poroso, mirar cómo se orienta una monocapa de MoS₂ al crecer y ver cómo unas láminas delgadas permiten reconstruir un espectro sobre el propio detector.",
@@ -25,14 +25,14 @@
     "ca": "Una reflexió pot pertorbar un làser, mentre que el soroll d’una memòria pot donar pistes sobre el material que guarda el bit. Entre els dos treballs, una fotosinapsi aprofita un altre detall que sol passar desapercebut, l’orientació de la llum que rep."
   },
   "2026-02-04": {
-    "es": "En trece femtosegundos cabe un pulso de luz de apenas dos ciclos. En las otras dos lecturas importa cuánto se puede distinguir o conservar de una señal, desde su polarización en una fotosinapsis hasta los distintos estados que retiene una memoria ferroeléctrica.",
-    "en": "Thirteen femtoseconds hold a light pulse of barely two cycles. The other papers ask what a device can distinguish or keep from a signal, from polarisation in a photosynapse to the different states retained by a ferroelectric memory.",
-    "ca": "En tretze femtosegons cap un pols de llum de només dos cicles. Les altres lectures pregunten què es pot distingir o conservar d’un senyal, des de la polarització en una fotosinapsi fins als estats que reté una memòria ferroelèctrica."
+    "es": "Un pulso infrarrojo dura tan poco que su campo solo alcanza a oscilar dos veces. Una fotosinapsis distingue la orientación de la luz y un cristal ferroeléctrico conserva varios niveles de resistencia, dos formas de retener información después de que pase el estímulo.",
+    "en": "An infrared pulse is so brief that its field oscillates only twice. A photosynapse distinguishes the orientation of light and a ferroelectric crystal retains several resistance levels, two ways for information to outlast the stimulus.",
+    "ca": "Un pols infraroig dura tan poc que el seu camp només arriba a oscil·lar dues vegades. Una fotosinapsi distingeix l’orientació de la llum i un cristall ferroelèctric conserva diversos nivells de resistència, dues maneres de retindre informació després de l’estímul."
   },
   "2026-02-11": {
-    "es": "Para detectar unas pocas moléculas puede bastar con buscar el calor que dejan al absorber luz. En un sensor con memoria, la clave está en dónde queda la carga, mientras que en dos capas apiladas la resistencia cambia según hacia dónde apunta el campo magnético.",
-    "en": "To detect a few molecules, look for the heat they leave after absorbing light. In a sensor with memory, what matters is where the charge ends up, while in a stack of two layers the resistance changes with the direction of the magnetic field.",
-    "ca": "Per a detectar unes poques molècules pot bastar buscar la calor que deixen quan absorbixen llum. En un sensor amb memòria, importa on queda la càrrega, mentre que en dos capes apilades la resistència canvia segons cap a on apunta el camp magnètic."
+    "es": "El acetileno delata su presencia por el calor que libera junto a una guía óptica. También hay señales que se pueden preparar antes de leerlas, repartiendo la carga entre dos puertas de memoria o girando el campo respecto a una interfaz magnética.",
+    "en": "Acetylene gives itself away by releasing heat beside an optical waveguide. Two other signals can be tuned before they are read, by sharing charge between memory gates or by rotating a field relative to a magnetic interface.",
+    "ca": "L’acetilé delata la seua presència per la calor que allibera al costat d’una guia òptica. També hi ha senyals que es poden preparar abans de llegir-los, repartint la càrrega entre dues portes de memòria o girant el camp respecte d’una interfície magnètica."
   },
   "2026-02-18": {
     "es": "Una imagen que aparece de forma gradual y un electrodo que retrasa la respuesta de una neurona aprovechan el tiempo de maneras distintas. Al unir dos cristales de niobato de litio, el ajuste está en el ángulo, que puede cambiar cómo se ordenan los dipolos de la frontera.",
@@ -50,9 +50,9 @@
     "ca": "En una xarxa òptica es dibuixen camins per a la llum i en una altra, de niquelat, s’aprofita el moviment dels protons per a recordar. El tercer treball busca un camí que convé evitar, el del corrent de fuga per la frontera entre dos grans."
   },
   "2026-03-11": {
-    "es": "Un microscopio mira dónde falla primero un LED en funcionamiento. Los otros dos trabajos se acercan al punto donde ocurre lo que les interesa, al favorecer el acoplamiento entre luz y magnetismo y al poner un condensador al lado de la unidad fotónica que usa su memoria.",
-    "en": "A microscope spots where a working LED fails first. The other two studies get closer to the point where the action happens, by strengthening the interaction between light and magnetism and placing a capacitor beside the photonic unit that uses its memory.",
-    "ca": "Un microscopi mira on falla primer un LED en funcionament. Els altres dos treballs s’acosten al punt on passa allò que els interessa, en afavorir l’acoblament entre llum i magnetisme i posar un condensador al costat de la unitat fotònica que usa la seua memòria."
+    "es": "Un LED que se deteriora bajo el microscopio deja ver qué interfaz falla primero. Mientras tanto, una red de resonadores concentra la interacción entre microondas y magnetismo, y un condensador acerca la memoria al lugar donde se calcula con luz.",
+    "en": "An LED deteriorating under the microscope reveals which interface fails first. Meanwhile, a lattice of resonators concentrates the interaction between microwaves and magnetism, and a capacitor brings memory closer to the site of an optical calculation.",
+    "ca": "Un LED que es deteriora sota el microscopi deixa veure quina interfície falla primer. Mentrestant, una xarxa de ressonadors concentra la interacció entre microones i magnetisme, i un condensador acosta la memòria al lloc on es calcula amb llum."
   },
   "2026-03-18": {
     "es": "La luz circular sirve para preguntar cómo responden los excitones en una metasuperficie. Las otras lecturas siguen lo que queda después de la señal, desde el estado que conserva una sinapsis hasta una zona del cristal que ha perdido su orden.",
@@ -90,19 +90,19 @@
     "ca": "Fins on arriba una ona abans de reflectir-se a la vora d’una làmina? Les capes primes permeten fer eixa pregunta i dos més, com governa el grafé una monocapa de molècules i de quina manera es pot reorientar la polarització d’un material."
   },
   "2026-05-06": {
-    "es": "Si el patrón es demasiado pequeño para fabricarlo directamente, se puede dibujar en grande y encoger después. En las otras dos lecturas, el reto es hacer visible una señal débil, con memristores para separarla del ruido y con una capa ferroeléctrica para revelar un excitón oscuro.",
-    "en": "If a pattern is too small to make directly, draw it large and shrink it afterwards. The other papers bring weak signals into view, using memristors to pick one out of noise and a ferroelectric layer to reveal a dark exciton.",
-    "ca": "Si el patró és massa menut per a fabricar-lo directament, es pot dibuixar en gran i encongir després. En les altres lectures, el repte és fer visible un senyal dèbil, amb memristors per a separar-lo del soroll i amb una capa ferroelèctrica per a revelar un excitó fosc."
+    "es": "¿Cómo se talla un hueco más pequeño que la herramienta con la que se dibuja? Una solución es encoger después la pieza entera. También seguimos una señal de audio enterrada en ruido y un excitón oscuro cuya emisión se revela al añadir una capa ferroeléctrica.",
+    "en": "How do you carve a void smaller than the tool that draws it? One answer is to shrink the entire piece afterwards. The other studies follow an audio signal buried in noise and a dark exciton whose emission becomes visible when a ferroelectric layer is added.",
+    "ca": "Com es talla un buit més menut que l’eina amb què es dibuixa? Una solució és encongir després la peça sencera. També seguim un senyal d’àudio amagat entre soroll i un excitó fosc l’emissió del qual es revela en afegir una capa ferroelèctrica."
   },
   "2026-05-13": {
-    "es": "Una señal sale de un chip fotónico y sigue por un enlace inalámbrico. Las otras lecturas se acercan a donde nace la respuesta, ya sea en una unión magnética que acumula pulsos o en el borde de una perovskita donde la luz sale fotón a fotón.",
-    "en": "A signal leaves a photonic chip and continues over a wireless link. The other papers get closer to where the response starts, in a magnetic junction that builds up pulses or at the edge of a perovskite where light comes out photon by photon.",
-    "ca": "Un senyal ix d’un xip fotònic i continua per un enllaç sense fils. Les altres lectures s’acosten a on naix la resposta, en una unió magnètica que acumula polsos o a la vora d’una perovskita on la llum ix fotó a fotó."
+    "es": "Un enlace inalámbrico conserva una pequeña parte de la portadora para que el receptor pueda orientarse. En una unión magnética lo que se acumula son pulsos, mientras que en el borde de una perovskita se puede aislar la emisión de un solo fotón.",
+    "en": "A wireless link retains part of its carrier to give the receiver a reference. At much smaller scales a magnetic junction accumulates pulses, while the edge of a perovskite provides a site for single-photon emission.",
+    "ca": "Un enllaç sense fil conserva una part de la portadora perquè el receptor dispose d’una referència. En una unió magnètica s’acumulen polsos, mentre que a la vora d’una perovskita es pot aïllar l’emissió d’un sol fotó."
   },
   "2026-05-20": {
-    "es": "Un chip fotónico aún se puede afinar después de fabricarlo. Al bajar de escala, las otras lecturas preguntan cuánto control queda sobre una sola molécula que guarda varios estados y sobre una red de puntos cuánticos que emiten juntos.",
-    "en": "A photonic chip can still be tuned after fabrication. At smaller scales, the other papers ask how much control we have over a single molecule that stores several states and over an array of quantum dots that emit together.",
-    "ca": "Un xip fotònic encara es pot afinar després de fabricar-lo. En baixar d’escala, les altres lectures pregunten quin control tenim sobre una sola molècula que guarda diversos estats i sobre una xarxa de punts quàntics que emeten junts."
+    "es": "Un depósito de carbono corrige el recorrido de la luz en un chip que ya está fabricado. El margen de ajuste llega hasta una molécula en el trabajo sobre memoria, mientras que en una red de puntos cuánticos hay que observar varios emisores a la vez para entender cómo parpadean.",
+    "en": "A carbon deposit adjusts the path of light in a chip after fabrication. Control extends down to a single molecule in the memory study, while understanding why an array of quantum dots blinks calls for watching several emitters together.",
+    "ca": "Un dipòsit de carboni corregeix el recorregut de la llum en un xip ja fabricat. El marge d’ajust arriba fins a una molècula en el treball sobre memòria, mentre que en una xarxa de punts quàntics cal observar diversos emissors alhora per a entendre com parpellegen."
   },
   "2026-05-27": {
     "es": "Centrar un punto cuántico en su resonador empieza antes de fabricar el resonador. La forma de crecer una perovskita también cambia su luz azul y, entre ambos trabajos, unos nanohilos muestran cómo dar forma a una neurona artificial.",
@@ -130,9 +130,9 @@
     "ca": "I si una part del processament d’una imatge ocorre abans d’enviar-la? Un transistor guarda la resposta a la llum i una pel·lícula tria si mostra l’escena completa o les vores. D’altra banda, aplanar una fibra dona una altra manera de col·locar-la en un muntatge."
   },
   "2026-07-01": {
-    "es": "Separar colores puede ser justo lo que interesa en una metalente. Las otras dos lecturas dejan que un estímulo cambie la respuesta, ya sea la luz que modifica una huella electrónica o el campo magnético que refuerza la polarización en un óxido de hafnio.",
-    "en": "Separating colours can be exactly what a metalens needs. The other papers use a stimulus to change the response, light to alter an electronic fingerprint and a magnetic field to strengthen polarisation in hafnium oxide.",
-    "ca": "Separar colors pot ser justament el que interessa en una metalent. Les altres lectures deixen que un estímul canvie la resposta, siga la llum que modifica una empremta electrònica o el camp magnètic que reforça la polarització en un òxid d’hafni."
+    "es": "En un sensor de distancia, que cada color enfoque en un punto distinto puede ser una ventaja. El color de la iluminación también cambia la huella electrónica de un circuito de MoS₂, mientras que en una película de hafnia el mando que modifica la polarización es un campo magnético.",
+    "en": "A distance sensor puts chromatic aberration to work by bringing each colour to a different focus. Colour also changes the electronic fingerprint of a MoS₂ circuit, while a magnetic field provides a handle on the polarization of a hafnia film.",
+    "ca": "En un sensor de distància, que cada color enfoque en un punt diferent pot ser un avantatge. El color de la llum també canvia l’empremta electrònica d’un circuit de MoS₂, mentre que en una pel·lícula d’òxid d’hafni el que modifica la polarització és un camp magnètic."
   },
   "2026-07-08": {
     "es": "Un circuito óptico funciona de ida y vuelta, preparando la polarización y después midiéndola al invertir el recorrido. En las otras dos lecturas, simplificar el montaje pasa por reunir una regla de aprendizaje en un memristor y por corregir defectos mientras crece una perovskita.",
@@ -145,9 +145,9 @@
     "ca": "La mateixa làmina de MoS₂ pot guiar la llum i modificar el senyal que transporta. Un semiconductor flexible també admet dos classes de transistor, mentre que un vidre molecular canvia de resposta segons reba llum o un camp elèctric."
   },
   "2026-07-22": {
-    "es": "¿Y si la luz pudiera entrar por el costado de la guía? Cambiar el punto de entrada permite repensar el montaje. En los otros dos trabajos, una neurona de VO₂ ajusta su actividad y una sola capa de moléculas se incorpora a un microláser.",
-    "en": "What if light could enter a waveguide through the side? Moving the point of entry changes how the setup can be built. In the other papers, a VO₂ neuron adjusts its activity and a single molecular layer goes inside a microlaser.",
-    "ca": "I si la llum poguera entrar pel costat de la guia? Canviar el punt d’entrada permet repensar el muntatge. En els altres treballs, una neurona de VO₂ ajusta l’activitat i una sola capa de molècules s’incorpora a un microlàser."
+    "es": "Dejar aberturas en la pared de una guía hueca da acceso a la región por la que viaja la luz. En esta edición también hay una neurona de VO₂ que regula su actividad y un láser orgánico que sigue emitiendo bajo iluminación continua.",
+    "en": "Openings in the wall of a hollow guide give access to the region the light travels through. Also in this edition are a VO₂ neuron that adjusts its activity and an organic laser that keeps emitting under continuous illumination.",
+    "ca": "Deixar obertures a la paret d’una guia buida dona accés a la regió per on viatja la llum. En aquesta edició també hi ha una neurona de VO₂ que regula la seua activitat i un làser orgànic que continua emetent sota il·luminació contínua."
   },
   "2026-07-29": {
     "es": "La trayectoria de una onda puede ser parte del diseño. Una red fotónica permite orientar haces de radio, un circuito de microondas aprovecha el recorrido de la señal para calcular y, en un cristal, el propio material favorece que los plasmones viajen en una dirección.",
@@ -185,9 +185,9 @@
     "ca": "Transmetre per damunt de cent gigahertzs i preparar un senyal per a una xarxa d’impulsos planteja preguntes diferents sobre quina part del senyal es conserva. En la tercera lectura, el detall que interessa està dins d’un ferroelèctric, on els dipols formen remolins sobre silici."
   },
   "2026-09-16": {
-    "es": "Un modulador retiene su ajuste y reduce el consumo necesario para mantenerlo y una memoria guarda información en un lazo de polarización. La tercera lectura explora otra forma de hacer más con el material que ya está ahí, al usar como emisor la misma capa que sirve de máscara.",
-    "en": "A modulator retains its setting, cutting the power needed to hold it, and a memory stores information in a polarisation loop. The third paper finds another use for material that is already there, making the same layer serve as a mask and a source of light.",
-    "ca": "Un modulador reté l’ajust i reduïx el consum necessari per a mantindre’l i una memòria guarda informació en un llaç de polarització. La tercera lectura aprofita d’una altra manera el material que ja hi ha, fent servir com a emissora la mateixa capa que fa de màscara."
+    "es": "Un modulador conserva su ajuste cuando se retira la tensión y una película ferroeléctrica mantiene lazos de polarización al pasar de un sustrato a otro. Para dibujar píxeles luminosos, el tercer equipo hace que la capa fotosensible sea también la que emite luz.",
+    "en": "A modulator retains its setting when the voltage is removed, and a ferroelectric film preserves loops of polarization as it moves from one substrate to another. To pattern luminous pixels, the third team makes the photosensitive layer itself emit light.",
+    "ca": "Un modulador conserva l’ajust en retirar la tensió i una pel·lícula ferroelèctrica manté llaços de polarització en passar d’un substrat a un altre. Per a dibuixar píxels lluminosos, el tercer equip fa que la capa fotosensible siga també la que emet llum."
   },
   "2026-09-23": {
     "es": "A veces basta tocar la geometría para decidir por dónde pasa una señal. Un pequeño cambio en el radio de una fibra confina luz, dos bordes de grafeno delimitan dónde conmuta una memoria y un canal deja pasar iones sin que entre demasiada agua.",
@@ -215,9 +215,9 @@
     "ca": "Un modulador de silici corregix part del senyal abans d’enviar-lo. També hi ha dos raons per a mirar de prop una perovskita, entendre per què un dispositiu pot guardar informació per dos vies i veure com el ritme de cristal·lització canvia la pel·lícula d’un LED."
   },
   "2026-10-28": {
-    "es": "Un circuito puede separar físicamente lo que dos haces cuentan juntos. La luz también sirve para seguir a los electrones del grafeno durante una oscilación, mientras que un aditivo permite intervenir mucho antes, cuando se está formando el canal de un transistor de perovskita.",
-    "en": "A circuit can physically separate information carried jointly by two beams. Light also lets researchers track electrons in graphene within one oscillation, while an additive can intervene much earlier, as the channel of a perovskite transistor forms.",
-    "ca": "Un circuit pot separar físicament allò que dos feixos conten junts. La llum també servix per a seguir els electrons del grafé durant una oscil·lació, mentre que un additiu permet intervindre molt abans, quan es forma el canal d’un transistor de perovskita."
+    "es": "Dos haces pueden tener la misma intensidad y distinta coherencia espacial, una diferencia que un circuito óptico consigue separar. Mientras un equipo sigue el movimiento de electrones en grafeno durante una oscilación de la luz, otro modifica con un aditivo el camino de las cargas en una perovskita.",
+    "en": "Two light fields can have equal intensity and different spatial coherence, a distinction an optical circuit can resolve. One team follows electrons in graphene through an optical cycle, while another uses an additive to alter the path charges take through a perovskite.",
+    "ca": "Dos feixos poden tindre la mateixa intensitat i diferent coherència espacial, una diferència que un circuit òptic aconsegueix separar. Mentre un equip segueix el moviment dels electrons en grafé durant una oscil·lació de la llum, un altre modifica amb un additiu el camí de les càrregues en una perovskita."
   },
   "2026-11-04": {
     "es": "Dos patrones de luz casi alineados dibujan un muaré en el aire y un defecto atómico deja su propia huella en la luz de una monocapa. Entre los dos experimentos, un transistor permite preguntar qué parte de una señal queda al cabo de un instante y qué parte dura más.",

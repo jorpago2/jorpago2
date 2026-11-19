@@ -60,8 +60,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "caption": "Strain engineering of barium titanate thin films.",
         "source": "https://www.nature.com/articles/s41377-025-02081-9/figures/1",
-        "licenseSource": "https://www.nature.com/articles/s41377-025-02081-9"
-      }
+        "licenseSource": "https://www.nature.com/articles/s41377-025-02081-9",
+        "localizedCaptions": {
+          "es": "Deformación de la red cristalina en películas de titanato de bario.",
+          "ca": "Deformació de la xarxa cristal·lina en pel·lícules de titanat de bari.",
+          "en": "Strain engineering of barium titanate thin films."
+        }
+      },
+      "versionOfRecordDate": "2026-01-02"
     },
     "10.1038/s41467-025-66810-9": {
       "reference": {
@@ -123,8 +129,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "caption": "Fabrication of a 65,536-pixel photosynapse array.",
         "source": "https://www.nature.com/articles/s41467-025-66810-9/figures/2",
-        "licenseSource": "https://www.nature.com/articles/s41467-025-66810-9"
-      }
+        "licenseSource": "https://www.nature.com/articles/s41467-025-66810-9",
+        "localizedCaptions": {
+          "es": "Fabricación de una matriz de 65 536 píxeles fotosinápticos.",
+          "ca": "Fabricació d’una matriu de 65 536 píxels fotosinàptics.",
+          "en": "Fabrication of a 65,536-pixel photosynapse array."
+        }
+      },
+      "versionOfRecordDate": "2026-01-06"
     },
     "10.1038/s41467-025-66148-2": {
       "reference": {
@@ -186,8 +198,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-025-66148-2",
         "number": "1",
-        "caption": "Crystal-structural features of Hg18Ga8Se8Cl32."
-      }
+        "caption": "Crystal-structural features of Hg18Ga8Se8Cl32.",
+        "localizedCaptions": {
+          "es": "Disposición de los átomos en el cristal de Hg₁₈Ga₈Se₈Cl₃₂.",
+          "ca": "Disposició dels àtoms en el cristall de Hg₁₈Ga₈Se₈Cl₃₂.",
+          "en": "Crystal-structural features of Hg18Ga8Se8Cl32."
+        }
+      },
+      "versionOfRecordDate": "2026-01-06"
     },
     "10.1038/s41586-025-09889-w": {
       "reference": {
@@ -249,8 +267,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41586-025-09889-w",
         "number": "1",
-        "caption": "Ultrahigh-Q germano-silicate device from violet to near IR."
-      }
+        "caption": "Ultrahigh-Q germano-silicate device from violet to near IR.",
+        "localizedCaptions": {
+          "es": "Pérdidas ópticas de las guías de germanosilicato y resonancias medidas entre el violeta y el infrarrojo cercano.",
+          "ca": "Pèrdues òptiques de les guies de germanosilicat i ressonàncies mesurades entre el violeta i l’infraroig pròxim.",
+          "en": "Ultrahigh-Q germano-silicate device from violet to near IR."
+        }
+      },
+      "versionOfRecordDate": "2026-01-07"
     },
     "10.1038/s41467-025-68206-1": {
       "reference": {
@@ -312,8 +336,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-025-68206-1",
         "number": "1",
-        "caption": "Bio-inspired ReS2 MFMIS FeFET optoelectronic synapse integrating sensing, memory, and computing for polarization-resolved neuromorphic vision."
-      }
+        "caption": "Bio-inspired ReS2 MFMIS FeFET optoelectronic synapse integrating sensing, memory, and computing for polarization-resolved neuromorphic vision.",
+        "localizedCaptions": {
+          "es": "Transistor ferroeléctrico de ReS₂ que registra la polarización de la luz y conserva una respuesta eléctrica.",
+          "ca": "Transistor ferroelèctric de ReS₂ que registra la polarització de la llum i conserva una resposta elèctrica.",
+          "en": "Bio-inspired ReS2 MFMIS FeFET optoelectronic synapse integrating sensing, memory, and computing for polarization-resolved neuromorphic vision."
+        }
+      },
+      "versionOfRecordDate": "2026-02-09"
     },
     "10.1038/s41467-025-68223-0": {
       "reference": {
@@ -434,8 +464,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "caption": "Film morphology before and after annealing, with X-ray photoelectron spectra.",
         "source": "https://www.frontiersin.org/journals/nanotechnology/articles/10.3389/fnano.2026.1729291/full#F1",
-        "licenseSource": "https://www.frontiersin.org/journals/nanotechnology/articles/10.3389/fnano.2026.1729291/full"
-      }
+        "licenseSource": "https://www.frontiersin.org/journals/nanotechnology/articles/10.3389/fnano.2026.1729291/full",
+        "localizedCaptions": {
+          "es": "Morfología de la película antes y después del recocido y espectros de fotoelectrones de rayos X.",
+          "ca": "Morfologia de la pel·lícula abans i després de la recuita i espectres de fotoelectrons de raigs X.",
+          "en": "Film morphology before and after annealing, with X-ray photoelectron spectra."
+        }
+      },
+      "versionOfRecordDate": "2026-01-14"
     },
     "10.1038/s41467-026-68506-0": {
       "reference": {
@@ -497,8 +533,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-68506-0",
         "number": "1",
-        "caption": "Experimental transient optical response of bulk and nanoporous Au."
-      }
+        "caption": "Experimental transient optical response of bulk and nanoporous Au.",
+        "localizedCaptions": {
+          "es": "Respuesta óptica transitoria del oro macizo y del oro nanoporoso.",
+          "ca": "Resposta òptica transitòria de l’or massís i de l’or nanoporós.",
+          "en": "Experimental transient optical response of bulk and nanoporous Au."
+        }
+      },
+      "versionOfRecordDate": "2026-01-21"
     },
     "10.1038/s41467-026-68685-w": {
       "reference": {
@@ -560,8 +602,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-68685-w",
         "number": "1",
-        "caption": "Optical propagation in high-index transition metal dichalcogenides (TMDCs) with broadband transparency."
-      }
+        "caption": "Optical propagation in high-index transition metal dichalcogenides (TMDCs) with broadband transparency.",
+        "localizedCaptions": {
+          "es": "Propagación de la luz en dicalcogenuros transparentes de alto índice de refracción.",
+          "ca": "Propagació de la llum en dicalcogenurs transparents d’índex de refracció alt.",
+          "en": "Optical propagation in high-index transition metal dichalcogenides (TMDCs) with broadband transparency."
+        }
+      },
+      "versionOfRecordDate": "2026-01-23"
     },
     "10.1038/s41467-026-68320-8": {
       "reference": {
@@ -623,8 +671,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-68320-8",
         "number": "1",
-        "caption": "Strategies for wafer-scale epitaxial growth of transition metal dichalcogenides (TMDCs) on sapphire substrates."
-      }
+        "caption": "Strategies for wafer-scale epitaxial growth of transition metal dichalcogenides (TMDCs) on sapphire substrates.",
+        "localizedCaptions": {
+          "es": "Crecimiento epitaxial de dicalcogenuros sobre obleas de zafiro.",
+          "ca": "Creixement epitaxial de dicalcogenurs sobre oblies de safir.",
+          "en": "Strategies for wafer-scale epitaxial growth of transition metal dichalcogenides (TMDCs) on sapphire substrates."
+        }
+      },
+      "versionOfRecordDate": "2026-01-21"
     },
     "10.1038/s41467-026-68553-7": {
       "reference": {
@@ -686,8 +740,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-68553-7",
         "number": "1",
-        "caption": "Scanning transmission electron microscopy (STEM) analysis of bonded LNO interface."
-      }
+        "caption": "Scanning transmission electron microscopy (STEM) analysis of bonded LNO interface.",
+        "localizedCaptions": {
+          "es": "Microscopía electrónica de transmisión y barrido de la interfaz entre dos cristales de niobato de litio.",
+          "ca": "Microscòpia electrònica de transmissió i rastreig de la interfície entre dos cristalls de niobat de liti.",
+          "en": "Scanning transmission electron microscopy (STEM) analysis of bonded LNO interface."
+        }
+      },
+      "versionOfRecordDate": "2026-02-19"
     },
     "10.1038/s41377-026-02185-w": {
       "reference": {
@@ -749,8 +809,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02185-w",
         "number": "1",
-        "caption": "Static QD laser performance characterization."
-      }
+        "caption": "Static QD laser performance characterization.",
+        "localizedCaptions": {
+          "es": "Caracterización en régimen estacionario del láser de puntos cuánticos.",
+          "ca": "Caracterització en règim estacionari del làser de punts quàntics.",
+          "en": "Static QD laser performance characterization."
+        }
+      },
+      "versionOfRecordDate": "2026-01-30"
     },
     "10.1038/s41377-025-02125-0": {
       "reference": {
@@ -812,8 +878,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-025-02125-0",
         "number": "1",
-        "caption": "Artificial polarization synapse design and b-As0.2P0.8 crystal characteristics."
-      }
+        "caption": "Artificial polarization synapse design and b-As0.2P0.8 crystal characteristics.",
+        "localizedCaptions": {
+          "es": "Diseño de la sinapsis sensible a la polarización y estructura del cristal de fósforo y arsénico.",
+          "ca": "Disseny de la sinapsi sensible a la polarització i estructura del cristall de fòsfor i arsènic.",
+          "en": "Artificial polarization synapse design and b-As0.2P0.8 crystal characteristics."
+        }
+      },
+      "versionOfRecordDate": "2026-02-02"
     },
     "10.1038/s41563-026-02487-9": {
       "reference": {
@@ -871,8 +943,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41563-026-02487-9",
         "number": "1",
-        "caption": "Experimental design."
-      }
+        "caption": "Microheater and electrodes used to measure resistance fluctuations in a GeTe cell.",
+        "localizedCaptions": {
+          "es": "Microcalentador y electrodos utilizados para medir las fluctuaciones de resistencia en una celda de GeTe.",
+          "ca": "Microescalfador i elèctrodes emprats per a mesurar les fluctuacions de resistència en una cel·la de GeTe.",
+          "en": "Microheater and electrodes used to measure resistance fluctuations in a GeTe cell."
+        }
+      },
+      "versionOfRecordDate": "2026-01-30"
     },
     "10.1038/s41467-026-69326-y": {
       "reference": {
@@ -926,8 +1004,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "caption": "Magnon–photon coupling in one-dimensional Tight-binding and Lieb lattices.",
         "source": "https://www.nature.com/articles/s41467-026-69326-y/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC12987957"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC12987957",
+        "localizedCaptions": {
+          "es": "Acoplamiento entre magnones y fotones en dos redes unidimensionales.",
+          "ca": "Acoblament entre magnons i fotons en dues xarxes unidimensionals.",
+          "en": "Magnon–photon coupling in one-dimensional Tight-binding and Lieb lattices."
+        }
+      },
+      "versionOfRecordDate": "2026-03-13"
     },
     "10.1038/s41467-026-68905-3": {
       "reference": {
@@ -989,8 +1073,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-68905-3",
         "number": "1",
-        "caption": "MoS2-based in-sensor neuromorphic computing architecture."
-      }
+        "caption": "MoS2-based in-sensor neuromorphic computing architecture.",
+        "localizedCaptions": {
+          "es": "Arquitectura de un sensor de MoS₂ que procesa las señales en el propio dispositivo.",
+          "ca": "Arquitectura d’un sensor de MoS₂ que processa els senyals en el mateix dispositiu.",
+          "en": "MoS2-based in-sensor neuromorphic computing architecture."
+        }
+      },
+      "versionOfRecordDate": "2026-03-18"
     },
     "10.1038/s41467-026-69272-9": {
       "reference": {
@@ -1052,8 +1142,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-69272-9",
         "number": "1",
-        "caption": "Design and control of phase engineering to achieve the relaxor ferroelectric."
-      }
+        "caption": "Design and control of phase engineering to achieve the relaxor ferroelectric.",
+        "localizedCaptions": {
+          "es": "Control de las fases del material para obtener una respuesta ferroeléctrica de tipo relajor.",
+          "ca": "Control de les fases del material per a obtindre una resposta ferroelèctrica de tipus relaxor.",
+          "en": "Design and control of phase engineering to achieve the relaxor ferroelectric."
+        }
+      },
+      "versionOfRecordDate": "2026-02-09"
     },
     "10.1038/s41377-026-02196-7": {
       "reference": {
@@ -1115,8 +1211,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02196-7",
         "number": "1",
-        "caption": "Principle of the SWE-PTS."
-      }
+        "caption": "Light absorption and heat generation in the gas surrounding the suspended waveguide.",
+        "localizedCaptions": {
+          "es": "Absorción de luz por el gas y generación de calor junto a la guía suspendida.",
+          "ca": "Absorció de llum pel gas i generació de calor al costat de la guia suspesa.",
+          "en": "Light absorption and heat generation in the gas surrounding the suspended waveguide."
+        }
+      },
+      "versionOfRecordDate": "2026-02-17"
     },
     "10.1038/s41467-026-69123-7": {
       "reference": {
@@ -1304,8 +1406,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02202-y",
         "number": "1",
-        "caption": "Working principle and experimental characterization of time-programmable coloration."
-      }
+        "caption": "Working principle and experimental characterization of time-programmable coloration.",
+        "localizedCaptions": {
+          "es": "Diseño y medida de la evolución del color con el tiempo.",
+          "ca": "Disseny i mesura de l’evolució del color amb el temps.",
+          "en": "Working principle and experimental characterization of time-programmable coloration."
+        }
+      },
+      "versionOfRecordDate": "2026-02-19"
     },
     "10.1038/s41467-026-69805-2": {
       "reference": {
@@ -1367,8 +1475,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-69805-2",
         "number": "1",
-        "caption": "Proposal of bio-inspired feedback neuron architecture based on memristors."
-      }
+        "caption": "Proposal of bio-inspired feedback neuron architecture based on memristors.",
+        "localizedCaptions": {
+          "es": "Diseño de una neurona electrónica con realimentación mediante memristores.",
+          "ca": "Disseny d’una neurona electrònica amb realimentació mitjançant memristors.",
+          "en": "Proposal of bio-inspired feedback neuron architecture based on memristors."
+        }
+      },
+      "versionOfRecordDate": "2026-02-23"
     },
     "10.1038/s41467-026-69904-0": {
       "reference": {
@@ -1430,8 +1544,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-69904-0",
         "number": "1",
-        "caption": "Illustration of the pure-electrically driven ultrafast transmission electron microscopy experimental setup to study a VO2 two-terminal device."
-      }
+        "caption": "Illustration of the pure-electrically driven ultrafast transmission electron microscopy experimental setup to study a VO2 two-terminal device.",
+        "localizedCaptions": {
+          "es": "Montaje de microscopía electrónica ultrarrápida para observar la conmutación de un dispositivo de VO₂.",
+          "ca": "Muntatge de microscòpia electrònica ultraràpida per a observar la commutació d’un dispositiu de VO₂.",
+          "en": "Illustration of the pure-electrically driven ultrafast transmission electron microscopy experimental setup to study a VO2 two-terminal device."
+        }
+      },
+      "versionOfRecordDate": "2026-04-01"
     },
     "10.1038/s41467-026-70123-w": {
       "reference": {
@@ -1678,8 +1798,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-68648-1",
         "number": "1",
-        "caption": "Inverse-designed nanophotonic neural network accelerator."
-      }
+        "caption": "Inverse-designed nanophotonic neural network accelerator.",
+        "localizedCaptions": {
+          "es": "Acelerador nanofotónico para redes neuronales obtenido mediante diseño inverso.",
+          "ca": "Accelerador nanofotònic per a xarxes neuronals obtingut mitjançant disseny invers.",
+          "en": "Inverse-designed nanophotonic neural network accelerator."
+        }
+      },
+      "versionOfRecordDate": "2026-03-04"
     },
     "10.1038/s41467-026-70337-y": {
       "reference": {
@@ -1741,8 +1867,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-70337-y",
         "number": "1",
-        "caption": "Bioinspired design of nanofluidic photoreceptors and photosynapses."
-      }
+        "caption": "Bioinspired design of nanofluidic photoreceptors and photosynapses.",
+        "localizedCaptions": {
+          "es": "Diseño de los fotorreceptores y las fotosinapsis basados en el transporte de iones por nanocanales.",
+          "ca": "Disseny dels fotoreceptors i les fotosinapsis basats en el transport d’ions per nanocanals.",
+          "en": "Bioinspired design of nanofluidic photoreceptors and photosynapses."
+        }
+      },
+      "versionOfRecordDate": "2026-04-16"
     },
     "10.1038/s41467-026-70362-x": {
       "reference": {
@@ -1993,8 +2125,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-70676-w",
         "number": "1",
-        "caption": "Growth and ferroelectric anisotropy of pure-phase BWO epitaxial films."
-      }
+        "caption": "Growth and ferroelectric anisotropy of pure-phase BWO epitaxial films.",
+        "localizedCaptions": {
+          "es": "Crecimiento de las películas epitaxiales y dependencia de la polarización con la dirección cristalina.",
+          "ca": "Creixement de les pel·lícules epitaxials i dependència de la polarització amb la direcció cristal·lina.",
+          "en": "Growth and ferroelectric anisotropy of pure-phase BWO epitaxial films."
+        }
+      },
+      "versionOfRecordDate": "2026-04-29"
     },
     "10.1038/s41467-026-70875-5": {
       "reference": {
@@ -2056,8 +2194,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "caption": "Angle- and polarisation-resolved PL spectra.",
         "source": "https://www.nature.com/articles/s41467-026-70875-5/figures/4",
-        "licenseSource": "https://europepmc.org/articles/PMC13013978"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13013978",
+        "localizedCaptions": {
+          "es": "Espectros de fotoluminiscencia en función del ángulo y de la polarización.",
+          "ca": "Espectres de fotoluminescència en funció de l’angle i de la polarització.",
+          "en": "Angle- and polarisation-resolved PL spectra."
+        }
+      },
+      "versionOfRecordDate": "2026-03-24"
     },
     "10.1038/s41467-026-70806-4": {
       "reference": {
@@ -2182,8 +2326,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02253-1",
         "number": "1",
-        "caption": "Concept of SAAL."
-      }
+        "caption": "Schematic of laser writing inside a transparent dielectric crystal.",
+        "localizedCaptions": {
+          "es": "Esquema de escritura con láser dentro de un cristal dieléctrico transparente.",
+          "ca": "Esquema d’escriptura amb làser dins d’un cristall dielèctric transparent.",
+          "en": "Schematic of laser writing inside a transparent dielectric crystal."
+        }
+      },
+      "versionOfRecordDate": "2026-03-18"
     },
     "10.1038/s41467-026-71081-z": {
       "reference": {
@@ -2245,8 +2395,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-71081-z",
         "number": "1",
-        "caption": "Minimalist wireless transceiver scheme in integrated photonics empowering future THz communication."
-      }
+        "caption": "Minimalist wireless transceiver scheme in integrated photonics empowering future THz communication.",
+        "localizedCaptions": {
+          "es": "Esquema de un transceptor fotónico integrado para enlaces inalámbricos en terahercios.",
+          "ca": "Esquema d’un transceptor fotònic integrat per a enllaços sense fil en terahertzs.",
+          "en": "Minimalist wireless transceiver scheme in integrated photonics empowering future THz communication."
+        }
+      },
+      "versionOfRecordDate": "2026-05-19"
     },
     "10.1038/s41467-026-71127-2": {
       "reference": {
@@ -2308,8 +2464,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-71127-2",
         "number": "1",
-        "caption": "Single-molecule neuromorphic device."
-      }
+        "caption": "Single-molecule neuromorphic device.",
+        "localizedCaptions": {
+          "es": "Dispositivo neuromórfico cuyo elemento activo es una molécula.",
+          "ca": "Dispositiu neuromòrfic en què l’element actiu és una molècula.",
+          "en": "Single-molecule neuromorphic device."
+        }
+      },
+      "versionOfRecordDate": "2026-05-26"
     },
     "10.1038/s41467-026-70931-0": {
       "reference": {
@@ -2371,8 +2533,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-70931-0",
         "number": "1",
-        "caption": "Preparation and characterization of the superlattices."
-      }
+        "caption": "Preparation and characterization of the superlattices.",
+        "localizedCaptions": {
+          "es": "Preparación y caracterización de las superredes cristalinas.",
+          "ca": "Preparació i caracterització de les superxarxes cristal·lines.",
+          "en": "Preparation and characterization of the superlattices."
+        }
+      },
+      "versionOfRecordDate": "2026-05-21"
     },
     "10.1038/s41566-026-01886-3": {
       "reference": {
@@ -2434,8 +2602,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41566-026-01886-3",
         "number": "1",
-        "caption": "Conceptual comparison between structural and temporal approaches to polarization control."
-      }
+        "caption": "Conceptual comparison between structural and temporal approaches to polarization control.",
+        "localizedCaptions": {
+          "es": "Comparación entre el control de la polarización mediante la geometría y mediante una modulación temporal.",
+          "ca": "Comparació entre el control de la polarització mitjançant la geometria i mitjançant una modulació temporal.",
+          "en": "Conceptual comparison between structural and temporal approaches to polarization control."
+        }
+      },
+      "versionOfRecordDate": "2026-04-03"
     },
     "10.1038/s41467-026-71446-4": {
       "reference": {
@@ -2497,8 +2671,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-71446-4",
         "number": "1",
-        "caption": "Optoelectronic nanowire neuron."
-      }
+        "caption": "Optoelectronic nanowire neuron.",
+        "localizedCaptions": {
+          "es": "Neurona optoelectrónica construida con nanohilos semiconductores.",
+          "ca": "Neurona optoelectrònica construïda amb nanofils semiconductors.",
+          "en": "Optoelectronic nanowire neuron."
+        }
+      },
+      "versionOfRecordDate": "2026-05-29"
     },
     "10.1038/s41598-026-46478-x": {
       "reference": {
@@ -2623,8 +2803,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "caption": "Photonic tensor processor architecture.",
         "source": "https://www.nature.com/articles/s41467-026-71599-2/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC13066431"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13066431",
+        "localizedCaptions": {
+          "es": "Arquitectura del procesador fotónico para operaciones con tensores.",
+          "ca": "Arquitectura del processador fotònic per a operacions amb tensors.",
+          "en": "Photonic tensor processor architecture."
+        }
+      },
+      "versionOfRecordDate": "2026-04-09"
     },
     "10.1038/s41467-026-71642-2": {
       "reference": {
@@ -2686,8 +2872,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "caption": "Polymorphic functionality of a runtime reconfigurable oxide interface-based device.",
         "source": "https://www.nature.com/articles/s41467-026-71642-2/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC13069107"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13069107",
+        "localizedCaptions": {
+          "es": "Funciones que admite el dispositivo al reconfigurar la interfaz de óxidos durante el funcionamiento.",
+          "ca": "Funcions que admet el dispositiu en reconfigurar la interfície d’òxids durant el funcionament.",
+          "en": "Polymorphic functionality of a runtime reconfigurable oxide interface-based device."
+        }
+      },
+      "versionOfRecordDate": "2026-04-10"
     },
     "10.1038/s41427-026-00645-8": {
       "reference": {
@@ -2745,8 +2937,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41427-026-00645-8",
         "number": "1",
-        "caption": "Structures and bonding properties of Sb2Se3."
-      }
+        "caption": "Structures and bonding properties of Sb2Se3.",
+        "localizedCaptions": {
+          "es": "Estructura cristalina y enlaces químicos del Sb₂Se₃.",
+          "ca": "Estructura cristal·lina i enllaços químics del Sb₂Se₃.",
+          "en": "Structures and bonding properties of Sb2Se3."
+        }
+      },
+      "versionOfRecordDate": "2026-06-18"
     },
     "10.1038/s41467-026-72119-y": {
       "reference": {
@@ -2808,8 +3006,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-72119-y",
         "number": "1",
-        "caption": "PRD array and PSNA system."
-      }
+        "caption": "PRD array and PSNA system.",
+        "localizedCaptions": {
+          "es": "Matriz de dispositivos fotónicos reconfigurables y arquitectura para redes neuronales de pulsos.",
+          "ca": "Matriu de dispositius fotònics reconfigurables i arquitectura per a xarxes neuronals de polsos.",
+          "en": "Reconfigurable photonic device array and architecture for spiking neural networks."
+        }
+      },
+      "versionOfRecordDate": "2026-06-18"
     },
     "10.1038/s41467-026-71844-8": {
       "reference": {
@@ -2871,8 +3075,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-71844-8",
         "number": "1",
-        "caption": "Hybrid memristor-SMTJ Ising machine architecture and device primitives."
-      }
+        "caption": "Hybrid memristor-SMTJ Ising machine architecture and device primitives.",
+        "localizedCaptions": {
+          "es": "Máquina de Ising que combina memristores y uniones túnel magnéticas estocásticas.",
+          "ca": "Màquina d’Ising que combina memristors i unions túnel magnètiques estocàstiques.",
+          "en": "Hybrid memristor-SMTJ Ising machine architecture and device primitives."
+        }
+      },
+      "versionOfRecordDate": "2026-06-12"
     },
     "10.1038/s41467-026-72042-2": {
       "reference": {
@@ -2997,8 +3207,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-72332-9",
         "number": "1",
-        "caption": "Spectral tomography imaging and chromatic confocal sensor."
-      }
+        "caption": "Spectral tomography imaging and chromatic confocal sensor.",
+        "localizedCaptions": {
+          "es": "Formación de una imagen tomográfica y esquema del sensor confocal cromático.",
+          "ca": "Formació d’una imatge tomogràfica i esquema del sensor confocal cromàtic.",
+          "en": "Spectral tomography imaging and chromatic confocal sensor."
+        }
+      },
+      "versionOfRecordDate": "2026-07-02"
     },
     "10.1038/s41467-026-72557-8": {
       "reference": {
@@ -3060,8 +3276,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-72557-8",
         "number": "2",
-        "caption": "Performance characterization of the MoS2 transistors and MoS2 Ring oscillators."
-      }
+        "caption": "Performance characterization of the MoS2 transistors and MoS2 Ring oscillators.",
+        "localizedCaptions": {
+          "es": "Medidas eléctricas de los transistores de MoS₂ y de los osciladores en anillo.",
+          "ca": "Mesures elèctriques dels transistors de MoS₂ i dels oscil·ladors en anell.",
+          "en": "Performance characterization of the MoS2 transistors and MoS2 Ring oscillators."
+        }
+      },
+      "versionOfRecordDate": "2026-07-03"
     },
     "10.1038/s41467-026-72314-x": {
       "reference": {
@@ -3123,8 +3345,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-72314-x",
         "number": "1",
-        "caption": "Heteroatom-intercalation engineering."
-      }
+        "caption": "Heteroatom-intercalation engineering.",
+        "localizedCaptions": {
+          "es": "Inserción de átomos de otra especie entre las capas del material.",
+          "ca": "Inserció d’àtoms d’una altra espècie entre les capes del material.",
+          "en": "Heteroatom-intercalation engineering."
+        }
+      },
+      "versionOfRecordDate": "2026-04-24"
     },
     "10.1038/s41467-026-72416-6": {
       "reference": {
@@ -3186,8 +3414,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "caption": "Comparison of the second moment of area (Ix) between a circular fiber and 800 µm wide High Aspect-Ratio Flat Fiber (HARFF).",
         "source": "https://www.nature.com/articles/s41467-026-72416-6/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC13315245"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13315245",
+        "localizedCaptions": {
+          "es": "Comparación del segundo momento de área de una fibra circular y una fibra plana de 800 µm de anchura.",
+          "ca": "Comparació del segon moment d’àrea d’una fibra circular i una fibra plana de 800 µm d’amplària.",
+          "en": "Comparison of the second moment of area (Ix) between a circular fiber and 800 µm wide High Aspect-Ratio Flat Fiber (HARFF)."
+        }
+      },
+      "versionOfRecordDate": "2026-06-29"
     },
     "10.1038/s41467-026-72473-x": {
       "reference": {
@@ -3249,8 +3483,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-72473-x",
         "number": "1",
-        "caption": "Molecular transistors using self-assembled monolayers (SAMs)."
-      }
+        "caption": "Molecular transistors using self-assembled monolayers (SAMs).",
+        "localizedCaptions": {
+          "es": "Transistores moleculares construidos con monocapas autoensambladas.",
+          "ca": "Transistors moleculars construïts amb monocapes autoacoblades.",
+          "en": "Molecular transistors using self-assembled monolayers (SAMs)."
+        }
+      },
+      "versionOfRecordDate": "2026-04-29"
     },
     "10.1038/s41467-026-71517-6": {
       "reference": {
@@ -3375,8 +3615,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41566-026-01896-1",
         "number": "3",
-        "caption": "Implosion yields nanoscale resolution vacancies."
-      }
+        "caption": "Implosion yields nanoscale resolution vacancies.",
+        "localizedCaptions": {
+          "es": "Reducción de las dimensiones de las cavidades mediante implosión.",
+          "ca": "Reducció de les dimensions de les cavitats mitjançant implosió.",
+          "en": "Implosion yields nanoscale resolution vacancies."
+        }
+      },
+      "versionOfRecordDate": "2026-05-12"
     },
     "10.1038/s41467-026-72740-x": {
       "reference": {
@@ -3438,8 +3684,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "caption": "Schematic illustration of the bio-inspired memristor array system for noise-resilient audio denoising and recognition.",
         "source": "https://www.nature.com/articles/s41467-026-72740-x/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC13351000"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13351000",
+        "localizedCaptions": {
+          "es": "Matriz de memristores para reducir el ruido y reconocer señales de audio.",
+          "ca": "Matriu de memristors per a reduir el soroll i reconéixer senyals d’àudio.",
+          "en": "Schematic illustration of the bio-inspired memristor array system for noise-resilient audio denoising and recognition."
+        }
+      },
+      "versionOfRecordDate": "2026-05-06"
     },
     "10.1038/s41467-026-73078-0": {
       "reference": {
@@ -3564,8 +3816,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-73107-y",
         "number": "1",
-        "caption": "Concept of MoS2 nonlinear waveguide."
-      }
+        "caption": "Concept of MoS2 nonlinear waveguide.",
+        "localizedCaptions": {
+          "es": "Guía de ondas de MoS₂ diseñada para aprovechar su respuesta óptica no lineal.",
+          "ca": "Guia d’ones de MoS₂ dissenyada per a aprofitar la seua resposta òptica no lineal.",
+          "en": "Concept of MoS2 nonlinear waveguide."
+        }
+      },
+      "versionOfRecordDate": "2026-07-20"
     },
     "10.1038/s41467-026-73235-5": {
       "reference": {
@@ -3753,8 +4011,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-73411-7",
         "number": "1",
-        "caption": "Schematic diagram of a trimmed asymmetric directional coupler (A-DC) using carbon deposition, and the transmission response of the untrimmed A-DCs."
-      }
+        "caption": "Schematic diagram of a trimmed asymmetric directional coupler (A-DC) using carbon deposition, and the transmission response of the untrimmed A-DCs.",
+        "localizedCaptions": {
+          "es": "Ajuste de un acoplador direccional mediante depósito de carbono y transmisión medida antes del ajuste.",
+          "ca": "Ajust d’un acoblador direccional mitjançant deposició de carboni i transmissió mesurada abans de l’ajust.",
+          "en": "Schematic diagram of a trimmed asymmetric directional coupler (A-DC) using carbon deposition, and the transmission response of the untrimmed A-DCs."
+        }
+      },
+      "versionOfRecordDate": "2026-05-21"
     },
     "10.1038/s41467-026-73267-x": {
       "reference": {
@@ -3816,8 +4080,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-73267-x",
         "number": "1",
-        "caption": "EuTe4 and electrical pulse switching of device D1."
-      }
+        "caption": "EuTe4 and electrical pulse switching of device D1.",
+        "localizedCaptions": {
+          "es": "Conmutación eléctrica de un dispositivo de EuTe₄ mediante pulsos.",
+          "ca": "Commutació elèctrica d’un dispositiu de EuTe₄ mitjançant polsos.",
+          "en": "EuTe4 and electrical pulse switching of device D1."
+        }
+      },
+      "versionOfRecordDate": "2026-08-14"
     },
     "10.1038/s41467-026-73597-w": {
       "reference": {
@@ -4001,8 +4271,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-73669-x",
         "number": "1",
-        "caption": "Schematic of the proposed memristor-based neuromorphic computation."
-      }
+        "caption": "Schematic of the proposed memristor-based neuromorphic computation.",
+        "localizedCaptions": {
+          "es": "Esquema del circuito neuromórfico basado en memristores.",
+          "ca": "Esquema del circuit neuromòrfic basat en memristors.",
+          "en": "Schematic of the proposed memristor-based neuromorphic computation."
+        }
+      },
+      "versionOfRecordDate": "2026-07-22"
     },
     "10.1038/s41467-026-73984-3": {
       "reference": {
@@ -4064,8 +4340,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "caption": "Excited state kinetics of the gain medium.",
         "source": "https://www.nature.com/articles/s41467-026-73984-3/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC13392000"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13392000",
+        "localizedCaptions": {
+          "es": "Evolución temporal de los estados excitados del medio de ganancia.",
+          "ca": "Evolució temporal dels estats excitats del medi de guany.",
+          "en": "Excited state kinetics of the gain medium."
+        }
+      },
+      "versionOfRecordDate": "2026-07-23"
     },
     "10.1038/s41586-026-10517-4": {
       "reference": {
@@ -4127,8 +4409,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41586-026-10517-4",
         "number": "1",
-        "caption": "Principle and fabrication of the integrated MLLs based on a Mamyshev oscillator."
-      }
+        "caption": "Principle and fabrication of the integrated MLLs based on a Mamyshev oscillator.",
+        "localizedCaptions": {
+          "es": "Funcionamiento y fabricación del láser integrado de pulsos basado en un oscilador de Mamyshev.",
+          "ca": "Funcionament i fabricació del làser integrat de polsos basat en un oscil·lador de Mamyshev.",
+          "en": "Principle and fabrication of the integrated MLLs based on a Mamyshev oscillator."
+        }
+      },
+      "versionOfRecordDate": "2026-06-03"
     },
     "10.1038/s41598-026-51653-1": {
       "reference": {
@@ -4241,8 +4529,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41586-026-10637-x",
         "number": "1",
-        "caption": "Structure and spectra of chiral perovskite superlattices."
-      }
+        "caption": "Structure and spectra of chiral perovskite superlattices.",
+        "localizedCaptions": {
+          "es": "Estructura y espectros ópticos de las superredes quirales de perovskita.",
+          "ca": "Estructura i espectres òptics de les superxarxes quirals de perovskita.",
+          "en": "Structure and spectra of chiral perovskite superlattices."
+        }
+      },
+      "versionOfRecordDate": "2026-06-03"
     },
     "10.1038/s41467-026-73440-2": {
       "reference": {
@@ -4430,8 +4724,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "caption": "Magnons in dual-gated trilayer CrSBr.",
         "source": "https://www.nature.com/articles/s41467-026-74067-z/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC13263320"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13263320",
+        "localizedCaptions": {
+          "es": "Magnones en una tricapa de CrSBr con dos electrodos de puerta.",
+          "ca": "Magnons en una tricapa de CrSBr amb dos elèctrodes de porta.",
+          "en": "Magnons in dual-gated trilayer CrSBr."
+        }
+      },
+      "versionOfRecordDate": "2026-06-12"
     },
     "10.1038/s41467-026-74485-z": {
       "reference": {
@@ -4493,8 +4793,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-74485-z",
         "number": "1",
-        "caption": "Beamforming network schemes in modern wireless communication systems."
-      }
+        "caption": "Beamforming network schemes in modern wireless communication systems.",
+        "localizedCaptions": {
+          "es": "Redes de formación de haces para comunicaciones inalámbricas.",
+          "ca": "Xarxes de formació de feixos per a comunicacions sense fil.",
+          "en": "Beamforming network schemes in modern wireless communication systems."
+        }
+      },
+      "versionOfRecordDate": "2026-08-04"
     },
     "10.1038/s41467-026-74238-y": {
       "reference": {
@@ -4743,8 +5049,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13337062/",
         "number": "1",
-        "caption": "Device concept, architecture, and optoelectronic characteristics of OSMTs"
-      }
+        "caption": "Device concept, architecture, and optoelectronic characteristics of OSMTs",
+        "localizedCaptions": {
+          "es": "Estructura y respuesta optoelectrónica de los transistores sinápticos.",
+          "ca": "Estructura i resposta optoelectrònica dels transistors sinàptics.",
+          "en": "Device concept, architecture, and optoelectronic characteristics of OSMTs"
+        }
+      },
+      "versionOfRecordDate": "2026-06-25"
     },
     "10.1038/s41467-026-75197-0": {
       "reference": {
@@ -4806,8 +5118,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-75197-0",
         "number": "1",
-        "caption": "Characterization of Te nanostructures."
-      }
+        "caption": "Characterization of Te nanostructures.",
+        "localizedCaptions": {
+          "es": "Caracterización de las nanoestructuras de telurio.",
+          "ca": "Caracterització de les nanoestructures de tel·luri.",
+          "en": "Characterization of Te nanostructures."
+        }
+      },
+      "versionOfRecordDate": "2026-08-11"
     },
     "10.1038/s41467-026-75346-5": {
       "reference": {
@@ -4869,8 +5187,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-75346-5",
         "number": "1",
-        "caption": "2D electrically addressable metasurface array architecture and fabricated device."
-      }
+        "caption": "2D electrically addressable metasurface array architecture and fabricated device.",
+        "localizedCaptions": {
+          "es": "Diseño y fabricación de la matriz bidimensional de metasuperficies con control eléctrico.",
+          "ca": "Disseny i fabricació de la matriu bidimensional de metasuperfícies amb control elèctric.",
+          "en": "2D electrically addressable metasurface array architecture and fabricated device."
+        }
+      },
+      "versionOfRecordDate": "2026-08-14"
     },
     "10.1038/s41467-026-74911-2": {
       "reference": {
@@ -4987,8 +5311,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "caption": "Interplay between electronic structure and nonlinear response in ultra-thin metal films.",
         "source": "https://www.nature.com/articles/s41467-026-74804-4/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC13463075"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13463075",
+        "localizedCaptions": {
+          "es": "Relación entre estructura electrónica y respuesta óptica no lineal en películas metálicas ultrafinas.",
+          "ca": "Relació entre estructura electrònica i resposta òptica no lineal en pel·lícules metàl·liques ultrafines.",
+          "en": "Interplay between electronic structure and nonlinear response in ultra-thin metal films."
+        }
+      },
+      "versionOfRecordDate": "2026-08-12"
     },
     "10.1038/s41377-026-02405-3": {
       "reference": {
@@ -5046,8 +5376,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02405-3",
         "number": "1",
-        "caption": "."
-      }
+        "caption": "Schematic and optical micrograph of the circuit that generates and analyses the polarization of light.",
+        "localizedCaptions": {
+          "es": "Esquema y micrografía del circuito que genera y analiza la polarización de la luz.",
+          "ca": "Esquema i micrografia del circuit que genera i analitza la polarització de la llum.",
+          "en": "Schematic and optical micrograph of the circuit that generates and analyses the polarization of light."
+        }
+      },
+      "versionOfRecordDate": "2026-07-10"
     },
     "10.1038/s41467-026-75488-6": {
       "reference": {
@@ -5109,8 +5445,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-75488-6",
         "number": "1",
-        "caption": "Stability challenges in neuromorphic computing and hardware implementation of the Bienenstock–Cooper–Munro (BCM) rule."
-      }
+        "caption": "Stability challenges in neuromorphic computing and hardware implementation of the Bienenstock–Cooper–Munro (BCM) rule.",
+        "localizedCaptions": {
+          "es": "Circuito que reproduce la regla de aprendizaje de Bienenstock, Cooper y Munro.",
+          "ca": "Circuit que reprodueix la regla d’aprenentatge de Bienenstock, Cooper i Munro.",
+          "en": "Stability challenges in neuromorphic computing and hardware implementation of the Bienenstock–Cooper–Munro (BCM) rule."
+        }
+      },
+      "versionOfRecordDate": "2026-07-09"
     },
     "10.1038/s41467-026-75434-6": {
       "reference": {
@@ -5172,8 +5514,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-75434-6",
         "number": "1",
-        "caption": "Structural and spectroscopic characterizations of 2D perovskite single crystals synthesized via NEIT and SCS approaches."
-      }
+        "caption": "Structural and spectroscopic characterizations of 2D perovskite single crystals synthesized via NEIT and SCS approaches.",
+        "localizedCaptions": {
+          "es": "Estructura y espectros de monocristales de perovskita bidimensional obtenidos por dos métodos de crecimiento.",
+          "ca": "Estructura i espectres de monocristalls de perovskita bidimensional obtinguts per dos mètodes de creixement.",
+          "en": "Structural and spectroscopic characterizations of 2D perovskite single crystals synthesized via NEIT and SCS approaches."
+        }
+      },
+      "versionOfRecordDate": "2026-07-14"
     },
     "10.1038/s41467-026-75750-x": {
       "reference": {
@@ -5282,8 +5630,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41528-026-00621-w",
         "number": "1",
-        "caption": "Flexible p-channel WSe2 FETs with WOx seed."
-      }
+        "caption": "Flexible p-channel WSe2 FETs with WOx seed.",
+        "localizedCaptions": {
+          "es": "Transistores flexibles de canal p de WSe₂ con una capa inicial de óxido de wolframio.",
+          "ca": "Transistors flexibles de canal p de WSe₂ amb una capa inicial d’òxid de tungsté.",
+          "en": "Flexible p-channel WSe2 FETs with WOx seed."
+        }
+      },
+      "versionOfRecordDate": "2026-07-20"
     },
     "10.1038/s41467-026-75838-4": {
       "reference": {
@@ -5337,8 +5691,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-75838-4",
         "number": "1",
-        "caption": "Coupled crystalline–amorphous and achiral–chiral transitions underpin a reconfigurable chiral molecular relaxor ferroelectric platform."
-      }
+        "caption": "Coupled crystalline–amorphous and achiral–chiral transitions underpin a reconfigurable chiral molecular relaxor ferroelectric platform.",
+        "localizedCaptions": {
+          "es": "Relación entre la estructura cristalina, la quiralidad y la respuesta ferroeléctrica del material molecular.",
+          "ca": "Relació entre l’estructura cristal·lina, la quiralitat i la resposta ferroelèctrica del material molecular.",
+          "en": "Coupled crystalline–amorphous and achiral–chiral transitions underpin a reconfigurable chiral molecular relaxor ferroelectric platform."
+        }
+      },
+      "versionOfRecordDate": "2026-07-20"
     },
     "10.1038/s41467-026-75873-1": {
       "reference": {
@@ -5400,8 +5760,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-75873-1",
         "number": "1",
-        "caption": "Artistic illustration of the segmented on-chip hollow-core waveguide - the Photonic Scaffold - that includes ultrahigh cladding-openness fraction, allowing light guidance in an air-dominated geometry."
-      }
+        "caption": "Artistic illustration of the segmented on-chip hollow-core waveguide - the Photonic Scaffold - that includes ultrahigh cladding-openness fraction, allowing light guidance in an air-dominated geometry.",
+        "localizedCaptions": {
+          "es": "Ilustración de la guía segmentada con núcleo de aire y aberturas en el revestimiento.",
+          "ca": "Il·lustració de la guia segmentada amb nucli d’aire i obertures en el revestiment.",
+          "en": "Artistic illustration of the segmented on-chip hollow-core waveguide - the Photonic Scaffold - that includes ultrahigh cladding-openness fraction, allowing light guidance in an air-dominated geometry."
+        }
+      },
+      "versionOfRecordDate": "2026-07-28"
     },
     "10.1038/s41467-026-76067-5": {
       "reference": {
@@ -5463,8 +5829,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "caption": "Hardware-algorithm co-design using analog in-memory computing (AIMC) hardware and hyperdimensional computing (HDC) algorithm for language identification.",
         "source": "https://www.nature.com/articles/s41467-026-76067-5/figures/1",
-        "licenseSource": "https://europepmc.org/articles/PMC13522599"
-      }
+        "licenseSource": "https://europepmc.org/articles/PMC13522599",
+        "localizedCaptions": {
+          "es": "Combinación de memoria analógica y representación hiperdimensional para identificar idiomas.",
+          "ca": "Combinació de memòria analògica i representació hiperdimensional per a identificar idiomes.",
+          "en": "Hardware-algorithm co-design using analog in-memory computing (AIMC) hardware and hyperdimensional computing (HDC) algorithm for language identification."
+        }
+      },
+      "versionOfRecordDate": "2026-08-28"
     },
     "10.1038/s41467-026-76121-2": {
       "reference": {
@@ -5526,8 +5898,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-76121-2",
         "number": "1",
-        "caption": "Ferroelectricity and electrical measurements of α-In2Se3 in the dark."
-      }
+        "caption": "Ferroelectricity and electrical measurements of α-In2Se3 in the dark.",
+        "localizedCaptions": {
+          "es": "Polarización ferroeléctrica y medidas eléctricas de α-In₂Se₃ en oscuridad.",
+          "ca": "Polarització ferroelèctrica i mesures elèctriques d’α-In₂Se₃ en la foscor.",
+          "en": "Ferroelectricity and electrical measurements of α-In2Se3 in the dark."
+        }
+      },
+      "versionOfRecordDate": "2026-08-28"
     },
     "10.1038/s41467-026-75965-y": {
       "reference": {
@@ -5581,8 +5959,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-75965-y",
         "number": "1",
-        "caption": "OSHE in perovskite microwires with TE-TM splitting of waveguide modes."
-      }
+        "caption": "OSHE in perovskite microwires with TE-TM splitting of waveguide modes.",
+        "localizedCaptions": {
+          "es": "Efecto Hall óptico de espín en microhilos de perovskita con modos de distinta polarización.",
+          "ca": "Efecte Hall òptic d’espín en microfils de perovskita amb modes de polarització diferent.",
+          "en": "OSHE in perovskite microwires with TE-TM splitting of waveguide modes."
+        }
+      },
+      "versionOfRecordDate": "2026-08-28"
     },
     "10.1038/s41467-026-75783-2": {
       "reference": {
@@ -5628,8 +6012,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-75783-2",
         "number": "1",
-        "caption": "Two types of feature extraction with an integrated microwave neural network (MNN)."
-      }
+        "caption": "Two types of feature extraction with an integrated microwave neural network (MNN).",
+        "localizedCaptions": {
+          "es": "Dos formas de extraer características de una señal con una red neuronal integrada de microondas.",
+          "ca": "Dues maneres d’extraure característiques d’un senyal amb una xarxa neuronal integrada de microones.",
+          "en": "Two types of feature extraction with an integrated microwave neural network (MNN)."
+        }
+      },
+      "versionOfRecordDate": "2026-07-29"
     },
     "10.1038/s41565-026-02243-9": {
       "reference": {
@@ -5691,8 +6081,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41565-026-02243-9",
         "number": "1",
-        "caption": "Intrinsic mid-IR PP canalization in hyperbolic MoOCl2."
-      }
+        "caption": "Intrinsic mid-IR PP canalization in hyperbolic MoOCl2.",
+        "localizedCaptions": {
+          "es": "Propagación direccional de polaritones en MoOCl₂ en el infrarrojo medio.",
+          "ca": "Propagació direccional de polaritons en MoOCl₂ en l’infraroig mitjà.",
+          "en": "Intrinsic mid-IR PP canalization in hyperbolic MoOCl2."
+        }
+      },
+      "versionOfRecordDate": "2026-08-03"
     },
     "10.1038/s41467-026-76328-3": {
       "reference": {
@@ -5754,8 +6150,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-76328-3",
         "number": "1",
-        "caption": "Concept and principle of hyper-spectral circuit."
-      }
+        "caption": "Concept and principle of hyper-spectral circuit.",
+        "localizedCaptions": {
+          "es": "Arquitectura y principio de funcionamiento del circuito hiperespectral.",
+          "ca": "Arquitectura i principi de funcionament del circuit hiperespectral.",
+          "en": "Concept and principle of hyper-spectral circuit."
+        }
+      },
+      "versionOfRecordDate": "2026-08-11"
     },
     "10.1038/s41467-026-76261-5": {
       "reference": {
@@ -5817,8 +6219,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-76261-5",
         "number": "1",
-        "caption": "Wide-field-of-view (Wide-FOV), three-dimensional (3D) motion perception system."
-      }
+        "caption": "Wide-field-of-view (Wide-FOV), three-dimensional (3D) motion perception system.",
+        "localizedCaptions": {
+          "es": "Sistema para detectar movimiento en tres dimensiones con un campo de visión amplio.",
+          "ca": "Sistema per a detectar moviment en tres dimensions amb un camp de visió ampli.",
+          "en": "Wide-field-of-view (Wide-FOV), three-dimensional (3D) motion perception system."
+        }
+      },
+      "versionOfRecordDate": "2026-08-05"
     },
     "10.1038/s41467-026-76369-8": {
       "reference": {
@@ -5880,8 +6288,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-76369-8",
         "number": "1",
-        "caption": "Ferroelectricity and ferroelectric nonlinear Hall effect (NLAHE) in trilayer WTe2."
-      }
+        "caption": "Ferroelectricity and ferroelectric nonlinear Hall effect (NLAHE) in trilayer WTe2.",
+        "localizedCaptions": {
+          "es": "Ferroelectricidad y efecto Hall no lineal en una tricapa de WTe₂.",
+          "ca": "Ferroelectricitat i efecte Hall no lineal en una tricapa de WTe₂.",
+          "en": "Ferroelectricity and ferroelectric nonlinear Hall effect (NLAHE) in trilayer WTe2."
+        }
+      },
+      "versionOfRecordDate": "2026-09-04"
     },
     "10.1038/s41467-026-76733-8": {
       "reference": {
@@ -5943,8 +6357,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-76733-8",
         "number": "1",
-        "caption": "Heterogeneously integrated TFLN-based photonic THz transmitter."
-      }
+        "caption": "Heterogeneously integrated TFLN-based photonic THz transmitter.",
+        "localizedCaptions": {
+          "es": "Transmisor fotónico de terahercios integrado sobre una película de niobato de litio.",
+          "ca": "Transmissor fotònic de terahertzs integrat sobre una pel·lícula de niobat de liti.",
+          "en": "Heterogeneously integrated TFLN-based photonic THz transmitter."
+        }
+      },
+      "versionOfRecordDate": "2026-09-15"
     },
     "10.1038/s41377-026-02325-2": {
       "reference": {
@@ -6006,8 +6426,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02325-2",
         "number": "1",
-        "caption": "Schematic diagram illustrating the principle of optical residual convolution."
-      }
+        "caption": "Schematic diagram illustrating the principle of optical residual convolution.",
+        "localizedCaptions": {
+          "es": "Esquema de la operación de convolución residual con luz.",
+          "ca": "Esquema de l’operació de convolució residual amb llum.",
+          "en": "Schematic diagram illustrating the principle of optical residual convolution."
+        }
+      },
+      "versionOfRecordDate": "2026-08-19"
     },
     "10.1038/s41598-026-68365-1": {
       "reference": {
@@ -6132,8 +6558,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02286-6",
         "number": "1",
-        "caption": "Structural properties and the principle of MPA upconversion for layered CMPI, i-BMPB, and F-BPB."
-      }
+        "caption": "Structural properties and the principle of MPA upconversion for layered CMPI, i-BMPB, and F-BPB.",
+        "localizedCaptions": {
+          "es": "Estructura de tres materiales laminares y emisión de luz mediante absorción multifotónica.",
+          "ca": "Estructura de tres materials laminars i emissió de llum mitjançant absorció multifotònica.",
+          "en": "Structural properties and the principle of MPA upconversion for layered CMPI, i-BMPB, and F-BPB."
+        }
+      },
+      "versionOfRecordDate": "2026-08-25"
     },
     "10.1038/s41467-026-77202-y": {
       "reference": {
@@ -6384,8 +6816,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41565-026-02268-0",
         "number": "1",
-        "caption": "Tailoring all components of the second-order polarization."
-      }
+        "caption": "Tailoring all components of the second-order polarization.",
+        "localizedCaptions": {
+          "es": "Control de las componentes de la polarización óptica de segundo orden.",
+          "ca": "Control de les components de la polarització òptica de segon ordre.",
+          "en": "Tailoring all components of the second-order polarization."
+        }
+      },
+      "versionOfRecordDate": "2026-09-02"
     },
     "10.1038/s41467-026-77397-0": {
       "reference": {
@@ -6510,8 +6948,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-77270-0",
         "number": "1",
-        "caption": "Structural characterization of a (12 u.c. BaTiO3 / 5 u.c. SrTiO3)10 superlattice on silicon Si(001)."
-      }
+        "caption": "Structural characterization of a (12 u.c. BaTiO3 / 5 u.c. SrTiO3)10 superlattice on silicon Si(001).",
+        "localizedCaptions": {
+          "es": "Superred de diez periodos alternos de titanato de bario y titanato de estroncio sobre silicio.",
+          "ca": "Superxarxa de deu períodes alterns de titanat de bari i titanat d’estronci sobre silici.",
+          "en": "Structural characterization of a (12 u.c. BaTiO3 / 5 u.c. SrTiO3)10 superlattice on silicon Si(001)."
+        }
+      },
+      "versionOfRecordDate": "2026-09-09"
     },
     "10.1038/s41467-026-77412-4": {
       "reference": {
@@ -6636,8 +7080,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41928-026-01706-0",
         "number": "1",
-        "caption": "Reconfigurable devices based on MoS2 DG-RFET."
-      }
+        "caption": "Reconfigurable devices based on MoS2 DG-RFET.",
+        "localizedCaptions": {
+          "es": "Dispositivos reconfigurables con transistores de MoS₂ de doble puerta.",
+          "ca": "Dispositius reconfigurables amb transistors de MoS₂ de doble porta.",
+          "en": "Reconfigurable devices based on MoS2 DG-RFET."
+        }
+      },
+      "versionOfRecordDate": "2026-09-14"
     },
     "10.1038/s41467-026-77264-y": {
       "reference": {
@@ -6699,8 +7149,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-77264-y",
         "number": "1",
-        "caption": "Composition dependent thermal transport in wurtzite aluminum nitride ferroelectrics."
-      }
+        "caption": "Composition dependent thermal transport in wurtzite aluminum nitride ferroelectrics.",
+        "localizedCaptions": {
+          "es": "Transporte de calor en nitruro de aluminio ferroeléctrico en función de la composición.",
+          "ca": "Transport de calor en nitrur d’alumini ferroelèctric en funció de la composició.",
+          "en": "Composition dependent thermal transport in wurtzite aluminum nitride ferroelectrics."
+        }
+      },
+      "versionOfRecordDate": "2026-10-13"
     },
     "10.1038/s41467-026-77526-9": {
       "reference": {
@@ -6825,8 +7281,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-77913-2",
         "number": "1",
-        "caption": "Growth and transfer of freestanding flux-closure structures."
-      }
+        "caption": "Growth and transfer of freestanding flux-closure structures.",
+        "localizedCaptions": {
+          "es": "Crecimiento y transferencia de películas con dominios ferroeléctricos que forman bucles cerrados.",
+          "ca": "Creixement i transferència de pel·lícules amb dominis ferroelèctrics que formen llaços tancats.",
+          "en": "Growth and transfer of freestanding flux-closure structures."
+        }
+      },
+      "versionOfRecordDate": "2026-09-21"
     },
     "10.1038/s41586-026-11042-0": {
       "reference": {
@@ -6888,8 +7350,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41586-026-11042-0",
         "number": "1",
-        "caption": "Molecular design of high-performance ELPRs enabled by controlled radical polymerization."
-      }
+        "caption": "Molecular design of high-performance ELPRs enabled by controlled radical polymerization.",
+        "localizedCaptions": {
+          "es": "Diseño de polímeros emisores de luz con grupos terminales que se entrecruzan al exponerlos.",
+          "ca": "Disseny de polímers emissors de llum amb grups terminals que s’entrecreuen en exposar-los.",
+          "en": "Molecular design of high-performance ELPRs enabled by controlled radical polymerization."
+        }
+      },
+      "versionOfRecordDate": "2026-09-16"
     },
     "10.1038/s41467-026-76041-1": {
       "reference": {
@@ -6935,8 +7403,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-76041-1",
         "number": "1",
-        "caption": "SNAP SSH2 lattices."
-      }
+        "caption": "SNAP SSH2 lattices.",
+        "localizedCaptions": {
+          "es": "Redes de resonadores ópticos fabricadas sobre la superficie de una fibra.",
+          "ca": "Xarxes de ressonadors òptics fabricades sobre la superfície d’una fibra.",
+          "en": "SNAP SSH2 lattices."
+        }
+      },
+      "versionOfRecordDate": "2026-09-29"
     },
     "10.1038/s41467-026-77789-2": {
       "reference": {
@@ -6998,8 +7472,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-77789-2",
         "number": "1",
-        "caption": "Comparison of the memristor with a geometrically defined 0.34 × 0.34 nm2 crossed-electrode area with other representative memristor structures."
-      }
+        "caption": "Comparison of the memristor with a geometrically defined 0.34 × 0.34 nm2 crossed-electrode area with other representative memristor structures.",
+        "localizedCaptions": {
+          "es": "Comparación del área nominal del cruce de electrodos con la de otros memristores.",
+          "ca": "Comparació de l’àrea nominal de l’encreuament d’elèctrodes amb la d’altres memristors.",
+          "en": "Comparison of the memristor with a geometrically defined 0.34 × 0.34 nm2 crossed-electrode area with other representative memristor structures."
+        }
+      },
+      "versionOfRecordDate": "2026-09-23"
     },
     "10.1038/s41563-026-02745-w": {
       "reference": {
@@ -7058,8 +7538,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41563-026-02745-w",
         "number": "2",
-        "caption": "Design and characterizations of the supramolecular ion-channel polymer."
-      }
+        "caption": "Design and characterizations of the supramolecular ion-channel polymer.",
+        "localizedCaptions": {
+          "es": "Diseño y caracterización del polímero con canales supramoleculares para el transporte de iones.",
+          "ca": "Disseny i caracterització del polímer amb canals supramoleculars per al transport d’ions.",
+          "en": "Design and characterizations of the supramolecular ion-channel polymer."
+        }
+      },
+      "versionOfRecordDate": "2026-09-25"
     },
     "10.1038/s41467-026-78564-z": {
       "reference": {
@@ -7244,8 +7730,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41928-026-01721-1",
         "number": "1",
-        "caption": "Hierarchical multi-object workflow for predictive structure design."
-      }
+        "caption": "Hierarchical multi-object workflow for predictive structure design.",
+        "localizedCaptions": {
+          "es": "Selección de estructuras candidatas mediante la evaluación sucesiva de varias propiedades.",
+          "ca": "Selecció d’estructures candidates mitjançant l’avaluació successiva de diverses propietats.",
+          "en": "Hierarchical multi-object workflow for predictive structure design."
+        }
+      },
+      "versionOfRecordDate": "2026-10-06"
     },
     "10.1038/s41377-026-02436-w": {
       "reference": {
@@ -7307,8 +7799,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02436-w",
         "number": "1",
-        "caption": "PL maps and enhancement of WSe2 coupled to topology-optimized cavities."
-      }
+        "caption": "PL maps and enhancement of WSe2 coupled to topology-optimized cavities.",
+        "localizedCaptions": {
+          "es": "Mapas de fotoluminiscencia del WSe₂ acoplado a cavidades de geometría optimizada.",
+          "ca": "Mapes de fotoluminescència del WSe₂ acoblat a cavitats de geometria optimitzada.",
+          "en": "PL maps and enhancement of WSe2 coupled to topology-optimized cavities."
+        }
+      },
+      "versionOfRecordDate": "2026-10-13"
     },
     "10.1038/s41467-026-78053-3": {
       "reference": {
@@ -7370,8 +7868,14 @@
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-78053-3",
         "number": "1",
-        "caption": "Formation of ultrathin carbon dot/HfO2 hybrid dielectric on 2D materials."
-      }
+        "caption": "Formation of ultrathin carbon dot/HfO2 hybrid dielectric on 2D materials.",
+        "localizedCaptions": {
+          "es": "Formación de una capa dieléctrica híbrida de puntos de carbono y HfO₂ sobre materiales bidimensionales.",
+          "ca": "Formació d’una capa dielèctrica híbrida de punts de carboni i HfO₂ sobre materials bidimensionals.",
+          "en": "Formation of ultrathin carbon dot/HfO2 hybrid dielectric on 2D materials."
+        }
+      },
+      "versionOfRecordDate": "2026-10-07"
     },
     "10.1038/s41467-026-78336-9": {
       "reference": {
@@ -7494,8 +7998,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13683975/",
         "number": "1",
-        "caption": "Conceptual framework of MVBT‐based neuromorphic visual system"
-      }
+        "caption": "Conceptual framework of MVBT‐based neuromorphic visual system",
+        "localizedCaptions": {
+          "es": "Esquema del sistema de visión neuromórfica basado en transistores.",
+          "ca": "Esquema del sistema de visió neuromòrfica basat en transistors.",
+          "en": "Conceptual framework of MVBT‐based neuromorphic visual system"
+        }
+      },
+      "versionOfRecordDate": "2026-10-20"
     },
     "10.1038/s41467-026-78354-7": {
       "reference": {
@@ -7557,8 +8067,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-78354-7",
         "number": "1",
-        "caption": "Time-defined mechanically induced nucleation enables deterministic control over crystallization and thin-film morphology."
-      }
+        "caption": "Time-defined mechanically induced nucleation enables deterministic control over crystallization and thin-film morphology.",
+        "localizedCaptions": {
+          "es": "Control de la nucleación y de la morfología de una película mediante un estímulo mecánico aplicado durante el crecimiento.",
+          "ca": "Control de la nucleació i de la morfologia d’una pel·lícula mitjançant un estímul mecànic aplicat durant el creixement.",
+          "en": "Time-defined mechanically induced nucleation enables deterministic control over crystallization and thin-film morphology."
+        }
+      },
+      "versionOfRecordDate": "2026-10-14"
     },
     "10.1038/s41467-026-78128-1": {
       "reference": {
@@ -7620,8 +8136,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-78128-1",
         "number": "1",
-        "caption": "Concept of the reduced-DSP slow-light transceiver."
-      }
+        "caption": "Concept of the reduced-DSP slow-light transceiver.",
+        "localizedCaptions": {
+          "es": "Transceptor de luz lenta diseñado para reducir el procesamiento digital de la señal.",
+          "ca": "Transceptor de llum lenta dissenyat per a reduir el processament digital del senyal.",
+          "en": "Concept of the reduced-DSP slow-light transceiver."
+        }
+      },
+      "versionOfRecordDate": "2026-10-22"
     },
     "10.1002/advs.78211": {
       "reference": {
@@ -7673,8 +8195,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13697020/",
         "number": "3",
-        "caption": "Electroforming process (a) and I–V curves (b) for ITO/PEDOT:PSS/ FA0.9Cs0.1PbI3/Graphite device structure"
-      }
+        "caption": "Electroforming process (a) and I–V curves (b) for ITO/PEDOT:PSS/ FA0.9Cs0.1PbI3/Graphite device structure",
+        "localizedCaptions": {
+          "es": "Formación inicial del dispositivo de perovskita y curvas de corriente frente a tensión.",
+          "ca": "Formació inicial del dispositiu de perovskita i corbes de corrent en funció de la tensió.",
+          "en": "Electroforming process (a) and I–V curves (b) for ITO/PEDOT:PSS/ FA0.9Cs0.1PbI3/Graphite device structure"
+        }
+      },
+      "versionOfRecordDate": "2026-10-26"
     },
     "10.1038/s41566-026-02035-6": {
       "reference": {
@@ -7733,8 +8261,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41566-026-02035-6",
         "number": "1",
-        "caption": "An integrated photonic circuit to process spatial partial coherence."
-      }
+        "caption": "An integrated photonic circuit to process spatial partial coherence.",
+        "localizedCaptions": {
+          "es": "Circuito fotónico integrado para procesar luz con coherencia espacial parcial.",
+          "ca": "Circuit fotònic integrat per a processar llum amb coherència espacial parcial.",
+          "en": "An integrated photonic circuit to process spatial partial coherence."
+        }
+      },
+      "versionOfRecordDate": "2026-10-30"
     },
     "10.1038/s41586-026-11214-y": {
       "reference": {
@@ -7796,8 +8330,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41586-026-11214-y",
         "number": "1",
-        "caption": "LZM transitions in 2D momentum space."
-      }
+        "caption": "LZM transitions in 2D momentum space.",
+        "localizedCaptions": {
+          "es": "Transiciones de Landau–Zener–Stückelberg–Majorana en el espacio bidimensional de momentos.",
+          "ca": "Transicions de Landau–Zener–Stückelberg–Majorana en l’espai bidimensional de moments.",
+          "en": "LZM transitions in 2D momentum space."
+        }
+      },
+      "versionOfRecordDate": "2026-10-28"
     },
     "10.1038/s41377-026-02420-4": {
       "reference": {
@@ -7859,8 +8399,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02420-4",
         "number": "1",
-        "caption": "Reconfigurable photoelectric dual-mode Fe-vOFET for neuromorphic computing."
-      }
+        "caption": "Reconfigurable photoelectric dual-mode Fe-vOFET for neuromorphic computing.",
+        "localizedCaptions": {
+          "es": "Transistor orgánico ferroeléctrico con dos modos de respuesta para visión neuromórfica.",
+          "ca": "Transistor orgànic ferroelèctric amb dos modes de resposta per a visió neuromòrfica.",
+          "en": "Reconfigurable photoelectric dual-mode Fe-vOFET for neuromorphic computing."
+        }
+      },
+      "versionOfRecordDate": "2026-11-09"
     },
     "10.1038/s41565-026-02314-x": {
       "reference": {
@@ -7919,8 +8465,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41565-026-02314-x",
         "number": "1",
-        "caption": "Electronic properties of MoS2 on ultrathin hBN decoupling layers."
-      }
+        "caption": "Electronic properties of MoS2 on ultrathin hBN decoupling layers.",
+        "localizedCaptions": {
+          "es": "Propiedades electrónicas del MoS₂ sobre capas ultrafinas de nitruro de boro hexagonal.",
+          "ca": "Propietats electròniques del MoS₂ sobre capes ultrafines de nitrur de bor hexagonal.",
+          "en": "Electronic properties of MoS2 on ultrathin hBN decoupling layers."
+        }
+      },
+      "versionOfRecordDate": "2026-11-05"
     },
     "10.1038/s41586-026-11272-2": {
       "reference": {
@@ -7987,7 +8539,8 @@
           "es": "Preparación y caracterización de membranas monocristalinas autoportantes de TiO₂ en fase anatasa, fabricadas a escala de oblea.",
           "ca": "Preparació i caracterització de membranes monocristal·lines autoportants de TiO₂ en fase anatasa, fabricades a escala d’oblia."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-11-11"
     },
     "10.1038/s41467-026-68336-0": {
       "reference": {
@@ -8065,8 +8618,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41467-026-68336-0",
         "number": "1",
-        "caption": "Experimental setup for characterizing the quantum dot emission."
-      }
+        "caption": "Experimental setup for characterizing the quantum dot emission.",
+        "localizedCaptions": {
+          "es": "Montaje óptico para medir la emisión del punto cuántico.",
+          "ca": "Muntatge òptic per a mesurar l’emissió del punt quàntic.",
+          "en": "Experimental setup for characterizing the quantum dot emission."
+        }
+      },
+      "versionOfRecordDate": "2026-01-14"
     },
     "10.1038/s41467-026-76846-0": {
       "reference": {
@@ -8482,8 +9041,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41566-026-02036-5",
         "number": "1",
-        "caption": "In situ characterization of thermally evaporated films and their performance in PeLEDs."
-      }
+        "caption": "In situ characterization of thermally evaporated films and their performance in PeLEDs.",
+        "localizedCaptions": {
+          "es": "Caracterización durante la evaporación térmica y comportamiento de las películas en diodos emisores de luz.",
+          "ca": "Caracterització durant l’evaporació tèrmica i comportament de les pel·lícules en díodes emissors de llum.",
+          "en": "In situ characterization of thermally evaporated films and their performance in PeLEDs."
+        }
+      },
+      "versionOfRecordDate": "2026-10-23"
     },
     "10.1038/s41377-026-02533-w": {
       "reference": {
@@ -8525,8 +9090,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://www.nature.com/articles/s41377-026-02533-w",
         "number": "1",
-        "caption": "Concept of freespace twistronics and supertopologies."
-      }
+        "caption": "Concept of freespace twistronics and supertopologies.",
+        "localizedCaptions": {
+          "es": "Generación de estructuras de polarización mediante haces de luz en el espacio libre.",
+          "ca": "Generació d’estructures de polarització mitjançant feixos de llum en l’espai lliure.",
+          "en": "Concept of freespace twistronics and supertopologies."
+        }
+      },
+      "versionOfRecordDate": "2026-11-06"
     },
     "10.1038/s41467-026-78668-6": {
       "reference": {
@@ -8723,8 +9294,14 @@
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "licenseSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13721964/",
         "number": "1",
-        "caption": "(A) Relative sizes of A-site cations (top) and the corresponding local environments in optimized FASnI3 structures with SCN incorporation (bottom) (without MACl)"
-      }
+        "caption": "(A) Relative sizes of A-site cations (top) and the corresponding local environments in optimized FASnI3 structures with SCN incorporation (bottom) (without MACl)",
+        "localizedCaptions": {
+          "es": "Tamaño relativo de los cationes y entorno atómico del estaño en la perovskita con tiocianato.",
+          "ca": "Grandària relativa dels cations i entorn atòmic de l’estany en la perovskita amb tiocianat.",
+          "en": "(A) Relative sizes of A-site cations (top) and the corresponding local environments in optimized FASnI3 structures with SCN incorporation (bottom) (without MACl)"
+        }
+      },
+      "versionOfRecordDate": "2026-10-30"
     },
     "10.1002/nap2.70338": {
       "reference": {
@@ -8807,7 +9384,8 @@
           "es": "Dispersión de los modos acústicos y ajuste de fase en distintas geometrías de dispersión.",
           "ca": "Dispersió dels modes acústics i ajust de fase en diferents geometries de dispersió."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-11-11"
     },
     "10.1063/5.0358648": {
       "reference": {
@@ -8870,7 +9448,8 @@
           "es": "Estructura del dispositivo y principio de lectura selectiva de la información en luz visible e infrarroja.",
           "ca": "Estructura del dispositiu i principi de lectura selectiva de la informació en llum visible i infraroja."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-11-11"
     },
     "10.1038/s41467-025-68262-7": {
       "reference": {
@@ -8962,7 +9541,8 @@
           "es": "Fabricación y caracterización de una membrana de ferrita de bismuto con un nanoporo.",
           "ca": "Fabricació i caracterització d’una membrana de ferrita de bismut amb un nanoporus."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-01-08"
     },
     "10.1038/s41467-025-67980-2": {
       "reference": {
@@ -9046,7 +9626,8 @@
           "es": "Centros de espín en perovskitas dobles y sus espectros de resonancia.",
           "ca": "Centres d’espín en perovskites dobles i els espectres de ressonància."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-01-12"
     },
     "10.1038/s41467-025-68219-w": {
       "reference": {
@@ -9142,7 +9723,8 @@
           "es": "Rendimiento de las células solares y su dependencia de la temperatura.",
           "ca": "Rendiment de les cèl·lules solars i dependència de la temperatura."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-01-15"
     },
     "10.1038/s41377-026-02187-8": {
       "reference": {
@@ -9219,7 +9801,8 @@
           "es": "Compresión de pulsos mediante solitones de dos colores en una guía.",
           "ca": "Compressió de polsos mitjançant solitons de dos colors en una guia."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-02-06"
     },
     "10.1038/s41467-026-68402-7": {
       "reference": {
@@ -9307,7 +9890,8 @@
           "es": "Funcionamiento de la memoria con dos puertas flotantes programables.",
           "ca": "Funcionament de la memòria amb dos portes flotants programables."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-02-16"
     },
     "10.1038/s41467-026-68438-9": {
       "reference": {
@@ -9383,7 +9967,8 @@
           "es": "Movimiento de portadores e interacción con la interfaz ferromagnética.",
           "ca": "Moviment de portadors i interacció amb la interfície ferromagnètica."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-02-17"
     },
     "10.1038/s41467-026-68823-4": {
       "reference": {
@@ -9435,7 +10020,8 @@
           "es": "Generación de segundo armónico en el hueco de un microscopio túnel.",
           "ca": "Generació de segon harmònic en l’espai d’un microscopi túnel."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-02-25"
     },
     "10.1038/s41528-026-00536-6": {
       "reference": {
@@ -9491,7 +10077,8 @@
           "es": "Ejemplos de aplicaciones que requieren grandes superficies de sensores o actuadores.",
           "ca": "Exemples d’aplicacions que requerixen grans superfícies de sensors o actuadors."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-02-27"
     },
     "10.1038/s41377-026-02214-8": {
       "reference": {
@@ -9540,7 +10127,8 @@
           "es": "Efecto de la molécula de pasivación sobre los nanocristales de perovskita.",
           "ca": "Efecte de la molècula de passivació sobre els nanocristalls de perovskita."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-02-28"
     },
     "10.1038/s41565-026-02133-0": {
       "reference": {
@@ -9628,7 +10216,8 @@
           "es": "Procesamiento de datos y cálculo en una misma oblea de niquelato.",
           "ca": "Processament de dades i càlcul en una mateixa oblia de niquelat."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-03-09"
     },
     "10.1038/s41467-026-69066-z": {
       "reference": {
@@ -9720,7 +10309,8 @@
           "es": "Fronteras de grano y estados electrónicos en cristales convencionales y moleculares.",
           "ca": "Fronteres de gra i estats electrònics en cristalls convencionals i moleculars."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-03-06"
     },
     "10.1038/s41467-026-69084-x": {
       "reference": {
@@ -9788,7 +10378,8 @@
           "es": "Arquitectura del procesador electroóptico con memoria analógica dinámica.",
           "ca": "Arquitectura del processador electroòptic amb memòria analògica dinàmica."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-03-16"
     },
     "10.1038/s41586-026-10238-8": {
       "reference": {
@@ -9856,7 +10447,8 @@
           "es": "Microscopía electrónica de un diodo azul de perovskita bajo tensión.",
           "ca": "Microscòpia electrònica d’un díode blau de perovskita sota tensió."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-03-11"
     },
     "10.1038/s41467-026-69880-5": {
       "reference": {
@@ -9936,7 +10528,8 @@
           "es": "Modulador Mach–Zehnder de niobato de litio sobre zafiro.",
           "ca": "Modulador Mach–Zehnder de niobat de liti sobre safir."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-03-31"
     },
     "10.1038/s41467-026-69958-0": {
       "reference": {
@@ -10008,7 +10601,8 @@
           "es": "Memoria asociativa de memristores con aprendizaje ajustado al hardware.",
           "ca": "Memòria associativa de memristors amb aprenentatge ajustat al maquinari."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-03-31"
     },
     "10.1038/s41467-026-69391-3": {
       "reference": {
@@ -10108,7 +10702,8 @@
           "es": "Respuesta ferroeléctrica de las películas de la heterounión.",
           "ca": "Resposta ferroelèctrica de les pel·lícules de l’heterounió."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-03-27"
     },
     "10.1038/s41467-026-69994-w": {
       "reference": {
@@ -10196,7 +10791,8 @@
           "es": "Diseño y medidas de los transistores de efecto de campo de ReSe₂.",
           "ca": "Disseny i mesures dels transistors d’efecte de camp de ReSe₂."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-04-07"
     },
     "10.1038/s41528-026-00552-6": {
       "reference": {
@@ -10268,7 +10864,8 @@
           "es": "Esquema de la estructura de islas y puentes para una película flexible.",
           "ca": "Esquema de l’estructura d’illes i ponts per a una pel·lícula flexible."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-04-09"
     },
     "10.1038/s41566-026-01889-0": {
       "reference": {
@@ -10336,7 +10933,8 @@
           "es": "Fuente continua y sintonizable de terahercios basada en una metasuperficie.",
           "ca": "Font contínua i sintonitzable de terahertzs basada en una metasuperfície."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-04-16"
     },
     "10.1038/s41565-026-02139-8": {
       "reference": {
@@ -10444,7 +11042,8 @@
           "es": "Paredes entre dominios con carga y sin ella.",
           "ca": "Parets entre dominis amb càrrega i sense càrrega."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-04-15"
     },
     "10.1038/s41467-026-70389-0": {
       "reference": {
@@ -10540,7 +11139,8 @@
           "es": "Chip fotónico para analizar en tiempo real qué frecuencias están ocupadas.",
           "ca": "Xip fotònic per a analitzar en temps real quines freqüències estan ocupades."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-04-22"
     },
     "10.1038/s41467-026-70590-1": {
       "reference": {
@@ -10648,7 +11248,8 @@
           "es": "Medidas de transporte eléctrico en la heteroestructura magnética.",
           "ca": "Mesures de transport elèctric en l’heteroestructura magnètica."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-04-28"
     },
     "10.1038/s41467-026-70565-2": {
       "reference": {
@@ -10712,7 +11313,8 @@
           "es": "Anisotropía del MoOCl₂ e imágenes ultrarrápidas de los polaritones.",
           "ca": "Anisotropia del MoOCl₂ i imatges ultraràpides dels polaritons."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-04-29"
     },
     "10.1038/s41467-026-72143-y": {
       "reference": {
@@ -10724,72 +11326,72 @@
         ],
         "author": [
           {
-            "given": "Wang,",
-            "family": "Xinyun"
+            "given": "Xinyun",
+            "family": "Wang"
           },
           {
-            "given": "Grzeszczyk,",
-            "family": "Magdalena"
+            "given": "Magdalena",
+            "family": "Grzeszczyk"
           },
           {
-            "given": "Trushin,",
-            "family": "Maxim"
+            "given": "Maxim",
+            "family": "Trushin"
           },
           {
-            "given": "Verzhbitskiy,",
-            "family": "Ivan"
+            "given": "Ivan",
+            "family": "Verzhbitskiy"
           },
           {
-            "given": "Litvinov,",
-            "family": "Dmitrii"
+            "given": "Dmitrii",
+            "family": "Litvinov"
           },
           {
-            "given": "Ho, Yi",
-            "family": "Wei"
+            "given": "Yi Wei",
+            "family": "Ho"
           },
           {
-            "given": "Chen,",
-            "family": "Yuan"
+            "given": "Yuan",
+            "family": "Chen"
           },
           {
-            "given": "Wu,",
-            "family": "Zhenyue"
+            "given": "Zhenyue",
+            "family": "Wu"
           },
           {
-            "given": "Telychko,",
-            "family": "Mykola"
+            "given": "Mykola",
+            "family": "Telychko"
           },
           {
-            "given": "Zhang,",
-            "family": "Chuanqi"
+            "given": "Chuanqi",
+            "family": "Zhang"
           },
           {
-            "given": "Granados del Aguila,",
-            "family": "Andres"
+            "given": "Andres",
+            "family": "Granados del Aguila"
           },
           {
-            "given": "Goh, Kuan Eng",
-            "family": "Johnson"
+            "given": "Kuan Eng Johnson",
+            "family": "Goh"
           },
           {
-            "given": "Li,",
-            "family": "Xinwei"
+            "given": "Xinwei",
+            "family": "Li"
           },
           {
-            "given": "Eda,",
-            "family": "Goki"
+            "given": "Goki",
+            "family": "Eda"
           },
           {
-            "given": "Adam,",
-            "family": "Shaffique"
+            "given": "Shaffique",
+            "family": "Adam"
           },
           {
-            "given": "Koperski,",
-            "family": "Maciej"
+            "given": "Maciej",
+            "family": "Koperski"
           },
           {
-            "given": "Loh, Kian",
-            "family": "Ping"
+            "given": "Kian Ping",
+            "family": "Loh"
           }
         ],
         "published-online": {
@@ -10816,7 +11418,8 @@
           "es": "Cambio de simetría en el WSe₂ al acoplarlo a una capa ferroeléctrica.",
           "ca": "Canvi de simetria en el WSe₂ en acoblar-lo a una capa ferroelèctrica."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-05-09"
     },
     "10.1038/s41467-026-70802-8": {
       "reference": {
@@ -10908,7 +11511,8 @@
           "es": "Estructura y respuesta de las neuronas y sinapsis artificiales.",
           "ca": "Estructura i resposta de les neurones i sinapsis artificials."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-05-14"
     },
     "10.1038/s41467-026-71000-2": {
       "reference": {
@@ -10968,7 +11572,8 @@
           "es": "Comparación del interior y de los bordes de las perovskitas en capas.",
           "ca": "Comparació de l’interior i de les vores de les perovskites en capes."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-05-13"
     },
     "10.1038/s41377-026-02343-0": {
       "reference": {
@@ -10980,64 +11585,64 @@
         ],
         "author": [
           {
-            "given": "Gaur,",
-            "family": "Kartik"
+            "given": "Kartik",
+            "family": "Gaur"
           },
           {
-            "given": "Barua,",
-            "family": "Avijit"
+            "given": "Avijit",
+            "family": "Barua"
           },
           {
-            "given": "Tripathi,",
-            "family": "Sarthak"
+            "given": "Sarthak",
+            "family": "Tripathi"
           },
           {
-            "given": "Roche, Léo",
-            "family": "J."
+            "given": "Léo J.",
+            "family": "Roche"
           },
           {
-            "given": "Wilksen,",
-            "family": "Hannah"
+            "given": "Hannah",
+            "family": "Wilksen"
           },
           {
-            "given": "Steinhoff,",
-            "family": "Alexander"
+            "given": "Alexander",
+            "family": "Steinhoff"
           },
           {
-            "given": "Baraz,",
-            "family": "Sam"
+            "given": "Sam",
+            "family": "Baraz"
           },
           {
-            "given": "Nitin,",
-            "family": "Neha"
+            "given": "Neha",
+            "family": "Nitin"
           },
           {
-            "given": "Palekar, Chirag",
-            "family": "C."
+            "given": "Chirag C.",
+            "family": "Palekar"
           },
           {
-            "given": "Koulas-Simos,",
-            "family": "Aris"
+            "given": "Aris",
+            "family": "Koulas-Simos"
           },
           {
-            "given": "Limame,",
-            "family": "Imad"
+            "given": "Imad",
+            "family": "Limame"
           },
           {
-            "given": "Mudi,",
-            "family": "Priyabrata"
+            "given": "Priyabrata",
+            "family": "Mudi"
           },
           {
-            "given": "Rodt,",
-            "family": "Sven"
+            "given": "Sven",
+            "family": "Rodt"
           },
           {
-            "given": "Gies,",
-            "family": "Christopher"
+            "given": "Christopher",
+            "family": "Gies"
           },
           {
-            "given": "Reitzenstein,",
-            "family": "Stephan"
+            "given": "Stephan",
+            "family": "Reitzenstein"
           }
         ],
         "published-online": {
@@ -11064,7 +11669,8 @@
           "es": "Etapas de fabricación del punto cuántico y su resonador circular.",
           "ca": "Etapes de fabricació del punt quàntic i del ressonador circular."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-06-02"
     },
     "10.1038/s41467-026-71292-4": {
       "reference": {
@@ -11132,7 +11738,8 @@
           "es": "Caracterización de los cristales de perovskita crecidos con distintas caras.",
           "ca": "Caracterització dels cristalls de perovskita crescuts amb cares diferents."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-05-27"
     },
     "10.1038/s41467-026-71589-4": {
       "reference": {
@@ -11204,7 +11811,8 @@
           "es": "Estructura del transistor extensible y mecanismo de su memoria óptica.",
           "ca": "Estructura del transistor extensible i mecanisme de la memòria òptica."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-06-08"
     },
     "10.1038/s41528-026-00578-w": {
       "reference": {
@@ -11256,7 +11864,8 @@
           "es": "Propiedades ópticas y estructurales del cristal líquido del dispositivo.",
           "ca": "Propietats òptiques i estructurals del cristall líquid del dispositiu."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-06-15"
     },
     "10.1038/s41467-026-72021-7": {
       "reference": {
@@ -11324,7 +11933,8 @@
           "es": "Estructura y magnetización de las películas de CrSb y su capa vecina.",
           "ca": "Estructura i magnetització de les pel·lícules de CrSb i la capa veïna."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-06-17"
     },
     "10.1038/s41377-026-02363-w": {
       "reference": {
@@ -11336,52 +11946,52 @@
         ],
         "author": [
           {
-            "given": "Chen,",
-            "family": "Wen"
+            "given": "Wen",
+            "family": "Chen"
           },
           {
-            "given": "Zhu,",
-            "family": "Dong"
+            "given": "Dong",
+            "family": "Zhu"
           },
           {
-            "given": "Chen,",
-            "family": "Su-Nan"
+            "given": "Su-Nan",
+            "family": "Chen"
           },
           {
-            "given": "Zhang,",
-            "family": "Yi-Heng"
+            "given": "Yi-Heng",
+            "family": "Zhang"
           },
           {
-            "given": "Liu,",
-            "family": "Si-Jia"
+            "given": "Si-Jia",
+            "family": "Liu"
           },
           {
-            "given": "Sun,",
-            "family": "Rui"
+            "given": "Rui",
+            "family": "Sun"
           },
           {
-            "given": "Wang,",
-            "family": "Yi-Ming"
+            "given": "Yi-Ming",
+            "family": "Wang"
           },
           {
-            "given": "Zhu,",
-            "family": "Lin"
+            "given": "Lin",
+            "family": "Zhu"
           },
           {
-            "given": "Ding,",
-            "family": "Shi-Hui"
+            "given": "Shi-Hui",
+            "family": "Ding"
           },
           {
-            "given": "Ge,",
-            "family": "Shi-Jun"
+            "given": "Shi-Jun",
+            "family": "Ge"
           },
           {
-            "given": "Lu,",
-            "family": "Yan-Qing"
+            "given": "Yan-Qing",
+            "family": "Lu"
           },
           {
-            "given": "Chen,",
-            "family": "Peng"
+            "given": "Peng",
+            "family": "Chen"
           }
         ],
         "published-online": {
@@ -11408,7 +12018,8 @@
           "es": "Nanoestructura ferroeléctrica reconfigurable para resaltar bordes.",
           "ca": "Nanoestructura ferroelèctrica reconfigurable per a ressaltar vores."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-06-26"
     },
     "10.1038/s41467-026-72456-y": {
       "reference": {
@@ -11420,60 +12031,60 @@
         ],
         "author": [
           {
-            "given": "Zhang,",
-            "family": "Haiyi"
+            "given": "Haiyi",
+            "family": "Zhang"
           },
           {
-            "given": "Bu,",
-            "family": "Haifeng"
+            "given": "Haifeng",
+            "family": "Bu"
           },
           {
-            "given": "Zhang,",
-            "family": "Dehe"
+            "given": "Dehe",
+            "family": "Zhang"
           },
           {
-            "given": "Tu,",
-            "family": "Yuchen"
+            "given": "Yuchen",
+            "family": "Tu"
           },
           {
-            "given": "Li,",
-            "family": "Yaoxin"
+            "given": "Yaoxin",
+            "family": "Li"
           },
           {
-            "given": "Shen,",
-            "family": "Zhijian"
+            "given": "Zhijian",
+            "family": "Shen"
           },
           {
-            "given": "Pan,",
-            "family": "Weijin"
+            "given": "Weijin",
+            "family": "Pan"
           },
           {
-            "given": "Guan,",
-            "family": "Zeyu"
+            "given": "Zeyu",
+            "family": "Guan"
           },
           {
-            "given": "Zhang,",
-            "family": "Qinghua"
+            "given": "Qinghua",
+            "family": "Zhang"
           },
           {
-            "given": "Chen,",
-            "family": "Kai"
+            "given": "Kai",
+            "family": "Chen"
           },
           {
-            "given": "Yang,",
-            "family": "Yurong"
+            "given": "Yurong",
+            "family": "Yang"
           },
           {
-            "given": "Shen,",
-            "family": "Shengchun"
+            "given": "Shengchun",
+            "family": "Shen"
           },
           {
-            "given": "Yin,",
-            "family": "Yuewei"
+            "given": "Yuewei",
+            "family": "Yin"
           },
           {
-            "given": "Li,",
-            "family": "Xiaoguang"
+            "given": "Xiaoguang",
+            "family": "Li"
           }
         ],
         "published-online": {
@@ -11500,7 +12111,8 @@
           "es": "Caracterización estructural de las películas de óxido de hafnio con cromo.",
           "ca": "Caracterització estructural de les pel·lícules d’òxid d’hafni amb crom."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-07-02"
     },
     "10.1038/s41467-026-74769-4": {
       "reference": {
@@ -11512,44 +12124,44 @@
         ],
         "author": [
           {
-            "given": "Zhai,",
-            "family": "Yongbiao"
+            "given": "Yongbiao",
+            "family": "Zhai"
           },
           {
-            "given": "Chen,",
-            "family": "Peijie"
+            "given": "Peijie",
+            "family": "Chen"
           },
           {
-            "given": "Luo,",
-            "family": "Ying"
+            "given": "Ying",
+            "family": "Luo"
           },
           {
-            "given": "Lv,",
-            "family": "Ziyu"
+            "given": "Ziyu",
+            "family": "Lv"
           },
           {
-            "given": "Ding,",
-            "family": "Guanglong"
+            "given": "Guanglong",
+            "family": "Ding"
           },
           {
-            "given": "Yang,",
-            "family": "Junjie"
-          },
-          {
-            "given": "Zheng,",
-            "family": "Minglin"
-          },
-          {
-            "given": "Zhou,",
-            "family": "Ye"
-          },
-          {
-            "given": "Chai,",
+            "given": "Junjie",
             "family": "Yang"
           },
           {
-            "given": "Han,",
-            "family": "Su-Ting"
+            "given": "Minglin",
+            "family": "Zheng"
+          },
+          {
+            "given": "Ye",
+            "family": "Zhou"
+          },
+          {
+            "given": "Yang",
+            "family": "Chai"
+          },
+          {
+            "given": "Su-Ting",
+            "family": "Han"
           }
         ],
         "published-online": {
@@ -11576,7 +12188,8 @@
           "es": "Procesamiento visual inspirado en la retina de los anfibios y su implementación con transistores.",
           "ca": "Processament visual inspirat en la retina dels amfibis i implementació amb transistors."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-08-19"
     },
     "10.1038/s41467-026-76364-z": {
       "reference": {
@@ -11588,40 +12201,40 @@
         ],
         "author": [
           {
-            "given": "Zou,",
-            "family": "Yixuan"
+            "given": "Yixuan",
+            "family": "Zou"
           },
           {
-            "given": "Yan,",
-            "family": "Jiawen"
+            "given": "Jiawen",
+            "family": "Yan"
           },
           {
-            "given": "Zhao,",
-            "family": "Haojie"
+            "given": "Haojie",
+            "family": "Zhao"
           },
           {
-            "given": "Hu,",
-            "family": "Guangwei"
+            "given": "Guangwei",
+            "family": "Hu"
           },
           {
-            "given": "Hu,",
-            "family": "Zhongxu"
+            "given": "Zhongxu",
+            "family": "Hu"
           },
           {
-            "given": "Lu,",
-            "family": "Wenlong"
+            "given": "Wenlong",
+            "family": "Lu"
           },
           {
-            "given": "Tao,",
-            "family": "Guangming"
+            "given": "Guangming",
+            "family": "Tao"
           },
           {
-            "given": "You,",
-            "family": "Zheng"
+            "given": "Zheng",
+            "family": "You"
           },
           {
-            "given": "Li,",
-            "family": "Peng"
+            "given": "Peng",
+            "family": "Li"
           }
         ],
         "published-online": {
@@ -11648,7 +12261,8 @@
           "es": "Dispositivo optoelectrónico de MoS₂ con memoria para temperaturas extremas.",
           "ca": "Dispositiu optoelectrònic de MoS₂ amb memòria per a temperatures extremes."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-09-03"
     },
     "10.1038/s41467-026-75993-8": {
       "reference": {
@@ -11660,76 +12274,76 @@
         ],
         "author": [
           {
-            "given": "Zhou,",
-            "family": "Wenfeng"
+            "given": "Wenfeng",
+            "family": "Zhou"
           },
           {
-            "given": "Wang,",
-            "family": "Xin"
+            "given": "Xin",
+            "family": "Wang"
           },
           {
-            "given": "Zhang,",
-            "family": "Xun"
+            "given": "Xun",
+            "family": "Zhang"
           },
           {
-            "given": "Chen,",
-            "family": "Yuqi"
-          },
-          {
-            "given": "Sun,",
-            "family": "Min"
-          },
-          {
-            "given": "Jiang,",
-            "family": "Yongheng"
-          },
-          {
-            "given": "Zhang,",
-            "family": "Pu"
-          },
-          {
-            "given": "Li,",
-            "family": "Jingchi"
-          },
-          {
-            "given": "Ni,",
-            "family": "Xiong"
-          },
-          {
-            "given": "Zhu,",
-            "family": "Yahui"
-          },
-          {
-            "given": "Han,",
-            "family": "Qingqing"
-          },
-          {
-            "given": "Wang,",
-            "family": "Jungan"
-          },
-          {
-            "given": "Yang,",
+            "given": "Yuqi",
             "family": "Chen"
           },
           {
-            "given": "Li,",
-            "family": "Bin"
+            "given": "Min",
+            "family": "Sun"
           },
           {
-            "given": "Qiu,",
-            "family": "Feng"
+            "given": "Yongheng",
+            "family": "Jiang"
           },
           {
-            "given": "Tian,",
-            "family": "Yonghui"
+            "given": "Pu",
+            "family": "Zhang"
           },
           {
-            "given": "Su,",
-            "family": "Yikai"
+            "given": "Jingchi",
+            "family": "Li"
           },
           {
-            "given": "Zhang,",
-            "family": "Yong"
+            "given": "Xiong",
+            "family": "Ni"
+          },
+          {
+            "given": "Yahui",
+            "family": "Zhu"
+          },
+          {
+            "given": "Qingqing",
+            "family": "Han"
+          },
+          {
+            "given": "Jungan",
+            "family": "Wang"
+          },
+          {
+            "given": "Chen",
+            "family": "Yang"
+          },
+          {
+            "given": "Bin",
+            "family": "Li"
+          },
+          {
+            "given": "Feng",
+            "family": "Qiu"
+          },
+          {
+            "given": "Yonghui",
+            "family": "Tian"
+          },
+          {
+            "given": "Yikai",
+            "family": "Su"
+          },
+          {
+            "given": "Yong",
+            "family": "Zhang"
           }
         ],
         "published-online": {
@@ -11756,7 +12370,8 @@
           "es": "Caracterización del chip fotónico con moduladores ferroeléctricos.",
           "ca": "Caracterització del xip fotònic amb moduladors ferroelèctrics."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-09-17"
     },
     "10.1038/s41467-026-77282-w": {
       "reference": {
@@ -11768,52 +12383,52 @@
         ],
         "author": [
           {
-            "given": "Michl, Johannes",
-            "family": "M."
+            "given": "Johannes M.",
+            "family": "Michl"
           },
           {
-            "given": "Hekmati,",
-            "family": "Reza"
+            "given": "Reza",
+            "family": "Hekmati"
           },
           {
-            "given": "Helal,",
-            "family": "Mohamed"
+            "given": "Mohamed",
+            "family": "Helal"
           },
           {
-            "given": "Peniakov,",
-            "family": "Giora"
+            "given": "Giora",
+            "family": "Peniakov"
           },
           {
-            "given": "Reum,",
-            "family": "Yorick"
+            "given": "Yorick",
+            "family": "Reum"
           },
           {
-            "given": "Kaupp,",
-            "family": "Jochen"
+            "given": "Jochen",
+            "family": "Kaupp"
           },
           {
-            "given": "Buchinger,",
-            "family": "Quirin"
+            "given": "Quirin",
+            "family": "Buchinger"
           },
           {
-            "given": "Kim,",
-            "family": "Jaewon"
+            "given": "Jaewon",
+            "family": "Kim"
           },
           {
-            "given": "Pfenning, Andreas",
-            "family": "T."
+            "given": "Andreas T.",
+            "family": "Pfenning"
           },
           {
-            "given": "Cho,",
-            "family": "Yong-Hoon"
+            "given": "Yong-Hoon",
+            "family": "Cho"
           },
           {
-            "given": "Höfling,",
-            "family": "Sven"
+            "given": "Sven",
+            "family": "Höfling"
           },
           {
-            "given": "Huber-Loyola,",
-            "family": "Tobias"
+            "given": "Tobias",
+            "family": "Huber-Loyola"
           }
         ],
         "published-online": {
@@ -11840,7 +12455,8 @@
           "es": "Medidas de polarización y desdoblamiento de niveles bajo campo magnético.",
           "ca": "Mesures de polarització i desdoblament de nivells sota camp magnètic."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-10-05"
     },
     "10.1038/s41467-026-77178-9": {
       "reference": {
@@ -11852,40 +12468,40 @@
         ],
         "author": [
           {
-            "given": "Li,",
-            "family": "Wei-Qing"
+            "given": "Wei-Qing",
+            "family": "Li"
           },
           {
-            "given": "Hung,",
-            "family": "Sheng-Hsiung"
+            "given": "Sheng-Hsiung",
+            "family": "Hung"
           },
           {
-            "given": "Li,",
-            "family": "Jia-Xin"
+            "given": "Jia-Xin",
+            "family": "Li"
           },
           {
-            "given": "Lu,",
-            "family": "Chung-Chun"
+            "given": "Chung-Chun",
+            "family": "Lu"
           },
           {
-            "given": "Chen,",
-            "family": "Po-Liang"
+            "given": "Po-Liang",
+            "family": "Chen"
           },
           {
-            "given": "Kuo,",
-            "family": "Ching"
+            "given": "Ching",
+            "family": "Kuo"
           },
           {
-            "given": "Pan,",
-            "family": "Kun-Hung"
+            "given": "Kun-Hung",
+            "family": "Pan"
           },
           {
-            "given": "Jeng,",
-            "family": "Horng-Tay"
+            "given": "Horng-Tay",
+            "family": "Jeng"
           },
           {
-            "given": "Liu,",
-            "family": "Chang-Hua"
+            "given": "Chang-Hua",
+            "family": "Liu"
           }
         ],
         "published-online": {
@@ -11912,7 +12528,8 @@
           "es": "Montaje para medir cómo cambia la coercitividad del Fe₃GeTe₂ bajo pulsos de luz.",
           "ca": "Muntatge per a mesurar com canvia la coercitivitat del Fe₃GeTe₂ sota polsos de llum."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-10-05"
     },
     "10.1038/s41467-026-77674-y": {
       "reference": {
@@ -11924,64 +12541,64 @@
         ],
         "author": [
           {
-            "given": "Lee,",
-            "family": "Chun-Ho"
+            "given": "Chun-Ho",
+            "family": "Lee"
           },
           {
-            "given": "Ren,",
-            "family": "Xinyi"
+            "given": "Xinyi",
+            "family": "Ren"
           },
           {
-            "given": "Su,",
-            "family": "Xinzhou"
+            "given": "Xinzhou",
+            "family": "Su"
           },
           {
-            "given": "Lee,",
-            "family": "Wonho"
+            "given": "Wonho",
+            "family": "Lee"
           },
           {
-            "given": "Jiang,",
-            "family": "Zile"
+            "given": "Zile",
+            "family": "Jiang"
           },
           {
-            "given": "Yu,",
-            "family": "Yue"
+            "given": "Yue",
+            "family": "Yu"
           },
           {
-            "given": "Zhou,",
-            "family": "Huibin"
+            "given": "Huibin",
+            "family": "Zhou"
           },
           {
-            "given": "Zuo,",
-            "family": "Yue"
+            "given": "Yue",
+            "family": "Zuo"
           },
           {
-            "given": "Ou,",
-            "family": "Shaoyuan"
+            "given": "Shaoyuan",
+            "family": "Ou"
           },
           {
-            "given": "Kopparapu,",
-            "family": "Reshma"
+            "given": "Reshma",
+            "family": "Kopparapu"
           },
           {
-            "given": "Heiniger, Adam",
-            "family": "T."
+            "given": "Adam T.",
+            "family": "Heiniger"
           },
           {
-            "given": "Tur,",
-            "family": "Moshe"
+            "given": "Moshe",
+            "family": "Tur"
           },
           {
-            "given": "Willner, Alan",
-            "family": "E."
+            "given": "Alan E.",
+            "family": "Willner"
           },
           {
-            "given": "Chen,",
-            "family": "Zaijun"
+            "given": "Zaijun",
+            "family": "Chen"
           },
           {
-            "given": "Yu,",
-            "family": "Mengjie"
+            "given": "Mengjie",
+            "family": "Yu"
           }
         ],
         "published-online": {
@@ -12008,20 +12625,21 @@
           "es": "Plataforma integrada de niobato de litio para el infrarrojo medio.",
           "ca": "Plataforma integrada de niobat de liti per a l’infraroig mitjà."
         }
-      }
+      },
+      "versionOfRecordDate": "2026-10-20"
     }
   },
   "institutions": {
     "10.1038/s41467-026-72557-8": [
       [
-        "https://ror.org/05htk5m33",
+        "https://www.hnu.edu.cn",
         "Hunan University",
         "CN"
       ]
     ],
     "10.1038/s41467-026-72314-x": [
       [
-        "https://ror.org/033vjfk17",
+        "https://www.whu.edu.cn",
         "Wuhan University",
         "CN"
       ]
@@ -12045,104 +12663,104 @@
     ],
     "10.1002/advs.76218": [
       [
-        "https://ror.org/04q78tk20",
+        "https://skku.edu",
         "Sungkyunkwan University",
         "KR"
       ],
       [
-        "https://ror.org/01r024a98",
+        "https://neweng.cau.ac.kr/",
         "Chung-Ang University",
         "KR"
       ]
     ],
     "10.1038/s41467-026-75873-1": [
       [
-        "https://ror.org/05qpz1x62",
+        "https://www.uni-jena.de/en",
         "Friedrich Schiller University Jena",
         "DE"
       ],
       [
-        "https://ror.org/00nt41z93",
+        "https://www.ua.pt",
         "University of Aveiro",
         "PT"
       ],
       [
-        "https://ror.org/01hcx6992",
+        "https://www.hu-berlin.de/?set_language=en&cl=en",
         "Humboldt-Universität zu Berlin",
         "DE"
       ]
     ],
     "10.1038/s41467-026-76067-5": [
       [
-        "https://ror.org/0072zz521",
+        "https://www.umass.edu",
         "University of Massachusetts Amherst",
         "US"
       ],
       [
-        "https://ror.org/03taz7m60",
+        "https://usc.edu",
         "University of Southern California",
         "US"
       ]
     ],
     "10.1038/s41467-026-76121-2": [
       [
-        "https://ror.org/01rxvg760",
+        "http://www.nju.edu.cn/english/",
         "Nanjing University",
         "CN"
       ],
       [
-        "https://ror.org/00js3aw79",
+        "https://www.jlu.edu.cn/",
         "Jilin University",
         "CN"
       ],
       [
-        "https://ror.org/05s92vm98",
+        "https://www.xidian.edu.cn",
         "Xidian University",
         "CN"
       ]
     ],
     "10.1038/s41467-026-77913-2": [
       [
-        "https://ror.org/0030zas98",
+        "https://www.polyu.edu.hk/",
         "Hong Kong Polytechnic University",
         "HK"
       ],
       [
-        "https://ror.org/00a2xv884",
+        "https://www.zju.edu.cn",
         "Zhejiang University",
         "CN"
       ],
       [
-        "https://ror.org/02m9vrb24",
+        "https://english.hnust.edu.cn/",
         "Hunan University of Science and Technology",
         "CN"
       ],
       [
-        "https://ror.org/03panb555",
+        "http://www.lut.edu.cn/",
         "Lanzhou University of Technology",
         "CN"
       ]
     ],
     "10.1038/s41377-026-02436-w": [
       [
-        "https://ror.org/02dqehb95",
+        "http://www.purdue.edu/",
         "Purdue University West Lafayette",
         "US"
       ],
       [
-        "https://ror.org/03vek6s52",
+        "https://www.harvard.edu",
         "Harvard University",
         "US"
       ]
     ],
     "10.1038/s41467-026-78053-3": [
       [
-        "https://ror.org/047426m28",
+        "https://illinois.edu",
         "University of Illinois Urbana-Champaign",
         "US"
       ],
       [
-        "https://ror.org/02bfwt286",
+        "https://www.monash.edu",
         "Monash University",
         "AU"
       ]

@@ -92,7 +92,7 @@
     "slug": "blog-2025-12-31",
     "title": "La llum aprèn a viatjar, recordar i canviar de direcció",
     "description": "Què pot fer un material amb la llum que rep? Segons quin triem, pot modular-la dins d’un xip, guardar durant un temps l’empremta del seu pas o separar dos polaritzacions en l’infraroig.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2025-12-31",
     "weekEnd": "2026-01-07",
     "coverDoi": "10.1038/s41377-025-02081-9"
@@ -101,8 +101,8 @@
     "id": "post-week-2026-01-07",
     "slug": "blog-2026-01-07",
     "title": "Llum en un xip, ions en un porus i espins en un cristall",
-    "description": "Un porus simètric pot deixar passar més ions en un sentit. El resultat convida a mirar què controla cada experiment, des de l’estabilitat de la llum que viatja pel xip fins al temps que un espín conserva la fase en una perovskita.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un porus simètric deixa passar més ions en un sentit que en l’altre. Aquesta setmana, a més d’esbrinar per què, seguim la llum que es perd en una guia de germanosilicat i l’espín que conserva la fase durant microsegons en una perovskita.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-01-07",
     "weekEnd": "2026-01-14",
     "coverDoi": "10.1038/s41586-025-09889-w"
@@ -111,8 +111,8 @@
     "id": "post-week-2026-01-14",
     "slug": "blog-2026-01-14",
     "title": "Fotons a demanda i dos maneres de posar a prova un material amb calor",
-    "description": "Com es comprova si una cosa respon com volem? En una font quàntica es comparen dos fotons consecutius. En una memòria i una cèl·lula solar de perovskita, la prova passa per la calor, que ajuda a estabilitzar la primera durant la fabricació i deteriora la segona quan funciona.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Escalfar una memòria durant la fabricació en pot millorar la resposta, mentre que els cicles de calor deterioren una cèl·lula solar de perovskita. En la font quàntica d’aquesta edició, la prova de repetibilitat consisteix a fer interferir dos fotons emesos l’un darrere de l’altre.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-01-14",
     "weekEnd": "2026-01-21",
     "coverDoi": "10.1038/s41467-026-68336-0"
@@ -122,7 +122,7 @@
     "slug": "blog-2026-01-21",
     "title": "Mesurar un espectre, orientar una monocapa i obrir porus en l’or",
     "description": "Canviar la forma d’una pel·lícula pot alterar què veiem en il·luminar-la. Comparem or compacte i porós, mirem com s’orienta una monocapa de MoS₂ quan creix i veiem com unes làmines primes permeten reconstruir un espectre sobre el mateix detector.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-01-21",
     "weekEnd": "2026-01-28",
     "coverDoi": "10.1038/s41467-026-68685-w"
@@ -132,7 +132,7 @@
     "slug": "blog-2026-01-28",
     "title": "Làsers, visió i memòries que fluctuen",
     "description": "Una reflexió pot pertorbar un làser, mentre que el soroll d’una memòria pot donar pistes sobre el material que guarda el bit. Entre els dos treballs, una fotosinapsi aprofita un altre detall que sol passar desapercebut, l’orientació de la llum que rep.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-01-28",
     "weekEnd": "2026-02-04",
     "coverDoi": "10.1038/s41377-026-02185-w"
@@ -141,8 +141,8 @@
     "id": "post-week-2026-02-04",
     "slug": "blog-2026-02-04",
     "title": "Un pols de dos cicles, una sinapsi sensible a la llum i una memòria multinivell",
-    "description": "En tretze femtosegons cap un pols de llum de només dos cicles. Les altres lectures pregunten què es pot distingir o conservar d’un senyal, des de la polarització en una fotosinapsi fins als estats que reté una memòria ferroelèctrica.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un pols infraroig dura tan poc que el seu camp només arriba a oscil·lar dues vegades. Una fotosinapsi distingeix l’orientació de la llum i un cristall ferroelèctric conserva diversos nivells de resistència, dues maneres de retindre informació després de l’estímul.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-02-04",
     "weekEnd": "2026-02-11",
     "coverDoi": "10.1038/s41377-026-02187-8"
@@ -151,8 +151,8 @@
     "id": "post-week-2026-02-11",
     "slug": "blog-2026-02-11",
     "title": "Detectar calor amb llum i ajustar el corrent amb càrrega o amb un camp",
-    "description": "Per a detectar unes poques molècules pot bastar buscar la calor que deixen quan absorbixen llum. En un sensor amb memòria, importa on queda la càrrega, mentre que en dos capes apilades la resistència canvia segons cap a on apunta el camp magnètic.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "L’acetilé delata la seua presència per la calor que allibera al costat d’una guia òptica. També hi ha senyals que es poden preparar abans de llegir-los, repartint la càrrega entre dues portes de memòria o girant el camp respecte d’una interfície magnètica.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-02-11",
     "weekEnd": "2026-02-18",
     "coverDoi": "10.1038/s41377-026-02196-7"
@@ -162,7 +162,7 @@
     "slug": "blog-2026-02-18",
     "title": "Una imatge gradual, una neurona amb retard i dos cristalls girats",
     "description": "Una imatge que apareix a poc a poc i un elèctrode que retarda la resposta d’una neurona aprofiten el temps de maneres diferents. En unir dos cristalls de niobat de liti, l’ajust està en l’angle, que pot canviar com s’ordenen els dipols de la frontera.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-02-18",
     "weekEnd": "2026-02-25",
     "coverDoi": "10.1038/s41377-026-02202-y"
@@ -172,7 +172,7 @@
     "slug": "blog-2026-02-25",
     "title": "Llum entre dos metalls, potència sobre una pel·lícula i un díode blau",
     "description": "Un volt aplicat en un espai quasi atòmic pot canviar molt la llum que n’ix. A altres escales, uns transistors de pel·lícula prima porten potència a matrius grans i una molècula en la superfície d’un nanocristall ajuda a mantindre el blau d’un LED.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-02-25",
     "weekEnd": "2026-03-04",
     "coverDoi": "10.1038/s41467-026-68823-4"
@@ -182,7 +182,7 @@
     "slug": "blog-2026-03-04",
     "title": "Xarxes per a guiar llum i protons, i un aïllant amb fronteres de gra",
     "description": "En una xarxa òptica es dibuixen camins per a la llum i en una altra, de niquelat, s’aprofita el moviment dels protons per a recordar. El tercer treball busca un camí que convé evitar, el del corrent de fuga per la frontera entre dos grans.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-03-04",
     "weekEnd": "2026-03-11",
     "coverDoi": "10.1038/s41467-026-68648-1"
@@ -191,8 +191,8 @@
     "id": "post-week-2026-03-11",
     "slug": "blog-2026-03-11",
     "title": "Mesclar llum i magnetisme, guardar càrrega i veure com envellix un LED",
-    "description": "Un microscopi mira on falla primer un LED en funcionament. Els altres dos treballs s’acosten al punt on passa allò que els interessa, en afavorir l’acoblament entre llum i magnetisme i posar un condensador al costat de la unitat fotònica que usa la seua memòria.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un LED que es deteriora sota el microscopi deixa veure quina interfície falla primer. Mentrestant, una xarxa de ressonadors concentra la interacció entre microones i magnetisme, i un condensador acosta la memòria al lloc on es calcula amb llum.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-03-11",
     "weekEnd": "2026-03-18",
     "coverDoi": "10.1038/s41467-026-69326-y"
@@ -202,7 +202,7 @@
     "slug": "blog-2026-03-18",
     "title": "Llum circular, memòria en una sinapsi i regions amorfes escrites en un cristall",
     "description": "La llum circular servix per a preguntar com responen els excitons en una metasuperfície. Les altres lectures seguixen què queda després del senyal, des de l’estat que conserva una sinapsi fins a una zona del cristall que ha perdut l’orde.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-03-18",
     "weekEnd": "2026-03-25",
     "coverDoi": "10.1038/s41467-026-70875-5"
@@ -212,7 +212,7 @@
     "slug": "blog-2026-03-25",
     "title": "Un modulador infraroig, una memòria tolerant a fallades i una cèl·lula ferroelèctrica",
     "description": "Un modulador de niobat porta el senyal a l’infraroig mitjà. En una memòria, tindre en compte les fallades permet recuperar més patrons, mentre que en una cèl·lula solar el lloc on se separen les càrregues influïx en quant es perd pel camí.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-03-25",
     "weekEnd": "2026-04-01",
     "coverDoi": "10.1038/s41467-026-69880-5"
@@ -222,7 +222,7 @@
     "slug": "blog-2026-04-01",
     "title": "Polarització en una pel·lícula, allau en un transistor i una transició en VO₂",
     "description": "Un pols canvia com respon una pel·lícula a la llum polaritzada, mentre que el canal d’un transistor orienta el moviment de les càrregues. Amb el VO₂, la pregunta és quant tarda a canviar el material i com seguir la transició des de dins.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-01",
     "weekEnd": "2026-04-08",
     "coverDoi": "10.1038/s41566-026-01886-3"
@@ -232,7 +232,7 @@
     "slug": "blog-2026-04-08",
     "title": "Calcular amb llum, canviar de funció amb tensió i doblegar un ull compost",
     "description": "Posar 185 píxels sobre una superfície corba obliga a decidir on es doblega la pel·lícula. Dos decisions de disseny completen l’edició, com connectar un processador òptic a una xarxa neuronal i com fer que un dispositiu canvie de funció amb la tensió.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-08",
     "weekEnd": "2026-04-15",
     "coverDoi": "10.1038/s41467-026-71599-2"
@@ -242,7 +242,7 @@
     "slug": "blog-2026-04-15",
     "title": "Terahertzs continus, una fotosinapsi iònica i parets entre dominis",
     "description": "De dos làsers infrarojos ix un senyal que es pot sintonitzar en terahertzs. En una fotosinapsi, són els ions els que canvien de lloc, i en un òxid la sorpresa apareix a la frontera on es troben dos classes d’orde elèctric.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-15",
     "weekEnd": "2026-04-22",
     "coverDoi": "10.1038/s41566-026-01889-0"
@@ -252,7 +252,7 @@
     "slug": "blog-2026-04-22",
     "title": "Fotònica per a escoltar l’espectre, corrent per a moure un imant i or entre capes",
     "description": "Un xip distingix quines freqüències de ràdio estan ocupades en menys de 110 nanosegons. Els altres treballs miren què passa en ajuntar capes, tant per a canviar la magnetització amb corrent com per a allotjar àtoms d’or dins d’un òxid.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-22",
     "weekEnd": "2026-04-29",
     "coverDoi": "10.1038/s41467-026-70389-0"
@@ -262,7 +262,7 @@
     "slug": "blog-2026-04-29",
     "title": "Polaritons que reboten, una porta de grafé i dipols que canvien de direcció",
     "description": "Fins on arriba una ona abans de reflectir-se a la vora d’una làmina? Les capes primes permeten fer eixa pregunta i dos més, com governa el grafé una monocapa de molècules i de quina manera es pot reorientar la polarització d’un material.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-04-29",
     "weekEnd": "2026-05-06",
     "coverDoi": "10.1038/s41467-026-70565-2"
@@ -271,8 +271,8 @@
     "id": "post-week-2026-05-06",
     "slug": "blog-2026-05-06",
     "title": "Encongir un patró, separar soroll i fer visible un excitó",
-    "description": "Si el patró és massa menut per a fabricar-lo directament, es pot dibuixar en gran i encongir després. En les altres lectures, el repte és fer visible un senyal dèbil, amb memristors per a separar-lo del soroll i amb una capa ferroelèctrica per a revelar un excitó fosc.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Com es talla un buit més menut que l’eina amb què es dibuixa? Una solució és encongir després la peça sencera. També seguim un senyal d’àudio amagat entre soroll i un excitó fosc l’emissió del qual es revela en afegir una capa ferroelèctrica.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-05-06",
     "weekEnd": "2026-05-13",
     "coverDoi": "10.1038/s41566-026-01896-1"
@@ -281,8 +281,8 @@
     "id": "post-week-2026-05-13",
     "slug": "blog-2026-05-13",
     "title": "Un enllaç sense fils, una unió magnètica i fotons que ixen de la vora",
-    "description": "Un senyal ix d’un xip fotònic i continua per un enllaç sense fils. Les altres lectures s’acosten a on naix la resposta, en una unió magnètica que acumula polsos o a la vora d’una perovskita on la llum ix fotó a fotó.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un enllaç sense fil conserva una part de la portadora perquè el receptor dispose d’una referència. En una unió magnètica s’acumulen polsos, mentre que a la vora d’una perovskita es pot aïllar l’emissió d’un sol fotó.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-05-13",
     "weekEnd": "2026-05-20",
     "coverDoi": "10.1038/s41467-026-71081-z"
@@ -291,8 +291,8 @@
     "id": "post-week-2026-05-20",
     "slug": "blog-2026-05-20",
     "title": "Ajustar un xip ja fabricat, guardar estats en una molècula i observar punts quàntics",
-    "description": "Un xip fotònic encara es pot afinar després de fabricar-lo. En baixar d’escala, les altres lectures pregunten quin control tenim sobre una sola molècula que guarda diversos estats i sobre una xarxa de punts quàntics que emeten junts.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un dipòsit de carboni corregeix el recorregut de la llum en un xip ja fabricat. El marge d’ajust arriba fins a una molècula en el treball sobre memòria, mentre que en una xarxa de punts quàntics cal observar diversos emissors alhora per a entendre com parpellegen.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-05-20",
     "weekEnd": "2026-05-27",
     "coverDoi": "10.1038/s41467-026-73411-7"
@@ -302,7 +302,7 @@
     "slug": "blog-2026-05-27",
     "title": "Fer créixer punts quàntics a mida, construir una neurona i triar les cares d’un cristall",
     "description": "Centrar un punt quàntic en el ressonador comença abans de fabricar el ressonador. La manera de fer créixer una perovskita també en canvia la llum blava i, entre els dos treballs, uns nanofils mostren com pren forma una neurona artificial.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-05-27",
     "weekEnd": "2026-06-03",
     "coverDoi": "10.1038/s41377-026-02343-0"
@@ -312,7 +312,7 @@
     "slug": "blog-2026-06-03",
     "title": "Polsos en nitrur de silici, una memòria elàstica i emissors que cooperen",
     "description": "En un circuit de nitrur de silici s’obtenen polsos intensos de llum. Les altres lectures la fan servir per a escriure en un transistor que es pot estirar i per a estudiar què passa quan els emissors d’una perovskita responen junts.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-03",
     "weekEnd": "2026-06-10",
     "coverDoi": "10.1038/s41586-026-10517-4"
@@ -322,7 +322,7 @@
     "slug": "blog-2026-06-10",
     "title": "Un obturador de cristall líquid i dos maneres d’aprofitar un imant",
     "description": "Un cristall líquid regula la brillantor d’uns punts quàntics sense canviar-ne el color. Dos treballs més aprofiten un imant, deixant-lo fluctuar per a explorar un càlcul o ajustant l’acoblament entre capes per a sintonitzar ones d’espín.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-10",
     "weekEnd": "2026-06-17",
     "coverDoi": "10.1038/s41528-026-00578-w"
@@ -332,7 +332,7 @@
     "slug": "blog-2026-06-17",
     "title": "Cel·les òptiques, corrents que es desvien i llum que canvia de camí",
     "description": "Enviar un senyal lluminós pot canviar el paper d’una cel·la entre neurona i sinapsi. Les altres ressenyes seguixen senyals que es desvien, un corrent prop d’una interfície magnètica i un feix que canvia de camí amb poca pèrdua.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-17",
     "weekEnd": "2026-06-24",
     "coverDoi": "10.1038/s41467-026-72119-y"
@@ -342,7 +342,7 @@
     "slug": "blog-2026-06-24",
     "title": "Una fibra plana i dos dispositius per a treballar amb imatges",
     "description": "I si una part del processament d’una imatge ocorre abans d’enviar-la? Un transistor guarda la resposta a la llum i una pel·lícula tria si mostra l’escena completa o les vores. D’altra banda, aplanar una fibra dona una altra manera de col·locar-la en un muntatge.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-06-24",
     "weekEnd": "2026-07-01",
     "coverDoi": "10.1038/s41467-026-72416-6"
@@ -351,8 +351,8 @@
     "id": "post-week-2026-07-01",
     "slug": "blog-2026-07-01",
     "title": "Una lent dispersiva, una empremta sensible a la llum i un òxid magnetoelèctric",
-    "description": "Separar colors pot ser justament el que interessa en una metalent. Les altres lectures deixen que un estímul canvie la resposta, siga la llum que modifica una empremta electrònica o el camp magnètic que reforça la polarització en un òxid d’hafni.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "En un sensor de distància, que cada color enfoque en un punt diferent pot ser un avantatge. El color de la llum també canvia l’empremta electrònica d’un circuit de MoS₂, mentre que en una pel·lícula d’òxid d’hafni el que modifica la polarització és un camp magnètic.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-01",
     "weekEnd": "2026-07-08",
     "coverDoi": "10.1038/s41467-026-72332-9"
@@ -362,7 +362,7 @@
     "slug": "blog-2026-07-08",
     "title": "Polarització, memòria i perovskites",
     "description": "Un circuit òptic funciona en els dos sentits, preparant la polarització i mesurant-la en invertir el recorregut. Les altres lectures simplifiquen el dispositiu en etapes diferents, reunint una regla d’aprenentatge en un memristor i reduint defectes mentre creix una perovskita.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-08",
     "weekEnd": "2026-07-15",
     "coverDoi": "10.1038/s41377-026-02405-3"
@@ -372,7 +372,7 @@
     "slug": "blog-2026-07-15",
     "title": "Una guia que processa llum, transistors flexibles i un vidre que respon al camp",
     "description": "La mateixa làmina de MoS₂ pot guiar la llum i modificar el senyal que transporta. Un semiconductor flexible també admet dos classes de transistor, mentre que un vidre molecular canvia de resposta segons reba llum o un camp elèctric.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-15",
     "weekEnd": "2026-07-22",
     "coverDoi": "10.1038/s41467-026-73107-y"
@@ -381,8 +381,8 @@
     "id": "post-week-2026-07-22",
     "slug": "blog-2026-07-22",
     "title": "Entrada lateral en una guia, activitat en una neurona i una monocapa que emet",
-    "description": "I si la llum poguera entrar pel costat de la guia? Canviar el punt d’entrada permet repensar el muntatge. En els altres treballs, una neurona de VO₂ ajusta l’activitat i una sola capa de molècules s’incorpora a un microlàser.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Deixar obertures a la paret d’una guia buida dona accés a la regió per on viatja la llum. En aquesta edició també hi ha una neurona de VO₂ que regula la seua activitat i un làser orgànic que continua emetent sota il·luminació contínua.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-22",
     "weekEnd": "2026-07-29",
     "coverDoi": "10.1038/s41467-026-75873-1"
@@ -392,7 +392,7 @@
     "slug": "blog-2026-07-29",
     "title": "Feixos de ràdio, càlcul amb microones i plasmons en un cristall",
     "description": "La trajectòria d’una ona pot ser part del disseny. Una xarxa fotònica permet orientar feixos de ràdio, un circuit de microones aprofita el recorregut del senyal per a calcular i, en un cristall, el material mateix afavorix que els plasmons viatgen en una direcció.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-07-29",
     "weekEnd": "2026-08-05",
     "coverDoi": "10.1038/s41467-026-74485-z"
@@ -402,7 +402,7 @@
     "slug": "blog-2026-08-05",
     "title": "Reflexions per a llegir un espectre, memòria del moviment i dos respostes d’un element",
     "description": "Una guia plena de reflexions menudes guarda pistes sobre quina llum hi ha entrat. En les altres lectures, una memòria d’òxid de zinc arreplega informació del moviment i un mateix element distingix senyals òptics difícils de separar mirant només la intensitat.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-08-05",
     "weekEnd": "2026-08-12",
     "coverDoi": "10.1038/s41467-026-76328-3"
@@ -412,7 +412,7 @@
     "slug": "blog-2026-08-12",
     "title": "Escriure una imatge infraroja, guardar càrrega i aprimar la plata",
     "description": "Una imatge en infraroig es pot escriure píxel a píxel, mentre que una memòria guarda un estat amb ones de densitat de càrrega. L’escala torna a importar en la tercera lectura, on es mesura quant canvia la resposta òptica de la plata en aprimar-la.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-08-12",
     "weekEnd": "2026-08-19",
     "coverDoi": "10.1038/s41467-026-75346-5"
@@ -422,7 +422,7 @@
     "slug": "blog-2026-08-19",
     "title": "Una drecera per a la llum, visió per esdeveniments i color que naix de l’infraroig",
     "description": "Una drecera canvia per on viatja la llum en un xip. Els altres dos treballs canvien què en podem fer, des de detectar els canvis en una escena fins a aconseguir que diversos fotons infrarojos donen lloc a llum visible.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-08-19",
     "weekEnd": "2026-08-26",
     "coverDoi": "10.1038/s41377-026-02325-2"
@@ -432,7 +432,7 @@
     "slug": "blog-2026-08-26",
     "title": "Polaritons per les vores, idiomes en una matriu i memòria activada per llum",
     "description": "La polarització pot triar la vora per on viatja un polaritó, mentre que en el seleniur d’indi la llum ajuda a escriure un estat de memòria. La tercera lectura tracta de text i de com repartir el reconeixement d’idiomes entre un algoritme i una matriu de memristors.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-08-26",
     "weekEnd": "2026-09-02",
     "coverDoi": "10.1038/s41467-026-75965-y"
@@ -442,7 +442,7 @@
     "slug": "blog-2026-09-02",
     "title": "Una metasuperfície no lineal, visió a alta temperatura i una resposta Hall ajustable",
     "description": "Detectar llum visible a 450 °C és una de les proves de la setmana. Les altres dos examinen fins on es pot controlar un senyal, transformant la llum amb una metasuperfície i canviant la resposta Hall d’un material des d’una capa ferroelèctrica veïna.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-02",
     "weekEnd": "2026-09-09",
     "coverDoi": "10.1038/s41565-026-02268-0"
@@ -452,7 +452,7 @@
     "slug": "blog-2026-09-09",
     "title": "Transportar senyals d’alta freqüència, filtrar impulsos i formar vòrtexs",
     "description": "Transmetre per damunt de cent gigahertzs i preparar un senyal per a una xarxa d’impulsos planteja preguntes diferents sobre quina part del senyal es conserva. En la tercera lectura, el detall que interessa està dins d’un ferroelèctric, on els dipols formen remolins sobre silici.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-09",
     "weekEnd": "2026-09-16",
     "coverDoi": "10.1038/s41467-026-76733-8"
@@ -461,8 +461,8 @@
     "id": "post-week-2026-09-16",
     "slug": "blog-2026-09-16",
     "title": "Processar amb llum, conservar polarització i convertir una màscara en emissor",
-    "description": "Un modulador reté l’ajust i reduïx el consum necessari per a mantindre’l i una memòria guarda informació en un llaç de polarització. La tercera lectura aprofita d’una altra manera el material que ja hi ha, fent servir com a emissora la mateixa capa que fa de màscara.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Un modulador conserva l’ajust en retirar la tensió i una pel·lícula ferroelèctrica manté llaços de polarització en passar d’un substrat a un altre. Per a dibuixar píxels lluminosos, el tercer equip fa que la capa fotosensible siga també la que emet llum.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-16",
     "weekEnd": "2026-09-23",
     "coverDoi": "10.1038/s41467-026-75993-8"
@@ -472,7 +472,7 @@
     "slug": "blog-2026-09-23",
     "title": "Cavitats sobre una fibra, elèctrodes de grafè i canals per a ions",
     "description": "De vegades basta tocar la geometria per a decidir per on passa un senyal. Un canvi menut en el radi d’una fibra confina llum, dos vores de grafé delimiten on commuta una memòria i un canal deixa passar ions sense que entre massa aigua.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-23",
     "weekEnd": "2026-09-30",
     "coverDoi": "10.1038/s41467-026-76041-1"
@@ -482,7 +482,7 @@
     "slug": "blog-2026-09-30",
     "title": "Un espín que es llig amb llum, un imant que la recorda i un dielèctric estable",
     "description": "La llum pot llegir l’espín d’un buit o escriure estats en un imant. En els dos casos importa quant dura l’efecte, una pregunta que torna en la tercera lectura quan es prova si un dielèctric manté la resposta en canviar la temperatura.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-09-30",
     "weekEnd": "2026-10-07",
     "coverDoi": "10.1038/s41467-026-77282-w"
@@ -492,7 +492,7 @@
     "slug": "blog-2026-10-07",
     "title": "Llum davall d’una monocapa, punts de carboni i calor en un ferroelèctric",
     "description": "Davall d’una monocapa es pot concentrar la llum, mentre que damunt d’un semiconductor uns punts de carboni preparen la superfície per a depositar un aïllant. El tercer treball seguix un recorregut menys visible però igual de necessari, per on ix la calor d’una pel·lícula ferroelèctrica.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-10-07",
     "weekEnd": "2026-10-14",
     "coverDoi": "10.1038/s41377-026-02436-w"
@@ -502,7 +502,7 @@
     "slug": "blog-2026-10-14",
     "title": "Infraroig en una guia suspesa, un transistor reconfigurable i els primers passos d’un cristall",
     "description": "Llevar el substrat permet portar la modulació a una zona de l’infraroig on s’hi perdria part de la llum. Les altres lectures ajusten el dispositiu en moments diferents, en triar la faena d’un transistor ja fabricat o intervindre just quan comença a créixer el cristall.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-10-14",
     "weekEnd": "2026-10-21",
     "coverDoi": "10.1038/s41467-026-77674-y"
@@ -512,7 +512,7 @@
     "slug": "blog-2026-10-21",
     "title": "Un modulador de silici i dues maneres d'usar les perovskites",
     "description": "Un modulador de silici corregix part del senyal abans d’enviar-lo. També hi ha dos raons per a mirar de prop una perovskita, entendre per què un dispositiu pot guardar informació per dos vies i veure com el ritme de cristal·lització canvia la pel·lícula d’un LED.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-10-21",
     "weekEnd": "2026-10-28",
     "coverDoi": "10.1038/s41467-026-78128-1"
@@ -521,8 +521,8 @@
     "id": "post-week-2026-10-28",
     "slug": "blog-2026-10-28",
     "title": "Separar modes de llum, estabilitzar transistors i seguir electrons en grafé",
-    "description": "Un circuit pot separar físicament allò que dos feixos conten junts. La llum també servix per a seguir els electrons del grafé durant una oscil·lació, mentre que un additiu permet intervindre molt abans, quan es forma el canal d’un transistor de perovskita.",
-    "modified": "2026-11-18T00:00:00",
+    "description": "Dos feixos poden tindre la mateixa intensitat i diferent coherència espacial, una diferència que un circuit òptic aconsegueix separar. Mentre un equip segueix el moviment dels electrons en grafé durant una oscil·lació de la llum, un altre modifica amb un additiu el camí de les càrregues en una perovskita.",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-10-28",
     "weekEnd": "2026-11-04",
     "coverDoi": "10.1038/s41566-026-02035-6"
@@ -532,7 +532,7 @@
     "slug": "blog-2026-11-04",
     "title": "Moaré de llum, memòria en dues escales i l'emissió d'un defecte",
     "description": "Dos patrons de llum quasi alineats dibuixen un moaré en l’aire i un defecte atòmic deixa la seua empremta en la llum d’una monocapa. Entre els dos experiments, un transistor mostra quina part d’un senyal queda al cap d’un instant i quina dura més.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-11-04",
     "weekEnd": "2026-11-11",
     "coverDoi": "10.1038/s41377-026-02533-w"
@@ -542,7 +542,7 @@
     "slug": "blog-2026-11-11",
     "title": "Llum i so en un xip, transistors apilats i una imatge en infraroig",
     "description": "Quant canvia un dispositiu quan es lleva el material que té davall, s’afig una capa aïllant o es retoca el gruix d’una pel·lícula? Esta setmana, eixes decisions permeten confinar so en una guia òptica, apilar transistors amb poques fugues i revelar un dibuix en infraroig.",
-    "modified": "2026-11-18T00:00:00",
+    "modified": "2026-11-19T00:00:00",
     "weekStart": "2026-11-11",
     "weekEnd": "2026-11-18",
     "coverDoi": "10.1002/nap2.70338"
