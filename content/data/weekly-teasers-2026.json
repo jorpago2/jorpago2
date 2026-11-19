@@ -20,14 +20,14 @@
     "ca": "Canviar la forma d’una pel·lícula pot alterar què veiem en il·luminar-la. Comparem or compacte i porós, mirem com s’orienta una monocapa de MoS₂ quan creix i veiem com unes làmines primes permeten reconstruir un espectre sobre el mateix detector."
   },
   "2026-01-28": {
-    "es": "Una reflexión basta para perturbar un láser, mientras que el ruido de una memoria puede dar pistas sobre el material que guarda el bit. Entre ambos trabajos, una fotosinapsis aprovecha otro detalle que suele pasar inadvertido, la orientación de la luz que recibe.",
-    "en": "A reflection can disturb a laser, while the noise in a memory cell can tell us about the material that stores the bit. Between those two papers, a photosynapse makes use of another easily overlooked detail, the orientation of the light it receives.",
-    "ca": "Una reflexió pot pertorbar un làser, mentre que el soroll d’una memòria pot donar pistes sobre el material que guarda el bit. Entre els dos treballs, una fotosinapsi aprofita un altre detall que sol passar desapercebut, l’orientació de la llum que rep."
+    "es": "Una reflexión perturba un láser, mientras que el ruido eléctrico de una memoria da pistas sobre el material que guarda el bit. La tercera señal apenas se aprecia en una foto convencional, aunque un fototransistor puede distinguirla midiendo cómo está polarizada la luz reflejada.",
+    "en": "A reflection disturbs a laser, while electrical noise in a memory gives clues to the material storing the bit. The third signal barely shows up in an ordinary photograph, though a phototransistor can pick it out by sensing the polarization of reflected light.",
+    "ca": "Una reflexió pertorba un làser, mentre que el soroll elèctric d’una memòria dona pistes sobre el material que guarda el bit. El tercer senyal a penes s’aprecia en una foto convencional, encara que un fototransistor el pot distingir mesurant com està polaritzada la llum reflectida."
   },
   "2026-02-04": {
-    "es": "Un pulso infrarrojo dura tan poco que su campo solo alcanza a oscilar dos veces. Una fotosinapsis distingue la orientación de la luz y un cristal ferroeléctrico conserva varios niveles de resistencia, dos formas de retener información después de que pase el estímulo.",
-    "en": "An infrared pulse is so brief that its field oscillates only twice. A photosynapse distinguishes the orientation of light and a ferroelectric crystal retains several resistance levels, two ways for information to outlast the stimulus.",
-    "ca": "Un pols infraroig dura tan poc que el seu camp només arriba a oscil·lar dues vegades. Una fotosinapsi distingeix l’orientació de la llum i un cristall ferroelèctric conserva diversos nivells de resistència, dues maneres de retindre informació després de l’estímul."
+    "es": "En un pulso infrarrojo tan breve que el campo apenas oscila dos veces, cada ciclo cuenta. En las otras lecturas importa lo que queda después del estímulo, desde la huella de la polarización en una fotosinapsis hasta los niveles de resistencia que conserva un cristal ferroeléctrico.",
+    "en": "Every cycle counts in an infrared pulse so brief that its field barely oscillates twice. The other papers look at what remains after a stimulus, from the trace of polarization in a photosynapse to the resistance levels retained by a ferroelectric crystal.",
+    "ca": "En un pols infraroig tan breu que el camp a penes oscil·la dues vegades, cada cicle compta. En les altres lectures importa el que queda després de l’estímul, des del rastre de la polarització en una fotosinapsi fins als nivells de resistència que conserva un cristall ferroelèctric."
   },
   "2026-02-11": {
     "es": "El acetileno delata su presencia por el calor que libera junto a una guía óptica. También hay señales que se pueden preparar antes de leerlas, repartiendo la carga entre dos puertas de memoria o girando el campo respecto a una interfaz magnética.",
@@ -35,9 +35,9 @@
     "ca": "L’acetilé delata la seua presència per la calor que allibera al costat d’una guia òptica. També hi ha senyals que es poden preparar abans de llegir-los, repartint la càrrega entre dues portes de memòria o girant el camp respecte d’una interfície magnètica."
   },
   "2026-02-18": {
-    "es": "Una imagen que aparece de forma gradual y un electrodo que retrasa la respuesta de una neurona aprovechan el tiempo de maneras distintas. Al unir dos cristales de niobato de litio, el ajuste está en el ángulo, que puede cambiar cómo se ordenan los dipolos de la frontera.",
-    "en": "An image that appears gradually and an electrode that delays a neuron’s response use time in different ways. Join two lithium niobate crystals and the setting to adjust is the angle, which can change how dipoles arrange themselves at the boundary.",
-    "ca": "Una imatge que apareix a poc a poc i un elèctrode que retarda la resposta d’una neurona aprofiten el temps de maneres diferents. En unir dos cristalls de niobat de liti, l’ajust està en l’angle, que pot canviar com s’ordenen els dipols de la frontera."
+    "es": "Una imagen tarda en revelar su color mientras el líquido avanza entre pilares, y una neurona artificial conserva durante casi un segundo la huella de un pulso. En el tercer experimento, lo decisivo es el ángulo con el que se unen dos cristales de niobato de litio.",
+    "en": "Colour develops as liquid advances between pillars, and an artificial neuron retains the trace of a pulse for nearly a second. In the third experiment, what matters is the angle at which two lithium niobate crystals are joined.",
+    "ca": "Una imatge tarda a revelar el color mentre el líquid avança entre pilars, i una neurona artificial conserva durant quasi un segon el rastre d’un pols. En el tercer experiment, el que compta és l’angle amb què s’uneixen dos cristalls de niobat de liti."
   },
   "2026-02-25": {
     "es": "Un voltio aplicado en un hueco casi atómico puede cambiar mucho la luz que sale de él. A otra escala, unos transistores de película delgada llevan potencia a grandes matrices, y una molécula en la superficie de un nanocristal ayuda a mantener el azul de un LED.",
@@ -195,9 +195,9 @@
     "ca": "De vegades basta tocar la geometria per a decidir per on passa un senyal. Un canvi menut en el radi d’una fibra confina llum, dos vores de grafé delimiten on commuta una memòria i un canal deixa passar ions sense que entre massa aigua."
   },
   "2026-09-30": {
-    "es": "La luz puede leer el espín de un hueco o escribir estados en un imán. En ambos casos importa cuánto dura el efecto, una pregunta que reaparece en la tercera lectura cuando se prueba si un dieléctrico mantiene su respuesta al cambiar la temperatura.",
-    "en": "Light can read a hole spin or write states into a magnet. In both cases the question is how long the effect lasts, and the third paper explores a different kind of stability by testing how a dielectric responds as the temperature changes.",
-    "ca": "La llum pot llegir l’espín d’un buit o escriure estats en un imant. En els dos casos importa quant dura l’efecte, una pregunta que torna en la tercera lectura quan es prova si un dielèctric manté la resposta en canviar la temperatura."
+    "es": "Los fotones permiten seguir un espín durante unos nanosegundos y, en otro material, escribir estados magnéticos que persisten después del pulso. Para cerrar la semana, una búsqueda entre composiciones cerámicas da con un condensador cuya capacidad apenas cambia al calentarlo.",
+    "en": "Photons can track a spin for a few nanoseconds and, in another material, write magnetic states that persist after the pulse. To round off the week, a search through ceramic compositions yields a capacitor whose capacitance hardly changes as it warms up.",
+    "ca": "Els fotons permeten seguir un espín durant uns nanosegons i, en un altre material, escriure estats magnètics que persisteixen després del pols. Per a tancar la setmana, una cerca entre composicions ceràmiques troba un condensador amb una capacitat que a penes canvia en escalfar-lo."
   },
   "2026-10-07": {
     "es": "Debajo de una monocapa se puede concentrar la luz, mientras que encima de un semiconductor unos puntos de carbono preparan la superficie para depositar un aislante. El tercer trabajo sigue un recorrido menos visible pero igual de necesario, por dónde sale el calor de una película ferroeléctrica.",
