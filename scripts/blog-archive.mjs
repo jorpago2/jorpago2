@@ -44,10 +44,11 @@ function cardCover(post, locale, strings, articles, url, featured) {
   const caption = figure.localizedCaptions?.[locale.code] ?? figure.caption;
   const author = article.reference.author[0].family;
   const licenseType = new URL(figure.license).pathname.split("/")[2].toUpperCase();
+  const fullFigure = featured || licenseType.endsWith("-ND");
   return `
-    <figure class="blog-card-figure">
+    <figure class="blog-card-figure"${fullFigure ? ' data-framing="full"' : ""}>
       <a href="${url}" aria-label="${escapeHtml(post.title)}"><img src="${escapeHtml(figure.url)}" alt="${escapeHtml(caption)}"${figure.localizedCaptions?.[locale.code] ? "" : ' lang="en"'}${featured ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></a>
-      <figcaption><a href="${escapeHtml(figure.source)}">${escapeHtml(strings.figure)} ${escapeHtml(figure.number)}, ${escapeHtml(author)} et al.</a>, <a href="${escapeHtml(figure.license)}">CC ${escapeHtml(licenseType)} 4.0</a></figcaption>
+      <figcaption><a href="${escapeHtml(figure.source)}">${escapeHtml(fullFigure ? strings.fullFigure : strings.figure)} ${escapeHtml(figure.number)}, ${escapeHtml(author)} et al.</a>, <a href="${escapeHtml(figure.license)}">CC ${escapeHtml(licenseType)} 4.0</a></figcaption>
     </figure>`;
 }
 

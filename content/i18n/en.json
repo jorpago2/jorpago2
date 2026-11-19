@@ -52,6 +52,7 @@
     ]
   },
   "blogArchive": {
+    "fullFigure": "Figure",
     "months": "Browse by month",
     "title": "Previous posts",
     "latest": "Latest post",

@@ -2479,6 +2479,7 @@ figcaption {
   background: var(--canvas);
 }
 .blog-card-figure img { display: block; width: 100%; object-fit: cover; }
+.blog-card-figure[data-framing="full"] img { object-fit: contain; background: var(--white); }
 .blog-card-feature .blog-card-figure img { aspect-ratio: 3 / 2; }
 .blog-card-figure figcaption { margin-top: .5rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
 .blog-card-figure figcaption a[href*="creativecommons.org"] { white-space: nowrap; }
