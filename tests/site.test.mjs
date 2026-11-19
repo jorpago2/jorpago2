@@ -132,12 +132,17 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.ok(lead && lead.index < reviews[0].index && lead[1].length > 100,
         `${locale.code}/${page.id} should introduce the edition before its reviews`);
       assert.ok(mention && mention.index > reviews[2].index);
+        const mentionReferences = [...mention[1].matchAll(/class="note-meta mention-reference">\[(\d+)\][^]*?href="https:\/\/doi\.org\/([^"]+)"/g)];
+        assert.deepEqual(mentionReferences.map(match => Number(match[1])), [4, 5]);
+        assert.equal(new Set(mentionReferences.map(match => match[2])).size, 2);
+        assert.ok(!html.includes(String.raw`\n\n`), `${locale.code}/${page.id} should render paragraph breaks`);
       assert.equal((mention[1].match(/<li>/g) ?? []).length, 2,
         `${locale.code}/${page.id} should have two highlights`);
       const reviewTitles = reviews.map(([, review], index) => {
         const header = review.match(/^\s*<p class="eyebrow weekly-review-category">[^<]+<\/p>\s*<h3 class="weekly-review-title">([^<]+)<\/h3>\s*<p class="note-meta weekly-reference">\[(\d+)\]/);
         assert.ok(header, `${locale.code}/${page.id} review ${index + 1} should use the common header`);
         assert.equal(Number(header[2]), index + 1);
+          assert.match(review, /<aside class="further-reading"><p>[^<]+<a href="https:\/\//);
         assert.equal((review.match(/class="paper-figure weekly-figure"/g) ?? []).length, 1);
         return header[1];
       });

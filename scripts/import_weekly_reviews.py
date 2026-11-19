@@ -103,7 +103,7 @@ def article_doi(section: str) -> str:
     return hit.group().lower().rstrip(".") if hit else ""
 
 
-def reference_html(doi: str, number: int, day: date) -> str | None:
+def reference_html(doi: str, number: int, day: date, *, mention: bool = False) -> str | None:
     ref = METADATA.get(doi, {}).get("reference")
     if not ref or not all(ref.get(key) for key in ("title", "author", "container-title")):
         return None
@@ -134,7 +134,8 @@ def reference_html(doi: str, number: int, day: date) -> str | None:
         raise ValueError(f"{doi} was published outside the week starting {day}")
     months = ("Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec.")
     details.append(f"{months[published.month - 1]} {published.day}, {published.year}")
-    return (f'<p class="note-meta weekly-reference">[{number}] {html.escape(", ".join(names))}, '
+    css = "mention-reference" if mention else "weekly-reference"
+    return (f'<p class="note-meta {css}">[{number}] {html.escape(", ".join(names))}, '
             f'“{html.escape(title)},” <cite>{html.escape(journal)}</cite>, '
             f'{html.escape(", ".join(details))}, doi <a href="https://doi.org/{doi}">{doi}</a>.</p>')
 
@@ -175,9 +176,16 @@ def additional_material(locale: str, doi: str) -> str:
     reading = next(((url, label[locale]) for key, url, label in READING if key == doi), None)
     if not reading:
         reading = next(((url, label[locale]) for dois, url, label in RELATED if doi in dois), None)
+    label = {"es": "Lectura relacionada", "ca": "Lectura relacionada", "en": "Related reading"}[locale]
     if reading:
-        url, label = reading
-        figure_html += f'<aside class="further-reading"><p><a href="{url}">{html.escape(label)}</a></p></aside>'
+        url, description = reading
+        figure_html += f'<aside class="further-reading"><p>{label}. <a href="{html.escape(url, quote=True)}">{html.escape(description)}</a></p></aside>'
+    elif background := METADATA.get(doi, {}).get("backgroundReading"):
+        url = "https://doi.org/" + html.escape(background["doi"], quote=True)
+        title = html.escape(background["title"])
+        journal = html.escape(background["journal"])
+        figure_html += (f'<aside class="further-reading"><p>{label}. <a href="{url}" lang="en">{title}</a>. '
+                        f'<cite>{journal}</cite> ({background["year"]}).</p></aside>')
     return figure_html
 
 
@@ -261,7 +269,14 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
                 reference_position = len(rendered)
         elif text.startswith("- "):
             items = re.split(r"\s+-\s+", text[2:])
-            rendered.append("<ul>" + "".join(f"<li>{inline(item)}</li>" for item in items) + "</ul>")
+            entries = []
+            for index, item in enumerate(items):
+                reference = reference_html(article_doi(item), index + 4, day, mention=True) if section_number == 4 else None
+                if reference:
+                    # The citation already carries the journal and publication date.
+                    item = re.sub(r"\s+\*[^*]+\*, [^*\n]+?20\d\d\.$", "", item)
+                entries.append(f"<li>{inline(item)}{reference or ''}</li>")
+            rendered.append("<ul>" + "".join(entries) + "</ul>")
         elif section_number == 0 and not date_line.fullmatch(text):
             lead_html = inline(text)
             rendered.append(f'<p class="weekly-lead">{lead_html}</p>')

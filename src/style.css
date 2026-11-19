@@ -2596,7 +2596,7 @@ figcaption {
 
 .weekly-review + .weekly-review { margin-top: clamp(2rem, 4vw, 3rem); }
 .weekly-review-category { margin: 0 0 .45rem; color: var(--accent); }
-.weekly-reference { overflow-wrap: anywhere; }
+.weekly-reference, .mention-reference { overflow-wrap: anywhere; }
 .weekly-review > p:not([class]) { font-size: 1.0625rem; line-height: 1.7; }
 .weekly-copy .notes-mention { margin-inline: 0; }
 .notes-mention .mention-source { margin-block: .35rem 1.25rem; }
