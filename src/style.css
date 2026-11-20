@@ -2369,12 +2369,16 @@ figcaption {
 .note-body p:first-child { margin-top: 0; }
 .note-link { display: inline-block; font-weight: 700; margin-top: .35rem; }
 .home-reading {
+  --muted: #455768;
+  --accent: #315a7c;
   display: grid;
   gap: clamp(1.15rem, 3vw, 2.5rem);
   border-block: 1px solid var(--line);
   padding-block: clamp(1.35rem, 3vw, 2rem);
   padding-inline: clamp(.75rem, 1.6vw, 1.25rem);
-  background-color: color-mix(in srgb, var(--accent-soft) 26%, transparent);
+  background: linear-gradient(115deg,
+    color-mix(in srgb, var(--blue) 72%, transparent),
+    color-mix(in srgb, var(--blue) 40%, transparent));
 }
 .home-reading-header {
   display: grid;
