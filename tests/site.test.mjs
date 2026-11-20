@@ -129,6 +129,14 @@ test("weekly editions exist in every language with matching dates and alternates
       assert.ok(index.includes(`/${page.slug}/`));
       assert.equal((html.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
       const issueTitle = html.match(/<h2 class="weekly-issue-title">([^<]+)<\/h2>/)?.[1];
+      const cardLink = index.match(new RegExp(`<a href="[^"]*/${page.slug}/" aria-label="([^"]+)"><img src="([^"]+)"`));
+      assert.ok(cardLink, `Missing archive cover for ${locale.code}/${page.id}`);
+      const [, title, coverUrl] = cardLink;
+      assert.ok(html.includes(`<title>${title}</title>`));
+      for (const [attribute, prefix] of [["property", "og"], ["name", "twitter"]]) {
+        assert.ok(html.includes(`<meta ${attribute}="${prefix}:title" content="${title}">`));
+        assert.ok(html.includes(`<meta ${attribute}="${prefix}:image" content="${coverUrl}">`));
+      }
       const reviews = [...html.matchAll(/<article class="weekly-review">([\s\S]*?)<\/article>/g)];
       const lead = html.match(/<p class="weekly-lead">([\s\S]+?)<\/p>/);
       const mention = html.match(/<section class="notes-mention"><h3>[^<]+<\/h3>([\s\S]*?)<\/section>/);

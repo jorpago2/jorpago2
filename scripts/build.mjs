@@ -340,9 +340,13 @@ async function loadSharedData() {
   return { publications, teaching, resources, weeklyResearch };
 }
 
-function pageShell({ page, content, locale, strings, localeBundles }) {
+function pageShell({ page, content, locale, strings, localeBundles, coverFigure }) {
   const isHome = page.id === "home";
-  const pageTitle = page.seoTitle || `${page.title} | Dr. Jorge Parra`;
+  const pageTitle = page.weekStart ? page.title : (page.seoTitle || `${page.title} | Dr. Jorge Parra`);
+  const imageUrl = coverFigure?.url ?? `${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png`;
+  const imageAlt = coverFigure
+    ? (coverFigure.localizedCaptions?.[locale.code] ?? coverFigure.caption)
+    : strings.socialImageAlt;
   const description = conciseDescription(page.description);
   const mainContent = isHome
     ? content
@@ -368,20 +372,20 @@ ${alternateLinks(page.id, localeBundles)}
   <link rel="icon" href="${LOGO_PATH}">
   <link rel="stylesheet" href="${SITE_BASE_PATH}/assets/style.css?v=89">
   <meta name="theme-color" content="#f6f7f3">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="${page.weekStart ? "article" : "website"}">
   <meta property="og:site_name" content="${escapeHtml(strings.siteName)}">
   <meta property="og:title" content="${escapeHtml(pageTitle)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${canonicalUrl(page.slug, locale)}">
-  <meta property="og:image" content="${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png">
+  <meta property="og:image" content="${escapeHtml(imageUrl)}">${coverFigure ? "" : `
   <meta property="og:image:width" content="1536">
-  <meta property="og:image:height" content="1024">
-  <meta property="og:image:alt" content="${escapeHtml(strings.socialImageAlt)}">
+  <meta property="og:image:height" content="1024">`}
+  <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(pageTitle)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
-  <meta name="twitter:image" content="${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png">
-  <meta name="twitter:image:alt" content="${escapeHtml(strings.socialImageAlt)}">
+  <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
+  <meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}">
   ${structuredData(page, pageTitle, description, locale, strings)}
 </head>
 <body data-carousel-previous="${escapeHtml(strings.carousel.previous)}" data-carousel-next="${escapeHtml(strings.carousel.next)}" data-carousel-slide="${escapeHtml(strings.carousel.slide)}" data-carousel-show="${escapeHtml(strings.carousel.show)}" data-carousel-status="${escapeHtml(strings.carousel.status)}">
@@ -581,6 +585,7 @@ async function main() {
           : pageShell({
               page,
               content,
+              coverFigure: page.weekStart ? sharedData.weeklyResearch.articles[page.coverDoi].figure : undefined,
               locale: bundle.locale,
               strings: bundle.strings,
               localeBundles,
