@@ -369,7 +369,7 @@ test("homepage has the personal academic layout and opens the six-image carousel
   assert.match(html, /class="hero-carousel"/);
   assert.doesNotMatch(html, /class="home-gallery"/);
   assert.doesNotMatch(html, /fonts\.googleapis\.com|IBM\+Plex\+Sans|Space\+Grotesk/);
-  assert.match(html, /assets\/style\.css\?v=87/);
+  assert.match(html, /assets\/style\.css\?v=88/);
   assert.match(html, /class="page-actions">[\s\S]*?Research[\s\S]*?About me/);
   assert.match(html, /<a href="\/jorpago2\/research\/">Research<\/a>/);
   assert.match(html, /<a href="\/jorpago2\/about-me\/">About me<\/a>/);
@@ -659,7 +659,8 @@ test("legacy route redirects and sitemap lists every page", async () => {
       : "User-agent: *\nAllow: /\nSitemap: https://www.uv.es/jorpago2/sitemap.xml\n",
   );
   assert.doesNotMatch(sitemap, /<loc>[^<]+\/(?:publications|books|theses)\/<\/loc>/);
-  assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 18);
+  assert.ok(mediaFiles.includes(path.join("generated", "frosted-paper.webp")));
+  assert.equal(mediaFiles.filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file)).length, 19);
 });
 
 test("UV deployment keeps backups beside the workspace", async () => {

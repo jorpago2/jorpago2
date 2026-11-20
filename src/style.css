@@ -2323,20 +2323,19 @@ figcaption {
 .notes-intro h2 { margin: .3rem 0 1rem; font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1.08; letter-spacing: -.035em; }
 .notes-intro p:not(.eyebrow) { max-width: 42rem; font-size: 1.15rem; line-height: 1.65; color: var(--muted); }
 .notes-intro.blog-masthead {
+  --masthead-shade: linear-gradient(175deg, rgb(6 18 30 / 68%) 0%, rgb(6 18 30 / 40%) 34%, rgb(6 18 30 / 85%) 62%);
   max-width: none;
   padding: clamp(1.75rem, 4vw, 3.5rem) clamp(1.5rem, 4vw, 3.5rem);
-  border-top: 3px solid var(--accent);
+  border-top: 3px solid var(--blue);
   background:
-    linear-gradient(90deg, var(--navy) 28%, transparent 84%),
-    repeating-radial-gradient(ellipse at 100% 110%, transparent 0 2.4rem, rgb(216 255 84 / 12%) 2.45rem 2.5rem, transparent 2.55rem 4.9rem),
-    radial-gradient(ellipse at 100% 110%, var(--navy-soft), transparent 65%),
-    var(--navy);
+    var(--masthead-shade),
+    #101e2d url("media/generated/frosted-paper.webp") center / cover no-repeat;
 }
 .blog-masthead-copy {
   display: grid;
   gap: clamp(1.5rem, 4vw, 3.5rem);
 }
-.notes-intro.blog-masthead .eyebrow { margin: 0; color: var(--lime); }
+.notes-intro.blog-masthead .eyebrow { margin: 0; color: #def2ff; }
 .notes-intro.blog-masthead h2 {
   max-width: 18ch;
   margin: .7rem 0 0;
@@ -2348,7 +2347,7 @@ figcaption {
 .blog-masthead-description {
   max-width: 32rem;
   padding-top: 1.25rem;
-  border-top: 1px solid rgb(216 255 84 / 30%);
+  border-top: 1px solid rgb(218 238 255 / 38%);
 }
 .blog-masthead .blog-masthead-description p {
   margin: 0;
@@ -2532,6 +2531,9 @@ figcaption {
 }
 
 @media (min-width: 821px) {
+  .notes-intro.blog-masthead {
+    --masthead-shade: linear-gradient(90deg, rgb(6 18 30 / 78%) 0%, rgb(6 18 30 / 55%) 34%, rgb(6 18 30 / 12%) 50%, rgb(6 18 30 / 74%) 62%, rgb(6 18 30 / 78%) 100%);
+  }
   .blog-masthead-copy {
     grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
     align-items: end;
@@ -2539,7 +2541,7 @@ figcaption {
   .blog-masthead-description {
     padding: 0 0 0 clamp(1.25rem, 2.5vw, 2rem);
     border-top: 0;
-    border-inline-start: 1px solid rgb(216 255 84 / 30%);
+    border-inline-start: 1px solid rgb(218 238 255 / 38%);
   }
   .blog-card-feature { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; }
 }
