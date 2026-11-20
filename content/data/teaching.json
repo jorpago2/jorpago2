@@ -2,6 +2,68 @@
   "currentCourses": [
     {
       "title": {
+        "en": "Analogue Electronics II",
+        "es": "Electrónica analógica II",
+        "ca": "Electrònica analògica II"
+      },
+      "details": {
+        "en": "Lectures and problem classes, BSc in Telecommunications Electronic Engineering",
+        "es": "Teoría y prácticas en aula, Grado en Ingeniería Electrónica de Telecomunicación",
+        "ca": "Teoria i pràctiques a l’aula, Grau en Enginyeria Electrònica de Telecomunicació"
+      }
+    },
+    {
+      "title": {
+        "en": "High-Frequency Circuits and Subsystems",
+        "es": "Circuitos y subsistemas de alta frecuencia",
+        "ca": "Circuits i subsistemes d’alta freqüència"
+      },
+      "details": {
+        "en": "Lectures and problem classes, BSc in Telecommunications Electronic Engineering",
+        "es": "Teoría y prácticas en aula, Grado en Ingeniería Electrónica de Telecomunicación",
+        "ca": "Teoria i pràctiques a l’aula, Grau en Enginyeria Electrònica de Telecomunicació"
+      }
+    },
+    {
+      "title": {
+        "en": "Fundamentals of Communications",
+        "es": "Fundamentos de las comunicaciones",
+        "ca": "Fonaments de les comunicacions"
+      },
+      "details": {
+        "en": "Laboratory, BSc in Telecommunications Electronic Engineering",
+        "es": "Laboratorio, Grado en Ingeniería Electrónica de Telecomunicación",
+        "ca": "Laboratori, Grau en Enginyeria Electrònica de Telecomunicació"
+      }
+    },
+    {
+      "title": {
+        "en": "Electronic Technology",
+        "es": "Tecnología electrónica",
+        "ca": "Tecnologia electrònica"
+      },
+      "details": {
+        "en": "Lectures and problem classes, BSc in Industrial Electronic Engineering",
+        "es": "Teoría y prácticas en aula, Grado en Ingeniería Electrónica Industrial",
+        "ca": "Teoria i pràctiques a l’aula, Grau en Enginyeria Electrònica Industrial"
+      }
+    },
+    {
+      "title": {
+        "en": "Optoelectronics and Photonic Devices",
+        "es": "Optoelectrónica y dispositivos fotónicos",
+        "ca": "Optoelectrònica i dispositius fotònics"
+      },
+      "details": {
+        "en": "Lectures and laboratory, Master’s Degree in Electronic Engineering",
+        "es": "Teoría y laboratorio, Máster Universitario en Ingeniería Electrónica",
+        "ca": "Teoria i laboratori, Màster Universitari en Enginyeria Electrònica"
+      }
+    }
+  ],
+  "uvCourses2025_26": [
+    {
+      "title": {
         "en": "Electronic Technology",
         "es": "Tecnología electrónica",
         "ca": "Tecnologia electrònica"

@@ -196,7 +196,8 @@ test("shared records live in JSON and render in every language", async () => {
   const resources = JSON.parse(await readFile(path.join(dataRoot, "resources.json"), "utf8"));
 
   assert.equal(publications.reduce((count, group) => count + group.entries.length, 0), 29);
-  assert.equal(teaching.currentCourses.length, 7);
+  assert.equal(teaching.currentCourses.length, 5);
+  assert.equal(teaching.uvCourses2025_26.length, 7);
   assert.equal(teaching.previousCourses.length, 4);
   assert.equal(teaching.thesisGroups.reduce((count, group) => count + group.entries.length, 0), 10);
   assert.equal(teaching.book.title, "Teoría de circuitos eléctricos. Problemas resueltos");
@@ -205,7 +206,7 @@ test("shared records live in JSON and render in every language", async () => {
   assert.equal(resources.groups.reduce((count, group) => count + group.items.length, 0), 26);
   assert.ok(teaching.currentCourses.every((course) => course.details.en && course.details.es && course.details.ca));
   assert.ok(
-    [...teaching.currentCourses, ...teaching.previousCourses].every(
+    [...teaching.currentCourses, ...teaching.uvCourses2025_26, ...teaching.previousCourses].every(
       (course) => course.title.en !== course.title.es,
     ),
   );
@@ -498,7 +499,8 @@ test("research and teaching consolidate their former child pages", async () => {
   assert.match(css, /\.publication-year > ol > li::marker \{[\s\S]*?color: var\(--accent\);/);
   assert.match(css, /\.publication-year a\[href\^="https:\/\/doi\.org\/"\] \{[\s\S]*?border-radius: 999px;/);
   assert.match(teaching, /id="courses"[\s\S]*?id="books"[\s\S]*?id="theses"/);
-  assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
+  assert.equal((teaching.match(/class="course-list current-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 5);
+  assert.equal((teaching.match(/id="uv-2025-26"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 7);
   assert.equal((teaching.match(/class="course-list previous-course-list"[\s\S]*?<\/ul>/)?.[0].match(/<li>/g) ?? []).length, 4);
   assert.equal((teaching.match(/class="supervision-year"/g) ?? []).length, 10);
   assert.equal((teaching.match(/, Co-supervisor/g) ?? []).length, 10);

@@ -297,6 +297,7 @@ function renderSharedContent(pageId, content, localeCode, strings, sharedData) {
     );
     replacements = [
       ["{{CURRENT_COURSES}}", renderCourses(sharedData.teaching.currentCourses, localeCode)],
+      ["{{UV_COURSES_2025_26}}", renderCourses(sharedData.teaching.uvCourses2025_26, localeCode)],
       ["{{PREVIOUS_COURSES}}", renderCourses(sharedData.teaching.previousCourses, localeCode)],
       ["{{BOOK_RESOURCE}}", renderBook(sharedData.teaching.book, localeCode)],
       ["{{MASTER_THESES}}", renderTheses(thesisGroups.get("masters"), localeCode)],
