@@ -209,15 +209,15 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
     if len(topics) != 3 or any(not title or category.fullmatch(title) for title in topics):
         raise ValueError("Expected a title for each of the three weekly reviews")
     labels = {
-        "es": ("Todas las entradas", "Semana del", ("Fotónica", "Electrónica", "Materiales"), "También me ha llamado la atención"),
+        "es": ("Todas las entradas", "Semana del", ("Fotónica", "Electrónica", "Materiales"), "También vale la pena leer"),
         "en": ("All posts", "Week of", ("Photonics", "Electronics", "Materials"), "Also worth a look"),
-        "ca": ("Totes les entrades", "Setmana del", ("Fotònica", "Electrònica", "Materials"), "També m’ha cridat l’atenció"),
+        "ca": ("Totes les entrades", "Setmana del", ("Fotònica", "Electrònica", "Materials"), "També val la pena llegir"),
     }
     back, prefix, category_labels, mentions_label = labels[locale]
     mentions_source = {
-        "es": "Estos dos apuntes se basan en los resúmenes públicos de artículos bajo suscripción.",
-        "ca": "Aquests dos apunts es basen en els resums públics d’articles sota subscripció.",
-        "en": "These two notes draw on the public abstracts of papers published under subscription.",
+        "es": "Mi asistente de IA prepara la selección semanal. Para estos dos apuntes sobre artículos bajo suscripción se basa en sus resúmenes públicos.",
+        "ca": "El meu assistent d’IA prepara la selecció setmanal. Per a estos dos apunts sobre articles de subscripció es basa en els resums públics.",
+        "en": "My AI assistant puts together the weekly selection. These two short notes on papers behind a paywall draw on their public abstracts.",
     }[locale]
     lines = lines[next(i for i, line in enumerate(lines) if line.startswith("# ")) + 1 :]
     blocks = re.split(r"\n\s*\n", "\n".join(lines).strip())
