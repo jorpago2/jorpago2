@@ -17,6 +17,7 @@ Así podría empezar la conversación sobre los puntos cuánticos de la edición
 
 ## Portada y entrada semanal
 
+- **Vista previa de LinkedIn.** Las tres traducciones comparten la figura de portada. Para compartirla, busca en la editorial una versión de esa misma figura de al menos 1200 × 627 píxeles y menos de 5 MB. Comprueba el archivo y guarda su URL, dimensiones y tipo en `figure.socialImage`. El título de cada tarjeta es el de la edición en su idioma.
 En la web, atribuye al asistente de IA la selección de los artículos y la redacción de las reseñas conforme a los criterios de Jorge. Explica ese reparto en la presentación del blog y en el texto que lo anuncia en la página principal.
 
 - **Tarjeta de portada.** Escribe un texto breve que invite a abrir la edición. Conecta los tres trabajos con un detalle, una pregunta o varias formas de abordar un problema. Dale al lector una pista de lo que encontrará y deja el desarrollo para la entrada. Evita encadenar los títulos o dedicar toda la tarjeta al hallazgo más llamativo.

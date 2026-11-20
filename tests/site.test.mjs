@@ -112,6 +112,7 @@ test("the blog leads with a feature and lists previous editions without the pilo
 });
 
 test("weekly editions exist in every language with matching dates and alternates", async () => {
+  const { articles } = JSON.parse(await readFile("content/data/weekly-research-2026.json", "utf8"));
   const weekly = new Map(localeConfig.locales.map((locale) => [locale.code,
     localizedPages.get(locale.code).filter((page) => page.weekStart)]));
   const expected = weekly.get("en").map((page) => page.id).sort();
@@ -132,10 +133,17 @@ test("weekly editions exist in every language with matching dates and alternates
       const cardLink = index.match(new RegExp(`<a href="[^"]*/${page.slug}/" aria-label="([^"]+)"><img src="([^"]+)"`));
       assert.ok(cardLink, `Missing archive cover for ${locale.code}/${page.id}`);
       const [, title, coverUrl] = cardLink;
+      const figure = articles[page.coverDoi].figure;
+      assert.equal(coverUrl, figure.url);
+      const preview = figure.socialImage ?? figure;
+      if (figure.socialImage) {
+        assert.ok(html.includes(`<meta property="og:image:width" content="${preview.width}">`));
+        assert.ok(html.includes(`<meta property="og:image:height" content="${preview.height}">`));
+      }
       assert.ok(html.includes(`<title>${title}</title>`));
       for (const [attribute, prefix] of [["property", "og"], ["name", "twitter"]]) {
         assert.ok(html.includes(`<meta ${attribute}="${prefix}:title" content="${title}">`));
-        assert.ok(html.includes(`<meta ${attribute}="${prefix}:image" content="${coverUrl}">`));
+        assert.ok(html.includes(`<meta ${attribute}="${prefix}:image" content="${preview.url}">`));
       }
       const reviews = [...html.matchAll(/<article class="weekly-review">([\s\S]*?)<\/article>/g)];
       const lead = html.match(/<p class="weekly-lead">([\s\S]+?)<\/p>/);

@@ -343,7 +343,9 @@ async function loadSharedData() {
 function pageShell({ page, content, locale, strings, localeBundles, coverFigure }) {
   const isHome = page.id === "home";
   const pageTitle = page.weekStart ? page.title : (page.seoTitle || `${page.title} | Dr. Jorge Parra`);
-  const imageUrl = coverFigure?.url ?? `${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png`;
+  const socialImage = coverFigure?.socialImage ?? coverFigure ?? {
+    url: `${SITE_ORIGIN}${SITE_BASE_PATH}/assets/og.png`, width: 1536, height: 1024,
+  };
   const imageAlt = coverFigure
     ? (coverFigure.localizedCaptions?.[locale.code] ?? coverFigure.caption)
     : strings.socialImageAlt;
@@ -377,14 +379,15 @@ ${alternateLinks(page.id, localeBundles)}
   <meta property="og:title" content="${escapeHtml(pageTitle)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${canonicalUrl(page.slug, locale)}">
-  <meta property="og:image" content="${escapeHtml(imageUrl)}">${coverFigure ? "" : `
-  <meta property="og:image:width" content="1536">
-  <meta property="og:image:height" content="1024">`}
+  <meta property="og:image" content="${escapeHtml(socialImage.url)}">${socialImage.width && socialImage.height ? `
+  <meta property="og:image:width" content="${socialImage.width}">
+  <meta property="og:image:height" content="${socialImage.height}">` : ""}${socialImage.type ? `
+  <meta property="og:image:type" content="${escapeHtml(socialImage.type)}">` : ""}
   <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(pageTitle)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
-  <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
+  <meta name="twitter:image" content="${escapeHtml(socialImage.url)}">
   <meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}">
   ${structuredData(page, pageTitle, description, locale, strings)}
 </head>
