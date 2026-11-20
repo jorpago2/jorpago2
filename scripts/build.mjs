@@ -541,6 +541,7 @@ async function main() {
   await cp(socialImagePath, path.join(OUTPUT_ROOT, "assets", "og.png"));
 
   for (const bundle of localeBundles) {
+    const blogMasthead = await readFile(path.join(bundle.localeRoot, "blog-masthead.html"), "utf8");
     const localeOutputRoot = bundle.locale.path
       ? path.join(OUTPUT_ROOT, bundle.locale.path)
       : OUTPUT_ROOT;
@@ -569,6 +570,9 @@ async function main() {
         );
         content = content.replace("<!-- BLOG_FEATURED -->", featured)
           .replace("<!-- BLOG_ARCHIVE -->", archive);
+      }
+      if (page.id === "research-notes" || page.weekStart) {
+        content = blogMasthead + "\n" + content;
       }
       await writeFile(
         path.join(outputDirectory, "index.html"),

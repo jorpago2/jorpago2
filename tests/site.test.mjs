@@ -120,8 +120,12 @@ test("weekly editions exist in every language with matching dates and alternates
     assert.deepEqual(entries.map((page) => page.id).sort(), expected);
     const indexPage = localizedPages.get(locale.code).find((page) => page.id === "research-notes");
     const index = await readFile(outputFileForPage(indexPage, locale), "utf8");
+    const masthead = index.match(/<header class="notes-intro blog-masthead">[\s\S]*?<\/header>/)?.[0];
+    assert.ok(masthead);
     for (const page of entries) {
       const html = await readFile(outputFileForPage(page, locale), "utf8");
+      assert.equal(html.split(masthead).length, 2);
+      assert.ok(html.indexOf(masthead) < html.indexOf('class="weekly-issue-title"'));
       assert.ok(index.includes(`/${page.slug}/`));
       assert.equal((html.match(/<link rel="alternate" hreflang="(?:en|es|ca)"/g) ?? []).length, 3);
       const issueTitle = html.match(/<h2 class="weekly-issue-title">([^<]+)<\/h2>/)?.[1];
