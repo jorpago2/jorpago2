@@ -51,7 +51,7 @@ body::before {
   background:
     repeating-radial-gradient(circle at 8% 45%, transparent 0 52px, rgb(92 126 0 / 8%) 53px 54px, transparent 55px 104px),
     repeating-radial-gradient(circle at 92% 58%, transparent 0 64px, rgb(64 105 154 / 9%) 65px 66px, transparent 67px 128px);
-  animation: 30s ease-in-out infinite alternate wave-motion;
+  animation: 37.5s ease-in-out infinite alternate wave-motion;
 }
 
 body::after {
@@ -60,7 +60,7 @@ body::after {
     radial-gradient(circle, rgb(92 126 0 / 30%) 0 1.5px, transparent 2px) 0 0 / 83px 97px,
     radial-gradient(circle, rgb(64 105 154 / 26%) 0 1.25px, transparent 1.75px) 24px 31px / 127px 113px,
     radial-gradient(circle, rgb(20 23 19 / 16%) 0 1px, transparent 1.5px) 63px 17px / 173px 149px;
-  animation: 42s linear infinite particle-motion;
+  animation: 52.5s linear infinite particle-motion;
 }
 
 button {
