@@ -16,7 +16,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DRAFTS = ROOT.parent / "investigacion_2026"
 START = date(2025, 12, 31)
-WEEKS = 46
 LINK = re.compile(r"\[([^\]]+)\]\((https?://[^\s)]+)\)")
 WARNING = re.compile(r"traducci[oó]n autom[aá]tica sin revisar|automatic translation.*not reviewed|traducci[oó] autom[aà]tica sense revisar|no publicar", re.I)
 METADATA_PATH = ROOT / "content" / "data" / "weekly-research-2026.json"
@@ -317,8 +316,16 @@ def render(source: str, locale: str, day: date) -> tuple[str, str, str]:
 def main() -> None:
     prepared = []
     errors = []
-    for index in range(WEEKS):
-        start = START + timedelta(days=7 * index)
+    # Include published weeks even if a local draft goes missing on a later run.
+    archive = json.loads((ROOT / "content/pages/en/pages.json").read_text(encoding="utf-8"))
+    dates = {date.fromisoformat(page["weekStart"]) for page in archive if page.get("weekStart")}
+    for draft in DRAFTS.glob("semana_*.md"):
+        match = re.fullmatch(r"semana_(\d{4}-\d{2}-\d{2})(?:_ca|_en)?", draft.stem)
+        if match:
+            dates.add(date.fromisoformat(match[1]))
+    for start in sorted(dates):
+        if start < START or start.weekday() != START.weekday():
+            raise ValueError(f"Invalid weekly issue start: {start}")
         stem = f"semana_{start.isoformat()}"
         files = {"es": DRAFTS / f"{stem}.md", "en": DRAFTS / f"{stem}_en.md", "ca": DRAFTS / f"{stem}_ca.md"}
         try:
@@ -344,6 +351,7 @@ def main() -> None:
         folder = ROOT / "content" / "pages" / locale
         index_path = folder / "pages.json"
         pages = json.loads(index_path.read_text(encoding="utf-8"))
+        previous_dates = {page["id"]: page["modified"] for page in pages if page.get("modified")}
         previous_covers = {page["id"]: page["coverDoi"] for page in pages if page.get("coverDoi")}
         pages = [page for page in pages if not re.fullmatch(r"post-week-\d{4}-\d{2}-\d{2}", page["id"])]
         for code, day, title, description, fragment, cover_doi in prepared:
@@ -354,7 +362,7 @@ def main() -> None:
             if previous_cover and f'href="https://doi.org/{previous_cover}"' in fragment:
                 cover_doi = previous_cover
             pages.append({"id": page_id, "slug": f"blog-{day.isoformat()}", "title": title,
-                          "description": description, "modified": "2026-11-19T00:00:00",
+                          "description": description, "modified": previous_dates.get(page_id, f"{date.today()}T00:00:00"),
                           "weekStart": day.isoformat(), "weekEnd": (day + timedelta(days=7)).isoformat(),
                           "coverDoi": cover_doi})
             (folder / f"{page_id}.html").write_text(fragment, encoding="utf-8")

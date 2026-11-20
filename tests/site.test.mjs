@@ -93,7 +93,7 @@ test("the blog leads with a feature and lists previous editions without the pilo
     const jumps = [...index.matchAll(/href="#(archive-[0-9]{4}-[0-9]{2})"/g)];
     assert.ok(jumps.length > 1);
     for (const [, id] of jumps) assert.ok(index.includes(`<h4 id="${id}" tabindex="-1">`));
-    assert.equal(cards.length, 46);
+    assert.equal(cards.length, [...byId.values()].filter((page) => page.weekStart).length);
     assert.match(cards[0][0], /class="blog-card blog-card-feature"/);
     assert.equal(cards.filter(([card]) => card.includes("blog-card-feature")).length, 1);
     assert.ok(cards[0][0].includes(`href="${base}${latest.slug}/"`));
