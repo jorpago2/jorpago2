@@ -125,6 +125,13 @@ test("weekly editions exist in every language with matching dates and alternates
     assert.ok(masthead);
     for (const page of entries) {
       const html = await readFile(outputFileForPage(page, locale), "utf8");
+      const permalink = `${SITE_ORIGIN}${SITE_BASE_PATH}/${locale.path ? locale.path + "/" : ""}${page.slug}/`;
+      assert.ok(html.includes(`<link rel="canonical" href="${permalink}">`));
+      assert.ok(html.includes(`<meta property="og:url" content="${permalink}">`));
+      if (page.slug !== `blog-${page.weekStart}`) {
+        const oldPath = path.join(OUTPUT_ROOT, locale.path, `blog-${page.weekStart}`, "index.html");
+        assert.equal(await readFile(oldPath, "utf8"), html);
+      }
       assert.equal(html.split(masthead).length, 2);
       assert.ok(html.indexOf(masthead) < html.indexOf('class="weekly-issue-title"'));
       assert.ok(index.includes(`/${page.slug}/`));

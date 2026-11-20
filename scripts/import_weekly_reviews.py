@@ -352,6 +352,7 @@ def main() -> None:
         index_path = folder / "pages.json"
         pages = json.loads(index_path.read_text(encoding="utf-8"))
         previous_dates = {page["id"]: page["modified"] for page in pages if page.get("modified")}
+        previous_slugs = {page["id"]: page["slug"] for page in pages if page.get("weekStart")}
         previous_covers = {page["id"]: page["coverDoi"] for page in pages if page.get("coverDoi")}
         pages = [page for page in pages if not re.fullmatch(r"post-week-\d{4}-\d{2}-\d{2}", page["id"])]
         for code, day, title, description, fragment, cover_doi in prepared:
@@ -361,7 +362,7 @@ def main() -> None:
             previous_cover = previous_covers.get(page_id)
             if previous_cover and f'href="https://doi.org/{previous_cover}"' in fragment:
                 cover_doi = previous_cover
-            pages.append({"id": page_id, "slug": f"blog-{day.isoformat()}", "title": title,
+            pages.append({"id": page_id, "slug": previous_slugs.get(page_id, f"blog-{day.isoformat()}"), "title": title,
                           "description": description, "modified": previous_dates.get(page_id, f"{date.today()}T00:00:00"),
                           "weekStart": day.isoformat(), "weekEnd": (day + timedelta(days=7)).isoformat(),
                           "coverDoi": cover_doi})

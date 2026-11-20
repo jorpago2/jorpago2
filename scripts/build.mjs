@@ -595,6 +595,13 @@ async function main() {
             }),
         "utf8",
       );
+      if (page.weekStart && page.slug !== `blog-${page.weekStart}`) {
+        const dateSlug = `blog-${page.weekStart}`;
+        if (bundle.pagesBySlug.has(dateSlug)) throw new Error(`Conflicting weekly permalink: ${dateSlug}`);
+        const oldDirectory = path.join(localeOutputRoot, dateSlug);
+        await mkdir(oldDirectory, { recursive: true });
+        await cp(path.join(outputDirectory, "index.html"), path.join(oldDirectory, "index.html"));
+      }
     }
   }
 
